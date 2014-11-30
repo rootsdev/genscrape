@@ -9,4 +9,5 @@ This is a work in progress. To be honest, I haven't even started coding yet (bey
 
 * [Testing](https://github.com/rootsdev/gen-scrape/issues/1)
 * [API](https://github.com/rootsdev/gen-scrape/issues/2)
+* [Schema](https://github.com/rootsdev/gen-scrape/issues/3)
 * Time - I don't have much of it.
