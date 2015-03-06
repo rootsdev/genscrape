@@ -1,0 +1,36 @@
+{
+  "name": "genscrape",
+  "version": "0.0.1",
+  "description": "genscrape",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "mocha --reporter spec --recursive",
+    "build": "browserify src/main.js -s genscrape > genscrape.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rootsdev/genscrape.git"
+  },
+  "keywords": [
+    "genealogy"
+  ],
+  "author": "Justin York",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rootsdev/genscrape/issues"
+  },
+  "homepage": "https://github.com/rootsdev/genscrape",
+  "dependencies": {
+    "debug": "2.1.2",
+    "lodash.foreach": "3.0.1",
+    "lodash.isfunction": "3.0.1",
+    "lodash.isarray": "3.0.0",
+    "superagent": "0.21.0"
+  },
+  "devDependencies": {
+    "browserify": "9.0.3",
+    "chai": "2.1.1",
+    "mocha": "2.1.0",
+    "nock": "1.1.0"
+  }
+}
