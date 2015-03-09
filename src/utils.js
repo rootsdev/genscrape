@@ -30,4 +30,18 @@ utils.urlPatternToRegex = function(pattern){
   return new RegExp(pattern);
 };
 
+/**
+ * Returns the hash values as a map {key:value}
+ */
+utils.getHashParts = function() {
+  var hashParts = {};
+  if( window.location.hash ) {
+    this.forEach(window.location.hash.substring(1).split('&'), function(part) {
+      var partPieces = part.split('=');
+      hashParts[partPieces[0]] = partPieces[1];
+    });
+  }
+  return hashParts;
+};
+
 module.exports = utils;

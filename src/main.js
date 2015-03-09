@@ -18,11 +18,11 @@ var genscrape = function(){
     utils.forEach(scraper.urls, function(regex){
       debug(regex);
       if(regex.test(thisUrl)){
-        debug('match')
+        debug('match');
         emitter = scraper.scraper();
         return false;
       }
-    })
+    });
     if(emitter) return false;
   });
   
@@ -30,7 +30,7 @@ var genscrape = function(){
   // that will send a 'noMatch' event.
   if(!emitter){
     debug('no match');
-    var emitter = new Emitter();
+    emitter = new Emitter();
     setTimeout(function(){
       emitter.emit('noMatch');
     });
@@ -64,3 +64,4 @@ module.exports = genscrape;
 // browserify can find and include them.
 // TODO: find a method that allows us to dynamically include all scrapers
 require('./scrapers/fs-record')(register);
+require('./scrapers/fs-ancestor')(register);
