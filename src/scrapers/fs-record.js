@@ -1,7 +1,6 @@
 var debug = require('debug')('fs-record'),
     utils = require('../utils'),
-    request = require('superagent'),
-    Emitter = require('events').EventEmitter;
+    request = require('superagent');
 
 var urls = [
   utils.urlPatternToRegex("https://familysearch.org/pal:/MM9.1.1/*"),
@@ -12,10 +11,8 @@ module.exports = function(register){
   register(urls, run);
 };
 
-function run(){
+function run(emitter){
   debug('running');
-  
-  var emitter = new Emitter();
   
   request.get(window.location.href)
     .accept('json')
@@ -31,8 +28,6 @@ function run(){
         debug('no response body');
       }
     });
-    
-  return emitter;
 }
 
 function processData(recordData) {

@@ -10,27 +10,30 @@ var debug = require('debug')('main'),
  * Return an EventEmitter object.
  */
 var genscrape = function(){
-  var emitter;
+  var emitter = new Emitter();
   var thisUrl = window.location.href;
   debug('url', thisUrl);
   
+  var match = false;
   utils.forEach(scrapers, function(scraper){
     utils.forEach(scraper.urls, function(regex){
       debug(regex);
       if(regex.test(thisUrl)){
         debug('match');
-        emitter = scraper.scraper();
+        match = true;
+        scraper.scraper(emitter);
+        // Short-circuit on match
         return false;
       }
     });
-    if(emitter) return false;
+    // Short-circuit on match
+    if(match) return false;
   });
   
   // Nothing matched. Return basic EventEmitter
   // that will send a 'noMatch' event.
-  if(!emitter){
+  if(!match){
     debug('no match');
-    emitter = new Emitter();
     setTimeout(function(){
       emitter.emit('noMatch');
     });

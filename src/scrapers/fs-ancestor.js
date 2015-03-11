@@ -11,14 +11,12 @@ module.exports = function(register){
   register(urls, run);
 };
 
-function run(){
+function run(emitter){
   debug('run');
-  var emitter = new Emitter();
   window.onhashchange = function(){
     processHash(emitter);
   };
   processHash(emitter);
-  return emitter;
 }
 
 // Called every time the hash changes
