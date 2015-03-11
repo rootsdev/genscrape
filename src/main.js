@@ -1,5 +1,5 @@
 var debug = require('debug')('main'),
-    Emitter = require('events').EventEmitter,
+    EventEmitter2 = require('eventemitter2').EventEmitter2,
     utils = require('./utils');
 
 /**
@@ -10,7 +10,7 @@ var debug = require('debug')('main'),
  * Return an EventEmitter object.
  */
 var genscrape = function(){
-  var emitter = new Emitter();
+  var emitter = new EventEmitter2();
   var thisUrl = window.location.href;
   debug('url', thisUrl);
   
@@ -20,9 +20,11 @@ var genscrape = function(){
       debug(regex);
       if(regex.test(thisUrl)){
         debug('match');
-        match = true;
-        scraper.scraper(emitter);
+        setTimeout(function(){
+          scraper.scraper(emitter);
+        })
         // Short-circuit on match
+        match = true;
         return false;
       }
     });
@@ -66,5 +68,6 @@ module.exports = genscrape;
 // Include scrapers. This is primarily done so that
 // browserify can find and include them.
 // TODO: find a method that allows us to dynamically include all scrapers
+require('./scrapers/ancestry-ancestor')(register);
 require('./scrapers/fs-record')(register);
 require('./scrapers/fs-ancestor')(register);
