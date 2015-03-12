@@ -1,7 +1,5 @@
 var debug = require('debug')('fs-ancestor'),
-    utils = require('../utils'),
-    request = require('superagent'),
-    Emitter = require('events').EventEmitter;
+    utils = require('../utils');
 
 var urls = [
   utils.urlPatternToRegex("https://familysearch.org/tree/*")

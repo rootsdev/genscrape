@@ -26,7 +26,8 @@ module.exports = {
   },
   
   /**
-   * Creates a mock browser, window, and DOM
+   * Creates a window and DOM from the
+   * HTML at `filePath` with the url of `location`
    */
   mockDom: function(location, filePath, callback){
     env({

@@ -1,6 +1,5 @@
 var debug = require('debug')('ancestry-ancestor'),
-    utils = require('../utils'),
-    request = require('superagent');
+    utils = require('../utils');
 
 var urls = [
   utils.urlPatternToRegex('http://trees.ancestry.com/tree/*/person/*'),
