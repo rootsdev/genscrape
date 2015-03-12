@@ -1,7 +1,6 @@
 var debug = require('debug')('ancestry-ancestor'),
     utils = require('../utils'),
-    request = require('superagent'),
-    jquery = require('jquery');
+    request = require('superagent');
 
 var urls = [
   utils.urlPatternToRegex('http://trees.ancestry.com/tree/*/person/*'),
@@ -14,17 +13,15 @@ module.exports = function(register){
 
 function run(emitter) {
   
-  try {
+  var personData = {};
   
-    var $ = jquery(window);
+  try {
   
     // Get the name
     var nameParts = utils.splitName( $('.pInfo h1').html() );
     
-    var personData = {
-      'givenName': nameParts[0],
-      'familyName': nameParts[1]
-    };
+    personData.givenName = nameParts[0];
+    personData.familyName = nameParts[1];
     
     var events = {};
     
@@ -84,13 +81,13 @@ function run(emitter) {
       personData['spouseGivenName'] = spouseNameParts[0];
       personData['spouseFamilyName'] = spouseNameParts[1];
     }
-    
-    debug('data');
-    emitter.emit('data', personData);
   
   } catch(e) {
     debug('error', e);
     emitter.emit('error', e);
   }
+  
+  debug('data');
+  emitter.emit('data', personData);
 
 }

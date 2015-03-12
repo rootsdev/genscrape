@@ -38,13 +38,13 @@ function processHash(emitter) {
     if(personId) {
       
       // Get person info; process it when both ajax calls return
-      multiRequest([getPersonSummary(personId), getRelationships(personId,spouseId)])
-      .on('responses', function(summaryResponse, relationshipsResponse) {
+      $.when(getPersonSummary(personId), getRelationships(personId,spouseId))
+      .done(function(summaryResponse, relationshipsResponse) {
         
         try {
           // Get actual return data
-          var summary = summaryResponse.body;
-          var relationships = relationshipsResponse.body;
+          var summary = summaryResponse[0];
+          var relationships = relationshipsResponse[0];
           
           // Check to see if we have person data
           if(summary.data){
@@ -61,8 +61,9 @@ function processHash(emitter) {
         }
         
       })
-      .on('error', function(error){
+      .fail(function(error){
         debug('ajax error', error);
+        emitter.emit('error', error);
       }); 
     } else {
       emitter.emit('noData');
@@ -147,7 +148,7 @@ function getSummaryInfo(summary, attributes) {
 
 // Makes an ajax call to retrieve the persons summary data and returns a promise
 function getPersonSummary(personId) {
-  return getJSON('https://familysearch.org/tree-data/person/'+personId+'/summary');
+  return $.getJSON('https://familysearch.org/tree-data/person/'+personId+'/summary');
 }
 
 // Makes an ajax call to retrieve relationship info and returns a promise
@@ -155,42 +156,5 @@ function getRelationships(personId, spouseId) {
   var url = 'https://familysearch.org/tree-data/family-members/person/'+personId;
   if(spouseId)
     url += '?spouseId='+spouseId;
-  return getJSON(url);
-}
-
-// JSON AJAX request
-function getJSON(url){
-  return request.get(url)
-    .set('accept','application/json');
-}
-
-// Handle multiple requests
-// Returns emitter object
-// Error fired for each error
-// `responses` event fired once iff all responses succeed
-// Wrote this so that I wouldn't have to include an entire promises lib
-function multiRequest(requests){
-  debug('multiRequest');
-  var responses = [],
-      length = requests.length,
-      count = 0,
-      emitter = new Emitter();
-  utils.forEach(requests, function(req, i){
-    debug('request', i);
-    req.end(function(err, res){
-      if(err){
-        debug('multiRequest error');
-        emitter.emit('error', err);
-      } else {
-        debug('multiRequest response');
-        responses[i] = res;
-        count++;
-        if(count == length){
-          debug('multiRequest responses');
-          emitter.emit.apply(emitter, ['responses'].concat(responses)) ;
-        }
-      }
-    })
-  })
-  return emitter;
+  return $.getJSON(url);
 }

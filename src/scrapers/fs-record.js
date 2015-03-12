@@ -1,6 +1,5 @@
 var debug = require('debug')('fs-record'),
-    utils = require('../utils'),
-    request = require('superagent');
+    utils = require('../utils');
 
 var urls = [
   utils.urlPatternToRegex("https://familysearch.org/pal:/MM9.1.1/*"),
@@ -14,20 +13,13 @@ module.exports = function(register){
 function run(emitter){
   debug('running');
   
-  request.get(window.location.href)
-    .accept('json')
-    .end(function(error, res){
-      error = error || res.error;
-      if(error){
-        emitter.emit('error', error);
-        debug('ajax failed', error);
-      } else if(res.body) {
-        emitter.emit('data', processData(res.body));
-      } else {
-        emitter.emit('noData');
-        debug('no response body');
-      }
-    });
+  $.getJSON(window.location.href)
+  .done(function(response){
+    emitter.emit('data', processData(response));
+  })
+  .fail(function(jqxhr, text, error){
+    emitter.emit('error', error);
+  });
 }
 
 function processData(recordData) {
