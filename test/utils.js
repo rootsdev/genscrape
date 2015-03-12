@@ -3,7 +3,22 @@ var utils = require('../src/utils'),
 
 describe('utils', function(){
   
-  it('splitName');
+  describe('splitName', function(){
+    
+    it('returns two empty strings when name is falsey', function(){
+      expect(utils.splitName()).to.deep.equal(['','']);
+      expect(utils.splitName(null)).to.deep.equal(['','']);
+      expect(utils.splitName(false)).to.deep.equal(['','']);
+      expect(utils.splitName('')).to.deep.equal(['','']);
+    })
+    
+    it('splits the name', function(){
+      expect(utils.splitName('Foo Bar')).to.deep.equal(['Foo','Bar']);
+      expect(utils.splitName('One')).to.deep.equal(['One']);
+      expect(utils.splitName('one two three')).to.deep.equal(['one two','three']);
+    })
+    
+  });
   
   it('urlPatternToRegex', function(){
     var regex = utils.urlPatternToRegex('https://familysearch.org/pal:/MM9.1.1/*');

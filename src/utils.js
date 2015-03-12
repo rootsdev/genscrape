@@ -2,6 +2,7 @@ var utils = {};
 
 utils.isArray = require('lodash.isarray');
 utils.isFunction = require('lodash.isfunction');
+utils.isString = require('lodash.isstring');
 utils.forEach = require('lodash.foreach');
 
 /**
@@ -10,7 +11,7 @@ utils.forEach = require('lodash.foreach');
  * only one family name.
  */
 utils.splitName = function(name) {
-  if(name) {    
+  if(utils.isString(name) && name) {    
     return name.split(/\s+(?=\S*$)/);
   } else {
     return ['',''];
