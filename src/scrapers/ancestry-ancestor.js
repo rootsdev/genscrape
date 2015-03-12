@@ -62,23 +62,23 @@ function run(emitter) {
     // Father's name
     if($('.iconMale.add', parentsBlock).length == 0) {
       var fatherNameParts = utils.splitName( $('.iconMale + .nameandyears a', parentsBlock).text() );
-      personData['fatherGivenName'] = fatherNameParts[0];
-      personData['fatherFamilyName'] = fatherNameParts[1];
+      if(fatherNameParts[0]) personData['fatherGivenName'] = fatherNameParts[0];
+      if(fatherNameParts[1]) personData['fatherFamilyName'] = fatherNameParts[1];
     }
     
     // Mother's name
     if($('.iconFemale.add', parentsBlock).length == 0) {
       var motherNameParts = utils.splitName( $('.iconFemale + .nameandyears a', parentsBlock).text() );
-      personData['motherGivenName'] = motherNameParts[0];
-      personData['motherFamilyName'] = motherNameParts[1];
+      if(motherNameParts[0]) personData['motherGivenName'] = motherNameParts[0];
+      if(motherNameParts[1]) personData['motherFamilyName'] = motherNameParts[1];
     }
     
     // Spouse's name
     var spouseBlock = $('.famMem .section').eq(1);
     if($('.add', spouseBlock).length == 0){
       var spouseNameParts = utils.splitName( $('.main .nameandyears a', spouseBlock).text() );
-      personData['spouseGivenName'] = spouseNameParts[0];
-      personData['spouseFamilyName'] = spouseNameParts[1];
+      if(spouseNameParts[0]) personData['spouseGivenName'] = spouseNameParts[0];
+      if(spouseNameParts[1]) personData['spouseFamilyName'] = spouseNameParts[1];
     }
   
   } catch(e) {
