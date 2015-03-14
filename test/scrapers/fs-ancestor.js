@@ -7,18 +7,9 @@ var nock = require('nock'),
 describe('fs ancestor', function(){
   
   it('process data and respond to hash changes', function(done){
-    var scope = nock('https://familysearch.org')
-      .defaultReplyHeaders({
-        'content-type': 'application/json'
-      })
-      .get('/tree-data/person/K2HD-1TC/summary')
-      .replyWithFile(200, path.join(__dirname, '..', 'responses', 'fs', 'tree-data', 'K2HD-1TC-summary.json'))
-      .get('/tree-data/family-members/person/K2HD-1TC')
-      .replyWithFile(200, path.join(__dirname, '..', 'responses', 'fs', 'tree-data', 'K2HD-1TC-family.json'))
-      .get('/tree-data/person/KJZ2-417/summary')
-      .replyWithFile(200, path.join(__dirname, '..', 'responses', 'fs', 'tree-data', 'KJZ2-417-summary.json'))
-      .get('/tree-data/family-members/person/KJZ2-417')
-      .replyWithFile(200, path.join(__dirname, '..', 'responses', 'fs', 'tree-data', 'KJZ2-417-family.json'));
+    
+    nockSetup('K2HD-1TC');
+    nockSetup('KJZ2-417');
       
     helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=K2HD-1TC', function(){
       
@@ -88,15 +79,88 @@ describe('fs ancestor', function(){
         }
         
       })
-      
     });
-
   })
   
-  it('respond to hash changes', function(){
-    // initial setup
-    // hash change with no data
-    // hash change again with data
+  it('female with non-standardized information', function(done){
+    nockSetup('KWZM-W11');
+    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=KWZM-W11', function(){
+      genscrape()
+      .on('data', function(data){
+        expect(data).to.deep.equal({ 
+          givenName: 'Anna',
+          familyName: 'Lehmann',
+          birthPlace: 'Eriz, Bern, Switzerland',
+          birthDate: '15 October 1859',
+          deathPlace: 'Blackfoot, Bingham, Idaho, United States',
+          deathDate: '28 October 1939',
+          fatherGivenName: 'Christian',
+          fatherFamilyName: 'Lehman',
+          motherGivenName: 'Anna Barbara',
+          motherFamilyName: 'Mueller',
+          spouseGivenName: 'Christian',
+          spouseFamilyName: 'Dolder',
+          marriageDate: '19 May 1883',
+          marriagePlace: 'Heimberg, Bern, Switzerland' 
+        });
+        done();
+      })
+    });
+  })
+  
+  it('good http response but no data', function(done){
+    nockSetup('PPP');
+    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=PPP', function(){
+      genscrape()
+      .on('noData', function(){
+        done();
+      })
+      .on('error', function(e){
+        console.error(e);
+      })
+    });
+  })
+  
+  it('bad http response', function(done){
+    nock('https://familysearch.org')
+      .defaultReplyHeaders({
+        'content-type': 'application/json'
+      })
+      .get('/tree-data/person/MMM/summary')
+      .reply(500)
+      .get('/tree-data/family-members/person/MMM')
+      .reply(500);
+    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=MMM', function(){
+      genscrape()
+      .on('error', function(e){
+        expect(e).to.exist;
+        done();
+      })
+    });
+  })
+  
+  it('ancestor view with no data', function(done){
+    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor', function(){
+      genscrape()
+      .on('noData', function(){
+        done();
+      })
+    });
   })
   
 })
+
+/**
+ * Configure nock to respond properly to requests
+ * for the given person with test data
+ */
+function nockSetup(personId){
+  nock('https://familysearch.org')
+    .defaultReplyHeaders({
+      'content-type': 'application/json'
+    })
+    .get('/tree-data/person/'+personId+'/summary')
+    .replyWithFile(200, path.join(__dirname, '..', 'responses', 'fs', 'tree-data', personId+'-summary.json'))
+    .get('/tree-data/family-members/person/'+personId)
+    .replyWithFile(200, path.join(__dirname, '..', 'responses', 'fs', 'tree-data', personId+'-family.json'));
+}
