@@ -4,7 +4,9 @@
   "description": "genscrape",
   "main": "src/main.js",
   "scripts": {
-    "test": "mocha --reporter spec --recursive",
+    "test": "mocha --recursive",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
     "build": "browserify src/main.js -s genscrape > genscrape.js"
   },
   "repository": {
@@ -31,6 +33,8 @@
   "devDependencies": {
     "browserify": "9.0.3",
     "chai": "2.1.1",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.7",
     "jsdom": "3.1.2",
     "mocha": "2.1.0",
     "nock": "1.1.0"

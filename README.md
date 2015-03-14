@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/rootsdev/genscrape.svg)](https://travis-ci.org/rootsdev/genscrape)
+[![Coverage Status](https://coveralls.io/repos/rootsdev/genscrape/badge.svg)](https://coveralls.io/r/rootsdev/genscrape)
+[![Dependency Status](https://david-dm.org/rootsdev/genscrape.svg)](https://david-dm.org/rootsdev/genscrape)
+
 genscrape
 ==========
 
