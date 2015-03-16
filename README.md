@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/rootsdev/genscrape.svg)](https://travis-ci.org/rootsdev/genscrape)
+[![Codacy Badge](https://www.codacy.com/project/badge/b03af5622e94434e90866a9acfc032fb)](https://www.codacy.com/public/justincyork/genscrape)
 [![Coverage Status](https://coveralls.io/repos/rootsdev/genscrape/badge.svg)](https://coveralls.io/r/rootsdev/genscrape)
 [![Dependency Status](https://david-dm.org/rootsdev/genscrape.svg)](https://david-dm.org/rootsdev/genscrape)
 
