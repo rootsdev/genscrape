@@ -46,7 +46,7 @@ describe('fs ancestor', function(){
             motherFamilyName: 'Tridy',
             spouseGivenName: 'Elizabeth',
             spouseFamilyName: 'Tricebaugh',
-            marriageDate: '11 October 1861',
+            marriageDate: '27 December 1862',
             marriagePlace: 'Salt Lake City, Salt Lake, Utah, United States'
           });
           window.location.hash = '#view=pedigree';
@@ -68,8 +68,8 @@ describe('fs ancestor', function(){
             motherFamilyName: 'Day',
             spouseGivenName: 'Jane',
             spouseFamilyName: 'Garrison',
-            marriageDate: '1824',
-            marriagePlace: 'Endicott, Broome, New York, United States'
+            marriageDate: '15 May 1824',
+            marriagePlace: 'Union, Broome, New York'
           });
           done();
         }
@@ -82,53 +82,12 @@ describe('fs ancestor', function(){
     });
   })
   
-  it('female with non-standardized information', function(done){
-    nockSetup('KWZM-W11');
-    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=KWZM-W11', function(){
-      genscrape()
-      .on('data', function(data){
-        expect(data).to.deep.equal({ 
-          givenName: 'Anna',
-          familyName: 'Lehmann',
-          birthPlace: 'Eriz, Bern, Switzerland',
-          birthDate: '15 October 1859',
-          deathPlace: 'Blackfoot, Bingham, Idaho, United States',
-          deathDate: '28 October 1939',
-          fatherGivenName: 'Christian',
-          fatherFamilyName: 'Lehman',
-          motherGivenName: 'Anna Barbara',
-          motherFamilyName: 'Mueller',
-          spouseGivenName: 'Christian',
-          spouseFamilyName: 'Dolder',
-          marriageDate: '19 May 1883',
-          marriagePlace: 'Heimberg, Bern, Switzerland' 
-        });
-        done();
-      })
-    });
-  })
-  
-  it('good http response but no data', function(done){
-    nockSetup('PPP');
-    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=PPP', function(){
-      genscrape()
-      .on('noData', function(){
-        done();
-      })
-      .on('error', function(e){
-        console.error(e);
-      })
-    });
-  })
-  
-  it('bad http response', function(done){
+  it.only('bad http response', function(done){
     nock('https://familysearch.org')
       .defaultReplyHeaders({
         'content-type': 'application/json'
       })
-      .get('/tree-data/person/MMM/summary')
-      .reply(500)
-      .get('/tree-data/family-members/person/MMM')
+      .get('/platform/tree/persons-with-relationships?persons&person=MMM')
       .reply(500);
     helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=MMM', function(){
       genscrape()
@@ -159,8 +118,6 @@ function nockSetup(personId){
     .defaultReplyHeaders({
       'content-type': 'application/json'
     })
-    .get('/tree-data/person/'+personId+'/summary')
-    .replyWithFile(200, path.join(__dirname, '..', 'responses', 'fs', 'tree-data', personId+'-summary.json'))
-    .get('/tree-data/family-members/person/'+personId)
-    .replyWithFile(200, path.join(__dirname, '..', 'responses', 'fs', 'tree-data', personId+'-family.json'));
+    .get('/platform/tree/persons-with-relationships?persons&person='+personId)
+    .replyWithFile(200, path.join(__dirname, '..', 'responses', 'fs', 'platform', personId+'.json'));
 }

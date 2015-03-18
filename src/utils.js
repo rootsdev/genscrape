@@ -45,4 +45,11 @@ utils.getHashParts = function() {
   return hashParts;
 };
 
+/**
+ * Return an empty object if passed in a null or undefined
+ */
+utils.maybe = function(value) {
+  return value != null ? value : {}; // != null also covers undefined
+};
+
 module.exports = utils;
