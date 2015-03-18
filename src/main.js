@@ -70,5 +70,6 @@ module.exports = genscrape;
 // TODO: find a method that allows us to dynamically include all scrapers
 require('./scrapers/ancestry-ancestor')(register);
 require('./scrapers/ancestry-record')(register);
+require('./scrapers/billiongraves')(register);
 require('./scrapers/fs-record')(register);
 require('./scrapers/fs-ancestor')(register);

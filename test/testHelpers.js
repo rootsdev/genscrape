@@ -1,11 +1,26 @@
 var debug = require('debug')('testHelpers'),
     env = require('jsdom').env,
-    path = require('path'),
-    url = require('url');
+    path = require('path');
     
 var jQuery = require('fs').readFileSync(path.join(__dirname, 'jquery-2.1.3.min.js'));
 
 module.exports = {
+  
+  /**
+   * Requests the url and provides a window object for it
+   */
+  realWindow: function(url, callback){
+    env({
+      url: url,
+      src: [jQuery],
+      done: function(errors, window){
+        debug(errors);
+        GLOBAL.window = window;
+        GLOBAL.$ = window.$;
+        callback(errors, window);
+      }
+    })
+  },
   
   /**
    * Setup a mock window object with
