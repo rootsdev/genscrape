@@ -1,9 +1,6 @@
-var utils = {};
+var _ = require('lodash');
 
-utils.isArray = require('lodash.isarray');
-utils.isFunction = require('lodash.isfunction');
-utils.isString = require('lodash.isstring');
-utils.forEach = require('lodash.foreach');
+var utils = {};
 
 /**
  * Returns an array of strings with [0] being the given names and 
@@ -11,7 +8,7 @@ utils.forEach = require('lodash.foreach');
  * only one family name.
  */
 utils.splitName = function(name) {
-  if(utils.isString(name) && name) {    
+  if(_.isString(name) && name) {    
     return name.split(/\s+(?=\S*$)/);
   } else {
     return ['',''];
@@ -37,7 +34,7 @@ utils.urlPatternToRegex = function(pattern){
 utils.getHashParts = function() {
   var hashParts = {};
   if( window.location.hash ) {
-    this.forEach(window.location.hash.substring(1).split('&'), function(part) {
+    _.forEach(window.location.hash.substring(1).split('&'), function(part) {
       var partPieces = part.split('=');
       hashParts[partPieces[0]] = partPieces[1];
     });

@@ -1,6 +1,6 @@
 var debug = require('debug')('main'),
     EventEmitter2 = require('eventemitter2').EventEmitter2,
-    utils = require('./utils');
+    _ = require('lodash');
 
 /**
  * Main genscrape function.
@@ -15,8 +15,8 @@ var genscrape = function(){
   debug('url', thisUrl);
   
   var match = false;
-  utils.forEach(scrapers, function(scraper){
-    utils.forEach(scraper.urls, function(regex){
+  _.forEach(scrapers, function(scraper){
+    _.forEach(scraper.urls, function(regex){
       debug(regex);
       if(regex.test(thisUrl)){
         debug('match');
@@ -55,7 +55,7 @@ var scrapers = genscrape._scrapers = [];
 var register = genscrape.register = function(urls, scraper){
   // TODO: prevent duplicate registration
   debug('register');
-  if(utils.isArray(urls) && utils.isFunction(scraper)){
+  if(_.isArray(urls) && _.isFunction(scraper)){
     scrapers.push({
       urls: urls,
       scraper: scraper
