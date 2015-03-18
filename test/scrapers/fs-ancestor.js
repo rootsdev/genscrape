@@ -82,7 +82,7 @@ describe('fs ancestor', function(){
     });
   })
   
-  it.only('bad http response', function(done){
+  it('bad http response', function(done){
     nock('https://familysearch.org')
       .defaultReplyHeaders({
         'content-type': 'application/json'
