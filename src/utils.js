@@ -43,6 +43,23 @@ utils.getHashParts = function() {
 };
 
 /**
+ * Return query params as a map
+ */
+utils.getQueryParams = function(){
+  var paramArray = window.location.search.substr(1).split("&");
+  var params = {};
+
+  for ( var i = 0; i < paramArray.length; i++) {
+    if(paramArray[i]){
+      var tempArray = paramArray[i].split("=");
+      params[tempArray[0]] = tempArray[1];
+    }
+  }
+  
+  return params;
+};
+
+/**
  * Return an empty object if passed in a null or undefined
  */
 utils.maybe = function(value) {

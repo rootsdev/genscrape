@@ -3,13 +3,16 @@ var nock = require('nock'),
     expect = require('chai').expect,
     helpers = require('../testHelpers'),
     genscrape = require(path.join(__dirname, '..', '..'));
-
-nock.enableNetConnect('billiongraves.com');
     
 describe('billiongraves', function(){
   
+  this.timeout(5000);
+  
+  before(function(){
+    nock.enableNetConnect('billiongraves.com');
+  });
+  
   it('name and death', function(done){
-    this.timeout(10000);
     helpers.realWindow('http://billiongraves.com/pages/record/LUCINDA-CLARK/216756', function(){
       genscrape()
       .on('data', function(data){
@@ -24,7 +27,6 @@ describe('billiongraves', function(){
   })
   
   it('include birth', function(done){
-    this.timeout(10000);
     helpers.realWindow('http://billiongraves.com/pages/record/JOSEPH-CLARK/245670', function(){
       genscrape()
       .on('data', function(data){

@@ -14,7 +14,9 @@ module.exports = {
       url: url,
       src: [jQuery],
       done: function(errors, window){
-        debug(errors);
+        if(errors){
+          debug(errors);
+        }
         GLOBAL.window = window;
         GLOBAL.$ = window.$;
         callback(errors, window);
@@ -32,7 +34,9 @@ module.exports = {
       url: location,
       src: [jQuery],
       done: function(errors, window){
-        debug(errors);
+        if(errors){
+          debug(errors);
+        }
         GLOBAL.window = window;
         GLOBAL.$ = window.$;
         callback(errors, window);
@@ -50,7 +54,9 @@ module.exports = {
       url: location,
       src: [jQuery],
       done: function(errors, window){
-        debug(errors);
+        if(errors){
+          debug(errors);
+        }
         GLOBAL.window = window;
         GLOBAL.$ = window.$;
         callback(errors, window);

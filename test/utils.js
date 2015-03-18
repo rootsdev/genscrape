@@ -40,4 +40,40 @@ describe('utils', function(){
     });
   })
   
+  describe('getQueryParams', function(){
+    
+    it('no query string', function(){
+      GLOBAL.window = {
+        location: {
+          search: ''
+        }
+      };
+      expect(utils.getQueryParams()).to.deep.equal({});
+    });
+    
+    it('params', function(){
+      GLOBAL.window = {
+        location: {
+          search: '?foo=bar&fizz=buzz'
+        }
+      };
+      expect(utils.getQueryParams()).to.deep.equal({
+        foo: 'bar',
+        fizz: 'buzz'
+      });
+    });
+    
+    it('duplicate params', function(){
+      GLOBAL.window = {
+        location: {
+          search: '?foo=bar&foo=buzz'
+        }
+      };
+      expect(utils.getQueryParams()).to.deep.equal({
+        foo: 'buzz'
+      });
+    });
+    
+  })
+  
 })

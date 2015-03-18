@@ -79,7 +79,7 @@ describe('ancestry-record', function(){
     })
   })
   
-  it('findagrave; other death date', function(done){
+  it('obituary; many relationships', function(done){
     var url = 'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=web-obituary&h=22395809',
         filePath = path.join(__dirname, '..', 'responses', 'ancestry', 'records', 'webobituary-22395809.html');
     helpers.mockDom(url, filePath, function(){
@@ -101,7 +101,7 @@ describe('ancestry-record', function(){
     })
   })
   
-  it('findagrave; other death date', function(done){
+  it('no data', function(done){
     var url = 'http://search.ancestry.com/cgi-bin/sse.dll?nodata',
         filePath = path.join(__dirname, '..', 'responses', 'ancestry', 'records', 'nodata.html');
     helpers.mockDom(url, filePath, function(){
