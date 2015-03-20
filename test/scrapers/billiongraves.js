@@ -6,9 +6,9 @@ var nock = require('nock'),
     
 describe('billiongraves', function(){
   
-  this.timeout(5000);
+  this.timeout(10000);
   
-  before(function(){
+  beforeEach(function(){
     nock.enableNetConnect('billiongraves.com');
   });
   

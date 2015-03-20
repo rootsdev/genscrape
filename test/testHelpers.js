@@ -10,6 +10,7 @@ module.exports = {
    * Requests the url and provides a window object for it
    */
   realWindow: function(url, callback){
+    debug('realWindow', url);
     env({
       url: url,
       src: [jQuery],
@@ -29,6 +30,7 @@ module.exports = {
    * the specified location
    */
   mockWindow: function(location, callback){
+    debug('mockWindow', location);
     env({
       html: '<html></html>',
       url: location,
@@ -49,6 +51,7 @@ module.exports = {
    * HTML at `filePath` with the url of `location`
    */
   mockDom: function(location, filePath, callback){
+    debug('mockDom', location);
     env({
       file: filePath,
       url: location,

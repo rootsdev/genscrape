@@ -75,3 +75,4 @@ require('./scrapers/findagrave')(register);
 require('./scrapers/fs-record')(register);
 require('./scrapers/fs-ancestor')(register);
 require('./scrapers/genealogieonline')(register);
+require('./scrapers/openarch')(register);
