@@ -6,14 +6,10 @@ var nock = require('nock'),
     
 describe('findagrave', function(){
   
-  this.timeout(10000);
-  
-  before(function(){
-    nock.enableNetConnect('findagrave.com');
-  });
-  
   it('simple', function(done){
-    helpers.realWindow('http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=27336072', function(){
+    var url = 'http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=27336072',
+        filePath = path.join(__dirname, '..', 'responses', 'findagrave', '27336072.html');
+    helpers.mockDom(url, filePath, function(){
       genscrape()
       .on('data', function(data){
         expect(data).to.deep.equal({ 

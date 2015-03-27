@@ -7,25 +7,6 @@ var jQuery = require('fs').readFileSync(path.join(__dirname, 'jquery-2.1.3.min.j
 module.exports = {
   
   /**
-   * Requests the url and provides a window object for it
-   */
-  realWindow: function(url, callback){
-    debug('realWindow', url);
-    env({
-      url: url,
-      src: [jQuery],
-      done: function(errors, window){
-        if(errors){
-          debug(errors);
-        }
-        GLOBAL.window = window;
-        GLOBAL.$ = window.$;
-        callback(errors, window);
-      }
-    })
-  },
-  
-  /**
    * Setup a mock window object with
    * the specified location
    */

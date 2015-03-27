@@ -6,14 +6,10 @@ var nock = require('nock'),
     
 describe('genealogieonline', function(){
   
-  this.timeout(10000);
-  
-  before(function(){
-    nock.enableNetConnect('genealogieonline.nl:443');
-  });
-  
   it('simple', function(done){
-    helpers.realWindow('https://www.genealogieonline.nl/en/voorouders-monique-en-jan-vis/I15210.php', function(){
+    var url = 'https://www.genealogieonline.nl/en/voorouders-monique-en-jan-vis/I15210.php',
+        filePath = path.join(__dirname, '..', 'responses', 'genealogieonline', 'I15210.html');
+    helpers.mockDom(url, filePath, function(){
       genscrape()
       .on('data', function(data){
         expect(data).to.deep.equal({ 

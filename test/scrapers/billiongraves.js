@@ -6,14 +6,10 @@ var nock = require('nock'),
     
 describe('billiongraves', function(){
   
-  this.timeout(10000);
-  
-  beforeEach(function(){
-    nock.enableNetConnect('billiongraves.com');
-  });
-  
   it('name and death', function(done){
-    helpers.realWindow('http://billiongraves.com/pages/record/LUCINDA-CLARK/216756', function(){
+    var url = 'http://billiongraves.com/pages/record/LUCINDA-CLARK/216756',
+        filePath = path.join(__dirname, '..', 'responses', 'billiongraves', 'Lucinda.html');
+    helpers.mockDom(url, filePath, function(){
       genscrape()
       .on('data', function(data){
         expect(data).to.deep.equal({ 
@@ -27,7 +23,9 @@ describe('billiongraves', function(){
   })
   
   it('include birth', function(done){
-    helpers.realWindow('http://billiongraves.com/pages/record/JOSEPH-CLARK/245670', function(){
+    var url = 'http://billiongraves.com/pages/record/JOSEPH-CLARK/245670',
+        filePath = path.join(__dirname, '..', 'responses', 'billiongraves', 'Joseph.html');
+    helpers.mockDom(url, filePath, function(){
       genscrape()
       .on('data', function(data){
         expect(data).to.deep.equal({
