@@ -26,6 +26,10 @@ describe.only('findmypast ancestor', function(){
         expect(data.birthPlace).to.equal('Lipinki, Gorlice, Poland');
         expect(data.deathDate).to.equal('1951-03-26');
         expect(data.deathPlace).to.equal('Amsterdam, Montgomery, New York, United States');
+        expect(data.spouseGivenName).to.equal('Mary');
+        expect(data.spouseFamilyName).to.equal('Wojnowski');
+        expect(data.marriageDate).to.equal('1886');
+        expect(data.marriagePlace).to.equal('United States');
         done();
       })
     });

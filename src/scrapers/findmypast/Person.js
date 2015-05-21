@@ -1,4 +1,5 @@
-var debug = require('debug')('findmypast:Person');
+var debug = require('debug')('findmypast:Person'),
+    fmpUtils = require('./utils');
 
 var Person = function(data){
   this.data = data;
@@ -15,7 +16,7 @@ proto.getSurname = function(){
 };
 
 proto.getBirthDate = function(){
-  return getDate(this.data.BirthDate);
+  return fmpUtils.getDate(this.data.BirthDate);
 };
 
 proto.getBirthPlace = function(){
@@ -23,22 +24,11 @@ proto.getBirthPlace = function(){
 };
 
 proto.getDeathDate = function(){
-  return getDate(this.data.DeathDate);
+  return fmpUtils.getDate(this.data.DeathDate);
 };
 
 proto.getDeathPlace = function(){
   return this.data.DeathPlace;
-};
-
-function getDate(fmpDate){
-  debug('getDate:' + fmpDate);
-  if(fmpDate){
-    var stringDate = '' + fmpDate,
-        year = stringDate.substr(0, 4),
-        month = stringDate.substr(4, 2),
-        day = stringDate.substr(6, 2);
-    return year + '-' + month + '-' + day;
-  }
 };
 
 module.exports = Person;
