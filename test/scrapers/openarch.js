@@ -1,5 +1,4 @@
-var nock = require('nock'),
-    path = require('path'),
+var path = require('path'),
     expect = require('chai').expect,
     helpers = require('../testHelpers'),
     genscrape = require(path.join(__dirname, '..', '..'));
