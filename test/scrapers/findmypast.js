@@ -22,6 +22,10 @@ describe.only('findmypast ancestor', function(){
       .on('data', function(data){
         expect(data.givenName).to.equal('Albert John');
         expect(data.familyName).to.equal('Zierak');
+        expect(data.birthDate).to.equal('1860-04-04');
+        expect(data.birthPlace).to.equal('Lipinki, Gorlice, Poland');
+        expect(data.deathDate).to.equal('1951-03-26');
+        expect(data.deathPlace).to.equal('Amsterdam, Montgomery, New York, United States');
         done();
       })
     });

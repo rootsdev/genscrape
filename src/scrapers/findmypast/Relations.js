@@ -1,4 +1,4 @@
-var debug = require('debug')('findmypast:Person'),
+var debug = require('debug')('findmypast:Relations'),
     Person = require('./Person'),
     _ = require('lodash');
 
@@ -13,6 +13,10 @@ Relations.prototype.getPersonData = function(personId){
   if(person){    
     personData.givenName = person.getGivenName();
     personData.familyName = person.getSurname();
+    personData.birthDate = person.getBirthDate();
+    personData.birthPlace = person.getBirthPlace();
+    personData.deathDate = person.getDeathDate();
+    personData.deathPlace = person.getDeathPlace();
   }
   
   return personData;
