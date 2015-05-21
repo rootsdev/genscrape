@@ -30,12 +30,16 @@ describe.only('findmypast ancestor', function(){
         expect(data.spouseFamilyName).to.equal('Wojnowski');
         expect(data.marriageDate).to.equal('1886');
         expect(data.marriagePlace).to.equal('United States');
+        expect(data.fatherGivenName).to.equal('Andrew');
+        expect(data.fatherFamilyName).to.equal('Zierak');
+        expect(data.motherGivenName).to.equal('Katherine');
+        expect(data.motherFamilyName).to.equal('Zierak');
         done();
-      })
+      });
     });
-  })
+  });
   
-})
+});
 
 /**
  * Configure nock to respond properly to requests

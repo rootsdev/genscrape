@@ -24,27 +24,58 @@ Relations.prototype.getPersonData = function(personId){
     personData.deathDate = person.getDeathDate();
     personData.deathPlace = person.getDeathPlace();
     
-    // Spouse and Marriage
-    if(this.data.Relations && this.data.Relations.SpousalFamilys){
     
-      var spouseFamilyId = this.data.Relations.SpousalFamilys[0];
-      var spouseFamily = this.getFamily(spouseFamilyId);
+    if(this.data.Relations) {
       
-      debug('spouseFamilyId:' + spouseFamilyId);
+      // Spouse and Marriage
+      if(this.data.Relations.SpousalFamilys){
       
-      if(spouseFamily){
+        var spouseFamilyId = this.data.Relations.SpousalFamilys[0];
+        var spouseFamily = this.getFamily(spouseFamilyId);
         
-        personData.marriageDate = spouseFamily.getMarriageDate();
-        personData.marriagePlace = spouseFamily.getMarriagePlace();
+        debug('spouseFamilyId:' + spouseFamilyId);
         
-        var spouseId = spouseFamily.getSpouseId(personId),
-            spouse = this.getPerson(spouseId);
+        if(spouseFamily){
+          
+          personData.marriageDate = spouseFamily.getMarriageDate();
+          personData.marriagePlace = spouseFamily.getMarriagePlace();
+          
+          var spouseId = spouseFamily.getSpouseId(personId),
+              spouse = this.getPerson(spouseId);
+              
+          if(spouse){
             
-        if(spouse){
+            personData.spouseGivenName = spouse.getGivenName();
+            personData.spouseFamilyName = spouse.getSurname();
+            
+          }
+        }
+      }
+      
+      // Parents
+      if(this.data.Relations.DirectFamilys){
+        
+        var parentsFamilyId = this.data.Relations.DirectFamilys[0],
+            parentsFamily = this.getFamily(parentsFamilyId);
+           
+        debug('parentsFamilyId:' + parentsFamilyId);
+            
+        if(parentsFamily){
           
-          personData.spouseGivenName = spouse.getGivenName();
-          personData.spouseFamilyName = spouse.getSurname();
+          var motherId = parentsFamily.getMotherId(),
+              fatherId = parentsFamily.getFatherId(),
+              mother = this.getPerson(motherId),
+              father = this.getPerson(fatherId);
+              
+          if(mother){
+            personData.motherGivenName = mother.getGivenName();
+            personData.motherFamilyName = mother.getSurname();
+          }
           
+          if(father){
+            personData.fatherGivenName = father.getGivenName();
+            personData.fatherFamilyName = father.getSurname();
+          }
         }
       }
     }
