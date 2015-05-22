@@ -1,5 +1,4 @@
-var debug = require('debug')('findmypast:Person'),
-    fmpUtils = require('./utils');
+var fmpUtils = require('./utils');
 
 var Person = function(data){
   this.data = data;

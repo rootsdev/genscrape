@@ -79,6 +79,42 @@ describe.only('findmypast ancestor', function(){
     });
   });
   
+  it('should work on fmp.com domain', function(done){
+    helpers.mockWindow('http://tree.findmypast.com/', function(){
+      genscrape()
+      .on('noMatch', function(){
+        throw new Error('No URL match');
+      })
+      .on('noData', function(){
+        done();
+      });
+    });
+  });
+  
+  it('should work on fmp.ie domain', function(done){
+    helpers.mockWindow('http://tree.findmypast.ie/', function(){
+      genscrape()
+      .on('noMatch', function(){
+        throw new Error('No URL match');
+      })
+      .on('noData', function(){
+        done();
+      });
+    });
+  });
+  
+  it('should work on fmp.com.au domain', function(done){
+    helpers.mockWindow('http://tree.findmypast.com.au/', function(){
+      genscrape()
+      .on('noMatch', function(){
+        throw new Error('No URL match');
+      })
+      .on('noData', function(){
+        done();
+      });
+    });
+  });
+  
 });
 
 /**

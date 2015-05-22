@@ -72,7 +72,7 @@ require('./scrapers/ancestry-ancestor')(register);
 require('./scrapers/ancestry-record')(register);
 require('./scrapers/billiongraves')(register);
 require('./scrapers/findagrave')(register);
-require('./scrapers/findmypast')(register);
+require('./scrapers/findmypast-tree')(register);
 require('./scrapers/fs-record')(register);
 require('./scrapers/fs-ancestor')(register);
 require('./scrapers/genealogieonline')(register);

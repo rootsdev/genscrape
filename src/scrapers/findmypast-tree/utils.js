@@ -1,6 +1,4 @@
-var debug = require('debug')('findmpast:utils');
-    
-    
+var debug = require('debug')('findmpast-tree:utils');
 var utils = module.exports = {};
 
 utils.getDate = function(dateInt){

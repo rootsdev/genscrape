@@ -1,4 +1,4 @@
-var debug = require('debug')('findmypast:Relations'),
+var debug = require('debug')('findmypast-tree:Relations'),
     Person = require('./Person'),
     Family = require('./Family'),
     _ = require('lodash');

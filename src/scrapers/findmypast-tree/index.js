@@ -1,5 +1,4 @@
-var debug = require('debug')('findmypast'),
-    utils = require('../../utils'),
+var debug = require('debug')('findmypast-tree'),
     Relations = require('./Relations');
 
 var urls = [
