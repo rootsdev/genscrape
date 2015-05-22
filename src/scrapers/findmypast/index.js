@@ -3,7 +3,7 @@ var debug = require('debug')('findmypast'),
     Relations = require('./Relations');
 
 var urls = [
-  /http:\/\/tree\.findmypast\.(co\.uk|com|ie|com\.au)\/#\/trees\/[^/]+\/[^/]+\/profile/
+  /^http:\/\/tree\.findmypast\.(co\.uk|com|ie|com\.au)/
 ];
 
 module.exports = function(register){
@@ -12,22 +12,42 @@ module.exports = function(register){
 
 function run(emitter){
   debug('run');
+  window.onhashchange = function(){
+    processHash(emitter);
+  };
+  processHash(emitter);
+}
+
+function processHash(emitter){
+  debug('processHash');
   
   var urlParts = window.location.hash.split('/'),
       treeId = urlParts[2],
       personId = urlParts[3];
+      
+   debug('hash: ' + window.location.hash);
+   debug('treeId: ' + treeId);
+   debug('personId: ' + personId);
+      
+  if(parseInt(personId, 10)){
+    getRelations(treeId, personId).done(function(relations){
+      if(relations && relations.Object){
+        debug('relations data');
+        var personData = new Relations(relations.Object).getPersonData(personId);
+        debug('person data', personData);
+        emitter.emit('data', personData);
+      } else {
+        emitter.emit('noData');
+        debug('no relation Object');
+      }
+    });
+  }
   
-  getRelations(treeId, personId).done(function(relations){
-    if(relations && relations.Object){
-      debug('relations data');
-      var personData = new Relations(relations.Object).getPersonData(personId);
-      debug('person data', personData);
-      emitter.emit('data', personData);
-    } else {
-      debug('no relation Object');
-    }
-  });
-
+  else {
+    emitter.emit('noData');
+    debug('not focused on a person');
+  }
+  
 }
 
 // Basic profile

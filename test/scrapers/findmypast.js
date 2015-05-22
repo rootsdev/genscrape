@@ -9,6 +9,7 @@ describe.only('findmypast ancestor', function(){
   it('process data', function(done){
     
     nockSetup('1079720865');
+    nockSetup('1079720864');
       
     helpers.mockWindow('http://tree.findmypast.co.uk/#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/1079720865/profile', function(){
       
@@ -17,24 +18,63 @@ describe.only('findmypast ancestor', function(){
         
       genscrape()
       .on('noData', function(){
+        noDataEvents++;
         
+        if(noDataEvents === 1){
+          window.location.hash = '#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/1079720864/media';
+          window.onhashchange();
+        }
       })
       .on('data', function(data){
-        expect(data.givenName).to.equal('Albert John');
-        expect(data.familyName).to.equal('Zierak');
-        expect(data.birthDate).to.equal('1860-04-04');
-        expect(data.birthPlace).to.equal('Lipinki, Gorlice, Poland');
-        expect(data.deathDate).to.equal('1951-03-26');
-        expect(data.deathPlace).to.equal('Amsterdam, Montgomery, New York, United States');
-        expect(data.spouseGivenName).to.equal('Mary');
-        expect(data.spouseFamilyName).to.equal('Wojnowski');
-        expect(data.marriageDate).to.equal('1886');
-        expect(data.marriagePlace).to.equal('United States');
-        expect(data.fatherGivenName).to.equal('Andrew');
-        expect(data.fatherFamilyName).to.equal('Zierak');
-        expect(data.motherGivenName).to.equal('Katherine');
-        expect(data.motherFamilyName).to.equal('Zierak');
-        done();
+        dataEvents++;
+        
+        if(dataEvents === 1){
+          expect(noDataEvents).to.equal(0);
+          expect(data).to.deep.equal({ 
+            givenName: 'Albert John',
+            familyName: 'Zierak',
+            birthDate: '1860-04-04',
+            birthPlace: 'Lipinki, Gorlice, Poland',
+            deathDate: '1951-03-26',
+            deathPlace: 'Amsterdam, Montgomery, New York, United States',
+            marriageDate: '1886',
+            marriagePlace: 'United States',
+            spouseGivenName: 'Mary',
+            spouseFamilyName: 'Wojnowski',
+            motherGivenName: 'Katherine',
+            motherFamilyName: 'Zierak',
+            fatherGivenName: 'Andrew',
+            fatherFamilyName: 'Zierak' 
+          });
+          window.location.hash = '#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/all-hints';
+          window.onhashchange();
+        }
+        
+        else if(dataEvents === 2){
+          expect(noDataEvents).to.equal(1);
+          expect(data).to.deep.equal({ 
+            givenName: 'Helen Gertrude',
+            familyName: 'Zierak',
+            birthPlace: 'Amsterdam, Montgomery, New York, United States',
+            birthDate: '1896-02-07',
+            deathPlace: 'Tacoma, Pierce, Washington, United States',
+            deathDate: '1970-11-24',
+            fatherGivenName: 'Albert John',
+            fatherFamilyName: 'Zierak',
+            motherGivenName: 'Mary',
+            motherFamilyName: 'Wojnowski',
+            spouseGivenName: 'Theodore',
+            spouseFamilyName: 'Yurkiewicz',
+            marriageDate: '1918-06-18',
+            marriagePlace: 'Amsterdam, Montgomery, New York, United States'
+          });
+          done();
+        }
+        
+        else {
+          expect(true).to.be.false;
+        }
+
       });
     });
   });
