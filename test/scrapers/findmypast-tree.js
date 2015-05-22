@@ -4,7 +4,7 @@ var nock = require('nock'),
     helpers = require('../testHelpers'),
     genscrape = require(path.join(__dirname, '..', '..'));
 
-describe.only('findmypast ancestor', function(){
+describe('findmypast tree', function(){
   
   it('process data', function(done){
     

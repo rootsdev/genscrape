@@ -66,4 +66,13 @@ utils.maybe = function(value) {
   return value != null ? value : {}; // != null also covers undefined
 };
 
+/**
+ * Capitalizes a string according to title case (first letter of each word)
+ */
+utils.toTitleCase = function(str){
+  return str.replace(/\w\S*/g, function(txt){
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+};
+
 module.exports = utils;
