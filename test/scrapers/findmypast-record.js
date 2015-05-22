@@ -3,7 +3,7 @@ var path = require('path'),
     helpers = require('../testHelpers'),
     genscrape = require(path.join(__dirname, '..', '..'));
     
-describe.only('findmypast-record', function(){
+describe('findmypast-record', function(){
 
   it('1920 US census', function(done){
     var url = 'http://search.findmypast.co.uk/record?id=USC/1920/004966622/00929/002&_ga=1.106750979.16848375.1432241988',
