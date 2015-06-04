@@ -38,10 +38,8 @@ function run(emitter) {
   
   personData.fatherGivenName = getFatherGivenName(dataFields);
   personData.motherGivenName = getMotherGivenName(dataFields);
-  
-  // Remove falsy values
-  // http://stackoverflow.com/a/26295351/879121
-  personData = _.pick(personData, _.identity);
+
+  personData = utils.clean(personData);
   
   debug('data', personData);
   emitter.emit('data', personData);

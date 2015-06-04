@@ -75,4 +75,12 @@ utils.toTitleCase = function(str){
   });
 };
 
+/**
+ * Remove falsy values
+ * http://stackoverflow.com/a/26295351/879121
+ */
+utils.clean = function(obj){
+  return _.pick(obj, _.identity);
+};
+
 module.exports = utils;

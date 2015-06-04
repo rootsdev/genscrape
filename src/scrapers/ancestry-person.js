@@ -68,47 +68,75 @@ function process(emitter, $dom){
   $dom.find('#factsSection .LifeEvent').each(function(){
     var $card = $(this),
         name = $card.find('.cardSubtitle').text().toLowerCase().trim(),
-        value = $card.find('.cardTitle').text().trim();
+        value = $card.find('.cardTitle');
     facts[name] = value;
   });
   
-  debug('facts');
-  debug(facts);
-  
   // Name
   
-  var nameParts = utils.splitName(facts.name);
+  var nameParts = utils.splitName(facts.name.text().trim());
   personData.givenName = nameParts[0];
   personData.familyName = nameParts[1];
   
   // Vitals
   
   if(facts.birth){
-    var birthParts = processEvent(facts.birth);
-    personData.birthDate = birthParts[0];
-    personData.birthPlace = birthParts[1];
+    var birth = processEvent(facts.birth);
+    personData.birthDate = birth.date;
+    personData.birthPlace = birth.place;
   }
   
   if(facts.death){
-    var deathParts = processEvent(facts.death);
-    personData.deathDate = deathParts[0];
-    personData.deathPlace = deathParts[1];
+    var death = processEvent(facts.death);
+    personData.deathDate = death.date;
+    personData.deathPlace = death.place;
   }
   
   // Relationships
   
-  emitter.emit('data', personData);
+  var $headers = $dom.find('#familySection').children('h3'),
+      $parents = $headers.first(),
+      $father = $parents.next(),
+      $mother = $father.next();
+  
+  if(!$father.is('.cardEmpty')){
+    var fatherNameParts = getNameParts($father);
+    personData.fatherGivenName = fatherNameParts[0];
+    personData.fatherFamilyName = fatherNameParts[1];
+  }
+  
+  if(!$mother.is('.cardEmpty')){
+    var motherNameParts = getNameParts($mother);
+    personData.motherGivenName = motherNameParts[0];
+    personData.motherFamilyName = motherNameParts[1];
+  }
+  
+  var $spouse = $headers.eq(1).next();
+  if(!$spouse.is('.cardEmpty')){
+    var spouseNameParts = getNameParts($spouse);
+    personData.spouseGivenName = spouseNameParts[0];
+    personData.spouseFamilyName = spouseNameParts[1];
+  }
+  
+  // TODO: get marriage event that matches this spouse
+  
+  emitter.emit('data', utils.clean(personData));
+}
+
+/**
+ * Get the name parts from a relative's card
+ */
+function getNameParts($card){
+  return utils.splitName($card.find('.userCardTitle').text().trim());
 }
 
 /**
  * Split the event string on the • which separates the
  * date from the place. Also uncapitalize month abbreviation.
  */
-function processEvent(event){
-  var parts = event.split(' • ');
-  
-  // For some reason they capitalize the month abbreviation :|
-  parts[0] = utils.toTitleCase(parts[0]);
-  
-  return parts;
+function processEvent($event){
+  return {
+    date: utils.toTitleCase($event.find('.factItemDate').text().trim()),
+    place: $event.find('.factItemLocation').text().trim()
+  };
 }
