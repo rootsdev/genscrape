@@ -78,9 +78,9 @@ describe('fs ancestor', function(){
           expect(true).to.be.false;
         }
         
-      })
+      });
     });
-  })
+  });
   
   it('bad http response', function(done){
     nock('https://familysearch.org')
@@ -94,20 +94,20 @@ describe('fs ancestor', function(){
       .on('error', function(e){
         expect(e).to.exist;
         done();
-      })
+      });
     });
-  })
+  });
   
   it('ancestor view with no data', function(done){
     helpers.mockWindow('https://familysearch.org/tree/#view=ancestor', function(){
       genscrape()
       .on('noData', function(){
         done();
-      })
+      });
     });
-  })
+  });
   
-})
+});
 
 /**
  * Configure nock to respond properly to requests

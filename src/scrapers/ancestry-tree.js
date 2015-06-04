@@ -1,4 +1,4 @@
-var debug = require('debug')('ancestry-ancestor'),
+var debug = require('debug')('ancestry-tree'),
     utils = require('../utils');
 
 var urls = [

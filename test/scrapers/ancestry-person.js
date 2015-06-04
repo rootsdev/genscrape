@@ -1,14 +1,15 @@
-var path = require('path'),
+var nock = require('nock'),
+    path = require('path'),
     expect = require('chai').expect,
     helpers = require('../testHelpers'),
     genscrape = require(path.join(__dirname, '..', '..'));
-    
-describe('ancestry-ancestor', function(){
 
-  it('works', function(done){
-    var url = 'http://trees.ancestry.com/tree/70025770/person/30206952907',
-        filePath = path.join(__dirname, '..', 'responses', 'ancestry', 'tree', '70025770-30206952907.html');
-    helpers.mockDom(url, filePath, function(){
+describe.only('ancestry person', function(){
+  
+  nockSetup('70025770', '30206952907');
+  
+  it('basic', function(done){
+    helpers.mockWindow('http://person.ancestry.com/tree/70025770/person/30206952907', function(){
       genscrape().on('data', function(data){
         expect(data).to.deep.equal({ 
           givenName: 'Theodore',
@@ -26,7 +27,20 @@ describe('ancestry-ancestor', function(){
         });
         done();
       });
-    })
-  })
+    });
+  });
   
-})
+});
+
+/**
+ * Configure nock to respond properly to requests
+ * for the given person with test data
+ */
+function nockSetup(treeId, personId){
+  nock('http://person.ancestry.com')
+    .defaultReplyHeaders({
+      'content-type': 'application/json'
+    })
+    .get('/tree/' + treeId + '/person/' + personId + '/content/factsbody')
+    .replyWithFile(200, path.join(__dirname, '..', 'responses', 'ancestry', 'person', treeId + '-' + personId + '.json'));
+}
