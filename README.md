@@ -44,6 +44,12 @@ In cases of one-page apps such as the FamilySearch Family Tree and the findmypas
 trees, you may see multiple `noData` and `data` events as the user browses through
 the tree.
 
+#### error
+
+The `error` event is fired when something unexpected occurs while a scraper is
+processing, such as a failed AJAX call. There is no standardized format for the
+errors yet.
+
 ## Supported Sites
 
 * [Ancestry.com](http://ancestry.com), both historical records and tree profiles.
