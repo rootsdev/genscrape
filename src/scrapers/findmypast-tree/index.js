@@ -68,7 +68,7 @@ function api(treeId, url){
     type: 'GET',
     url: '/api/proxy/get?url=' + encodeURIComponent(url),
     headers: {
-      'Family-Tree-Ref': '863a418d-78de-43e6-9af6-c9ce320a86ef'
+      'Family-Tree-Ref': treeId
     }
   }).fail(function(e){
     debug('api error: ' + url);
