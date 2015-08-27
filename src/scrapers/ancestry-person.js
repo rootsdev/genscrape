@@ -94,10 +94,10 @@ function process(emitter, $dom){
   
   // Relationships
   
-  var $headers = $dom.find('#familySection').children('h3'),
-      $parents = $headers.first(),
-      $father = $parents.next(),
-      $mother = $father.next();
+  var $lists = $dom.find('#familySection > .researchList'),
+      $parents = $lists.first().find('.card'),
+      $father = $parents.first(),
+      $mother = $parents.eq(1);
   
   if(!$father.is('.cardEmpty')){
     var fatherNameParts = getNameParts($father);
@@ -111,7 +111,7 @@ function process(emitter, $dom){
     personData.motherFamilyName = motherNameParts[1];
   }
   
-  var $spouse = $headers.eq(1).next();
+  var $spouse = $lists.eq(1).find('.card').first();
   if(!$spouse.is('.cardEmpty')){
     var spouseNameParts = getNameParts($spouse);
     personData.spouseGivenName = spouseNameParts[0];

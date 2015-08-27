@@ -36,8 +36,6 @@ describe('ancestry person', function(){
         expect(data).to.deep.equal({ 
           givenName: 'Catharina',
           familyName: 'Czosnikoska',
-          birthDate: '1818',
-          deathPlace: 'Poland',
           fatherGivenName: 'Joannes',
           fatherFamilyName: 'Czosnikoska',
           motherGivenName: 'Xenia',
