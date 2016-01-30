@@ -21,9 +21,7 @@ utils.splitName = function(name) {
  * will have a . prepended to it.
  */
 utils.urlPatternToRegex = function(pattern){
-  pattern = pattern.replace(/\//g, '\/');
-  pattern = pattern.replace(/\./g, '\.');
-  pattern = pattern.replace(/\-/g, '\-');
+  pattern = pattern.replace(/\./g, '\\.');
   pattern = pattern.replace(/\*/g, '.*');
   return new RegExp(pattern);
 };
