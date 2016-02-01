@@ -80,3 +80,4 @@ require('./scrapers/fs-ancestor')(register);
 require('./scrapers/genealogieonline')(register);
 require('./scrapers/openarch')(register);
 require('./scrapers/werelate')(register);
+require('./scrapers/wikitree-person')(register);
