@@ -60,3 +60,4 @@ errors yet.
 * [Genealogie Online](https://www.genealogieonline.nl)
 * [Open Archives](https://www.openarch.nl)
 * [WeRelate](http://www.werelate.org/)
+* [WikiTree](http://www.wikitree.com/) person profiles
