@@ -1,10 +1,10 @@
 var nock = require('nock'),
     path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
 
-describe('findmypast tree', function(){
+describe.skip('findmypast tree', function(){
   
   it('process data', function(done){
     

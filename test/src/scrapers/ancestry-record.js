@@ -1,9 +1,9 @@
 var path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
     
-describe('ancestry-record', function(){
+describe.skip('ancestry-record', function(){
 
   it('1880 census; parents names', function(done){
     var url = 'http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&h=2376696&indiv=try&o_vc=Record:OtherRecord&rhSource=7884',

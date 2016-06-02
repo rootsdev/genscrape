@@ -1,9 +1,9 @@
 var path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
     
-describe('genealogieonline', function(){
+describe.skip('genealogieonline', function(){
   
   it('simple', function(done){
     var url = 'https://www.genealogieonline.nl/en/voorouders-monique-en-jan-vis/I15210.php',

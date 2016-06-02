@@ -1,9 +1,9 @@
 var path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
     
-describe('werelate', function(){
+describe.skip('werelate', function(){
   
   it('works', function(done){
     

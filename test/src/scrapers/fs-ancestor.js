@@ -1,10 +1,10 @@
 var nock = require('nock'),
     path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
 
-describe('fs ancestor', function(){
+describe.skip('fs ancestor', function(){
   
   it('process data and respond to hash changes', function(done){
     

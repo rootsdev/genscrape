@@ -1,9 +1,9 @@
 var path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
     
-describe('findagrave', function(){
+describe.skip('findagrave', function(){
   
   it('simple', function(done){
     var url = 'http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=27336072',

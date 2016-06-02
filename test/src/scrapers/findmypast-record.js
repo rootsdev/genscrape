@@ -1,9 +1,9 @@
 var path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
     
-describe('findmypast-record', function(){
+describe.skip('findmypast-record', function(){
 
   it('1920 US census', function(done){
     var url = 'http://search.findmypast.co.uk/record?id=USC/1920/004966622/00929/002&_ga=1.106750979.16848375.1432241988',

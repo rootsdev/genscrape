@@ -1,10 +1,10 @@
 var nock = require('nock'),
     path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
 
-describe('ancestry person', function(){
+describe.skip('ancestry person', function(){
 
   it('basic', function(done){
     nockSetup('70025770', '30206952907');

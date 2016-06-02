@@ -1,10 +1,10 @@
 var nock = require('nock'),
     path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
 
-describe('fs record', function(){
+describe.skip('fs record', function(){
   
   it('process record data', function(done){
     nockSetupPal('MZ87-RG9');

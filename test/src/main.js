@@ -1,7 +1,6 @@
-var path = require('path'),
-    expect = require('chai').expect,
-    helpers = require('./testHelpers'),
-    genscrape = require(path.join(__dirname, '..'));
+var expect = require('chai').expect,
+    helpers = require('../testHelpers'),
+    genscrape = require('../../');
 
     
 describe('main', function(){
@@ -11,8 +10,8 @@ describe('main', function(){
       genscrape().on('noMatch', function(){
         expect(true).to.be.true;
         done();
-      })
+      });
     });
-  })
+  });
   
-})
+});

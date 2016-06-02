@@ -1,9 +1,9 @@
 var path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
 
-describe('wikitree person', function(){
+describe.skip('wikitree person', function(){
 
     it('basic male', function(done) {
         var url = 'http://www.wikitree.com/wiki/Roosevelt-18',

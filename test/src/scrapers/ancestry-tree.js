@@ -1,9 +1,9 @@
 var path = require('path'),
     expect = require('chai').expect,
-    helpers = require('../testHelpers'),
-    genscrape = require(path.join(__dirname, '..', '..'));
+    helpers = require('../../testHelpers'),
+    genscrape = require('../../../');
     
-describe('ancestry-tree', function(){
+describe.skip('ancestry-tree', function(){
 
   it('works', function(done){
     var url = 'http://trees.ancestry.com/tree/70025770/person/30206952907',
