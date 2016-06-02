@@ -73,4 +73,27 @@ utils.toTitleCase = function(str){
   });
 };
 
+/**
+ * Simple JSON AJAX without jQuery
+ * http://youmightnotneedjquery.com/#json
+ * 
+ * @param {String} url
+ * @param {Function} callback - function(error, data)
+ */
+utils.getJSON = function(url, callback){
+  var request = new window.XMLHttpRequest();
+  request.open('GET', url);
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      callback(undefined, JSON.parse(request.responseText));
+    } else {
+      callback(new Error(request.statusText));
+    }
+  };
+  request.onerror = function() {
+    callback(new Error(request.statusText));
+  };
+  request.send();
+};
+
 module.exports = utils;

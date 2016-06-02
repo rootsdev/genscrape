@@ -1,4 +1,4 @@
-var debug = require('debug')('main'),
+var debug = require('debug')('genscrape:main'),
     EventEmitter2 = require('eventemitter2').EventEmitter2;
 
 /**
@@ -69,16 +69,16 @@ module.exports = genscrape;
 // Include scrapers. This is primarily done so that
 // browserify can find and include them.
 // TODO: find a method that allows us to dynamically include all scrapers
-require('./scrapers/ancestry-tree')(register);
-require('./scrapers/ancestry-record')(register);
-require('./scrapers/ancestry-person')(register);
-require('./scrapers/billiongraves')(register);
+//require('./scrapers/ancestry-tree')(register);
+//require('./scrapers/ancestry-record')(register);
+//require('./scrapers/ancestry-person')(register);
+//require('./scrapers/billiongraves')(register);
 require('./scrapers/familysearch-record')(register);
-require('./scrapers/familysearch-ancestor')(register);
-require('./scrapers/findagrave')(register);
-require('./scrapers/findmypast-record')(register);
-require('./scrapers/findmypast-tree')(register);
-require('./scrapers/genealogieonline')(register);
-require('./scrapers/openarch')(register);
-require('./scrapers/werelate')(register);
-require('./scrapers/wikitree-person')(register);
+//require('./scrapers/familysearch-ancestor')(register);
+//require('./scrapers/findagrave')(register);
+//require('./scrapers/findmypast-record')(register);
+//require('./scrapers/findmypast-tree')(register);
+//require('./scrapers/genealogieonline')(register);
+//require('./scrapers/openarch')(register);
+//require('./scrapers/werelate')(register);
+//require('./scrapers/wikitree-person')(register);

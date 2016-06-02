@@ -5,6 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "test": "mocha --recursive",
+    "test:debug": "DEBUG=genscrape:* npm test",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
     "build": "browserify src/main.js -s genscrape | uglifyjs > genscrape.js"
@@ -25,7 +26,7 @@
   "dependencies": {
     "debug": "2.1.2",
     "eventemitter2": "0.4.14",
-    "lodash": "3.5.0"
+    "gedcomx-js": "^1.0.1"
   },
   "devDependencies": {
     "browserify": "9.0.3",
