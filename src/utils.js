@@ -1,5 +1,3 @@
-var _ = require('lodash');
-
 var utils = {};
 
 /**
@@ -8,7 +6,7 @@ var utils = {};
  * only one family name.
  */
 utils.splitName = function(name) {
-  if(_.isString(name) && name) {    
+  if(typeof name === 'string' && name) {    
     return name.split(/\s+(?=\S*$)/);
   } else {
     return ['',''];
@@ -34,7 +32,7 @@ utils.urlPatternToRegex = function(pattern){
 utils.getHashParts = function() {
   var hashParts = {};
   if( window.location.hash ) {
-    _.forEach(window.location.hash.substring(1).split('&'), function(part) {
+    window.location.hash.substring(1).split('&').forEach(function(part) {
       var partPieces = part.split('=');
       hashParts[partPieces[0]] = partPieces[1];
     });
@@ -73,14 +71,6 @@ utils.toTitleCase = function(str){
   return str.replace(/\w\S*/g, function(txt){
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
-};
-
-/**
- * Remove falsy values
- * http://stackoverflow.com/a/26295351/879121
- */
-utils.clean = function(obj){
-  return _.pick(obj, _.identity);
 };
 
 module.exports = utils;

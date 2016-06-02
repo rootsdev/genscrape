@@ -1,6 +1,5 @@
 var debug = require('debug')('main'),
-    EventEmitter2 = require('eventemitter2').EventEmitter2,
-    _ = require('lodash');
+    EventEmitter2 = require('eventemitter2').EventEmitter2;
 
 /**
  * Main genscrape function.
@@ -14,26 +13,28 @@ var genscrape = function(){
   var thisUrl = window.location.href;
   debug('url', thisUrl);
   
-  var match = false;
-  _.forEach(scrapers, function(scraper){
-    _.forEach(scraper.urls, function(regex){
+  // Loop through all registered scrapers
+  var i, j, scraper, regex, match = false;
+  for(i = 0; i < scrapers.length && !match; i++){
+    scraper = scrapers[i];
+    
+    // Loop through all url regex matchers for this scraper
+    for(j = 0; j < scraper.urls.length && !match; j++){
+      regex = scraper.urls[j];
       debug(regex);
+      
+      // We have a match
       if(regex.test(thisUrl)){
         debug('match');
         setTimeout(function(){
           scraper.scraper(emitter);
-        })
-        // Short-circuit on match
-        match = true;
-        return false;
+        });
+        match = true; // For short-circuiting the match loops
       }
-    });
-    // Short-circuit on match
-    if(match) return false;
-  });
+    }
+  }
   
-  // Nothing matched. Return basic EventEmitter
-  // that will send a 'noMatch' event.
+  // Nothing matched. Send a 'noMatch' event.
   if(!match){
     debug('no match');
     setTimeout(function(){
@@ -55,7 +56,7 @@ var scrapers = genscrape._scrapers = [];
 var register = genscrape.register = function(urls, scraper){
   // TODO: prevent duplicate registration
   debug('register');
-  if(_.isArray(urls) && _.isFunction(scraper)){
+  if(Array.isArray(urls) && typeof scraper === 'function'){
     scrapers.push({
       urls: urls,
       scraper: scraper
@@ -72,11 +73,11 @@ require('./scrapers/ancestry-tree')(register);
 require('./scrapers/ancestry-record')(register);
 require('./scrapers/ancestry-person')(register);
 require('./scrapers/billiongraves')(register);
+require('./scrapers/familysearch-record')(register);
+require('./scrapers/familysearch-ancestor')(register);
 require('./scrapers/findagrave')(register);
 require('./scrapers/findmypast-record')(register);
 require('./scrapers/findmypast-tree')(register);
-require('./scrapers/fs-record')(register);
-require('./scrapers/fs-ancestor')(register);
 require('./scrapers/genealogieonline')(register);
 require('./scrapers/openarch')(register);
 require('./scrapers/werelate')(register);
