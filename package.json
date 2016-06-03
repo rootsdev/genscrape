@@ -8,8 +8,7 @@
     "test:record": "GENSCRAPE_RECORDING=record npm test",
     "test:debug": "DEBUG=genscrape:* npm test",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
-    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
-    "build": "browserify src/main.js -s genscrape | uglifyjs > genscrape.js"
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -25,18 +24,16 @@
   },
   "homepage": "https://github.com/rootsdev/genscrape",
   "dependencies": {
-    "debug": "2.1.2",
-    "eventemitter2": "0.4.14",
-    "gedcomx-js": "^1.0.1"
+    "debug": "2.2.0",
+    "eventemitter2": "1.0.3",
+    "gedcomx-js": "1.0.1"
   },
   "devDependencies": {
-    "browserify": "9.0.3",
-    "chai": "2.1.1",
-    "coveralls": "2.11.2",
-    "istanbul": "0.3.7",
-    "jsdom": "3.1.2",
-    "mocha": "2.1.0",
-    "nock": "1.1.0",
-    "uglify-js": "2.4.19"
+    "chai": "3.5.0",
+    "coveralls": "2.11.9",
+    "istanbul": "0.4.3",
+    "jsdom": "9.2.1",
+    "mocha": "2.5.3",
+    "nock": "8.0.0"
   }
 }
