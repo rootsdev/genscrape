@@ -93,8 +93,8 @@ utils.getJSON = function(url, callback){
       callback(new Error(request.statusText));
     }
   };
-  request.onerror = function() {
-    callback(new Error(request.statusText));
+  request.onerror = function(e) {
+    callback(new Error('Network error'));
   };
   request.send();
 };

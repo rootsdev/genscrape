@@ -74,7 +74,7 @@ module.exports = genscrape;
 //require('./scrapers/ancestry-person')(register);
 //require('./scrapers/billiongraves')(register);
 require('./scrapers/familysearch-record')(register);
-//require('./scrapers/familysearch-ancestor')(register);
+require('./scrapers/familysearch-ancestor')(register);
 //require('./scrapers/findagrave')(register);
 //require('./scrapers/findmypast-record')(register);
 //require('./scrapers/findmypast-tree')(register);

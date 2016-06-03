@@ -1,5 +1,7 @@
 var debug = require('debug')('testHelpers'),
-    env = require('jsdom').env;
+    env = require('jsdom').env,
+    fs = require('fs'),
+    expect = require('chai').expect;
     
 module.exports = {
   
@@ -39,6 +41,32 @@ module.exports = {
         callback(errors, window);
       }
     });
-  }
+  },
   
+  /**
+   * Save the output if recording or compare the output if we're not recording
+   * 
+   * @param {GedcomX} output- The output of genscrape for the test that will
+   * be recorded or compared to a previous recording.
+   * @param {String} path - The location of the recording.
+   * @returns {Error} - Returns an error, if there is one
+   */
+  compareOrRecordOutput: function(output, path){
+    debug('compareOrRecordOutput');
+    try {
+      
+      // If we're recording, save the output
+      if(process.env.GENSCRAPE_RECORDING){
+        debug(`recording ${path}`);
+        fs.writeFileSync(path, JSON.stringify(output.toJSON(), null, 2));
+      }
+      
+      // If we're not recording, compare the output to what we've previously recorded
+      else {
+        expect(output.toJSON()).to.deep.equal(JSON.parse(fs.readFileSync(path), {encoding: 'utf8'}));
+      }
+    } catch(e) {
+      return e;
+    }
+  }
 };

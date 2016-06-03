@@ -1,9 +1,7 @@
-var fs = require('fs'),
-    nock = require('nock'),
-    expect = require('chai').expect,
+var nock = require('nock'),
     helpers = require('../../testHelpers'),
     genscrape = require('../../../'),
-    debug = require('debug')('genscrape:test:familysearch-record'),
+    debug = require('debug')('genscrape:tests:familysearch-record'),
     pagesDir = __dirname + '/../../data/familysearch/records/pages',
     outputDir = __dirname + '/../../data/familysearch/records/output';
 
@@ -72,25 +70,9 @@ function setupTest(urlPath, recordId){
       // Run genscrape
       genscrape().on('data', function(data){
         
-        // If we're recording, save the output
-        if(process.env.GENSCRAPE_RECORDING){
-          debug(`recording ${urlPath}${recordId}`);
-          console.log('writing ' + outputFile);
-          fs.writeFileSync(outputFile, JSON.stringify(data.toJSON(), null, 2));
-        }
-        
-        // If we're not recording, compare the output to what we've previously recorded
-        else {
-          expect(data.toJSON()).to.deep.equal(loadJsonSync(outputFile));
-        }
-          
-        done();
+        // Test
+        done(helpers.compareOrRecordOutput(data, outputFile));
       }).on('error', done);
     });
   };
-}
-
-function loadJsonSync(file){
-  debug('loadJsonSync: ' + file);
-  return JSON.parse(fs.readFileSync(file), {encoding: 'utf8'});
 }
