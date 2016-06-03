@@ -1,0 +1,310 @@
+{
+  "id" : "r_21939020887",
+  "links" : {
+    "next" : {
+      "href" : "https://familysearch.org/ark:/61903/1:2:9MSR-WCT4?seek=next"
+    },
+    "self" : {
+      "href" : "https://familysearch.org/ark:/61903/1:2:9MSR-WCT4"
+    },
+    "prev" : {
+      "href" : "https://familysearch.org/ark:/61903/1:2:9MSR-WCT4?seek=prev"
+    }
+  },
+  "persons" : [ {
+    "id" : "p_13393329949",
+    "links" : {
+      "record" : {
+        "href" : "https://familysearch.org/platform/records/records/9MSR-WCT4"
+      },
+      "persona" : {
+        "href" : "https://familysearch.org/platform/records/personas/V8Q1-4LK"
+      }
+    },
+    "extracted" : true,
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:V8Q1-4LK" ]
+    },
+    "principal" : true,
+    "facts" : [ {
+      "type" : "http://gedcomx.org/Birth",
+      "date" : {
+        "original" : "09 Jul 1904",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Date",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "EVENT_DATE_ORIG",
+            "text" : "9 Jul 1904"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_DATE",
+            "text" : "09 Jul 1904"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Month",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "EVENT_MONTH_ORIG",
+            "text" : "Jul"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Day",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "EVENT_DAY_ORIG",
+            "text" : "9"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "EVENT_YEAR_ORIG",
+            "text" : "1904"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_YEAR",
+            "text" : "1904"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "Erath, Texas",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE",
+            "text" : "Erath, Texas"
+          } ]
+        } ]
+      },
+      "primary" : true
+    } ]
+  }, {
+    "id" : "p_13393329948",
+    "links" : {
+      "record" : {
+        "href" : "https://familysearch.org/platform/records/records/9MSR-WCT4"
+      },
+      "persona" : {
+        "href" : "https://familysearch.org/platform/records/personas/V8Q1-4LV"
+      }
+    },
+    "extracted" : true,
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:V8Q1-4LV" ]
+    },
+    "gender" : {
+      "type" : "http://gedcomx.org/Female",
+      "fields" : [ {
+        "type" : "http://gedcomx.org/Gender",
+        "values" : [ {
+          "type" : "http://gedcomx.org/Original",
+          "text" : "Female",
+          "resource" : "http://gedcomx.org/Female"
+        } ]
+      } ]
+    },
+    "names" : [ {
+      "type" : "http://gedcomx.org/BirthName",
+      "nameForms" : [ {
+        "fullText" : "I N Sligar",
+        "parts" : [ {
+          "type" : "http://gedcomx.org/Given",
+          "value" : "I N",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Given",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_MTHR_NAME_GN_ORIG",
+              "text" : "I N"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_MTHR_NAME_GN",
+              "text" : "I N"
+            } ]
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Surname",
+          "value" : "Sligar",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Surname",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_MTHR_NAME_SURN_ORIG",
+              "text" : "Sligar"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_MTHR_NAME_SURN",
+              "text" : "Sligar"
+            } ]
+          } ]
+        } ],
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Name",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_MTHR_NAME",
+            "text" : "I N Sligar"
+          } ]
+        } ]
+      } ]
+    } ]
+  } ],
+  "relationships" : [ {
+    "id" : "MM9.1.6/QYKD-ZLQ",
+    "type" : "http://gedcomx.org/ParentChild",
+    "person1" : {
+      "resource" : "#p_13393329948",
+      "resourceId" : "p_13393329948"
+    },
+    "person2" : {
+      "resource" : "#p_13393329949",
+      "resourceId" : "p_13393329949"
+    }
+  } ],
+  "sourceDescriptions" : [ {
+    "id" : "sd_c_1949342",
+    "about" : "https://familysearch.org/platform/records/collections/1949342",
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "Texas Birth Index, 1903-1997"
+    } ],
+    "resourceType" : "http://gedcomx.org/Collection",
+    "identifiers" : {
+      "http://gedcomx.org/Primary" : [ "https://familysearch.org/platform/records/collections/1949342" ]
+    },
+    "coverage" : [ {
+      "spatial" : {
+        "original" : "Texas, United States",
+        "description" : "#place_1-26"
+      },
+      "recordType" : "http://gedcomx.org/Birth"
+    } ]
+  }, {
+    "id" : "src_r_21939020887",
+    "citations" : [ {
+      "value" : "\"Texas Birth Index, 1903-1997,\" database, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:2:9MSR-WCT4 : accessed 3 June 2016), 09 Jul 1904; from \"Texas Birth Index, 1903-1997,\" index and images, <i>Ancestry</i>; citing Texas Department of State Health Services."
+    } ],
+    "mediaType" : "image/jpeg",
+    "about" : "https://familysearch.org/ark:/61903/1:2:9MSR-WCT4",
+    "componentOf" : {
+      "description" : "#sd_c_1949342"
+    },
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "Entry for <Unknown>, \"Texas Birth Index, 1903-1997\""
+    } ],
+    "resourceType" : "http://gedcomx.org/Record",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:2:9MSR-WCT4" ],
+      "$" : [ "https://familysearch.org/platform/externalId/easy/1000878807169" ]
+    },
+    "created" : 1389691310022,
+    "modified" : 1417764336441,
+    "coverage" : [ {
+      "spatial" : {
+        "original" : "Erath, Texas"
+      },
+      "temporal" : {
+        "original" : "09 Jul 1904"
+      },
+      "recordType" : "http://gedcomx.org/Birth"
+    } ],
+    "descriptor" : {
+      "resource" : "https://familysearch.org/platform/records/collections/1949342#rd_MM9.1.9/MMMM-MP4"
+    }
+  }, {
+    "id" : "sd_p_13393329949",
+    "citations" : [ {
+      "value" : "\"Texas Birth Index, 1903-1997,\" database, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:V8Q1-4LK : accessed 3 June 2016), MM9.1.1/V8Q1-4LK:, 09 Jul 1904; from \"Texas Birth Index, 1903-1997,\" database and images, <i>Ancestry</i> (http://www.ancestry.com : 2005); citing Texas Department of State Health Services."
+    } ],
+    "about" : "https://familysearch.org/ark:/61903/1:1:V8Q1-4LK",
+    "componentOf" : {
+      "description" : "#src_r_21939020887"
+    },
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "<Unknown>, \"Texas Birth Index, 1903-1997\""
+    } ],
+    "resourceType" : "http://gedcomx.org/Person",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:V8Q1-4LK" ]
+    }
+  }, {
+    "id" : "sd_p_13393329948",
+    "citations" : [ {
+      "value" : "\"Texas Birth Index, 1903-1997,\" database, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:V8Q1-4LV : accessed 3 June 2016), I N Sligar in entry for MM9.1.1/V8Q1-4LK:, 09 Jul 1904; from \"Texas Birth Index, 1903-1997,\" database and images, <i>Ancestry</i> (http://www.ancestry.com : 2005); citing Texas Department of State Health Services."
+    } ],
+    "about" : "https://familysearch.org/ark:/61903/1:1:V8Q1-4LV",
+    "componentOf" : {
+      "description" : "#src_r_21939020887"
+    },
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "I N Sligar in entry for <Unknown>, \"Texas Birth Index, 1903-1997\""
+    } ],
+    "resourceType" : "http://gedcomx.org/Person",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:V8Q1-4LV" ]
+    }
+  } ],
+  "places" : [ {
+    "id" : "place_1-26",
+    "identifiers" : {
+      "http://gedcomx.org/Primary" : [ "https://api.familysearch.org/authorities/v1/place/26?context=1" ]
+    }
+  } ],
+  "fields" : [ {
+    "type" : "http://familysearch.org/types/fields/UniqueIdentifier",
+    "values" : [ {
+      "type" : "http://gedcomx.org/Original",
+      "labelId" : "UNIQUE_IDENTIFIER",
+      "text" : "1000878807169"
+    } ]
+  }, {
+    "type" : "http://familysearch.org/types/fields/EventType",
+    "values" : [ {
+      "type" : "http://gedcomx.org/Original",
+      "labelId" : "EVENT_TYPE",
+      "text" : "Birth"
+    } ]
+  }, {
+    "type" : "http://familysearch.org/types/fields/CertificateNumber",
+    "values" : [ {
+      "type" : "http://gedcomx.org/Original",
+      "labelId" : "CERTIFICATE_NUMBER",
+      "text" : "48764"
+    } ]
+  }, {
+    "type" : "http://familysearch.org/types/fields/AncestryUniqueIdentifier",
+    "values" : [ {
+      "type" : "http://gedcomx.org/Original",
+      "labelId" : "ANCESTRY_UNIQUE_IDENTIFIER",
+      "text" : "231332"
+    } ]
+  }, {
+    "type" : "http://familysearch.org/types/fields/EventCounty",
+    "values" : [ {
+      "type" : "http://gedcomx.org/Original",
+      "labelId" : "EVENT_COUNTY",
+      "text" : "Erath"
+    } ]
+  }, {
+    "type" : "http://familysearch.org/types/fields/SortKey",
+    "values" : [ {
+      "type" : "http://gedcomx.org/Interpreted",
+      "labelId" : "SORT_KEY",
+      "text" : "1000878807169#12"
+    } ]
+  }, {
+    "type" : "http://familysearch.org/types/fields/SortValue",
+    "values" : [ {
+      "type" : "http://gedcomx.org/Original",
+      "labelId" : "SORT_VALUE",
+      "text" : "1000878807169#12"
+    } ]
+  } ],
+  "description" : "#sd_p_13393329949"
+}

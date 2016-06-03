@@ -1,0 +1,390 @@
+{
+  "id": "r_14721327",
+  "persons": [
+    {
+      "id": "p_10466190032",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:XZLW-29S"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Lemuel Sturdevant Leavitt",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Lemuel Sturdevant"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Leavitt"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1946"
+          },
+          "place": {
+            "original": "St George, Washington, Utah, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        }
+      ]
+    },
+    {
+      "id": "p_10466190033",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:XZLW-293"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Edward Washington Leavitt",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Edward Washington"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Leavitt"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p_10466190034",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:XZLW-29Q"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Elatheir Bunker",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Elatheir"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bunker"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p_10466190035",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:XZLW-297"
+        ]
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Susan J. Leavitt",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Susan J."
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Leavitt"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "MM9.1.6/XBT8-BWX",
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#p_10466190032"
+      },
+      "person2": {
+        "resource": "#p_10466190035"
+      }
+    },
+    {
+      "id": "MM9.1.6/XBT8-BWF",
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#p_10466190033"
+      },
+      "person2": {
+        "resource": "#p_10466190034"
+      }
+    },
+    {
+      "id": "MM9.1.6/XBT8-BWN",
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#p_10466190033"
+      },
+      "person2": {
+        "resource": "#p_10466190032"
+      }
+    },
+    {
+      "id": "MM9.1.6/XBT8-BWJ",
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#p_10466190034"
+      },
+      "person2": {
+        "resource": "#p_10466190032"
+      }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "sd_c_1747615",
+      "resourceType": "http://gedcomx.org/Collection",
+      "about": "https://familysearch.org/platform/records/collections/1747615",
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Utah Death Certificates, 1904-1964"
+        }
+      ],
+      "coverage": {},
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/platform/records/collections/1747615"
+        ]
+      }
+    },
+    {
+      "id": "src_r_14721327",
+      "resourceType": "http://gedcomx.org/Record",
+      "citations": [
+        {
+          "value": "\"Utah Death Certificates, 1904-1964\", database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:2:MMV7-4MY : accessed 3 June 2016), Entry for Lemuel Sturdevant Leavitt, 1946."
+        }
+      ],
+      "mediaType": "image/jpeg",
+      "about": "https://familysearch.org/ark:/61903/1:2:MMV7-4MY",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "componentOf": {
+        "description": "#sd_c_1747615"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Entry for Lemuel Sturdevant Leavitt, \"Utah Death Certificates, 1904-1964\""
+        }
+      ],
+      "coverage": {},
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:2:MMV7-4MY"
+        ],
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/233600019"
+        ]
+      },
+      "created": 1384993900650,
+      "modified": 1441990675446
+    },
+    {
+      "id": "sd_p_10466190032",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"Utah Death Certificates, 1904-1964\", database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:XZLW-29S : accessed 3 June 2016), Lemuel Sturdevant Leavitt, 1946."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:XZLW-29S",
+      "componentOf": {
+        "description": "#src_r_14721327"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Lemuel Sturdevant Leavitt, \"Utah Death Certificates, 1904-1964\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:XZLW-29S"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_10466190033",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"Utah Death Certificates, 1904-1964\", database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:XZLW-293 : accessed 3 June 2016), Edward Washington Leavitt in entry for Lemuel Sturdevant Leavitt, 1946."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:XZLW-293",
+      "componentOf": {
+        "description": "#src_r_14721327"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Edward Washington Leavitt in entry for Lemuel Sturdevant Leavitt, \"Utah Death Certificates, 1904-1964\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:XZLW-293"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_10466190034",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"Utah Death Certificates, 1904-1964\", database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:XZLW-29Q : accessed 3 June 2016), Elatheir Bunker in entry for Lemuel Sturdevant Leavitt, 1946."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:XZLW-29Q",
+      "componentOf": {
+        "description": "#src_r_14721327"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Elatheir Bunker in entry for Lemuel Sturdevant Leavitt, \"Utah Death Certificates, 1904-1964\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:XZLW-29Q"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_10466190035",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"Utah Death Certificates, 1904-1964\", database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:XZLW-297 : accessed 3 June 2016), Susan J. Leavitt in entry for Lemuel Sturdevant Leavitt, 1946."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:XZLW-297",
+      "componentOf": {
+        "description": "#src_r_14721327"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Susan J. Leavitt in entry for Lemuel Sturdevant Leavitt, \"Utah Death Certificates, 1904-1964\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:XZLW-297"
+        ]
+      }
+    },
+    {
+      "id": "sd2",
+      "resourceType": "http://gedcomx.org/DigitalArtifact",
+      "mediaType": "image/jpeg",
+      "about": "https://familysearch.org/ark:/61903/3:1:S3HY-DZNS-SJS?cc=1747615",
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/3:1:S3HY-DZNS-SJS?cc=1747615"
+        ]
+      },
+      "repository": {}
+    }
+  ],
+  "agents": [
+    {
+      "id": "a1",
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "das.familysearch.org"
+        ]
+      }
+    }
+  ],
+  "places": [
+    {
+      "id": "place_1-27",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://api.familysearch.org/authorities/v1/place/27?context=1"
+        ]
+      }
+    }
+  ]
+}

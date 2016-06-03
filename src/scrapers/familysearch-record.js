@@ -1,4 +1,4 @@
-var debug = require('debug')('genscrape:fs-record'),
+var debug = require('debug')('genscrape:scrapers:familysearch-record'),
     utils = require('../utils'),
     GedcomX = require('gedcomx-js');
 
@@ -13,11 +13,12 @@ module.exports = function(register){
 
 function run(emitter){
   debug('running');
-  
   utils.getJSON(window.location.href, function(error, json){
     if(error){
+      debug('error');
       emitter.emit('error', error);
     } else {
+      debug('data');
       emitter.emit('data', GedcomX(json));
     }
   });

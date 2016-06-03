@@ -1,0 +1,509 @@
+{
+  "id": "r_225234428",
+  "persons": [
+    {
+      "id": "p_396794169",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SDC"
+        ],
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/638829553"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Thomas Turner",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Thomas"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1870"
+          },
+          "place": {
+            "original": "Utah, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1830-1831"
+          },
+          "place": {
+            "original": "England"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p_396794170",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SDZ"
+        ],
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/638829554"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Unice Turner",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Unice"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1870"
+          },
+          "place": {
+            "original": "Utah, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1847-1848"
+          },
+          "place": {
+            "original": "Missouri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p_396794171",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SD8"
+        ],
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/638829555"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Thomas H Turner",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Thomas H"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1870"
+          },
+          "place": {
+            "original": "Utah, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1864-1865"
+          },
+          "place": {
+            "original": "Utah"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p_396794172",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SDD"
+        ],
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/638829556"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Mary E Turner",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Mary E"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1870"
+          },
+          "place": {
+            "original": "Utah, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1866-1867"
+          },
+          "place": {
+            "original": "Utah"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p_396794173",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SD6"
+        ],
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/638829557"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Harriet C Turner",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Harriet C"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1870"
+          },
+          "place": {
+            "original": "Utah, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1868-1869"
+          },
+          "place": {
+            "original": "Utah"
+          }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "sd_c_1438024",
+      "resourceType": "http://gedcomx.org/Collection",
+      "about": "https://familysearch.org/platform/records/collections/1438024",
+      "titles": [
+        {
+          "lang": "en",
+          "value": "United States Census, 1870"
+        }
+      ],
+      "coverage": {},
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/platform/records/collections/1438024"
+        ]
+      }
+    },
+    {
+      "id": "src_r_225234428",
+      "resourceType": "http://gedcomx.org/Record",
+      "citations": [
+        {
+          "value": "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:2:MCHS-MXH : accessed 3 June 2016), Household of Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593, National Archives and Records Administration, Washington D.C.; FHL microfilm 553,110."
+        }
+      ],
+      "mediaType": "image/jpeg",
+      "about": "https://familysearch.org/ark:/61903/1:2:MCHS-MXH",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "componentOf": {
+        "description": "#sd_c_1438024"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Household of Thomas Turner, \"United States Census, 1870\""
+        }
+      ],
+      "coverage": {},
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:2:MCHS-MXH"
+        ]
+      },
+      "created": 1383607412472,
+      "modified": 1413532829664
+    },
+    {
+      "id": "sd_p_396794169",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MNCT-SDC : accessed 3 June 2016), Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593 (Washington D.C.: National Archives and Records Administration, n.d.); FHL microfilm 553,110."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:MNCT-SDC",
+      "componentOf": {
+        "description": "#src_r_225234428"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Thomas Turner, \"United States Census, 1870\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SDC"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_396794170",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MNCT-SDZ : accessed 3 June 2016), Unice Turner in household of Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593 (Washington D.C.: National Archives and Records Administration, n.d.); FHL microfilm 553,110."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:MNCT-SDZ",
+      "componentOf": {
+        "description": "#src_r_225234428"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Unice Turner in household of Thomas Turner, \"United States Census, 1870\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SDZ"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_396794171",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MNCT-SD8 : accessed 3 June 2016), Thomas H Turner in household of Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593 (Washington D.C.: National Archives and Records Administration, n.d.); FHL microfilm 553,110."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:MNCT-SD8",
+      "componentOf": {
+        "description": "#src_r_225234428"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Thomas H Turner in household of Thomas Turner, \"United States Census, 1870\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SD8"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_396794172",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MNCT-SDD : accessed 3 June 2016), Mary E Turner in household of Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593 (Washington D.C.: National Archives and Records Administration, n.d.); FHL microfilm 553,110."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:MNCT-SDD",
+      "componentOf": {
+        "description": "#src_r_225234428"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Mary E Turner in household of Thomas Turner, \"United States Census, 1870\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SDD"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_396794173",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MNCT-SD6 : accessed 3 June 2016), Harriet C Turner in household of Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593 (Washington D.C.: National Archives and Records Administration, n.d.); FHL microfilm 553,110."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:MNCT-SD6",
+      "componentOf": {
+        "description": "#src_r_225234428"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Harriet C Turner in household of Thomas Turner, \"United States Census, 1870\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SD6"
+        ]
+      }
+    },
+    {
+      "id": "sd2",
+      "resourceType": "http://gedcomx.org/DigitalArtifact",
+      "mediaType": "image/jpeg",
+      "about": "https://familysearch.org/ark:/61903/3:1:S3HY-XHRQ-1M8?cc=1438024",
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/3:1:S3HY-XHRQ-1M8?cc=1438024"
+        ]
+      },
+      "repository": {}
+    }
+  ],
+  "agents": [
+    {
+      "id": "a1",
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "das.familysearch.org"
+        ]
+      }
+    }
+  ],
+  "places": [
+    {
+      "id": "place_1",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://api.familysearch.org/authorities/v1/place/1"
+        ]
+      }
+    }
+  ]
+}

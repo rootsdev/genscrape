@@ -5,6 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "test": "mocha --recursive",
+    "test:record": "GENSCRAPE_RECORDING=record npm test",
     "test:debug": "DEBUG=genscrape:* npm test",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",

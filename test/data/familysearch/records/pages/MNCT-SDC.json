@@ -1,0 +1,2277 @@
+{
+  "id" : "r_225234428",
+  "links" : {
+    "next" : {
+      "href" : "https://familysearch.org/ark:/61903/1:2:MCHS-MXH?seek=next"
+    },
+    "self" : {
+      "href" : "https://familysearch.org/ark:/61903/1:2:MCHS-MXH"
+    },
+    "prev" : {
+      "href" : "https://familysearch.org/ark:/61903/1:2:MCHS-MXH?seek=prev"
+    }
+  },
+  "persons" : [ {
+    "id" : "p_396794169",
+    "links" : {
+      "record" : {
+        "href" : "https://familysearch.org/platform/records/records/MCHS-MXH"
+      },
+      "persona" : {
+        "href" : "https://familysearch.org/platform/records/personas/MNCT-SDC"
+      }
+    },
+    "sources" : [ {
+      "description" : "#sd2"
+    } ],
+    "extracted" : true,
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:MNCT-SDC" ],
+      "$" : [ "https://familysearch.org/platform/externalId/easy/638829553" ]
+    },
+    "principal" : true,
+    "gender" : {
+      "type" : "http://gedcomx.org/Male",
+      "fields" : [ {
+        "type" : "http://gedcomx.org/Gender",
+        "values" : [ {
+          "type" : "http://gedcomx.org/Original",
+          "labelId" : "PR_SEX_CODE_ORIG",
+          "text" : "M",
+          "resource" : "http://gedcomx.org/Unknown"
+        }, {
+          "type" : "http://gedcomx.org/Interpreted",
+          "labelId" : "PR_SEX_CODE",
+          "text" : "Male",
+          "resource" : "http://gedcomx.org/Male"
+        } ]
+      } ]
+    },
+    "names" : [ {
+      "type" : "http://gedcomx.org/BirthName",
+      "nameForms" : [ {
+        "fullText" : "Thomas Turner",
+        "parts" : [ {
+          "type" : "http://gedcomx.org/Given",
+          "value" : "Thomas",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Given",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_NAME_GN_ORIG",
+              "text" : "Thomas"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_NAME_GN",
+              "text" : "Thomas"
+            } ]
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Surname",
+          "value" : "Turner",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Surname",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_NAME_SURN_ORIG",
+              "text" : "Turner"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_NAME_SURN",
+              "text" : "Turner"
+            } ]
+          } ]
+        } ],
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Name",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "PR_NAME_ORIG",
+            "text" : "Thomas/Turner"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_NAME",
+            "text" : "Thomas Turner"
+          } ]
+        } ]
+      } ]
+    } ],
+    "facts" : [ {
+      "type" : "http://gedcomx.org/Census",
+      "date" : {
+        "original" : "1870",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Date",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_DATE",
+            "text" : "1870"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_YEAR",
+            "text" : "1870"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "Utah, United States",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "EVENT_PLACE_ORIG",
+            "text" : "Utah, United States"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE",
+            "text" : "Utah, United States"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/State",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE_LEVEL_2",
+            "text" : "Utah"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Country",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE_LEVEL_1",
+            "text" : "United States"
+          } ]
+        } ]
+      },
+      "primary" : true
+    }, {
+      "type" : "http://gedcomx.org/Birth",
+      "date" : {
+        "original" : "1830-1831",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_BIRTH_YEAR_ESTIMATED",
+            "text" : "1830-1831"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "England",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_BIRTH_PLACE",
+            "text" : "England"
+          } ]
+        } ]
+      }
+    } ],
+    "fields" : [ {
+      "type" : "http://gedcomx.org/Age",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_AGE_ORIG",
+        "text" : "39y"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "PR_AGE",
+        "text" : "39"
+      } ]
+    }, {
+      "type" : "http://gedcomx.org/Race",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_RACE_OR_COLOR_ORIG",
+        "text" : "W"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "PR_RACE_OR_COLOR",
+        "text" : "White"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/UniqueIdentifier",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "UNIQUE_IDENTIFIER",
+        "text" : "638829553"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_ID",
+        "text" : "/004267907/004267907_00037.jpg"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "IMAGE_ID_NORM",
+        "text" : "dgs:004267907.004267907_00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/HouseholdId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "HOUSEHOLD_ID",
+        "text" : "176"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventType",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_TYPE",
+        "text" : "Census"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SourcePageNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "SOURCE_PAGE_NBR",
+        "text" : "21"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SourceLineNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "SOURCE_LINE_NBR",
+        "text" : "19"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ExtRepositoryName",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EXT_REPOSITORY_NAME",
+        "text" : "The U.S. National Archives and Records Administration (NARA)"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ExtPubNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EXT_PUB_NBR",
+        "text" : "M593"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/FilmNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FILM_NUMBER",
+        "text" : "000553110"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/DigitalFilmNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "DIGITAL_GS_NUMBER",
+        "text" : "004267907"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_NBR",
+        "text" : "00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventCountry",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_COUNTRY",
+        "text" : "United States"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventPlaceLevel1Type",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_PLACE_LEVEL_1_TYPE",
+        "text" : "Country"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventPlaceLevel2Type",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_PLACE_LEVEL_2_TYPE",
+        "text" : "State"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventState",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_STATE",
+        "text" : "Utah"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/FolderImageSeq",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FOLDER_IMAGE_SEQ",
+        "text" : "37"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/Folder",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FOLDER",
+        "text" : "004267907"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/BatchId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_BATCH_ID",
+        "text" : "542188"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/BatchLocality",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_BATCH_LOCALITY",
+        "text" : "Utah, United States"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/CollectionId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_COLLECTION_ID",
+        "text" : "1438024"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EasyImageId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_EASY_IMAGE_ID",
+        "text" : "004267907_00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PacketLetter",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_PACKET_LTR",
+        "text" : "A"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PpqId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_PPQ_ID",
+        "text" : "07-0147"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/RecordId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_RECORD_ID",
+        "text" : "004267907_00037_18"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/RecordNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_RECORD_NBR",
+        "text" : "1148"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/UdeBatchNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_UDE_BATCH_NBR",
+        "text" : "N01475-5"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageApid",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_APID",
+        "text" : "TH-267-12865-134111-81"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageArk",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_ARK",
+        "text" : "https://familysearch.org/ark:/61903/3:1:S3HY-XHRQ-1M8"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrBirthCountry",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_BIRTH_COUNTRY",
+        "text" : "England"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrBirthYearEstimatedOrig",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_BIRTH_YEAR_ESTIMATED_ORIG",
+        "text" : "1831"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrEthnicityCss",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_ETHNICITY_CSS",
+        "text" : "American"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrRaceOrColorCss",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_RACE_OR_COLOR_CSS",
+        "text" : "White"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SortKey",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "SORT_KEY",
+        "text" : "000000000_004267907_00037_018_0000638829553"
+      } ]
+    } ]
+  }, {
+    "id" : "p_396794170",
+    "links" : {
+      "record" : {
+        "href" : "https://familysearch.org/platform/records/records/MCHS-MXH"
+      },
+      "persona" : {
+        "href" : "https://familysearch.org/platform/records/personas/MNCT-SDZ"
+      }
+    },
+    "sources" : [ {
+      "description" : "#sd2"
+    } ],
+    "extracted" : true,
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:MNCT-SDZ" ],
+      "$" : [ "https://familysearch.org/platform/externalId/easy/638829554" ]
+    },
+    "principal" : true,
+    "gender" : {
+      "type" : "http://gedcomx.org/Female",
+      "fields" : [ {
+        "type" : "http://gedcomx.org/Gender",
+        "values" : [ {
+          "type" : "http://gedcomx.org/Original",
+          "labelId" : "PR_SEX_CODE_ORIG",
+          "text" : "F",
+          "resource" : "http://gedcomx.org/Unknown"
+        }, {
+          "type" : "http://gedcomx.org/Interpreted",
+          "labelId" : "PR_SEX_CODE",
+          "text" : "Female",
+          "resource" : "http://gedcomx.org/Female"
+        } ]
+      } ]
+    },
+    "names" : [ {
+      "type" : "http://gedcomx.org/BirthName",
+      "nameForms" : [ {
+        "fullText" : "Unice Turner",
+        "parts" : [ {
+          "type" : "http://gedcomx.org/Given",
+          "value" : "Unice",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Given",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_NAME_GN_ORIG",
+              "text" : "Unice"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_NAME_GN",
+              "text" : "Unice"
+            } ]
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Surname",
+          "value" : "Turner",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Surname",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_NAME_SURN_ORIG",
+              "text" : "Turner"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_NAME_SURN",
+              "text" : "Turner"
+            } ]
+          } ]
+        } ],
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Name",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "PR_NAME_ORIG",
+            "text" : "Unice/Turner"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_NAME",
+            "text" : "Unice Turner"
+          } ]
+        } ]
+      } ]
+    } ],
+    "facts" : [ {
+      "type" : "http://gedcomx.org/Census",
+      "date" : {
+        "original" : "1870",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Date",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_DATE",
+            "text" : "1870"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_YEAR",
+            "text" : "1870"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "Utah, United States",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "EVENT_PLACE_ORIG",
+            "text" : "Utah, United States"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE",
+            "text" : "Utah, United States"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/State",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE_LEVEL_2",
+            "text" : "Utah"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Country",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE_LEVEL_1",
+            "text" : "United States"
+          } ]
+        } ]
+      },
+      "primary" : true
+    }, {
+      "type" : "http://gedcomx.org/Birth",
+      "date" : {
+        "original" : "1847-1848",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_BIRTH_YEAR_ESTIMATED",
+            "text" : "1847-1848"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "Missouri",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_BIRTH_PLACE",
+            "text" : "Missouri"
+          } ]
+        } ]
+      }
+    } ],
+    "fields" : [ {
+      "type" : "http://gedcomx.org/Age",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_AGE_ORIG",
+        "text" : "22y"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "PR_AGE",
+        "text" : "22"
+      } ]
+    }, {
+      "type" : "http://gedcomx.org/Race",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_RACE_OR_COLOR_ORIG",
+        "text" : "W"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "PR_RACE_OR_COLOR",
+        "text" : "White"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/UniqueIdentifier",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "UNIQUE_IDENTIFIER",
+        "text" : "638829554"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_ID",
+        "text" : "/004267907/004267907_00037.jpg"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "IMAGE_ID_NORM",
+        "text" : "dgs:004267907.004267907_00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/HouseholdId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "HOUSEHOLD_ID",
+        "text" : "176"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventType",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_TYPE",
+        "text" : "Census"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SourcePageNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "SOURCE_PAGE_NBR",
+        "text" : "21"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SourceLineNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "SOURCE_LINE_NBR",
+        "text" : "20"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ExtRepositoryName",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EXT_REPOSITORY_NAME",
+        "text" : "The U.S. National Archives and Records Administration (NARA)"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ExtPubNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EXT_PUB_NBR",
+        "text" : "M593"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/FilmNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FILM_NUMBER",
+        "text" : "000553110"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/DigitalFilmNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "DIGITAL_GS_NUMBER",
+        "text" : "004267907"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_NBR",
+        "text" : "00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventCountry",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_COUNTRY",
+        "text" : "United States"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventPlaceLevel1Type",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_PLACE_LEVEL_1_TYPE",
+        "text" : "Country"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventPlaceLevel2Type",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_PLACE_LEVEL_2_TYPE",
+        "text" : "State"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventState",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_STATE",
+        "text" : "Utah"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/FolderImageSeq",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FOLDER_IMAGE_SEQ",
+        "text" : "37"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/Folder",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FOLDER",
+        "text" : "004267907"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/BatchId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_BATCH_ID",
+        "text" : "542188"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/BatchLocality",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_BATCH_LOCALITY",
+        "text" : "Utah, United States"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/CollectionId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_COLLECTION_ID",
+        "text" : "1438024"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EasyImageId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_EASY_IMAGE_ID",
+        "text" : "004267907_00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PacketLetter",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_PACKET_LTR",
+        "text" : "A"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PpqId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_PPQ_ID",
+        "text" : "07-0147"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/RecordId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_RECORD_ID",
+        "text" : "004267907_00037_19"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/RecordNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_RECORD_NBR",
+        "text" : "1149"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/UdeBatchNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_UDE_BATCH_NBR",
+        "text" : "N01475-5"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageApid",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_APID",
+        "text" : "TH-267-12865-134111-81"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageArk",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_ARK",
+        "text" : "https://familysearch.org/ark:/61903/3:1:S3HY-XHRQ-1M8"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrBirthState",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_BIRTH_STATE",
+        "text" : "Missouri"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrBirthYearEstimatedOrig",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_BIRTH_YEAR_ESTIMATED_ORIG",
+        "text" : "1848"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrEthnicityCss",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_ETHNICITY_CSS",
+        "text" : "American"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrRaceOrColorCss",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_RACE_OR_COLOR_CSS",
+        "text" : "White"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SortKey",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "SORT_KEY",
+        "text" : "000000000_004267907_00037_019_0000638829554"
+      } ]
+    } ]
+  }, {
+    "id" : "p_396794171",
+    "links" : {
+      "record" : {
+        "href" : "https://familysearch.org/platform/records/records/MCHS-MXH"
+      },
+      "persona" : {
+        "href" : "https://familysearch.org/platform/records/personas/MNCT-SD8"
+      }
+    },
+    "sources" : [ {
+      "description" : "#sd2"
+    } ],
+    "extracted" : true,
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:MNCT-SD8" ],
+      "$" : [ "https://familysearch.org/platform/externalId/easy/638829555" ]
+    },
+    "principal" : true,
+    "gender" : {
+      "type" : "http://gedcomx.org/Male",
+      "fields" : [ {
+        "type" : "http://gedcomx.org/Gender",
+        "values" : [ {
+          "type" : "http://gedcomx.org/Original",
+          "labelId" : "PR_SEX_CODE_ORIG",
+          "text" : "M",
+          "resource" : "http://gedcomx.org/Unknown"
+        }, {
+          "type" : "http://gedcomx.org/Interpreted",
+          "labelId" : "PR_SEX_CODE",
+          "text" : "Male",
+          "resource" : "http://gedcomx.org/Male"
+        } ]
+      } ]
+    },
+    "names" : [ {
+      "type" : "http://gedcomx.org/BirthName",
+      "nameForms" : [ {
+        "fullText" : "Thomas H Turner",
+        "parts" : [ {
+          "type" : "http://gedcomx.org/Given",
+          "value" : "Thomas H",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Given",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_NAME_GN_ORIG",
+              "text" : "Thomas H"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_NAME_GN",
+              "text" : "Thomas H"
+            } ]
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Surname",
+          "value" : "Turner",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Surname",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_NAME_SURN_ORIG",
+              "text" : "Turner"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_NAME_SURN",
+              "text" : "Turner"
+            } ]
+          } ]
+        } ],
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Name",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "PR_NAME_ORIG",
+            "text" : "Thomas H/Turner"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_NAME",
+            "text" : "Thomas H Turner"
+          } ]
+        } ]
+      } ]
+    } ],
+    "facts" : [ {
+      "type" : "http://gedcomx.org/Census",
+      "date" : {
+        "original" : "1870",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Date",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_DATE",
+            "text" : "1870"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_YEAR",
+            "text" : "1870"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "Utah, United States",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "EVENT_PLACE_ORIG",
+            "text" : "Utah, United States"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE",
+            "text" : "Utah, United States"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/State",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE_LEVEL_2",
+            "text" : "Utah"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Country",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE_LEVEL_1",
+            "text" : "United States"
+          } ]
+        } ]
+      },
+      "primary" : true
+    }, {
+      "type" : "http://gedcomx.org/Birth",
+      "date" : {
+        "original" : "1864-1865",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_BIRTH_YEAR_ESTIMATED",
+            "text" : "1864-1865"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "Utah",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_BIRTH_PLACE",
+            "text" : "Utah"
+          } ]
+        } ]
+      }
+    } ],
+    "fields" : [ {
+      "type" : "http://gedcomx.org/Age",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_AGE_ORIG",
+        "text" : "5y"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "PR_AGE",
+        "text" : "5"
+      } ]
+    }, {
+      "type" : "http://gedcomx.org/Race",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_RACE_OR_COLOR_ORIG",
+        "text" : "W"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "PR_RACE_OR_COLOR",
+        "text" : "White"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/UniqueIdentifier",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "UNIQUE_IDENTIFIER",
+        "text" : "638829555"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_ID",
+        "text" : "/004267907/004267907_00037.jpg"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "IMAGE_ID_NORM",
+        "text" : "dgs:004267907.004267907_00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/HouseholdId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "HOUSEHOLD_ID",
+        "text" : "176"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventType",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_TYPE",
+        "text" : "Census"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SourcePageNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "SOURCE_PAGE_NBR",
+        "text" : "21"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SourceLineNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "SOURCE_LINE_NBR",
+        "text" : "21"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ExtRepositoryName",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EXT_REPOSITORY_NAME",
+        "text" : "The U.S. National Archives and Records Administration (NARA)"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ExtPubNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EXT_PUB_NBR",
+        "text" : "M593"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/FilmNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FILM_NUMBER",
+        "text" : "000553110"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/DigitalFilmNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "DIGITAL_GS_NUMBER",
+        "text" : "004267907"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_NBR",
+        "text" : "00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventCountry",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_COUNTRY",
+        "text" : "United States"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventPlaceLevel1Type",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_PLACE_LEVEL_1_TYPE",
+        "text" : "Country"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventPlaceLevel2Type",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_PLACE_LEVEL_2_TYPE",
+        "text" : "State"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventState",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_STATE",
+        "text" : "Utah"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/FolderImageSeq",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FOLDER_IMAGE_SEQ",
+        "text" : "37"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/Folder",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FOLDER",
+        "text" : "004267907"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/BatchId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_BATCH_ID",
+        "text" : "542188"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/BatchLocality",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_BATCH_LOCALITY",
+        "text" : "Utah, United States"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/CollectionId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_COLLECTION_ID",
+        "text" : "1438024"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EasyImageId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_EASY_IMAGE_ID",
+        "text" : "004267907_00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PacketLetter",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_PACKET_LTR",
+        "text" : "A"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PpqId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_PPQ_ID",
+        "text" : "07-0147"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/RecordId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_RECORD_ID",
+        "text" : "004267907_00037_20"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/RecordNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_RECORD_NBR",
+        "text" : "1150"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/UdeBatchNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_UDE_BATCH_NBR",
+        "text" : "N01475-5"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageApid",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_APID",
+        "text" : "TH-267-12865-134111-81"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageArk",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_ARK",
+        "text" : "https://familysearch.org/ark:/61903/3:1:S3HY-XHRQ-1M8"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrBirthState",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_BIRTH_STATE",
+        "text" : "Utah"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrBirthYearEstimatedOrig",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_BIRTH_YEAR_ESTIMATED_ORIG",
+        "text" : "1865"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrEthnicityCss",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_ETHNICITY_CSS",
+        "text" : "American"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrRaceOrColorCss",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_RACE_OR_COLOR_CSS",
+        "text" : "White"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SortKey",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "SORT_KEY",
+        "text" : "000000000_004267907_00037_020_0000638829555"
+      } ]
+    } ]
+  }, {
+    "id" : "p_396794172",
+    "links" : {
+      "record" : {
+        "href" : "https://familysearch.org/platform/records/records/MCHS-MXH"
+      },
+      "persona" : {
+        "href" : "https://familysearch.org/platform/records/personas/MNCT-SDD"
+      }
+    },
+    "sources" : [ {
+      "description" : "#sd2"
+    } ],
+    "extracted" : true,
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:MNCT-SDD" ],
+      "$" : [ "https://familysearch.org/platform/externalId/easy/638829556" ]
+    },
+    "principal" : true,
+    "gender" : {
+      "type" : "http://gedcomx.org/Female",
+      "fields" : [ {
+        "type" : "http://gedcomx.org/Gender",
+        "values" : [ {
+          "type" : "http://gedcomx.org/Original",
+          "labelId" : "PR_SEX_CODE_ORIG",
+          "text" : "F",
+          "resource" : "http://gedcomx.org/Unknown"
+        }, {
+          "type" : "http://gedcomx.org/Interpreted",
+          "labelId" : "PR_SEX_CODE",
+          "text" : "Female",
+          "resource" : "http://gedcomx.org/Female"
+        } ]
+      } ]
+    },
+    "names" : [ {
+      "type" : "http://gedcomx.org/BirthName",
+      "nameForms" : [ {
+        "fullText" : "Mary E Turner",
+        "parts" : [ {
+          "type" : "http://gedcomx.org/Given",
+          "value" : "Mary E",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Given",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_NAME_GN_ORIG",
+              "text" : "Mary E"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_NAME_GN",
+              "text" : "Mary E"
+            } ]
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Surname",
+          "value" : "Turner",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Surname",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_NAME_SURN_ORIG",
+              "text" : "Turner"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_NAME_SURN",
+              "text" : "Turner"
+            } ]
+          } ]
+        } ],
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Name",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "PR_NAME_ORIG",
+            "text" : "Mary E/Turner"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_NAME",
+            "text" : "Mary E Turner"
+          } ]
+        } ]
+      } ]
+    } ],
+    "facts" : [ {
+      "type" : "http://gedcomx.org/Census",
+      "date" : {
+        "original" : "1870",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Date",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_DATE",
+            "text" : "1870"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_YEAR",
+            "text" : "1870"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "Utah, United States",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "EVENT_PLACE_ORIG",
+            "text" : "Utah, United States"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE",
+            "text" : "Utah, United States"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/State",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE_LEVEL_2",
+            "text" : "Utah"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Country",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE_LEVEL_1",
+            "text" : "United States"
+          } ]
+        } ]
+      },
+      "primary" : true
+    }, {
+      "type" : "http://gedcomx.org/Birth",
+      "date" : {
+        "original" : "1866-1867",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_BIRTH_YEAR_ESTIMATED",
+            "text" : "1866-1867"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "Utah",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_BIRTH_PLACE",
+            "text" : "Utah"
+          } ]
+        } ]
+      }
+    } ],
+    "fields" : [ {
+      "type" : "http://gedcomx.org/Age",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_AGE_ORIG",
+        "text" : "3y"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "PR_AGE",
+        "text" : "3"
+      } ]
+    }, {
+      "type" : "http://gedcomx.org/Race",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_RACE_OR_COLOR_ORIG",
+        "text" : "W"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "PR_RACE_OR_COLOR",
+        "text" : "White"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/UniqueIdentifier",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "UNIQUE_IDENTIFIER",
+        "text" : "638829556"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_ID",
+        "text" : "/004267907/004267907_00037.jpg"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "IMAGE_ID_NORM",
+        "text" : "dgs:004267907.004267907_00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/HouseholdId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "HOUSEHOLD_ID",
+        "text" : "176"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventType",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_TYPE",
+        "text" : "Census"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SourcePageNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "SOURCE_PAGE_NBR",
+        "text" : "21"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SourceLineNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "SOURCE_LINE_NBR",
+        "text" : "22"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ExtRepositoryName",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EXT_REPOSITORY_NAME",
+        "text" : "The U.S. National Archives and Records Administration (NARA)"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ExtPubNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EXT_PUB_NBR",
+        "text" : "M593"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/FilmNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FILM_NUMBER",
+        "text" : "000553110"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/DigitalFilmNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "DIGITAL_GS_NUMBER",
+        "text" : "004267907"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_NBR",
+        "text" : "00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventCountry",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_COUNTRY",
+        "text" : "United States"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventPlaceLevel1Type",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_PLACE_LEVEL_1_TYPE",
+        "text" : "Country"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventPlaceLevel2Type",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_PLACE_LEVEL_2_TYPE",
+        "text" : "State"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventState",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_STATE",
+        "text" : "Utah"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/FolderImageSeq",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FOLDER_IMAGE_SEQ",
+        "text" : "37"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/Folder",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FOLDER",
+        "text" : "004267907"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/BatchId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_BATCH_ID",
+        "text" : "542188"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/BatchLocality",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_BATCH_LOCALITY",
+        "text" : "Utah, United States"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/CollectionId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_COLLECTION_ID",
+        "text" : "1438024"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EasyImageId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_EASY_IMAGE_ID",
+        "text" : "004267907_00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PacketLetter",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_PACKET_LTR",
+        "text" : "A"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PpqId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_PPQ_ID",
+        "text" : "07-0147"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/RecordId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_RECORD_ID",
+        "text" : "004267907_00037_21"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/RecordNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_RECORD_NBR",
+        "text" : "1151"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/UdeBatchNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_UDE_BATCH_NBR",
+        "text" : "N01475-5"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageApid",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_APID",
+        "text" : "TH-267-12865-134111-81"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageArk",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_ARK",
+        "text" : "https://familysearch.org/ark:/61903/3:1:S3HY-XHRQ-1M8"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrBirthState",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_BIRTH_STATE",
+        "text" : "Utah"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrBirthYearEstimatedOrig",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_BIRTH_YEAR_ESTIMATED_ORIG",
+        "text" : "1867"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrEthnicityCss",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_ETHNICITY_CSS",
+        "text" : "American"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrRaceOrColorCss",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_RACE_OR_COLOR_CSS",
+        "text" : "White"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SortKey",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "SORT_KEY",
+        "text" : "000000000_004267907_00037_021_0000638829556"
+      } ]
+    } ]
+  }, {
+    "id" : "p_396794173",
+    "links" : {
+      "record" : {
+        "href" : "https://familysearch.org/platform/records/records/MCHS-MXH"
+      },
+      "persona" : {
+        "href" : "https://familysearch.org/platform/records/personas/MNCT-SD6"
+      }
+    },
+    "sources" : [ {
+      "description" : "#sd2"
+    } ],
+    "extracted" : true,
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:MNCT-SD6" ],
+      "$" : [ "https://familysearch.org/platform/externalId/easy/638829557" ]
+    },
+    "principal" : true,
+    "gender" : {
+      "type" : "http://gedcomx.org/Female",
+      "fields" : [ {
+        "type" : "http://gedcomx.org/Gender",
+        "values" : [ {
+          "type" : "http://gedcomx.org/Original",
+          "labelId" : "PR_SEX_CODE_ORIG",
+          "text" : "F",
+          "resource" : "http://gedcomx.org/Unknown"
+        }, {
+          "type" : "http://gedcomx.org/Interpreted",
+          "labelId" : "PR_SEX_CODE",
+          "text" : "Female",
+          "resource" : "http://gedcomx.org/Female"
+        } ]
+      } ]
+    },
+    "names" : [ {
+      "type" : "http://gedcomx.org/BirthName",
+      "nameForms" : [ {
+        "fullText" : "Harriet C Turner",
+        "parts" : [ {
+          "type" : "http://gedcomx.org/Given",
+          "value" : "Harriet C",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Given",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_NAME_GN_ORIG",
+              "text" : "Harriet C"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_NAME_GN",
+              "text" : "Harriet C"
+            } ]
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Surname",
+          "value" : "Turner",
+          "fields" : [ {
+            "type" : "http://gedcomx.org/Surname",
+            "values" : [ {
+              "type" : "http://gedcomx.org/Original",
+              "labelId" : "PR_NAME_SURN_ORIG",
+              "text" : "Turner"
+            }, {
+              "type" : "http://gedcomx.org/Interpreted",
+              "labelId" : "PR_NAME_SURN",
+              "text" : "Turner"
+            } ]
+          } ]
+        } ],
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Name",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "PR_NAME_ORIG",
+            "text" : "Harriet C/Turner"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_NAME",
+            "text" : "Harriet C Turner"
+          } ]
+        } ]
+      } ]
+    } ],
+    "facts" : [ {
+      "type" : "http://gedcomx.org/Census",
+      "date" : {
+        "original" : "1870",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Date",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_DATE",
+            "text" : "1870"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_YEAR",
+            "text" : "1870"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "Utah, United States",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Original",
+            "labelId" : "EVENT_PLACE_ORIG",
+            "text" : "Utah, United States"
+          }, {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE",
+            "text" : "Utah, United States"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/State",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE_LEVEL_2",
+            "text" : "Utah"
+          } ]
+        }, {
+          "type" : "http://gedcomx.org/Country",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "EVENT_PLACE_LEVEL_1",
+            "text" : "United States"
+          } ]
+        } ]
+      },
+      "primary" : true
+    }, {
+      "type" : "http://gedcomx.org/Birth",
+      "date" : {
+        "original" : "1868-1869",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Year",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_BIRTH_YEAR_ESTIMATED",
+            "text" : "1868-1869"
+          } ]
+        } ]
+      },
+      "place" : {
+        "original" : "Utah",
+        "fields" : [ {
+          "type" : "http://gedcomx.org/Place",
+          "values" : [ {
+            "type" : "http://gedcomx.org/Interpreted",
+            "labelId" : "PR_BIRTH_PLACE",
+            "text" : "Utah"
+          } ]
+        } ]
+      }
+    } ],
+    "fields" : [ {
+      "type" : "http://gedcomx.org/Age",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_AGE_ORIG",
+        "text" : "1y"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "PR_AGE",
+        "text" : "1"
+      } ]
+    }, {
+      "type" : "http://gedcomx.org/Race",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_RACE_OR_COLOR_ORIG",
+        "text" : "W"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "PR_RACE_OR_COLOR",
+        "text" : "White"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/UniqueIdentifier",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "UNIQUE_IDENTIFIER",
+        "text" : "638829557"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_ID",
+        "text" : "/004267907/004267907_00037.jpg"
+      }, {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "IMAGE_ID_NORM",
+        "text" : "dgs:004267907.004267907_00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/HouseholdId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "HOUSEHOLD_ID",
+        "text" : "176"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventType",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_TYPE",
+        "text" : "Census"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SourcePageNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "SOURCE_PAGE_NBR",
+        "text" : "21"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SourceLineNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "SOURCE_LINE_NBR",
+        "text" : "23"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ExtRepositoryName",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EXT_REPOSITORY_NAME",
+        "text" : "The U.S. National Archives and Records Administration (NARA)"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ExtPubNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EXT_PUB_NBR",
+        "text" : "M593"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/FilmNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FILM_NUMBER",
+        "text" : "000553110"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/DigitalFilmNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "DIGITAL_GS_NUMBER",
+        "text" : "004267907"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageNbr",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_NBR",
+        "text" : "00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventCountry",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_COUNTRY",
+        "text" : "United States"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventPlaceLevel1Type",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_PLACE_LEVEL_1_TYPE",
+        "text" : "Country"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventPlaceLevel2Type",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_PLACE_LEVEL_2_TYPE",
+        "text" : "State"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EventState",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "EVENT_STATE",
+        "text" : "Utah"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/FolderImageSeq",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FOLDER_IMAGE_SEQ",
+        "text" : "37"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/Folder",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FOLDER",
+        "text" : "004267907"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/BatchId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_BATCH_ID",
+        "text" : "542188"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/BatchLocality",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_BATCH_LOCALITY",
+        "text" : "Utah, United States"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/CollectionId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_COLLECTION_ID",
+        "text" : "1438024"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/EasyImageId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_EASY_IMAGE_ID",
+        "text" : "004267907_00037"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PacketLetter",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_PACKET_LTR",
+        "text" : "A"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PpqId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_PPQ_ID",
+        "text" : "07-0147"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/RecordId",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_RECORD_ID",
+        "text" : "004267907_00037_22"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/RecordNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_RECORD_NBR",
+        "text" : "1152"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/UdeBatchNumber",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "FS_UDE_BATCH_NBR",
+        "text" : "N01475-5"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageApid",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_APID",
+        "text" : "TH-267-12865-134111-81"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/ImageArk",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "IMAGE_ARK",
+        "text" : "https://familysearch.org/ark:/61903/3:1:S3HY-XHRQ-1M8"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrBirthState",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_BIRTH_STATE",
+        "text" : "Utah"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrBirthYearEstimatedOrig",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_BIRTH_YEAR_ESTIMATED_ORIG",
+        "text" : "1869"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrEthnicityCss",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_ETHNICITY_CSS",
+        "text" : "American"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/PrRaceOrColorCss",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Original",
+        "labelId" : "PR_RACE_OR_COLOR_CSS",
+        "text" : "White"
+      } ]
+    }, {
+      "type" : "http://familysearch.org/types/fields/SortKey",
+      "values" : [ {
+        "type" : "http://gedcomx.org/Interpreted",
+        "labelId" : "SORT_KEY",
+        "text" : "000000000_004267907_00037_022_0000638829557"
+      } ]
+    } ]
+  } ],
+  "sourceDescriptions" : [ {
+    "id" : "sd_c_1438024",
+    "about" : "https://familysearch.org/platform/records/collections/1438024",
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "United States Census, 1870"
+    } ],
+    "resourceType" : "http://gedcomx.org/Collection",
+    "identifiers" : {
+      "http://gedcomx.org/Primary" : [ "https://familysearch.org/platform/records/collections/1438024" ]
+    },
+    "coverage" : [ {
+      "spatial" : {
+        "original" : "United States of America",
+        "description" : "#place_1"
+      },
+      "recordType" : "http://gedcomx.org/Census"
+    } ]
+  }, {
+    "id" : "src_r_225234428",
+    "citations" : [ {
+      "value" : "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:2:MCHS-MXH : accessed 3 June 2016), Household of Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593, National Archives and Records Administration, Washington D.C.; FHL microfilm 553,110."
+    } ],
+    "mediaType" : "image/jpeg",
+    "about" : "https://familysearch.org/ark:/61903/1:2:MCHS-MXH",
+    "sources" : [ {
+      "description" : "#sd2"
+    } ],
+    "componentOf" : {
+      "description" : "#sd_c_1438024"
+    },
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "Household of Thomas Turner, \"United States Census, 1870\""
+    } ],
+    "resourceType" : "http://gedcomx.org/Record",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:2:MCHS-MXH" ]
+    },
+    "created" : 1383607412472,
+    "modified" : 1413532829664,
+    "coverage" : [ {
+      "spatial" : {
+        "original" : "Utah, United States"
+      },
+      "temporal" : {
+        "original" : "1870",
+        "formal" : "+1870"
+      },
+      "recordType" : "http://gedcomx.org/Census"
+    } ],
+    "descriptor" : {
+      "resource" : "https://familysearch.org/platform/records/collections/1438024#rd_MM9.1.9/MMMM-M5H"
+    }
+  }, {
+    "id" : "sd_p_396794169",
+    "citations" : [ {
+      "value" : "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MNCT-SDC : accessed 3 June 2016), Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593 (Washington D.C.: National Archives and Records Administration, n.d.); FHL microfilm 553,110."
+    } ],
+    "about" : "https://familysearch.org/ark:/61903/1:1:MNCT-SDC",
+    "componentOf" : {
+      "description" : "#src_r_225234428"
+    },
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "Thomas Turner, \"United States Census, 1870\""
+    } ],
+    "resourceType" : "http://gedcomx.org/Person",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:MNCT-SDC" ]
+    }
+  }, {
+    "id" : "sd_p_396794170",
+    "citations" : [ {
+      "value" : "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MNCT-SDZ : accessed 3 June 2016), Unice Turner in household of Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593 (Washington D.C.: National Archives and Records Administration, n.d.); FHL microfilm 553,110."
+    } ],
+    "about" : "https://familysearch.org/ark:/61903/1:1:MNCT-SDZ",
+    "componentOf" : {
+      "description" : "#src_r_225234428"
+    },
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "Unice Turner in household of Thomas Turner, \"United States Census, 1870\""
+    } ],
+    "resourceType" : "http://gedcomx.org/Person",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:MNCT-SDZ" ]
+    }
+  }, {
+    "id" : "sd_p_396794171",
+    "citations" : [ {
+      "value" : "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MNCT-SD8 : accessed 3 June 2016), Thomas H Turner in household of Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593 (Washington D.C.: National Archives and Records Administration, n.d.); FHL microfilm 553,110."
+    } ],
+    "about" : "https://familysearch.org/ark:/61903/1:1:MNCT-SD8",
+    "componentOf" : {
+      "description" : "#src_r_225234428"
+    },
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "Thomas H Turner in household of Thomas Turner, \"United States Census, 1870\""
+    } ],
+    "resourceType" : "http://gedcomx.org/Person",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:MNCT-SD8" ]
+    }
+  }, {
+    "id" : "sd_p_396794172",
+    "citations" : [ {
+      "value" : "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MNCT-SDD : accessed 3 June 2016), Mary E Turner in household of Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593 (Washington D.C.: National Archives and Records Administration, n.d.); FHL microfilm 553,110."
+    } ],
+    "about" : "https://familysearch.org/ark:/61903/1:1:MNCT-SDD",
+    "componentOf" : {
+      "description" : "#src_r_225234428"
+    },
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "Mary E Turner in household of Thomas Turner, \"United States Census, 1870\""
+    } ],
+    "resourceType" : "http://gedcomx.org/Person",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:MNCT-SDD" ]
+    }
+  }, {
+    "id" : "sd_p_396794173",
+    "citations" : [ {
+      "value" : "\"United States Census, 1870,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MNCT-SD6 : accessed 3 June 2016), Harriet C Turner in household of Thomas Turner, Utah, United States; citing p. 21, family 176, NARA microfilm publication M593 (Washington D.C.: National Archives and Records Administration, n.d.); FHL microfilm 553,110."
+    } ],
+    "about" : "https://familysearch.org/ark:/61903/1:1:MNCT-SD6",
+    "componentOf" : {
+      "description" : "#src_r_225234428"
+    },
+    "titles" : [ {
+      "lang" : "en",
+      "value" : "Harriet C Turner in household of Thomas Turner, \"United States Census, 1870\""
+    } ],
+    "resourceType" : "http://gedcomx.org/Person",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/1:1:MNCT-SD6" ]
+    }
+  }, {
+    "id" : "sd2",
+    "mediaType" : "image/jpeg",
+    "about" : "https://familysearch.org/ark:/61903/3:1:S3HY-XHRQ-1M8?cc=1438024",
+    "resourceType" : "http://gedcomx.org/DigitalArtifact",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "https://familysearch.org/ark:/61903/3:1:S3HY-XHRQ-1M8?cc=1438024" ]
+    },
+    "repository" : {
+      "resourceId" : "#a1"
+    }
+  } ],
+  "agents" : [ {
+    "id" : "a1",
+    "identifiers" : {
+      "http://gedcomx.org/Persistent" : [ "das.familysearch.org" ]
+    }
+  } ],
+  "places" : [ {
+    "id" : "place_1",
+    "identifiers" : {
+      "http://gedcomx.org/Primary" : [ "https://api.familysearch.org/authorities/v1/place/1" ]
+    }
+  } ],
+  "fields" : [ {
+    "type" : "http://familysearch.org/types/fields/SortValue",
+    "values" : [ {
+      "type" : "http://gedcomx.org/Original",
+      "labelId" : "SORT_VALUE",
+      "text" : "000000000_004267907_00037_018_0000638829553"
+    } ]
+  } ],
+  "description" : "#sd_p_396794169"
+}

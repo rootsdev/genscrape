@@ -1,0 +1,594 @@
+{
+  "id": "r_183746491",
+  "persons": [
+    {
+      "id": "p_252068159",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RL1"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Joseph Van Sky",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Joseph"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Van Sky"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1880"
+          },
+          "place": {
+            "original": "Johnstown, Fulton, New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1825"
+          },
+          "place": {
+            "original": "Germany"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Labourer"
+        }
+      ]
+    },
+    {
+      "id": "p_252068160",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RGM"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Ida Van Sky",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Ida"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Van Sky"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1880"
+          },
+          "place": {
+            "original": "Johnstown, Fulton, New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1832"
+          },
+          "place": {
+            "original": "Germany"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Keeping House"
+        }
+      ]
+    },
+    {
+      "id": "p_252068161",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RG9"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Frank Van Sky",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Frank"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Van Sky"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1880"
+          },
+          "place": {
+            "original": "Johnstown, Fulton, New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1875"
+          },
+          "place": {
+            "original": "New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
+      ]
+    },
+    {
+      "id": "p_252068162",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RGS"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Caty Van Sky",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Caty"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Van Sky"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1880"
+          },
+          "place": {
+            "original": "Johnstown, Fulton, New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1876"
+          },
+          "place": {
+            "original": "New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
+      ]
+    },
+    {
+      "id": "p_252068163",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RG3"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "Fanny Van Sky",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Fanny"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Van Sky"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1880"
+          },
+          "place": {
+            "original": "Johnstown, Fulton, New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1877"
+          },
+          "place": {
+            "original": "New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "MM9.1.6/J6XJ-3JY",
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#p_252068159"
+      },
+      "person2": {
+        "resource": "#p_252068160"
+      }
+    },
+    {
+      "id": "MM9.1.6/J6XJ-3JB",
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#p_252068159"
+      },
+      "person2": {
+        "resource": "#p_252068161"
+      }
+    },
+    {
+      "id": "MM9.1.6/J6XJ-3J1",
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#p_252068159"
+      },
+      "person2": {
+        "resource": "#p_252068162"
+      }
+    },
+    {
+      "id": "MM9.1.6/J6XJ-3VM",
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#p_252068159"
+      },
+      "person2": {
+        "resource": "#p_252068163"
+      }
+    },
+    {
+      "id": "MM9.1.6/J6XJ-3V9",
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#p_252068160"
+      },
+      "person2": {
+        "resource": "#p_252068161"
+      }
+    },
+    {
+      "id": "MM9.1.6/J6XJ-3VS",
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#p_252068160"
+      },
+      "person2": {
+        "resource": "#p_252068162"
+      }
+    },
+    {
+      "id": "MM9.1.6/J6XJ-3V3",
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#p_252068160"
+      },
+      "person2": {
+        "resource": "#p_252068163"
+      }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "sd_c_1417683",
+      "resourceType": "http://gedcomx.org/Collection",
+      "about": "https://familysearch.org/platform/records/collections/1417683",
+      "titles": [
+        {
+          "lang": "en",
+          "value": "United States Census, 1880"
+        }
+      ],
+      "coverage": {},
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/platform/records/collections/1417683"
+        ]
+      }
+    },
+    {
+      "id": "src_r_183746491",
+      "resourceType": "http://gedcomx.org/Record",
+      "citations": [
+        {
+          "value": "\"United States Census, 1880,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:2:M4NR-DP9 : accessed 2 June 2016), Household of Joseph Van Sky, Johnstown, Fulton, New York, United States; citing enumeration district ED 5, sheet 74A, NARA microfilm publication T9 (Washington D.C.: National Archives and Records Administration, n.d.), roll 0834; FHL microfilm 1,254,834."
+        }
+      ],
+      "mediaType": "image/jpeg",
+      "about": "https://familysearch.org/ark:/61903/1:2:M4NR-DP9",
+      "sources": [
+        {
+          "description": "#sd2"
+        }
+      ],
+      "componentOf": {
+        "description": "#sd_c_1417683"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Household of Joseph Van Sky, \"United States Census, 1880\""
+        }
+      ],
+      "coverage": {},
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:2:M4NR-DP9"
+        ]
+      },
+      "created": 1391748031816,
+      "modified": 1450940754606
+    },
+    {
+      "id": "sd_p_252068159",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"United States Census, 1880,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MZ87-RL1 : accessed 2 June 2016), Joseph Van Sky, Johnstown, Fulton, New York, United States; citing enumeration district ED 5, sheet 74A, NARA microfilm publication T9 (Washington D.C.: National Archives and Records Administration, n.d.), roll 0834; FHL microfilm 1,254,834."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:MZ87-RL1",
+      "componentOf": {
+        "description": "#src_r_183746491"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Joseph Van Sky, \"United States Census, 1880\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RL1"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_252068160",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"United States Census, 1880,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MZ87-RGM : accessed 2 June 2016), Ida Van Sky in household of Joseph Van Sky, Johnstown, Fulton, New York, United States; citing enumeration district ED 5, sheet 74A, NARA microfilm publication T9 (Washington D.C.: National Archives and Records Administration, n.d.), roll 0834; FHL microfilm 1,254,834."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:MZ87-RGM",
+      "componentOf": {
+        "description": "#src_r_183746491"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Ida Van Sky in household of Joseph Van Sky, \"United States Census, 1880\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RGM"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_252068161",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"United States Census, 1880,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MZ87-RG9 : accessed 2 June 2016), Frank Van Sky in household of Joseph Van Sky, Johnstown, Fulton, New York, United States; citing enumeration district ED 5, sheet 74A, NARA microfilm publication T9 (Washington D.C.: National Archives and Records Administration, n.d.), roll 0834; FHL microfilm 1,254,834."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:MZ87-RG9",
+      "componentOf": {
+        "description": "#src_r_183746491"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Frank Van Sky in household of Joseph Van Sky, \"United States Census, 1880\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RG9"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_252068162",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"United States Census, 1880,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MZ87-RGS : accessed 2 June 2016), Caty Van Sky in household of Joseph Van Sky, Johnstown, Fulton, New York, United States; citing enumeration district ED 5, sheet 74A, NARA microfilm publication T9 (Washington D.C.: National Archives and Records Administration, n.d.), roll 0834; FHL microfilm 1,254,834."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:MZ87-RGS",
+      "componentOf": {
+        "description": "#src_r_183746491"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Caty Van Sky in household of Joseph Van Sky, \"United States Census, 1880\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RGS"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_252068163",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"United States Census, 1880,\" database with images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MZ87-RG3 : accessed 2 June 2016), Fanny Van Sky in household of Joseph Van Sky, Johnstown, Fulton, New York, United States; citing enumeration district ED 5, sheet 74A, NARA microfilm publication T9 (Washington D.C.: National Archives and Records Administration, n.d.), roll 0834; FHL microfilm 1,254,834."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:MZ87-RG3",
+      "componentOf": {
+        "description": "#src_r_183746491"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Fanny Van Sky in household of Joseph Van Sky, \"United States Census, 1880\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RG3"
+        ]
+      }
+    },
+    {
+      "id": "sd2",
+      "resourceType": "http://gedcomx.org/DigitalArtifact",
+      "mediaType": "image/jpeg",
+      "about": "https://familysearch.org/ark:/61903/3:1:33S7-9YBG-4DC?cc=1417683",
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/3:1:33S7-9YBG-4DC?cc=1417683"
+        ]
+      },
+      "repository": {}
+    }
+  ],
+  "agents": [
+    {
+      "id": "a1",
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "das.familysearch.org"
+        ]
+      }
+    }
+  ],
+  "places": [
+    {
+      "id": "place_1",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://api.familysearch.org/authorities/v1/place/1"
+        ]
+      }
+    }
+  ]
+}

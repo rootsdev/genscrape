@@ -1,0 +1,177 @@
+{
+  "id": "r_21939020887",
+  "persons": [
+    {
+      "id": "p_13393329949",
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:V8Q1-4LK"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "09 Jul 1904"
+          },
+          "place": {
+            "original": "Erath, Texas"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p_13393329948",
+      "extracted": true,
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:V8Q1-4LV"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "type": "http://gedcomx.org/BirthName",
+          "nameForms": [
+            {
+              "fullText": "I N Sligar",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "I N"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Sligar"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "MM9.1.6/QYKD-ZLQ",
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#p_13393329948"
+      },
+      "person2": {
+        "resource": "#p_13393329949"
+      }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "sd_c_1949342",
+      "resourceType": "http://gedcomx.org/Collection",
+      "about": "https://familysearch.org/platform/records/collections/1949342",
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Texas Birth Index, 1903-1997"
+        }
+      ],
+      "coverage": {},
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/platform/records/collections/1949342"
+        ]
+      }
+    },
+    {
+      "id": "src_r_21939020887",
+      "resourceType": "http://gedcomx.org/Record",
+      "citations": [
+        {
+          "value": "\"Texas Birth Index, 1903-1997,\" database, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:2:9MSR-WCT4 : accessed 3 June 2016), 09 Jul 1904; from \"Texas Birth Index, 1903-1997,\" index and images, <i>Ancestry</i>; citing Texas Department of State Health Services."
+        }
+      ],
+      "mediaType": "image/jpeg",
+      "about": "https://familysearch.org/ark:/61903/1:2:9MSR-WCT4",
+      "componentOf": {
+        "description": "#sd_c_1949342"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "Entry for <Unknown>, \"Texas Birth Index, 1903-1997\""
+        }
+      ],
+      "coverage": {},
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:2:9MSR-WCT4"
+        ],
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/1000878807169"
+        ]
+      },
+      "created": 1389691310022,
+      "modified": 1417764336441
+    },
+    {
+      "id": "sd_p_13393329949",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"Texas Birth Index, 1903-1997,\" database, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:V8Q1-4LK : accessed 3 June 2016), MM9.1.1/V8Q1-4LK:, 09 Jul 1904; from \"Texas Birth Index, 1903-1997,\" database and images, <i>Ancestry</i> (http://www.ancestry.com : 2005); citing Texas Department of State Health Services."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:V8Q1-4LK",
+      "componentOf": {
+        "description": "#src_r_21939020887"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "<Unknown>, \"Texas Birth Index, 1903-1997\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:V8Q1-4LK"
+        ]
+      }
+    },
+    {
+      "id": "sd_p_13393329948",
+      "resourceType": "http://gedcomx.org/Person",
+      "citations": [
+        {
+          "value": "\"Texas Birth Index, 1903-1997,\" database, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:V8Q1-4LV : accessed 3 June 2016), I N Sligar in entry for MM9.1.1/V8Q1-4LK:, 09 Jul 1904; from \"Texas Birth Index, 1903-1997,\" database and images, <i>Ancestry</i> (http://www.ancestry.com : 2005); citing Texas Department of State Health Services."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:1:V8Q1-4LV",
+      "componentOf": {
+        "description": "#src_r_21939020887"
+      },
+      "titles": [
+        {
+          "lang": "en",
+          "value": "I N Sligar in entry for <Unknown>, \"Texas Birth Index, 1903-1997\""
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:V8Q1-4LV"
+        ]
+      }
+    }
+  ],
+  "places": [
+    {
+      "id": "place_1-26",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://api.familysearch.org/authorities/v1/place/26?context=1"
+        ]
+      }
+    }
+  ]
+}

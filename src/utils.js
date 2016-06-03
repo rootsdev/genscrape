@@ -1,3 +1,5 @@
+var debug = require('debug')('genscrape:utils');
+
 var utils = {};
 
 /**
@@ -81,6 +83,7 @@ utils.toTitleCase = function(str){
  * @param {Function} callback - function(error, data)
  */
 utils.getJSON = function(url, callback){
+  debug('getJSON: ' + url);
   var request = new window.XMLHttpRequest();
   request.open('GET', url);
   request.onload = function() {
