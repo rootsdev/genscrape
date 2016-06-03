@@ -7,7 +7,7 @@ var fs = require('fs'),
     pagesDir = __dirname + '/../../data/familysearch/records/pages',
     outputDir = __dirname + '/../../data/familysearch/records/output';
 
-describe.only('familysearch record', function(){
+describe('familysearch record', function(){
   
   it('process record data', setupPal('MZ87-RG9'));
   
