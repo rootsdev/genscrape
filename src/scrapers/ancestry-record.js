@@ -1,5 +1,7 @@
-var debug = require('debug')('ancestry-record'),
-    utils = require('../utils');
+var debug = require('debug')('genscrape:scrapers:ancestry-record'),
+    utils = require('../utils'),
+    GedcomX = require('gedcomx-js'),
+    HorizontalTable = require('../HorizontalTable');
 
 var urls = [
   utils.urlPatternToRegex('http://search.ancestry.com/cgi-bin/sse.dll*'),
@@ -10,16 +12,36 @@ module.exports = function(register){
   register(urls, setup);
 };
 
-var alternateNamesRegex = /\[[^\[\]]*\]/g;
+// var alternateNamesRegex = /\[[^\[\]]*\]/g;
 
 function setup(emitter) {
+  debug('run');
   
-  if( $('#recordData').length !== 1) {
+  // Parse the record table
+  var dataTable = new HorizontalTable(document.getElementById('recordData'), {
+    rowSelector: '.tableHorizontal > tbody > tr',
+    labelConverter: function(label){
+      return label.replace(/:$/,'');
+    } 
+  });
+  
+  // Emit `noData` event if we have no data
+  if(!dataTable.hasData()) {
     debug('no data');
     emitter.emit('noData');
     return;
   }
   
+  // Parse the household table
+  // TODOD: create vertical table parser
+  
+  // Process
+  var gedx = new GedcomX();
+  
+  debug('data');
+  emitter.emit('data', gedx);
+  
+  /*
   var personData = {};
   var recordData = {};
   $('#recordData .table tr').each(function(){
@@ -98,8 +120,10 @@ function setup(emitter) {
   
   debug('data', personData);
   emitter.emit('data', personData);
+  */
 }
 
+/*
 function checkMultipleFields( recordData, fields ) {
   for(var j in fields) {
     if( recordData[fields[j]] ) {
@@ -108,3 +132,4 @@ function checkMultipleFields( recordData, fields ) {
   }
   return undefined;
 }
+*/

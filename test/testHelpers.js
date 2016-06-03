@@ -38,6 +38,7 @@ module.exports = {
           debug(errors);
         }
         GLOBAL.window = window;
+        GLOBAL.document = window.document;
         callback(errors, window);
       }
     });
