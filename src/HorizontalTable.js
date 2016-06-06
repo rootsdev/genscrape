@@ -1,5 +1,7 @@
 /**
- * Parse an HTML table into key:[values] pairs
+ * Parse a horizontal HTML table into key:value[] pairs. It assumes there are
+ * two columns with the first column being the label and the second column
+ * being the value.
  * 
  * @param {HTMLElement} table - An HTMLElement that contains table rows
  * @param {Object=} options - Options passed on to processTable()
@@ -15,7 +17,7 @@ var HorizontalTable = function(table, options){
  * @param {HTMLElement} table - An HTMLElement that contains table rows
  * @param {Object} options
  * @param {String=} options.rowSelector - CSS selector that matches the data rows; defaults to 'tr'
- * @param {Function=} options.labelConverter - Modify the labels. Accepts one argument, a label string. Must returns a new label string.
+ * @param {Function=} options.labelMapper - Modify the labels. Accepts one argument, a label string. Must return a new label string.
  */
 HorizontalTable.prototype.processTable = function(table, options){
   if(!table || !(typeof table.querySelectorAll === 'function')){
@@ -24,8 +26,8 @@ HorizontalTable.prototype.processTable = function(table, options){
   
   options = options || {};
   
-  if(options.labelConverter && !(typeof options.labelConverter === 'function')){
-    throw new Error('labelConverter must be a function');
+  if(options.labelMapper && !(typeof options.labelMapper === 'function')){
+    throw new Error('labelMapper must be a function');
   }
   
   var rows = this.rows = {}, // Clear any previous data
@@ -37,8 +39,8 @@ HorizontalTable.prototype.processTable = function(table, options){
     label = row.children[0].textContent;
     value = row.children[1];
     
-    if(options.labelConverter){
-      label = options.labelConverter(label);
+    if(options.labelMapper){
+      label = options.labelMapper(label);
     }
     
     if(typeof rows[label] === 'undefined'){

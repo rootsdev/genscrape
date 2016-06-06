@@ -1,7 +1,8 @@
 var debug = require('debug')('genscrape:scrapers:ancestry-record'),
     utils = require('../utils'),
     GedcomX = require('gedcomx-js'),
-    HorizontalTable = require('../HorizontalTable');
+    HorizontalTable = require('../HorizontalTable'),
+    VerticalTable = require('../VerticalTable');
 
 var urls = [
   utils.urlPatternToRegex('http://search.ancestry.com/cgi-bin/sse.dll*'),
@@ -20,7 +21,7 @@ function setup(emitter) {
   // Parse the record table
   var dataTable = new HorizontalTable(document.getElementById('recordData'), {
     rowSelector: '.tableHorizontal > tbody > tr',
-    labelConverter: function(label){
+    labelMapper: function(label){
       return label.toLowerCase().replace(/:$/,'');
     } 
   });
@@ -33,7 +34,16 @@ function setup(emitter) {
   }
   
   // Parse the household table, it if exists
-  // TODOD: create vertical table parser
+  if(dataTable.hasLabel('household members')){
+    var householdTable = new VerticalTable(dataTable.getValue('household members'), {
+      labelMapper: function(label){
+        return label.toLowerCase();
+      },
+      valueMapper: function(cell){
+        return cell.textContent.trim();
+      }
+    });
+  }
   
   //
   // Process the data
