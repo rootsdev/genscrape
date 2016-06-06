@@ -4,9 +4,9 @@ var helpers = require('../../testHelpers'),
     pagesDir = __dirname + '/../../data/ancestry/records/pages',
     outputDir = __dirname + '/../../data/ancestry/records/output';
     
-describe.only('ancestry-record', function(){
+describe('ancestry-record', function(){
 
-  it('1880 census; parents names', setupTest('1880-2376696','http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&h=2376696&indiv=try'));
+  it.only('1880 census; parents names', setupTest('1880-2376696','http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&h=2376696&indiv=try'));
   
   it('vt vitals; marriage info and different parent names', setupTest('VTVitalRecs-1344848', 'http://search.ancestry.com/cgi-bin/sse.dll?db=VTVitalRecs&h=1344848&indiv=try'));
   

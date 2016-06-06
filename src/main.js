@@ -66,6 +66,8 @@ var register = genscrape.register = function(urls, scraper){
 
 module.exports = genscrape;
 
+require('./gedx-extensions');
+
 // Include scrapers. This is primarily done so that
 // browserify can find and include them.
 // TODO: find a method that allows us to dynamically include all scrapers

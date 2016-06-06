@@ -70,6 +70,16 @@ HorizontalTable.prototype.getValue = function(label){
 };
 
 /**
+ * Get the text of the first value for a label
+ * 
+ * @returns {String} text
+ */
+HorizontalTable.prototype.getText = function(label){
+  var value = this.getValue(label);
+  return value ? value.textContent : '';
+};
+
+/**
  * Get the list of labels
  * 
  * @returns {String[]} list of labels
@@ -85,6 +95,44 @@ HorizontalTable.prototype.getLabels = function(){
  */
 HorizontalTable.prototype.getLabelsCount = function(){
   return this.getLabels().length;
+};
+
+/**
+ * Get a list of labels that match the given regex
+ * 
+ * @param {RegExp} pattern
+ * @returns {String[]} labels
+ */
+HorizontalTable.prototype.getLabelsMatch = function(pattern){
+  return this.getLabels().filter(function(label){
+    return pattern.test(label);
+  });
+};
+
+/**
+ * Check whether a given label exists
+ * 
+ * @param {String} label
+ * @returns {Boolean}
+ */
+HorizontalTable.prototype.hasLabel = function(label){
+  return typeof this.rows[label] !== 'undefined';
+};
+
+/**
+ * Check whether the given regex matches any labels.
+ * 
+ * Don't call this method if you also plan on calling getLabelsMatch()
+ * because you're just repeating effort. This method is useful in cases
+ * where you want to call getLabelsMatch() just to check whether the length
+ * is non-zero. An example would be checking for any label that has "Father"
+ * in it to see if you should process father data.
+ * 
+ * @param {RegExp} pattern
+ * @returns {Boolean}
+ */
+HorizontalTable.prototype.hasMatch = function(match){
+  return this.getLabelsMatch(match).length > 0;
 };
 
 /**

@@ -21,7 +21,7 @@ function setup(emitter) {
   var dataTable = new HorizontalTable(document.getElementById('recordData'), {
     rowSelector: '.tableHorizontal > tbody > tr',
     labelConverter: function(label){
-      return label.replace(/:$/,'');
+      return label.toLowerCase().replace(/:$/,'');
     } 
   });
   
@@ -32,104 +32,163 @@ function setup(emitter) {
     return;
   }
   
-  // Parse the household table
+  // Parse the household table, it if exists
   // TODOD: create vertical table parser
   
-  // Process
-  var gedx = new GedcomX();
+  //
+  // Process the data
+  //
+  
+  var gedx = new GedcomX(),
+      primaryPerson = new GedcomX.Person({
+        id: gedx.generateId()
+      });
+      
+  gedx.addPerson(primaryPerson);
+  
+  // Name
+  primaryPerson.addSimpleName(dataTable.getText('name'));
+  
+  // Gender
+  if(dataTable.hasLabel('gender')){
+    var genderType, genderText = dataTable.getText('gender');
+    
+    switch(genderText){
+      case 'Male':
+        genderType = 'http://gedcomx.org/Male';
+        break;
+      case 'Female':
+        genderType = 'http://gedcomx.org/Female';
+        break;
+    }
+    
+    if(genderType){
+      primaryPerson.setGender({
+        type: genderType
+      });
+    }
+  }
+  
+  // Birth
+  var birthDate = dataTable.getText('birth year');
+  var birthPlace = dataTable.getText('birthplace');
+  if(birthDate || birthPlace){
+    var birth = GedcomX.Fact({
+      type: 'http://gedcomx.org/Birth'
+    });
+    
+    if(birthDate){
+      birth.setDate({
+        original: birthDate
+      });
+    }
+    
+    if(birthPlace){
+      birth.setPlace({
+        original: birthPlace
+      });
+    }
+    
+    primaryPerson.addFact(birth);
+  }
+  
+  // Residence
+  dataTable.getLabelsMatch(/^home in \d{4}$/).forEach(function(homeLabel){
+    var year = homeLabel.replace('home in ','');
+    primaryPerson.addFact({
+      type: 'http://gedcomx.org/Residence',
+      date: {
+        original: year,
+        formal: '+' + year
+      },
+      place: {
+        original: dataTable.getText(homeLabel)
+      }
+    });
+  });
+  
+  // Race
+  // TODO: change to use race; https://github.com/FamilySearch/gedcomx/issues/295
+  if(dataTable.hasLabel('race')){
+    primaryPerson.addFact({
+      type: 'http://gedcomx.org/Ethnicity',
+      value: dataTable.getText('race')
+    });
+  }
+  
+  // Marital Status
+  // TODO: get date (or just year) of record
+  if(dataTable.hasLabel('marital status')){
+    primaryPerson.addFact({
+      type: 'http://gedcomx.org/MaritalStatus',
+      value: dataTable.getText('marital status')
+    });
+  }
+  
+  // Father
+  if(dataTable.hasMatch(/father's/)){
+    var father = GedcomX.Person({
+      id: gedx.generateId()
+    });
+    
+    if(dataTable.hasLabel('father\'s name')){
+      father.addSimpleName(dataTable.getText('father\'s name'));
+    }
+    
+    if(dataTable.hasLabel('father\'s birthplace')){
+      father.addFact({
+        type: 'http://gedcomx.org',
+        place: {
+          original: dataTable.getText('father\'s birthplace')
+        }
+      });
+    }
+    
+    gedx.addPerson(father);
+    
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: {
+        resource: '#' + father.getId()
+      },
+      person2: {
+        resource: '#' + primaryPerson.getId()
+      }
+    });
+  }
+  
+  // Mother
+  if(dataTable.hasMatch(/mother's/)){
+    var mother = GedcomX.Person({
+      id: gedx.generateId()
+    });
+    
+    if(dataTable.hasLabel('mother\'s name')){
+      mother.addSimpleName(dataTable.getText('mother\'s name'));
+    }
+    
+    if(dataTable.hasLabel('mother\'s birthplace')){
+      mother.addFact({
+        type: 'http://gedcomx.org',
+        place: {
+          original: dataTable.getText('mother\'s birthplace')
+        }
+      });
+    }
+    
+    gedx.addPerson(mother);
+    
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: {
+        resource: '#' + mother.getId()
+      },
+      person2: {
+        resource: '#' + primaryPerson.getId()
+      }
+    });
+  }
   
   debug('data');
   emitter.emit('data', gedx);
-  
-  /*
-  var personData = {};
-  var recordData = {};
-  $('#recordData .table tr').each(function(){
-    var row = $(this);
-    // Take the row label, trim leading and trailing whitespace, 
-    // lowercase it, and remove the trailing ":".
-    // This will serve as the key in the recordData object
-    var label = $.trim( $('th', row).text() ).toLowerCase().slice(0, -1);
-    if( label && !recordData[label] ) {
-      recordData[label] = row;
-    }
-  });
-  
-  // Process the name
-  var name = checkMultipleFields(recordData, ['name', 'name of deceased']);
-  if( name ) {
-    // The regex replace removes alternate names which always appear surrounded by []
-    var nameParts = utils.splitName( $.trim( name.children().eq(1).text().replace(alternateNamesRegex, '') ) );
-    if(nameParts[0]) personData.givenName = nameParts[0];
-    if(nameParts[1]) personData.familyName = nameParts[1];
-  }
-  
-  // Process estimated birth year
-  var birthDate = checkMultipleFields( recordData, ['birth year', 'birth date', 'born', 'estimated birth year'] );
-  if( birthDate ) {
-    personData.birthDate = $.trim( birthDate.children().eq(1).text() ).replace('abt ','');
-  }
-  
-  // Process the birthplace
-  var birthPlace = checkMultipleFields(recordData, ['birthplace', 'birth place']);
-  if( birthPlace ) {
-    personData.birthPlace = $.trim( birthPlace.children().eq(1).text() );
-  }
-  
-  var deathDate = checkMultipleFields(recordData, ['death year', 'death date', 'died']);
-  if(deathDate){
-    personData.deathDate = $.trim( deathDate.children().eq(1).text() );
-  }
-  
-  var deathPlace = checkMultipleFields(recordData, ['deathplace', 'death place']);
-  if( deathPlace ) {
-    personData.deathPlace = $.trim( deathPlace.children().eq(1).text() );
-  }
-  
-  if( recordData['marriage date'] ){
-    personData.marriageDate = $.trim(recordData['marriage date'].children().eq(1).text());
-  }
-  
-  if( recordData['marriage place'] ){
-    personData.marriagePlace = $.trim(recordData['marriage place'].children().eq(1).text());
-  }
-  
-  // Father's name
-  var fathersName = checkMultipleFields(recordData, ["father's name", 'father name']);
-  if( fathersName ) {
-    var fatherNameParts = utils.splitName( $.trim( fathersName.children().eq(1).text().replace(alternateNamesRegex, '') ) );
-    if(fatherNameParts[0]) personData.fatherGivenName = fatherNameParts[0];
-    if(fatherNameParts[1]) personData.fatherFamilyName = fatherNameParts[1];
-  }
-  
-  // Mother's name
-  var mothersName = checkMultipleFields(recordData, ["mother's name", 'mother name']);
-  if( mothersName ) {
-    var motherNameParts = utils.splitName( $.trim( mothersName.children().eq(1).text().replace(alternateNamesRegex, '') ) );
-    if(motherNameParts[0]) personData.motherGivenName = motherNameParts[0];
-    if(motherNameParts[1]) personData.motherFamilyName = motherNameParts[1];
-  }
-  
-  // Spouse's name
-  var spousesName = checkMultipleFields(recordData, ["spouse's name", 'spouse name']);
-  if( spousesName ) {
-    var spouseNameParts = utils.splitName( $.trim( spousesName.children().eq(1).text().replace(alternateNamesRegex, '') ) );
-    if(spouseNameParts[0]) personData.spouseGivenName = spouseNameParts[0];
-    if(spouseNameParts[1]) personData.spouseFamilyName = spouseNameParts[1];
-  }
-  
-  debug('data', personData);
-  emitter.emit('data', personData);
-  */
 }
-
-/*
-function checkMultipleFields( recordData, fields ) {
-  for(var j in fields) {
-    if( recordData[fields[j]] ) {
-      return recordData[fields[j]];
-    }
-  }
-  return undefined;
-}
-*/

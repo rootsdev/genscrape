@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha --recursive",
     "test:record": "GENSCRAPE_RECORDING=record npm test",
+    "test:record:debug": "DEBUG=genscrape:* npm run test:record",
     "test:debug": "DEBUG=genscrape:* npm test",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive",
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
@@ -26,7 +27,7 @@
   "dependencies": {
     "debug": "2.2.0",
     "eventemitter2": "1.0.3",
-    "gedcomx-js": "1.0.1"
+    "gedcomx-js": "1.1.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
