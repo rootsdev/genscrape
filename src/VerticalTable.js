@@ -70,6 +70,15 @@ VerticalTable.prototype.processTable = function(table, options){
 };
 
 /**
+ * Get the rows
+ * 
+ * @param {Object[]}
+ */
+VerticalTable.prototype.getRows = function(){
+  return this.rows;
+};
+
+/**
  * Create an object from a list of keys and a list of values.
  * Key[i] is paired with Value[i].
  * 

@@ -21,7 +21,19 @@ var GedcomX = require('gedcomx-js'),
  */
 GedcomX.Person.prototype.addSimpleName = function(name){
   if(name){
-    
+    this.addName(GedcomX.Name.createFromString(name));
+  }
+  return this;
+};
+
+/**
+ * Create a Name from a single string.
+ * 
+ * @param {String} nameString
+ * @returns {Name}
+ */
+GedcomX.Name.createFromString = function(name){
+  if(name){
     var parts = utils.splitName(name),
         nameForm = GedcomX.NameForm();
     
@@ -41,10 +53,126 @@ GedcomX.Person.prototype.addSimpleName = function(name){
       }));
     }
     
-    this.addName(GedcomX.Name().addNameForm(nameForm));
+    return GedcomX.Name().addNameForm(nameForm);
   }
-  
-  return this;
+};
+
+/**
+ * Find the first person in the document that matches by the specified name
+ * 
+ * @param {Name} name
+ * @returns {Person}
+ */
+GedcomX.prototype.findPersonByName = function(name){
+  for(var i = 0; i < this.persons.length; i++){
+    if(this.persons[i].hasName(name)){
+      return this.persons[i];
+    }
+  }
+};
+
+/**
+ * Check whether this person has this name
+ * 
+ * @param {Name} name
+ * @returns {Boolean}
+ */
+GedcomX.Person.prototype.hasName = function(name){
+  for(var i = 0; i < this.names.length; i++){
+    if(this.names[i].matches(name)){
+      return true;
+    }
+  }
+  return false;
+};
+
+/**
+ * Check whether this name matches the given name. Names match if they have
+ * at least one matching NameForm.
+ * 
+ * @param {Name} name
+ * @returns {Boolean}
+ */
+GedcomX.Name.prototype.matches = function(name){
+  for(var i = 0; i < this.nameForms.length; i++){
+    if(name.hasNameForm(this.nameForms[i])){
+      return true;
+    }
+  }
+  return false;
+};
+
+/**
+ * Check whether this name has a NameForm that matches the given NameForm.
+ * 
+ * @param {NameForm} nameForm
+ * @returns {Boolean}
+ */
+GedcomX.Name.prototype.hasNameForm = function(nameForm){
+  for(var i = 0; i < this.nameForms.length; i++){
+    if(this.nameForms[i].equals(nameForm)){
+      return true;
+    }
+  }
+  return false;
+};
+
+/**
+ * Check whether this NameForm equals the given NameForm.
+ * 
+ * @param {NameForm} nameForm
+ * @returns {Boolean}
+ */
+GedcomX.NameForm.prototype.equals = function(nameForm){
+  if(this.getLang() !== nameForm.getLang()){
+    return false;
+  }
+  if(this.getFullText() !== nameForm.getFullText()){
+    return false;
+  }
+  if(this.getParts().length !== nameForm.getParts().length){
+    return false;
+  }
+  for(var i = 0; i < this.parts.length; i++){
+    if(!nameForm.hasNamePart(this.parts[i])){
+      return false;
+    }
+  }
+  return true;
+};
+
+/**
+ * Check whether this NameForm has a matching NamePart
+ * 
+ * @param {NamePart}
+ * @returns {Boolean}
+ */
+GedcomX.NameForm.prototype.hasNamePart = function(namePart){
+  for(var i = 0; i < this.parts.length; i++){
+    if(this.parts[i].equals(namePart)){
+      return true;
+    }
+  }
+  return false;
+};
+
+/**
+ * Check whether this NamePart equals another NamePart
+ * 
+ * @param {NamePart}
+ * @returns {Boolean}
+ */
+GedcomX.NamePart.prototype.equals = function(namePart){
+  // We are ignoring qualifiers. If this method ever gets added to gedcomx-js
+  // then a conversation should be initiated about whether qualifiers should
+  // be included in the comparison.
+  if(this.getType() !== namePart.getType()){
+    return false;
+  }
+  if(this.getValue() !== namePart.getValue()){
+    return false;
+  }
+  return true;
 };
 
 /**

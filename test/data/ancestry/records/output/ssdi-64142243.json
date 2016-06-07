@@ -1,1 +1,26 @@
-{}
+{
+  "persons": [
+    {
+      "id": "7",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Clara Vannoske",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Clara"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Vannoske"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

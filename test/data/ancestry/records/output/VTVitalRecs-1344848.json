@@ -1,1 +1,29 @@
-{}
+{
+  "persons": [
+    {
+      "id": "6",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Frank J Vannoske",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Frank J"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Vannoske"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

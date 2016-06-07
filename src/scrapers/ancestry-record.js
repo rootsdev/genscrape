@@ -18,8 +18,10 @@ module.exports = function(register){
 function setup(emitter) {
   debug('run');
   
+  var dataTable, householdTable;
+  
   // Parse the record table
-  var dataTable = new HorizontalTable(document.getElementById('recordData'), {
+  dataTable = new HorizontalTable(document.getElementById('recordData'), {
     rowSelector: '.tableHorizontal > tbody > tr',
     labelMapper: function(label){
       return label.toLowerCase().replace(/:$/,'');
@@ -35,7 +37,7 @@ function setup(emitter) {
   
   // Parse the household table, it if exists
   if(dataTable.hasLabel('household members')){
-    var householdTable = new VerticalTable(dataTable.getValue('household members'), {
+    householdTable = new VerticalTable(dataTable.getValue('household members'), {
       labelMapper: function(label){
         return label.toLowerCase();
       },
@@ -135,6 +137,10 @@ function setup(emitter) {
     });
   }
   
+  //
+  // Family
+  //
+  
   // Father
   if(dataTable.hasMatch(/father's/)){
     var father = GedcomX.Person({
@@ -195,6 +201,35 @@ function setup(emitter) {
       },
       person2: {
         resource: '#' + primaryPerson.getId()
+      }
+    });
+  }
+  
+  // Process household persons
+  if(householdTable){
+    var householdPerson;
+    householdTable.getRows().forEach(function(rowData){
+      
+      // There's no point in processing this data if there isn't at least a name
+      if(rowData.name){
+        
+        // Check to see if we've already added this person. Parents are often
+        // explicitly listed in the data table which we process above.
+        var name = GedcomX.Name.createFromString(rowData.name),
+            existingPerson = gedx.findPersonByName(name);
+        
+        if(!existingPerson) {
+          householdPerson = GedcomX.Person({
+            id: gedx.generateId()
+          });
+          householdPerson.addSimpleName(rowData.name);
+          gedx.addPerson(householdPerson);
+        }
+        
+        // TODO: process age
+        // We can't do this until we come up with a method for calculating
+        // the date of the document/event
+        
       }
     });
   }

@@ -1,1 +1,71 @@
-{}
+{
+  "persons": [
+    {
+      "id": "9"
+    },
+    {
+      "id": "10",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Fred Smith",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Fred"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ruth Ellen Meredith",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Ruth Ellen"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Meredith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10"
+      },
+      "person2": {
+        "resource": "#9"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#11"
+      },
+      "person2": {
+        "resource": "#9"
+      }
+    }
+  ]
+}

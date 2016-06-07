@@ -1,1 +1,22 @@
-{}
+{
+  "persons": [
+    {
+      "id": "8",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ann Armstrong[Ann Smithers] ",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Ann Armstrong[Ann Smithers]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

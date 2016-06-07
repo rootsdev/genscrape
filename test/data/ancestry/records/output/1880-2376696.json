@@ -113,6 +113,50 @@
           }
         }
       ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Caty Van Sky",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Caty Van"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Sky"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Fanny Van Sky",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Fanny Van"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Sky"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "relationships": [
