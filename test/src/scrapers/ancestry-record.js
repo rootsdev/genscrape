@@ -8,7 +8,7 @@ describe('ancestry-record', function(){
 
   it('1880 census; parents names', setupTest('1880-2376696','http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&h=2376696&indiv=try'));
   
-  it('vt vitals; marriage info and different parent names', setupTest('VTVitalRecs-1344848', 'http://search.ancestry.com/cgi-bin/sse.dll?db=VTVitalRecs&h=1344848&indiv=try'));
+  it.only('vt vitals; marriage info and different parent names', setupTest('VTVitalRecs-1344848', 'http://search.ancestry.com/cgi-bin/sse.dll?db=VTVitalRecs&h=1344848&indiv=try'));
   
   it('ssdi; death date and other birth date', setupTest('ssdi-64142243', 'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=ssdi&h=64142243'));
   

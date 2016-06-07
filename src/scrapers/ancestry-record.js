@@ -142,20 +142,20 @@ function setup(emitter) {
   //
   
   // Father
-  if(dataTable.hasMatch(/father's/)){
+  if(dataTable.hasMatch(/father('s)? /)){
     var father = GedcomX.Person({
       id: gedx.generateId()
     });
     
-    if(dataTable.hasLabel('father\'s name')){
-      father.addSimpleName(dataTable.getText('father\'s name'));
+    if(dataTable.hasMatch(/father('s)? name/)){
+      father.addSimpleName(dataTable.getMatchText(/father('s)? name/));
     }
     
-    if(dataTable.hasLabel('father\'s birthplace')){
+    if(dataTable.hasMatch(/father('s)? birthplace/)){
       father.addFact({
         type: 'http://gedcomx.org',
         place: {
-          original: dataTable.getText('father\'s birthplace')
+          original: dataTable.getMatchText(/father('s)? birthplace/)
         }
       });
     }
@@ -174,20 +174,20 @@ function setup(emitter) {
   }
   
   // Mother
-  if(dataTable.hasMatch(/mother's/)){
+  if(dataTable.hasMatch(/mother('s)? /)){
     var mother = GedcomX.Person({
       id: gedx.generateId()
     });
     
-    if(dataTable.hasLabel('mother\'s name')){
-      mother.addSimpleName(dataTable.getText('mother\'s name'));
+    if(dataTable.hasMatch(/mother('s)? name/)){
+      mother.addSimpleName(dataTable.getMatchText(/mother('s)? name/));
     }
     
-    if(dataTable.hasLabel('mother\'s birthplace')){
+    if(dataTable.hasMatch(/mother('s)? birthplace/)){
       mother.addFact({
         type: 'http://gedcomx.org',
         place: {
-          original: dataTable.getText('mother\'s birthplace')
+          original: dataTable.getMatchText(/mother('s)? birthplace/)
         }
       });
     }
@@ -201,6 +201,38 @@ function setup(emitter) {
       },
       person2: {
         resource: '#' + primaryPerson.getId()
+      }
+    });
+  }
+  
+  // Spouse
+  if(dataTable.hasMatch(/spouse('s)? /)){
+    var spouse = GedcomX.Person({
+      id: gedx.generateId()
+    });
+    
+    if(dataTable.hasMatch(/spouse('s)? name/)){
+      spouse.addSimpleName(dataTable.getMatchText(/spouse('s)? name/));
+    }
+    
+    if(dataTable.hasMatch(/spouse('s)? birthplace/)){
+      spouse.addFact({
+        type: 'http://gedcomx.org',
+        place: {
+          original: dataTable.getMatchText(/spouse('s)? birthplace/)
+        }
+      });
+    }
+    
+    gedx.addPerson(spouse);
+    
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/Couple',
+      person2: {
+        resource: '#' + primaryPerson.getId()
+      },
+      person1: {
+        resource: '#' + spouse.getId()
       }
     });
   }

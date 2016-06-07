@@ -138,6 +138,31 @@ HorizontalTable.prototype.hasMatch = function(match){
 };
 
 /**
+ * Get the first value of the first label that matches the given regex.
+ * 
+ * @param {RegExp} pattern
+ * @returns {HTMLElement}
+ */
+HorizontalTable.prototype.getMatch = function(pattern){
+  var label = this.getLabelsMatch(pattern)[0];
+  if(label){
+    return this.getValue(label);
+  }
+};
+
+/**
+ * Get the text of the cell from the first label that matches
+ * the given regex
+ * 
+ * @param {RegExp} pattern
+ * @returns {String}
+ */
+HorizontalTable.prototype.getMatchText = function(pattern){
+  var match = this.getMatch(pattern);
+  return match ? match.textContent : '';
+};
+
+/**
  * Does this table have any data?
  * 
  * @returns {Boolean}

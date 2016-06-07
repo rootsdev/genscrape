@@ -182,11 +182,9 @@ GedcomX.NamePart.prototype.equals = function(namePart){
  * 
  * @returns {String}
  */
-// This little trick creates an encapsulation so that the generator method has
-// access to the id var but it doesn't leak into the main file scope.
-GedcomX.prototype.generateId = (function(){
-  var id = 0;
-  return function(){
-    return ++id + '';
-  };
-}());
+GedcomX.prototype.generateId = function(){
+  if(typeof this._nextId === 'undefined'){
+    this._nextId = 0;
+  }
+  return ++this._nextId + '';
+};
