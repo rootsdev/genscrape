@@ -16,6 +16,14 @@
             }
           ]
         }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "27 May 1890"
+          }
+        }
       ]
     }
   ]

@@ -1,63 +1,19 @@
 {
   "persons": [
     {
-      "id": "1"
-    },
-    {
-      "id": "2",
+      "id": "1",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "names": [
         {
           "nameForms": [
             {
-              "fullText": "Fred Smith",
+              "fullText": "Joyce Ann Mears",
               "parts": [
                 {
                   "type": "http://gedcomx.org/Given",
-                  "value": "Fred"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "names": [
-        {
-          "nameForms": [
-            {
-              "fullText": "Ruth Ellen Meredith",
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ruth Ellen"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Meredith"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "names": [
-        {
-          "nameForms": [
-            {
-              "fullText": "Jerry V. Mears",
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Jerry V."
+                  "value": "Joyce Ann"
                 },
                 {
                   "type": "http://gedcomx.org/Surname",
@@ -67,36 +23,24 @@
             }
           ]
         }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Seaford, Nassau, New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "8 Mar 2010"
+          },
+          "place": {
+            "original": "Seaford, Nassau, New York, USA"
+          }
+        }
       ]
-    }
-  ],
-  "relationships": [
-    {
-      "type": "http://gedcomx.org/ParentChild",
-      "person1": {
-        "resource": "#2"
-      },
-      "person2": {
-        "resource": "#1"
-      }
-    },
-    {
-      "type": "http://gedcomx.org/ParentChild",
-      "person1": {
-        "resource": "#3"
-      },
-      "person2": {
-        "resource": "#1"
-      }
-    },
-    {
-      "type": "http://gedcomx.org/Couple",
-      "person1": {
-        "resource": "#1"
-      },
-      "person2": {
-        "resource": "#4"
-      }
     }
   ]
 }

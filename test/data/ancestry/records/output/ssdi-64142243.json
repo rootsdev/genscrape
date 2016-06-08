@@ -20,6 +20,24 @@
             }
           ]
         }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "22 Mar 1892"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Oct 1974"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/NationalId",
+          "value": "103-42-5814"
+        }
       ]
     }
   ]

@@ -82,8 +82,8 @@ function setup(emitter) {
   }
   
   // Birth
-  var birthDate = dataTable.getMatchText(/birth year|birth date/);
-  var birthPlace = dataTable.getMatchText(/birth ?place/);
+  var birthDate = dataTable.getMatchText(/^(birth year|birth date|born)$/);
+  var birthPlace = dataTable.getMatchText(/^(birth ?place)$/);
   if(birthDate || birthPlace){
     var birth = GedcomX.Fact({
       type: 'http://gedcomx.org/Birth'
@@ -102,6 +102,29 @@ function setup(emitter) {
     }
     
     primaryPerson.addFact(birth);
+  }
+  
+  // Death
+  var deathDate = dataTable.getMatchText(/^(death date|died)$/);
+  var deathPlace = dataTable.getMatchText(/^(death place)$/);
+  if(deathDate || deathPlace){
+    var death = GedcomX.Fact({
+      type: 'http://gedcomx.org/Death'
+    });
+    
+    if(deathDate){
+      death.setDate({
+        original: deathDate
+      });
+    }
+    
+    if(deathPlace){
+      death.setPlace({
+        original: deathPlace
+      });
+    }
+    
+    primaryPerson.addFact(death);
   }
   
   // Residence
@@ -134,6 +157,14 @@ function setup(emitter) {
     primaryPerson.addFact({
       type: 'http://gedcomx.org/MaritalStatus',
       value: dataTable.getText('marital status')
+    });
+  }
+  
+  // SSN
+  if(dataTable.hasLabel('ssn')){
+    primaryPerson.addFact({
+      type: 'http://gedcomx.org/NationalId',
+      value: dataTable.getText('ssn')
     });
   }
   
