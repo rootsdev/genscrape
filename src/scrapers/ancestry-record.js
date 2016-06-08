@@ -82,8 +82,8 @@ function setup(emitter) {
   }
   
   // Birth
-  var birthDate = dataTable.getText('birth year');
-  var birthPlace = dataTable.getText('birthplace');
+  var birthDate = dataTable.getMatchText(/birth year|birth date/);
+  var birthPlace = dataTable.getMatchText(/birth ?place/);
   if(birthDate || birthPlace){
     var birth = GedcomX.Fact({
       type: 'http://gedcomx.org/Birth'

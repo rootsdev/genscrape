@@ -23,6 +23,17 @@
             }
           ]
         }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "abt 1874"
+          },
+          "place": {
+            "original": "New York"
+          }
+        }
       ]
     },
     {
