@@ -46,6 +46,28 @@
           ]
         }
       ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Jerry V. Mears",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Jerry V."
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Mears"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "relationships": [
@@ -65,6 +87,15 @@
       },
       "person2": {
         "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
       }
     }
   ]

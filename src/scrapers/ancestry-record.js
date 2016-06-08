@@ -215,26 +215,43 @@ function setup(emitter) {
       spouse.addSimpleName(dataTable.getMatchText(/spouse('s)? name/));
     }
     
-    if(dataTable.hasMatch(/spouse('s)? birthplace/)){
-      spouse.addFact({
-        type: 'http://gedcomx.org',
-        place: {
-          original: dataTable.getMatchText(/spouse('s)? birthplace/)
-        }
-      });
-    }
-    
     gedx.addPerson(spouse);
     
-    gedx.addRelationship({
+    var coupleRel = GedcomX.Relationship({
       type: 'http://gedcomx.org/Couple',
-      person2: {
+      person1: {
         resource: '#' + primaryPerson.getId()
       },
-      person1: {
+      person2: {
         resource: '#' + spouse.getId()
       }
     });
+    gedx.addRelationship(coupleRel);
+    
+    // Marriage
+    // TODO: is it possible for a event to be listed without a spouse? If so
+    // then this code block won't detect it
+    var marriageDate = dataTable.getText('marriage date');
+    var marriagePlace = dataTable.getText('marriage place');
+    if(marriageDate || marriagePlace){
+      var marriage = GedcomX.Fact({
+        type: 'http://gedcomx.org/Marriage'
+      });
+      
+      if(marriageDate){
+        marriage.setDate({
+          original: marriageDate
+        });
+      }
+      
+      if(marriagePlace){
+        marriage.setPlace({
+          original: marriagePlace
+        });
+      }
+      
+      coupleRel.addFact(marriage);
+    }
   }
   
   // Process household persons

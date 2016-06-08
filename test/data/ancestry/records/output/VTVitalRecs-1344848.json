@@ -110,11 +110,22 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#4"
+        "resource": "#1"
       },
       "person2": {
-        "resource": "#1"
-      }
+        "resource": "#4"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "4 Aug 1900"
+          },
+          "place": {
+            "original": "Halifax, Vermont, USA"
+          }
+        }
+      ]
     }
   ]
 }
