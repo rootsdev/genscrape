@@ -6,15 +6,40 @@ var helpers = require('../../testHelpers'),
     
 describe('ancestry-record', function(){
 
-  it('1880 census; parents names', setupTest('1880-2376696','http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&h=2376696&indiv=try'));
+  it('1880 census; parents names', setupTest(
+    '1880-2376696',
+    'http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&h=2376696&indiv=try'
+  ));
   
-  it('vt vitals; marriage info and different parent names', setupTest('VTVitalRecs-1344848', 'http://search.ancestry.com/cgi-bin/sse.dll?db=VTVitalRecs&h=1344848&indiv=try'));
+  it('vt vitals; marriage info and different parent names', setupTest(
+    'VTVitalRecs-1344848', 
+    'http://search.ancestry.com/cgi-bin/sse.dll?db=VTVitalRecs&h=1344848&indiv=try'
+  ));
   
-  it('ssdi; death date and other birth date', setupTest('ssdi-64142243', 'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=ssdi&h=64142243'));
+  it('ssdi; death date and other birth date', setupTest(
+    'ssdi-64142243', 
+    'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=ssdi&h=64142243'
+  ));
   
-  it('findagrave; other death date', setupTest('findagraveus-8824956', 'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=findagraveus&h=8824956'));
+  it('findagrave; other death date', setupTest(
+    'findagraveus-8824956', 
+    'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=findagraveus&h=8824956'
+  ));
   
-  it('obituary; many relationships', setupTest('webobituary-22395809','http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=web-obituary&h=22395809'));
+  it('obituary; many relationships', setupTest(
+    'webobituary-22395809',
+    'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=web-obituary&h=22395809'
+  ));
+  
+  it('1940 US Census', setupTest(
+    '1940usfedcen-154240314',
+    'http://search.ancestry.com/cgi-bin/sse.dll?db=1940usfedcen&indiv=try&h=154240314'
+  ));
+  
+  it('1900 US Census', setupTest(
+    '1900usfedcen-54351117',
+    'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=1900usfedcen&h=54351117'
+  ));
   
   it('no data', function(done){
     var url = 'http://search.ancestry.com/cgi-bin/sse.dll?nodata',

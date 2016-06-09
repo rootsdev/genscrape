@@ -6,11 +6,32 @@
         {
           "nameForms": [
             {
-              "fullText": "Ann Armstrong[Ann Smithers] ",
+              "fullText": "Ann Armstrong",
               "parts": [
                 {
                   "type": "http://gedcomx.org/Given",
-                  "value": "Ann Armstrong[Ann Smithers]"
+                  "value": "Ann"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Armstrong"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "fullText": "Ann Smithers",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Ann"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smithers"
                 }
               ]
             }

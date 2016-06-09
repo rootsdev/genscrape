@@ -89,7 +89,9 @@ function setup(emitter) {
   gedx.addPerson(primaryPerson);
   
   // Name
-  primaryPerson.addSimpleName(dataTable.getText('name'));
+  dataTable.getText('name').trim().split(/\[|\]/g).forEach(function(name){
+    primaryPerson.addSimpleName(name);
+  });
   
   // Gender
   if(dataTable.hasLabel('gender')){
@@ -134,8 +136,8 @@ function setup(emitter) {
   });
   
   // Residence
-  dataTable.getLabelsMatch(/^home in \d{4}$/).forEach(function(homeLabel){
-    var year = homeLabel.replace('home in ','');
+  dataTable.getLabelsMatch(/^(home|residence) in \d{4}$/).forEach(function(homeLabel){
+    var year = homeLabel.replace(/^(home|residence) in /,'');
     primaryPerson.addFact({
       type: 'http://gedcomx.org/Residence',
       date: {
