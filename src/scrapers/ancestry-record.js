@@ -28,7 +28,6 @@ var factsConfig = [
     regex: /^(color or )race$/,
     type: 'http://gedcomx.org/Ethnicity'
   },
-  // TODO: get date (or just year) of record
   {
     label: 'marital status',
     type: 'http://gedcomx.org/MaritalStatus'
@@ -80,6 +79,9 @@ function setup(emitter) {
   //
   // Process the data
   //
+  
+  
+  var recordYear = getRecordYear();
   
   var gedx = new GedcomX(),
       primaryPerson = new GedcomX.Person({
@@ -315,16 +317,52 @@ function setup(emitter) {
           });
           householdPerson.addSimpleName(rowData.name);
           gedx.addPerson(householdPerson);
+          existingPerson = householdPerson;
         }
         
-        // TODO: process age
-        // We can't do this until we come up with a method for calculating
-        // the date of the document/event
-        
+        // Primary person already has birth year extracted
+        // TODO: enhance to check whether the primary person actually has
+        // a birth fact; right now we're just assuming since Ancestry
+        // usually calculates an estimated age for us
+        if(existingPerson !== primaryPerson){
+          var age = parseInt(rowData.age, 10);
+          if(!isNaN(age) && recordYear){
+            var estimatedBirthYear = recordYear - age;
+            existingPerson.addFact({
+              type: 'http://gedcomx.org',
+              date: {
+                original: 'about ' + estimatedBirthYear,
+                formal: 'A+' + estimatedBirthYear
+              }
+            });
+          }
+        }
       }
     });
   }
   
   debug('data');
   emitter.emit('data', gedx);
+}
+
+/**
+ * Attempt to calculate a year for the record.
+ * 
+ * Right now it just tries to get a year (4-digit number) from the title.
+ * 
+ * @returns {Integer}
+ */
+function getRecordYear(){
+  var title = getTitle();
+  var matches = title.match(/\d{4}/g);
+  if(matches.length === 1){
+    return parseInt(matches[0], 10);
+  }
+}
+
+/**
+ * @returns {String}
+ */
+function getTitle(){
+  return document.querySelector('h1').textContent;
 }

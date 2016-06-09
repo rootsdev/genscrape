@@ -94,6 +94,15 @@
             }
           ]
         }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org",
+          "date": {
+            "original": "about 1888",
+            "formal": "A+1888"
+          }
+        }
       ]
     },
     {
@@ -115,6 +124,15 @@
               ]
             }
           ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org",
+          "date": {
+            "original": "about 1925",
+            "formal": "A+1925"
+          }
         }
       ]
     },
@@ -138,6 +156,15 @@
             }
           ]
         }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org",
+          "date": {
+            "original": "about 1920",
+            "formal": "A+1920"
+          }
+        }
       ]
     },
     {
@@ -159,6 +186,15 @@
               ]
             }
           ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org",
+          "date": {
+            "original": "about 1914",
+            "formal": "A+1914"
+          }
         }
       ]
     }

@@ -19,23 +19,6 @@
               ]
             }
           ]
-        },
-        {
-          "nameForms": [
-            {
-              "fullText": "Ann Smithers",
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ann"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smithers"
-                }
-              ]
-            }
-          ]
         }
       ],
       "facts": [

@@ -77,6 +77,13 @@
           "place": {
             "original": "Prussia"
           }
+        },
+        {
+          "type": "http://gedcomx.org",
+          "date": {
+            "original": "about 1825",
+            "formal": "A+1825"
+          }
         }
       ]
     },
@@ -107,6 +114,13 @@
           "place": {
             "original": "Prussia"
           }
+        },
+        {
+          "type": "http://gedcomx.org",
+          "date": {
+            "original": "about 1832",
+            "formal": "A+1832"
+          }
         }
       ]
     },
@@ -130,6 +144,15 @@
             }
           ]
         }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org",
+          "date": {
+            "original": "about 1876",
+            "formal": "A+1876"
+          }
+        }
       ]
     },
     {
@@ -151,6 +174,15 @@
               ]
             }
           ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org",
+          "date": {
+            "original": "about 1877",
+            "formal": "A+1877"
+          }
         }
       ]
     }
