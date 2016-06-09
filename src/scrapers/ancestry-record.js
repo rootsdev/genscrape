@@ -285,6 +285,78 @@ function setup(emitter) {
     }
   }
   
+  //
+  // Family members with only a name, common in obituaries
+  //
+  
+  if(dataTable.hasLabel('father')){
+    var father = GedcomX.Person({
+      id: gedx.generateId()
+    }).addSimpleName(dataTable.getText('father'));
+    gedx.addPerson(father);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: {
+        resource: '#' + father.getId()
+      },
+      person2: {
+        resource: '#' + primaryPerson.getId()
+      }
+    });
+  }
+  
+  if(dataTable.hasLabel('mother')){
+    var mother = GedcomX.Person({
+      id: gedx.generateId()
+    }).addSimpleName(dataTable.getText('mother'));
+    gedx.addPerson(mother);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: {
+        resource: '#' + mother.getId()
+      },
+      person2: {
+        resource: '#' + primaryPerson.getId()
+      }
+    });
+  }
+  
+  if(dataTable.hasLabel('spouse')){
+    var spouse = GedcomX.Person({
+      id: gedx.generateId()
+    }).addSimpleName(dataTable.getText('spouse'));
+    gedx.addPerson(spouse);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/Couple',
+      person2: {
+        resource: '#' + spouse.getId()
+      },
+      person1: {
+        resource: '#' + primaryPerson.getId()
+      }
+    });
+  }
+  
+  if(dataTable.hasLabel('children')){
+    dataTable.getText('children').split('; ').forEach(function(name){
+      var child = GedcomX.Person({
+        id: gedx.generateId()
+      }).addSimpleName(name);
+      gedx.addPerson(child);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: {
+          resource: '#' + primaryPerson.getId()
+        },
+        person2: {
+          resource: '#' + child.getId()
+        }
+      });
+    });
+  }
+  
+  // TODO: siblings; see web obituary test; how do we detect and handle "of {PLACE}" strings?
+  
   // Process household persons
   if(householdTable){
     var householdPerson;

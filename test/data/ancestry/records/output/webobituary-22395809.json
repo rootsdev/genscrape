@@ -41,6 +41,163 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Fred  Smith",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Fred"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ruth Ellen Meredith",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Ruth Ellen"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Meredith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Jerry V. Mears",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Jerry V."
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Mears"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Michelle Lowe",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Michelle"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Lowe"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Richard Mears",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Richard"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Mears"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#5"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#6"
+      }
     }
   ]
 }
