@@ -9,9 +9,8 @@
  */
 
 var GedcomX = require('gedcomx-js'),
-    utils = require('./utils'),
-    debug = require('debug')('genscrape:gedx-extensions');
-
+    utils = require('./utils');
+    
 /**
  * Given a full name as a complete string, split the name into parts and add
  * the name to the person.
@@ -187,4 +186,85 @@ GedcomX.prototype.generateId = function(){
     this._nextId = 0;
   }
   return ++this._nextId + '';
+};
+
+/**
+ * Extend Relationship to allow person objects to be specified instead of
+ * having to generate the references ourselves.
+ */
+var originalSetPerson1 = GedcomX.Relationship.prototype.setPerson1;
+GedcomX.Relationship.prototype.setPerson1 = function(reference){
+  if(GedcomX.Person.isInstance(reference)){
+    reference = {
+      resource: '#' + reference.getId()
+    };
+  }
+  originalSetPerson1.call(this, reference);
+};
+
+var originalSetPerson2 = GedcomX.Relationship.prototype.setPerson2;
+GedcomX.Relationship.prototype.setPerson2 = function(reference){
+  if(GedcomX.Person.isInstance(reference)){
+    reference = {
+      resource: '#' + reference.getId()
+    };
+  }
+  originalSetPerson2.call(this, reference);
+};
+
+/**
+ * Add a relative of the specific person. This creates the new person, adds them
+ * to the GedcomX document, creates a relationship, and adds the new relationship.
+ * 
+ * When creating parent-child relationships, the order of persons matters.
+ * `person1` is the parent; `person2` is the child. We allow you to specify
+ * `Child` as the relationship type, even though it doesn't exist in GedcomX,
+ * so that we can easily calculate which position the person should be in.
+ * 
+ * @param {Person} person - An existing person that the new person is related to.
+ * @param {String} name - Name of the new person
+ * @param {String} relationshipType - Valid values are `Couple`,`Parent`,`Child`.
+ * Use `Parent` when adding a parent of the person. Use `Child` when adding a child of the person.
+ * @returns {Person} Returns the new Person object representing the relative.
+ */
+GedcomX.prototype.addRelativeFromName = function(person, name, relationshipType){
+  
+  // Create and add relative
+  var relative = GedcomX.Person({
+    id: this.generateId()
+  }).addSimpleName(name);
+  this.addPerson(relative);
+  
+  
+  // Calculate relationship data
+  var relData;
+  switch(relationshipType){
+    case 'Couple':
+      relData = {
+        type: 'http://gedcomx.org/Couple',
+        person1: person,
+        person2: relative
+      };
+      break;
+    case 'Parent':
+      relData = {
+        type: 'http://gedcomx.org/ParentChild',
+        person1: relative,
+        person2: person
+      };
+      break;
+    case 'Child':
+      relData = {
+        type: 'http://gedcomx.org/ParentChild',
+        person1: person,
+        person2: relative
+      };
+      break;
+    default:
+      throw new Error('Invalid relationship type: ' + relationshipType);
+  }
+  
+  this.addRelationship(relData);
+  
+  return relative;
 };
