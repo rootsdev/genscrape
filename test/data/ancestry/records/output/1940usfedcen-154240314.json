@@ -3,21 +3,38 @@
     {
       "id": "1",
       "gender": {
-        "type": "http://gedcomx.org/Male"
+        "type": "http://gedcomx.org/Female"
       },
       "names": [
         {
           "nameForms": [
             {
-              "fullText": "Frank Van Sky",
+              "fullText": "Katie B Coast",
               "parts": [
                 {
                   "type": "http://gedcomx.org/Given",
-                  "value": "Frank Van"
+                  "value": "Katie B"
                 },
                 {
                   "type": "http://gedcomx.org/Surname",
-                  "value": "Sky"
+                  "value": "Coast"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "fullText": "Katie B Thurman",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Katie B"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Thurman"
                 }
               ]
             }
@@ -27,26 +44,33 @@
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "abt 1875"
-          },
           "place": {
-            "original": "New York"
+            "original": "Louisiana"
           }
         },
         {
           "type": "http://gedcomx.org/Residence",
           "date": {
-            "original": "1880",
-            "formal": "+1880"
+            "original": "1940",
+            "formal": "+1940"
           },
           "place": {
-            "original": "Johnstown, Fulton, New York"
+            "original": "Highland Park, Dallas, Texas"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1935",
+            "formal": "+1935"
+          },
+          "place": {
+            "original": "Longview, Gregg, Texas"
           }
         },
         {
           "type": "http://gedcomx.org/MaritalStatus",
-          "value": "Single"
+          "value": "Married"
         }
       ]
     },
@@ -56,27 +80,19 @@
         {
           "nameForms": [
             {
-              "fullText": "Joseph Van Sky",
+              "fullText": "John W Coast",
               "parts": [
                 {
                   "type": "http://gedcomx.org/Given",
-                  "value": "Joseph Van"
+                  "value": "John W"
                 },
                 {
                   "type": "http://gedcomx.org/Surname",
-                  "value": "Sky"
+                  "value": "Coast"
                 }
               ]
             }
           ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org",
-          "place": {
-            "original": "Prussia"
-          }
         }
       ]
     },
@@ -86,27 +102,19 @@
         {
           "nameForms": [
             {
-              "fullText": "Ida Van Sky",
+              "fullText": "Billie Bond",
               "parts": [
                 {
                   "type": "http://gedcomx.org/Given",
-                  "value": "Ida Van"
+                  "value": "Billie"
                 },
                 {
                   "type": "http://gedcomx.org/Surname",
-                  "value": "Sky"
+                  "value": "Bond"
                 }
               ]
             }
           ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org",
-          "place": {
-            "original": "Prussia"
-          }
         }
       ]
     },
@@ -116,15 +124,15 @@
         {
           "nameForms": [
             {
-              "fullText": "Caty Van Sky",
+              "fullText": "Wm Thurman",
               "parts": [
                 {
                   "type": "http://gedcomx.org/Given",
-                  "value": "Caty Van"
+                  "value": "Wm"
                 },
                 {
                   "type": "http://gedcomx.org/Surname",
-                  "value": "Sky"
+                  "value": "Thurman"
                 }
               ]
             }
@@ -138,41 +146,21 @@
         {
           "nameForms": [
             {
-              "fullText": "Fanny Van Sky",
+              "fullText": "Chauncey McFarland",
               "parts": [
                 {
                   "type": "http://gedcomx.org/Given",
-                  "value": "Fanny Van"
+                  "value": "Chauncey"
                 },
                 {
                   "type": "http://gedcomx.org/Surname",
-                  "value": "Sky"
+                  "value": "McFarland"
                 }
               ]
             }
           ]
         }
       ]
-    }
-  ],
-  "relationships": [
-    {
-      "type": "http://gedcomx.org/ParentChild",
-      "person1": {
-        "resource": "#2"
-      },
-      "person2": {
-        "resource": "#1"
-      }
-    },
-    {
-      "type": "http://gedcomx.org/ParentChild",
-      "person1": {
-        "resource": "#3"
-      },
-      "person2": {
-        "resource": "#1"
-      }
     }
   ]
 }

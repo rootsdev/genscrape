@@ -1,0 +1,38 @@
+{
+  "persons": [
+    {
+      "id": "1",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "John A."
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Able"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Ethnicity",
+          "value": "W"
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "S"
+        }
+      ]
+    }
+  ]
+}

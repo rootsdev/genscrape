@@ -1,0 +1,288 @@
+{
+  "persons": [
+    {
+      "id": "1",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Chas E Bradshaw",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Chas E"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bradshaw"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Aug 1897"
+          },
+          "place": {
+            "original": "Texas"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1900",
+            "formal": "+1900"
+          },
+          "place": {
+            "original": "Armour, Limestone, Texas"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Jas C Bradshaw",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Jas C"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bradshaw"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org",
+          "place": {
+            "original": "Tennessee"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Minnie M Bradshaw",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Minnie M"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bradshaw"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org",
+          "place": {
+            "original": "Tennessee"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "David B Bradshaw",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "David B"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bradshaw"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Martha L Bradshaw",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Martha L"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bradshaw"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Della J Bradshaw",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Della J"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bradshaw"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John H Bradshaw",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "John H"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bradshaw"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Eddie Bradshaw",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Eddie"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bradshaw"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Maggie A Bradshaw",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Maggie A"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bradshaw"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary E Bradshaw",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Mary E"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Bradshaw"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    }
+  ]
+}

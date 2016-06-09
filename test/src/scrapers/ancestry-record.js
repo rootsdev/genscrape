@@ -41,6 +41,11 @@ describe('ancestry-record', function(){
     'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=1900usfedcen&h=54351117'
   ));
   
+  it('Daviess County 1920 Census', setupTest(
+    'davies1920-23578',
+    'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=davies1920&h=23578'
+  ));
+  
   it('no data', function(done){
     var url = 'http://search.ancestry.com/cgi-bin/sse.dll?nodata',
         filePath = pagesDir + '/nodata.html';

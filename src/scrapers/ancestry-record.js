@@ -25,7 +25,7 @@ var eventsConfig = [
 var factsConfig = [
   // TODO: change to use race; https://github.com/FamilySearch/gedcomx/issues/295
   {
-    label: 'race',
+    regex: /^(color or )race$/,
     type: 'http://gedcomx.org/Ethnicity'
   },
   // TODO: get date (or just year) of record
@@ -93,14 +93,38 @@ function setup(emitter) {
     primaryPerson.addSimpleName(name);
   });
   
+  // Split names
+  var givenName = dataTable.getText('given name'),
+      surname = dataTable.getText('surname');
+  if(givenName || surname){
+    var nameForm = GedcomX.NameForm();
+    if(givenName){
+      nameForm.addPart({
+        type: 'http://gedcomx.org/Given',
+        value: givenName
+      });
+    }
+    if(surname){
+      nameForm.addPart({
+        type: 'http://gedcomx.org/Surname',
+        value: surname
+      });
+    }
+    primaryPerson.addName(GedcomX.Name().addNameForm(nameForm));
+  }
+  
   // Gender
-  if(dataTable.hasLabel('gender')){
-    var genderType, genderText = dataTable.getText('gender');
+  if(dataTable.hasMatch(/gender|sex/)){
+    var genderType, genderText = dataTable.getMatchText(/gender|sex/);
     
     switch(genderText){
+      case 'M':
+      case 'M (Male)':
       case 'Male':
         genderType = 'http://gedcomx.org/Male';
         break;
+      case 'F':
+      case 'F (Female)':
       case 'Female':
         genderType = 'http://gedcomx.org/Female';
         break;
@@ -152,10 +176,17 @@ function setup(emitter) {
   
   // Simple Facts
   factsConfig.forEach(function(config){
-    if(dataTable.hasLabel(config.label)){
+    if(config.label && dataTable.hasLabel(config.label)){
       primaryPerson.addFact({
         type: config.type,
         value: dataTable.getText(config.label)
+      });
+    }
+    
+    else if(config.regex && dataTable.hasMatch(config.regex)){
+      primaryPerson.addFact({
+        type: config.type,
+        value: dataTable.getMatchText(config.regex)
       });
     }
   });
@@ -166,27 +197,33 @@ function setup(emitter) {
   
   // Father
   if(dataTable.hasMatch(/father('s)? /)){
-    var father = gedx.addRelativeFromName(primaryPerson, dataTable.getMatchText(/father('s)? name/), 'Parent');
-    if(dataTable.hasMatch(/father('s)? birthplace/)){
-      father.addFact({
-        type: 'http://gedcomx.org',
-        place: {
-          original: dataTable.getMatchText(/father('s)? birthplace/)
-        }
-      });
+    var fathersName = dataTable.getMatchText(/father('s)? name/);
+    if(fathersName){
+      var father = gedx.addRelativeFromName(primaryPerson, fathersName, 'Parent');
+      if(dataTable.hasMatch(/father('s)? (birthplace|place of birth)/)){
+        father.addFact({
+          type: 'http://gedcomx.org',
+          place: {
+            original: dataTable.getMatchText(/father('s)? (birthplace|place of birth)/)
+          }
+        });
+      }
     }
   }
   
   // Mother
   if(dataTable.hasMatch(/mother('s)? /)){
-    var mother = gedx.addRelativeFromName(primaryPerson, dataTable.getMatchText(/mother('s)? name/), 'Parent');
-    if(dataTable.hasMatch(/mother('s)? birthplace/)){
-      mother.addFact({
-        type: 'http://gedcomx.org',
-        place: {
-          original: dataTable.getMatchText(/mother('s)? birthplace/)
-        }
-      });
+    var mothersName = dataTable.getMatchText(/mother('s)? name/);
+    if(mothersName){
+      var mother = gedx.addRelativeFromName(primaryPerson, mothersName, 'Parent');
+      if(dataTable.hasMatch(/mother('s)? (birthplace|place of birth)/)){
+        mother.addFact({
+          type: 'http://gedcomx.org',
+          place: {
+            original: dataTable.getMatchText(/mother('s)? (birthplace|place of birth)/)
+          }
+        });
+      }
     }
   }
   
