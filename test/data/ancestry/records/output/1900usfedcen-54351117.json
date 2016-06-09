@@ -394,6 +394,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -403,6 +408,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"

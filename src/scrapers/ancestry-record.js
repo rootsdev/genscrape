@@ -351,6 +351,11 @@ function setup(emitter) {
       description: '#' + sourceDescription.getId()
     }));
   });
+  gedx.getRelationships().forEach(function(relationship){
+    relationship.addSource(GedcomX.SourceReference({
+      description: '#' + sourceDescription.getId()
+    }));
+  });
   
   debug('data');
   emitter.emit('data', gedx);

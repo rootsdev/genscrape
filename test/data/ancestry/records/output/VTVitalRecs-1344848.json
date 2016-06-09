@@ -121,6 +121,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -130,6 +135,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
@@ -139,6 +149,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"

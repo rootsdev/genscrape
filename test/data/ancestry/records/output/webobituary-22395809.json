@@ -185,6 +185,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -194,6 +199,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
@@ -203,6 +213,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -212,6 +227,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -221,6 +241,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
