@@ -46,6 +46,11 @@ describe('ancestry-record', function(){
     'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=davies1920&h=23578'
   ));
   
+  it('Marion County Oregon Marriage', setupTest(
+    'OrMarriages-4777',
+    'http://search.ancestry.com/cgi-bin/sse.dll?h=4777&db=OrMarriages&indiv=1'
+  ));
+  
   it('no data', function(done){
     var url = 'http://search.ancestry.com/cgi-bin/sse.dll?nodata',
         filePath = pagesDir + '/nodata.html';

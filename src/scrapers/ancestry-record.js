@@ -117,21 +117,7 @@ function setup(emitter) {
   
   // Gender
   if(dataTable.hasMatch(/gender|sex/)){
-    var genderType, genderText = dataTable.getMatchText(/gender|sex/);
-    
-    switch(genderText){
-      case 'M':
-      case 'M (Male)':
-      case 'Male':
-        genderType = 'http://gedcomx.org/Male';
-        break;
-      case 'F':
-      case 'F (Female)':
-      case 'Female':
-        genderType = 'http://gedcomx.org/Female';
-        break;
-    }
-    
+    var genderType = getGender(dataTable.getMatchText(/gender|sex/));
     if(genderType){
       primaryPerson.setGender({
         type: genderType
@@ -198,15 +184,15 @@ function setup(emitter) {
   //
   
   // Father
-  if(dataTable.hasMatch(/father('s)? /)){
-    var fathersName = dataTable.getMatchText(/father('s)? name/);
+  if(dataTable.hasMatch(/^father('s)?/)){
+    var fathersName = dataTable.getMatchText(/^father('s)?( name)?$/);
     if(fathersName){
       var father = gedx.addRelativeFromName(primaryPerson, fathersName, 'Parent');
-      if(dataTable.hasMatch(/father('s)? (birthplace|place of birth)/)){
+      if(dataTable.hasMatch(/^father('s)? (birthplace|place of birth)$/)){
         father.addFact({
           type: 'http://gedcomx.org',
           place: {
-            original: dataTable.getMatchText(/father('s)? (birthplace|place of birth)/)
+            original: dataTable.getMatchText(/^father('s)? (birthplace|place of birth)$/)
           }
         });
       }
@@ -214,15 +200,15 @@ function setup(emitter) {
   }
   
   // Mother
-  if(dataTable.hasMatch(/mother('s)? /)){
-    var mothersName = dataTable.getMatchText(/mother('s)? name/);
+  if(dataTable.hasMatch(/^mother('s)?/)){
+    var mothersName = dataTable.getMatchText(/^mother('s)?( name)?$/);
     if(mothersName){
       var mother = gedx.addRelativeFromName(primaryPerson, mothersName, 'Parent');
-      if(dataTable.hasMatch(/mother('s)? (birthplace|place of birth)/)){
+      if(dataTable.hasMatch(/^mother('s)? (birthplace|place of birth)$/)){
         mother.addFact({
           type: 'http://gedcomx.org',
           place: {
-            original: dataTable.getMatchText(/mother('s)? (birthplace|place of birth)/)
+            original: dataTable.getMatchText(/^mother('s)? (birthplace|place of birth)$/)
           }
         });
       }
@@ -230,13 +216,22 @@ function setup(emitter) {
   }
   
   // Spouse
-  if(dataTable.hasMatch(/spouse('s)? /)){
+  if(dataTable.hasMatch(/^spouse('s)?/)){
     var spouse = GedcomX.Person({
       id: gedx.generateId()
     });
     
-    if(dataTable.hasMatch(/spouse('s)? name/)){
-      spouse.addSimpleName(dataTable.getMatchText(/spouse('s)? name/));
+    if(dataTable.hasMatch(/^spouse('s)?( name)?$/)){
+      spouse.addSimpleName(dataTable.getMatchText(/^spouse('s)?( name)?$/).trim());
+    }
+    
+    if(dataTable.hasLabel('spouse gender')){
+      var spouseGender = getGender(dataTable.getText('spouse gender'));
+      if(spouseGender){
+        spouse.setGender({
+          type: spouseGender
+        });
+      }
     }
     
     gedx.addPerson(spouse);
@@ -272,22 +267,6 @@ function setup(emitter) {
       
       coupleRel.addFact(marriage);
     }
-  }
-  
-  //
-  // Family members with only a name, common in obituaries
-  //
-  
-  if(dataTable.hasLabel('father')){
-    gedx.addRelativeFromName(primaryPerson, dataTable.getText('father'), 'Parent');
-  }
-  
-  if(dataTable.hasLabel('mother')){
-    gedx.addRelativeFromName(primaryPerson, dataTable.getText('mother'), 'Parent');
-  }
-  
-  if(dataTable.hasLabel('spouse')){
-    gedx.addRelativeFromName(primaryPerson, dataTable.getText('spouse'), 'Couple');
   }
   
   if(dataTable.hasLabel('children')){
@@ -405,4 +384,23 @@ function getRecordYear(){
  */
 function getTitle(){
   return document.querySelector('h1').textContent.replace(/\s/g,' ').trim();
+}
+
+/**
+ * Translate a string into a GedcomX gender type
+ * 
+ * @param {String} gender
+ * @returns {String}
+ */
+function getGender(gender){
+  switch(gender){
+    case 'M':
+    case 'M (Male)':
+    case 'Male':
+      return 'http://gedcomx.org/Male';
+    case 'F':
+    case 'F (Female)':
+    case 'Female':
+      return 'http://gedcomx.org/Female';
+  }
 }
