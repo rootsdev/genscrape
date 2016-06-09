@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -52,6 +57,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -89,6 +99,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -126,6 +141,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -157,6 +177,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -205,6 +230,22 @@
       "person2": {
         "resource": "#1"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "6",
+      "citations": [
+        {
+          "value": "Year: 1880; Census Place: Johnstown, Fulton, New York; Roll: 834; Family History Film: 1254834; Page: 74A; Enumeration District: 005; Image: 0560"
+        }
+      ],
+      "about": "http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&h=2376696&indiv=try",
+      "titles": [
+        {
+          "value": "Frank Van Sky in the 1880 United States Federal Census"
+        }
+      ]
     }
   ]
 }

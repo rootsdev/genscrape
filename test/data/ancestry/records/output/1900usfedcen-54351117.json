@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -52,6 +57,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -89,6 +99,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -126,6 +141,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -157,6 +177,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -188,6 +213,11 @@
     },
     {
       "id": "6",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -219,6 +249,11 @@
     },
     {
       "id": "7",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -250,6 +285,11 @@
     },
     {
       "id": "8",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -281,6 +321,11 @@
     },
     {
       "id": "9",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -312,6 +357,11 @@
     },
     {
       "id": "10",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -360,6 +410,22 @@
       "person2": {
         "resource": "#1"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "11",
+      "citations": [
+        {
+          "value": "Year: 1900; Census Place: Armour, Limestone, Texas; Roll: 1655; Page: 33B; Enumeration District: 0063; FHL microfilm: 1241655"
+        }
+      ],
+      "about": "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=1900usfedcen&h=54351117",
+      "titles": [
+        {
+          "value": "Chas E Bradshaw in the 1900 United States Federal Census"
+        }
+      ]
     }
   ]
 }

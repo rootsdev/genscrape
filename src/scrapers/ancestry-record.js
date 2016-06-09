@@ -341,8 +341,41 @@ function setup(emitter) {
     });
   }
   
+  // Calculate source citation and description. Add source reference to all
+  // persons in the GedcomX document.
+  var sourceDescription = getSourceDescription();
+  sourceDescription.setId(gedx.generateId());
+  gedx.addSourceDescription(sourceDescription);
+  gedx.getPersons().forEach(function(person){
+    person.addSource(GedcomX.SourceReference({
+      description: '#' + sourceDescription.getId()
+    }));
+  });
+  
   debug('data');
   emitter.emit('data', gedx);
+}
+
+/**
+ * Create a SourceDescription for the record.
+ * 
+ * @returns {SourceDescription}
+ */
+function getSourceDescription(){
+  var description = GedcomX.SourceDescription()
+    .setAbout(document.location.href)
+    .addTitle({value: getTitle()})
+    .addCitation(getCitation());
+  return description;
+}
+
+/**
+ * Get a Citation for the record
+ * 
+ * @returns {Citation}
+ */
+function getCitation(){
+  return {value: document.querySelector('.sourceText').textContent.replace(/\s/g,' ').trim()};
 }
 
 /**
@@ -361,8 +394,10 @@ function getRecordYear(){
 }
 
 /**
+ * Get the record title
+ * 
  * @returns {String}
  */
 function getTitle(){
-  return document.querySelector('h1').textContent;
+  return document.querySelector('h1').textContent.replace(/\s/g,' ').trim();
 }

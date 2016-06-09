@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -31,6 +36,22 @@
         {
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "S"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "2",
+      "citations": [
+        {
+          "value": "Stanley, Mary, ed.. Daviess County, Kentucky Census, 1920 [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 1999."
+        }
+      ],
+      "about": "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=davies1920&h=23578",
+      "titles": [
+        {
+          "value": "John A. Able in the Daviess County, Kentucky Census, 1920"
         }
       ]
     }

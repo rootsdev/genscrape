@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -38,6 +43,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -60,6 +70,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -78,6 +93,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -135,6 +155,22 @@
           "place": {
             "original": "Halifax, Vermont, USA"
           }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "5",
+      "citations": [
+        {
+          "value": "Ancestry.com. Vermont, Vital Records, 1720-1908 [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2013.                                                                                                                Original data:                                                  State of Vermont. Vermont Vital Records through 1870. New England Historic Genealogical Society, Boston, Massachusetts.State of Vermont. Vermont Vital Records, 1871–1908. New England Historic Genealogical Society, Boston, Massachusetts."
+        }
+      ],
+      "about": "http://search.ancestry.com/cgi-bin/sse.dll?db=VTVitalRecs&h=1344848&indiv=try",
+      "titles": [
+        {
+          "value": "Frank J Vannoske in the Vermont, Vital Records, 1720-1908"
         }
       ]
     }

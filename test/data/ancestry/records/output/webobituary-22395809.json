@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -44,6 +49,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -66,6 +76,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -88,6 +103,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -110,6 +130,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -132,6 +157,11 @@
     },
     {
       "id": "6",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -198,6 +228,22 @@
       "person2": {
         "resource": "#6"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "7",
+      "citations": [
+        {
+          "value": "Publication Date: 03/ 10/ 2010; Web edition: http://www.legacy.com/obituaries/newszapde/obituary.aspx?n=joyce-ann-mears&pid=140535508"
+        }
+      ],
+      "about": "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=web-obituary&h=22395809",
+      "titles": [
+        {
+          "value": "Joyce Ann Mears in the U.S., Obituary Collection, 1930 - 2015"
+        }
+      ]
     }
   ]
 }

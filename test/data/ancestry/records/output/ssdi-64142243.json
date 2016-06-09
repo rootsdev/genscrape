@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -37,6 +42,22 @@
         {
           "type": "http://gedcomx.org/NationalId",
           "value": "103-42-5814"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "2",
+      "citations": [
+        {
+          "value": "Number: 103-42-5814; Issue State: New York; Issue Date: 1967"
+        }
+      ],
+      "about": "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=ssdi&h=64142243",
+      "titles": [
+        {
+          "value": "Clara Vannoske in the U.S., Social Security Death Index, 1935-2014"
         }
       ]
     }

@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -76,6 +81,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -107,6 +117,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -138,6 +153,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -169,6 +189,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -195,6 +220,22 @@
             "original": "about 1914",
             "formal": "A+1914"
           }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "6",
+      "citations": [
+        {
+          "value": "Year: 1940; Census Place: Highland Park, Dallas, Texas; Roll: T627_4015; Page: 3A; Enumeration District: 57-1C"
+        }
+      ],
+      "about": "http://search.ancestry.com/cgi-bin/sse.dll?db=1940usfedcen&indiv=try&h=154240314",
+      "titles": [
+        {
+          "value": "Katie B Coast in the 1940 United States Federal Census"
         }
       ]
     }
