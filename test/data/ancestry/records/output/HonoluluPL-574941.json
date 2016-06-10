@@ -1,0 +1,76 @@
+{
+  "persons": [
+    {
+      "id": "1",
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Grace Thurman",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Grace"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Thurman"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "abt 1872"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Immigration",
+          "date": {
+            "original": "9 May 1935"
+          },
+          "place": {
+            "original": "Honolulu, Hawaii"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Emigration",
+          "date": {
+            "original": "3 May 1935"
+          },
+          "place": {
+            "original": "Los Angeles, California"
+          }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "2",
+      "citations": [
+        {
+          "value": "National Archives and Records Administration (NARA); Washington, D.C.; Passenger Lists of Vessels Arriving at Honolulu, Hawaii, compiled 02/13/1900 - 12/30/1953; National Archives Microfilm Publication: A3422; Roll: 154; Record Group Title: Records of the Immigration and Naturalization Service, 1787 - 2004; Record Group Number: RG 85"
+        }
+      ],
+      "about": "http://search.ancestry.com/cgi-bin/sse.dll?h=574941&db=HonoluluPL&indiv=1",
+      "titles": [
+        {
+          "value": "Grace Thurman in the Honolulu, Hawaii, Passenger and Crew Lists, 1900-1959"
+        }
+      ]
+    }
+  ]
+}

@@ -19,6 +19,16 @@ var eventsConfig = [
     type: 'http://gedcomx.org/Death',
     date: /^(death date|died)$/,
     place: /^(death place)$/
+  },
+  {
+    type: 'http://gedcomx.org/Immigration',
+    date: /^arrival date$/,
+    place: /^port of arrival$/
+  },
+  {
+    type: 'http://gedcomx.org/Emigration',
+    date: /^departure date$/,
+    place: /^port of departure/
   }
 ];
 
@@ -26,6 +36,10 @@ var factsConfig = [
   // TODO: change to use race; https://github.com/FamilySearch/gedcomx/issues/295
   {
     regex: /^(color or )race$/,
+    type: 'http://gedcomx.org/Ethnicity'
+  },
+  {
+    regex: /^ethnicity\/ nationality$/,
     type: 'http://gedcomx.org/Ethnicity'
   },
   {

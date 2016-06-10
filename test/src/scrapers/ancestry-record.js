@@ -61,6 +61,16 @@ describe('ancestry-record', function(){
     'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=momarriages&h=504688469'
   ));
   
+  it('New York Passenger Lists', setupTest(
+    'nypl-14261124',
+    'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=nypl&h=14261124'
+  ));
+  
+  it('Honolulu, Hawaii, Passenger and Crew Lists', setupTest(
+    'HonoluluPL-574941',
+    'http://search.ancestry.com/cgi-bin/sse.dll?h=574941&db=HonoluluPL&indiv=1'
+  ));
+  
   it('no data', function(done){
     var url = 'http://search.ancestry.com/cgi-bin/sse.dll?nodata',
         filePath = pagesDir + '/nodata.html';
