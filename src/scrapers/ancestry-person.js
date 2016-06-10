@@ -67,7 +67,11 @@ function process(emitter, $dom){
   
   $dom.find('#factsSection .LifeEvent').each(function(){
     var $card = $(this),
-        name = $card.find('.cardSubtitle').text().toLowerCase().trim(),
+        name = $card.find('.cardSubtitle')
+          // Remove the embedded and hidden fact age
+          .children('.factAge').remove()
+          .end()
+          .text().toLowerCase().trim(),
         value = $card.find('.cardTitle');
     facts[name] = value;
   });
