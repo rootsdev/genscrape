@@ -74,7 +74,18 @@
       },
       "person2": {
         "resource": "#2"
-      }
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "25 Oct 1856"
+          },
+          "place": {
+            "original": "Marion, Oregon, USA"
+          }
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

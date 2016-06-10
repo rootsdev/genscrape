@@ -334,6 +334,34 @@ function setup(emitter) {
     });
   }
   
+  // Handle FamilySearch style events labeled as "Event Type","Event Date","Event Place"
+  // We do this last so that we can properly attach any relationship events
+  if(dataTable.hasLabel('event type')){
+    var otherEventType = eventType(dataTable.getText('event type')),
+        otherEventDate = dataTable.getText('event date'),
+        otherEventPlace = dataTable.getText('event place');
+    if(otherEventType){
+      var otherEvent = GedcomX.Fact({
+        type: otherEventType
+      });
+      if(otherEventDate){
+        otherEvent.setDate({
+          original: otherEventDate
+        });
+      }
+      if(otherEventPlace){
+        otherEvent.setPlace({
+          original: otherEventPlace
+        });
+      }
+      if(otherEventType === 'http://gedcomx.org/Marriage' && coupleRel){
+        coupleRel.addFact(otherEvent);
+      } else {
+        primaryPerson.addFact(otherEvent);
+      }
+    }
+  }
+  
   // Calculate source citation and description. Add source reference to all
   // persons in the GedcomX document.
   var sourceDescription = getSourceDescription();
@@ -417,4 +445,18 @@ function getGender(gender){
     case 'Female':
       return 'http://gedcomx.org/Female';
   }
+}
+
+/**
+ * Translate a string into a GedcomX event type
+ * 
+ * @param {String} type
+ * @returns {String}
+ */
+function eventType(type){
+  switch(type){
+    case 'Marriage':
+      return 'http://gedcomx.org/Marriage';
+  }
+  console.log('ancestry-record: unknown event type: ' + type);
 }
