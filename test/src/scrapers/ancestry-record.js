@@ -51,6 +51,16 @@ describe('ancestry-record', function(){
     'http://search.ancestry.com/cgi-bin/sse.dll?h=4777&db=OrMarriages&indiv=1'
   ));
   
+  it('Virginia Marriage', setupTest(
+    'general-9279-30484846',
+    'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=general-9279&h=30484846'
+  ));
+  
+  it('Missouri Marriage', setupTest(
+    'momarriages-504688469',
+    'http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=momarriages&h=504688469'
+  ));
+  
   it('no data', function(done){
     var url = 'http://search.ancestry.com/cgi-bin/sse.dll?nodata',
         filePath = pagesDir + '/nodata.html';

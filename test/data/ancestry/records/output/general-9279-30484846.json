@@ -1,0 +1,118 @@
+{
+  "persons": [
+    {
+      "id": "1",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Rachel Brooke Alcorn",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Rachel Brooke"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Alcorn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "fullText": "Rachel Brooke Thurman",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Rachel Brooke"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Thurman"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Michael Paul Selbe",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Michael Paul"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Selbe"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "17 Oct 2009"
+          },
+          "place": {
+            "original": "Norfolk, Virginia, USA"
+          }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "3",
+      "citations": [
+        {
+          "value": "Ancestry.com. Virginia, Marriage Records, 1936-2014 [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2015.                                                                                                                Original data:                                                  Virginia, Marriages, 1936-2014. Virginia Department of Health, Richmond, Virginia."
+        }
+      ],
+      "about": "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=general-9279&h=30484846",
+      "titles": [
+        {
+          "value": "Rachel Brooke Alcorn in the Virginia, Marriage Records, 1936-2014"
+        }
+      ]
+    }
+  ]
+}
