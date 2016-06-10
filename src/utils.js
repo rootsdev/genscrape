@@ -83,19 +83,41 @@ utils.toTitleCase = function(str){
  * @param {Function} callback - function(error, data)
  */
 utils.getJSON = function(url, callback){
+  
+  // Create the request
   debug('getJSON: ' + url);
   var request = new window.XMLHttpRequest();
   request.open('GET', url);
+  
+  // Finished handler
   request.onload = function() {
+    debug('getJSON:onload');
+    
+    // Good HTTP response
     if (request.status >= 200 && request.status < 400) {
-      callback(undefined, JSON.parse(request.responseText));
-    } else {
+      debug('getJSON:success');
+      
+      try {
+        callback(undefined, JSON.parse(request.responseText));
+      } catch (e) {
+        callback(e);
+      }
+    } 
+    
+    // HTTP error
+    else {
+      debug('getJSON:http error');
       callback(new Error(request.statusText));
     }
   };
+  
+  // Error handler
   request.onerror = function(e) {
+    debug('getJSON:onerror');
     callback(new Error('Network error'));
   };
+  
+  // We can send it now that we've attached the event handlers
   request.send();
 };
 

@@ -72,7 +72,7 @@ require('./gedx-extensions');
 // browserify can find and include them.
 // TODO: find a method that allows us to dynamically include all scrapers
 require('./scrapers/ancestry-record')(register);
-//require('./scrapers/ancestry-person')(register);
+require('./scrapers/ancestry-person')(register);
 //require('./scrapers/billiongraves')(register);
 require('./scrapers/familysearch-record')(register);
 require('./scrapers/familysearch-ancestor')(register);

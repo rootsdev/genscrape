@@ -1,5 +1,6 @@
 var debug = require('debug')('ancestry-person'),
-    utils = require('../utils');
+    utils = require('../utils'),
+    GedcomX = require('gedcomx-js');
 
 var urls = [
   utils.urlPatternToRegex('http://person.ancestry.com/tree/*/person/*'),
@@ -28,27 +29,33 @@ function run(emitter) {
   debug('url: ' + factsUrl);
   
   // Get facts html
-  $.getJSON(factsUrl).then(function(json){
+  utils.getJSON(factsUrl, function(error, json){
     debug('response');
     
-    if(json.HasError){
-      debug(json.ErrorMessage);
-      debug(json.FailurePoint);
-      emitter.emit('error', json.ErrorMessage);
-      return;
-    }
+    // HTTP error
+    if(error){
+      debug('error');
+      emitter.emit('error', error);
+    } 
     
-    if(!json.html.body){
-      debug('no html');
-      emitter.emit('noData');
-      return;
+    else {
+      
+      // Error returned by the ancestry api
+      if(json.HasError){
+        debug(json.ErrorMessage);
+        debug(json.FailurePoint);
+        emitter.emit('error', json.ErrorMessage);
+        return;
+      }
+      
+      if(!json.html.body){
+        debug('no html');
+        emitter.emit('noData');
+        return;
+      }
+  
+      process(emitter, parseHTML(json.html.body));
     }
-
-    process(emitter, $(json.html.body));
-  }, function(error){
-    debug('error');
-    debug(error);
-    emitter.emit('error retrieving json', error);
   });
 }
 
@@ -58,6 +65,9 @@ function run(emitter) {
 function process(emitter, $dom){
   debug('processing');
   
+  var gedx = new GedcomX();
+  
+  /*
   var personData = {};
   
   // Gather list of events. Store in map keyed by event title.
@@ -123,8 +133,9 @@ function process(emitter, $dom){
   }
   
   // TODO: get marriage event that matches this spouse
+  */
   
-  emitter.emit('data', utils.clean(personData));
+  emitter.emit('data', gedx);
 }
 
 /**
@@ -143,4 +154,16 @@ function processEvent($event){
     date: utils.toTitleCase($event.find('.factItemDate').text().trim()),
     place: $event.find('.factItemLocation').text().trim()
   };
+}
+
+/**
+ * Parse an HTML string into DOM objects. Returns the string wrapped in a parent div
+ * 
+ * @param {String} html
+ * @returns {HTMLElement}
+ */
+function parseHTML(html){
+  var div = window.document.createElement('div');
+  div.innerHTML = html;
+  return div;
 }
