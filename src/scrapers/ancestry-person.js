@@ -65,32 +65,18 @@ function run(emitter) {
 function process(emitter, $dom){
   debug('processing');
   
-  var gedx = new GedcomX();
+  var gedx = new GedcomX(),
+      primaryPerson = new GedcomX.Person(),
+      facts = FactsList($dom);
   
-  /*
-  var personData = {};
-  
-  // Gather list of events. Store in map keyed by event title.
-  // In the future if we want to gather events that could occur multiple times,
-  // such as residence, then we'll need to change this to an array.
-  var facts = {};
-  
-  $dom.find('#factsSection .LifeEvent').each(function(){
-    var $card = $(this),
-        name = $card.find('.cardSubtitle')
-          // Remove the embedded and hidden fact age
-          .children('.factAge').remove()
-          .end()
-          .text().toLowerCase().trim(),
-        value = $card.find('.cardTitle');
-    facts[name] = value;
+  gedx.addPerson(primaryPerson);
+
+  // Process the names
+  facts.getCardTitles('name').forEach(function(nameText){
+    primaryPerson.addSimpleName(nameText);
   });
-  
-  // Name
-  
-  var nameParts = utils.splitName(facts.name.text().trim());
-  personData.givenName = nameParts[0];
-  personData.familyName = nameParts[1];
+
+  /*
   
   // Vitals
   
@@ -166,4 +152,73 @@ function parseHTML(html){
   var div = window.document.createElement('div');
   div.innerHTML = html;
   return div;
+}
+
+/**
+ * Process the list of facts. Enable quick extraction of data.
+ * 
+ * @param {HTMLElement} $dom - A DOM element that the facts list can be found inside of.
+ * @param {Object} Contains helper methods for accessing the data. See the docs inline below.
+ */
+function FactsList($dom){
+  
+  // Gather list of events. Store in map keyed by event title.
+  // Each value is a list of events because events can occur multiple times
+  // and even events that should occur only once (birth) may be documented
+  // multiple times if documents provide conflicting values.
+  var facts = {};
+  
+  Array.from($dom.querySelectorAll('#factsSection .LifeEvent')).forEach(function(card){
+    // The element where the event name is found may have other data in it.
+    // The event name is a plain text node where as the other data is
+    // wrapped in another element. So we traverse the childNodes and look for
+    // the first regular text node.
+    var name = firstChildText(card.querySelector('.cardSubtitle')).trim().toLowerCase();
+    if(typeof facts[name] === 'undefined'){
+      facts[name] = [];
+    }
+    facts[name].push(card);
+  });
+  
+  return {
+    
+    /**
+     * Get the DOM elements that represent the event card for the given event.
+     * 
+     * @param {String} event
+     * @returns {HTMLElement[]}
+     */
+    getCards: function(event){
+      return facts[event] || [];
+    },
+    
+    /**
+     * Get the titles of event cards.
+     * 
+     * @param {String} event
+     * @returns {String[]}
+     */
+    getCardTitles: function(event){
+      return this.getCards(event).map(function(card){
+        return card.querySelector('.cardTitle').textContent.trim();
+      });
+    }
+    
+  };
+  
+}
+
+/**
+ * Return the first immediate child text node of an HTML element
+ * 
+ * @param {HTMLElement} $element
+ * @returns {String}
+ */
+function firstChildText($element){
+  for (var i = 0; i < $element.childNodes.length; i++) {
+    var curNode = $element.childNodes[i];
+    if (curNode.nodeName === "#text") {
+      return curNode.nodeValue;
+    }
+  }
 }

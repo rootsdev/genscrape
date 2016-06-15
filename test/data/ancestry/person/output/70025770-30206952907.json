@@ -1,1 +1,42 @@
-{}
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Theodore Yurkiewicz",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Theodore"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Yurkiewicz"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "fullText": "Theodore York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Theodore"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
