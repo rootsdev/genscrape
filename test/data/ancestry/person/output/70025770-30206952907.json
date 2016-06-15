@@ -36,6 +36,110 @@
             }
           ]
         }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "23 Jun 1892"
+          },
+          "place": {
+            "original": "Bialykamien, Galizien, Austria"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Christening",
+          "date": {
+            "original": "26 Jun 1892"
+          },
+          "place": {
+            "original": "Bialykamien, Galizien, Austria"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "22 Oct 1955"
+          },
+          "place": {
+            "original": "Northampton, Hampshire, Massachusetts, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Immigration",
+          "date": {
+            "original": "5 May 1905"
+          },
+          "place": {
+            "original": "New York, New York"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Immigration",
+          "date": {
+            "original": "1907"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Emigration",
+          "place": {
+            "original": "Bremen"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1915"
+          },
+          "place": {
+            "original": "Jamestown, Newport, Rhode Island, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1920"
+          },
+          "place": {
+            "original": "Amsterdam Ward 4, Montgomery, New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1923"
+          },
+          "place": {
+            "original": "Newport, Rhode Island, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1930"
+          },
+          "place": {
+            "original": "Hempstead, Nassau, New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1935"
+          },
+          "place": {
+            "original": "Hempstead, Nassau, New York"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1 Apr 1940"
+          },
+          "place": {
+            "original": "Hempstead, Nassau, New York, United States"
+          }
+        }
       ]
     }
   ]

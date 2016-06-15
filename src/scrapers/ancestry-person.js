@@ -7,6 +7,33 @@ var urls = [
   utils.urlPatternToRegex('http://person.ancestryinstitution.com/tree/*/person/*')
 ];
 
+var eventConfig = [
+  {
+    label: 'birth',
+    type: 'http://gedcomx.org/Birth'
+  },
+  {
+    label: 'christening',
+    type: 'http://gedcomx.org/Christening'
+  },
+  {
+    label: 'death',
+    type: 'http://gedcomx.org/Death'
+  },
+  {
+    label: 'arrival',
+    type: 'http://gedcomx.org/Immigration'
+  },
+  {
+    label: 'departure',
+    type: 'http://gedcomx.org/Emigration'
+  },
+  {
+    label: 'residence',
+    type: 'http://gedcomx.org/Residence'
+  }
+];
+
 module.exports = function(register){
   register(urls, run);
 };
@@ -75,22 +102,17 @@ function process(emitter, $dom){
   facts.getCardTitles('name').forEach(function(nameText){
     primaryPerson.addSimpleName(nameText);
   });
+  
+  // Events
+  eventConfig.forEach(function(config){
+    if(facts.hasFact(config.label)){
+      facts.getGedXFacts(config.label, config.type).forEach(function(fact){
+        primaryPerson.addFact(fact);
+      });
+    }
+  });
 
   /*
-  
-  // Vitals
-  
-  if(facts.birth){
-    var birth = processEvent(facts.birth);
-    personData.birthDate = birth.date;
-    personData.birthPlace = birth.place;
-  }
-  
-  if(facts.death){
-    var death = processEvent(facts.death);
-    personData.deathDate = death.date;
-    personData.deathPlace = death.place;
-  }
   
   // Relationships
   
@@ -183,24 +205,64 @@ function FactsList($dom){
   return {
     
     /**
-     * Get the DOM elements that represent the event card for the given event.
+     * Get the DOM elements that represent the fact card for the given fact.
      * 
-     * @param {String} event
+     * @param {String} factType
      * @returns {HTMLElement[]}
      */
-    getCards: function(event){
-      return facts[event] || [];
+    getCards: function(factType){
+      return facts[factType] || [];
     },
     
     /**
-     * Get the titles of event cards.
+     * Get the titles of fact cards.
      * 
-     * @param {String} event
+     * @param {String} factType
      * @returns {String[]}
      */
-    getCardTitles: function(event){
-      return this.getCards(event).map(function(card){
+    getCardTitles: function(factType){
+      return this.getCards(factType).map(function(card){
         return card.querySelector('.cardTitle').textContent.trim();
+      });
+    },
+    
+    /**
+     * Check whether we have data for a given fact
+     * 
+     * @param {String} factType
+     * @returns {Boolean}
+     */
+    hasFact: function(factType){
+      return typeof facts[factType] !== 'undefined';
+    },
+    
+    /**
+     * Get GEDCOM X facts of the given type
+     * 
+     * @param {String} factType
+     * @param {String} gedxType
+     * @param {GedcomX.Fact[]}
+     */
+    getGedXFacts: function(factType, gedxType){
+      return this.getCards(factType).map(function(card){
+        var $date = card.querySelector('.factItemDate'),
+            date = $date ? utils.toTitleCase($date.textContent.trim()) : null,
+            $place = card.querySelector('.factItemLocation'),
+            place = $place ? $place.textContent.trim() : null,
+            fact = GedcomX.Fact({
+              type: gedxType
+            });
+        if(date){
+          fact.setDate({
+            original: date
+          });
+        }
+        if(place){
+          fact.setPlace({
+            original: place
+          });
+        }
+        return fact;
       });
     }
     
