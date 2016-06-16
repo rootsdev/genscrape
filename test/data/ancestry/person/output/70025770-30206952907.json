@@ -1,6 +1,7 @@
 {
   "persons": [
     {
+      "id": "1",
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -144,6 +145,270 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Elias Yurkiewicz",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Elias"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Yurkiewicz"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1849",
+            "formal": "+1849"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1936",
+            "formal": "+1936"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Xenia Zuk",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Xenia"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zuk"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1857",
+            "formal": "+1857"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1906",
+            "formal": "+1906"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Helen Gertrude Zierak",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Helen Gertrude"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zierak"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1896",
+            "formal": "+1896"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1970",
+            "formal": "+1970"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Margaret York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Margaret"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1920",
+            "formal": "+1920"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2001",
+            "formal": "+2001"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Theodore Robert York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Theodore Robert"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1926",
+            "formal": "+1926"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2009",
+            "formal": "+2009"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#3"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#5"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#4"
+      },
+      "person2": {
+        "resource": "#5"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#6"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#4"
+      },
+      "person2": {
+        "resource": "#6"
+      }
     }
   ]
 }

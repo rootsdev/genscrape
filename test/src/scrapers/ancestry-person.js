@@ -89,6 +89,10 @@ describe('ancestry person', function(){
   });
   */
   
+  it('multiple spouses');
+  
+  it('child of unknown spouse');
+  
 });
 
 /**

@@ -93,7 +93,9 @@ function process(emitter, $dom){
   debug('processing');
   
   var gedx = new GedcomX(),
-      primaryPerson = new GedcomX.Person(),
+      primaryPerson = new GedcomX.Person({
+        id: gedx.generateId()
+      }),
       facts = FactsList($dom);
   
   gedx.addPerson(primaryPerson);
@@ -133,62 +135,93 @@ function process(emitter, $dom){
     }
   });
   
+  //
   // Relationships
+  // 
+  
+  var relLists = getRelLists($dom);
+  
+  // Parents
+  relLists.parents.forEach(function($parentsList){
+    var $parents = $parentsList.querySelectorAll('.card'),
+        $father = $parents[0],
+        $mother = $parents[1],
+        father, mother;
+    
+    // Create parents and parent-child relationships
+    
+    if(!$father.classList.contains('cardEmpty')){
+      father = getPersonFromCard(gedx, $father);
+      gedx.addPerson(father);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: father,
+        person2: primaryPerson
+      });
+    }
+    
+    if(!$mother.classList.contains('cardEmpty')){
+      mother = getPersonFromCard(gedx, $mother);
+      gedx.addPerson(mother);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: mother,
+        person2: primaryPerson
+      });
+    }
+    
+    // Create couple relationship if both the father and mother exist
+    if(father && mother){
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/Couple',
+        person1: father,
+        person2: mother
+      });
+    }
+    
+  });
+  
+  // TODO: siblings and half siblings
+  
+  // Spouses and Children
+  relLists.spouses.forEach(function($spouseList){
+    var $children = Array.from($spouseList.querySelectorAll('.card')),
+        $spouse = $children.shift(),
+        spouse;
+        
+    if(!$spouse.classList.contains('cardEmpty')){
+      spouse = getPersonFromCard(gedx, $spouse);
+      gedx.addPerson(spouse);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/Couple',
+        person1: primaryPerson,
+        person2: spouse
+      });
+    }
+    
+    $children.forEach(function($childCard){
+      var child = getPersonFromCard(gedx, $childCard);
+      gedx.addPerson(child);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: primaryPerson,
+        person2: child
+      });
+      if(spouse){
+        gedx.addRelationship({
+          type: 'http://gedcomx.org/ParentChild',
+          person1: spouse,
+          person2: child
+        });
+      }
+    });
+  });
   
   // Marriage events
   
   // Sources
-
-  /*
-  
-  // Relationships
-  
-  var $lists = $dom.find('#familySection > .researchList'),
-      $parents = $lists.first().find('.card'),
-      $father = $parents.first(),
-      $mother = $parents.eq(1);
-  
-  if(!$father.is('.cardEmpty')){
-    var fatherNameParts = getNameParts($father);
-    personData.fatherGivenName = fatherNameParts[0];
-    personData.fatherFamilyName = fatherNameParts[1];
-  }
-  
-  if(!$mother.is('.cardEmpty')){
-    var motherNameParts = getNameParts($mother);
-    personData.motherGivenName = motherNameParts[0];
-    personData.motherFamilyName = motherNameParts[1];
-  }
-  
-  var $spouse = $lists.eq(1).find('.card').first();
-  if(!$spouse.is('.cardEmpty')){
-    var spouseNameParts = getNameParts($spouse);
-    personData.spouseGivenName = spouseNameParts[0];
-    personData.spouseFamilyName = spouseNameParts[1];
-  }
-  
-  // TODO: get marriage event that matches this spouse
-  */
   
   emitter.emit('data', gedx);
-}
-
-/**
- * Get the name parts from a relative's card
- */
-function getNameParts($card){
-  return utils.splitName($card.find('.userCardTitle').text().trim());
-}
-
-/**
- * Split the event string on the • which separates the
- * date from the place. Also uncapitalize month abbreviation.
- */
-function processEvent($event){
-  return {
-    date: utils.toTitleCase($event.find('.factItemDate').text().trim()),
-    place: $event.find('.factItemLocation').text().trim()
-  };
 }
 
 /**
@@ -201,6 +234,129 @@ function parseHTML(html){
   var div = window.document.createElement('div');
   div.innerHTML = html;
   return div;
+}
+
+/**
+ * Create a GedcomX person from a card
+ * 
+ * @param {GedcomX} gedx
+ * @param {HTMLElement} $card
+ * @returns {GedcomX.Person}
+ */
+function getPersonFromCard(gedx, $card){
+  var person = GedcomX.Person({
+    id: gedx.generateId()
+  }).addSimpleName(getPersonName($card));
+  var $lifespan = $card.querySelector('.userCardSubTitle');
+  if($lifespan){
+    var lifespanParts = $lifespan.textContent.trim().split('–'),
+        birthYear = lifespanParts[0],
+        deathYear = lifespanParts[1];
+    if(birthYear){
+      person.addFact({
+        type: 'http://gedcomx.org/Birth',
+        date: {
+          original: birthYear,
+          formal: '+' + birthYear
+        }
+      });
+    }
+    if(deathYear){
+      person.addFact({
+        type: 'http://gedcomx.org/Death',
+        date: {
+          original: deathYear,
+          formal: '+' + deathYear
+        }
+      });
+    }
+  }
+  return person;
+}
+
+/**
+ * Get the name from a family member card
+ * 
+ * @param {HTMLElement} card
+ * @returns {String}
+ */
+function getPersonName(card){
+  return firstChildText(card.querySelector('.userCardTitle'));
+}
+
+/**
+ * Return the first immediate child text node of an HTML element
+ * 
+ * @param {HTMLElement} $element
+ * @returns {String}
+ */
+function firstChildText($element){
+  for (var i = 0; i < $element.childNodes.length; i++) {
+    var curNode = $element.childNodes[i];
+    if (curNode.nodeName === "#text") {
+      return curNode.nodeValue.trim();
+    }
+  }
+}
+
+/**
+ * Get all relationship lists separated into categories: parents, siblings, halfsiblings, spouses
+ * 
+ * @param {HTMLElement}
+ * @returns {Object}
+ */
+function getRelLists($dom){
+  var lists = {
+    
+    // Right now Ancestry only shows one set of parents. We assume multiple
+    // in case that changes in the future (it really should).
+    'parents': [],
+    
+    // Since we only have one set of parents we also only have one set of siblings
+    'siblings': [],
+    
+    // I don't know that we can do anything with half siblings
+    'halfsiblings': [],
+    
+    // Spouses lists include children
+    'spouses': []
+  };
+  
+  // Get subtitles so that we know which type of list we're looking at
+  var $familySection = $dom.querySelector('#familySection'),
+      familyNodes = $familySection.querySelectorAll('.factsSubtitle, .researchList, .toggleSiblingsButton'),
+      currentNode, listType = 'parents';
+  for(var i = 0; i < familyNodes.length; i++){
+    currentNode = familyNodes[i];
+    
+    // Subtitle
+    if(currentNode.classList.contains('factsSubtitle')){
+      switch(currentNode.textContent.toLowerCase()){
+        case 'parents':
+          listType = 'parents';
+          break;
+        case 'half siblings':
+          listType = 'halfsiblings';
+          break;
+        case 'spouse':
+        case 'spouse & children':
+          listType = 'spouses';
+          break;
+      }
+    }
+    
+    // Siblings button
+    else if(currentNode.classList.contains('toggleSiblingsButton')){
+      listType = 'siblings';
+    }
+    
+    // List
+    else if(currentNode.classList.contains('researchList')){
+      lists[listType].push(currentNode);
+    }
+  }
+  
+  return lists;
 }
 
 /**
@@ -320,19 +476,4 @@ function FactsList($dom){
     
   };
   
-}
-
-/**
- * Return the first immediate child text node of an HTML element
- * 
- * @param {HTMLElement} $element
- * @returns {String}
- */
-function firstChildText($element){
-  for (var i = 0; i < $element.childNodes.length; i++) {
-    var curNode = $element.childNodes[i];
-    if (curNode.nodeName === "#text") {
-      return curNode.nodeValue;
-    }
-  }
 }
