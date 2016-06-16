@@ -192,10 +192,20 @@ function process(emitter, $dom){
     if(!$spouse.classList.contains('cardEmpty')){
       spouse = getPersonFromCard(gedx, $spouse);
       gedx.addPerson(spouse);
-      gedx.addRelationship({
+      var relationship = GedcomX.Relationship({
         type: 'http://gedcomx.org/Couple',
         person1: primaryPerson,
         person2: spouse
+      });
+      gedx.addRelationship(relationship);
+      
+      // Try to find a marriage event from the facts list
+      var spouseName = spouse.getNames()[0].getNameForms()[0].getFullText();
+      facts.getCards('marriage').forEach(function($marriage){
+        var $spouseName = $marriage.querySelector('.userPerson');
+        if($spouseName.textContent === spouseName){
+          relationship.addFact(cardToFact($marriage, 'http://gedcomx.org/Marriage'));
+        }
       });
     }
     
@@ -297,6 +307,34 @@ function firstChildText($element){
       return curNode.nodeValue.trim();
     }
   }
+}
+
+/**
+ * Create a GedcomX Fact from a fact card
+ * 
+ * @param {HTMLElement} $card
+ * @param {String} factType
+ * @returns {GedcomX.Fact}
+ */
+function cardToFact($card, factType){
+  var $date = $card.querySelector('.factItemDate'),
+      date = $date ? utils.toTitleCase($date.textContent.trim()) : null,
+      $place = $card.querySelector('.factItemLocation'),
+      place = $place ? $place.textContent.trim() : null,
+      fact = GedcomX.Fact({
+        type: factType
+      });
+  if(date){
+    fact.setDate({
+      original: date
+    });
+  }
+  if(place){
+    fact.setPlace({
+      original: place
+    });
+  }
+  return fact;
 }
 
 /**
@@ -453,24 +491,7 @@ function FactsList($dom){
      */
     getGedXFacts: function(factType, gedxType){
       return this.getCards(factType).map(function(card){
-        var $date = card.querySelector('.factItemDate'),
-            date = $date ? utils.toTitleCase($date.textContent.trim()) : null,
-            $place = card.querySelector('.factItemLocation'),
-            place = $place ? $place.textContent.trim() : null,
-            fact = GedcomX.Fact({
-              type: gedxType
-            });
-        if(date){
-          fact.setDate({
-            original: date
-          });
-        }
-        if(place){
-          fact.setPlace({
-            original: place
-          });
-        }
-        return fact;
+        return cardToFact(card, gedxType);
       });
     }
     

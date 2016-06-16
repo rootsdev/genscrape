@@ -372,7 +372,18 @@
       },
       "person2": {
         "resource": "#4"
-      }
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "18 Jun 1918"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery, New York, United States"
+          }
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
