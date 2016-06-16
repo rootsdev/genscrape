@@ -1,6 +1,9 @@
 {
   "persons": [
     {
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "names": [
         {
           "nameForms": [

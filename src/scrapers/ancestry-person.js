@@ -97,7 +97,28 @@ function process(emitter, $dom){
       facts = FactsList($dom);
   
   gedx.addPerson(primaryPerson);
-
+  
+  // Gender
+  if(facts.hasFact('gender')){
+    switch(facts.getFirstText('gender')){
+      case 'Female':
+        primaryPerson.setGender({
+          type: 'http://gedcomx.org/Female'
+        });
+        break;
+      case 'Male':
+        primaryPerson.setGender({
+          type: 'http://gedcomx.org/Male'
+        });
+        break;
+      case 'Unknown':
+        primaryPerson.setGender({
+          type: 'http://gedcomx.org/Unknown'
+        });
+        break;
+    }
+  }
+  
   // Process the names
   facts.getCardTitles('name').forEach(function(nameText){
     primaryPerson.addSimpleName(nameText);
@@ -111,6 +132,12 @@ function process(emitter, $dom){
       });
     }
   });
+  
+  // Relationships
+  
+  // Marriage events
+  
+  // Sources
 
   /*
   
@@ -224,6 +251,31 @@ function FactsList($dom){
       return this.getCards(factType).map(function(card){
         return card.querySelector('.cardTitle').textContent.trim();
       });
+    },
+    
+    /**
+     * Get text value of first matching card
+     * 
+     * @param {String} factType
+     * @returns {String}
+     */
+    getFirstText: function(factType){
+      var card = this.getFirstCard(factType);
+      if(card){
+        return card.querySelector('.cardTitle').textContent.trim();
+      }
+    },
+    
+    /**
+     * Get first matching card
+     * 
+     * @param {String} factType
+     * @returns {HTMLElement}
+     */
+    getFirstCard: function(factType){
+      if(facts[factType]){
+        return facts[factType][0];
+      }
     },
     
     /**
