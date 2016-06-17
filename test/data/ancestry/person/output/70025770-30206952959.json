@@ -1,0 +1,149 @@
+{
+  "persons": [
+    {
+      "id": "1",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Elia Jurkiewicz",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Elia"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Jurkiewicz"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Maria",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Maria"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Joannes Jurkiewicz",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Joannes"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Jurkiewicz"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      }
+    },
+    {
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#3"
+      }
+    },
+    {
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#3"
+      }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "\"Public Member Trees\", database, Ancestry.com (http://person.ancestry.com/tree/70025770/person/30206952959 : accessed 17 April 2013), profile for Elia Jurkiewicz."
+        }
+      ],
+      "about": "http://person.ancestry.com/tree/70025770/person/30206952959",
+      "titles": [
+        {
+          "value": "Elia Jurkiewicz - Ancestry Public Member Trees"
+        }
+      ]
+    }
+  ]
+}

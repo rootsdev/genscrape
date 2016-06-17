@@ -1,0 +1,168 @@
+{
+  "persons": [
+    {
+      "id": "1",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Cirillus Jurkiewicz",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Cirillus"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Jurkiewicz"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "24 Feb 1848"
+          },
+          "place": {
+            "original": "Bialykamien, Galizien, Austria"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "23 Aug 1848"
+          },
+          "place": {
+            "original": "Bialykamien, Galizien, Austria"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Joannes Jurkiewicz",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Joannes"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Jurkiewicz"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Catharina Czosnikoska",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Catharina"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Czosnikoska"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#3"
+      }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "\"Public Member Trees\", database, Ancestry.com (http://person.ancestry.com/tree/70025770/person/30206952953 : accessed 17 April 2013), profile for Cirillus Jurkiewicz."
+        }
+      ],
+      "about": "http://person.ancestry.com/tree/70025770/person/30206952953",
+      "titles": [
+        {
+          "value": "Cirillus Jurkiewicz - Ancestry Public Member Trees"
+        }
+      ]
+    }
+  ]
+}
