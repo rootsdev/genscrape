@@ -227,9 +227,24 @@ function process(emitter, $dom){
     });
   });
   
-  // Marriage events
-  
   // Sources
+  // Recommended format by EE:
+  // https://www.evidenceexplained.com/comment/1002#comment-1002
+  // TODO: try to get the name of the tree
+  var fullNameText = primaryPerson.getNames()[0].getNameForms()[0].getFullText();
+  var sourceDescription = GedcomX.SourceDescription()
+    .setAbout(window.document.location.href)
+    .addTitle({
+      value: fullNameText + ' - Ancestry Public Member Trees'
+    })
+    .addCitation({
+      value: '"Public Member Trees", database, Ancestry.com (' + window.document.location.href
+        + ' : accessed ' + utils.getDateString() + '), profile for ' + fullNameText + '.'
+    });
+  gedx.addSourceDescriptionToAll(sourceDescription);
+  
+  // TODO: include sources listed in this profile and try to figure out which
+  // facts they are listed as supporting
   
   emitter.emit('data', gedx);
 }

@@ -1,6 +1,20 @@
 var debug = require('debug')('genscrape:utils');
 
+var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'
+];
+
 var utils = {};
+
+/**
+ * Get a human readable format of the current date
+ * 
+ * @returns {String}
+ */
+utils.getDateString = function(){
+  var date = new Date();
+  return date.getDate() + ' ' + monthNames[date.getMonth()] + ' ' + date.getFullYear();
+};
 
 /**
  * Returns an array of strings with [0] being the given names and 

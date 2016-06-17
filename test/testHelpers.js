@@ -2,6 +2,8 @@ var debug = require('debug')('testHelpers'),
     env = require('jsdom').env,
     fs = require('fs'),
     expect = require('chai').expect;
+
+var originalDate = Date;
     
 module.exports = {
   
@@ -14,13 +16,7 @@ module.exports = {
     env({
       html: '<html></html>',
       url: location,
-      done: function(errors, window){
-        if(errors){
-          debug(errors);
-        }
-        GLOBAL.window = window;
-        callback(errors, window);
-      }
+      done: doneHandler(callback)
     });
   },
   
@@ -33,14 +29,7 @@ module.exports = {
     env({
       file: filePath,
       url: location,
-      done: function(errors, window){
-        if(errors){
-          debug(errors);
-        }
-        GLOBAL.window = window;
-        GLOBAL.document = window.document;
-        callback(errors, window);
-      }
+      done: doneHandler(callback)
     });
   },
   
@@ -71,3 +60,39 @@ module.exports = {
     }
   }
 };
+
+/**
+ * Finish setting up the test environment after the JSDOM is ready
+ * 
+ * @param {Function} callback
+ * @returns {Function} The function that will be registered as the done handler.
+ */
+function doneHandler(callback){
+  return function(errors, window){
+    if(errors){
+      debug(errors);
+    }
+    GLOBAL.window = window;
+    GLOBAL.document = window.document;
+    callback(errors, window);
+  };
+}
+
+/**
+ * In testing, we want all generated dates to be the same so we mock
+ * the date object. This date is 2013-04-17T06:50:42.678Z
+ * 
+ * @returns {Date}
+ */
+function mockDate(){
+  return new originalDate(1366181442678);
+}
+
+beforeEach(function(){
+  GLOBAL.Date = mockDate;
+  GLOBAL.Date.now = originalDate.now;
+});
+
+afterEach(function(){
+  GLOBAL.Date = originalDate;
+});

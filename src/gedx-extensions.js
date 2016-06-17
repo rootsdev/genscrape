@@ -213,7 +213,7 @@ GedcomX.Relationship.prototype.setPerson2 = function(reference){
 };
 
 /**
- * Add a relative of the specific person. This creates the new person, adds them
+ * Add a relative of a specific person. This creates the new person, adds them
  * to the GedcomX document, creates a relationship, and adds the new relationship.
  * 
  * When creating parent-child relationships, the order of persons matters.
@@ -267,4 +267,40 @@ GedcomX.prototype.addRelativeFromName = function(person, name, relationshipType)
   this.addRelationship(relData);
   
   return relative;
+};
+
+/**
+ * Extend GedcomX.addSourceDescription so that the ID is set when added instead
+ * of having to set the manually each time we create one.
+ * 
+ * @param {SourceDescription} sourceDescription
+ * @returns {GedcomX}
+ */
+var originalAddSourceDescription = GedcomX.prototype.addSourceDescription;
+GedcomX.prototype.addSourceDescription = function(sourceDescription){
+  sourceDescription.setId(this.generateId());
+  originalAddSourceDescription.call(this, sourceDescription);
+};
+
+/**
+ * Add the source description to this document and add a source reference to all
+ * persons and relationships currently in the document pointing to this source.
+ * Any persons or relationships added later will not have a reference to this
+ * SourceDescription.
+ * 
+ * @param {SourceDescription} sourceDescription
+ * @returns {GedcomX}
+ */
+GedcomX.prototype.addSourceDescriptionToAll = function(sourceDescription){
+  this.addSourceDescription(sourceDescription);
+  this.getPersons().forEach(function(person){
+    person.addSource(GedcomX.SourceReference({
+      description: '#' + sourceDescription.getId()
+    }));
+  });
+  this.getRelationships().forEach(function(relationship){
+    relationship.addSource(GedcomX.SourceReference({
+      description: '#' + sourceDescription.getId()
+    }));
+  });
 };

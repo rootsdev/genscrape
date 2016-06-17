@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -148,6 +153,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -186,6 +196,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -224,6 +239,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -262,6 +282,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -300,6 +325,11 @@
     },
     {
       "id": "6",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -339,6 +369,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -348,6 +383,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
@@ -357,6 +397,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#2"
@@ -366,6 +411,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -386,6 +436,11 @@
       ]
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -395,6 +450,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
@@ -404,6 +464,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -413,6 +478,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
@@ -420,6 +490,22 @@
       "person2": {
         "resource": "#6"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "7",
+      "citations": [
+        {
+          "value": "\"Public Member Trees\", database, Ancestry.com (http://person.ancestry.com/tree/70025770/person/30206952907 : accessed 17 April 2013), profile for Theodore Yurkiewicz."
+        }
+      ],
+      "about": "http://person.ancestry.com/tree/70025770/person/30206952907",
+      "titles": [
+        {
+          "value": "Theodore Yurkiewicz - Ancestry Public Member Trees"
+        }
+      ]
     }
   ]
 }
