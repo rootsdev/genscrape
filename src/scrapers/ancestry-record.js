@@ -364,19 +364,7 @@ function setup(emitter) {
   
   // Calculate source citation and description. Add source reference to all
   // persons in the GedcomX document.
-  var sourceDescription = getSourceDescription();
-  sourceDescription.setId(gedx.generateId());
-  gedx.addSourceDescription(sourceDescription);
-  gedx.getPersons().forEach(function(person){
-    person.addSource(GedcomX.SourceReference({
-      description: '#' + sourceDescription.getId()
-    }));
-  });
-  gedx.getRelationships().forEach(function(relationship){
-    relationship.addSource(GedcomX.SourceReference({
-      description: '#' + sourceDescription.getId()
-    }));
-  });
+  gedx.addSourceDescriptionToAll(getSourceDescription());
   
   debug('data');
   emitter.emit('data', gedx);

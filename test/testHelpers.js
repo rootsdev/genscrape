@@ -84,8 +84,8 @@ function doneHandler(callback){
  * 
  * @returns {Date}
  */
-function mockDate(){
-  return new originalDate(1366181442678);
+function mockDate(time){
+  return new originalDate(time || 1366181442678);
 }
 
 beforeEach(function(){

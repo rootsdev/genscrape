@@ -278,7 +278,11 @@ GedcomX.prototype.addRelativeFromName = function(person, name, relationshipType)
  */
 var originalAddSourceDescription = GedcomX.prototype.addSourceDescription;
 GedcomX.prototype.addSourceDescription = function(sourceDescription){
-  sourceDescription.setId(this.generateId());
+  // Make sure it's an instance and not a JSON object
+  sourceDescription = GedcomX.SourceDescription(sourceDescription);
+  if(!sourceDescription.getId()){
+    sourceDescription.setId(this.generateId());
+  }
   originalAddSourceDescription.call(this, sourceDescription);
 };
 
