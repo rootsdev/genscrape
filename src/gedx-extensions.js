@@ -284,6 +284,7 @@ GedcomX.prototype.addSourceDescription = function(sourceDescription){
     sourceDescription.setId(this.generateId());
   }
   originalAddSourceDescription.call(this, sourceDescription);
+  return this;
 };
 
 /**
@@ -296,6 +297,8 @@ GedcomX.prototype.addSourceDescription = function(sourceDescription){
  * @returns {GedcomX}
  */
 GedcomX.prototype.addSourceDescriptionToAll = function(sourceDescription){
+  // Make sure it's an instance and not a JSON object
+  sourceDescription = GedcomX.SourceDescription(sourceDescription);
   this.addSourceDescription(sourceDescription);
   this.getPersons().forEach(function(person){
     person.addSource(GedcomX.SourceReference({
@@ -307,4 +310,5 @@ GedcomX.prototype.addSourceDescriptionToAll = function(sourceDescription){
       description: '#' + sourceDescription.getId()
     }));
   });
+  return this;
 };

@@ -1,6 +1,11 @@
 {
   "persons": [
     {
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -27,10 +32,21 @@
             "original": "9 Jun 1900",
             "formal": "+1900-6-9"
           }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Oakes Cemetery, Bentonville, Benton, Arkansas, United States"
+          }
         }
       ]
     },
     {
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -56,6 +72,22 @@
           "date": {
             "original": "20 Feb 1916"
           }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Lucinda Clark (-1900) Grave Site Cemetery: Oakes Cemetery | BillionGraves (http://billiongraves.com/grave/LUCINDA-CLARK/216756 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "http://billiongraves.com/grave/LUCINDA-CLARK/216756",
+      "titles": [
+        {
+          "value": "Lucinda Clark (-1900) Grave Site Cemetery: Oakes Cemetery | BillionGraves"
         }
       ]
     }

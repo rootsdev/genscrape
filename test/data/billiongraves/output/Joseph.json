@@ -1,6 +1,11 @@
 {
   "persons": [
     {
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -33,10 +38,21 @@
             "original": "25 Oct 1866",
             "formal": "+1866-10-25"
           }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Pleasant Grove City Cemetery, Pleasant Grove, Utah, Utah, United States"
+          }
         }
       ]
     },
     {
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -72,6 +88,11 @@
       ]
     },
     {
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -107,6 +128,11 @@
       ]
     },
     {
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -142,6 +168,11 @@
       ]
     },
     {
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -173,6 +204,22 @@
           "date": {
             "original": "30 Sep 1900"
           }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Joseph Clark (1798-1866) Grave Site Cemetery: Pleasant Grove City Cemetery | BillionGraves (http://billiongraves.com/grave/JOSEPH-CLARK/245670 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "http://billiongraves.com/grave/JOSEPH-CLARK/245670",
+      "titles": [
+        {
+          "value": "Joseph Clark (1798-1866) Grave Site Cemetery: Pleasant Grove City Cemetery | BillionGraves"
         }
       ]
     }

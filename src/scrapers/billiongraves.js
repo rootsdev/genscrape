@@ -72,6 +72,23 @@ function run(emitter){
     });
   }
   
+  if(json.cemetery){
+    var cemetery = json.cemetery;
+    primaryPerson.addFact({
+      type: 'http://gedcomx.org/Burial',
+      place: {
+        // Construct a list of place name parts, filter empty values, and concatenate
+        original: [
+          cemetery.cemetery_name, 
+          cemetery.cemetery_city, 
+          cemetery.cemetery_county, 
+          cemetery.cemetery_state, 
+          cemetery.cemetery_country
+        ].filter(function(part){ return !!part; }).join(', ')
+      }
+    });
+  }
+  
   // Relationships
   // We don't actually know how they're related, we just have names and dates
   record.relationships.forEach(function(relation){
@@ -97,6 +114,20 @@ function run(emitter){
   });
   
   // Source Description
+  gedx.addSourceDescriptionToAll({
+    about: document.location.href,
+    titles: [
+      {
+        value: document.title
+      }
+    ],
+    citations: [
+      {
+        value: document.title + ' (' + window.document.location.href 
+          + ' : accessed ' + utils.getDateString() + ')'
+      }
+    ]
+  });
   
   debug('data', gedx);
   emitter.emit('data', gedx);
