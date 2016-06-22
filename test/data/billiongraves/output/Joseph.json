@@ -1,0 +1,180 @@
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Joseph Clark",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Joseph"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Clark"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "7 Oct 1798"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "25 Oct 1866",
+            "formal": "+1866-10-25"
+          }
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Phylinda Clark",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Phylinda"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Clark"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "6 Apr 1802"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "16 Jan 1853"
+          }
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary M. Walker",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Mary M."
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Walker"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "10 Oct 1858"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "22 Mar 1864"
+          }
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Susan M. Walker",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Susan M."
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Walker"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "20 Oct 1860"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "26 Oct 1860"
+          }
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Sophronia Walker",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Sophronia"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Walker"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "14 Jul 1829"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "30 Sep 1900"
+          }
+        }
+      ]
+    }
+  ]
+}

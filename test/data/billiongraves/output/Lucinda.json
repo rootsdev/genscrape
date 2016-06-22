@@ -1,0 +1,63 @@
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Lucinda Clark",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Lucinda"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Clark"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "9 Jun 1900",
+            "formal": "+1900-6-9"
+          }
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "M.j. Clark",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "M.j."
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Clark"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "20 Feb 1916"
+          }
+        }
+      ]
+    }
+  ]
+}

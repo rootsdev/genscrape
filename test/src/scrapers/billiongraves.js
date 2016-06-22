@@ -1,42 +1,50 @@
-var path = require('path'),
-    expect = require('chai').expect,
-    helpers = require('../../testHelpers'),
-    genscrape = require('../../../');
+var helpers = require('../../testHelpers'),
+    genscrape = require('../../../'),
+    debug = require('debug')('genscrape:tests:billiongraves'),
+    pagesDir = __dirname + '/../../data/billiongraves/pages',
+    outputDir = __dirname + '/../../data/billiongraves/output';
     
-describe.skip('billiongraves', function(){
+describe.only('billiongraves', function(){
   
-  it('name and death', function(done){
-    var url = 'http://billiongraves.com/pages/record/LUCINDA-CLARK/216756',
-        filePath = path.join(__dirname, '..', 'responses', 'billiongraves', 'Lucinda.html');
-    helpers.mockDom(url, filePath, function(){
-      genscrape()
-      .on('data', function(data){
-        expect(data).to.deep.equal({ 
-          givenName: 'Lucinda',
-          familyName: 'Clark',
-          deathDate: '9 June 1900' 
-        });
-        done();
-      })
+  it('name and death', setupTest(
+    'Lucinda',
+    'http://billiongraves.com/grave/LUCINDA-CLARK/216756'
+  ));
+  
+  it('include birth', setupTest(
+    'Joseph',
+    'http://billiongraves.com/grave/JOSEPH-CLARK/245670'
+  ));
+  
+});
+
+/**
+ * Setup a test
+ * 
+ * @param {String} url - URL of the test page
+ * @param {String} name - Name of the data files without the extension
+ * @returns {Function} - The actual test method that mocha will run
+ */
+function setupTest(name, url){
+  debug(`setup ${name}`);
+  
+  var inputFile = `${pagesDir}/${name}.html`,
+      outputFile = `${outputDir}/${name}.json`;
+  
+  // Create and return the actual test method  
+  return function(done){
+    debug(`test ${name}`);
+    
+    // Setup a mock browser window
+    helpers.mockDom(url, inputFile, function(){
+      debug('dom setup');
+      
+      // Run genscrape
+      genscrape().on('data', function(data){
+        
+        // Test
+        done(helpers.compareOrRecordOutput(data, outputFile));
+      }).on('error', done);
     });
-  })
-  
-  it('include birth', function(done){
-    var url = 'http://billiongraves.com/pages/record/JOSEPH-CLARK/245670',
-        filePath = path.join(__dirname, '..', 'responses', 'billiongraves', 'Joseph.html');
-    helpers.mockDom(url, filePath, function(){
-      genscrape()
-      .on('data', function(data){
-        expect(data).to.deep.equal({
-          givenName: 'Joseph',
-          familyName: 'Clark',
-          birthDate: '7 October 1798',
-          deathDate: '25 October 1866'
-        });
-        done();
-      })
-    })
-    
-  })
-  
-})
+  };
+}
