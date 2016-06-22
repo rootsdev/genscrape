@@ -4,7 +4,7 @@ var helpers = require('../../testHelpers'),
     pagesDir = __dirname + '/../../data/billiongraves/pages',
     outputDir = __dirname + '/../../data/billiongraves/output';
     
-describe.only('billiongraves', function(){
+describe('billiongraves', function(){
   
   it('name and death', setupTest(
     'Lucinda',
