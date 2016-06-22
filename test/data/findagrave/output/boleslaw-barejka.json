@@ -1,0 +1,38 @@
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Boleslaw"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Barejka"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Apr. 5,  1970"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Saint Stanislaus Cemetery, Amsterdam, Montgomery County, New York, USA"
+          }
+        }
+      ]
+    }
+  ]
+}

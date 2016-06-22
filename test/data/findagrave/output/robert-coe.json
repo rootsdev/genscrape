@@ -1,0 +1,44 @@
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Robert"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Coe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Oct.,  1596"
+          },
+          "place": {
+            "original": "Haverhill, England"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "unknown"
+          },
+          "place": {
+            "original": "Hempstead, Nassau County, New York, USA"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Ronald Wilson"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Reagan"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Feb. 6,  1911"
+          },
+          "place": {
+            "original": "Tampico, Whiteside County, Illinois, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Jun. 5,  2004"
+          },
+          "place": {
+            "original": "Bel Air, Los Angeles County, California, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Ronald W. Reagan Presidential Library, Simi Valley, Ventura County, California, USA"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Patty"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Duke"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Dec. 14,  1946"
+          },
+          "place": {
+            "original": "Elmhurst, Queens County, New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Mar. 29,  2016"
+          },
+          "place": {
+            "original": "Coeur d'Alene, Kootenai County, Idaho, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Forest Cemetery, Coeur d'Alene, Kootenai County, Idaho, USA"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Nancy"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Reagan"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Jul. 6,  1921"
+          },
+          "place": {
+            "original": "New York, New York County (Manhattan), New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Mar. 6,  2016"
+          },
+          "place": {
+            "original": "Bel Air, Los Angeles County, California, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Ronald W. Reagan Presidential Library, Simi Valley, Ventura County, California, USA"
+          }
+        }
+      ]
+    }
+  ]
+}

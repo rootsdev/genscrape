@@ -1,0 +1,54 @@
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Thomas Jefferson"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                },
+                {
+                  "type": "http://gedcomx.org/Suffix",
+                  "value": " I"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1771"
+          },
+          "place": {
+            "original": "North Carolina, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1846"
+          },
+          "place": {
+            "original": "Fentress County, Tennessee, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Bills Creek Cemetery, Fentress County, Tennessee, USA"
+          }
+        }
+      ]
+    }
+  ]
+}

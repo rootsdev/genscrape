@@ -1,0 +1,50 @@
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Kenneth Seymour"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Robbins"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Feb. 23,  1894"
+          },
+          "place": {
+            "original": "Pittsfield, Berkshire County, Massachusetts, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Feb. 2,  1972"
+          },
+          "place": {
+            "original": "Sparta, Sussex County, New Jersey, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Pittsfield Cemetery, Pittsfield, Berkshire County, Massachusetts, USA"
+          }
+        }
+      ]
+    }
+  ]
+}

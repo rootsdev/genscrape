@@ -1,0 +1,50 @@
+{
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Raymond J."
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zierak"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Mar. 9,  1914"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery County, New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Apr. 3,  2006"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery County, New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Saint Stanislaus Cemetery, Amsterdam, Montgomery County, New York, USA"
+          }
+        }
+      ]
+    }
+  ]
+}
