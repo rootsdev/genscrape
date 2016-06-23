@@ -113,7 +113,7 @@ function run(emitter){
     gedx.addPerson(person);
   });
   
-  // Source Description
+  // SourceDescription
   gedx.addSourceDescriptionToAll({
     about: document.location.href,
     titles: [

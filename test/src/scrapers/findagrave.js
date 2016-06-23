@@ -4,7 +4,7 @@ var helpers = require('../../testHelpers'),
     pagesDir = __dirname + '/../../data/findagrave/pages',
     outputDir = __dirname + '/../../data/findagrave/output';
     
-describe.only('findagrave', function(){
+describe('findagrave', function(){
   
   it('Not famous; no family', setupTest(
     'raymond-zierak',
