@@ -90,7 +90,21 @@ function run(emitter){
     gedx.addPerson(sibling);
   });
   
-  // TODO: SourceDescription
+  // SourceDescription
+  gedx.addSourceDescriptionToAll({
+    about: document.location.href,
+    titles: [
+      {
+        value: document.title
+      }
+    ],
+    citations: [
+      {
+        value: 'Find A Grave, database and images (http://findagrave.com : accessed ' + utils.getDateString() + ')'
+          + ', memorial page for ' + document.title + '.'
+      }
+    ]
+  });
   
   debug('data', gedx);
   emitter.emit('data', gedx);

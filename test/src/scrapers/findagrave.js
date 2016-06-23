@@ -16,7 +16,7 @@ describe.only('findagrave', function(){
     'http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=160192994'
   ));
   
-  it('Multilpe parents; single spouse', setupTest(
+  it('Multiple parents; single spouse', setupTest(
     'nancy-reagan',
     'http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=7657594'
   ));

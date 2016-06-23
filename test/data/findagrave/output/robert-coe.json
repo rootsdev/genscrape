@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -43,6 +48,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -74,6 +84,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -96,6 +111,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -118,6 +138,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -156,6 +181,11 @@
     },
     {
       "id": "6",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -194,6 +224,11 @@
     },
     {
       "id": "7",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -233,6 +268,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -242,6 +282,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -251,6 +296,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -260,6 +310,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -269,6 +324,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -278,6 +338,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -285,6 +350,22 @@
       "person2": {
         "resource": "#7"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "8",
+      "citations": [
+        {
+          "value": "Find A Grave, database and images (http://findagrave.com : accessed 17 April 2013), memorial page for Robert Coe (1596 - ) - Find A Grave Memorial."
+        }
+      ],
+      "about": "http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=37494703",
+      "titles": [
+        {
+          "value": "Robert Coe (1596 - ) - Find A Grave Memorial"
+        }
+      ]
     }
   ]
 }

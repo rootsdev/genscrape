@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -32,6 +37,22 @@
           "place": {
             "original": "Saint Stanislaus Cemetery, Amsterdam, Montgomery County, New York, USA"
           }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "2",
+      "citations": [
+        {
+          "value": "Find A Grave, database and images (http://findagrave.com : accessed 17 April 2013), memorial page for Boleslaw Barejka ( - 1970) - Find A Grave Memorial."
+        }
+      ],
+      "about": "http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GScid=2140420&GRid=40207050",
+      "titles": [
+        {
+          "value": "Boleslaw Barejka ( - 1970) - Find A Grave Memorial"
         }
       ]
     }

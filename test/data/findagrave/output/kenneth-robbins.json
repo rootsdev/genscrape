@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -49,6 +54,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -87,6 +97,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -125,6 +140,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -163,6 +183,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -202,6 +227,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -211,6 +241,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
@@ -220,6 +255,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -229,6 +269,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -236,6 +281,22 @@
       "person2": {
         "resource": "#5"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "6",
+      "citations": [
+        {
+          "value": "Find A Grave, database and images (http://findagrave.com : accessed 17 April 2013), memorial page for Kenneth Seymour Robbins (1894 - 1972) - Find A Grave Memorial."
+        }
+      ],
+      "about": "http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=153242774",
+      "titles": [
+        {
+          "value": "Kenneth Seymour Robbins (1894 - 1972) - Find A Grave Memorial"
+        }
+      ]
     }
   ]
 }
