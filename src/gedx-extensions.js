@@ -312,3 +312,20 @@ GedcomX.prototype.addSourceDescriptionToAll = function(sourceDescription){
   });
   return this;
 };
+
+/**
+ * Extend GedcomX.addPerson() to generate a person ID if the person 
+ * doesn't already have one.
+ * 
+ * @param {Person}
+ * @returns {GedcomX}
+ */
+var originalAddPerson = GedcomX.prototype.addPerson;
+GedcomX.prototype.addPerson = function(person){
+  // Ensure we have an instance and not a pojo
+  person = GedcomX.Person(person);
+  if(person.getId() === undefined){
+    person.setId(this.generateId());
+  }
+  originalAddPerson.call(this, person);
+};

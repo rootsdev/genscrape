@@ -1,6 +1,7 @@
 {
   "persons": [
     {
+      "id": "1",
       "names": [
         {
           "nameForms": [
@@ -45,6 +46,366 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Edward Reagan",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "John Edward"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Reagan"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1883",
+            "formal": "+1883"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1941",
+            "formal": "+1941"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Nelle Clyde Wilson Reagan",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Nelle Clyde Wilson"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Reagan"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1883",
+            "formal": "+1883"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1962",
+            "formal": "+1962"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Nancy Reagan",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Nancy"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Reagan"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1921",
+            "formal": "+1921"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2016",
+            "formal": "+2016"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Jane Wyman",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Jane"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Wyman"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1917",
+            "formal": "+1917"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2007",
+            "formal": "+2007"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Maureen Elizabeth Reagan",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Maureen Elizabeth"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Reagan"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1941",
+            "formal": "+1941"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2001",
+            "formal": "+2001"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Christine Reagan",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Christine"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Reagan"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1947",
+            "formal": "+1947"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1947",
+            "formal": "+1947"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Neil Reagan",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "John Neil"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Reagan"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1908",
+            "formal": "+1908"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1996",
+            "formal": "+1996"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ronald Wilson Reagan",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Ronald Wilson"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Reagan"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1911",
+            "formal": "+1911"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2004",
+            "formal": "+2004"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#5"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#6"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#7"
+      }
     }
   ]
 }

@@ -1,6 +1,7 @@
 {
   "persons": [
     {
+      "id": "1",
       "names": [
         {
           "nameForms": [
@@ -39,6 +40,251 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary Coe",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Mary"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Coe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1628",
+            "formal": "+1628"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Hannah Dearslay Coe",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Hannah Dearslay"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Coe"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Jane Coe",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Jane"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Coe"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Coe",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "John"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Coe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1625",
+            "formal": "+1625"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1693",
+            "formal": "+1693"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Robert Coe",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Robert"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Coe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1626",
+            "formal": "+1626"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1659",
+            "formal": "+1659"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Benjamin Coe",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Benjamin"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Coe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1628",
+            "formal": "+1628"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1696",
+            "formal": "+1696"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#3"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#5"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#6"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#7"
+      }
     }
   ]
 }

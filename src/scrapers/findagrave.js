@@ -49,7 +49,48 @@ function run(emitter){
     });
   }
   
-  // TODO: relationships
+  var family = getFamilyLinks();
+  
+  // When processing the family we can't make any assumptions about relationship
+  // between the family members. I.e. we don't know whether the parents should
+  // have a couple relationship, whether siblings should have a parent-child
+  // relationship with the parents, and whether children should have a
+  // parent-child relationship with the spouses. This also means that siblings
+  // won't be referenced by any relationship but will be included as persons
+  // in the document.
+  
+  family.parents.forEach(function(parent){
+    gedx.addPerson(parent);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: parent,
+      person2: primaryPerson
+    });
+  });
+  
+  family.spouses.forEach(function(spouse){
+    gedx.addPerson(spouse);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/Couple',
+      person1: primaryPerson,
+      person2: spouse
+    });
+  });
+  
+  family.children.forEach(function(child){
+    gedx.addPerson(child);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: primaryPerson,
+      person2: child
+    });
+  });
+  
+  family.siblings.forEach(function(sibling){
+    gedx.addPerson(sibling);
+  });
+  
+  // TODO: SourceDescription
   
   debug('data', gedx);
   emitter.emit('data', gedx);
@@ -130,6 +171,109 @@ function getFact(type, row, cell){
       }
       return GedcomX.Fact(fact);
     }
+  }
+}
+
+/**
+ * Get the family links. The relationship type arrays are filled with GedcomX.Person objects
+ * 
+ * @returns {Object} Format { parents: [], spouses: [], siblings: [], children: [] }
+ */
+function getFamilyLinks(){
+  var family = {
+        parents: [],
+        spouses: [],
+        siblings: [],
+        children: []
+      }, 
+      bioCell = xpath(3, 1),
+      familyLinks = false,
+      relType, currentNode, currentText, currentNodeName;
+  
+  for(var i = 0; i < bioCell.childNodes.length; i++){
+    currentNode = bioCell.childNodes[i];
+    currentText = currentNode.textContent.trim();
+    
+    // Skip empty nodes
+    if(!currentText){
+      continue;
+    }
+    
+    if(familyLinks){
+      
+      if(currentText === 'Parents:'){
+        relType = 'parents';
+        continue;
+      }
+      else if(currentText === 'Spouse:' || currentText === 'Spouses:'){
+        relType = 'spouses';
+        continue;
+      }
+      else if(currentText === 'Children:'){
+        relType = 'children';
+        continue;
+      }
+      else if(currentText === 'Sibling:'){
+        relType = 'siblings';
+        continue;
+      }
+      
+      // Skip this fake link
+      if(currentText === '*Calculated relationship'){
+        break;
+      }
+      
+      // At this point, any <a> or <font> tags should be people
+      currentNodeName = currentNode.nodeName;
+      if(currentNodeName === 'A' || currentNodeName === 'FONT'){
+        family[relType].push(processFamilyLink(currentText));
+      }
+      
+    }
+    
+    else if(currentText.indexOf('Family links:') === 0){
+      familyLinks = true;
+    }
+  }
+  
+  return family;
+}
+
+/**
+ * Extract the name, birth year, and death year of a family link.
+ * 
+ * @param {String} linkText
+ * @returns {GedcomX.Person}
+ */
+function processFamilyLink(linkText){
+  var matches = linkText.match(/^([\w\s]+)( \((\w{4}) - (\w{4})\))?$/),
+      data = {
+        name: matches[1],
+        birthYear: matches[3],
+        deathYear: matches[4]
+      };
+  return GedcomX.Person()
+    .addSimpleName(data.name)
+    .addFact(familyLinkFact('http://gedcomx.org/Birth', data.birthYear))
+    .addFact(familyLinkFact('http://gedcomx.org/Death', data.deathYear));
+}
+
+/**
+ * Generate a GedcomX.Fact for a family link
+ * 
+ * @param {String} type - GedcomX fact type
+ * @param {String} date
+ * @returns {GedcomX.Fact}
+ */
+function familyLinkFact(type, date){
+  if(parseInt(date, 10)){
+    return {
+      type: type,
+      date: {
+        original: date,
+        formal: '+' + date
+      }
+    };
   }
 }
 

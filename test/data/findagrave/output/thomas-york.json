@@ -1,6 +1,7 @@
 {
   "persons": [
     {
+      "id": "1",
       "names": [
         {
           "nameForms": [
@@ -49,6 +50,369 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "William York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "William"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1720",
+            "formal": "+1720"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1789",
+            "formal": "+1789"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Martha Frances Mitchel York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Martha Frances Mitchel"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1774",
+            "formal": "+1774"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1855",
+            "formal": "+1855"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John William York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "John William"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Andrew W York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Andrew W"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1838",
+            "formal": "+1838"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Charlotte York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Charlotte"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1809",
+            "formal": "+1809"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Thomas Jefferson York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Thomas Jefferson"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1810",
+            "formal": "+1810"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "William York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "William"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1815",
+            "formal": "+1815"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "James York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "James"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1750",
+            "formal": "+1750"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1814",
+            "formal": "+1814"
+          }
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Thomas Jefferson York",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Thomas Jefferson"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1771",
+            "formal": "+1771"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1846",
+            "formal": "+1846"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#3"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#5"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#6"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#7"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#8"
+      }
     }
   ]
 }

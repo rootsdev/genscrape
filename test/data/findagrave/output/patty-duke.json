@@ -1,6 +1,7 @@
 {
   "persons": [
     {
+      "id": "1",
       "names": [
         {
           "nameForms": [
@@ -45,6 +46,225 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Patrick Duke",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "John Patrick"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Duke"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1913",
+            "formal": "+1913"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1964",
+            "formal": "+1964"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Frances Margaret McMahon Duke",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Frances Margaret McMahon"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Duke"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1913",
+            "formal": "+1913"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1993",
+            "formal": "+1993"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Harry Falk",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Harry"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Falk"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1933",
+            "formal": "+1933"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2016",
+            "formal": "+2016"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Carol Ann Duke Kennedy",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Carol Ann Duke"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Kennedy"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1938",
+            "formal": "+1938"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2013",
+            "formal": "+2013"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Patty Duke",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Patty"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Duke"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1946",
+            "formal": "+1946"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2016",
+            "formal": "+2016"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      }
     }
   ]
 }

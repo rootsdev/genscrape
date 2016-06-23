@@ -1,6 +1,7 @@
 {
   "persons": [
     {
+      "id": "1",
       "names": [
         {
           "nameForms": [
@@ -45,6 +46,196 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Newell Robbins",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "John Newell"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Robbins"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1859",
+            "formal": "+1859"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1917",
+            "formal": "+1917"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ann Ayers Francis Robbins",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Ann Ayers Francis"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Robbins"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1868",
+            "formal": "+1868"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1957",
+            "formal": "+1957"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Edith Prescott Luckett Davis",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Edith Prescott Luckett"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Davis"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1888",
+            "formal": "+1888"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1987",
+            "formal": "+1987"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Nancy Reagan",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Nancy"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Reagan"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1921",
+            "formal": "+1921"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2016",
+            "formal": "+2016"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#5"
+      }
     }
   ]
 }

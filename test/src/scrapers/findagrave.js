@@ -36,7 +36,7 @@ describe.only('findagrave', function(){
     'http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=38398001'
   ));
   
-  it('Unknown birth', setupTest(
+  it('Unknown birth; no family', setupTest(
     'boleslaw-barejka',
     'http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GScid=2140420&GRid=40207050'
   ));
