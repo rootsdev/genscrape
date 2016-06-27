@@ -1,9 +1,16 @@
-var nock = require('nock'),
-    helpers = require('../../testHelpers'),
-    genscrape = require('../../../'),
-    debug = require('debug')('genscrape:tests:familysearch-record'),
-    pagesDir = __dirname + '/../../data/familysearch-record/pages',
-    outputDir = __dirname + '/../../data/familysearch-record/output';
+var setupTest = require('../../testHelpers').createTestRunnerWithNock({
+  scraperName: 'familysearch-record',
+  domain: 'https://familysearch.org', 
+  testName: function(path, recordId){
+    return recordId;
+  },
+  ajaxPath: function(path, recordId){
+    return `${path}${recordId}`;
+  },
+  windowPath: function(path, recordId){
+    return `${path}${recordId}`;
+  }
+});
 
 describe('familysearch record', function(){
   
@@ -35,44 +42,4 @@ function setupPal(recordId){
  */
 function setupArk(recordId){
   return setupTest('/ark:/61903/1:1:', recordId);
-}
-
-/**
- * Setup a familysearch record test
- * 
- * @param {String} urlPath - URL path prefix for the record's URL. Allows us to
- *  test both ARKs and PALs
- * @param {String} recordId
- * @returns {Function} - The actual test method that mocha will run
- */
-function setupTest(urlPath, recordId){
-  debug(`setup ${urlPath}${recordId}`);
-  
-  var inputFile = `${pagesDir}/${recordId}.json`,
-      outputFile = `${outputDir}/${recordId}.json`;
-  
-  // Setup nock to respond to the AJAX request that will be made by the scraper
-  nock('https://familysearch.org')
-    .defaultReplyHeaders({
-      'content-type': 'application/json'
-    })
-    .get(urlPath + recordId)
-    .replyWithFile(200, inputFile);
-  
-  // Create and return the actual test method  
-  return function(done){
-    debug(`test ${urlPath}${recordId}`);
-    
-    // Setup a mock browser window
-    helpers.mockWindow(`https://familysearch.org${urlPath}${recordId}`, function(){
-      debug('window setup');
-      
-      // Run genscrape
-      genscrape().on('data', function(data){
-        
-        // Test
-        done(helpers.compareOrRecordOutput(data, outputFile));
-      }).on('error', done);
-    });
-  };
 }

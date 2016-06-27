@@ -2,6 +2,7 @@ var debug = require('debug')('genscrape:tests:testHelpers'),
     env = require('jsdom').env,
     fs = require('fs'),
     genscrape = require('../'),
+    nock = require('nock'),
     expect = require('chai').expect;
 
 var originalDate = Date;
@@ -35,7 +36,7 @@ var helpers = module.exports = {
   },
   
   /**
-   * Setup a test runner that loads an HTML page.
+   * Setup a test runner that loads an HTML page, funs genscrape, then handles the output.
    * 
    * @param {String} scraperName
    * @returns {Function} A function that can be called to setup a test. It takes
@@ -61,6 +62,61 @@ var helpers = module.exports = {
         // Setup a mock browser window
         helpers.mockDom(url, inputFile, function(){
           runnerDebug('dom setup');
+          
+          // Run genscrape
+          genscrape().on('data', function(data){
+            
+            // Test
+            done(helpers.compareOrRecordOutput(data, outputFile));
+          }).on('error', done);
+        });
+      };
+    };
+  },
+  
+  /**
+   * Create a test runner for scrapers that make AJAX requests which must be
+   * intercepted with nock.
+   * 
+   * @param {Object} config
+   * @param {String} config.scraperName
+   * @param {String} config.domain
+   * @param {Function} config.testName
+   * @param {Function} config.windowPath
+   * @param {Function} config.ajaxPath
+   */
+  createTestRunnerWithNock: function(config){
+    debug(`createTestRunnerWithNock ${config.scraperName}`);
+    
+    var pagesDir = __dirname + `/data/${config.scraperName}/pages`,
+        outputDir = __dirname + `/data/${config.scraperName}/output`,
+        runnerDebug = require('debug')(`genscrape:tests:${config.scraperName}`);
+    
+    return function(treeId, personId){
+      
+      var testName = config.testName.apply(null, arguments),
+          inputFile = `${pagesDir}/${testName}.json`,
+          outputFile = `${outputDir}/${testName}.json`,
+          windowPath = config.windowPath.apply(null, arguments),
+          ajaxPath = config.ajaxPath.apply(null, arguments);
+      
+      runnerDebug(`setup ${testName}`);
+      
+      // Setup nock to respond to the AJAX request that will be made by the scraper
+      nock(config.domain)
+        .defaultReplyHeaders({
+          'content-type': 'application/json'
+        })
+        .get(ajaxPath)
+        .replyWithFile(200, inputFile);
+        
+      // Create and return the actual test method  
+      return function(done){
+        runnerDebug(`test ${testName}`);
+        
+        // Setup a mock browser window
+        helpers.mockWindow(`${config.domain}${windowPath}`, function(){
+          runnerDebug('window setup');
           
           // Run genscrape
           genscrape().on('data', function(data){

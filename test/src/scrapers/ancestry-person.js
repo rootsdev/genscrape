@@ -1,11 +1,18 @@
-var nock = require('nock'),
-    helpers = require('../../testHelpers'),
-    genscrape = require('../../../'),
-    debug = require('debug')('genscrape:tests:ancestry-person'),
-    pagesDir = __dirname + '/../../data/ancestry-person/pages',
-    outputDir = __dirname + '/../../data/ancestry-person/output';
+var setupTest = require('../../testHelpers').createTestRunnerWithNock({
+  scraperName: 'ancestry-person',
+  domain: 'http://person.ancestry.com', 
+  testName: function(treeId, personId){
+    return `${treeId}-${personId}`;
+  },
+  ajaxPath: function(treeId, personId){
+    return `/tree/${treeId}/person/${personId}/content/factsbody`;
+  },
+  windowPath: function(treeId, personId){
+    return `/tree/${treeId}/person/${personId}`;
+  }
+});
 
-describe('ancestry person', function(){
+describe.only('ancestry person', function(){
 
   it('basic', setupTest('70025770', '30206952907'));
   
@@ -20,42 +27,3 @@ describe('ancestry person', function(){
   it('child of unknown spouse');
   
 });
-
-/**
- * Setup a ancestry person test
- * 
- * @param {String} treeId
- * @param {String} personId
- * @returns {Function} - The actual test method that mocha will run
- */
-function setupTest(treeId, personId){
-  debug(`setup ${treeId}:${personId}`);
-  
-  var inputFile = `${pagesDir}/${treeId}-${personId}.json`,
-      outputFile = `${outputDir}/${treeId}-${personId}.json`;
-  
-  // Setup nock to respond to the AJAX request that will be made by the scraper
-  nock('http://person.ancestry.com')
-    .defaultReplyHeaders({
-      'content-type': 'application/json'
-    })
-    .get(`/tree/${treeId}/person/${personId}/content/factsbody`)
-    .replyWithFile(200, inputFile);
-    
-  // Create and return the actual test method  
-  return function(done){
-    debug(`test ${treeId}:${personId}`);
-    
-    // Setup a mock browser window
-    helpers.mockWindow(`http://person.ancestry.com/tree/${treeId}/person/${personId}`, function(){
-      debug('window setup');
-      
-      // Run genscrape
-      genscrape().on('data', function(data){
-        
-        // Test
-        done(helpers.compareOrRecordOutput(data, outputFile));
-      }).on('error', done);
-    });
-  };
-}
