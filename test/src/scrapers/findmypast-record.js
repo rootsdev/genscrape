@@ -1,121 +1,80 @@
-var path = require('path'),
-    expect = require('chai').expect,
-    helpers = require('../../testHelpers'),
-    genscrape = require('../../../');
+var setupTest = require('../../testHelpers').createTestRunner('findmypast-record');
     
-describe.skip('findmypast-record', function(){
+describe.only('findmypast-record', function(){
 
-  it('1920 US census', function(done){
-    var url = 'http://search.findmypast.co.uk/record?id=USC/1920/004966622/00929/002&_ga=1.106750979.16848375.1432241988',
-        filename = '1920-us-helen-yurkawacz.html';
-    test(done, url, filename, { 
-      givenName: 'Helen',
-      familyName: 'Yurkawacz',
-      birthDate: '1889',
-      birthPlace: 'Russia',
-      spouseGivenName: 'Charles',
-      spouseFamilyName: 'Yurkawacz'
-    });
-  });
+  it('1911 England Census - Head', setupTest(
+    '1911-england-census-head',
+    'http://search.findmypast.com/record?id=gbc%2f1911%2frg14%2f24584%2f0135%2f1'
+  ));
   
-  it('1930 US census', function(done){
-    var url = 'http://search.findmypast.com/record?id=USC/1930/004950335/00976/042&_ga=1.94834460.16848375.1432241988',
-        filename = '1930-us-leon-lunderville.html';
-    test(done, url, filename, { 
-      givenName: 'Leon H',
-      familyName: 'Lunderville',
-      birthDate: '1896',
-      birthPlace: 'Connecticut'
-    });
-  });
+  it('1911 England Census - Daughter', setupTest(
+    '1911-england-census-daughter',
+    'http://search.findmypast.com/record?id=gbc%2f1911%2frg14%2f24584%2f0135%2f3'
+  ));
   
-  it('Connecticut Deaths', function(done){
-    var url = 'http://search.findmypast.ie/record?id=us/bmd/connecti_dea/153071&_ga=1.194846765.16848375.1432241988',
-        filename = 'connecticut-deaths-leon-lunderville.html';
-    test(done, url, filename, { 
-      givenName: 'Leon H',
-      familyName: 'Lunderville',
-      birthDate: '1895',
-      birthPlace: 'Connecticut',
-      deathDate: '28 Oct 1956',
-      deathPlace: 'Meriden, Connecticut, United States'
-    });
-  });
+  it('1841 England Census', setupTest(
+    '1841-england-census',
+    'http://search.findmypast.com/record?id=gbc%2f1841%2f0005244738'
+  ));
   
-  it('England Births', function(done){
-    var url = 'http://search.findmypast.com.au/record?id=bmd%2fb%2f1857%2f4%2fck%2f000109%2f020',
-        filename = 'england-births-charles-davies.html';
-    test(done, url, filename, { 
-      givenName: 'Charles',
-      familyName: 'Davies',
-      birthDate: '1857',
-      birthPlace: 'Holywell, Flintshire, Wales'
-    });
-  });
+  it('1900 US Census', setupTest(
+    '1900-us-census',
+    'http://search.findmypast.com/record?id=usc%2f1900%2f004114960%2f00265%2f084'
+  ));
   
-  it('Flint Baptisms', function(done){
-    var url = 'http://search.findmypast.co.uk/record?id=gbprs%2fb%2f883135177%2f1',
-        filename = 'flint-baptisms-charles-davies.html';
-    test(done, url, filename, { 
-      givenName: 'Charles',
-      familyName: 'Davies',
-      birthDate: '1863',
-      birthPlace: 'Holywell, Flintshire, Wales',
-      fatherGivenName: 'John',
-      motherGivenName: 'Mary'
-    });
-  });
+  it('England, Birth and Baptisms', setupTest(
+    'england-births-baptisms',
+    'http://search.findmypast.com/record?id=r_931803621'
+  ));
   
-  it('England Marriages', function(done){
-    var url = 'http://search.findmypast.co.uk/record?id=bmd%2fm%2f1873%2f2%2faz%2f000073%2f061',
-        filename = 'england-marriages-charles-davies.html';
-    test(done, url, filename, { 
-      givenName: 'Charles',
-      familyName: 'Davies',
-      marriageDate: '1873',
-      marriagePlace: 'Holywell, Flintshire, Wales'
-    });
-  });
+  it('England and Wales Deaths', setupTest(
+    'england-deaths',
+    'http://search.findmypast.com/record?id=bmd%2fd%2f1896%2f4%2faz%2f000376%2f022'
+  ));
   
-  it('Flint Marriages', function(done){
-    var url = 'http://search.findmypast.co.uk/record?id=gbprs%2fm%2f884001280%2f1',
-        filename = 'flint-marriages.html';
-    test(done, url, filename, { 
-      givenName: 'Charles',
-      familyName: 'Davies',
-      birthDate: '1864',
-      marriageDate: '28 Nov 1891',
-      marriagePlace: 'Bagillt, Flintshire, Wales',
-      spouseGivenName: 'Sarah',
-      spouseFamilyName: 'Jones'
-    });
-  });
+  it('England and Wales Marriages', setupTest(
+    'england-marriages',
+    'http://search.findmypast.com/record?id=bmd%2fm%2f1878%2f4%2faz%2f000312%2f104'
+  ));
   
-  it('Flint Banns', function(done){
-    var url = 'http://search.findmypast.co.uk/record?id=gbprs%2fm%2f885005529%2f1',
-        filename = 'flint-banns.html';
-    test(done, url, filename, { 
-      givenName: 'Charles',
-      familyName: 'Davies',
-      marriageDate: '1891',
-      marriagePlace: 'Flint, Flintshire, Wales',
-      spouseGivenName: 'Sarah',
-      spouseFamilyName: 'Jones'
-    });
-  });
+  it('US Marriages Male', setupTest(
+    'us-marriages-male',
+    'http://search.findmypast.com/record?id=us%2ffs%2fm%2f001084854%2f1'
+  ));
+  
+  it('US Marriages Divorced Female', setupTest(
+    'us-marriages-divorced',
+    'http://search.findmypast.com/record?id=us%2ffs%2fm%2f010363877%2f2'
+  ));
+  
+  it('Denbigh Banns', setupTest(
+    'denbigh-banns',
+    'http://search.findmypast.com/record?id=gbprs%2fm%2f881019255%2f1'
+  ));
+  
+  it('Denbigh Baptisms', setupTest(
+    'denbigh-baptisms',
+    'http://search.findmypast.com/record?id=gbprs%2fb%2f879273212%2f1'
+  ));
+  
+  it('Denbigh Burials', setupTest(
+    'denbigh-burials',
+    'http://search.findmypast.com/record?id=gbprs%2fd%2f878322398%2f1'
+  ));
+  
+  it('Denbigh Marriages', setupTest(
+    'denbigh-marriages',
+    'http://search.findmypast.com/record?id=gbprs%2fm%2f880081323%2f1'
+  ));
+  
+  it('Passenger Lists leaving UK', setupTest(
+    'leaving-uk',
+    'http://search.findmypast.com/record?id=tna%2fbt27%2f0980000042%2f00187'
+  ));
+  
+  it('New York Passenger Lists & Arrivals', setupTest(
+    'ny-arrivals',
+    'http://search.findmypast.com/record?id=us%2fpass%2fny%2fei%2f16551289'
+  ));
   
 });
-
-function test(done, url, fileName, expectedData){
-  var filePath = path.join(__dirname, '..', 'responses', 'findmypast', 'records', fileName);
-  helpers.mockDom(url, filePath, function(){
-    genscrape()
-    .on('data', function(actualData){
-      expect(actualData).to.deep.equal(expectedData);
-      done();
-    })
-    .on('noData', function(){
-      throw new Error('No data');
-    });
-  });
-}

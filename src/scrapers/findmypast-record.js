@@ -1,6 +1,6 @@
-var debug = require('debug')('findmypast-record'),
+var debug = require('debug')('genscrape:scrapers:findmypast-record'),
     utils = require('../utils'),
-    _ = require('lodash');
+    GedcomX = require('gedcomx-js');
 
 var urls = [
   /^http:\/\/search\.findmypast\.(co\.uk|com|ie|com\.au)\/record/
@@ -12,12 +12,18 @@ module.exports = function(register){
 
 function run(emitter) {
   
-  if( $('#transcriptionDisplayTable').length !== 1) {
+  if(!document.getElementById('transcriptionDisplayTable')) {
     debug('no data table');
     emitter.emit('noData');
     return;
   }
   
+  var gedx = GedcomX(),
+      primaryPerson = GedcomX.Person();
+      
+  gedx.addPerson(primaryPerson);
+  
+  /*
   var personData = {},
       dataFields = getDataFields();
       
@@ -38,11 +44,10 @@ function run(emitter) {
   
   personData.fatherGivenName = getFatherGivenName(dataFields);
   personData.motherGivenName = getMotherGivenName(dataFields);
+  */
 
-  personData = utils.clean(personData);
-  
-  debug('data', personData);
-  emitter.emit('data', personData);
+  debug('data', gedx);
+  emitter.emit('data', gedx);
 }
 
 function getGivenName(data){
