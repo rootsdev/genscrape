@@ -1,11 +1,12 @@
-var debug = require('debug')('testHelpers'),
+var debug = require('debug')('genscrape:tests:testHelpers'),
     env = require('jsdom').env,
     fs = require('fs'),
+    genscrape = require('../'),
     expect = require('chai').expect;
 
 var originalDate = Date;
     
-module.exports = {
+var helpers = module.exports = {
   
   /**
    * Setup a mock window object with
@@ -31,6 +32,45 @@ module.exports = {
       url: location,
       done: doneHandler(callback)
     });
+  },
+  
+  /**
+   * Setup a test runner that loads an HTML page.
+   * 
+   * @param {String} scraperName
+   * @returns {Function} A function that can be called to setup a test. It takes
+   * in 2 params: {String} testName, {String} url
+   */
+  createTestRunner: function(scraperName){
+    debug(`createTestRunner ${scraperName}`);
+    
+    var pagesDir = __dirname + `/data/${scraperName}/pages`,
+        outputDir = __dirname + `/data/${scraperName}/output`,
+        runnerDebug = require('debug')(`genscrape:tests:${scraperName}`);
+    
+    return function(name, url){
+      runnerDebug(`setup ${name}`);
+      
+      var inputFile = `${pagesDir}/${name}.html`,
+          outputFile = `${outputDir}/${name}.json`;
+      
+      // Create and return the actual test method  
+      return function(done){
+        runnerDebug(`test ${name}`);
+        
+        // Setup a mock browser window
+        helpers.mockDom(url, inputFile, function(){
+          runnerDebug('dom setup');
+          
+          // Run genscrape
+          genscrape().on('data', function(data){
+            
+            // Test
+            done(helpers.compareOrRecordOutput(data, outputFile));
+          }).on('error', done);
+        });
+      };
+    };
   },
   
   /**

@@ -2,8 +2,8 @@ var nock = require('nock'),
     helpers = require('../../testHelpers'),
     genscrape = require('../../../'),
     debug = require('debug')('genscrape:tests:ancestry-person'),
-    pagesDir = __dirname + '/../../data/ancestry/person/pages',
-    outputDir = __dirname + '/../../data/ancestry/person/output';
+    pagesDir = __dirname + '/../../data/ancestry-person/pages',
+    outputDir = __dirname + '/../../data/ancestry-person/output';
 
 describe('ancestry person', function(){
 

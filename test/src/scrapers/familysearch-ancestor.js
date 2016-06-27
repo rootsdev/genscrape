@@ -3,8 +3,8 @@ var nock = require('nock'),
     helpers = require('../../testHelpers'),
     genscrape = require('../../../'),
     debug = require('debug')('genscrape:tests:familysearch-ancestor'),
-    pagesDir = __dirname + '/../../data/familysearch/platform/pages',
-    outputDir = __dirname + '/../../data/familysearch/platform/output';
+    pagesDir = __dirname + '/../../data/familysearch-ancestor/pages',
+    outputDir = __dirname + '/../../data/familysearch-ancestor/output';
 
 describe('familysearch ancestor', function(){
   

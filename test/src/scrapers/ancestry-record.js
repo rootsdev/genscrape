@@ -1,8 +1,6 @@
 var helpers = require('../../testHelpers'),
     genscrape = require('../../../'),
-    debug = require('debug')('genscrape:tests:ancestry-record'),
-    pagesDir = __dirname + '/../../data/ancestry/records/pages',
-    outputDir = __dirname + '/../../data/ancestry/records/output';
+    setupTest = helpers.createTestRunner('ancestry-record');
     
 describe('ancestry-record', function(){
 
@@ -73,7 +71,7 @@ describe('ancestry-record', function(){
   
   it('no data', function(done){
     var url = 'http://search.ancestry.com/cgi-bin/sse.dll?nodata',
-        filePath = pagesDir + '/nodata.html';
+        filePath = __dirname + '/../../data/ancestry-record/pages/nodata.html';
     helpers.mockDom(url, filePath, function(){
       genscrape()
         .on('noData', function(){
@@ -87,34 +85,3 @@ describe('ancestry-record', function(){
   });
   
 });
-
-/**
- * Setup a test
- * 
- * @param {String} url - URL of the test page
- * @param {String} name - Name of the data files without the extension
- * @returns {Function} - The actual test method that mocha will run
- */
-function setupTest(name, url){
-  debug(`setup ${name}`);
-  
-  var inputFile = `${pagesDir}/${name}.html`,
-      outputFile = `${outputDir}/${name}.json`;
-  
-  // Create and return the actual test method  
-  return function(done){
-    debug(`test ${name}`);
-    
-    // Setup a mock browser window
-    helpers.mockDom(url, inputFile, function(){
-      debug('dom setup');
-      
-      // Run genscrape
-      genscrape().on('data', function(data){
-        
-        // Test
-        done(helpers.compareOrRecordOutput(data, outputFile));
-      }).on('error', done);
-    });
-  };
-}

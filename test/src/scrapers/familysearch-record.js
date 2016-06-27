@@ -2,8 +2,8 @@ var nock = require('nock'),
     helpers = require('../../testHelpers'),
     genscrape = require('../../../'),
     debug = require('debug')('genscrape:tests:familysearch-record'),
-    pagesDir = __dirname + '/../../data/familysearch/records/pages',
-    outputDir = __dirname + '/../../data/familysearch/records/output';
+    pagesDir = __dirname + '/../../data/familysearch-record/pages',
+    outputDir = __dirname + '/../../data/familysearch-record/output';
 
 describe('familysearch record', function(){
   
