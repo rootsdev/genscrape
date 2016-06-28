@@ -34,6 +34,150 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "William"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Martha"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Fanny"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Eliza"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Job"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Joseph"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

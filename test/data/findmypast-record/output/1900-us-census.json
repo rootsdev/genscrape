@@ -41,6 +41,9 @@
     },
     {
       "id": "2",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "names": [
         {
           "nameForms": [
@@ -58,10 +61,19 @@
             }
           ]
         }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        }
       ]
     },
     {
       "id": "3",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "names": [
         {
           "nameForms": [
@@ -79,6 +91,72 @@
             }
           ]
         }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Steine"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Balesworth"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
       ]
     }
   ],
@@ -95,10 +173,28 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#3"
+        "resource": "#2"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#5"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#3"
       }
     }
   ]

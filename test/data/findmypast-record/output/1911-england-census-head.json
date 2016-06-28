@@ -42,6 +42,125 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Betty"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Elizabeth"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Sarah"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#3"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      }
     }
   ]
 }

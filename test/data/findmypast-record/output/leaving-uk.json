@@ -31,6 +31,27 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "WASYL"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "JURKIEWICZ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

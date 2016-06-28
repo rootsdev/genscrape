@@ -1,7 +1,8 @@
 var debug = require('debug')('genscrape:scrapers:findmypast-record'),
     utils = require('../utils'),
     GedcomX = require('gedcomx-js'),
-    HorizontalTable = require('../HorizontalTable');
+    HorizontalTable = require('../HorizontalTable'),
+    VerticalTable = require('../VerticalTable');
 
 var urls = [
   /^http:\/\/search\.findmypast\.(co\.uk|com|ie|com\.au)\/record/
@@ -53,7 +54,8 @@ function run(emitter) {
   
   // Misc facts
   simpleFacts.forEach(function(config){
-    if(dataFields.hasLabel(config.label)){
+    var text = dataFields.getText(config.label);
+    if(text && text !== '-'){
       primaryPerson.addFact({
         type: config.type,
         value: dataFields.getText(config.label)
@@ -65,75 +67,162 @@ function run(emitter) {
   primaryPerson.addFact(getBirth(dataFields));
   primaryPerson.addFact(getDeath(dataFields));
   
-  // Father
-  var father = getFather(dataFields);
-  if(father){
-    gedx.addPerson(father);
-    gedx.addRelationship({
-      type: 'http://gedcomx.org/ParentChild',
-      person1: father,
-      person2: primaryPerson
+  // Household
+  var individualsTable = document.getElementById('individuals'),
+      primaryRelationship = dataFields.getText('relationship'),
+      siblings = [],
+      head, headsWife, householdData;
+  if(individualsTable){
+    householdData = new VerticalTable(individualsTable, {
+      rowSelector: 'tr:not(.highlight-individual)', // Skip primary person
+      labelMapper: function(label){
+        return label.toLowerCase();
+      },
+      valueMapper: function(cell){
+        var text = cell.textContent;
+        return text && text !== '-' ? text : undefined;
+      }
     });
-  }
-  
-  // Mother
-  var mother = getMother(dataFields);
-  if(mother){
-    gedx.addPerson(mother);
-    gedx.addRelationship({
-      type: 'http://gedcomx.org/ParentChild',
-      person1: mother,
-      person2: primaryPerson
+    householdData.getRows().forEach(function(row){
+      var householdPerson = getHouseholdPerson(row);
+      gedx.addPerson(householdPerson);
+      if(row['relationship'] === 'Self'){
+        row['relationship'] = 'Head';
+      }
+      switch(primaryRelationship + ':' + row['relationship']){
+        case 'Head:Wife':
+        case 'Wife:Head':
+          gedx.addRelationship({
+            type: 'http://gedcomx.org/Couple',
+            person1: primaryPerson,
+            person2: householdPerson
+          });
+          break;
+        case 'Head:Daughter':
+        case 'Head:Son':
+          gedx.addRelationship({
+            type: 'http://gedcomx.org/ParentChild',
+            person1: primaryPerson,
+            person2: householdPerson
+          });
+          break;
+        case 'Daughter:Head':
+        case 'Son:Head':
+          head = householdPerson;
+          gedx.addRelationship({
+            type: 'http://gedcomx.org/ParentChild',
+            person1: householdPerson,
+            person2: primaryPerson
+          });
+          break;
+        case 'Son:Son':
+        case 'Son:Daughter':
+        case 'Daughter:Son':
+        case 'Daughter:Daughter':
+          siblings.push(householdPerson);
+          break;
+        case 'Son:Wife':
+        case 'Daughter:Wife':
+          headsWife = householdPerson;
+          break;
+      }
     });
-  }
-  
-  // Spouse
-  var spouse = getSpouse(dataFields),
-      coupleRel;
-  if(spouse){
-    gedx.addPerson(spouse);
-    coupleRel = GedcomX.Relationship({
-      type: 'http://gedcomx.org/Couple',
-      person1: primaryPerson,
-      person2: spouse
-    });
-    gedx.addRelationship(coupleRel);
-    
-    // Spouse's parents
-    var spousesFather = getSpousesFather(dataFields),
-        spousesMother = getSpousesMother(dataFields);
-    if(spousesFather){
-      gedx.addPerson(spousesFather);
-      gedx.addRelationship({
-        type: 'http://gedcomx.org/ParentChild',
-        person1: spousesFather,
-        person2: spouse
+    if(head){
+      siblings.forEach(function(sibling){
+        gedx.addRelationship({
+          type: 'http://gedcomx.org/ParentChild',
+          person1: head,
+          person2: sibling
+        });
       });
     }
-    if(spousesMother){
-      gedx.addPerson(spousesMother);
+    if(head && headsWife){
       gedx.addRelationship({
-        type: 'http://gedcomx.org/ParentChild',
-        person1: spousesMother,
-        person2: spouse
+        type: 'http://gedcomx.org/Couple',
+        person1: head,
+        person2: headsWife
       });
     }
   }
   
-  // Marriage
-  var marriage = getMarriage(dataFields);
-  if(marriage){
+  // If a census household table isn't listed then look for relationship info
+  // in the record details. We don't do both because relationships may be
+  // listed in both which leads to duplicate info.
+  else {
+  
+    // Father
+    var father = getFather(dataFields);
+    if(father){
+      gedx.addPerson(father);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: father,
+        person2: primaryPerson
+      });
+    }
     
-    // Add marriage to the couple relationship if a spouse exists
+    // Mother
+    var mother = getMother(dataFields);
+    if(mother){
+      gedx.addPerson(mother);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: mother,
+        person2: primaryPerson
+      });
+    }
+    
+    // Spouse
+    var spouse = getSpouse(dataFields),
+        coupleRel;
     if(spouse){
-      coupleRel.addFact(marriage);
-    } 
-    
-    // Add marriage to the person if no couple exists
-    else {
-      primaryPerson.addFact(marriage);
+      gedx.addPerson(spouse);
+      coupleRel = GedcomX.Relationship({
+        type: 'http://gedcomx.org/Couple',
+        person1: primaryPerson,
+        person2: spouse
+      });
+      gedx.addRelationship(coupleRel);
+      
+      // Spouse's parents
+      var spousesFather = getSpousesFather(dataFields),
+          spousesMother = getSpousesMother(dataFields);
+      if(spousesFather){
+        gedx.addPerson(spousesFather);
+        gedx.addRelationship({
+          type: 'http://gedcomx.org/ParentChild',
+          person1: spousesFather,
+          person2: spouse
+        });
+      }
+      if(spousesMother){
+        gedx.addPerson(spousesMother);
+        gedx.addRelationship({
+          type: 'http://gedcomx.org/ParentChild',
+          person1: spousesMother,
+          person2: spouse
+        });
+      }
     }
+    
+    // Marriage
+    var marriage = getMarriage(dataFields);
+    if(marriage){
+      
+      // Add marriage to the couple relationship if a spouse exists
+      if(spouse){
+        coupleRel.addFact(marriage);
+      } 
+      
+      // Add marriage to the person if no couple exists
+      else {
+        primaryPerson.addFact(marriage);
+      }
+    }
+  
   }
+  
+  // TODO: SourceDescription
 
   debug('data', gedx);
   emitter.emit('data', gedx);
@@ -310,6 +399,43 @@ function getGender(genderText){
       type: genderType
     });
   }
+}
+
+function getHouseholdPerson(data){
+  var person = GedcomX.Person();
+  person.addNameFromParts({
+    'http://gedcomx.org/Given': data['first name(s)'],
+    'http://gedcomx.org/Surname': data['last name']
+  });
+  person.setGender(getGender(data['sex'] || data['gender']));
+  if(data['birth year'] || data['birth place']){
+    var birth = GedcomX.Fact({
+      type: 'http://gedcomx.org/Birth'
+    });
+    if(data['birth year']){
+      birth.setDate({
+        original: data['birth year']
+      });
+    }
+    if(data['birth place']){
+      birth.setPlace({
+        original: data['birth place']
+      });
+    }
+  }
+  if(data['occupation']){
+    person.addFact({
+      type: 'http://gedcomx.org/Occupation',
+      value: data['occupation']
+    });
+  }
+  if(data['marital status']){
+    person.addFact({
+      type: 'http://gedcomx.org/MaritalStatus',
+      value: data['marital status']
+    });
+  }
+  return person;
 }
 
 /**

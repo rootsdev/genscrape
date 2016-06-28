@@ -29,10 +29,6 @@
           "value": "Single"
         },
         {
-          "type": "http://gedcomx.org/Occupation",
-          "value": "-"
-        },
-        {
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "1873"
@@ -42,6 +38,129 @@
           }
         }
       ]
+    },
+    {
+      "id": "2",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Abraham"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Retired Farmer"
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Betty"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Sarah"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#3"
+      }
     }
   ]
 }
