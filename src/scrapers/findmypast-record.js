@@ -222,6 +222,12 @@ function run(emitter) {
   
   }
   
+  // TODO: Handle alternate marriage format
+  // http://search.findmypast.com/record?id=gbprs%2fm%2f880081323%2f1
+  
+  
+  // TODO: Immigration and naturalization
+  
   // TODO: SourceDescription
 
   debug('data', gedx);
@@ -229,47 +235,11 @@ function run(emitter) {
 }
 
 function getBirth(data){
-  var date = getBirthDate(data),
-      place = getBirthPlace(data),
-      birth;
-  if(date || place){
-    birth = GedcomX.Fact({
-      type: 'http://gedcomx.org/Birth'
-    });
-    if(date){
-      birth.setDate({
-        original: date
-      });
-    }
-    if(place){
-      birth.setPlace({
-        original: place
-      });
-    }
-    return birth;
-  }
+  return getFact(data, 'http://gedcomx.org/Birth', getBirthDate, getBirthPlace);
 }
 
 function getDeath(data){
-  var date = getDeathDate(data),
-      place = getDeathPlace(data),
-      death;
-  if(date || place){
-    death = GedcomX.Fact({
-      type: 'http://gedcomx.org/Death'
-    });
-    if(date){
-      death.setDate({
-        original: date
-      });
-    }
-    if(place){
-      death.setPlace({
-        original: place
-      });
-    }
-    return death;
-  }
+  return getFact(data, 'http://gedcomx.org/Death', getDeathDate, getDeathPlace);
 }
 
 function getMarriage(data){
@@ -280,6 +250,12 @@ function getFact(data, type, dateFunc, placeFunc){
   var date = dateFunc(data),
       place = placeFunc(data),
       fact;
+  if(date === '-'){
+    date = undefined;
+  }
+  if(place === '-'){
+    place = undefined;
+  }
   if(date || place){
     fact = GedcomX.Fact({
       type: type
@@ -350,7 +326,8 @@ function getMarriagePlace(data){
 }
 
 function getFather(data){
-  return getPerson(data, 'father\'s first name(s)', 'father\'s last name');
+  return getPerson(data, 'father\'s first name(s)', 'father\'s last name')
+    || getPerson(data, 'groom\'s father\'s first name(s)', 'groom\'s father\'s last name');
 }
 
 function getMother(data){
@@ -366,7 +343,8 @@ function getSpouse(data){
 }
 
 function getSpousesFather(data){
-  return getPerson(data, 'spouse\'s father\'s first name(s)', 'spouse\'s father\'s last name');
+  return getPerson(data, 'spouse\'s father\'s first name(s)', 'spouse\'s father\'s last name')
+    || getPerson(data, 'bride\'s father\'s first name(s)', 'bride\'s father\'s last name');
 }
 
 function getSpousesMother(data){

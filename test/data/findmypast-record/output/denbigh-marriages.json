@@ -19,18 +19,31 @@
             }
           ]
         }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "-"
-          }
-        }
       ]
     },
     {
       "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "John"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
       "names": [
         {
           "nameForms": [
@@ -49,16 +62,46 @@
           ]
         }
       ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Thomas"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Horton"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
-        "resource": "#2"
+        "resource": "#3"
       },
       "facts": [
         {
@@ -71,6 +114,15 @@
           }
         }
       ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#4"
+      },
+      "person2": {
+        "resource": "#3"
+      }
     }
   ]
 }
