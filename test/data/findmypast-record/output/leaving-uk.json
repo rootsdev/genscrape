@@ -29,6 +29,21 @@
           "date": {
             "original": "1888"
           }
+        },
+        {
+          "type": "http://gedcomx.org/Emigration",
+          "date": {
+            "original": "22 12 1922"
+          },
+          "place": {
+            "original": "LIVERPOOL"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Immigration",
+          "place": {
+            "original": "SAINT JOHN NB"
+          }
         }
       ]
     },

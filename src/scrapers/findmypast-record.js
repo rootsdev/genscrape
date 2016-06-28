@@ -16,6 +16,14 @@ var simpleFacts = [
   {
     type: 'http://gedcomx.org/Occupation',
     label: 'occupation'
+  },
+  {
+    type: 'http://gedcomx.org/Residence',
+    label: 'residence'
+  },
+  {
+    type: 'http://gedcomx.org/Nationality',
+    label: 'nationality'
   }
 ];
 
@@ -68,6 +76,12 @@ function run(emitter) {
   primaryPerson.addFact(getDeath(dataFields));
   primaryPerson.addFact(getBurial(dataFields));
   primaryPerson.addFact(getBaptism(dataFields));
+  primaryPerson.addFact(getEmigration(dataFields));
+  primaryPerson.addFact(getImmigration(dataFields));
+  
+  //
+  // Relationships
+  //
   
   // Household
   var individualsTable = document.getElementById('individuals'),
@@ -224,8 +238,6 @@ function run(emitter) {
   
   }
   
-  // TODO: Immigration and naturalization
-  
   // TODO: SourceDescription
 
   debug('data', gedx);
@@ -260,6 +272,14 @@ function getBurial(data){
 
 function getMarriage(data){
   return getFact(data, 'http://gedcomx.org/Marriage', getMarriageDate, getMarriagePlace);
+}
+
+function getEmigration(data){
+  return getFact(data, 'http://gedcomx.org/Emigration', getEmigrationDate, getEmigrationPlace);
+}
+
+function getImmigration(data){
+  return getFact(data, 'http://gedcomx.org/Immigration', getImmigrationDate, getImmigrationPlace);
 }
 
 function getFact(data, type, dateFunc, placeFunc){
@@ -365,6 +385,33 @@ function getMarriagePlace(data){
   if(data.getText('subcategory') === 'Marriages & divorces'){
     return getPlace(data);
   }
+}
+
+function getEmigrationDate(data){
+  return processDate(
+    data.getText('departure year'),
+    data.getText('departure month'),
+    data.getText('departure day')
+  );
+}
+
+function getEmigrationPlace(data){
+  return data.getText('departure port');
+}
+
+function getImmigrationDate(data){
+  // TODO: are there records that have an arrival month and day?
+  return data.getText('arrival year');
+}
+
+function getImmigrationPlace(data){
+  // TODO: we need more examples to build a robust algorithm for piecing together the destination
+  return data.getFirstText([
+    'arrival place',
+    'destination',
+    'destination port',
+    'destination country'
+  ]);
 }
 
 function getFather(data){

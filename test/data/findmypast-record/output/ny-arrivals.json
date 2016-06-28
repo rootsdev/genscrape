@@ -25,9 +25,32 @@
       ],
       "facts": [
         {
+          "type": "http://gedcomx.org/Residence",
+          "value": "Belice"
+        },
+        {
+          "type": "http://gedcomx.org/Nationality",
+          "value": "Russia, Polish"
+        },
+        {
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "1890"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Emigration",
+          "place": {
+            "original": "Hamburg"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Immigration",
+          "date": {
+            "original": "1907"
+          },
+          "place": {
+            "original": "New York"
           }
         }
       ]
