@@ -1,7 +1,36 @@
 {
   "persons": [
     {
-      "id": "1"
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Gwendoline E F"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner-turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1878"
+          },
+          "place": {
+            "original": "Ringwood, Hampshire, England"
+          }
+        }
+      ]
     }
   ]
 }

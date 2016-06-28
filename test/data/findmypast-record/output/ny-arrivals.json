@@ -1,7 +1,36 @@
 {
   "persons": [
     {
-      "id": "1"
+      "id": "1",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Adam"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Jurkiewicz"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1890"
+          }
+        }
+      ]
     }
   ]
 }

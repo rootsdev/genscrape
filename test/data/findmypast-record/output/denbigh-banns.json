@@ -1,7 +1,68 @@
 {
   "persons": [
     {
-      "id": "1"
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "David Charles"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Margaret"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Jones"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "- - 1880"
+          },
+          "place": {
+            "original": "BRYMBO"
+          }
+        }
+      ]
     }
   ]
 }

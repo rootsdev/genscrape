@@ -1,7 +1,42 @@
 {
   "persons": [
     {
-      "id": "1"
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Maria"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1825"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "- - 1879"
+          },
+          "place": {
+            "original": "Llangedwyn, Denbighshire, Wales"
+          }
+        }
+      ]
     }
   ]
 }

@@ -1,7 +1,47 @@
 {
   "persons": [
     {
-      "id": "1"
+      "id": "1",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Abraham"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Retired Farmer"
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1839"
+          },
+          "place": {
+            "original": "Thornham Lancashire"
+          }
+        }
+      ]
     }
   ]
 }

@@ -1,7 +1,71 @@
 {
   "persons": [
     {
-      "id": "1"
+      "id": "1",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Harry O Or Harry"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Turner Or O'turner"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Gertrude"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Coffman"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "place": {
+            "original": "Colorado, United States"
+          }
+        }
+      ]
     }
   ]
 }

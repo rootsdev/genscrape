@@ -171,4 +171,21 @@ HorizontalTable.prototype.hasData = function(){
   return this.getLabelsCount() > 0;
 };
 
+/**
+ * Return the first text value from a list of matching labels. Design to be
+ * used when the data you're looking for may be under different labels.
+ * 
+ * @param {String[]} labels
+ * @returns {String}
+ */
+HorizontalTable.prototype.getFirstText = function(labels){
+  var text;
+  for(var i = 0; i < labels.length; i++){
+    text = this.getText(labels[i]);
+    if(text){
+      return text;
+    }
+  }
+};
+
 module.exports = HorizontalTable;

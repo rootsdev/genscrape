@@ -26,6 +26,26 @@ GedcomX.Person.prototype.addSimpleName = function(name){
 };
 
 /**
+ * Create a name by specifying the parts.
+ * 
+ * @param {Object} nameParts
+ * @returns {Person}
+ */
+GedcomX.Person.prototype.addNameFromParts = function(nameParts){
+  var nameForm = GedcomX.NameForm();
+  for(var type in nameParts){
+    if(nameParts[type]){
+      nameForm.addPart({
+        type: type,
+        value: nameParts[type]
+      });
+    }
+  }
+  this.addName(GedcomX.Name().addNameForm(nameForm));
+  return this;
+};
+
+/**
  * Create a Name from a single string.
  * 
  * @param {String} nameString

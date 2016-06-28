@@ -1,7 +1,105 @@
 {
   "persons": [
     {
-      "id": "1"
+      "id": "1",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Wadiswat"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1897"
+          },
+          "place": {
+            "original": "Pennsylvania"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Adam"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Martha"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#1"
+      }
     }
   ]
 }
