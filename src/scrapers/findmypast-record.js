@@ -66,6 +66,7 @@ function run(emitter) {
   // Vitals
   primaryPerson.addFact(getBirth(dataFields));
   primaryPerson.addFact(getDeath(dataFields));
+  primaryPerson.addFact(getBurial(dataFields));
   
   // Household
   var individualsTable = document.getElementById('individuals'),
@@ -240,6 +241,14 @@ function getBirth(data){
 
 function getDeath(data){
   return getFact(data, 'http://gedcomx.org/Death', getDeathDate, getDeathPlace);
+}
+
+function getBurial(data){
+  return getFact(data, 'http://gedcomx.org/Burial', function(data){
+    return processDate(data.getText('burial year'), data.getText('burial month'), data.getText('burial day'));
+  }, function(data){
+    // TODO: no example of a burial place
+  });
 }
 
 function getMarriage(data){
@@ -443,6 +452,15 @@ function getPlace(data){
  * Return undefined if no data.
  */
 function processDate(year, month, day){
+  if(year === '-'){
+    year = undefined;
+  }
+  if(month === '-'){
+    month = undefined;
+  }
+  if(day === '-'){
+    day = undefined;
+  }
   if(year){
     if(month && day){
       return day + ' ' + month + ' ' + year;

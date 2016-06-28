@@ -30,10 +30,16 @@
         {
           "type": "http://gedcomx.org/Death",
           "date": {
-            "original": "- - 1879"
+            "original": "1879"
           },
           "place": {
             "original": "Llangedwyn, Denbighshire, Wales"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "date": {
+            "original": "20 Feb 1879"
           }
         }
       ]
