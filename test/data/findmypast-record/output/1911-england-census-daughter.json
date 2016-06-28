@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -41,6 +46,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -75,6 +85,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -105,6 +120,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -136,6 +156,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -145,6 +170,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -154,6 +184,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#2"
@@ -161,6 +196,22 @@
       "person2": {
         "resource": "#3"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "5",
+      "citations": [
+        {
+          "value": "1911 Census for England & Wales, database, findmypast (http://search.findmypast.com/record?id=gbc%2f1911%2frg14%2f24584%2f0135%2f3 : accessed 17 April 2013), entry for Elizabeth Turner."
+        }
+      ],
+      "about": "http://search.findmypast.com/record?id=gbc%2f1911%2frg14%2f24584%2f0135%2f3",
+      "titles": [
+        {
+          "value": "Elizabeth Turner in 1911 Census for England & Wales"
+        }
+      ]
     }
   ]
 }

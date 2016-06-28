@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -41,6 +46,22 @@
           "date": {
             "original": "20 Feb 1879"
           }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "2",
+      "citations": [
+        {
+          "value": "Denbigh Burials, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fd%2f878322398%2f1 : accessed 17 April 2013), entry for Maria Turner."
+        }
+      ],
+      "about": "http://search.findmypast.com/record?id=gbprs%2fd%2f878322398%2f1",
+      "titles": [
+        {
+          "value": "Maria Turner in Denbigh Burials"
         }
       ]
     }

@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -23,6 +28,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -45,6 +55,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -61,6 +76,22 @@
           "place": {
             "original": "BRYMBO"
           }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "3",
+      "citations": [
+        {
+          "value": "Denbigh Banns, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fm%2f881019255%2f1 : accessed 17 April 2013), entry for David Charles Turner."
+        }
+      ],
+      "about": "http://search.findmypast.com/record?id=gbprs%2fm%2f881019255%2f1",
+      "titles": [
+        {
+          "value": "David Charles Turner in Denbigh Banns"
         }
       ]
     }

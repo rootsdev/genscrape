@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -49,6 +54,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -65,6 +75,22 @@
               ]
             }
           ]
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "3",
+      "citations": [
+        {
+          "value": "Passenger Lists leaving UK 1890-1960, database, findmypast (http://search.findmypast.com/record?id=tna%2fbt27%2f0980000042%2f00187 : accessed 17 April 2013), entry for Anastazja Jurkiewicz."
+        }
+      ],
+      "about": "http://search.findmypast.com/record?id=tna%2fbt27%2f0980000042%2f00187",
+      "titles": [
+        {
+          "value": "Anastazja Jurkiewicz in Passenger Lists leaving UK 1890-1960"
         }
       ]
     }

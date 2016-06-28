@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -33,6 +38,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -55,6 +65,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -62,6 +77,22 @@
       "person2": {
         "resource": "#1"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "3",
+      "citations": [
+        {
+          "value": "England Births & Baptisms 1538-1975, database, findmypast (http://search.findmypast.com/record?id=r_931803621 : accessed 17 April 2013), entry for Turner."
+        }
+      ],
+      "about": "http://search.findmypast.com/record?id=r_931803621",
+      "titles": [
+        {
+          "value": "Turner in England Births & Baptisms 1538-1975"
+        }
+      ]
     }
   ]
 }

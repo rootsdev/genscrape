@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -41,6 +46,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -71,6 +81,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -101,6 +116,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -131,6 +151,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -162,6 +187,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -171,6 +201,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -180,6 +215,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -189,6 +229,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#2"
@@ -196,6 +241,22 @@
       "person2": {
         "resource": "#3"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "6",
+      "citations": [
+        {
+          "value": "US Census 1900, database, findmypast (http://search.findmypast.com/record?id=usc%2f1900%2f004114960%2f00265%2f084 : accessed 17 April 2013), entry for Wadiswat York."
+        }
+      ],
+      "about": "http://search.findmypast.com/record?id=usc%2f1900%2f004114960%2f00265%2f084",
+      "titles": [
+        {
+          "value": "Wadiswat York in US Census 1900"
+        }
+      ]
     }
   ]
 }

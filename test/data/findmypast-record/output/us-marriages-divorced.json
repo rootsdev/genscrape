@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -32,6 +37,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -49,6 +59,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -73,6 +88,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -91,6 +111,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -100,6 +125,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -117,6 +147,11 @@
       ]
     },
     {
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
@@ -124,6 +159,22 @@
       "person2": {
         "resource": "#3"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "5",
+      "citations": [
+        {
+          "value": "United States Marriages, database, findmypast (http://search.findmypast.com/record?id=us%2ffs%2fm%2f010363877%2f2 : accessed 17 April 2013), entry for Alice F Turner Turner."
+        }
+      ],
+      "about": "http://search.findmypast.com/record?id=us%2ffs%2fm%2f010363877%2f2",
+      "titles": [
+        {
+          "value": "Alice F Turner Turner in United States Marriages"
+        }
+      ]
     }
   ]
 }

@@ -238,7 +238,19 @@ function run(emitter) {
   
   }
   
-  // TODO: SourceDescription
+  // SourceDescription
+  var fullNameText = primaryPerson.getNames()[0].getNameForms()[0].getFullText(),
+      collectionTitle = dataFields.getText('record set');
+  var sourceDescription = GedcomX.SourceDescription()
+    .setAbout(window.document.location.href)
+    .addTitle({
+      value: fullNameText + ' in ' + collectionTitle
+    })
+    .addCitation({
+      value: collectionTitle + ', database, findmypast (' + window.document.location.href
+        + ' : accessed ' + utils.getDateString() + '), entry for ' + fullNameText + '.'
+    });
+  gedx.addSourceDescriptionToAll(sourceDescription);
 
   debug('data', gedx);
   emitter.emit('data', gedx);

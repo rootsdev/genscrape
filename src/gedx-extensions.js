@@ -195,6 +195,40 @@ GedcomX.NamePart.prototype.equals = function(namePart){
 };
 
 /**
+ * Extend NameForm.getFullText() to calculate the full text if it's not set.
+ * 
+ * @returns {String}
+ */
+GedcomX.NameForm.prototype.getFullText = function(){
+  if(this.fullText){
+    return this.fullText;
+  } else {
+    var parts = [], nameForm = this;
+    ['Prefix', 'Given', 'Surname', 'Suffix'].forEach(function(type){
+      var part = nameForm.getPart('http://gedcomx.org/' + type);
+      if(part){
+        parts.push(part.value);
+      }
+    });
+    return parts.join(' ');
+  }
+};
+
+/**
+ * Get the NamePart that matches a specific type.
+ * 
+ * @param {String} type
+ * @returns {NamePart}
+ */
+GedcomX.NameForm.prototype.getPart = function(type){
+  for(var i = 0; i < this.parts.length; i++){
+    if(this.parts[i].getType() === type){
+      return this.parts[i];
+    }
+  }
+};
+
+/**
  * Add an ID generator to each GedcomX document. Allows you to easily generate
  * IDs that are unique within one document. Currently it's just a counter
  * that starts at 1 and increases each time it's called.

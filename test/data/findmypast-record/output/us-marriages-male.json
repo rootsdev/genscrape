@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -26,6 +31,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -51,6 +61,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -64,6 +79,22 @@
           "place": {
             "original": "Colorado, United States"
           }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "3",
+      "citations": [
+        {
+          "value": "United States Marriages, database, findmypast (http://search.findmypast.com/record?id=us%2ffs%2fm%2f001084854%2f1 : accessed 17 April 2013), entry for Harry O Or Harry Turner Or O'turner."
+        }
+      ],
+      "about": "http://search.findmypast.com/record?id=us%2ffs%2fm%2f001084854%2f1",
+      "titles": [
+        {
+          "value": "Harry O Or Harry Turner Or O'turner in United States Marriages"
         }
       ]
     }

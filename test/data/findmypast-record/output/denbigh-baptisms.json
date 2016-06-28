@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -43,6 +48,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -60,6 +70,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -78,6 +93,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -87,6 +107,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
@@ -94,6 +119,22 @@
       "person2": {
         "resource": "#1"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "Denbigh Baptisms, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fb%2f879273212%2f1 : accessed 17 April 2013), entry for Catherine Walter Turner."
+        }
+      ],
+      "about": "http://search.findmypast.com/record?id=gbprs%2fb%2f879273212%2f1",
+      "titles": [
+        {
+          "value": "Catherine Walter Turner in Denbigh Baptisms"
+        }
+      ]
     }
   ]
 }

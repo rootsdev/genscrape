@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -52,6 +57,22 @@
           "place": {
             "original": "New York"
           }
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "2",
+      "citations": [
+        {
+          "value": "New York Passenger Lists & Arrivals, database, findmypast (http://search.findmypast.com/record?id=us%2fpass%2fny%2fei%2f16551289 : accessed 17 April 2013), entry for Adam Jurkiewicz."
+        }
+      ],
+      "about": "http://search.findmypast.com/record?id=us%2fpass%2fny%2fei%2f16551289",
+      "titles": [
+        {
+          "value": "Adam Jurkiewicz in New York Passenger Lists & Arrivals"
         }
       ]
     }
