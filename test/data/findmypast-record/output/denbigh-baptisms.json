@@ -29,6 +29,15 @@
           "place": {
             "original": "Denbighshire, Wales"
           }
+        },
+        {
+          "type": "http://gedcomx.org/Baptism",
+          "date": {
+            "original": "07 Jun 1835"
+          },
+          "place": {
+            "original": "WREXHAM"
+          }
         }
       ]
     },

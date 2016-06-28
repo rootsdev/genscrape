@@ -67,6 +67,7 @@ function run(emitter) {
   primaryPerson.addFact(getBirth(dataFields));
   primaryPerson.addFact(getDeath(dataFields));
   primaryPerson.addFact(getBurial(dataFields));
+  primaryPerson.addFact(getBaptism(dataFields));
   
   // Household
   var individualsTable = document.getElementById('individuals'),
@@ -223,10 +224,6 @@ function run(emitter) {
   
   }
   
-  // TODO: Handle alternate marriage format
-  // http://search.findmypast.com/record?id=gbprs%2fm%2f880081323%2f1
-  
-  
   // TODO: Immigration and naturalization
   
   // TODO: SourceDescription
@@ -239,14 +236,24 @@ function getBirth(data){
   return getFact(data, 'http://gedcomx.org/Birth', getBirthDate, getBirthPlace);
 }
 
+function getBaptism(data){
+  var baptism = getFact(data, 'http://gedcomx.org/Baptism', getBaptismDate, getBaptismPlace);
+  
+  // Only return the baptism if a date is set. We do this because otherwise a
+  // baptism fact will be generated for all records in the "Births & baptisms"
+  // category. We can reasonably assume that actual baptism records will have
+  // a baptism date.
+  if(baptism && baptism.getDate()){
+    return baptism;
+  }
+}
+
 function getDeath(data){
   return getFact(data, 'http://gedcomx.org/Death', getDeathDate, getDeathPlace);
 }
 
 function getBurial(data){
-  return getFact(data, 'http://gedcomx.org/Burial', function(data){
-    return processDate(data.getText('burial year'), data.getText('burial month'), data.getText('burial day'));
-  }, function(data){
+  return getFact(data, 'http://gedcomx.org/Burial', getBurialDate, function(data){
     // TODO: no example of a burial place
   });
 }
@@ -300,6 +307,24 @@ function getBirthPlace(data){
   }
 }
 
+function getBaptismDate(data){
+  return processDate(
+    data.getText('baptism year'),
+    data.getText('baptism month'),
+    data.getText('baptism day')
+  );
+}
+
+function getBaptismPlace(data){
+  var simple = data.getText('baptism place');
+  if(simple) {
+    return simple;
+  }
+  if(data.getText('subcategory') === 'Births & baptisms') {
+    return getPlace(data);
+  }
+}
+
 function getDeathDate(data){
   var year = data.getText('death year'),
       month = data.getText('death month'),
@@ -315,6 +340,14 @@ function getDeathPlace(data){
   if(data.getText('subcategory') === 'Deaths & burials'){
     return getPlace(data);
   }
+}
+
+function getBurialDate(data){
+  return processDate(
+    data.getText('burial year'), 
+    data.getText('burial month'), 
+    data.getText('burial day')
+  );
 }
 
 function getMarriageDate(data){
