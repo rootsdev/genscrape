@@ -12,7 +12,7 @@ var setupTest = require('../../testHelpers').createTestRunnerWithNock({
   }
 });
 
-describe.only('ancestry person', function(){
+describe('ancestry person', function(){
 
   it('basic', setupTest('70025770', '30206952907'));
   

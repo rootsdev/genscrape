@@ -1,6 +1,6 @@
 var setupTest = require('../../testHelpers').createTestRunner('findmypast-record');
     
-describe.only('findmypast-record', function(){
+describe('findmypast-record', function(){
 
   it('1911 England Census - Head', setupTest(
     '1911-england-census-head',
