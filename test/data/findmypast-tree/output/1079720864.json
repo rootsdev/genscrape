@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -48,6 +53,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -94,6 +104,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -133,6 +148,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -179,6 +199,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -225,6 +250,11 @@
     },
     {
       "id": "6",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -271,6 +301,11 @@
     },
     {
       "id": "7",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -317,6 +352,11 @@
     },
     {
       "id": "8",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -363,6 +403,11 @@
     },
     {
       "id": "9",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -409,6 +454,11 @@
     },
     {
       "id": "10",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -455,6 +505,11 @@
     },
     {
       "id": "11",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -501,6 +556,11 @@
     },
     {
       "id": "12",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -547,6 +607,11 @@
     },
     {
       "id": "13",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -593,6 +658,11 @@
     },
     {
       "id": "14",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -639,6 +709,11 @@
     },
     {
       "id": "15",
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -686,6 +761,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -707,6 +787,11 @@
       ]
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -716,6 +801,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -725,6 +815,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -734,6 +829,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -743,6 +843,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#5"
@@ -752,6 +857,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -761,6 +871,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -770,6 +885,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -779,6 +899,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -788,6 +913,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -797,6 +927,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -806,6 +941,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -815,6 +955,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -824,6 +969,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -833,6 +983,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -842,6 +997,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -851,6 +1011,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -860,6 +1025,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -869,6 +1039,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -878,6 +1053,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -887,6 +1067,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -896,6 +1081,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -905,6 +1095,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -914,6 +1109,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -923,6 +1123,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -930,6 +1135,22 @@
       "person2": {
         "resource": "#15"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "16",
+      "citations": [
+        {
+          "value": "\"yorks-march-2015 - findmypast Family Tree\" (http://tree.findmypast.co.uk/#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/1079720864/media : accessed 17 April 2013), profile for Helen Gertrude Zierak."
+        }
+      ],
+      "about": "http://tree.findmypast.co.uk/#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/1079720864/media",
+      "titles": [
+        {
+          "value": "Helen Gertrude Zierak - yorks-march-2015 - findmypast Family Tree"
+        }
+      ]
     }
   ]
 }

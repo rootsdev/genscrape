@@ -154,6 +154,19 @@ function processData(personId, data){
     });
   });
   
+  // Source Description
+  var fullNameText = primaryPerson.getNames()[0].getNameForms()[0].getFullText();
+  var sourceDescription = GedcomX.SourceDescription()
+    .setAbout(window.document.location.href)
+    .addTitle({
+      value: fullNameText + ' - ' + data.Title + ' - findmypast Family Tree'
+    })
+    .addCitation({
+      value: '"' + data.Title + ' - findmypast Family Tree" (' + window.document.location.href
+        + ' : accessed ' + utils.getDateString() + '), profile for ' + fullNameText + '.'
+    });
+  gedx.addSourceDescriptionToAll(sourceDescription);
+  
   return gedx;
 }
 
