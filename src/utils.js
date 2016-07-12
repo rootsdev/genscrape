@@ -94,14 +94,25 @@ utils.toTitleCase = function(str){
  * http://youmightnotneedjquery.com/#json
  * 
  * @param {String} url
+ * @param {Object=} headers - optional map of headers
  * @param {Function} callback - function(error, data)
  */
-utils.getJSON = function(url, callback){
+utils.getJSON = function(url, headers, callback){
+  
+  if(typeof headers === 'function' && typeof callback === 'undefined'){
+    callback = headers;
+    headers = [];
+  }
   
   // Create the request
   debug('getJSON: ' + url);
   var request = new window.XMLHttpRequest();
   request.open('GET', url);
+  
+  // Process headers
+  for(var header in headers){
+    request.setRequestHeader(header, headers[header]);
+  }
   
   // Finished handler
   request.onload = function() {

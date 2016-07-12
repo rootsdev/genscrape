@@ -1,81 +1,55 @@
 var nock = require('nock'),
-    path = require('path'),
     expect = require('chai').expect,
     helpers = require('../../testHelpers'),
-    genscrape = require('../../../');
+    genscrape = require('../../../'),
+    debug = require('debug')('genscrape:tests:findmypast-tree'),
+    pagesDir = __dirname + '/../../data/findmypast-tree/pages',
+    outputDir = __dirname + '/../../data/findmypast-tree/output';
 
-describe.skip('findmypast tree', function(){
+describe.only('findmypast tree', function(){
   
   it('process data', function(done){
     
-    nockSetup('1079720865');
-    nockSetup('1079720864');
+    nockSetup('863a418d-78de-43e6-9af6-c9ce320a86ef', '1079720865');
+    nockSetup('863a418d-78de-43e6-9af6-c9ce320a86ef', '1079720864');
       
     helpers.mockWindow('http://tree.findmypast.co.uk/#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/1079720865/profile', function(){
       
       var dataEvents = 0,
-          noDataEvents = 0;
+          noDataEvents = 0,
+          error;
         
       genscrape()
       .on('noData', function(){
+        debug('noData');
         noDataEvents++;
         
         if(noDataEvents === 1){
           window.location.hash = '#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/1079720864/media';
-          window.onhashchange();
         }
       })
       .on('data', function(data){
+        debug('data');
         dataEvents++;
         
         if(dataEvents === 1){
           expect(noDataEvents).to.equal(0);
-          expect(data).to.deep.equal({ 
-            givenName: 'Albert John',
-            familyName: 'Zierak',
-            birthDate: '1860-04-04',
-            birthPlace: 'Lipinki, Gorlice, Poland',
-            deathDate: '1951-03-26',
-            deathPlace: 'Amsterdam, Montgomery, New York, United States',
-            marriageDate: '1886',
-            marriagePlace: 'United States',
-            spouseGivenName: 'Mary',
-            spouseFamilyName: 'Wojnowski',
-            motherGivenName: 'Katherine',
-            motherFamilyName: 'Zierak',
-            fatherGivenName: 'Andrew',
-            fatherFamilyName: 'Zierak' 
-          });
+          error = helpers.compareOrRecordOutput(data, outputDir + '/1079720865.json');
           window.location.hash = '#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/all-hints';
-          window.onhashchange();
         }
         
         else if(dataEvents === 2){
           expect(noDataEvents).to.equal(1);
-          expect(data).to.deep.equal({ 
-            givenName: 'Helen Gertrude',
-            familyName: 'Zierak',
-            birthPlace: 'Amsterdam, Montgomery, New York, United States',
-            birthDate: '1896-02-07',
-            deathPlace: 'Tacoma, Pierce, Washington, United States',
-            deathDate: '1970-11-24',
-            fatherGivenName: 'Albert John',
-            fatherFamilyName: 'Zierak',
-            motherGivenName: 'Mary',
-            motherFamilyName: 'Wojnowski',
-            spouseGivenName: 'Theodore',
-            spouseFamilyName: 'Yurkiewicz',
-            marriageDate: '1918-06-18',
-            marriagePlace: 'Amsterdam, Montgomery, New York, United States'
-          });
-          done();
+          error = helpers.compareOrRecordOutput(data, outputDir + '/1079720864.json');
+          done(error);
         }
         
         else {
           expect(true).to.be.false;
         }
 
-      });
+      })
+      .on('error', done);
     });
   });
   
@@ -121,11 +95,13 @@ describe.skip('findmypast tree', function(){
  * Configure nock to respond properly to requests
  * for the given person with test data
  */
-function nockSetup(personId){
-  nock('http://tree.findmypast.co.uk')
+function nockSetup(treeId, personId){
+  nock('http://tree.findmypast.co.uk', {
+      'Family-Tree-Ref': treeId
+    })
     .defaultReplyHeaders({
       'content-type': 'application/json'
     })
     .get('/api/proxy/get?url=api%2Ffamilytree%2Fgetfamilytree%3Ffamilytreeview%3DProfileRelations%26personId%3D'+personId)
-    .replyWithFile(200, path.join(__dirname, '..', 'responses', 'findmypast', 'tree', personId+'.json'));
+    .replyWithFile(200, pagesDir + '/' + personId + '.json');
 }

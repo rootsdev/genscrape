@@ -1,7 +1,6 @@
 var debug = require('debug')('findmypast-tree:Relations'),
     Person = require('./Person'),
-    Family = require('./Family'),
-    _ = require('lodash');
+    Family = require('./Family');
 
 var Relations = function(data){
   this.data = data;
@@ -86,7 +85,7 @@ Relations.prototype.getPersonData = function(personId){
 
 Relations.prototype.getPerson = function(personId){
   debug('getPerson:' + personId);
-  var person = _.find(this.data.Persons, function(person){
+  var person = _find(this.data.Persons, function(person){
     return person.Id === personId;
   });
   if(person){
@@ -96,11 +95,19 @@ Relations.prototype.getPerson = function(personId){
 
 Relations.prototype.getFamily = function(familyId){
   debug('getFamily:' + familyId);
-  var family = _.find(this.data.Familys, function(family){
+  var family = _find(this.data.Familys, function(family){
     return family.Id === familyId;
   });
   if(family){
     return new Family(family);
+  }
+};
+
+function _find(list, func){
+  for(var i = 0; i < list.length; i++){
+    if(func(list[i])){
+      return list[i];
+    }
   }
 }
 
