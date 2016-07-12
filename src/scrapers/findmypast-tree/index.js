@@ -69,8 +69,7 @@ function processData(personId, data){
   gedx.addPerson(primaryPerson);
   
   // Spouses
-  var families = relations.getFamilies(personId);
-  families.forEach(function(family){
+  relations.getFamilies(personId).forEach(function(family){
     var spouseId = family.FatherId === personId ? family.MotherId : family.FatherId,
         spouse = processPerson(relations.getPerson(spouseId));
     gedx.addPerson(spouse);
@@ -92,6 +91,22 @@ function processData(personId, data){
       relationship.addFact(marriage);
     }
     gedx.addRelationship(relationship);
+    
+    // Children
+    relations.getChildren(family.Id).forEach(function(childRef){
+      var child = processPerson(relations.getPerson(childRef.ChildId));
+      gedx.addPerson(child);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: primaryPerson,
+        person2: child
+      });
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: spouse,
+        person2: child
+      });
+    });
   });
   
   return gedx;
@@ -213,5 +228,11 @@ Relations.prototype.getPerson = function(personId){
 Relations.prototype.getFamilies = function(personId){
   return this.data.Familys.filter(function(family){
     return family.FatherId === personId || family.MotherId === personId;
+  });
+};
+
+Relations.prototype.getChildren = function(familyId){
+  return this.data.Childs.filter(function(child){
+    return child.FamilyId === familyId;
   });
 };

@@ -91,6 +91,91 @@
           }
         }
       ]
+    },
+    {
+      "id": "3",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Margaret"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1921",
+            "formal": "+1921"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "place": {
+            "original": "Tacoma, Pierce, Washington, United States"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Theodore Robert"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "York"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1926-05-04",
+            "formal": "+1926-05-04"
+          },
+          "place": {
+            "original": "Mitchel Field, Hempstead, New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2009-02-22",
+            "formal": "+2009-02-22"
+          },
+          "place": {
+            "original": "Sandy, Salt Lake, Utah, United States"
+          }
+        }
+      ]
     }
   ],
   "relationships": [
@@ -114,6 +199,42 @@
           }
         }
       ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#3"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#3"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#4"
+      }
     }
   ]
 }
