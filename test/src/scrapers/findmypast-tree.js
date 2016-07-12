@@ -97,7 +97,9 @@ describe.only('findmypast tree', function(){
  */
 function nockSetup(treeId, personId){
   nock('http://tree.findmypast.co.uk', {
-      'Family-Tree-Ref': treeId
+      reqheaders: {
+        'Family-Tree-Ref': treeId
+      }
     })
     .defaultReplyHeaders({
       'content-type': 'application/json'
