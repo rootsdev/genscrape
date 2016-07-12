@@ -551,6 +551,310 @@
           }
         }
       ]
+    },
+    {
+      "id": "13",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Andrew"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zierak"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1823-11-27",
+            "formal": "+1823-11-27"
+          },
+          "place": {
+            "original": "Lipinki, Gorlice, Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "place": {
+            "original": "Poland"
+          }
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Katherine"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zierak"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1822-03-24",
+            "formal": "+1822-03-24"
+          },
+          "place": {
+            "original": "Lipinki, Gorlice, Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1911-04-23",
+            "formal": "+1911-04-23"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery, New York, United States"
+          }
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Mary"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zierak"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1848-01-02",
+            "formal": "+1848-01-02"
+          },
+          "place": {
+            "original": "Lipinki, Gorlice, Poland"
+          }
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Magdalena"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zierak"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1850-07-07",
+            "formal": "+1850-07-07"
+          },
+          "place": {
+            "original": "Lipinki, Gorlice, Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1938-12-28",
+            "formal": "+1938-12-28"
+          },
+          "place": {
+            "original": "Amsterdam, New York"
+          }
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Agata"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zierak"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1857-04-01",
+            "formal": "+1857-04-01"
+          },
+          "place": {
+            "original": "Lipinki, Gorlice, Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1928-04-05",
+            "formal": "+1928-04-05"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery, New York, United States"
+          }
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Victoria"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zierak"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1863-04-19",
+            "formal": "+1863-04-19"
+          },
+          "place": {
+            "original": "Lipinki, Gorlice, Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1946",
+            "formal": "+1946"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery, New York, United States"
+          }
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Mary"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zierak"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1865",
+            "formal": "+1865"
+          },
+          "place": {
+            "original": "Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "place": {
+            "original": "Brazil"
+          }
+        }
+      ]
     }
   ],
   "relationships": [
@@ -753,6 +1057,123 @@
       },
       "person2": {
         "resource": "#12"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#13"
+      },
+      "person2": {
+        "resource": "#14"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#13"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#14"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#13"
+      },
+      "person2": {
+        "resource": "#15"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#14"
+      },
+      "person2": {
+        "resource": "#15"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#13"
+      },
+      "person2": {
+        "resource": "#16"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#14"
+      },
+      "person2": {
+        "resource": "#16"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#13"
+      },
+      "person2": {
+        "resource": "#17"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#14"
+      },
+      "person2": {
+        "resource": "#17"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#13"
+      },
+      "person2": {
+        "resource": "#18"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#14"
+      },
+      "person2": {
+        "resource": "#18"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#13"
+      },
+      "person2": {
+        "resource": "#19"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#14"
+      },
+      "person2": {
+        "resource": "#19"
       }
     }
   ]

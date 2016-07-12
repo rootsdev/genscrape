@@ -64,14 +64,14 @@ function processHash(emitter){
 function processData(personId, data){
   var relations = new Relations(data),
       gedx = new GedcomX(),
-      primaryPerson = processPerson(relations.getPerson(personId));
+      primaryPerson = relations.getGedxPerson(personId);
       
   gedx.addPerson(primaryPerson);
   
   // Spouses
   relations.getFamilies(personId).forEach(function(family){
     var spouseId = family.FatherId === personId ? family.MotherId : family.FatherId,
-        spouse = processPerson(relations.getPerson(spouseId));
+        spouse = relations.getGedxPerson(spouseId);
     gedx.addPerson(spouse);
     var relationship = GedcomX.Relationship({
       type: 'http://gedcomx.org/Couple',
@@ -94,7 +94,7 @@ function processData(personId, data){
     
     // Children
     relations.getChildren(family.Id).forEach(function(childRef){
-      var child = processPerson(relations.getPerson(childRef.ChildId));
+      var child = relations.getGedxPerson(childRef.ChildId);
       gedx.addPerson(child);
       gedx.addRelationship({
         type: 'http://gedcomx.org/ParentChild',
@@ -104,6 +104,51 @@ function processData(personId, data){
       gedx.addRelationship({
         type: 'http://gedcomx.org/ParentChild',
         person1: spouse,
+        person2: child
+      });
+    });
+  });
+  
+  // Parents
+  relations.getChildRefs(personId).map(function(childRef){
+    return relations.getFamily(childRef.FamilyId);
+  }).forEach(function(family){
+    var father = relations.getGedxPerson(family.FatherId),
+        mother = relations.getGedxPerson(family.MotherId);
+    gedx.addPerson(father);
+    gedx.addPerson(mother);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/Couple',
+      person1: father,
+      person2: mother
+    });
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: father,
+      person2: primaryPerson
+    });
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: mother,
+      person2: primaryPerson
+    });
+    
+    // Siblings
+    relations.getChildren(family.Id).forEach(function(childRef){
+      if(childRef.ChildId === personId){
+        return;
+      }
+      
+      var child = relations.getGedxPerson(childRef.ChildId);
+      gedx.addPerson(child);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: father,
+        person2: child
+      });
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: mother,
         person2: child
       });
     });
@@ -217,11 +262,27 @@ function gedxDate(dateInt){
  */
 var Relations = function(data){
   this.data = data;
+  this.gedxPersons = {};
 };
 
 Relations.prototype.getPerson = function(personId){
   return utils.find(this.data.Persons, function(person){
     return person.Id === personId;
+  });
+};
+
+Relations.prototype.getGedxPerson = function(personId){
+  if(!this.gedxPersons[personId]){
+    var personData = this.getPerson(personId),
+        person = processPerson(personData);
+    this.gedxPersons[personId] = person;
+  }
+  return this.gedxPersons[personId];
+};
+
+Relations.prototype.getFamily = function(familyId){
+  return utils.find(this.data.Familys, function(family){
+    return family.Id === familyId;
   });
 };
 
@@ -234,5 +295,11 @@ Relations.prototype.getFamilies = function(personId){
 Relations.prototype.getChildren = function(familyId){
   return this.data.Childs.filter(function(child){
     return child.FamilyId === familyId;
+  });
+};
+
+Relations.prototype.getChildRefs = function(personId){
+  return this.data.Childs.filter(function(child){
+    return child.ChildId === personId;
   });
 };
