@@ -2,6 +2,9 @@
   "persons": [
     {
       "id": "1",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "names": [
         {
           "nameForms": [
@@ -39,6 +42,75 @@
           },
           "place": {
             "original": "Tacoma, Pierce, Washington, United States"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Theodore"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Yurkiewicz"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1892-06-23",
+            "formal": "+1892-06-23"
+          },
+          "place": {
+            "original": "Bialykamien, Galizien, Austria"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1955-10-22",
+            "formal": "+1955-10-22"
+          },
+          "place": {
+            "original": "Northampton, Hampshire, Massachusetts, United States"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1918-06-18",
+            "formal": "+1918-06-18"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
       ]

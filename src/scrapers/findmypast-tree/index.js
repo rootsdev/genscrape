@@ -68,6 +68,32 @@ function processData(personId, data){
       
   gedx.addPerson(primaryPerson);
   
+  // Spouses
+  var families = relations.getFamilies(personId);
+  families.forEach(function(family){
+    var spouseId = family.FatherId === personId ? family.MotherId : family.FatherId,
+        spouse = processPerson(relations.getPerson(spouseId));
+    gedx.addPerson(spouse);
+    var relationship = GedcomX.Relationship({
+      type: 'http://gedcomx.org/Couple',
+      person1: primaryPerson,
+      person2: spouse
+    });
+    if(family.MarriageDate || family.MarriagePlace){
+      var marriage = GedcomX.Fact({
+        type: 'http://gedcomx.org/Marriage'
+      })
+      .setDate(gedxDate(family.MarriageDate));
+      if(family.MarriagePlace){
+        marriage.setPlace({
+          original: family.MarriagePlace
+        });
+      }
+      relationship.addFact(marriage);
+    }
+    gedx.addRelationship(relationship);
+  });
+  
   return gedx;
 }
 
@@ -79,6 +105,9 @@ function processData(personId, data){
  */
 function processPerson(person){
   var gedxPerson = GedcomX.Person()
+    .setGender({
+      type: person.Gender === 1 ? 'http://gedcomx.org/Male' : 'http://gedcomx.org/Female'
+    })
     .addNameFromParts({
       'http://gedcomx.org/Given': person.GivenNames,
       'http://gedcomx.org/Surname': person.Surnames
@@ -176,15 +205,13 @@ var Relations = function(data){
 };
 
 Relations.prototype.getPerson = function(personId){
-  debug('Relations.getPerson:' + personId);
   return utils.find(this.data.Persons, function(person){
     return person.Id === personId;
   });
 };
 
-Relations.prototype.getFamily = function(familyId){
-  debug('Relations.getFamily:' + familyId);
-  return utils.find(this.data.Familys, function(family){
-    return family.Id === familyId;
+Relations.prototype.getFamilies = function(personId){
+  return this.data.Familys.filter(function(family){
+    return family.FatherId === personId || family.MotherId === personId;
   });
 };

@@ -2,6 +2,9 @@
   "persons": [
     {
       "id": "1",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "names": [
         {
           "nameForms": [
@@ -39,6 +42,75 @@
           },
           "place": {
             "original": "Amsterdam, Montgomery, New York, United States"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Mary"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Wojnowski"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1863",
+            "formal": "+1863"
+          },
+          "place": {
+            "original": "Poznań, Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1939-10-14",
+            "formal": "+1939-10-14"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery, New York, United States"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1886",
+            "formal": "+1886"
+          },
+          "place": {
+            "original": "United States"
           }
         }
       ]
