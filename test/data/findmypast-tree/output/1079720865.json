@@ -1,1 +1,47 @@
-{}
+{
+  "persons": [
+    {
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Albert John"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Zierak"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1860-04-04",
+            "formal": "+1860-04-04"
+          },
+          "place": {
+            "original": "Lipinki, Gorlice, Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1951-03-26",
+            "formal": "+1951-03-26"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery, New York, United States"
+          }
+        }
+      ]
+    }
+  ]
+}

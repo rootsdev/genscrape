@@ -90,6 +90,17 @@ utils.toTitleCase = function(str){
 };
 
 /**
+ * Find the first matching object in an array
+ */
+utils.find = function(list, matcher){
+  for(var i = 0; i < list.length; i++){
+    if(matcher(list[i])){
+      return list[i];
+    }
+  }
+};
+
+/**
  * Simple JSON AJAX without jQuery
  * http://youmightnotneedjquery.com/#json
  * 
