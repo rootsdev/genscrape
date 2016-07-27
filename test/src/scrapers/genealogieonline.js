@@ -1,6 +1,6 @@
 var setupTest = require('../../testHelpers').createTestRunner('genealogieonline');
     
-describe.only('genealogieonline', function(){
+describe('genealogieonline', function(){
   
   it('simple', setupTest(
     'simple',
