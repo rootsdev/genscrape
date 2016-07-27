@@ -1,33 +1,16 @@
-var path = require('path'),
-    expect = require('chai').expect,
-    helpers = require('../../testHelpers'),
-    genscrape = require('../../../');
+var setupTest = require('../../testHelpers').createTestRunner('openarch');
     
-describe.skip('openarch', function(){
+describe.only('openarch', function(){
   
-  it('simple', function(done){
-    
-    // Loading from a file because it often errored silently
-    // in jsdom when loading over http
-    var url = 'https://www.openarch.nl/show.php?archive=ens&identifier=4319e58e-3894-3f18-7a44-dacc65dcf90a',
-        filePath = path.join(__dirname, '..', 'responses', 'openarch', 'albertus.html');
-    helpers.mockDom(url, filePath, function(){
-      genscrape()
-      .on('data', function(data){
-        expect(data).to.deep.equal({
-          givenName: 'Albertus Henderikus',
-          familyName: 'Kleinenberg',
-          spouseGivenName: 'Janna',
-          spouseFamilyName: 'Moes',
-          fatherGivenName: 'Albert Kasper',
-          fatherFamilyName: 'Kleinenberg',
-          motherGivenName: 'Dieuwkje',
-          motherFamilyName: 'Bosma'
-        });
-        done();
-      })
-    })
-
-  })
+  it('marriage', setupTest(
+    'marriage',
+    'https://www.openarch.nl/show.php?archive=ens&identifier=4319e58e-3894-3f18-7a44-dacc65dcf90a'
+  ));
+  
+  // https://www.openarch.nl/show.php?archive=rzh&identifier=7a9488e8-91bf-4961-b328-bb30915b9069&lang=en
+  it('marriage with birth details');
+  
+  // https://www.openarch.nl/show.php?archive=elo&identifier=f0b964b5-2d86-b61e-66b1-fcbd25b9c47c&lang=en
+  it('baptism');
   
 });

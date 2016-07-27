@@ -1,6 +1,7 @@
 var debug = require('debug')('genscrape:scrapers:genealogieonline'),
     utils = require('../utils'),
-    GedcomX = require('gedcomx-js');
+    GedcomX = require('gedcomx-js'),
+    schema = require('../schema');
 
 var urls = [
   utils.urlPatternToRegex("https://www.genealogieonline.nl/*")
@@ -25,7 +26,7 @@ function run(emitter){
         
     gedx.addPerson(primaryPerson);
     
-    queryPropAll($schemaPerson, 'spouse').map(queryPerson).forEach(function(spouse){
+    schema.queryPropAll($schemaPerson, 'spouse').map(queryPerson).forEach(function(spouse){
       gedx.addPerson(spouse);
       gedx.addRelationship({
         type: 'http://gedcomx.org/Couple',
@@ -36,7 +37,7 @@ function run(emitter){
     
     // TODO: ask Bob Coret about marriage info. It disappeared?
     
-    queryPropAll($schemaPerson, 'parent').map(queryPerson).forEach(function(parent){
+    schema.queryPropAll($schemaPerson, 'parent').map(queryPerson).forEach(function(parent){
       gedx.addPerson(parent);
       gedx.addRelationship({
         type: 'http://gedcomx.org/ParentChild',
@@ -45,7 +46,7 @@ function run(emitter){
       });
     });
     
-    queryPropAll($schemaPerson, 'children').map(queryPerson).forEach(function(child){
+    schema.queryPropAll($schemaPerson, 'children').map(queryPerson).forEach(function(child){
       gedx.addPerson(child);
       gedx.addRelationship({
         type: 'http://gedcomx.org/ParentChild',
@@ -74,8 +75,8 @@ function queryPerson($element){
   
   var person = GedcomX.Person();
   
-  var givenName = queryPropContent($element, 'givenName'),
-      familyName = queryPropContent($element, 'familyName');
+  var givenName = schema.queryPropContent($element, 'givenName'),
+      familyName = schema.queryPropContent($element, 'familyName');
   
   if(givenName || familyName){
     person.addNameFromParts({
@@ -83,10 +84,10 @@ function queryPerson($element){
       'http://gedcomx.org/Surname': familyName
     });
   } else {
-    person.addSimpleName(queryPropContent($element, 'name'));
+    person.addSimpleName(schema.queryPropContent($element, 'name'));
   }
   
-  var gender = queryPropContent($element, 'gender');
+  var gender = schema.queryPropContent($element, 'gender');
   switch(gender){
     case 'male':
       person.setGender({
@@ -115,8 +116,8 @@ function queryPerson($element){
  * @return {GedcomX.Fact}
  */
 function queryEvent($element, event, type){
-  var birthPlace = queryPropContent($element, [event + 'Place', 'address', 'addressLocality']);
-  var birthDate = queryPropContent($element, event + 'Date');
+  var birthPlace = schema.queryPropContentDeep($element, [event + 'Place', 'address', 'addressLocality']);
+  var birthDate = schema.queryPropContent($element, event + 'Date');
   
   if(birthPlace || birthDate){
     var birth = GedcomX.Fact({
@@ -136,51 +137,4 @@ function queryEvent($element, event, type){
     
     return birth;
   }
-}
-
-/**
- * Get the content of a schema property
- * 
- * @param {Element} $element DOM Element to search inside of
- * @param {String|Array} name Property name to search for
- * @return {String}
- */
-function queryPropContent($element, name){
-  var $prop = queryProp($element, name);
-  return $prop ? $prop.content : '';
-}
-
-/**
- * Get the a schema property
- * 
- * @param {Element} $element DOM Element to search inside of
- * @param {String|Array} name Property name to search for
- * @return {Element}
- */
-function queryProp($element, name){
-  if($element){
-    
-    // If only one string was given then turn it into an array
-    if(!Array.isArray(name)){
-      name = [name];
-    }
-    
-    var i = 0;
-    do {
-      $element = $element.querySelector('[itemprop="' + name[i] + '"]');
-    } while (++i < name.length && $element);
-    
-    return $element;
-  }
-}
-
-/**
- * Get all matching schema properties
- * 
- * @param {Element} $element DOM Element to search inside of
- * @param {String} name Property name to search for
- * @return {Element}
- */
-function queryPropAll($element, name){
-  return Array.from($element.querySelectorAll('[itemprop="' + name + '"]'));
 }
