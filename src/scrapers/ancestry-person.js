@@ -1,4 +1,4 @@
-var debug = require('debug')('ancestry-person'),
+var debug = require('debug')('genscrape:scrapers:ancestry-person'),
     utils = require('../utils'),
     GedcomX = require('gedcomx-js');
 
