@@ -1,0 +1,299 @@
+{
+  "persons": [
+    {
+      "id": "1",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Edward"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1847"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Sarah Ann "
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Rivers"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Fanny "
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Anne "
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Maud "
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Dora "
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Arthur Henry "
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Smith"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      }
+    },
+    {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#3"
+      }
+    },
+    {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#5"
+      }
+    },
+    {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#6"
+      }
+    },
+    {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#7"
+      }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "8",
+      "citations": [
+        {
+          "value": "Edward  Smith | Family Tree Unknown (http://www.wikitree.com/wiki/Smith-19124 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "http://www.wikitree.com/wiki/Smith-19124",
+      "titles": [
+        {
+          "value": "Edward  Smith | Family Tree Unknown"
+        }
+      ]
+    }
+  ]
+}
