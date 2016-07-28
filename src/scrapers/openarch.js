@@ -30,83 +30,13 @@ function run(emitter){
       
       // Marriage
       case 'BS Huwelijk':
-        
-        // Persons are listed in the DOM in order that the vars are declared below.
-        var groomsFather, groomsMother, groom, bride, bridesFather, bridesMother;
-        if($schemaPersons[0].getAttribute('itemprop')){
-          groomsFather = queryPerson($schemaPersons.shift());
-        }
-        if($schemaPersons[0].getAttribute('itemprop')){
-          groomsMother = queryPerson($schemaPersons.shift());
-        }
-        groom = queryPerson($schemaPersons.shift());
-        bride = queryPerson($schemaPersons.shift());
-        if($schemaPersons[0].getAttribute('itemprop')){
-          bridesFather = queryPerson($schemaPersons.shift());
-        }
-        if($schemaPersons[0].getAttribute('itemprop')){
-          bridesMother = queryPerson($schemaPersons.shift());
-        }
-        
-        gedx.addPerson(groom);
-        
-        if(groomsFather){
-          gedx.addPerson(groomsFather);
-          gedx.addRelationship({
-            type: 'http://gedcomx.org/ParentChild',
-            person1: groomsFather,
-            person2: groom
-          });
-        }
-        
-        if(groomsMother){
-          gedx.addPerson(groomsMother);
-          gedx.addRelationship({
-            type: 'http://gedcomx.org/ParentChild',
-            person1: groomsMother,
-            person2: groom
-          });
-        }
-        
-        gedx.addPerson(bride);
-        var couple = GedcomX.Relationship({
-          type: 'http://gedcomx.org/Couple',
-          person1: groom,
-          person2: bride
-        });
-        var marriageDate = schema.queryPropContent($record, 'date');
-        if(marriageDate){
-          couple.addFact({
-            type: 'http://gedcomx.org/Marriage',
-            date: {
-              original: marriageDate,
-            }
-          });
-        }
-        gedx.addRelationship(couple);
-        
-        if(bridesFather){
-          gedx.addPerson(bridesFather);
-          gedx.addRelationship({
-            type: 'http://gedcomx.org/ParentChild',
-            person1: bridesFather,
-            person2: groom
-          });
-        }
-        
-        if(bridesMother){
-          gedx.addPerson(bridesMother);
-          gedx.addRelationship({
-            type: 'http://gedcomx.org/ParentChild',
-            person1: bridesMother,
-            person2: groom
-          });
-        }
-        
+        processMarriage(gedx, $record, $schemaPersons);
         break;
       
       // Baptism
-      case 'Dopen':
+      case 'DTB Dopen':
+        processBaptism(gedx, $record, $schemaPersons);
+        break;
       
       // Just process the first person
       default:
@@ -118,6 +48,133 @@ function run(emitter){
   } else {
     emitter.emit('noData');
   }
+}
+
+/**
+ * Process a marriage record.
+ * 
+ * @param {GedcomX} gedx
+ * @param {Element} $record The itemtype="http://historical-data.org/HistoricalRecord" element
+ * @param {Element[]} $schemaPersona Array of itemtype="http://schema.org/Person"
+ */
+function processMarriage(gedx, $record, $schemaPersons){
+  
+  // Persons are listed in the DOM in order that the vars are declared below.
+  // We account for the possibility that the parents of either the groom or
+  // the groom may be missing.
+  
+  var groomsFather, groomsMother, groom, bride, bridesFather, bridesMother;
+  
+  if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
+    groomsFather = queryPerson($schemaPersons.shift());
+  }
+  if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
+    groomsMother = queryPerson($schemaPersons.shift());
+  }
+  groom = queryPerson($schemaPersons.shift());
+  bride = queryPerson($schemaPersons.shift());
+  if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
+    bridesFather = queryPerson($schemaPersons.shift());
+  }
+  if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
+    bridesMother = queryPerson($schemaPersons.shift());
+  }
+  
+  gedx.addPerson(groom);
+  
+  if(groomsFather){
+    gedx.addPerson(groomsFather);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: groomsFather,
+      person2: groom
+    });
+  }
+  
+  if(groomsMother){
+    gedx.addPerson(groomsMother);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: groomsMother,
+      person2: groom
+    });
+  }
+  
+  gedx.addPerson(bride);
+  var couple = GedcomX.Relationship({
+    type: 'http://gedcomx.org/Couple',
+    person1: groom,
+    person2: bride
+  });
+  var marriageDate = schema.queryPropContent($record, 'date');
+  if(marriageDate){
+    couple.addFact({
+      type: 'http://gedcomx.org/Marriage',
+      date: {
+        original: marriageDate,
+      }
+    });
+  }
+  gedx.addRelationship(couple);
+  
+  if(bridesFather){
+    gedx.addPerson(bridesFather);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: bridesFather,
+      person2: groom
+    });
+  }
+  
+  if(bridesMother){
+    gedx.addPerson(bridesMother);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: bridesMother,
+      person2: groom
+    });
+  }
+}
+
+/**
+ * Process a baptism record.
+ * 
+ * @param {GedcomX} gedx
+ * @param {Element} $record The itemtype="http://historical-data.org/HistoricalRecord" element
+ * @param {Element[]} $schemaPersona Array of itemtype="http://schema.org/Person"
+ */
+function processBaptism(gedx, $record, $schemaPersons){
+  
+  var father, mother, child;
+  
+  if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
+    father = queryPerson($schemaPersons.shift());
+  }
+  if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
+    mother = queryPerson($schemaPersons.shift());
+  }
+  child = queryPerson($schemaPersons.shift());
+  
+  gedx.addPerson(child);
+  
+  if(father){
+    gedx.addPerson(father);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: father,
+      person2: child
+    });
+  }
+  
+  if(mother){
+    gedx.addPerson(mother);
+    gedx.addRelationship({
+      type: 'http://gedcomx.org/ParentChild',
+      person1: mother,
+      person2: child
+    });
+  }
+  
 }
 
 /**
@@ -171,7 +228,7 @@ function queryPerson($element){
  * @return {GedcomX.Fact}
  */
 function queryEvent($element, event, type){
-  var birthPlace = schema.queryPropContent($element, [event + 'Place', 'address', 'addressLocality']);
+  var birthPlace = schema.queryPropContent($element, event + 'Place');
   var birthDate = schema.queryPropContent($element, event + 'Date');
   
   if(birthPlace || birthDate){
