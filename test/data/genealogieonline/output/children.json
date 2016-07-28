@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -43,6 +48,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -72,6 +82,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -110,6 +125,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -148,6 +168,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -184,6 +209,11 @@
     },
     {
       "id": "6",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -220,6 +250,11 @@
     },
     {
       "id": "7",
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -257,6 +292,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -266,6 +306,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
@@ -275,6 +320,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
@@ -284,6 +334,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -293,6 +348,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -302,6 +362,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -309,6 +374,22 @@
       "person2": {
         "resource": "#7"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "8",
+      "citations": [
+        {
+          "value": "Johannes Lambertus Henricus Josephus Westenberg (1837-????) » Voorouders Monique en Jan Vis » Genealogie Online (https://www.genealogieonline.nl/en/voorouders-monique-en-jan-vis/I39356.php : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.genealogieonline.nl/en/voorouders-monique-en-jan-vis/I39356.php",
+      "titles": [
+        {
+          "value": "Johannes Lambertus Henricus Josephus Westenberg (1837-????) » Voorouders Monique en Jan Vis » Genealogie Online"
+        }
+      ]
     }
   ]
 }

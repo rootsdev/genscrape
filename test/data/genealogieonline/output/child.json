@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -46,6 +51,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -81,6 +91,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -105,6 +120,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -129,6 +149,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -160,6 +185,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -169,6 +199,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
@@ -178,6 +213,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
@@ -187,6 +227,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
@@ -194,6 +239,22 @@
       "person2": {
         "resource": "#5"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "6",
+      "citations": [
+        {
+          "value": "Alida Petronella Jansen (1871-1958) » Voorouders Monique en Jan Vis » Genealogie Online (https://www.genealogieonline.nl/en/voorouders-monique-en-jan-vis/I39364.php : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.genealogieonline.nl/en/voorouders-monique-en-jan-vis/I39364.php",
+      "titles": [
+        {
+          "value": "Alida Petronella Jansen (1871-1958) » Voorouders Monique en Jan Vis » Genealogie Online"
+        }
+      ]
     }
   ]
 }

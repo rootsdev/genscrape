@@ -43,6 +43,23 @@ function run(emitter){
         gedx.addPerson(queryPerson($schemaPersons[0]));
         break;
     }
+    
+    // SourceDescription
+    var title = schema.queryPropContent($record, 'name');
+    gedx.addSourceDescriptionToAll({
+      about: document.location.href,
+      titles: [
+        {
+          value: title
+        }
+      ],
+      citations: [
+        {
+          value: title + ' (' + window.document.location.href 
+            + ' : accessed ' + utils.getDateString() + ')'
+        }
+      ]
+    });
   
     emitter.emit('data', gedx);
   } else {

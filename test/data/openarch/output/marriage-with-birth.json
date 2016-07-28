@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -37,6 +42,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -61,6 +71,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -85,6 +100,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -120,6 +140,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -144,6 +169,11 @@
     },
     {
       "id": "6",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -169,6 +199,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -178,6 +213,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
@@ -187,6 +227,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -204,6 +249,11 @@
       ]
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -213,6 +263,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -220,6 +275,22 @@
       "person2": {
         "resource": "#1"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "7",
+      "citations": [
+        {
+          "value": "Marriage Pieter Abraham Kropff & Lisabeth Engelhard on March 14, 1822 in Leiden (Netherlands) (https://www.openarch.nl/show.php?archive=rzh&identifier=7a9488e8-91bf-4961-b328-bb30915b9069&lang=en : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.openarch.nl/show.php?archive=rzh&identifier=7a9488e8-91bf-4961-b328-bb30915b9069&lang=en",
+      "titles": [
+        {
+          "value": "Marriage Pieter Abraham Kropff & Lisabeth Engelhard on March 14, 1822 in Leiden (Netherlands)"
+        }
+      ]
     }
   ]
 }

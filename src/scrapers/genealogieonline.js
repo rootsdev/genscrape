@@ -56,6 +56,22 @@ function run(emitter){
     });
     
     // TODO: ask Bob why children don't have givenName and familyName
+    
+    // SourceDescription
+    gedx.addSourceDescriptionToAll({
+      about: document.location.href,
+      titles: [
+        {
+          value: document.title
+        }
+      ],
+      citations: [
+        {
+          value: document.title + ' (' + window.document.location.href 
+            + ' : accessed ' + utils.getDateString() + ')'
+        }
+      ]
+    });
    
     emitter.emit('data', gedx);
   }

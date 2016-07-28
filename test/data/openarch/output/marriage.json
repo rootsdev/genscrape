@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -26,6 +31,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -50,6 +60,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -74,6 +89,11 @@
     },
     {
       "id": "4",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -98,6 +118,11 @@
     },
     {
       "id": "5",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -122,6 +147,11 @@
     },
     {
       "id": "6",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -147,6 +177,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -156,6 +191,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
@@ -165,6 +205,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -182,6 +227,11 @@
       ]
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
@@ -191,6 +241,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
@@ -198,6 +253,22 @@
       "person2": {
         "resource": "#1"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "7",
+      "citations": [
+        {
+          "value": "Marriage Albertus Henderikus Kleinenberg & Janna Moes on May 22, 1931 in Lonneker (Netherlands) (https://www.openarch.nl/show.php?archive=ens&identifier=4319e58e-3894-3f18-7a44-dacc65dcf90a : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.openarch.nl/show.php?archive=ens&identifier=4319e58e-3894-3f18-7a44-dacc65dcf90a",
+      "titles": [
+        {
+          "value": "Marriage Albertus Henderikus Kleinenberg & Janna Moes on May 22, 1931 in Lonneker (Netherlands)"
+        }
+      ]
     }
   ]
 }

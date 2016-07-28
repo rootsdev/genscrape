@@ -2,6 +2,11 @@
   "persons": [
     {
       "id": "1",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
       "names": [
         {
           "nameForms": [
@@ -19,6 +24,11 @@
     },
     {
       "id": "2",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -43,6 +53,11 @@
     },
     {
       "id": "3",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -68,6 +83,11 @@
   ],
   "relationships": [
     {
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
@@ -77,6 +97,11 @@
       }
     },
     {
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
@@ -84,6 +109,22 @@
       "person2": {
         "resource": "#1"
       }
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "Baptism Johannes on May 29, 1707 in Leijderdorp (Netherlands) (https://www.openarch.nl/show.php?archive=elo&identifier=f0b964b5-2d86-b61e-66b1-fcbd25b9c47c&lang=en : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.openarch.nl/show.php?archive=elo&identifier=f0b964b5-2d86-b61e-66b1-fcbd25b9c47c&lang=en",
+      "titles": [
+        {
+          "value": "Baptism Johannes on May 29, 1707 in Leijderdorp (Netherlands)"
+        }
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 var setupTest = require('../../testHelpers').createTestRunner('openarch');
     
-describe.only('openarch', function(){
+describe('openarch', function(){
   
   it('marriage', setupTest(
     'marriage',
