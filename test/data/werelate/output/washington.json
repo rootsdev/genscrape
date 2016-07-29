@@ -103,6 +103,447 @@
           "value": "Private crypt at Mount Vernon"
         }
       ]
+    },
+    {
+      "id": "2",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Captain Augustine Washington",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Captain Augustine"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Washington"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Abt 1694"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1743"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary Ball",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Mary"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Ball"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1708"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1789"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Betty Washington",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Betty"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Washington"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1733"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1797"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Samuel Washington",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Samuel"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Washington"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1734"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1781"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Augustine Washington",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "John Augustine"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Washington"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1736"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1787"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Charles Washington",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Charles"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Washington"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1738"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1799"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mildred Washington",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Mildred"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Washington"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1739"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1740"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Martha  Dandridge",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "Martha"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Dandridge"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1731"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1802"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#1"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#3"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "6 Mar 1731"
+          }
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#4"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#5"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#5"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#6"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#6"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#7"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#7"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#8"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#8"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#9"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "6 Jan 1759"
+          }
+        }
+      ]
     }
   ]
 }

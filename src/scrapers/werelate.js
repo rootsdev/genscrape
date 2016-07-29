@@ -141,28 +141,30 @@ function run(emitter){
       
       // Most facts will have a date and a place
       default:
-        var type = factTypes[label],
-            date = dateCell.textContent,
-            place = utils.maybe(placeCell.querySelector('span.wr-infotable-place')).textContent,
-            value = utils.maybe(placeCell.querySelector('span.wr-infotable-desc')).textContent;
-        if(type){
-          var fact = GedcomX.Fact({
-            type: type
-          });
-          if(date){
-            fact.setDate({
-              original: date
+        if(row.children.length === 3){
+          var type = factTypes[label],
+              date = dateCell.textContent,
+              place = utils.maybe(placeCell.querySelector('span.wr-infotable-place')).textContent,
+              value = utils.maybe(placeCell.querySelector('span.wr-infotable-desc')).textContent;
+          if(type){
+            var fact = GedcomX.Fact({
+              type: type
             });
+            if(date){
+              fact.setDate({
+                original: date
+              });
+            }
+            if(place){
+              fact.setPlace({
+                original: place
+              });
+            }
+            if(value){
+              fact.setValue(value);
+            }
+            primaryPerson.addFact(fact);
           }
-          if(place){
-            fact.setPlace({
-              original: place
-            });
-          }
-          if(value){
-            fact.setValue(value);
-          }
-          primaryPerson.addFact(fact);
         }
     }
     
@@ -172,30 +174,202 @@ function run(emitter){
   // Relationships
   //
   
-  /*
-  // Process spouse's name
-  if( recordData.marriage ) {
-    var spouseNameParts = utils.splitName( $.trim( $('.wr-infotable-placedesc .wr-infotable-desc', recordData.marriage).text().substring(3) ) );
-    personData.spouseGivenName = spouseNameParts[0];
-    personData.spouseFamilyName = spouseNameParts[1];
-  }
-  
-  // Get parents names
-  var parentsBox = $('.wr-infobox-parentssiblings:first');
-  if( parentsBox.length == 1 ){
-    $('ul .wr-infobox-fullname', parentsBox).each(function(i,e){
-      var parentNameParts = utils.splitName( $.trim( $(this).text().substring(4) ) );
-      if( i == 0 ) {
-        personData.fatherGivenName = parentNameParts[0];
-        personData.fatherFamilyName = parentNameParts[1];
-      } else {
-        personData.motherGivenName = parentNameParts[0];
-        personData.motherFamilyName = parentNameParts[1];
+  // Parents and siblings
+  Array.from(document.querySelectorAll('.wr-infobox-parentssiblings')).forEach(function(family){
+    
+    var parents = family.querySelector('ul'),
+        children = family.querySelector('ol'),
+        marriage = family.querySelector('.wr-infobox-event'),
+        parent1Label = parentLabel(parents.children[0]),
+        mother, father;
+    
+    if(parent1Label === 'F'){
+      father = processPerson(parents.children[0], 'http://gedcomx.org/Male');
+      mother = processPerson(parents.children[1], 'http://gedcomx.org/Female');
+    } else {
+      father = processPerson(parents.children[1], 'http://gedcomx.org/Male');
+      mother = processPerson(parents.children[0], 'http://gedcomx.org/Female');
+    }
+    
+    if(father){
+      gedx.addPerson(father);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: father,
+        person2: primaryPerson
+      });
+    }
+    
+    if(mother){
+      gedx.addPerson(mother);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: mother,
+        person2: primaryPerson
+      });
+    }
+    
+    if(father && mother){
+      var couple = GedcomX.Relationship({
+        type: 'http://gedcomx.org/Couple',
+        person1: father,
+        person2: mother
+      });
+      if(marriage){
+        couple.addFact({
+          type: 'http://gedcomx.org/Marriage',
+          date: {
+            original: utils.maybe(marriage.querySelector('.wr-infobox-date')).textContent
+          }
+        });
+      }
+      gedx.addRelationship(couple);
+    }
+    
+    Array.from(children.children).forEach(function(child){
+      
+      // Skip the entry for the primary person
+      if(child.querySelector('.selflink')){
+        return;
+      }
+      
+      child = processPerson(child);
+      gedx.addPerson(child);
+      
+      if(father){
+        gedx.addRelationship({
+          type: 'http://gedcomx.org/ParentChild',
+          person1: father,
+          person2: child
+        });
+      }
+      
+      if(mother){
+        gedx.addRelationship({
+          type: 'http://gedcomx.org/ParentChild',
+          person1: mother,
+          person2: child
+        });
       }
     });
-  }
-  */
+  });
+  
+  // Spouses and children
+  Array.from(document.querySelectorAll('.wr-infobox-spousechildren')).forEach(function(family){
+    
+    var parents = family.querySelector('ul'),
+        children = family.querySelector('ol'),
+        marriage = family.querySelector('.wr-infobox-event'),
+        parent1Label = parentLabel(parents.children[0]),
+        parent2Label = parentLabel(parents.children[1]),
+        spouse, spouseLabel, couple;
+    
+    // Determine whether the primary person is the husband or the wife
+    if(parents.children[0].querySelector('.selflink')){
+      spouse = processPerson(parents.children[1]);
+      spouseLabel = parent2Label;
+    } else {
+      spouse = processPerson(parents.children[0]);
+      spouseLabel = parent1Label;
+    }
+    
+    spouse.setGender({
+      type: spouseLabel === 'H' ? 'http://gedcomx.org/Male' : 'http://gedcomx.org/Female'
+    });
+    
+    gedx.addPerson(spouse);
+    
+    couple = GedcomX.Relationship({
+      type: 'http://gedcomx.org/Couple',
+      person1: primaryPerson,
+      person2: spouse
+    });
+    
+    if(marriage){
+      couple.addFact({
+        type: 'http://gedcomx.org/Marriage',
+        date: {
+          original: utils.maybe(marriage.querySelector('.wr-infobox-date')).textContent
+        }
+      });
+    }
+    
+    gedx.addRelationship(couple);
+    
+    if(children){
+      Array.from(children.children).forEach(function(child){
+        
+        child = processPerson(child);
+        gedx.addPerson(child);
+        
+        gedx.addRelationship({
+          type: 'http://gedcomx.org/ParentChild',
+          person1: primaryPerson,
+          person2: child
+        });
+        
+        gedx.addRelationship({
+          type: 'http://gedcomx.org/ParentChild',
+          person1: spouse,
+          person2: child
+        });
+      });
+    }
+  });
+  
+  // TODO: gather sources listed in the profile
+  
+  // Source Description
   
   emitter.emit('data', gedx);
-  
+}
+
+/**
+ * Get the label for a parent in a family box. For parents it is F (Father) or
+ * M (Mother). For spouses it's H (Husband) or W (Wife).
+ * 
+ * @param {Element} parent Parent's li element
+ * @return {String} label
+ */
+function parentLabel(parent){
+  if(parent){
+    return utils.maybe(parent.querySelector('.wr-infobox-label')).textContent;
+  }
+}
+
+/**
+ * Create a GedcomX.Person from a person entry in a family box
+ * 
+ * @param {Element} element Person's li DOM element
+ * @param {String} gender
+ * @return {GedcomX.Person}
+ */
+function processPerson(element, gender){
+  if(element){
+    var person = GedcomX.Person().addSimpleName(element.querySelector('.wr-infobox-fullname a').textContent),
+        yearRange = utils.maybe(element.querySelector('.wr-infobox-yearrange')).textContent || ' - ',
+        yearRangeParts = yearRange.split(' - ');
+    if(yearRangeParts[0]){
+      person.addFact({
+        type: 'http://gedcomx.org/Birth',
+        date: {
+          original: yearRangeParts[0]
+        }
+      });
+    }
+    if(yearRangeParts[1]){
+      person.addFact({
+        type: 'http://gedcomx.org/Death',
+        date: {
+          original: yearRangeParts[1]
+        }
+      });
+    }
+    if(gender){
+      person.setGender({
+        type: gender
+      });
+    }
+    return person;
+  }
 }
