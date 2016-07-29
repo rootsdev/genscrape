@@ -319,7 +319,21 @@ function run(emitter){
   
   // TODO: gather sources listed in the profile
   
-  // Source Description
+  // SourceDescription
+  gedx.addSourceDescriptionToAll({
+    about: document.location.href,
+    titles: [
+      {
+        value: document.title
+      }
+    ],
+    citations: [
+      {
+        value: document.title + ', WeRelate.org (' + window.document.location.href 
+          + ' : accessed ' + utils.getDateString() + ')'
+      }
+    ]
+  });
   
   emitter.emit('data', gedx);
 }
