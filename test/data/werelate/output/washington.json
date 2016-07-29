@@ -1,0 +1,108 @@
+{
+  "persons": [
+    {
+      "id": "1",
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "President George Washington",
+              "parts": [
+                {
+                  "type": "http://gedcomx.org/Given",
+                  "value": "President George"
+                },
+                {
+                  "type": "http://gedcomx.org/Surname",
+                  "value": "Washington"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "22 Feb 1732"
+          },
+          "place": {
+            "original": "Wakefield, Westmoreland, Virginia, United States"
+          },
+          "value": "Bet Bridge's Creek and Pope's Creek"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "date": {
+            "original": "6 Nov 1752"
+          },
+          "place": {
+            "original": "Virginia, United States"
+          },
+          "value": "Major in the forces for Fredericksburg County"
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "date": {
+            "original": "from 24 Jul 1758 to 1769"
+          },
+          "place": {
+            "original": "Williamsburg, Virginia, United States"
+          },
+          "value": "House of Burgesses of Virginia"
+        },
+        {
+          "type": "http://gedcomx.org/Property",
+          "date": {
+            "original": "14 Mar 1768"
+          },
+          "value": "Inherited Mount Vernon"
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "date": {
+            "original": "5 Aug 1774"
+          },
+          "place": {
+            "original": "Philadelphia, Philadelphia, Pennsylvania, United States"
+          },
+          "value": "One of seven elected delegates from Virginia, to the Continental Congress."
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "date": {
+            "original": "4 Feb 1789"
+          },
+          "place": {
+            "original": "United States"
+          },
+          "value": "Elected first \nPresident of the United States."
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "14 Dec 1799"
+          },
+          "place": {
+            "original": "Fairfax (independent city), Virginia, United States"
+          },
+          "value": "Mount Vernon."
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "date": {
+            "original": "18 Dec 1799"
+          },
+          "place": {
+            "original": "Fairfax (independent city), Virginia, United States"
+          },
+          "value": "Private crypt at Mount Vernon"
+        }
+      ]
+    }
+  ]
+}

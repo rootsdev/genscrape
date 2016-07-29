@@ -81,5 +81,5 @@ require('./scrapers/findmypast-record')(register);
 require('./scrapers/findmypast-tree')(register);
 require('./scrapers/genealogieonline')(register);
 require('./scrapers/openarch')(register);
-//require('./scrapers/werelate')(register);
+require('./scrapers/werelate')(register);
 require('./scrapers/wikitree')(register);
