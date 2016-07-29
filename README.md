@@ -6,7 +6,8 @@ genscrape
 ==========
 
 A JavaScript library that aids in scraping person data off of genealogy websites. 
-It is designed to be used in a browser extension. It requires [jQuery](https://jquery.com/).
+It is designed to be used in a browser extension. Data is output in
+[GEDCOM X](http://www.gedcomx.org/) format.
 
 ## Usage
 
@@ -27,7 +28,8 @@ correct scraper, and does its magic.
 #### data
 
 The `data` event is fired when genscrape successfully scrapes data from the page.
-The returned data object will be in the [gensearch schema](https://github.com/genealogysystems/gensearch#schema).
+The returned data object will be in the 
+[GEDCOM X JSON](https://github.com/FamilySearch/gedcomx/blob/master/specifications/json-format-specification.md) format.
 
 #### noMatch
 
