@@ -13,7 +13,7 @@ module.exports = function(register){
 
 function run(emitter){
   debug('running');
-  utils.getJSON(window.location.href, function(error, json){
+  utils.getJSON(window.location.href, {Accept:'application/x-fs-v1+json'}, function(error, json){
     if(error){
       debug('error');
       emitter.emit('error', error);
