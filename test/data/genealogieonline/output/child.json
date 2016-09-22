@@ -1,73 +1,67 @@
 {
   "persons": [
     {
-      "id": "1",
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Alida Petronella"
+                  "value": "Alida Petronella",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jansen"
+                  "value": "Jansen",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "1871-07-20"
-          },
           "place": {
             "original": "Alkmaar Nhl. Nederland"
+          },
+          "date": {
+            "original": "1871-07-20"
           }
         },
         {
           "type": "http://gedcomx.org/Death",
-          "date": {
-            "original": "1958-06-18"
-          },
           "place": {
             "original": "Schagen Nhl. Nederland"
+          },
+          "date": {
+            "original": "1958-06-18"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
+      "id": "1",
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Hendrik"
+                  "value": "Hendrik",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Westenberg"
+                  "value": "Westenberg",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -87,73 +81,73 @@
             "original": "1956-02-14"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
+      "id": "2",
       "sources": [
         {
           "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Petrus",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jansen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
+      "id": "3",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Petrus"
+                  "value": "Antje",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jansen"
+                  "value": "Hosmus",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "sources": [
-        {
-          "description": "#6"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Antje"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Hosmus"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "5",
+      "id": "4",
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -161,12 +155,12 @@
               "fullText": "Johannes Lambertus Hendricus Josephus Westenberg",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Johannes Lambertus Hendricus Josephus"
+                  "value": "Johannes Lambertus Hendricus Josephus",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Westenberg"
+                  "value": "Westenberg",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -180,65 +174,71 @@
             "original": "1904"
           }
         }
+      ],
+      "id": "5",
+      "sources": [
+        {
+          "description": "#6"
+        }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#2"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#5"
-      }
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

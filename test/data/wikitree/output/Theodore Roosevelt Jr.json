@@ -1,111 +1,147 @@
 {
   "persons": [
     {
-      "id": "1",
-      "sources": [
+      "names": [
         {
-          "description": "#15"
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "President",
+                  "type": "http://gedcomx.org/Prefix"
+                },
+                {
+                  "value": "Theodore",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
+                },
+                {
+                  "value": "Jr.",
+                  "type": "http://gedcomx.org/Suffix"
+                }
+              ]
+            }
+          ]
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "New York City, New York, USA"
+          },
+          "date": {
+            "original": "October 27, 1858"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "place": {
+            "original": "Oyster Bay, Long Island, New York, USA"
+          },
+          "date": {
+            "original": "January 6, 1919"
+          }
+        }
+      ],
+      "id": "1",
+      "sources": [
+        {
+          "description": "#15"
+        }
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Prefix",
-                  "value": "President"
+                  "value": "Theodore ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Theodore"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
-                },
-                {
-                  "type": "http://gedcomx.org/Suffix",
-                  "value": "Jr."
+                  "value": "Sr.",
+                  "type": "http://gedcomx.org/Suffix"
                 }
               ]
             }
           ]
         }
       ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "October 27, 1858"
-          },
-          "place": {
-            "original": "New York City, New York, USA"
-          }
-        },
-        {
-          "type": "http://gedcomx.org/Death",
-          "date": {
-            "original": "January 6, 1919"
-          },
-          "place": {
-            "original": "Oyster Bay, Long Island, New York, USA"
-          }
-        }
-      ]
-    },
-    {
       "id": "2",
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Theodore "
+                  "value": "Martha ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
+                  "value": "Bulloch",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Martha ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Suffix",
-                  "value": "Sr."
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "3",
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Martha "
+                  "value": "Anna ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bulloch"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -116,132 +152,132 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Martha "
+                  "value": "Anna ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
+                  "value": "Cowles",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "4",
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Anna "
+                  "value": "Elliott Bulloch",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Anna "
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Cowles"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "5",
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Elliott Bulloch"
+                  "value": "Corinne ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "6",
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Corinne "
+                  "value": "Alice Hathaway",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
+                  "value": "Lee",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Alice Hathaway",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "7",
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Alice Hathaway"
+                  "value": "Edith Kermit",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Lee"
+                  "value": "Carow",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -252,38 +288,38 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Alice Hathaway"
+                  "value": "Edith Kermit",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "8",
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Edith Kermit"
+                  "value": "Alice Lee",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Carow"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -294,136 +330,94 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Edith Kermit"
+                  "value": "Alice Lee",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
+                  "value": "Longworth",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "9",
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Alice Lee"
+                  "value": "Theodore ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Alice Lee"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Longworth"
+                  "value": "III",
+                  "type": "http://gedcomx.org/Suffix"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "10",
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Theodore "
+                  "value": "Kermit ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
-                },
-                {
-                  "type": "http://gedcomx.org/Suffix",
-                  "value": "III"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "11",
       "sources": [
         {
           "description": "#15"
         }
-      ],
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Kermit "
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
-                }
-              ]
-            }
-          ]
-        }
       ]
     },
     {
-      "id": "12",
-      "sources": [
-        {
-          "description": "#15"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ethel Carow"
+                  "value": "Ethel Carow",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -434,212 +428,218 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ethel Carow"
+                  "value": "Ethel Carow",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Derby"
+                  "value": "Derby",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
+      ],
+      "id": "12",
+      "sources": [
+        {
+          "description": "#15"
+        }
       ]
     },
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Archibald Bulloch",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "id": "13",
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Archibald Bulloch"
+                  "value": "Quentin ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "14",
       "sources": [
         {
           "description": "#15"
-        }
-      ],
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Quentin "
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
-                }
-              ]
-            }
-          ]
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#15"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#7"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#8"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#9"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#10"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#11"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#12"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#13"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#14"
-      }
+      },
+      "sources": [
+        {
+          "description": "#15"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

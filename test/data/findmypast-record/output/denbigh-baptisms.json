@@ -2,23 +2,18 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#4"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Catherine Walter"
+                  "value": "Catherine Walter",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -44,97 +39,102 @@
             "original": "WREXHAM"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
       ]
     },
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Robert",
+                  "type": "http://gedcomx.org/Given"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "id": "2",
       "sources": [
         {
           "description": "#4"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Robert"
+                  "value": "Sarah",
+                  "type": "http://gedcomx.org/Given"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "3",
       "sources": [
         {
           "description": "#4"
-        }
-      ],
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Sarah"
-                }
-              ]
-            }
-          ]
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#4"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#4"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "4",
-      "citations": [
-        {
-          "value": "Denbigh Baptisms, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fb%2f879273212%2f1 : accessed 17 April 2013), entry for Catherine Walter Turner."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=gbprs%2fb%2f879273212%2f1",
       "titles": [
         {
           "value": "Catherine Walter Turner in Denbigh Baptisms"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Denbigh Baptisms, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fb%2f879273212%2f1 : accessed 17 April 2013), entry for Catherine Walter Turner."
+        }
+      ],
+      "id": "4"
     }
   ]
 }

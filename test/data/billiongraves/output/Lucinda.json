@@ -2,11 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#3"
-        }
-      ],
       "names": [
         {
           "nameForms": [
@@ -14,12 +9,12 @@
               "fullText": "Lucinda Clark",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Lucinda"
+                  "value": "Lucinda",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Clark"
+                  "value": "Clark",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -40,15 +35,14 @@
             "original": "Oakes Cemetery, Bentonville, Benton, Arkansas, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#3"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -56,12 +50,12 @@
               "fullText": "M.j. Clark",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "M.j."
+                  "value": "M.j.",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Clark"
+                  "value": "Clark",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -74,6 +68,12 @@
           "date": {
             "original": "20 Feb 1916"
           }
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#3"
         }
       ]
     }

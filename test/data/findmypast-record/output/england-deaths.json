@@ -2,23 +2,18 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#2"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Marion M D"
+                  "value": "Marion M D",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner-turner"
+                  "value": "Turner-turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -41,23 +36,28 @@
             "original": "Reigate, Surrey, England"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#2"
+        }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "2",
-      "citations": [
-        {
-          "value": "England & Wales deaths 1837-2007, database, findmypast (http://search.findmypast.com/record?id=bmd%2fd%2f1896%2f4%2faz%2f000376%2f022 : accessed 17 April 2013), entry for Marion M D Turner-turner."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=bmd%2fd%2f1896%2f4%2faz%2f000376%2f022",
       "titles": [
         {
           "value": "Marion M D Turner-turner in England & Wales deaths 1837-2007"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "England & Wales deaths 1837-2007, database, findmypast (http://search.findmypast.com/record?id=bmd%2fd%2f1896%2f4%2faz%2f000376%2f022 : accessed 17 April 2013), entry for Marion M D Turner-turner."
+        }
+      ],
+      "id": "2"
     }
   ]
 }

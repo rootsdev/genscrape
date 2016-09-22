@@ -19,7 +19,29 @@ function run(emitter){
       emitter.emit('error', error);
     } else {
       debug('data');
-      emitter.emit('data', GedcomX(json));
+      
+      var gedx = GedcomX(json);
+      
+      // For some reason the persons are not linked to their source descriptions
+      // so here we setup the links.
+      gedx.getPersons().forEach(function(person){
+        var identifiers = person.getIdentifiers(),
+            ark;
+        if(identifiers){
+          ark = identifiers.getValues('http://gedcomx.org/Persistent')[0];
+          if(ark){
+            gedx.getSourceDescriptions().forEach(function(sourceDescription){
+              if(sourceDescription.getAbout() === ark){
+                person.addSource({
+                  description: '#' + sourceDescription.getId()
+                });
+              }
+            });
+          }
+        }
+      });
+      
+      emitter.emit('data', gedx);
     }
   });
 }

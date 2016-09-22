@@ -2,28 +2,23 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#3"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
@@ -34,65 +29,70 @@
             "original": "BRAMDEAN,HAMPSHIRE,ENGLAND"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#3"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Robert"
+                  "value": "Robert",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#3"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#3"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "3",
-      "citations": [
-        {
-          "value": "England Births & Baptisms 1538-1975, database, findmypast (http://search.findmypast.com/record?id=r_931803621 : accessed 17 April 2013), entry for Turner."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=r_931803621",
       "titles": [
         {
           "value": "Turner in England Births & Baptisms 1538-1975"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "England Births & Baptisms 1538-1975, database, findmypast (http://search.findmypast.com/record?id=r_931803621 : accessed 17 April 2013), entry for Turner."
+        }
+      ],
+      "id": "3"
     }
   ]
 }

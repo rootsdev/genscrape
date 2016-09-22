@@ -1,73 +1,67 @@
 {
   "persons": [
     {
-      "id": "1",
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Pieter"
+                  "value": "Pieter",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "den Herder"
+                  "value": "den Herder",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "1844-12-21"
-          },
           "place": {
             "original": "Wolphaartsdijk gem. Goes Zld. Nederland"
+          },
+          "date": {
+            "original": "1844-12-21"
           }
         },
         {
           "type": "http://gedcomx.org/Death",
-          "date": {
-            "original": "1924-04-04"
-          },
           "place": {
             "original": "Wolphaartsdijk gem. Goes Zld. Nederland"
+          },
+          "date": {
+            "original": "1924-04-04"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
+      "id": "1",
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Jannetje"
+                  "value": "Jannetje",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Mieras"
+                  "value": "Mieras",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -87,149 +81,155 @@
             "original": "1886-01-29"
           }
         }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#6"
+        }
       ]
     },
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Aaltje",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "van Damme",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "id": "3",
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Aaltje"
+                  "value": "Daniel Willem",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "van Damme"
+                  "value": "den Herder",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "sources": [
-        {
-          "description": "#6"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
+      "id": "4",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Daniel Willem"
+                  "value": "Catharina",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "den Herder"
+                  "value": "Thorenaar",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "sources": [
-        {
-          "description": "#6"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "names": [
+      "id": "5",
+      "sources": [
         {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Catharina"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Thorenaar"
-                }
-              ]
-            }
-          ]
+          "description": "#6"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#2"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#3"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#1"
-      }
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

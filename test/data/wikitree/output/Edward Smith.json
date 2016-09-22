@@ -1,33 +1,27 @@
 {
   "persons": [
     {
-      "id": "1",
-      "sources": [
-        {
-          "description": "#8"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Edward"
+                  "value": "Edward",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
@@ -35,249 +29,255 @@
             "original": "1847"
           }
         }
+      ],
+      "id": "1",
+      "sources": [
+        {
+          "description": "#8"
+        }
       ]
     },
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Sarah Ann ",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Rivers",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "id": "2",
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Sarah Ann "
+                  "value": "Fanny ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Rivers"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "3",
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Fanny "
+                  "value": "Anne ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "4",
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Anne "
+                  "value": "Maud ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "5",
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Maud "
+                  "value": "Dora ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "6",
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Dora "
+                  "value": "Arthur Henry ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "7",
       "sources": [
         {
           "description": "#8"
-        }
-      ],
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Arthur Henry "
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
-                }
-              ]
-            }
-          ]
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#8"
-        }
-      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#2"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#3"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#4"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#6"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#7"
-      }
+      },
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

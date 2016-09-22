@@ -1,114 +1,114 @@
 {
   "persons": [
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Johannes",
+                  "type": "http://gedcomx.org/Given"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "id": "1",
       "sources": [
         {
           "description": "#4"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Johannes"
+                  "value": "Cornlis",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Immerzeel",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "sources": [
-        {
-          "description": "#4"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
+      "id": "2",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Cornlis"
+                  "value": "Geertruij",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Immerzeel"
+                  "value": "van Hassel",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "sources": [
-        {
-          "description": "#4"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "names": [
+      "id": "3",
+      "sources": [
         {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Geertruij"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "van Hassel"
-                }
-              ]
-            }
-          ]
+          "description": "#4"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#4"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#4"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

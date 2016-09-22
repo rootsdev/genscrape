@@ -2,130 +2,125 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#5"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Bernard Debelton"
+                  "value": "Bernard Debelton",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
+      ],
+      "sources": [
+        {
+          "description": "#5"
+        }
       ]
     },
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "John",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "id": "2",
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John"
+                  "value": "Fanny",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Horton",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "3",
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Fanny"
+                  "value": "Thomas",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Horton"
+                  "value": "Horton",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "4",
       "sources": [
         {
           "description": "#5"
-        }
-      ],
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Thomas"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Horton"
-                }
-              ]
-            }
-          ]
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#5"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -143,37 +138,42 @@
             "original": "BRYMBO"
           }
         }
-      ]
-    },
-    {
+      ],
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#3"
-      }
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "5",
-      "citations": [
-        {
-          "value": "Denbigh Marriages, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fm%2f880081323%2f1 : accessed 17 April 2013), entry for Bernard Debelton Turner."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=gbprs%2fm%2f880081323%2f1",
       "titles": [
         {
           "value": "Bernard Debelton Turner in Denbigh Marriages"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Denbigh Marriages, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fm%2f880081323%2f1 : accessed 17 April 2013), entry for Bernard Debelton Turner."
+        }
+      ],
+      "id": "5"
     }
   ]
 }

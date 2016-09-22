@@ -1,11 +1,15 @@
 {
   "id": "r_14721327",
+  "description": "#sd_p_10466190032",
   "persons": [
     {
       "id": "p_10466190032",
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_10466190032"
         }
       ],
       "extracted": true,
@@ -25,12 +29,12 @@
               "fullText": "Lemuel Sturdevant Leavitt",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Lemuel Sturdevant"
+                  "value": "Lemuel Sturdevant",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Leavitt"
+                  "value": "Leavitt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -58,6 +62,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_10466190033"
         }
       ],
       "extracted": true,
@@ -77,12 +84,12 @@
               "fullText": "Edward Washington Leavitt",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Edward Washington"
+                  "value": "Edward Washington",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Leavitt"
+                  "value": "Leavitt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -95,6 +102,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_10466190034"
         }
       ],
       "extracted": true,
@@ -114,12 +124,12 @@
               "fullText": "Elatheir Bunker",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Elatheir"
+                  "value": "Elatheir",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bunker"
+                  "value": "Bunker",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -132,6 +142,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_10466190035"
         }
       ],
       "extracted": true,
@@ -148,12 +161,12 @@
               "fullText": "Susan J. Leavitt",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Susan J."
+                  "value": "Susan J.",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Leavitt"
+                  "value": "Leavitt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }

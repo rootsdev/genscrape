@@ -2,23 +2,18 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#2"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Gwendoline E F"
+                  "value": "Gwendoline E F",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner-turner"
+                  "value": "Turner-turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -35,23 +30,28 @@
             "original": "Ringwood, Hampshire, England"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#2"
+        }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "2",
-      "citations": [
-        {
-          "value": "England & Wales marriages 1837-2008, database, findmypast (http://search.findmypast.com/record?id=bmd%2fm%2f1878%2f4%2faz%2f000312%2f104 : accessed 17 April 2013), entry for Gwendoline E F Turner-turner."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=bmd%2fm%2f1878%2f4%2faz%2f000312%2f104",
       "titles": [
         {
           "value": "Gwendoline E F Turner-turner in England & Wales marriages 1837-2008"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "England & Wales marriages 1837-2008, database, findmypast (http://search.findmypast.com/record?id=bmd%2fm%2f1878%2f4%2faz%2f000312%2f104 : accessed 17 April 2013), entry for Gwendoline E F Turner-turner."
+        }
+      ],
+      "id": "2"
     }
   ]
 }

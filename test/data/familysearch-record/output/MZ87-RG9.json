@@ -1,11 +1,15 @@
 {
   "id": "r_183746491",
+  "description": "#sd_p_252068161",
   "persons": [
     {
       "id": "p_252068159",
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_252068159"
         }
       ],
       "extracted": true,
@@ -25,12 +29,12 @@
               "fullText": "Joseph Van Sky",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Joseph"
+                  "value": "Joseph",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Van Sky"
+                  "value": "Van Sky",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -71,6 +75,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_252068160"
         }
       ],
       "extracted": true,
@@ -90,12 +97,12 @@
               "fullText": "Ida Van Sky",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ida"
+                  "value": "Ida",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Van Sky"
+                  "value": "Van Sky",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -136,6 +143,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_252068161"
         }
       ],
       "extracted": true,
@@ -155,12 +165,12 @@
               "fullText": "Frank Van Sky",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Frank"
+                  "value": "Frank",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Van Sky"
+                  "value": "Van Sky",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -197,6 +207,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_252068162"
         }
       ],
       "extracted": true,
@@ -216,12 +229,12 @@
               "fullText": "Caty Van Sky",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Caty"
+                  "value": "Caty",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Van Sky"
+                  "value": "Van Sky",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -258,6 +271,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_252068163"
         }
       ],
       "extracted": true,
@@ -277,12 +293,12 @@
               "fullText": "Fanny Van Sky",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Fanny"
+                  "value": "Fanny",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Van Sky"
+                  "value": "Van Sky",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }

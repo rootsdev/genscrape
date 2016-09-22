@@ -2,11 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -17,12 +12,12 @@
               "fullText": "Theodore Yurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Theodore"
+                  "value": "Theodore",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Yurkiewicz"
+                  "value": "Yurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -34,12 +29,12 @@
               "fullText": "Theodore York",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Theodore"
+                  "value": "Theodore",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "York"
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -149,15 +144,15 @@
             "original": "Hempstead, Nassau, New York, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
+      "id": "2",
       "names": [
         {
           "nameForms": [
@@ -165,12 +160,12 @@
               "fullText": "Elias Yurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Elias"
+                  "value": "Elias",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Yurkiewicz"
+                  "value": "Yurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -192,15 +187,15 @@
             "formal": "+1936"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
+      "id": "3",
       "names": [
         {
           "nameForms": [
@@ -208,12 +203,12 @@
               "fullText": "Xenia Zuk",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Xenia"
+                  "value": "Xenia",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zuk"
+                  "value": "Zuk",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -235,15 +230,15 @@
             "formal": "+1906"
           }
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
+      "id": "4",
       "names": [
         {
           "nameForms": [
@@ -251,12 +246,12 @@
               "fullText": "Helen Gertrude Zierak",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Helen Gertrude"
+                  "value": "Helen Gertrude",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -278,15 +273,15 @@
             "formal": "+1970"
           }
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
+      "id": "5",
       "names": [
         {
           "nameForms": [
@@ -294,12 +289,12 @@
               "fullText": "Margaret York",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Margaret"
+                  "value": "Margaret",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "York"
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -321,15 +316,15 @@
             "formal": "+2001"
           }
         }
-      ]
-    },
-    {
-      "id": "6",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
+      "id": "6",
       "names": [
         {
           "nameForms": [
@@ -337,12 +332,12 @@
               "fullText": "Theodore Robert York",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Theodore Robert"
+                  "value": "Theodore Robert",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "York"
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -364,58 +359,58 @@
             "formal": "+2009"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#7"
+        }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#3"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -433,79 +428,84 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#7"
+        }
       ]
     },
     {
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#6"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#6"
-      }
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "7",
-      "citations": [
-        {
-          "value": "\"Public Member Trees\", database, Ancestry.com (http://person.ancestry.com/tree/70025770/person/30206952907 : accessed 17 April 2013), profile for Theodore Yurkiewicz."
-        }
-      ],
       "about": "http://person.ancestry.com/tree/70025770/person/30206952907",
       "titles": [
         {
           "value": "Theodore Yurkiewicz - Ancestry Public Member Trees"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "\"Public Member Trees\", database, Ancestry.com (http://person.ancestry.com/tree/70025770/person/30206952907 : accessed 17 April 2013), profile for Theodore Yurkiewicz."
+        }
+      ],
+      "id": "7"
     }
   ]
 }

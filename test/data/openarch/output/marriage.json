@@ -1,215 +1,210 @@
 {
   "persons": [
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Albertus Henderikus",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kleinenberg",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "id": "1",
       "sources": [
         {
           "description": "#7"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Albertus Henderikus"
+                  "value": "Albert Kasper",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Kleinenberg"
+                  "value": "Kleinenberg",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "id": "2",
       "sources": [
         {
           "description": "#7"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Albert Kasper"
+                  "value": "Dieuwkje",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Kleinenberg"
+                  "value": "Bosma",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "id": "3",
       "sources": [
         {
           "description": "#7"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Dieuwkje"
+                  "value": "Janna",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bosma"
+                  "value": "Moes",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "id": "4",
       "sources": [
         {
           "description": "#7"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Janna"
+                  "value": "Hendrikus",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Moes"
+                  "value": "Moes",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "sources": [
-        {
-          "description": "#7"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
+      "id": "5",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Hendrikus"
+                  "value": "Geertje",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Moes"
+                  "value": "Hilberts",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "6",
-      "sources": [
-        {
-          "description": "#7"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "names": [
+      "id": "6",
+      "sources": [
         {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Geertje"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Hilberts"
-                }
-              ]
-            }
-          ]
+          "description": "#7"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -224,35 +219,40 @@
             "original": "1931-05-22"
           }
         }
-      ]
-    },
-    {
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#1"
-      }
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

@@ -1,99 +1,135 @@
 {
   "persons": [
     {
-      "id": "1",
-      "sources": [
+      "names": [
         {
-          "description": "#11"
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Alice",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Lee",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Boston, Suffolk, Massachusetts, United States"
+          },
+          "date": {
+            "original": "July 29, 1861"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "place": {
+            "original": "New York City, New York, United States"
+          },
+          "date": {
+            "original": "February 14, 1884"
+          }
+        }
+      ],
+      "id": "1",
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Alice"
+                  "value": "George Cabot",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Lee"
+                  "value": "Lee",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "July 29, 1861"
-          },
-          "place": {
-            "original": "Boston, Suffolk, Massachusetts, United States"
-          }
-        },
-        {
-          "type": "http://gedcomx.org/Death",
-          "date": {
-            "original": "February 14, 1884"
-          },
-          "place": {
-            "original": "New York City, New York, United States"
-          }
-        }
-      ]
-    },
-    {
       "id": "2",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "George Cabot"
+                  "value": "Caroline Watts",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Lee"
+                  "value": "Haskell",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Caroline Watts",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Lee",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "3",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Caroline Watts"
+                  "value": "Rose ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Haskell"
+                  "value": "Lee",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -104,38 +140,38 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Caroline Watts"
+                  "value": "Rose ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Lee"
+                  "value": "Gray",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "4",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Rose "
+                  "value": "Harriet Paine",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Lee"
+                  "value": "Lee",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -146,38 +182,38 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Rose "
+                  "value": "Harriet Paine",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Gray"
+                  "value": "Hammond",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "5",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Harriet Paine"
+                  "value": "Caroline Haskell",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Lee"
+                  "value": "Lee",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -188,38 +224,38 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Harriet Paine"
+                  "value": "Caroline Haskell",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Hammond"
+                  "value": "Fessenden",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "6",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Caroline Haskell"
+                  "value": "Isabella Mason",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Lee"
+                  "value": "Lee",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -230,136 +266,94 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Caroline Haskell"
+                  "value": "Isabella Mason",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Fessenden"
+                  "value": "Mumford",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "7",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Isabella Mason"
+                  "value": "George Cabot",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Lee"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Isabella Mason"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Mumford"
+                  "value": "Lee",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "8",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "George Cabot"
+                  "value": "Theodore ",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Lee"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
+                },
+                {
+                  "value": "Jr.",
+                  "type": "http://gedcomx.org/Suffix"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
       "id": "9",
       "sources": [
         {
           "description": "#11"
         }
-      ],
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Theodore "
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
-                },
-                {
-                  "type": "http://gedcomx.org/Suffix",
-                  "value": "Jr."
-                }
-              ]
-            }
-          ]
-        }
       ]
     },
     {
-      "id": "10",
-      "sources": [
-        {
-          "description": "#11"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Alice Lee"
+                  "value": "Alice Lee",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Roosevelt"
+                  "value": "Roosevelt",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -370,76 +364,82 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Alice Lee"
+                  "value": "Alice Lee",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Longworth"
+                  "value": "Longworth",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "id": "10",
+      "sources": [
+        {
+          "description": "#11"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#11"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#9"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#10"
-      }
+      },
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

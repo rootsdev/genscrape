@@ -2,23 +2,18 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#8"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Robert"
+                  "value": "Robert",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Coe"
+                  "value": "Coe",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -44,15 +39,14 @@
             "original": "Hempstead, Nassau County, New York, USA"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -60,12 +54,12 @@
               "fullText": "Mary Coe",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mary"
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Coe"
+                  "value": "Coe",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -80,15 +74,15 @@
             "formal": "+1628"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
+      "id": "2",
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -96,26 +90,26 @@
               "fullText": "Hannah Dearslay Coe",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Hannah Dearslay"
+                  "value": "Hannah Dearslay",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Coe"
+                  "value": "Coe",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
+      "id": "3",
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -123,26 +117,26 @@
               "fullText": "Jane Coe",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Jane"
+                  "value": "Jane",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Coe"
+                  "value": "Coe",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
+      "id": "4",
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -150,12 +144,12 @@
               "fullText": "John Coe",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John"
+                  "value": "John",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Coe"
+                  "value": "Coe",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -177,15 +171,15 @@
             "formal": "+1693"
           }
         }
-      ]
-    },
-    {
-      "id": "6",
+      ],
+      "id": "5",
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -193,12 +187,12 @@
               "fullText": "Robert Coe",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Robert"
+                  "value": "Robert",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Coe"
+                  "value": "Coe",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -220,15 +214,15 @@
             "formal": "+1659"
           }
         }
-      ]
-    },
-    {
-      "id": "7",
+      ],
+      "id": "6",
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -236,12 +230,12 @@
               "fullText": "Benjamin Coe",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Benjamin"
+                  "value": "Benjamin",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Coe"
+                  "value": "Coe",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -263,93 +257,99 @@
             "formal": "+1696"
           }
         }
+      ],
+      "id": "7",
+      "sources": [
+        {
+          "description": "#8"
+        }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#8"
-        }
-      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#2"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#3"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#4"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#6"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#8"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#7"
-      }
+      },
+      "sources": [
+        {
+          "description": "#8"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

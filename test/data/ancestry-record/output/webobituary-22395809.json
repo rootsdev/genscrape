@@ -2,14 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
       "names": [
         {
           "nameForms": [
@@ -17,18 +9,21 @@
               "fullText": "Joyce Ann Mears",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Joyce Ann"
+                  "value": "Joyce Ann",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Mears"
+                  "value": "Mears",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
@@ -45,15 +40,15 @@
             "original": "Seaford, Nassau, New York, USA"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
+      "id": "2",
       "names": [
         {
           "nameForms": [
@@ -61,26 +56,26 @@
               "fullText": "Fred  Smith",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Fred"
+                  "value": "Fred",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
+      "id": "3",
       "names": [
         {
           "nameForms": [
@@ -88,26 +83,26 @@
               "fullText": "Ruth Ellen Meredith",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ruth Ellen"
+                  "value": "Ruth Ellen",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Meredith"
+                  "value": "Meredith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
+      "id": "4",
       "names": [
         {
           "nameForms": [
@@ -115,26 +110,26 @@
               "fullText": "Jerry V. Mears",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Jerry V."
+                  "value": "Jerry V.",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Mears"
+                  "value": "Mears",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
+      "id": "5",
       "names": [
         {
           "nameForms": [
@@ -142,26 +137,26 @@
               "fullText": "Michelle Lowe",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Michelle"
+                  "value": "Michelle",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Lowe"
+                  "value": "Lowe",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "6",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
+      "id": "6",
       "names": [
         {
           "nameForms": [
@@ -169,106 +164,111 @@
               "fullText": "Richard Mears",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Richard"
+                  "value": "Richard",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Mears"
+                  "value": "Mears",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#7"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#4"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#6"
-      }
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "7",
-      "citations": [
-        {
-          "value": "Publication Date: 03/ 10/ 2010; Web edition: http://www.legacy.com/obituaries/newszapde/obituary.aspx?n=joyce-ann-mears&pid=140535508"
-        }
-      ],
       "about": "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=web-obituary&h=22395809",
       "titles": [
         {
           "value": "Joyce Ann Mears in the U.S., Obituary Collection, 1930 - 2015"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Publication Date: 03/ 10/ 2010; Web edition: http://www.legacy.com/obituaries/newszapde/obituary.aspx?n=joyce-ann-mears&pid=140535508"
+        }
+      ],
+      "id": "7"
     }
   ]
 }

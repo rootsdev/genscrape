@@ -2,32 +2,27 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#8"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Abraham"
+                  "value": "Abraham",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
@@ -38,197 +33,202 @@
             "original": "Warwickshire"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#8"
+        }
       ]
     },
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "William",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "id": "2",
       "sources": [
         {
           "description": "#8"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "William"
+                  "value": "Martha",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "id": "3",
       "sources": [
         {
           "description": "#8"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Martha"
+                  "value": "Fanny",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "id": "4",
       "sources": [
         {
           "description": "#8"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Fanny"
+                  "value": "Eliza",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "id": "5",
       "sources": [
         {
           "description": "#8"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Eliza"
+                  "value": "Job",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "id": "6",
       "sources": [
         {
           "description": "#8"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Job"
+                  "value": "Joseph",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "id": "7",
       "sources": [
         {
           "description": "#8"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Joseph"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
-                }
-              ]
-            }
-          ]
         }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "8",
-      "citations": [
-        {
-          "value": "1841 England, Wales & Scotland Census, database, findmypast (http://search.findmypast.com/record?id=gbc%2f1841%2f0005244738 : accessed 17 April 2013), entry for Abraham Smith."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=gbc%2f1841%2f0005244738",
       "titles": [
         {
           "value": "Abraham Smith in 1841 England, Wales & Scotland Census"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "1841 England, Wales & Scotland Census, database, findmypast (http://search.findmypast.com/record?id=gbc%2f1841%2f0005244738 : accessed 17 April 2013), entry for Abraham Smith."
+        }
+      ],
+      "id": "8"
     }
   ]
 }

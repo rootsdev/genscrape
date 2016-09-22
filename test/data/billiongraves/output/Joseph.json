@@ -2,11 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ],
       "names": [
         {
           "nameForms": [
@@ -14,12 +9,12 @@
               "fullText": "Joseph Clark",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Joseph"
+                  "value": "Joseph",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Clark"
+                  "value": "Clark",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -46,15 +41,14 @@
             "original": "Pleasant Grove City Cemetery, Pleasant Grove, Utah, Utah, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -62,12 +56,12 @@
               "fullText": "Phylinda Clark",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Phylinda"
+                  "value": "Phylinda",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Clark"
+                  "value": "Clark",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -87,15 +81,15 @@
             "original": "16 Jan 1853"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
+      "id": "2",
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -103,12 +97,12 @@
               "fullText": "Mary M. Walker",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mary M."
+                  "value": "Mary M.",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Walker"
+                  "value": "Walker",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -128,15 +122,15 @@
             "original": "22 Mar 1864"
           }
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
+      "id": "3",
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -144,12 +138,12 @@
               "fullText": "Susan M. Walker",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Susan M."
+                  "value": "Susan M.",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Walker"
+                  "value": "Walker",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -169,15 +163,15 @@
             "original": "26 Oct 1860"
           }
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
+      "id": "4",
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -185,12 +179,12 @@
               "fullText": "Sophronia Walker",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Sophronia"
+                  "value": "Sophronia",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Walker"
+                  "value": "Walker",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -209,6 +203,12 @@
           "date": {
             "original": "30 Sep 1900"
           }
+        }
+      ],
+      "id": "5",
+      "sources": [
+        {
+          "description": "#6"
         }
       ]
     }

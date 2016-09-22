@@ -2,14 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#11"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
       "names": [
         {
           "nameForms": [
@@ -17,51 +9,50 @@
               "fullText": "Mary Ball",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mary"
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Ball"
+                  "value": "Ball",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
+          "value": "at Epping Forest",
           "date": {
             "original": "1708"
           },
           "place": {
             "original": "Lancaster County, Virginia"
-          },
-          "value": "at Epping Forest"
+          }
         },
         {
           "type": "http://gedcomx.org/Death",
+          "value": "died of breast cancer",
           "date": {
             "original": "25 Aug 1789"
           },
           "place": {
             "original": "Fredericksburg, Virginia, United States"
-          },
-          "value": "died of breast cancer"
+          }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -69,12 +60,12 @@
               "fullText": "Col. Joseph Ball, of St. Mary's White Chapel Parish",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Col. Joseph Ball, of St. Mary's White Chapel"
+                  "value": "Col. Joseph Ball, of St. Mary's White Chapel",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Parish"
+                  "value": "Parish",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -94,18 +85,18 @@
             "original": "bef 1711"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "id": "2",
       "sources": [
         {
           "description": "#11"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -113,12 +104,12 @@
               "fullText": "Mary Unknown",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mary"
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Unknown"
+                  "value": "Unknown",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -138,18 +129,18 @@
             "original": "1721"
           }
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "id": "3",
       "sources": [
         {
           "description": "#11"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -157,12 +148,12 @@
               "fullText": "Captain Augustine Washington",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Captain Augustine"
+                  "value": "Captain Augustine",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Washington"
+                  "value": "Washington",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -182,15 +173,18 @@
             "original": "1743"
           }
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "id": "4",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -198,12 +192,12 @@
               "fullText": "President George Washington",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "President George"
+                  "value": "President George",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Washington"
+                  "value": "Washington",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -223,15 +217,15 @@
             "original": "1799"
           }
         }
-      ]
-    },
-    {
-      "id": "6",
+      ],
+      "id": "5",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -239,12 +233,12 @@
               "fullText": "Betty Washington",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Betty"
+                  "value": "Betty",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Washington"
+                  "value": "Washington",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -264,15 +258,15 @@
             "original": "1797"
           }
         }
-      ]
-    },
-    {
-      "id": "7",
+      ],
+      "id": "6",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -280,12 +274,12 @@
               "fullText": "Samuel Washington",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Samuel"
+                  "value": "Samuel",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Washington"
+                  "value": "Washington",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -305,15 +299,15 @@
             "original": "1781"
           }
         }
-      ]
-    },
-    {
-      "id": "8",
+      ],
+      "id": "7",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -321,12 +315,12 @@
               "fullText": "John Augustine Washington",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John Augustine"
+                  "value": "John Augustine",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Washington"
+                  "value": "Washington",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -346,15 +340,15 @@
             "original": "1787"
           }
         }
-      ]
-    },
-    {
-      "id": "9",
+      ],
+      "id": "8",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -362,12 +356,12 @@
               "fullText": "Charles Washington",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Charles"
+                  "value": "Charles",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Washington"
+                  "value": "Washington",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -387,15 +381,15 @@
             "original": "1799"
           }
         }
-      ]
-    },
-    {
-      "id": "10",
+      ],
+      "id": "9",
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -403,12 +397,12 @@
               "fullText": "Mildred Washington",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mildred"
+                  "value": "Mildred",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Washington"
+                  "value": "Washington",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -428,44 +422,45 @@
             "original": "1740"
           }
         }
+      ],
+      "id": "10",
+      "sources": [
+        {
+          "description": "#11"
+        }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#11"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#2"
@@ -480,14 +475,14 @@
             "original": "abt 1707"
           }
         }
-      ]
-    },
-    {
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -502,175 +497,180 @@
             "original": "6 Mar 1731"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#11"
+        }
       ]
     },
     {
-      "sources": [
-        {
-          "description": "#11"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#6"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#6"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#7"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#7"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#8"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#8"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#9"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#9"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#10"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#10"
-      }
+      },
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

@@ -2,23 +2,18 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#5"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Nancy"
+                  "value": "Nancy",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -50,15 +45,14 @@
             "original": "Ronald W. Reagan Presidential Library, Simi Valley, Ventura County, California, USA"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -66,12 +60,12 @@
               "fullText": "Kenneth Seymour Robbins",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Kenneth Seymour"
+                  "value": "Kenneth Seymour",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Robbins"
+                  "value": "Robbins",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -93,15 +87,15 @@
             "formal": "+1972"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
+      "id": "2",
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -109,12 +103,12 @@
               "fullText": "Edith Prescott Luckett Davis",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Edith Prescott Luckett"
+                  "value": "Edith Prescott Luckett",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Davis"
+                  "value": "Davis",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -136,15 +130,15 @@
             "formal": "+1987"
           }
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
+      "id": "3",
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -152,12 +146,12 @@
               "fullText": "Ronald Wilson Reagan",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ronald Wilson"
+                  "value": "Ronald Wilson",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -179,51 +173,57 @@
             "formal": "+2004"
           }
         }
+      ],
+      "id": "4",
+      "sources": [
+        {
+          "description": "#5"
+        }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#5"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#4"
-      }
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

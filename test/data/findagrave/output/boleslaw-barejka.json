@@ -2,23 +2,18 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#2"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Boleslaw"
+                  "value": "Boleslaw",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Barejka"
+                  "value": "Barejka",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -37,6 +32,11 @@
           "place": {
             "original": "Saint Stanislaus Cemetery, Amsterdam, Montgomery County, New York, USA"
           }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#2"
         }
       ]
     }

@@ -2,64 +2,59 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#3"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "David Charles"
+                  "value": "David Charles",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#3"
         }
       ]
     },
     {
-      "id": "2",
-      "sources": [
-        {
-          "description": "#3"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Margaret"
+                  "value": "Margaret",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jones"
+                  "value": "Jones",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#3"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#3"
-        }
-      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -77,23 +72,28 @@
             "original": "BRYMBO"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "3",
-      "citations": [
-        {
-          "value": "Denbigh Banns, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fm%2f881019255%2f1 : accessed 17 April 2013), entry for David Charles Turner."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=gbprs%2fm%2f881019255%2f1",
       "titles": [
         {
           "value": "David Charles Turner in Denbigh Banns"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Denbigh Banns, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fm%2f881019255%2f1 : accessed 17 April 2013), entry for David Charles Turner."
+        }
+      ],
+      "id": "3"
     }
   ]
 }

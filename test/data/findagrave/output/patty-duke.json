@@ -2,23 +2,18 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Patty"
+                  "value": "Patty",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Duke"
+                  "value": "Duke",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -50,15 +45,14 @@
             "original": "Forest Cemetery, Coeur d'Alene, Kootenai County, Idaho, USA"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -66,12 +60,12 @@
               "fullText": "John Patrick Duke",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John Patrick"
+                  "value": "John Patrick",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Duke"
+                  "value": "Duke",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -93,15 +87,15 @@
             "formal": "+1964"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
+      "id": "2",
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -109,12 +103,12 @@
               "fullText": "Frances Margaret McMahon Duke",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Frances Margaret McMahon"
+                  "value": "Frances Margaret McMahon",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Duke"
+                  "value": "Duke",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -136,15 +130,15 @@
             "formal": "+1993"
           }
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
+      "id": "3",
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -152,12 +146,12 @@
               "fullText": "Harry Falk",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Harry"
+                  "value": "Harry",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Falk"
+                  "value": "Falk",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -179,15 +173,15 @@
             "formal": "+2016"
           }
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
+      "id": "4",
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -195,12 +189,12 @@
               "fullText": "Carol Ann Duke Kennedy",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Carol Ann Duke"
+                  "value": "Carol Ann Duke",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Kennedy"
+                  "value": "Kennedy",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -222,15 +216,15 @@
             "formal": "+2013"
           }
         }
-      ]
-    },
-    {
-      "id": "6",
+      ],
+      "id": "5",
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -238,12 +232,12 @@
               "fullText": "Patty Duke",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Patty"
+                  "value": "Patty",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Duke"
+                  "value": "Duke",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -265,51 +259,57 @@
             "formal": "+2016"
           }
         }
+      ],
+      "id": "6",
+      "sources": [
+        {
+          "description": "#7"
+        }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#4"
-      }
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

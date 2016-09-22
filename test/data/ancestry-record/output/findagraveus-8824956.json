@@ -2,11 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#2"
-        }
-      ],
       "names": [
         {
           "nameForms": [
@@ -14,12 +9,12 @@
               "fullText": "Ann Armstrong",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ann"
+                  "value": "Ann",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Armstrong"
+                  "value": "Armstrong",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -33,23 +28,28 @@
             "original": "27 May 1890"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#2"
+        }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "2",
-      "citations": [
-        {
-          "value": "Ancestry.com. U.S., Find A Grave Index, 1600s-Current [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2012.                                                                                                                Original data:                                                  Find A Grave. Find A Grave. http://www.findagrave.com/cgi-bin/fg.cgi."
-        }
-      ],
       "about": "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=findagraveus&h=8824956",
       "titles": [
         {
           "value": "Ann Armstrong in the U.S., Find A Grave Index, 1600s-Current"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Ancestry.com. U.S., Find A Grave Index, 1600s-Current [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2012.                                                                                                                Original data:                                                  Find A Grave. Find A Grave. http://www.findagrave.com/cgi-bin/fg.cgi."
+        }
+      ],
+      "id": "2"
     }
   ]
 }

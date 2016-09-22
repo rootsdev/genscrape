@@ -2,32 +2,27 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Wadiswat"
+                  "value": "Wadiswat",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "York"
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/MaritalStatus",
@@ -42,221 +37,226 @@
             "original": "Pennsylvania"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#6"
+        }
       ]
     },
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Adam",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        }
+      ],
       "id": "2",
       "sources": [
         {
           "description": "#6"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Adam"
+                  "value": "Martha",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "York"
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org/MaritalStatus",
-          "value": "Married"
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "sources": [
-        {
-          "description": "#6"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Martha"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "York"
-                }
-              ]
-            }
-          ]
-        }
-      ],
       "facts": [
         {
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Married"
         }
+      ],
+      "id": "3",
+      "sources": [
+        {
+          "description": "#6"
+        }
       ]
     },
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Steine",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
+      ],
       "id": "4",
       "sources": [
         {
           "description": "#6"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Steine"
+                  "value": "Balesworth",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "York"
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Single"
         }
-      ]
-    },
-    {
+      ],
       "id": "5",
       "sources": [
         {
           "description": "#6"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Balesworth"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "York"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org/MaritalStatus",
-          "value": "Single"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#4"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#3"
-      }
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "6",
-      "citations": [
-        {
-          "value": "US Census 1900, database, findmypast (http://search.findmypast.com/record?id=usc%2f1900%2f004114960%2f00265%2f084 : accessed 17 April 2013), entry for Wadiswat York."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=usc%2f1900%2f004114960%2f00265%2f084",
       "titles": [
         {
           "value": "Wadiswat York in US Census 1900"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "US Census 1900, database, findmypast (http://search.findmypast.com/record?id=usc%2f1900%2f004114960%2f00265%2f084 : accessed 17 April 2013), entry for Wadiswat York."
+        }
+      ],
+      "id": "6"
     }
   ]
 }

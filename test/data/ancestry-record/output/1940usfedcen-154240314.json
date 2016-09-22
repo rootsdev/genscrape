@@ -2,14 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
       "names": [
         {
           "nameForms": [
@@ -17,12 +9,12 @@
               "fullText": "Katie B Coast",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Katie B"
+                  "value": "Katie B",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Coast"
+                  "value": "Coast",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -34,18 +26,21 @@
               "fullText": "Katie B Thurman",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Katie B"
+                  "value": "Katie B",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Thurman"
+                  "value": "Thurman",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
@@ -77,15 +72,15 @@
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Married"
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
+      "id": "2",
       "names": [
         {
           "nameForms": [
@@ -93,12 +88,12 @@
               "fullText": "John W Coast",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John W"
+                  "value": "John W",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Coast"
+                  "value": "Coast",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -113,15 +108,15 @@
             "formal": "A+1888"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
+      "id": "3",
       "names": [
         {
           "nameForms": [
@@ -129,12 +124,12 @@
               "fullText": "Billie Bond",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Billie"
+                  "value": "Billie",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bond"
+                  "value": "Bond",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -149,15 +144,15 @@
             "formal": "A+1925"
           }
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
+      "id": "4",
       "names": [
         {
           "nameForms": [
@@ -165,12 +160,12 @@
               "fullText": "Wm Thurman",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Wm"
+                  "value": "Wm",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Thurman"
+                  "value": "Thurman",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -185,15 +180,15 @@
             "formal": "A+1920"
           }
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
+      "id": "5",
       "names": [
         {
           "nameForms": [
@@ -201,12 +196,12 @@
               "fullText": "Chauncey McFarland",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Chauncey"
+                  "value": "Chauncey",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "McFarland"
+                  "value": "McFarland",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -221,23 +216,28 @@
             "formal": "A+1914"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#6"
+        }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "6",
-      "citations": [
-        {
-          "value": "Year: 1940; Census Place: Highland Park, Dallas, Texas; Roll: T627_4015; Page: 3A; Enumeration District: 57-1C"
-        }
-      ],
       "about": "http://search.ancestry.com/cgi-bin/sse.dll?db=1940usfedcen&indiv=try&h=154240314",
       "titles": [
         {
           "value": "Katie B Coast in the 1940 United States Federal Census"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Year: 1940; Census Place: Highland Park, Dallas, Texas; Roll: T627_4015; Page: 3A; Enumeration District: 57-1C"
+        }
+      ],
+      "id": "6"
     }
   ]
 }

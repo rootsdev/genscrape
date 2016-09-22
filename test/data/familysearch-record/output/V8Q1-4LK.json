@@ -1,5 +1,6 @@
 {
   "id": "r_21939020887",
+  "description": "#sd_p_13393329949",
   "persons": [
     {
       "id": "p_13393329949",
@@ -18,6 +19,11 @@
           "place": {
             "original": "Erath, Texas"
           }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#sd_p_13393329949"
         }
       ]
     },
@@ -40,16 +46,21 @@
               "fullText": "I N Sligar",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "I N"
+                  "value": "I N",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sligar"
+                  "value": "Sligar",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#sd_p_13393329948"
         }
       ]
     }

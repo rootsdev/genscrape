@@ -2,23 +2,18 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Kenneth Seymour"
+                  "value": "Kenneth Seymour",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Robbins"
+                  "value": "Robbins",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -50,15 +45,14 @@
             "original": "Pittsfield Cemetery, Pittsfield, Berkshire County, Massachusetts, USA"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -66,12 +60,12 @@
               "fullText": "John Newell Robbins",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John Newell"
+                  "value": "John Newell",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Robbins"
+                  "value": "Robbins",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -93,15 +87,15 @@
             "formal": "+1917"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
+      "id": "2",
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -109,12 +103,12 @@
               "fullText": "Ann Ayers Francis Robbins",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ann Ayers Francis"
+                  "value": "Ann Ayers Francis",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Robbins"
+                  "value": "Robbins",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -136,15 +130,15 @@
             "formal": "+1957"
           }
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
+      "id": "3",
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -152,12 +146,12 @@
               "fullText": "Edith Prescott Luckett Davis",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Edith Prescott Luckett"
+                  "value": "Edith Prescott Luckett",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Davis"
+                  "value": "Davis",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -179,15 +173,15 @@
             "formal": "+1987"
           }
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
+      "id": "4",
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -195,12 +189,12 @@
               "fullText": "Nancy Reagan",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Nancy"
+                  "value": "Nancy",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -222,65 +216,71 @@
             "formal": "+2016"
           }
         }
+      ],
+      "id": "5",
+      "sources": [
+        {
+          "description": "#6"
+        }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#4"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#6"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#5"
-      }
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

@@ -2,32 +2,27 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#3"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Anastazja"
+                  "value": "Anastazja",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
@@ -50,49 +45,54 @@
             "original": "SAINT JOHN NB"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#3"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "WASYL"
+                  "value": "WASYL",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "JURKIEWICZ"
+                  "value": "JURKIEWICZ",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#3"
         }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "3",
-      "citations": [
-        {
-          "value": "Passenger Lists leaving UK 1890-1960, database, findmypast (http://search.findmypast.com/record?id=tna%2fbt27%2f0980000042%2f00187 : accessed 17 April 2013), entry for Anastazja Jurkiewicz."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=tna%2fbt27%2f0980000042%2f00187",
       "titles": [
         {
           "value": "Anastazja Jurkiewicz in Passenger Lists leaving UK 1890-1960"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Passenger Lists leaving UK 1890-1960, database, findmypast (http://search.findmypast.com/record?id=tna%2fbt27%2f0980000042%2f00187 : accessed 17 April 2013), entry for Anastazja Jurkiewicz."
+        }
+      ],
+      "id": "3"
     }
   ]
 }

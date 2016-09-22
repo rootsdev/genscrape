@@ -1,12 +1,6 @@
 {
   "persons": [
     {
-      "id": "1",
-      "sources": [
-        {
-          "description": "#16"
-        }
-      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -16,12 +10,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Helen Gertrude"
+                  "value": "Helen Gertrude",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -49,15 +43,15 @@
             "original": "Tacoma, Pierce, Washington, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
+      "id": "1",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -67,12 +61,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Theodore"
+                  "value": "Theodore",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Yurkiewicz"
+                  "value": "Yurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -100,15 +94,15 @@
             "original": "Northampton, Hampshire, Massachusetts, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
+      "id": "2",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -118,12 +112,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Margaret"
+                  "value": "Margaret",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "York"
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -144,15 +138,15 @@
             "original": "Tacoma, Pierce, Washington, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
+      "id": "3",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -162,12 +156,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Theodore Robert"
+                  "value": "Theodore Robert",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "York"
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -195,15 +189,15 @@
             "original": "Sandy, Salt Lake, Utah, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
+      "id": "4",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -213,12 +207,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Albert John"
+                  "value": "Albert John",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -246,15 +240,15 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "6",
+      ],
+      "id": "5",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -264,12 +258,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mary"
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Wojnowski"
+                  "value": "Wojnowski",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -297,15 +291,15 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "7",
+      ],
+      "id": "6",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -315,12 +309,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Catherine"
+                  "value": "Catherine",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -348,15 +342,15 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "8",
+      ],
+      "id": "7",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -366,12 +360,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Anna"
+                  "value": "Anna",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -399,15 +393,15 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "9",
+      ],
+      "id": "8",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -417,12 +411,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John"
+                  "value": "John",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -450,15 +444,15 @@
             "original": "Seattle, King, Washington, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "10",
+      ],
+      "id": "9",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -468,12 +462,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Stephen A"
+                  "value": "Stephen A",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -501,15 +495,15 @@
             "original": "Bath, Steuben, New York, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "11",
+      ],
+      "id": "10",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -519,12 +513,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Andrew Joseph"
+                  "value": "Andrew Joseph",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -552,15 +546,15 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "12",
+      ],
+      "id": "11",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -570,12 +564,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Josephine"
+                  "value": "Josephine",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -603,15 +597,15 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "13",
+      ],
+      "id": "12",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -621,12 +615,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Genevieve"
+                  "value": "Genevieve",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -654,15 +648,15 @@
             "original": "Hudson Falls, Washington, New York, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "14",
+      ],
+      "id": "13",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -672,12 +666,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Margaret"
+                  "value": "Margaret",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -705,15 +699,15 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
-      ]
-    },
-    {
-      "id": "15",
+      ],
+      "id": "14",
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
@@ -723,12 +717,12 @@
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Albert"
+                  "value": "Albert",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Zierak"
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -756,16 +750,17 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
+      ],
+      "id": "15",
+      "sources": [
+        {
+          "description": "#16"
+        }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#16"
-        }
-      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -784,373 +779,378 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#16"
+        }
       ]
     },
     {
-      "sources": [
-        {
-          "description": "#16"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#3"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#3"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#4"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#4"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#6"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#7"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#7"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#8"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#8"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#9"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#9"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#10"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#10"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#11"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#11"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#12"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#12"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#13"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#13"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#14"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#14"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#15"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#16"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#15"
-      }
+      },
+      "sources": [
+        {
+          "description": "#16"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "16",
-      "citations": [
-        {
-          "value": "\"yorks-march-2015 - findmypast Family Tree\" (http://tree.findmypast.co.uk/#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/1079720864/media : accessed 17 April 2013), profile for Helen Gertrude Zierak."
-        }
-      ],
       "about": "http://tree.findmypast.co.uk/#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/1079720864/media",
       "titles": [
         {
           "value": "Helen Gertrude Zierak - yorks-march-2015 - findmypast Family Tree"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "\"yorks-march-2015 - findmypast Family Tree\" (http://tree.findmypast.co.uk/#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/1079720864/media : accessed 17 April 2013), profile for Helen Gertrude Zierak."
+        }
+      ],
+      "id": "16"
     }
   ]
 }

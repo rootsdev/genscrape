@@ -2,11 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#15"
-        }
-      ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
@@ -17,26 +12,26 @@
               "fullText": "Catharina Czosnikoska",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Catharina"
+                  "value": "Catharina",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Czosnikoska"
+                  "value": "Czosnikoska",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "2",
       "names": [
         {
           "nameForms": [
@@ -44,26 +39,26 @@
               "fullText": "Joannes Czosnikoska",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Joannes"
+                  "value": "Joannes",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Czosnikoska"
+                  "value": "Czosnikoska",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "3",
       "names": [
         {
           "nameForms": [
@@ -71,22 +66,22 @@
               "fullText": "Xenia",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Xenia"
+                  "value": "Xenia",
+                  "type": "http://gedcomx.org/Given"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "4",
       "names": [
         {
           "nameForms": [
@@ -94,26 +89,26 @@
               "fullText": "Joannes Jurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Joannes"
+                  "value": "Joannes",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "5",
       "names": [
         {
           "nameForms": [
@@ -121,12 +116,12 @@
               "fullText": "Pawel Jurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Pawel"
+                  "value": "Pawel",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -141,15 +136,15 @@
             "formal": "+1839"
           }
         }
-      ]
-    },
-    {
-      "id": "6",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "6",
       "names": [
         {
           "nameForms": [
@@ -157,12 +152,12 @@
               "fullText": "Jan Jurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Jan"
+                  "value": "Jan",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -184,15 +179,15 @@
             "formal": "+1843"
           }
         }
-      ]
-    },
-    {
-      "id": "7",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "7",
       "names": [
         {
           "nameForms": [
@@ -200,12 +195,12 @@
               "fullText": "Eudosia Jurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Eudosia"
+                  "value": "Eudosia",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -227,15 +222,15 @@
             "formal": "+1848"
           }
         }
-      ]
-    },
-    {
-      "id": "8",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "8",
       "names": [
         {
           "nameForms": [
@@ -243,12 +238,12 @@
               "fullText": "Ignatius Jurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ignatius"
+                  "value": "Ignatius",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -270,15 +265,15 @@
             "formal": "+1847"
           }
         }
-      ]
-    },
-    {
-      "id": "9",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "9",
       "names": [
         {
           "nameForms": [
@@ -286,12 +281,12 @@
               "fullText": "Cirillus Jurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Cirillus"
+                  "value": "Cirillus",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -313,15 +308,15 @@
             "formal": "+1848"
           }
         }
-      ]
-    },
-    {
-      "id": "10",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "10",
       "names": [
         {
           "nameForms": [
@@ -329,12 +324,12 @@
               "fullText": "Elias Yurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Elias"
+                  "value": "Elias",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Yurkiewicz"
+                  "value": "Yurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -356,15 +351,15 @@
             "formal": "+1936"
           }
         }
-      ]
-    },
-    {
-      "id": "11",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "11",
       "names": [
         {
           "nameForms": [
@@ -372,12 +367,12 @@
               "fullText": "Procopius Jurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Procopius"
+                  "value": "Procopius",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -399,15 +394,15 @@
             "formal": "+1853"
           }
         }
-      ]
-    },
-    {
-      "id": "12",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "12",
       "names": [
         {
           "nameForms": [
@@ -415,12 +410,12 @@
               "fullText": "Simeon Jurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Simeon"
+                  "value": "Simeon",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -442,15 +437,15 @@
             "formal": "+1856"
           }
         }
-      ]
-    },
-    {
-      "id": "13",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "13",
       "names": [
         {
           "nameForms": [
@@ -458,12 +453,12 @@
               "fullText": "Stefanus Jurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Stefanus"
+                  "value": "Stefanus",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -478,15 +473,15 @@
             "formal": "+1858"
           }
         }
-      ]
-    },
-    {
-      "id": "14",
+      ],
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
+      "id": "14",
       "names": [
         {
           "nameForms": [
@@ -494,372 +489,377 @@
               "fullText": "Maria Jurkiewicz",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Maria"
+                  "value": "Maria",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Jurkiewicz"
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#15"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#15"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#3"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#4"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#6"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#6"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#7"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#7"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#8"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#8"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#9"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#9"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#10"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#10"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#11"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#11"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#12"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#12"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#13"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#13"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#14"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#15"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#14"
-      }
+      },
+      "sources": [
+        {
+          "description": "#15"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "15",
-      "citations": [
-        {
-          "value": "\"Public Member Trees\", database, Ancestry.com (http://person.ancestry.com/tree/70025770/person/30206952926 : accessed 17 April 2013), profile for Catharina Czosnikoska."
-        }
-      ],
       "about": "http://person.ancestry.com/tree/70025770/person/30206952926",
       "titles": [
         {
           "value": "Catharina Czosnikoska - Ancestry Public Member Trees"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "\"Public Member Trees\", database, Ancestry.com (http://person.ancestry.com/tree/70025770/person/30206952926 : accessed 17 April 2013), profile for Catharina Czosnikoska."
+        }
+      ],
+      "id": "15"
     }
   ]
 }

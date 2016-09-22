@@ -2,14 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#11"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
       "names": [
         {
           "nameForms": [
@@ -17,18 +9,21 @@
               "fullText": "Chas E Bradshaw",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Chas E"
+                  "value": "Chas E",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bradshaw"
+                  "value": "Bradshaw",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
@@ -53,15 +48,15 @@
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Single"
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
+      "id": "2",
       "names": [
         {
           "nameForms": [
@@ -69,12 +64,12 @@
               "fullText": "Jas C Bradshaw",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Jas C"
+                  "value": "Jas C",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bradshaw"
+                  "value": "Bradshaw",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -95,15 +90,15 @@
             "formal": "A+1859"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
+      "id": "3",
       "names": [
         {
           "nameForms": [
@@ -111,12 +106,12 @@
               "fullText": "Minnie M Bradshaw",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Minnie M"
+                  "value": "Minnie M",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bradshaw"
+                  "value": "Bradshaw",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -137,15 +132,15 @@
             "formal": "A+1876"
           }
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
+      "id": "4",
       "names": [
         {
           "nameForms": [
@@ -153,12 +148,12 @@
               "fullText": "David B Bradshaw",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "David B"
+                  "value": "David B",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bradshaw"
+                  "value": "Bradshaw",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -173,15 +168,15 @@
             "formal": "A+1879"
           }
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
+      "id": "5",
       "names": [
         {
           "nameForms": [
@@ -189,12 +184,12 @@
               "fullText": "Martha L Bradshaw",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Martha L"
+                  "value": "Martha L",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bradshaw"
+                  "value": "Bradshaw",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -209,15 +204,15 @@
             "formal": "A+1882"
           }
         }
-      ]
-    },
-    {
-      "id": "6",
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
+      "id": "6",
       "names": [
         {
           "nameForms": [
@@ -225,12 +220,12 @@
               "fullText": "Della J Bradshaw",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Della J"
+                  "value": "Della J",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bradshaw"
+                  "value": "Bradshaw",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -245,15 +240,15 @@
             "formal": "A+1884"
           }
         }
-      ]
-    },
-    {
-      "id": "7",
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
+      "id": "7",
       "names": [
         {
           "nameForms": [
@@ -261,12 +256,12 @@
               "fullText": "John H Bradshaw",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John H"
+                  "value": "John H",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bradshaw"
+                  "value": "Bradshaw",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -281,15 +276,15 @@
             "formal": "A+1887"
           }
         }
-      ]
-    },
-    {
-      "id": "8",
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
+      "id": "8",
       "names": [
         {
           "nameForms": [
@@ -297,12 +292,12 @@
               "fullText": "Eddie Bradshaw",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Eddie"
+                  "value": "Eddie",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bradshaw"
+                  "value": "Bradshaw",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -317,15 +312,15 @@
             "formal": "A+1893"
           }
         }
-      ]
-    },
-    {
-      "id": "9",
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
+      "id": "9",
       "names": [
         {
           "nameForms": [
@@ -333,12 +328,12 @@
               "fullText": "Maggie A Bradshaw",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Maggie A"
+                  "value": "Maggie A",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bradshaw"
+                  "value": "Bradshaw",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -353,15 +348,15 @@
             "formal": "A+1895"
           }
         }
-      ]
-    },
-    {
-      "id": "10",
+      ],
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
+      "id": "10",
       "names": [
         {
           "nameForms": [
@@ -369,12 +364,12 @@
               "fullText": "Mary E Bradshaw",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mary E"
+                  "value": "Mary E",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Bradshaw"
+                  "value": "Bradshaw",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -389,53 +384,58 @@
             "formal": "A+1895"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#11"
+        }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#11"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#11"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
+      },
+      "sources": [
+        {
+          "description": "#11"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "11",
-      "citations": [
-        {
-          "value": "Year: 1900; Census Place: Armour, Limestone, Texas; Roll: 1655; Page: 33B; Enumeration District: 0063; FHL microfilm: 1241655"
-        }
-      ],
       "about": "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=1900usfedcen&h=54351117",
       "titles": [
         {
           "value": "Chas E Bradshaw in the 1900 United States Federal Census"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Year: 1900; Census Place: Armour, Limestone, Texas; Roll: 1655; Page: 33B; Enumeration District: 0063; FHL microfilm: 1241655"
+        }
+      ],
+      "id": "11"
     }
   ]
 }

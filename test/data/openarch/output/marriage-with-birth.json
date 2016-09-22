@@ -1,237 +1,232 @@
 {
   "persons": [
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Pieter Abraham",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kropff",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Leiden"
+          },
+          "date": {
+            "original": "1791-08-30"
+          }
+        }
+      ],
       "id": "1",
       "sources": [
         {
           "description": "#7"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Pieter Abraham"
+                  "value": "Johan Nicolaas",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Kropff"
+                  "value": "Kropf",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "1791-08-30"
-          },
-          "place": {
-            "original": "Leiden"
-          }
-        }
-      ]
-    },
-    {
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "id": "2",
       "sources": [
         {
           "description": "#7"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Johan Nicolaas"
+                  "value": "Catharina",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Kropf"
+                  "value": "van Elsen",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "id": "3",
       "sources": [
         {
           "description": "#7"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Catharina"
+                  "value": "Lisabeth",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "van Elsen"
+                  "value": "Engelhard",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Leeuwarden"
+          },
+          "date": {
+            "original": "1792-03-01"
+          }
+        }
+      ],
       "id": "4",
       "sources": [
         {
           "description": "#7"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Lisabeth"
+                  "value": "Hendrik",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Engelhard"
+                  "value": "Engelhard",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "1792-03-01"
-          },
-          "place": {
-            "original": "Leeuwarden"
-          }
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "sources": [
-        {
-          "description": "#7"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
+      "id": "5",
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Hendrik"
+                  "value": "Anna Catharina",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Engelhard"
+                  "value": "Meerhooff",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "6",
-      "sources": [
-        {
-          "description": "#7"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "names": [
+      "id": "6",
+      "sources": [
         {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Anna Catharina"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Meerhooff"
-                }
-              ]
-            }
-          ]
+          "description": "#7"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -246,35 +241,40 @@
             "original": "1822-03-14"
           }
         }
-      ]
-    },
-    {
+      ],
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#5"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#7"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#6"
       },
       "person2": {
         "resource": "#1"
-      }
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

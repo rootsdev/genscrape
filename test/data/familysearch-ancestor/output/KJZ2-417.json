@@ -1,4 +1,5 @@
 {
+  "description": "#SD-KJZ2-417",
   "persons": [
     {
       "id": "KJZ2-417",
@@ -32,12 +33,12 @@
               "fullText": "Lindsay Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Lindsay"
+                  "value": "Lindsay",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -57,12 +58,12 @@
               "fullText": "Lindsy Beldin",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Lindsy"
+                  "value": "Lindsy",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Beldin"
+                  "value": "Beldin",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -82,12 +83,12 @@
               "fullText": "Lindzy Beldin",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Lindzy"
+                  "value": "Lindzy",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Beldin"
+                  "value": "Beldin",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -107,12 +108,12 @@
               "fullText": "Linisay Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Linisay"
+                  "value": "Linisay",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -131,12 +132,12 @@
               "fullText": "Lindsay Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Lindsay"
+                  "value": "Lindsay",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -230,12 +231,12 @@
               "fullText": "Jane Garrison",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Jane"
+                  "value": "Jane",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Garrison"
+                  "value": "Garrison",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -322,12 +323,12 @@
               "fullText": "Amos Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Amos"
+                  "value": "Amos",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -436,12 +437,12 @@
               "fullText": "Anna Day",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Anna"
+                  "value": "Anna",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Day"
+                  "value": "Day",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -515,12 +516,12 @@
               "fullText": "Othanial Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Othanial"
+                  "value": "Othanial",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -594,12 +595,12 @@
               "fullText": "Abraham Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Abraham"
+                  "value": "Abraham",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -673,12 +674,12 @@
               "fullText": "Amos Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Amos"
+                  "value": "Amos",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -770,12 +771,12 @@
               "fullText": "Loisie Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Loisie"
+                  "value": "Loisie",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -845,12 +846,12 @@
               "fullText": "Charles Wesley Beldin",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Charles Wesley"
+                  "value": "Charles Wesley",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Beldin"
+                  "value": "Beldin",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -947,12 +948,12 @@
               "fullText": "Mary Belden",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mary"
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belden"
+                  "value": "Belden",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -1040,12 +1041,12 @@
               "fullText": "Othneil Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Othneil"
+                  "value": "Othneil",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -1118,12 +1119,12 @@
               "fullText": "Liddy Ann Beldin",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Liddy Ann"
+                  "value": "Liddy Ann",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Beldin"
+                  "value": "Beldin",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -1197,12 +1198,12 @@
               "fullText": "Sylvester Lindsay Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Sylvester Lindsay"
+                  "value": "Sylvester Lindsay",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -1299,12 +1300,12 @@
               "fullText": "Alvira Beldin",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Alvira"
+                  "value": "Alvira",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Beldin"
+                  "value": "Beldin",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -1375,12 +1376,12 @@
               "fullText": "Celer Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Celer"
+                  "value": "Celer",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -1450,12 +1451,12 @@
               "fullText": "Louisa (Lois) Belding",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Louisa ( Lois)"
+                  "value": "Louisa ( Lois)",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Belding"
+                  "value": "Belding",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -1594,7 +1595,9 @@
     {
       "id": "FMMGW-6D4",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MMGW-6D4"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MMGW-6D4"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1607,7 +1610,9 @@
     {
       "id": "MMMGW-6D4",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MMGW-6D4"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MMGW-6D4"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1620,7 +1625,9 @@
     {
       "id": "FM5QG-K65",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/M5QG-K65"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/M5QG-K65"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1633,7 +1640,9 @@
     {
       "id": "FM7GD-NJX",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/M7GD-NJX"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/M7GD-NJX"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1646,7 +1655,9 @@
     {
       "id": "FMSQV-ZSC",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MSQV-ZSC"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MSQV-ZSC"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1659,7 +1670,9 @@
     {
       "id": "FMSQV-8X1",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MSQV-8X1"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MSQV-8X1"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1672,7 +1685,9 @@
     {
       "id": "FMSJB-YBY",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MSJB-YBY"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MSJB-YBY"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1685,7 +1700,9 @@
     {
       "id": "FMQFD-3DC",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MQFD-3DC"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MQFD-3DC"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1698,7 +1715,9 @@
     {
       "id": "FMMFL-H3L",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MMFL-H3L"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MMFL-H3L"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1711,7 +1730,9 @@
     {
       "id": "FM9X1-TYX",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/M9X1-TYX"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/M9X1-TYX"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1724,7 +1745,9 @@
     {
       "id": "FM9X1-NS6",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/M9X1-NS6"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/M9X1-NS6"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1737,7 +1760,9 @@
     {
       "id": "FMNZ4-B2Q",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MNZ4-B2Q"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MNZ4-B2Q"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1750,7 +1775,9 @@
     {
       "id": "FMQFD-WMP",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MQFD-WMP"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MQFD-WMP"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1763,7 +1790,9 @@
     {
       "id": "FM9X1-2VT",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/M9X1-2VT"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/M9X1-2VT"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {

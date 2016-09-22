@@ -2,32 +2,27 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#5"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Elizabeth"
+                  "value": "Elizabeth",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/MaritalStatus",
@@ -42,36 +37,35 @@
             "original": "Shaw Lancashire"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#5"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Abraham"
+                  "value": "Abraham",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Occupation",
@@ -81,137 +75,143 @@
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Married"
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
+      "id": "2",
       "sources": [
         {
           "description": "#5"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Betty"
+                  "value": "Betty",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Married"
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
+      "id": "3",
       "sources": [
         {
           "description": "#5"
         }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Sarah"
+                  "value": "Sarah",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Single"
+        }
+      ],
+      "id": "4",
+      "sources": [
+        {
+          "description": "#5"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#5"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#4"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#3"
-      }
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "5",
-      "citations": [
-        {
-          "value": "1911 Census for England & Wales, database, findmypast (http://search.findmypast.com/record?id=gbc%2f1911%2frg14%2f24584%2f0135%2f3 : accessed 17 April 2013), entry for Elizabeth Turner."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=gbc%2f1911%2frg14%2f24584%2f0135%2f3",
       "titles": [
         {
           "value": "Elizabeth Turner in 1911 Census for England & Wales"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "1911 Census for England & Wales, database, findmypast (http://search.findmypast.com/record?id=gbc%2f1911%2frg14%2f24584%2f0135%2f3 : accessed 17 April 2013), entry for Elizabeth Turner."
+        }
+      ],
+      "id": "5"
     }
   ]
 }

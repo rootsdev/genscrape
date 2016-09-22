@@ -2,23 +2,18 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#10"
-        }
-      ],
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ronald Wilson"
+                  "value": "Ronald Wilson",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -50,15 +45,14 @@
             "original": "Ronald W. Reagan Presidential Library, Simi Valley, Ventura County, California, USA"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -66,12 +60,12 @@
               "fullText": "John Edward Reagan",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John Edward"
+                  "value": "John Edward",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -93,15 +87,15 @@
             "formal": "+1941"
           }
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
+      "id": "2",
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -109,12 +103,12 @@
               "fullText": "Nelle Clyde Wilson Reagan",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Nelle Clyde Wilson"
+                  "value": "Nelle Clyde Wilson",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -136,15 +130,15 @@
             "formal": "+1962"
           }
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
+      "id": "3",
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -152,12 +146,12 @@
               "fullText": "Nancy Reagan",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Nancy"
+                  "value": "Nancy",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -179,15 +173,15 @@
             "formal": "+2016"
           }
         }
-      ]
-    },
-    {
-      "id": "5",
+      ],
+      "id": "4",
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -195,12 +189,12 @@
               "fullText": "Jane Wyman",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Jane"
+                  "value": "Jane",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Wyman"
+                  "value": "Wyman",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -222,15 +216,15 @@
             "formal": "+2007"
           }
         }
-      ]
-    },
-    {
-      "id": "6",
+      ],
+      "id": "5",
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -238,12 +232,12 @@
               "fullText": "Maureen Elizabeth Reagan",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Maureen Elizabeth"
+                  "value": "Maureen Elizabeth",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -265,15 +259,15 @@
             "formal": "+2001"
           }
         }
-      ]
-    },
-    {
-      "id": "7",
+      ],
+      "id": "6",
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -281,12 +275,12 @@
               "fullText": "Christine Reagan",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Christine"
+                  "value": "Christine",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -308,15 +302,15 @@
             "formal": "+1947"
           }
         }
-      ]
-    },
-    {
-      "id": "8",
+      ],
+      "id": "7",
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -324,12 +318,12 @@
               "fullText": "John Neil Reagan",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John Neil"
+                  "value": "John Neil",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -351,15 +345,15 @@
             "formal": "+1996"
           }
         }
-      ]
-    },
-    {
-      "id": "9",
+      ],
+      "id": "8",
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
@@ -367,12 +361,12 @@
               "fullText": "Ronald Wilson Reagan",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ronald Wilson"
+                  "value": "Ronald Wilson",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Reagan"
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -394,93 +388,99 @@
             "formal": "+2004"
           }
         }
+      ],
+      "id": "9",
+      "sources": [
+        {
+          "description": "#10"
+        }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#10"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#4"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#5"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#6"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#10"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#1"
       },
       "person2": {
         "resource": "#7"
-      }
+      },
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [

@@ -2,134 +2,129 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
+      "names": [
         {
-          "description": "#5"
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Alice F",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Turner Turner",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Alice F"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner Turner"
-                }
-              ]
-            }
-          ]
-        }
-      ],
       "facts": [
         {
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Divorced"
         }
+      ],
+      "sources": [
+        {
+          "description": "#5"
+        }
       ]
     },
     {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Turner Turner",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "id": "2",
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner Turner"
+                  "value": "William A",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "sources": [
-        {
-          "description": "#5"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "names": [
-        {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "William A"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "4",
+      "id": "3",
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Smith"
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "id": "4",
+      "sources": [
+        {
+          "description": "#5"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#5"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -144,37 +139,42 @@
             "original": "Massachusetts, United States"
           }
         }
-      ]
-    },
-    {
+      ],
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
       },
       "person2": {
         "resource": "#3"
-      }
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "5",
-      "citations": [
-        {
-          "value": "United States Marriages, database, findmypast (http://search.findmypast.com/record?id=us%2ffs%2fm%2f010363877%2f2 : accessed 17 April 2013), entry for Alice F Turner Turner."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=us%2ffs%2fm%2f010363877%2f2",
       "titles": [
         {
           "value": "Alice F Turner Turner in United States Marriages"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "United States Marriages, database, findmypast (http://search.findmypast.com/record?id=us%2ffs%2fm%2f010363877%2f2 : accessed 17 April 2013), entry for Alice F Turner Turner."
+        }
+      ],
+      "id": "5"
     }
   ]
 }

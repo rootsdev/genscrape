@@ -2,14 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#2"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
       "names": [
         {
           "nameForms": [
@@ -17,18 +9,21 @@
               "fullText": "Mich Thurman",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mich"
+                  "value": "Mich",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Thurman"
+                  "value": "Thurman",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
@@ -55,23 +50,28 @@
           "type": "http://gedcomx.org/Ethnicity",
           "value": "German"
         }
+      ],
+      "sources": [
+        {
+          "description": "#2"
+        }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "2",
-      "citations": [
-        {
-          "value": "Year: 1874; Arrival: New York, New York; Microfilm Serial: M237, 1820-1897; Microfilm Roll: Roll 389; Line: 45; List Number: 498"
-        }
-      ],
       "about": "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=nypl&h=14261124",
       "titles": [
         {
           "value": "Mich Thurman in the New York, Passenger Lists, 1820-1957"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Year: 1874; Arrival: New York, New York; Microfilm Serial: M237, 1820-1897; Microfilm Roll: Roll 389; Line: 45; List Number: 498"
+        }
+      ],
+      "id": "2"
     }
   ]
 }

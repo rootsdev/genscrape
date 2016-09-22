@@ -2,70 +2,65 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
+      "names": [
         {
-          "description": "#3"
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Harry O Or Harry",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Turner Or O'turner",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
       "names": [
         {
           "nameForms": [
             {
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Harry O Or Harry"
+                  "value": "Gertrude",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner Or O'turner"
+                  "value": "Coffman",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "sources": [
-        {
-          "description": "#3"
         }
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "names": [
+      "id": "2",
+      "sources": [
         {
-          "nameForms": [
-            {
-              "parts": [
-                {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Gertrude"
-                },
-                {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Coffman"
-                }
-              ]
-            }
-          ]
+          "description": "#3"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#3"
-        }
-      ],
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -80,23 +75,28 @@
             "original": "Colorado, United States"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "3",
-      "citations": [
-        {
-          "value": "United States Marriages, database, findmypast (http://search.findmypast.com/record?id=us%2ffs%2fm%2f001084854%2f1 : accessed 17 April 2013), entry for Harry O Or Harry Turner Or O'turner."
-        }
-      ],
       "about": "http://search.findmypast.com/record?id=us%2ffs%2fm%2f001084854%2f1",
       "titles": [
         {
           "value": "Harry O Or Harry Turner Or O'turner in United States Marriages"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "United States Marriages, database, findmypast (http://search.findmypast.com/record?id=us%2ffs%2fm%2f001084854%2f1 : accessed 17 April 2013), entry for Harry O Or Harry Turner Or O'turner."
+        }
+      ],
+      "id": "3"
     }
   ]
 }

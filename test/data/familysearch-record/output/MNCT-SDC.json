@@ -1,11 +1,15 @@
 {
   "id": "r_225234428",
+  "description": "#sd_p_396794169",
   "persons": [
     {
       "id": "p_396794169",
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_396794169"
         }
       ],
       "extracted": true,
@@ -28,12 +32,12 @@
               "fullText": "Thomas Turner",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Thomas"
+                  "value": "Thomas",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -66,6 +70,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_396794170"
         }
       ],
       "extracted": true,
@@ -88,12 +95,12 @@
               "fullText": "Unice Turner",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Unice"
+                  "value": "Unice",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -126,6 +133,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_396794171"
         }
       ],
       "extracted": true,
@@ -148,12 +158,12 @@
               "fullText": "Thomas H Turner",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Thomas H"
+                  "value": "Thomas H",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -186,6 +196,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_396794172"
         }
       ],
       "extracted": true,
@@ -208,12 +221,12 @@
               "fullText": "Mary E Turner",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mary E"
+                  "value": "Mary E",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -246,6 +259,9 @@
       "sources": [
         {
           "description": "#sd2"
+        },
+        {
+          "description": "#sd_p_396794173"
         }
       ],
       "extracted": true,
@@ -268,12 +284,12 @@
               "fullText": "Harriet C Turner",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Harriet C"
+                  "value": "Harriet C",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Turner"
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }

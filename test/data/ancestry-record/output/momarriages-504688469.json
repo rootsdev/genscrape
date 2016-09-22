@@ -2,11 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#4"
-        }
-      ],
       "names": [
         {
           "nameForms": [
@@ -14,12 +9,12 @@
               "fullText": "Dora Mae Thurman",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Dora Mae"
+                  "value": "Dora Mae",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Thurman"
+                  "value": "Thurman",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -33,15 +28,15 @@
             "original": "abt 1926"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#4"
         }
-      ],
+      ]
+    },
+    {
+      "id": "2",
       "names": [
         {
           "nameForms": [
@@ -49,26 +44,26 @@
               "fullText": "Mrs Glenn Crofoot",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mrs Glenn"
+                  "value": "Mrs Glenn",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Crofoot"
+                  "value": "Crofoot",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
       "sources": [
         {
           "description": "#4"
         }
-      ],
+      ]
+    },
+    {
+      "id": "3",
       "names": [
         {
           "nameForms": [
@@ -76,41 +71,41 @@
               "fullText": "Mr Anthony Giambrone",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mr Anthony"
+                  "value": "Mr Anthony",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Giambrone"
+                  "value": "Giambrone",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#4"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#4"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -128,23 +123,28 @@
             "original": "Belton, Cass, Missouri"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "4",
-      "citations": [
-        {
-          "value": "Ancestry.com. Missouri, Marriage Records, 1805-2002 [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2007.                                                                                                                Original data:                                                  Missouri Marriage Records. Jefferson City, MO, USA: Missouri State Archives. Microfilm."
-        }
-      ],
       "about": "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=momarriages&h=504688469",
       "titles": [
         {
           "value": "Dora Mae Thurman in the Missouri, Marriage Records, 1805-2002"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Ancestry.com. Missouri, Marriage Records, 1805-2002 [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2007.                                                                                                                Original data:                                                  Missouri Marriage Records. Jefferson City, MO, USA: Missouri State Archives. Microfilm."
+        }
+      ],
+      "id": "4"
     }
   ]
 }

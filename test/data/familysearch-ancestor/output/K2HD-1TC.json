@@ -1,4 +1,5 @@
 {
+  "description": "#SD-K2HD-1TC",
   "persons": [
     {
       "id": "K2HD-1TC",
@@ -32,12 +33,12 @@
               "fullText": "John Augustus Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John Augustus"
+                  "value": "John Augustus",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -57,12 +58,12 @@
               "fullText": "Augustus Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Augustus"
+                  "value": "Augustus",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -82,12 +83,12 @@
               "fullText": "Gus Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Gus"
+                  "value": "Gus",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -107,12 +108,12 @@
               "fullText": "John Agustus Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John Agustus"
+                  "value": "John Agustus",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -132,12 +133,12 @@
               "fullText": "John Augusta Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John Augusta"
+                  "value": "John Augusta",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -157,8 +158,8 @@
               "fullText": "Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -290,12 +291,12 @@
               "fullText": "Elizabeth Tricebaugh",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Elizabeth"
+                  "value": "Elizabeth",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Tricebaugh"
+                  "value": "Tricebaugh",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -391,12 +392,12 @@
               "fullText": "Peter Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Peter"
+                  "value": "Peter",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -474,12 +475,12 @@
               "fullText": "Mary Ann Tridy",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Mary Ann"
+                  "value": "Mary Ann",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Tridy"
+                  "value": "Tridy",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -558,12 +559,12 @@
               "fullText": "Henry Augustus Shelton",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Henry Augustus"
+                  "value": "Henry Augustus",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Shelton"
+                  "value": "Shelton",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -677,12 +678,12 @@
               "fullText": "Anna Margaret Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Anna Margaret"
+                  "value": "Anna Margaret",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -778,12 +779,12 @@
               "fullText": "Inez Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Inez"
+                  "value": "Inez",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -861,12 +862,12 @@
               "fullText": "Luella Kate Sheets Price",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Luella Kate"
+                  "value": "Luella Kate",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets Price"
+                  "value": "Sheets Price",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -958,12 +959,12 @@
               "fullText": "George Augustus Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "George Augustus"
+                  "value": "George Augustus",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -1059,12 +1060,12 @@
               "fullText": "Jamima Elizabeth Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Jamima Elizabeth"
+                  "value": "Jamima Elizabeth",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -1142,12 +1143,12 @@
               "fullText": "John Jacob Sheets",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "John Jacob"
+                  "value": "John Jacob",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Sheets"
+                  "value": "Sheets",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
@@ -1264,7 +1265,9 @@
     {
       "id": "FMKZT-RHK",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHK"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHK"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1277,7 +1280,9 @@
     {
       "id": "MMKZT-RHK",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHK"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHK"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1290,7 +1295,9 @@
     {
       "id": "FMKF5-LQ8",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MKF5-LQ8"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MKF5-LQ8"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1303,7 +1310,9 @@
     {
       "id": "FMKZT-RHY",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHY"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHY"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1316,7 +1325,9 @@
     {
       "id": "FMKZT-RHR",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHR"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHR"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1329,7 +1340,9 @@
     {
       "id": "FMKZT-RH5",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RH5"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RH5"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1342,7 +1355,9 @@
     {
       "id": "FMKZT-RHP",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHP"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHP"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1355,7 +1370,9 @@
     {
       "id": "FMKZT-RHL",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHL"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RHL"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -1368,7 +1385,9 @@
     {
       "id": "FMKZT-RH2",
       "identifiers": {
-        "http://familysearch.org/v1/ChildAndParentsRelationship": "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RH2"
+        "http://familysearch.org/v1/ChildAndParentsRelationship": [
+          "https://familysearch.org/platform/tree/child-and-parents-relationships/MKZT-RH2"
+        ]
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {

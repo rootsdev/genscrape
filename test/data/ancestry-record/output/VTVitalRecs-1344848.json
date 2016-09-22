@@ -2,14 +2,6 @@
   "persons": [
     {
       "id": "1",
-      "sources": [
-        {
-          "description": "#5"
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Male"
-      },
       "names": [
         {
           "nameForms": [
@@ -17,18 +9,21 @@
               "fullText": "Frank J Vannoske",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Frank J"
+                  "value": "Frank J",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Vannoske"
+                  "value": "Vannoske",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "facts": [
         {
           "type": "http://gedcomx.org/Birth",
@@ -39,15 +34,15 @@
             "original": "New York"
           }
         }
-      ]
-    },
-    {
-      "id": "2",
+      ],
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
+      "id": "2",
       "names": [
         {
           "nameForms": [
@@ -55,26 +50,26 @@
               "fullText": "Joseph Vannoske",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Joseph"
+                  "value": "Joseph",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Vannoske"
+                  "value": "Vannoske",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "3",
+      ],
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
+      "id": "3",
       "names": [
         {
           "nameForms": [
@@ -82,22 +77,22 @@
               "fullText": "Ida",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Ida"
+                  "value": "Ida",
+                  "type": "http://gedcomx.org/Given"
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "4",
+      ],
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
+      "id": "4",
       "names": [
         {
           "nameForms": [
@@ -105,55 +100,55 @@
               "fullText": "Anna W Atzroth",
               "parts": [
                 {
-                  "type": "http://gedcomx.org/Given",
-                  "value": "Anna W"
+                  "value": "Anna W",
+                  "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "type": "http://gedcomx.org/Surname",
-                  "value": "Atzroth"
+                  "value": "Atzroth",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#5"
         }
       ]
     }
   ],
   "relationships": [
     {
-      "sources": [
-        {
-          "description": "#5"
-        }
-      ],
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#2"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#3"
       },
       "person2": {
         "resource": "#1"
-      }
-    },
-    {
+      },
       "sources": [
         {
           "description": "#5"
         }
-      ],
+      ]
+    },
+    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
         "resource": "#1"
@@ -171,23 +166,28 @@
             "original": "Halifax, Vermont, USA"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#5"
+        }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "5",
-      "citations": [
-        {
-          "value": "Ancestry.com. Vermont, Vital Records, 1720-1908 [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2013.                                                                                                                Original data:                                                  State of Vermont. Vermont Vital Records through 1870. New England Historic Genealogical Society, Boston, Massachusetts.State of Vermont. Vermont Vital Records, 1871–1908. New England Historic Genealogical Society, Boston, Massachusetts."
-        }
-      ],
       "about": "http://search.ancestry.com/cgi-bin/sse.dll?db=VTVitalRecs&h=1344848&indiv=try",
       "titles": [
         {
           "value": "Frank J Vannoske in the Vermont, Vital Records, 1720-1908"
         }
-      ]
+      ],
+      "citations": [
+        {
+          "value": "Ancestry.com. Vermont, Vital Records, 1720-1908 [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2013.                                                                                                                Original data:                                                  State of Vermont. Vermont Vital Records through 1870. New England Historic Genealogical Society, Boston, Massachusetts.State of Vermont. Vermont Vital Records, 1871–1908. New England Historic Genealogical Society, Boston, Massachusetts."
+        }
+      ],
+      "id": "5"
     }
   ]
 }
