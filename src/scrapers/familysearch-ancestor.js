@@ -43,7 +43,24 @@ function processHash(emitter) {
           emitter.emit('error', error);
         } else {
           debug('data');
-          emitter.emit('data', GedcomX(json));
+          
+          // For some reason the persons are not linked to the high-level source
+          // description that links to Family Tree so here we setup that link.
+          
+          var gedx = GedcomX(json),
+              descriptionRef = gedx.getDescription();
+              
+          if(descriptionRef){
+            gedx.getPersons().forEach(function(person){
+              if(person.getId() === personId){
+                person.addSource({
+                  description: descriptionRef
+                });
+              }
+            });
+          }
+          
+          emitter.emit('data', gedx);
         }
       });
       
