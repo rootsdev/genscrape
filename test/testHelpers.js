@@ -190,5 +190,12 @@ beforeEach(function(){
 });
 
 afterEach(function(){
+  
+  if(GLOBAL.window && GLOBAL.window.close){
+    debug('closing window');
+    GLOBAL.window.close();
+    delete GLOBAL.window;
+  }
+  
   GLOBAL.Date = originalDate;
 });

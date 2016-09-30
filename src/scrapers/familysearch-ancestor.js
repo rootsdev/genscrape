@@ -18,9 +18,8 @@ function run(emitter){
   // detect any changes.
   var path = window.location.pathname;
   
-  // Expose the interval on the window object so that we can clear it in testing.
-  // jsdom doesn't yet support the window.unload event.
-  window._genscrapeFSInterval = setInterval(function(){
+  window.setInterval(function(){
+    debug('polling');
     if(window.location.pathname !== path){
       path = window.location.pathname;
       debug('new path ' + path);

@@ -35,7 +35,7 @@ describe('familysearch ancestor', function(){
           }
           
           else {
-            expect(true).to.be.false;
+            throw new Error('Too many noData events. Expected 1; recieved ' + noDataEvents);
           }
         })
         .on('data', function(data){
@@ -51,12 +51,11 @@ describe('familysearch ancestor', function(){
           else if(dataEvents === 2){
             expect(noDataEvents).to.equal(1);
             error = error || helpers.compareOrRecordOutput(data, outputDir + '/KJZ2-417.json');
-            window.clearInterval(window._genscrapeFSInterval);
             done(error);
           }
           
           else {
-            expect(true).to.be.false;
+            throw new Error('Too many data events. Expected 2; recieved ' + dataEvents);
           }
           
         })
@@ -75,7 +74,6 @@ describe('familysearch ancestor', function(){
       genscrape()
       .on('error', function(e){
         expect(e).to.exist;
-        window.clearInterval(window._genscrapeFSInterval);
         done();
       });
     });

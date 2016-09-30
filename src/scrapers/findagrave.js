@@ -107,7 +107,7 @@ function run(emitter){
     ]
   });
   
-  debug('data', gedx);
+  debug('data');
   emitter.emit('data', gedx);
   
 }
