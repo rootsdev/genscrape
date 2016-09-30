@@ -125,6 +125,11 @@ utils.getJSON = function(url, headers, callback){
     request.setRequestHeader(header, headers[header]);
   }
   
+  // Set Accept header to application/json if it wasn't already set
+  if(headers['Accept'] === undefined){
+    request.setRequestHeader('Accept', 'application/json');
+  }
+  
   // Finished handler
   request.onload = function() {
     debug('getJSON:onload');
