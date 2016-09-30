@@ -3,7 +3,7 @@ var debug = require('debug')('genscrape:scrapers:billiongraves'),
     GedcomX = require('gedcomx-js');
 
 var urls = [
-  utils.urlPatternToRegex("http://billiongraves.com/grave/*")
+  utils.urlPatternToRegex("https://billiongraves.com/grave/*")
 ];
 
 module.exports = function(register){
