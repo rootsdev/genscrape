@@ -18,7 +18,7 @@ describe('familysearch ancestor', function(){
     nockSetup('K2HD-1TC');
     nockSetup('KJZ2-417');
       
-    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=K2HD-1TC', function(){
+    helpers.mockWindow('https://familysearch.org/tree/person/K2HD-1TC/details', function(){
       
       var dataEvents = 0,
           noDataEvents = 0,
@@ -30,7 +30,8 @@ describe('familysearch ancestor', function(){
           noDataEvents++;
           
           if(noDataEvents === 1){
-            window.location.hash = '#view=ancestor&person=KJZ2-417';
+            window.history.pushState(null, '', '/tree/person/KJZ2-417/details');
+            debug(window.location.pathname);
           }
           
           else {
@@ -44,12 +45,13 @@ describe('familysearch ancestor', function(){
           if(dataEvents === 1){
             expect(noDataEvents).to.equal(0);
             error = helpers.compareOrRecordOutput(data, outputDir + '/K2HD-1TC.json');
-            window.location.hash = '#view=pedigree';
+            window.history.pushState(null, '', '/tree/pedigree/KJZ2-417/landscape');
           }
           
           else if(dataEvents === 2){
             expect(noDataEvents).to.equal(1);
             error = error || helpers.compareOrRecordOutput(data, outputDir + '/KJZ2-417.json');
+            window.clearInterval(window._genscrapeFSInterval);
             done(error);
           }
           
@@ -69,19 +71,11 @@ describe('familysearch ancestor', function(){
       })
       .get('/platform/tree/persons-with-relationships?persons&person=MMM')
       .reply(500);
-    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=MMM', function(){
+    helpers.mockWindow('https://familysearch.org/tree/person/MMM/details', function(){
       genscrape()
       .on('error', function(e){
-        expect(e).to.exit;
-        done();
-      });
-    });
-  });
-  
-  it('ancestor view with no data', function(done){
-    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor', function(){
-      genscrape()
-      .on('noData', function(){
+        expect(e).to.exist;
+        window.clearInterval(window._genscrapeFSInterval);
         done();
       });
     });
@@ -99,6 +93,6 @@ function nockSetup(personId){
     .defaultReplyHeaders({
       'content-type': 'application/json'
     })
-    .get('/platform/tree/persons-with-relationships?persons&person=' + personId)
+    .get('/platform/tree/persons/' + personId + '?relatives')
     .replyWithFile(200, pagesDir + '/' + personId + '.json');
 }

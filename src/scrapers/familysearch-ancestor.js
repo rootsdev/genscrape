@@ -12,24 +12,33 @@ module.exports = function(register){
 
 function run(emitter){
   debug('run');
-  window.onhashchange = function(){
-    processHash(emitter);
-  };
-  processHash(emitter);
+  
+  // The Family Tree uses the HTML5 History API. Sometimes popstate events are
+  // fired, sometimes their not. Therefore we must do polling of the URL to
+  // detect any changes.
+  var path = window.location.pathname;
+  
+  // Expose the interval on the window object so that we can clear it in testing.
+  // jsdom doesn't yet support the window.unload event.
+  window._genscrapeFSInterval = setInterval(function(){
+    if(window.location.pathname !== path){
+      path = window.location.pathname;
+      debug('new path ' + path);
+      processUrl(emitter);
+    }
+  }, 100);
+  
+  processUrl(emitter);
 }
 
-// Called every time the hash changes
-function processHash(emitter) {    
-  debug('processHash');
+// Called every time the URL changes
+function processUrl(emitter) {    
+  debug('processUrl');
 
-  // Remove previous search links and show the ajax loader
-  var hashParts = utils.getHashParts();
-  
-  debug('hashParts', hashParts);
-  
-  if( hashParts['view'] == 'ancestor' ) {
+  // Try to get a personId
+  if(window.location.pathname.indexOf('/tree/person/') === 0){
     
-    var personId = hashParts['person'];
+    var personId = window.location.pathname.split('/')[3];
     
     // If we have a personId and we are in the ancestor view then fetch the data
     if(personId) {
@@ -37,7 +46,7 @@ function processHash(emitter) {
       debug('personId', personId);
       
       // Get person info
-      utils.getJSON('https://familysearch.org/platform/tree/persons-with-relationships?persons&person=' + personId, function(error, json){
+      getPersonAndRelationships(personId, function(error, json){
         if(error){
           debug('error');
           emitter.emit('error', error);
@@ -70,6 +79,19 @@ function processHash(emitter) {
     }
   } else {
     emitter.emit('noData');
-    debug('not in the ancestor view');
+    debug('not in person view');
   }
+}
+
+/**
+ * Get a person and all their 1st degree relationships
+ * 
+ * @param {String} personId
+ * @param {Function} callback
+ */
+function getPersonAndRelationships(personId, callback){
+  debug('getPersonAndRelationships: ' + personId);
+  utils.getJSON('https://familysearch.org/platform/tree/persons/' + personId + '?relatives', {
+    'X-FS-Feature-Tag': 'consolidate-redundant-resources'
+  }, callback);
 }
