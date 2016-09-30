@@ -1,0 +1,502 @@
+{
+  "persons": [
+    {
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Ronald Wilson",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Feb. 6,  1911"
+          },
+          "place": {
+            "original": "Tampico, Whiteside County, Illinois, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Jun. 5,  2004"
+          },
+          "place": {
+            "original": "Bel Air, Los Angeles County, California, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Ronald W. Reagan Presidential Library, Simi Valley, Ventura County, California, USA"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Edward Reagan",
+              "parts": [
+                {
+                  "value": "John Edward",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1883",
+            "formal": "+1883"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1941",
+            "formal": "+1941"
+          }
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Nelle Clyde Wilson Reagan",
+              "parts": [
+                {
+                  "value": "Nelle Clyde Wilson",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1883",
+            "formal": "+1883"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1962",
+            "formal": "+1962"
+          }
+        }
+      ],
+      "id": "3",
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Nancy Reagan",
+              "parts": [
+                {
+                  "value": "Nancy",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1921",
+            "formal": "+1921"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2016",
+            "formal": "+2016"
+          }
+        }
+      ],
+      "id": "4",
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Jane Wyman",
+              "parts": [
+                {
+                  "value": "Jane",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Wyman",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1917",
+            "formal": "+1917"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2007",
+            "formal": "+2007"
+          }
+        }
+      ],
+      "id": "5",
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Maureen Elizabeth Reagan",
+              "parts": [
+                {
+                  "value": "Maureen Elizabeth",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1941",
+            "formal": "+1941"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2001",
+            "formal": "+2001"
+          }
+        }
+      ],
+      "id": "6",
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Christine Reagan",
+              "parts": [
+                {
+                  "value": "Christine",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1947",
+            "formal": "+1947"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1947",
+            "formal": "+1947"
+          }
+        }
+      ],
+      "id": "7",
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Neil Reagan",
+              "parts": [
+                {
+                  "value": "John Neil",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1908",
+            "formal": "+1908"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1996",
+            "formal": "+1996"
+          }
+        }
+      ],
+      "id": "8",
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ronald Wilson Reagan",
+              "parts": [
+                {
+                  "value": "Ronald Wilson",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1911",
+            "formal": "+1911"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2004",
+            "formal": "+2004"
+          }
+        }
+      ],
+      "id": "9",
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#4"
+      },
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#5"
+      },
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#6"
+      },
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#7"
+      },
+      "sources": [
+        {
+          "description": "#10"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "10",
+      "citations": [
+        {
+          "value": "Find A Grave, database and images (http://findagrave.com : accessed 17 April 2013), memorial page for Ronald Wilson Reagan (1911 - 2004) - Find A Grave Memorial."
+        }
+      ],
+      "about": "http://www.findagrave.com/cgi-bin/fg.cgi?page=sh&GRid=4244",
+      "titles": [
+        {
+          "value": "Ronald Wilson Reagan (1911 - 2004) - Find A Grave Memorial"
+        }
+      ]
+    }
+  ]
+}

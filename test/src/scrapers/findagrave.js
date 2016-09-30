@@ -22,6 +22,11 @@ describe('findagrave', function(){
     'http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=4244'
   ));
   
+  it('sh (random walkthrough) page', setupTest(
+    'ronald-reagan-sh',
+    'http://www.findagrave.com/cgi-bin/fg.cgi?page=sh&GRid=4244'
+  ));
+  
   it('Single child', setupTest(
     'kenneth-robbins',
     'http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=153242774'

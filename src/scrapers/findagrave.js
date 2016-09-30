@@ -8,7 +8,8 @@ var urls = [
 
 module.exports = function(register){
   register(urls, function(emitter){
-    if( utils.getQueryParams()['page'] == 'gr' ) {
+    var page = utils.getQueryParams()['page'];
+    if(page === 'gr' || page === 'sh') {
       run(emitter);
     } else {
       emitter.emit('noMatch');
