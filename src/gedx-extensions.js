@@ -354,6 +354,7 @@ GedcomX.prototype.addSourceDescriptionToAll = function(sourceDescription){
   // Make sure it's an instance and not a JSON object
   sourceDescription = GedcomX.SourceDescription(sourceDescription);
   this.addSourceDescription(sourceDescription);
+  this.setDescription('#' + sourceDescription.getId());
   this.getPersons().forEach(function(person){
     person.addSource(GedcomX.SourceReference({
       description: '#' + sourceDescription.getId()
