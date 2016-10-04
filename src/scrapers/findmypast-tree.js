@@ -1,5 +1,5 @@
 var debug = require('debug')('genscrape:scrapers:findmypast-tree'),
-    utils = require('../../utils'),
+    utils = require('../utils'),
     GedcomX = require('gedcomx-js');
 
 var urls = [
