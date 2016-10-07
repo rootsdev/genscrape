@@ -11,6 +11,10 @@
 var GedcomX = require('gedcomx-js'),
     utils = require('./utils');
     
+// Enable the RS and Records extensions
+GedcomX.enableRsExtensions();
+GedcomX.enableRecordsExtensions();
+    
 /**
  * Given a full name as a complete string, split the name into parts and add
  * the name to the person.
@@ -82,7 +86,7 @@ GedcomX.Name.createFromString = function(name){
  * @param {Name} name
  * @returns {Person}
  */
-GedcomX.prototype.findPersonByName = function(name){
+GedcomX.Root.prototype.findPersonByName = function(name){
   for(var i = 0; i < this.persons.length; i++){
     if(this.persons[i].hasName(name)){
       return this.persons[i];
@@ -235,7 +239,7 @@ GedcomX.NameForm.prototype.getPart = function(type){
  * 
  * @returns {String}
  */
-GedcomX.prototype.generateId = function(){
+GedcomX.Root.prototype.generateId = function(){
   if(typeof this._nextId === 'undefined'){
     this._nextId = 0;
   }
@@ -281,7 +285,7 @@ GedcomX.Relationship.prototype.setPerson2 = function(reference){
  * Use `Parent` when adding a parent of the person. Use `Child` when adding a child of the person.
  * @returns {Person} Returns the new Person object representing the relative.
  */
-GedcomX.prototype.addRelativeFromName = function(person, name, relationshipType){
+GedcomX.Root.prototype.addRelativeFromName = function(person, name, relationshipType){
   
   // Create and add relative
   var relative = GedcomX.Person({
@@ -330,8 +334,8 @@ GedcomX.prototype.addRelativeFromName = function(person, name, relationshipType)
  * @param {SourceDescription} sourceDescription
  * @returns {GedcomX}
  */
-var originalAddSourceDescription = GedcomX.prototype.addSourceDescription;
-GedcomX.prototype.addSourceDescription = function(sourceDescription){
+var originalAddSourceDescription = GedcomX.Root.prototype.addSourceDescription;
+GedcomX.Root.prototype.addSourceDescription = function(sourceDescription){
   // Make sure it's an instance and not a JSON object
   sourceDescription = GedcomX.SourceDescription(sourceDescription);
   if(!sourceDescription.getId()){
@@ -350,7 +354,7 @@ GedcomX.prototype.addSourceDescription = function(sourceDescription){
  * @param {SourceDescription} sourceDescription
  * @returns {GedcomX}
  */
-GedcomX.prototype.addSourceDescriptionToAll = function(sourceDescription){
+GedcomX.Root.prototype.addSourceDescriptionToAll = function(sourceDescription){
   // Make sure it's an instance and not a JSON object
   sourceDescription = GedcomX.SourceDescription(sourceDescription);
   this.addSourceDescription(sourceDescription);
@@ -374,8 +378,8 @@ GedcomX.prototype.addSourceDescriptionToAll = function(sourceDescription){
  * @param {Person}
  * @returns {GedcomX}
  */
-var originalAddPerson = GedcomX.prototype.addPerson;
-GedcomX.prototype.addPerson = function(person){
+var originalAddPerson = GedcomX.Root.prototype.addPerson;
+GedcomX.Root.prototype.addPerson = function(person){
   // Ensure we have an instance and not a pojo
   person = GedcomX.Person(person);
   if(person.getId() === undefined){

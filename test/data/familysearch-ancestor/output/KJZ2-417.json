@@ -1,8 +1,19 @@
 {
+  "links": {
+    "collection": {
+      "href": "https://familysearch.org/platform/collections/tree"
+    }
+  },
   "description": "#SD-KJZ2-417",
   "persons": [
     {
       "id": "KJZ2-417",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=KJZ2-417"
+        }
+      },
+      "sortKey": "0002378132",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KJZ2-417"
@@ -10,9 +21,15 @@
       },
       "gender": {
         "id": "V.777-777H",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/KJZ2-417/conclusions/V.777-777H"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMW5-SHK"
+            "resource": "https://familysearch.org/platform/users/agents/MMW5-SHK",
+            "resourceId": "MMW5-SHK"
           },
           "modified": 1336500397303
         },
@@ -21,9 +38,15 @@
       "names": [
         {
           "id": "V.777-777N",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-417/conclusions/V.777-777N"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMW5-SHK"
+              "resource": "https://familysearch.org/platform/users/agents/MMW5-SHK",
+              "resourceId": "MMW5-SHK"
             },
             "modified": 1336500397303
           },
@@ -42,13 +65,20 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         },
         {
           "id": "N.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-417/conclusions/N.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1336500397303
           },
@@ -67,13 +97,20 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": false
         },
         {
           "id": "N.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-417/conclusions/N.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1336500397303
           },
@@ -92,13 +129,20 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": false
         },
         {
           "id": "N.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-417/conclusions/N.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1336500397303
           },
@@ -117,13 +161,20 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": false
         },
         {
           "id": "N.777-777H",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-417/conclusions/N.777-777H"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMMM-MMC"
+              "resource": "https://familysearch.org/platform/users/agents/MMMM-MMC",
+              "resourceId": "MMMM-MMC"
             }
           },
           "type": "http://gedcomx.org/BirthName",
@@ -141,63 +192,119 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": false
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-417/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "changeMessage": "Place and date matched to FamilySearch standards",
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM76-ZJ1"
+              "resource": "https://familysearch.org/platform/users/agents/MM76-ZJ1",
+              "resourceId": "MM76-ZJ1"
             },
             "modified": 1413342070746
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "about 1800",
-            "formal": "+1799/+1801"
+            "formal": "+1799/+1801",
+            "normalized": [
+              {
+                "value": "1800"
+              }
+            ]
           },
           "place": {
             "original": "Hartford, Hartford, Connecticut, United States",
-            "description": "#-1717740964"
+            "description": "#-1717740964",
+            "normalized": [
+              {
+                "value": "Hartford, Hartford, Connecticut, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-417/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "changeMessage": "Standardizing dates and place",
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM76-ZJ1"
+              "resource": "https://familysearch.org/platform/users/agents/MM76-ZJ1",
+              "resourceId": "MM76-ZJ1"
             },
             "modified": 1413342131256
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "1875",
-            "formal": "+1875"
+            "formal": "+1875",
+            "normalized": [
+              {
+                "value": "1875"
+              }
+            ]
           },
           "place": {
             "original": "Sinnamahoning, Cameron, PA",
-            "description": "#574704560"
+            "description": "#574704560",
+            "normalized": [
+              {
+                "value": "Sinnemahoning, Gibson Township, Cameron, Pennsylvania, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-417/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMSV-465"
+              "resource": "https://familysearch.org/platform/users/agents/MMSV-465",
+              "resourceId": "MMSV-465"
             },
             "modified": 1336500397303
           },
           "type": "http://gedcomx.org/Burial",
           "place": {
             "original": "Sinnamahoning, Cameron, PA",
-            "description": "#-1555463420"
+            "description": "#-1555463420",
+            "normalized": [
+              {
+                "value": "Sinnemahoning, Cameron, Pennsylvania, United States"
+              }
+            ]
           }
         }
       ],
+      "living": false,
+      "display": {
+        "name": "Lindsay Belding",
+        "gender": "Male",
+        "lifespan": "1800-1875",
+        "birthDate": "1800",
+        "birthPlace": "Hartford, Hartford, Connecticut, United States",
+        "deathDate": "1875",
+        "deathPlace": "Sinnemahoning, Gibson Township, Cameron, Pennsylvania, United States",
+        "ascendancyNumber": "1",
+        "descendancyNumber": "1"
+      },
       "sources": [
         {
           "description": "#SD-KJZ2-417"
@@ -206,6 +313,12 @@
     },
     {
       "id": "KJZ2-HMR",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=KJZ2-HMR"
+        }
+      },
+      "sortKey": "0002380688",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KJZ2-HMR"
@@ -213,9 +326,15 @@
       },
       "gender": {
         "id": "V.777-777H",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/KJZ2-HMR/conclusions/V.777-777H"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMW5-SHK"
+            "resource": "https://familysearch.org/platform/users/agents/MMW5-SHK",
+            "resourceId": "MMW5-SHK"
           },
           "modified": 1337862077148
         },
@@ -224,9 +343,15 @@
       "names": [
         {
           "id": "V.777-777N",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-HMR/conclusions/V.777-777N"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1337862077148
           },
@@ -245,22 +370,34 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-HMR/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMQV-DR6"
+              "resource": "https://familysearch.org/platform/users/agents/MMQV-DR6",
+              "resourceId": "MMQV-DR6"
             },
             "modified": 1280430051616
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "       1806",
-            "formal": "+1806"
+            "formal": "+1806",
+            "normalized": [
+              {
+                "value": "1806"
+              }
+            ]
           },
           "place": {
             "original": "Union, Broome, New York"
@@ -268,36 +405,73 @@
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-HMR/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1337862077148
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "abt 1850",
-            "formal": "A+1850"
+            "formal": "A+1850",
+            "normalized": [
+              {
+                "value": "1850"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-HMR/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMSV-465"
+              "resource": "https://familysearch.org/platform/users/agents/MMSV-465",
+              "resourceId": "MMSV-465"
             },
             "modified": 1337862077148
           },
           "type": "http://gedcomx.org/Burial",
           "place": {
             "original": "Coudersport, Potter, PA",
-            "description": "#1531369025"
+            "description": "#1531369025",
+            "normalized": [
+              {
+                "value": "Coudersport, Potter, Pennsylvania, United States"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Jane Garrison",
+        "gender": "Female",
+        "lifespan": "1806-1850",
+        "birthDate": "1806",
+        "birthPlace": "Union, Broome, New York",
+        "deathDate": "1850"
+      }
     },
     {
       "id": "27YD-KTH",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=27YD-KTH"
+        }
+      },
+      "sortKey": "0002371670",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:27YD-KTH"
@@ -305,9 +479,15 @@
       },
       "gender": {
         "id": "V.777-777N",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/27YD-KTH/conclusions/V.777-777N"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+            "resourceId": "MMWG-V3Y"
           },
           "modified": 1337877558443
         },
@@ -316,9 +496,15 @@
       "names": [
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/27YD-KTH/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM7T-56D"
+              "resource": "https://familysearch.org/platform/users/agents/MM7T-56D",
+              "resourceId": "MM7T-56D"
             },
             "modified": 1272238938706
           },
@@ -337,22 +523,34 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/27YD-KTH/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6"
+              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6",
+              "resourceId": "MMJZ-BC6"
             },
             "modified": 1226104474434
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "23 APR 1781",
-            "formal": "+1781-04-23"
+            "formal": "+1781-04-23",
+            "normalized": [
+              {
+                "value": "23 April 1781"
+              }
+            ]
           },
           "place": {
             "original": "Rocky Hill, Connecticut, USA"
@@ -360,58 +558,121 @@
         },
         {
           "id": "V.777-777L",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/27YD-KTH/conclusions/V.777-777L"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMQK-VBP"
+              "resource": "https://familysearch.org/platform/users/agents/MMQK-VBP",
+              "resourceId": "MMQK-VBP"
             },
             "modified": 1337877558443
           },
           "type": "http://gedcomx.org/Christening",
           "date": {
             "original": "29 APR 1781",
-            "formal": "+1781-04-29"
+            "formal": "+1781-04-29",
+            "normalized": [
+              {
+                "value": "29 April 1781"
+              }
+            ]
           },
           "place": {
             "original": "Rocky Hill,,Hartford,CT",
-            "description": "#-720062925"
+            "description": "#-720062925",
+            "normalized": [
+              {
+                "value": "Rocky Hill, Hartford, Connecticut, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-777H",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/27YD-KTH/conclusions/V.777-777H"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6"
+              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6",
+              "resourceId": "MMJZ-BC6"
             },
             "modified": 1226104498748
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "18 JUL 1863",
-            "formal": "+1863-07-18"
+            "formal": "+1863-07-18",
+            "normalized": [
+              {
+                "value": "18 July 1863"
+              }
+            ]
           },
           "place": {
             "original": "Summit, Schoharie, New York, USA",
-            "description": "#568881131"
+            "description": "#568881131",
+            "normalized": [
+              {
+                "value": "Summit, Schoharie, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/27YD-KTH/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM3M-JT7"
+              "resource": "https://familysearch.org/platform/users/agents/MM3M-JT7",
+              "resourceId": "MM3M-JT7"
             },
             "modified": 1337877558443
           },
           "type": "http://gedcomx.org/Burial",
           "place": {
             "original": "New Boston, Berkshire, Mass.",
-            "description": "#-2109296610"
+            "description": "#-2109296610",
+            "normalized": [
+              {
+                "lang": "en",
+                "value": "New Boston, Sandisfield, Berkshire, Massachusetts, United States"
+              },
+              {
+                "value": "New Boston, Berkshire, Massachusetts, United States"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Amos Belding",
+        "gender": "Male",
+        "lifespan": "1781-1863",
+        "birthDate": "23 April 1781",
+        "birthPlace": "Rocky Hill, Connecticut, USA",
+        "deathDate": "18 July 1863",
+        "deathPlace": "Summit, Schoharie, New York, United States"
+      }
     },
     {
       "id": "KGCZ-CSX",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=KGCZ-CSX"
+        }
+      },
+      "sortKey": "0002370859",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KGCZ-CSX"
@@ -419,9 +680,15 @@
       },
       "gender": {
         "id": "V.777-7771",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/KGCZ-CSX/conclusions/V.777-7771"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+            "resourceId": "MMWG-V3Y"
           },
           "modified": 1337557423208
         },
@@ -430,9 +697,15 @@
       "names": [
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KGCZ-CSX/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWH-KY1"
+              "resource": "https://familysearch.org/platform/users/agents/MMWH-KY1",
+              "resourceId": "MMWH-KY1"
             },
             "modified": 1213978684967
           },
@@ -451,46 +724,89 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KGCZ-CSX/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6"
+              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6",
+              "resourceId": "MMJZ-BC6"
             },
             "modified": 1226028979715
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": " 2 FEB 1779",
-            "formal": "+1779-02-02"
+            "formal": "+1779-02-02",
+            "normalized": [
+              {
+                "value": "2 February 1779"
+              }
+            ]
           },
           "place": {
             "original": "Hadley, Hampshire, Massachusetts, USA",
-            "description": "#-1236899485"
+            "description": "#-1236899485",
+            "normalized": [
+              {
+                "value": "Hadley, Hampshire, Massachusetts, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-777N",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KGCZ-CSX/conclusions/V.777-777N"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6"
+              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6",
+              "resourceId": "MMJZ-BC6"
             },
             "modified": 1235923243520
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "20 Jan 1828",
-            "formal": "+1828-01-20"
+            "formal": "+1828-01-20",
+            "normalized": [
+              {
+                "value": "20 January 1828"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Anna Day",
+        "gender": "Female",
+        "lifespan": "1779-1828",
+        "birthDate": "2 February 1779",
+        "birthPlace": "Hadley, Hampshire, Massachusetts, United States",
+        "deathDate": "20 January 1828"
+      }
     },
     {
       "id": "MGJV-G5Z",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=MGJV-G5Z"
+        }
+      },
+      "sortKey": "0002394771",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:MGJV-G5Z"
@@ -498,9 +814,15 @@
       },
       "gender": {
         "id": "V.777-777P",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/MGJV-G5Z/conclusions/V.777-777P"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MM3J-6SW"
+            "resource": "https://familysearch.org/platform/users/agents/MM3J-6SW",
+            "resourceId": "MM3J-6SW"
           },
           "modified": 1339677699300
         },
@@ -509,9 +831,15 @@
       "names": [
         {
           "id": "V.777-777N",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/MGJV-G5Z/conclusions/V.777-777N"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM3J-6SW"
+              "resource": "https://familysearch.org/platform/users/agents/MM3J-6SW",
+              "resourceId": "MM3J-6SW"
             },
             "modified": 1339677699300
           },
@@ -530,46 +858,93 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/MGJV-G5Z/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMMM-MM8"
+              "resource": "https://familysearch.org/platform/users/agents/MMMM-MM8",
+              "resourceId": "MMMM-MM8"
             },
             "modified": 1339677699300
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "23 Jul 1844",
-            "formal": "+1844-07-23"
+            "formal": "+1844-07-23",
+            "normalized": [
+              {
+                "value": "23 July 1844"
+              }
+            ]
           },
           "place": {
             "original": "Barton Twp, Tioga, New York",
-            "description": "#-420022819"
+            "description": "#-420022819",
+            "normalized": [
+              {
+                "lang": "en",
+                "value": "Barton, Tioga, New York, United States"
+              },
+              {
+                "value": "Barton Twp, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/MGJV-G5Z/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM3J-6SW"
+              "resource": "https://familysearch.org/platform/users/agents/MM3J-6SW",
+              "resourceId": "MM3J-6SW"
             },
             "modified": 1339677699300
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "20 Sep 1845",
-            "formal": "+1845-09-20"
+            "formal": "+1845-09-20",
+            "normalized": [
+              {
+                "value": "20 September 1845"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Othanial Belding",
+        "gender": "Male",
+        "lifespan": "1844-1845",
+        "birthDate": "23 July 1844",
+        "birthPlace": "Barton, Tioga, New York, United States",
+        "deathDate": "20 September 1845"
+      }
     },
     {
       "id": "KV1S-YZL",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=KV1S-YZL"
+        }
+      },
+      "sortKey": "0002390854",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KV1S-YZL"
@@ -577,9 +952,15 @@
       },
       "gender": {
         "id": "V.777-777N",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/KV1S-YZL/conclusions/V.777-777N"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+            "resourceId": "MMWG-V3Y"
           },
           "modified": 1338252019799
         },
@@ -588,9 +969,15 @@
       "names": [
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KV1S-YZL/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1338252019799
           },
@@ -609,46 +996,89 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KV1S-YZL/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMK1-F5S"
+              "resource": "https://familysearch.org/platform/users/agents/MMK1-F5S",
+              "resourceId": "MMK1-F5S"
             },
             "modified": 1403483476830
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "November 1833",
-            "formal": "+1833-11"
+            "formal": "+1833-11",
+            "normalized": [
+              {
+                "value": "November 1833"
+              }
+            ]
           },
           "place": {
             "original": "Waverly, Tioga, New York, United States",
-            "description": "#1666334254"
+            "description": "#1666334254",
+            "normalized": [
+              {
+                "value": "Waverly, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KV1S-YZL/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMSV-465"
+              "resource": "https://familysearch.org/platform/users/agents/MMSV-465",
+              "resourceId": "MMSV-465"
             },
             "modified": 1338252019799
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "21 Feb 1923",
-            "formal": "+1923-02-21"
+            "formal": "+1923-02-21",
+            "normalized": [
+              {
+                "value": "21 February 1923"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Abraham Belding",
+        "gender": "Male",
+        "lifespan": "1833-1923",
+        "birthDate": "November 1833",
+        "birthPlace": "Waverly, Tioga, New York, United States",
+        "deathDate": "21 February 1923"
+      }
     },
     {
       "id": "KL1M-9YX",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=KL1M-9YX"
+        }
+      },
+      "sortKey": "0002387993",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KL1M-9YX"
@@ -656,9 +1086,15 @@
       },
       "gender": {
         "id": "V.777-777N",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/KL1M-9YX/conclusions/V.777-777N"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+            "resourceId": "MMWG-V3Y"
           },
           "modified": 1336500397303
         },
@@ -667,9 +1103,15 @@
       "names": [
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KL1M-9YX/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1336500397303
           },
@@ -688,64 +1130,124 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KL1M-9YX/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1336500397303
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "1826",
-            "formal": "+1826"
+            "formal": "+1826",
+            "normalized": [
+              {
+                "value": "1826"
+              }
+            ]
           },
           "place": {
             "original": "Waverly, Tioga, N. Y.",
-            "description": "#1666334254"
+            "description": "#1666334254",
+            "normalized": [
+              {
+                "value": "Waverly, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KL1M-9YX/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMJF-TLW"
+              "resource": "https://familysearch.org/platform/users/agents/MMJF-TLW",
+              "resourceId": "MMJF-TLW"
             },
             "modified": 1392262857784
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "4 Jul 1904",
-            "formal": "+1904-07-04"
+            "formal": "+1904-07-04",
+            "normalized": [
+              {
+                "value": "4 July 1904"
+              }
+            ]
           },
           "place": {
             "original": "Big Rapids, Mecosta, Michigan, United States",
-            "description": "#1925505754"
+            "description": "#1925505754",
+            "normalized": [
+              {
+                "value": "Big Rapids, Mecosta, Michigan, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-777H",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KL1M-9YX/conclusions/V.777-777H"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM3S-ND9"
+              "resource": "https://familysearch.org/platform/users/agents/MM3S-ND9",
+              "resourceId": "MM3S-ND9"
             },
             "modified": 1336500397303
           },
           "type": "http://gedcomx.org/Burial",
           "place": {
             "original": "Clarion, Emmet, Mich.",
-            "description": "#-1762697582"
+            "description": "#-1762697582",
+            "normalized": [
+              {
+                "value": "Clarion, Charlevoix, Michigan, United States"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Amos Belding",
+        "gender": "Male",
+        "lifespan": "1826-1904",
+        "birthDate": "1826",
+        "birthPlace": "Waverly, Tioga, New York, United States",
+        "deathDate": "4 July 1904",
+        "deathPlace": "Big Rapids, Mecosta, Michigan, United States"
+      }
     },
     {
       "id": "MC3H-Q24",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=MC3H-Q24"
+        }
+      },
+      "sortKey": "0002389454",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:MC3H-Q24"
@@ -753,9 +1255,15 @@
       },
       "gender": {
         "id": "V.777-777P",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/MC3H-Q24/conclusions/V.777-777P"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+            "resourceId": "MMWG-V3Y"
           },
           "modified": 1339184747291
         },
@@ -764,9 +1272,15 @@
       "names": [
         {
           "id": "V.777-777N",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/MC3H-Q24/conclusions/V.777-777N"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1339184747291
           },
@@ -785,42 +1299,79 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/MC3H-Q24/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1339184747291
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "1830",
-            "formal": "+1830"
+            "formal": "+1830",
+            "normalized": [
+              {
+                "value": "1830"
+              }
+            ]
           },
           "place": {
             "original": "Waverly, Tioga, N. Y.",
-            "description": "#1666334254"
+            "description": "#1666334254",
+            "normalized": [
+              {
+                "value": "Waverly, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/MC3H-Q24/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMMM-MM8"
+              "resource": "https://familysearch.org/platform/users/agents/MMMM-MM8",
+              "resourceId": "MMMM-MM8"
             },
             "modified": 1339184747291
           },
           "type": "http://gedcomx.org/Death"
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Loisie Belding",
+        "gender": "Female",
+        "lifespan": "1830-Deceased",
+        "birthDate": "1830",
+        "birthPlace": "Waverly, Tioga, New York, United States"
+      }
     },
     {
       "id": "KJZ2-Q4C",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=KJZ2-Q4C"
+        }
+      },
+      "sortKey": "0002393472",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KJZ2-Q4C"
@@ -828,9 +1379,15 @@
       },
       "gender": {
         "id": "V.777-777N",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/KJZ2-Q4C/conclusions/V.777-777N"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+            "resourceId": "MMWG-V3Y"
           },
           "modified": 1338117367972
         },
@@ -839,9 +1396,15 @@
       "names": [
         {
           "id": "V.777-777L",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-Q4C/conclusions/V.777-777L"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM7T-56D"
+              "resource": "https://familysearch.org/platform/users/agents/MM7T-56D",
+              "resourceId": "MM7T-56D"
             },
             "modified": 1425218580287
           },
@@ -860,69 +1423,138 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-Q4C/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1338117367972
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "1841",
-            "formal": "+1841"
+            "formal": "+1841",
+            "normalized": [
+              {
+                "value": "1841"
+              }
+            ]
           },
           "place": {
             "original": "Waverly, Tioga, New York",
-            "description": "#1666334254"
+            "description": "#1666334254",
+            "normalized": [
+              {
+                "value": "Waverly, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-Q4C/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM37-DBW"
+              "resource": "https://familysearch.org/platform/users/agents/MM37-DBW",
+              "resourceId": "MM37-DBW"
             },
             "modified": 1338117367972
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "10 Dec 1901",
-            "formal": "+1901-12-10"
+            "formal": "+1901-12-10",
+            "normalized": [
+              {
+                "value": "10 December 1901"
+              }
+            ]
           },
           "place": {
             "original": "Williamsport, Lycoming, Pa.",
-            "description": "#1111098170"
+            "description": "#1111098170",
+            "normalized": [
+              {
+                "value": "Williamsport, Lycoming, Pennsylvania, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-777Z",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KJZ2-Q4C/conclusions/V.777-777Z"
+            }
+          },
           "attribution": {
             "changeMessage": "grave",
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM7T-56D"
+              "resource": "https://familysearch.org/platform/users/agents/MM7T-56D",
+              "resourceId": "MM7T-56D"
             },
             "modified": 1425218668334
           },
           "type": "http://gedcomx.org/Burial",
           "date": {
             "original": "1901",
-            "formal": "+1901"
+            "formal": "+1901",
+            "normalized": [
+              {
+                "value": "1901"
+              }
+            ]
           },
           "place": {
             "original": "Sinnemahoning, Cameron, Pennsylvania, United States of America",
-            "description": "#-905726139"
+            "description": "#-905726139",
+            "normalized": [
+              {
+                "lang": "en",
+                "value": "Sinnemahoning, Cameron, Pennsylvania, United States"
+              },
+              {
+                "value": "Sinnemahoning, Cameron, Pennsylvania, United States of America"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Charles Wesley Beldin",
+        "gender": "Male",
+        "lifespan": "1841-1901",
+        "birthDate": "1841",
+        "birthPlace": "Waverly, Tioga, New York, United States",
+        "deathDate": "10 December 1901",
+        "deathPlace": "Williamsport, Lycoming, Pennsylvania, United States"
+      }
     },
     {
       "id": "LHWD-YJP",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=LHWD-YJP"
+        }
+      },
+      "sortKey": "0002392797",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:LHWD-YJP"
@@ -930,9 +1562,15 @@
       },
       "gender": {
         "id": "V.777-777H",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/LHWD-YJP/conclusions/V.777-777H"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMXN-MMN"
+            "resource": "https://familysearch.org/platform/users/agents/MMXN-MMN",
+            "resourceId": "MMXN-MMN"
           },
           "modified": 1338350496304
         },
@@ -941,9 +1579,15 @@
       "names": [
         {
           "id": "V.777-777N",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/LHWD-YJP/conclusions/V.777-777N"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7"
+              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7",
+              "resourceId": "MMXS-GT7"
             },
             "modified": 1338350496304
           },
@@ -962,60 +1606,114 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/LHWD-YJP/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6"
+              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6",
+              "resourceId": "MMJZ-BC6"
             },
             "modified": 1235922183979
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "26 FEB 1839",
-            "formal": "+1839-02-26"
+            "formal": "+1839-02-26",
+            "normalized": [
+              {
+                "value": "26 February 1839"
+              }
+            ]
           },
           "place": {
             "original": "Barton, Tioga, New York, USA",
-            "description": "#-1304790296"
+            "description": "#-1304790296",
+            "normalized": [
+              {
+                "value": "Barton, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/LHWD-YJP/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6"
+              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6",
+              "resourceId": "MMJZ-BC6"
             },
             "modified": 1235922192940
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "26 Jun 1877",
-            "formal": "+1877-06-26"
+            "formal": "+1877-06-26",
+            "normalized": [
+              {
+                "value": "26 June 1877"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/LHWD-YJP/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMW5-SHK"
+              "resource": "https://familysearch.org/platform/users/agents/MMW5-SHK",
+              "resourceId": "MMW5-SHK"
             },
             "modified": 1338350496304
           },
           "type": "http://gedcomx.org/Burial",
           "place": {
             "original": "Wharton Cemetary, Wharton, Potter, Pennsylvania",
-            "description": "#673305756"
+            "description": "#673305756",
+            "normalized": [
+              {
+                "value": "Wharton, Potter, Pennsylvania, United States"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Mary Belden",
+        "gender": "Female",
+        "lifespan": "1839-1877",
+        "birthDate": "26 February 1839",
+        "birthPlace": "Barton, Tioga, New York, United States",
+        "deathDate": "26 June 1877"
+      }
     },
     {
       "id": "KV19-B84",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=KV19-B84"
+        }
+      },
+      "sortKey": "0002387993",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KV19-B84"
@@ -1023,9 +1721,15 @@
       },
       "gender": {
         "id": "V.777-777N",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/KV19-B84/conclusions/V.777-777N"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+            "resourceId": "MMWG-V3Y"
           },
           "modified": 1338186123453
         },
@@ -1034,9 +1738,15 @@
       "names": [
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KV19-B84/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1338186123453
           },
@@ -1055,33 +1765,56 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KV19-B84/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6"
+              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6",
+              "resourceId": "MMJZ-BC6"
             },
             "modified": 1226027881744
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "       1826",
-            "formal": "+1826"
+            "formal": "+1826",
+            "normalized": [
+              {
+                "value": "1826"
+              }
+            ]
           },
           "place": {
             "original": "Waverly, Tioga, Ny",
-            "description": "#1666334254"
+            "description": "#1666334254",
+            "normalized": [
+              {
+                "value": "Waverly, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KV19-B84/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMSV-465"
+              "resource": "https://familysearch.org/platform/users/agents/MMSV-465",
+              "resourceId": "MMSV-465"
             },
             "modified": 1338186123453
           },
@@ -1090,10 +1823,25 @@
             "original": "INFANT"
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Othneil Belding",
+        "gender": "Male",
+        "lifespan": "1826-Deceased",
+        "birthDate": "1826",
+        "birthPlace": "Waverly, Tioga, New York, United States",
+        "deathDate": "INFANT"
+      }
     },
     {
       "id": "KL1M-92V",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=KL1M-92V"
+        }
+      },
+      "sortKey": "0002386532",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KL1M-92V"
@@ -1101,9 +1849,15 @@
       },
       "gender": {
         "id": "V.777-777N",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/KL1M-92V/conclusions/V.777-777N"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+            "resourceId": "MMWG-V3Y"
           },
           "modified": 1338185967185
         },
@@ -1112,9 +1866,15 @@
       "names": [
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KL1M-92V/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1338185967185
           },
@@ -1133,46 +1893,89 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KL1M-92V/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7"
+              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7",
+              "resourceId": "MMXS-GT7"
             },
             "modified": 1338185967185
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "1823",
-            "formal": "A+1823"
+            "formal": "A+1823",
+            "normalized": [
+              {
+                "value": "1823"
+              }
+            ]
           },
           "place": {
             "original": "Waverly, Tioga, New York, USA",
-            "description": "#1666334254"
+            "description": "#1666334254",
+            "normalized": [
+              {
+                "value": "Waverly, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KL1M-92V/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1338185967185
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "abt 1870",
-            "formal": "A+1870"
+            "formal": "A+1870",
+            "normalized": [
+              {
+                "value": "1870"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Liddy Ann Beldin",
+        "gender": "Female",
+        "lifespan": "1823-1870",
+        "birthDate": "1823",
+        "birthPlace": "Waverly, Tioga, New York, United States",
+        "deathDate": "1870"
+      }
     },
     {
       "id": "KLZR-Y5Z",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=KLZR-Y5Z"
+        }
+      },
+      "sortKey": "0002391832",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KLZR-Y5Z"
@@ -1180,9 +1983,15 @@
       },
       "gender": {
         "id": "V.777-777H",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/KLZR-Y5Z/conclusions/V.777-777H"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+            "resourceId": "MMWG-V3Y"
           },
           "modified": 1337871100481
         },
@@ -1191,9 +2000,15 @@
       "names": [
         {
           "id": "V.777-777N",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KLZR-Y5Z/conclusions/V.777-777N"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7"
+              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7",
+              "resourceId": "MMXS-GT7"
             },
             "modified": 1362802454841
           },
@@ -1212,54 +2027,93 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KLZR-Y5Z/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "changeMessage": "The change that took place on 8 March 2013 had Sylvester born in 1853, six years before his first child!!",
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7"
+              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7",
+              "resourceId": "MMXS-GT7"
             },
             "modified": 1362802885332
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "6 July 1836",
-            "formal": "+1836-07-06"
+            "formal": "+1836-07-06",
+            "normalized": [
+              {
+                "value": "6 July 1836"
+              }
+            ]
           },
           "place": {
             "original": "Waverly, Tioga, New York, United States",
-            "description": "#1666334254"
+            "description": "#1666334254",
+            "normalized": [
+              {
+                "value": "Waverly, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KLZR-Y5Z/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "changeMessage": "Family records",
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM7T-56D"
+              "resource": "https://familysearch.org/platform/users/agents/MM7T-56D",
+              "resourceId": "MM7T-56D"
             },
             "modified": 1373852209114
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "20 August 1927",
-            "formal": "+1927-08-20"
+            "formal": "+1927-08-20",
+            "normalized": [
+              {
+                "value": "20 August 1927"
+              }
+            ]
           },
           "place": {
             "original": "Emporium, Emporium, Cameron, Pennsylvania, United States",
-            "description": "#-962301466"
+            "description": "#-962301466",
+            "normalized": [
+              {
+                "value": "Emporium, Emporium, Cameron, Pennsylvania, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KLZR-Y5Z/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "changeMessage": "Modified via Ancestry.com",
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM7T-56D"
+              "resource": "https://familysearch.org/platform/users/agents/MM7T-56D",
+              "resourceId": "MM7T-56D"
             },
             "modified": 1425720712429
           },
@@ -1271,10 +2125,26 @@
             "original": "Cameron County, Pennsylvania, USA"
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Sylvester Lindsay Belding",
+        "gender": "Male",
+        "lifespan": "1836-1927",
+        "birthDate": "6 July 1836",
+        "birthPlace": "Waverly, Tioga, New York, United States",
+        "deathDate": "20 August 1927",
+        "deathPlace": "Emporium, Emporium, Cameron, Pennsylvania, United States"
+      }
     },
     {
       "id": "9X95-KQ5",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=9X95-KQ5"
+        }
+      },
+      "sortKey": "0002388723",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:9X95-KQ5"
@@ -1282,9 +2152,15 @@
       },
       "gender": {
         "id": "V.777-777P",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/9X95-KQ5/conclusions/V.777-777P"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMMM-MMZ"
+            "resource": "https://familysearch.org/platform/users/agents/MMMM-MMZ",
+            "resourceId": "MMMM-MMZ"
           },
           "modified": 1340224182159
         },
@@ -1293,9 +2169,15 @@
       "names": [
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/9X95-KQ5/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMMM-MMZ"
+              "resource": "https://familysearch.org/platform/users/agents/MMMM-MMZ",
+              "resourceId": "MMMM-MMZ"
             },
             "modified": 1340224182159
           },
@@ -1314,43 +2196,84 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777N",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/9X95-KQ5/conclusions/V.777-777N"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7"
+              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7",
+              "resourceId": "MMXS-GT7"
             },
             "modified": 1342541229897
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "1829",
-            "formal": "A+1829"
+            "formal": "A+1829",
+            "normalized": [
+              {
+                "lang": "en",
+                "value": "1829"
+              },
+              {
+                "value": "about 1829"
+              }
+            ]
           },
           "place": {
             "original": "New York, United States",
-            "description": "#-1600678852"
+            "description": "#-1600678852",
+            "normalized": [
+              {
+                "value": "New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/9X95-KQ5/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "changeMessage": "Information listed in \"Michigan Death Certificates, 1921-1952\" for Lydia Ann Bulson, daughter of Jonas Tennant and Alvira Beldon, born 1846. Lydia's marriage to Bulson also shows her parents as Jonas TEnnant and Alvira Belding.",
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7"
+              "resource": "https://familysearch.org/platform/users/agents/MMXS-GT7",
+              "resourceId": "MMXS-GT7"
             },
             "modified": 1405019214765
           },
           "type": "http://gedcomx.org/Death"
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Alvira Beldin",
+        "gender": "Female",
+        "lifespan": "1829-Deceased",
+        "birthDate": "1829",
+        "birthPlace": "New York, United States"
+      }
     },
     {
       "id": "KV19-26V",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=KV19-26V"
+        }
+      },
+      "sortKey": "0002387628",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KV19-26V"
@@ -1358,9 +2281,15 @@
       },
       "gender": {
         "id": "V.777-777P",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/KV19-26V/conclusions/V.777-777P"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+            "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+            "resourceId": "MMWG-V3Y"
           },
           "modified": 1338227971949
         },
@@ -1369,9 +2298,15 @@
       "names": [
         {
           "id": "V.777-777N",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KV19-26V/conclusions/V.777-777N"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y"
+              "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
+              "resourceId": "MMWG-V3Y"
             },
             "modified": 1338227971949
           },
@@ -1390,42 +2325,79 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KV19-26V/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6"
+              "resource": "https://familysearch.org/platform/users/agents/MMJZ-BC6",
+              "resourceId": "MMJZ-BC6"
             },
             "modified": 1226027912725
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "Abt 1826",
-            "formal": "A+1826"
+            "formal": "A+1826",
+            "normalized": [
+              {
+                "value": "1826"
+              }
+            ]
           },
           "place": {
             "original": "Waverly, Tioga, New York",
-            "description": "#1666334254"
+            "description": "#1666334254",
+            "normalized": [
+              {
+                "value": "Waverly, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/KV19-26V/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMMM-MM8"
+              "resource": "https://familysearch.org/platform/users/agents/MMMM-MM8",
+              "resourceId": "MMMM-MM8"
             },
             "modified": 1338227971949
           },
           "type": "http://gedcomx.org/Death"
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Celer Belding",
+        "gender": "Male",
+        "lifespan": "1826-Deceased",
+        "birthDate": "1826",
+        "birthPlace": "Waverly, Tioga, New York, United States"
+      }
     },
     {
       "id": "27SH-9J6",
+      "links": {
+        "person": {
+          "href": "https://familysearch.org/platform/tree/persons-with-relationships?persons=&person=27SH-9J6"
+        }
+      },
+      "sortKey": "0002390915",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:27SH-9J6"
@@ -1433,9 +2405,15 @@
       },
       "gender": {
         "id": "V.777-777N",
+        "links": {
+          "conclusion": {
+            "href": "https://familysearch.org/platform/tree/persons/27SH-9J6/conclusions/V.777-777N"
+          }
+        },
         "attribution": {
           "contributor": {
-            "resource": "https://familysearch.org/platform/users/agents/MM76-ZJ1"
+            "resource": "https://familysearch.org/platform/users/agents/MM76-ZJ1",
+            "resourceId": "MM76-ZJ1"
           },
           "modified": 1338464263307
         },
@@ -1444,9 +2422,15 @@
       "names": [
         {
           "id": "V.777-7771",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/27SH-9J6/conclusions/V.777-7771"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM36-XRF"
+              "resource": "https://familysearch.org/platform/users/agents/MM36-XRF",
+              "resourceId": "MM36-XRF"
             },
             "modified": 1338464263307
           },
@@ -1465,68 +2449,131 @@
                 }
               ]
             }
-          ]
+          ],
+          "preferred": true
         }
       ],
       "facts": [
         {
           "id": "V.777-777P",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/27SH-9J6/conclusions/V.777-777P"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMMM-MM8"
+              "resource": "https://familysearch.org/platform/users/agents/MMMM-MM8",
+              "resourceId": "MMMM-MM8"
             },
             "modified": 1338464263307
           },
           "type": "http://gedcomx.org/Birth",
           "date": {
             "original": "Abt 1835",
-            "formal": "A+1835"
+            "formal": "A+1835",
+            "normalized": [
+              {
+                "value": "1835"
+              }
+            ]
           },
           "place": {
             "original": "Waverly, Tioga, New York",
-            "description": "#1666334254"
+            "description": "#1666334254",
+            "normalized": [
+              {
+                "value": "Waverly, Tioga, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "V.777-7774",
+          "links": {
+            "conclusion": {
+              "href": "https://familysearch.org/platform/tree/persons/27SH-9J6/conclusions/V.777-7774"
+            }
+          },
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMSV-465"
+              "resource": "https://familysearch.org/platform/users/agents/MMSV-465",
+              "resourceId": "MMSV-465"
             },
             "modified": 1338464263307
           },
           "type": "http://gedcomx.org/Death",
           "date": {
             "original": "1869",
-            "formal": "+1869"
+            "formal": "+1869",
+            "normalized": [
+              {
+                "value": "1869"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "living": false,
+      "display": {
+        "name": "Louisa (Lois) Belding",
+        "gender": "Female",
+        "lifespan": "1835-1869",
+        "birthDate": "1835",
+        "birthPlace": "Waverly, Tioga, New York, United States",
+        "deathDate": "1869"
+      }
     }
   ],
   "relationships": [
     {
       "id": "MCM3-LRR",
+      "links": {
+        "relationship": {
+          "href": "https://familysearch.org/platform/tree/couple-relationships/MCM3-LRR?persons="
+        },
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-HMR"
+        },
+        "woman": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-HMR"
+        },
+        "man": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        }
+      },
+      "sortKey": "0002387262",
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#KJZ2-HMR"
+        "resource": "#KJZ2-HMR",
+        "resourceId": "KJZ2-HMR"
       },
       "facts": [
         {
           "id": "R.777-777P",
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMW5-SHK"
+              "resource": "https://familysearch.org/platform/users/agents/MMW5-SHK",
+              "resourceId": "MMW5-SHK"
             },
             "modified": 1335709886105
           },
           "type": "http://gedcomx.org/Marriage",
           "date": {
             "original": "15 MAY 1824",
-            "formal": "+1824-05-15"
+            "formal": "+1824-05-15",
+            "normalized": [
+              {
+                "value": "15 May 1824"
+              }
+            ]
           },
           "place": {
             "original": "Union, Broome, New York"
@@ -1536,60 +2583,89 @@
           "id": "R.777-7774",
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMSV-465"
+              "resource": "https://familysearch.org/platform/users/agents/MMSV-465",
+              "resourceId": "MMSV-465"
             },
             "modified": 1335709886105
           },
           "type": "http://gedcomx.org/Marriage",
           "date": {
             "original": "15 MAY 1824",
-            "formal": "+1824-05-15"
+            "formal": "+1824-05-15",
+            "normalized": [
+              {
+                "value": "15 May 1824"
+              }
+            ]
           }
         },
         {
           "id": "R.777-7771",
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMSJ-K6H"
+              "resource": "https://familysearch.org/platform/users/agents/MMSJ-K6H",
+              "resourceId": "MMSJ-K6H"
             },
             "modified": 1335709886105
           },
           "type": "http://gedcomx.org/Marriage",
           "date": {
             "original": "       1824",
-            "formal": "+1824"
+            "formal": "+1824",
+            "normalized": [
+              {
+                "value": "1824"
+              }
+            ]
           },
           "place": {
             "original": "Endicott, Broome, New York",
-            "description": "#-1160044366"
+            "description": "#-1160044366",
+            "normalized": [
+              {
+                "value": "Endicott, Broome, New York, United States"
+              }
+            ]
           }
         },
         {
           "id": "R.777-777N",
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MM76-ZJ1"
+              "resource": "https://familysearch.org/platform/users/agents/MM76-ZJ1",
+              "resourceId": "MM76-ZJ1"
             },
             "modified": 1335709886105
           },
           "type": "http://gedcomx.org/Marriage",
           "date": {
             "original": "       1824",
-            "formal": "+1824"
+            "formal": "+1824",
+            "normalized": [
+              {
+                "value": "1824"
+              }
+            ]
           }
         },
         {
           "id": "R.777-777H",
           "attribution": {
             "contributor": {
-              "resource": "https://familysearch.org/platform/users/agents/MMSV-465"
+              "resource": "https://familysearch.org/platform/users/agents/MMSV-465",
+              "resourceId": "MMSV-465"
             },
             "modified": 1335709886105
           },
           "type": "http://gedcomx.org/Marriage",
           "date": {
             "original": "1824",
-            "formal": "+1824"
+            "formal": "+1824",
+            "normalized": [
+              {
+                "value": "1824"
+              }
+            ]
           },
           "place": {
             "original": "Union (Now Endicott), Broome"
@@ -1599,6 +2675,14 @@
     },
     {
       "id": "FMMGW-6D4",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/27YD-KTH"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/MMGW-6D4"
@@ -1606,14 +2690,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#27YD-KTH"
+        "resource": "#27YD-KTH",
+        "resourceId": "27YD-KTH"
       },
       "person2": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       }
     },
     {
       "id": "MMMGW-6D4",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KGCZ-CSX"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/MMGW-6D4"
@@ -1621,14 +2715,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KGCZ-CSX"
+        "resource": "#KGCZ-CSX",
+        "resourceId": "KGCZ-CSX"
       },
       "person2": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       }
     },
     {
       "id": "FM5QG-K65",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/MGJV-G5Z"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/M5QG-K65"
@@ -1636,14 +2740,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#MGJV-G5Z"
+        "resource": "#MGJV-G5Z",
+        "resourceId": "MGJV-G5Z"
       }
     },
     {
       "id": "FM7GD-NJX",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/KV1S-YZL"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/M7GD-NJX"
@@ -1651,14 +2765,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#KV1S-YZL"
+        "resource": "#KV1S-YZL",
+        "resourceId": "KV1S-YZL"
       }
     },
     {
       "id": "FMSQV-ZSC",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/KL1M-9YX"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/MSQV-ZSC"
@@ -1666,14 +2790,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#KL1M-9YX"
+        "resource": "#KL1M-9YX",
+        "resourceId": "KL1M-9YX"
       }
     },
     {
       "id": "FMSQV-8X1",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/MC3H-Q24"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/MSQV-8X1"
@@ -1681,14 +2815,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#MC3H-Q24"
+        "resource": "#MC3H-Q24",
+        "resourceId": "MC3H-Q24"
       }
     },
     {
       "id": "FMSJB-YBY",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-Q4C"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/MSJB-YBY"
@@ -1696,14 +2840,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#KJZ2-Q4C"
+        "resource": "#KJZ2-Q4C",
+        "resourceId": "KJZ2-Q4C"
       }
     },
     {
       "id": "FMQFD-3DC",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/LHWD-YJP"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/MQFD-3DC"
@@ -1711,14 +2865,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#LHWD-YJP"
+        "resource": "#LHWD-YJP",
+        "resourceId": "LHWD-YJP"
       }
     },
     {
       "id": "FMMFL-H3L",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/KV19-B84"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/MMFL-H3L"
@@ -1726,14 +2890,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#KV19-B84"
+        "resource": "#KV19-B84",
+        "resourceId": "KV19-B84"
       }
     },
     {
       "id": "FM9X1-TYX",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/KL1M-92V"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/M9X1-TYX"
@@ -1741,14 +2915,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#KL1M-92V"
+        "resource": "#KL1M-92V",
+        "resourceId": "KL1M-92V"
       }
     },
     {
       "id": "FM9X1-NS6",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/KLZR-Y5Z"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/M9X1-NS6"
@@ -1756,14 +2940,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#KLZR-Y5Z"
+        "resource": "#KLZR-Y5Z",
+        "resourceId": "KLZR-Y5Z"
       }
     },
     {
       "id": "FMNZ4-B2Q",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/9X95-KQ5"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/MNZ4-B2Q"
@@ -1771,14 +2965,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#9X95-KQ5"
+        "resource": "#9X95-KQ5",
+        "resourceId": "9X95-KQ5"
       }
     },
     {
       "id": "FMQFD-WMP",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/KV19-26V"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/MQFD-WMP"
@@ -1786,14 +2990,24 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#KV19-26V"
+        "resource": "#KV19-26V",
+        "resourceId": "KV19-26V"
       }
     },
     {
       "id": "FM9X1-2VT",
+      "links": {
+        "person1": {
+          "href": "https://familysearch.org/platform/tree/persons/KJZ2-417"
+        },
+        "person2": {
+          "href": "https://familysearch.org/platform/tree/persons/27SH-9J6"
+        }
+      },
       "identifiers": {
         "http://familysearch.org/v1/ChildAndParentsRelationship": [
           "https://familysearch.org/platform/tree/child-and-parents-relationships/M9X1-2VT"
@@ -1801,10 +3015,12 @@
       },
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#KJZ2-417"
+        "resource": "#KJZ2-417",
+        "resourceId": "KJZ2-417"
       },
       "person2": {
-        "resource": "#27SH-9J6"
+        "resource": "#27SH-9J6",
+        "resourceId": "27SH-9J6"
       }
     }
   ],
