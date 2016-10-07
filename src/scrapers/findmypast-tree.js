@@ -65,7 +65,8 @@ function processData(personId, data){
   var relations = new Relations(data),
       gedx = new GedcomX(),
       primaryPerson = relations.getGedxPerson(personId);
-      
+  
+  primaryPerson.setPrincipal(true);    
   gedx.addPerson(primaryPerson);
   
   // Spouses
