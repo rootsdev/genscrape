@@ -24,6 +24,7 @@ function run(emitter){
     var gedx = new GedcomX(),
         primaryPerson = queryPerson($schemaPerson);
         
+    primaryPerson.setPrincipal(true);
     gedx.addPerson(primaryPerson);
     
     schema.queryPropAll($schemaPerson, 'spouse').map(queryPerson).forEach(function(spouse){
