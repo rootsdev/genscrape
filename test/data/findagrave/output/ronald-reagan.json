@@ -2,6 +2,7 @@
   "persons": [
     {
       "id": "1",
+      "principal": true,
       "names": [
         {
           "nameForms": [
