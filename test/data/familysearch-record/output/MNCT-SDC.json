@@ -11,18 +11,6 @@
       "href": "https://familysearch.org/ark:/61903/1:2:MCHS-MXH?seek=prev"
     }
   },
-  "fields": [
-    {
-      "type": "http://familysearch.org/types/fields/SortValue",
-      "values": [
-        {
-          "type": "http://gedcomx.org/Original",
-          "labelId": "SORT_VALUE",
-          "text": "000000000_004267907_00037_018_0000638829553"
-        }
-      ]
-    }
-  ],
   "description": "#sd_p_396794169",
   "persons": [
     {
@@ -420,25 +408,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "labelId": "PR_SEX_CODE_ORIG",
-                "text": "M",
-                "resource": "http://gedcomx.org/Unknown"
-              },
-              {
-                "type": "http://gedcomx.org/Interpreted",
-                "labelId": "PR_SEX_CODE",
-                "text": "Male",
-                "resource": "http://gedcomx.org/Male"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Male"
       },
       "names": [
@@ -516,68 +485,9 @@
         {
           "type": "http://gedcomx.org/Census",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "1870"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1870"
-                  }
-                ]
-              }
-            ],
             "original": "1870"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_PLACE_ORIG",
-                    "text": "Utah, United States"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Utah, United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_2",
-                    "text": "Utah"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_1",
-                    "text": "United States"
-                  }
-                ]
-              }
-            ],
             "original": "Utah, United States"
           },
           "primary": true
@@ -585,33 +495,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
-                    "text": "1830-1831"
-                  }
-                ]
-              }
-            ],
             "original": "1830-1831"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIRTH_PLACE",
-                    "text": "England"
-                  }
-                ]
-              }
-            ],
             "original": "England"
           }
         }
@@ -1013,25 +899,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "labelId": "PR_SEX_CODE_ORIG",
-                "text": "F",
-                "resource": "http://gedcomx.org/Unknown"
-              },
-              {
-                "type": "http://gedcomx.org/Interpreted",
-                "labelId": "PR_SEX_CODE",
-                "text": "Female",
-                "resource": "http://gedcomx.org/Female"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Female"
       },
       "names": [
@@ -1109,68 +976,9 @@
         {
           "type": "http://gedcomx.org/Census",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "1870"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1870"
-                  }
-                ]
-              }
-            ],
             "original": "1870"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_PLACE_ORIG",
-                    "text": "Utah, United States"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Utah, United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_2",
-                    "text": "Utah"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_1",
-                    "text": "United States"
-                  }
-                ]
-              }
-            ],
             "original": "Utah, United States"
           },
           "primary": true
@@ -1178,33 +986,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
-                    "text": "1847-1848"
-                  }
-                ]
-              }
-            ],
             "original": "1847-1848"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIRTH_PLACE",
-                    "text": "Missouri"
-                  }
-                ]
-              }
-            ],
             "original": "Missouri"
           }
         }
@@ -1606,25 +1390,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "labelId": "PR_SEX_CODE_ORIG",
-                "text": "M",
-                "resource": "http://gedcomx.org/Unknown"
-              },
-              {
-                "type": "http://gedcomx.org/Interpreted",
-                "labelId": "PR_SEX_CODE",
-                "text": "Male",
-                "resource": "http://gedcomx.org/Male"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Male"
       },
       "names": [
@@ -1702,68 +1467,9 @@
         {
           "type": "http://gedcomx.org/Census",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "1870"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1870"
-                  }
-                ]
-              }
-            ],
             "original": "1870"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_PLACE_ORIG",
-                    "text": "Utah, United States"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Utah, United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_2",
-                    "text": "Utah"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_1",
-                    "text": "United States"
-                  }
-                ]
-              }
-            ],
             "original": "Utah, United States"
           },
           "primary": true
@@ -1771,33 +1477,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
-                    "text": "1864-1865"
-                  }
-                ]
-              }
-            ],
             "original": "1864-1865"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIRTH_PLACE",
-                    "text": "Utah"
-                  }
-                ]
-              }
-            ],
             "original": "Utah"
           }
         }
@@ -2199,25 +1881,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "labelId": "PR_SEX_CODE_ORIG",
-                "text": "F",
-                "resource": "http://gedcomx.org/Unknown"
-              },
-              {
-                "type": "http://gedcomx.org/Interpreted",
-                "labelId": "PR_SEX_CODE",
-                "text": "Female",
-                "resource": "http://gedcomx.org/Female"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Female"
       },
       "names": [
@@ -2295,68 +1958,9 @@
         {
           "type": "http://gedcomx.org/Census",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "1870"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1870"
-                  }
-                ]
-              }
-            ],
             "original": "1870"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_PLACE_ORIG",
-                    "text": "Utah, United States"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Utah, United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_2",
-                    "text": "Utah"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_1",
-                    "text": "United States"
-                  }
-                ]
-              }
-            ],
             "original": "Utah, United States"
           },
           "primary": true
@@ -2364,33 +1968,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
-                    "text": "1866-1867"
-                  }
-                ]
-              }
-            ],
             "original": "1866-1867"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIRTH_PLACE",
-                    "text": "Utah"
-                  }
-                ]
-              }
-            ],
             "original": "Utah"
           }
         }
@@ -2792,25 +2372,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "labelId": "PR_SEX_CODE_ORIG",
-                "text": "F",
-                "resource": "http://gedcomx.org/Unknown"
-              },
-              {
-                "type": "http://gedcomx.org/Interpreted",
-                "labelId": "PR_SEX_CODE",
-                "text": "Female",
-                "resource": "http://gedcomx.org/Female"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Female"
       },
       "names": [
@@ -2888,68 +2449,9 @@
         {
           "type": "http://gedcomx.org/Census",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "1870"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1870"
-                  }
-                ]
-              }
-            ],
             "original": "1870"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_PLACE_ORIG",
-                    "text": "Utah, United States"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Utah, United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_2",
-                    "text": "Utah"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_1",
-                    "text": "United States"
-                  }
-                ]
-              }
-            ],
             "original": "Utah, United States"
           },
           "primary": true
@@ -2957,33 +2459,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
-                    "text": "1868-1869"
-                  }
-                ]
-              }
-            ],
             "original": "1868-1869"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIRTH_PLACE",
-                    "text": "Utah"
-                  }
-                ]
-              }
-            ],
             "original": "Utah"
           }
         }

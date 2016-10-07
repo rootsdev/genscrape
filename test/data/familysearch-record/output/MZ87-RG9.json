@@ -11,18 +11,6 @@
       "href": "https://familysearch.org/ark:/61903/1:2:M4NR-DP9?seek=prev"
     }
   },
-  "fields": [
-    {
-      "type": "http://familysearch.org/types/fields/SortValue",
-      "values": [
-        {
-          "type": "http://gedcomx.org/Original",
-          "labelId": "SORT_VALUE",
-          "text": "0000000000000000_0000000005161491_0000000000000562_0000000000000028_0001000137255864"
-        }
-      ]
-    }
-  ],
   "description": "#sd_p_252068161",
   "persons": [
     {
@@ -487,25 +475,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "labelId": "PR_SEX_CODE_ORIG",
-                "text": "M",
-                "resource": "http://gedcomx.org/Unknown"
-              },
-              {
-                "type": "http://gedcomx.org/Interpreted",
-                "labelId": "PR_SEX_CODE",
-                "text": "Male",
-                "resource": "http://gedcomx.org/Male"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Male"
       },
       "names": [
@@ -578,153 +547,9 @@
         {
           "type": "http://gedcomx.org/Census",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "1880"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1880"
-                  }
-                ]
-              }
-            ],
             "original": "1880"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_PLACE_ORIG",
-                    "text": "Johnstown, Fulton, New York, United States"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Johnstown, Fulton, New York, United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/District",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_DISTRICT_ORIG",
-                    "text": "District 1"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DISTRICT",
-                    "text": "ED 5"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Township",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_TOWNSHIP",
-                    "text": "Johnstown"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/County",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_COUNTY_ORIG",
-                    "text": "Fulton"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_COUNTY",
-                    "text": "Fulton"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/County",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_3",
-                    "text": "Fulton"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_2",
-                    "text": "New York"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_STATE_ORIG",
-                    "text": "NY"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_STATE",
-                    "text": "New York"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_COUNTRY",
-                    "text": "United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_1",
-                    "text": "United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://familysearch.org/types/fields/TownshipOrOtherDivisionOfCounty",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_4",
-                    "text": "Johnstown"
-                  }
-                ]
-              }
-            ],
             "original": "Johnstown, Fulton, New York, United States"
           },
           "primary": true
@@ -732,38 +557,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIR_YEAR_EST",
-                    "text": "1825"
-                  }
-                ]
-              }
-            ],
             "original": "1825"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "PR_BIR_PLACE_ORIG",
-                    "text": "PRUSSIA"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIR_PLACE",
-                    "text": "Germany"
-                  }
-                ]
-              }
-            ],
             "original": "Germany"
           }
         },
@@ -1259,25 +1055,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "labelId": "PR_SEX_CODE_ORIG",
-                "text": "F",
-                "resource": "http://gedcomx.org/Unknown"
-              },
-              {
-                "type": "http://gedcomx.org/Interpreted",
-                "labelId": "PR_SEX_CODE",
-                "text": "Female",
-                "resource": "http://gedcomx.org/Female"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Female"
       },
       "names": [
@@ -1350,153 +1127,9 @@
         {
           "type": "http://gedcomx.org/Census",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "1880"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1880"
-                  }
-                ]
-              }
-            ],
             "original": "1880"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_PLACE_ORIG",
-                    "text": "Johnstown, Fulton, New York, United States"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Johnstown, Fulton, New York, United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/District",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_DISTRICT_ORIG",
-                    "text": "District 1"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DISTRICT",
-                    "text": "ED 5"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Township",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_TOWNSHIP",
-                    "text": "Johnstown"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/County",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_COUNTY_ORIG",
-                    "text": "Fulton"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_COUNTY",
-                    "text": "Fulton"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/County",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_3",
-                    "text": "Fulton"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_2",
-                    "text": "New York"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_STATE_ORIG",
-                    "text": "NY"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_STATE",
-                    "text": "New York"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_COUNTRY",
-                    "text": "United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_1",
-                    "text": "United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://familysearch.org/types/fields/TownshipOrOtherDivisionOfCounty",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_4",
-                    "text": "Johnstown"
-                  }
-                ]
-              }
-            ],
             "original": "Johnstown, Fulton, New York, United States"
           },
           "primary": true
@@ -1504,38 +1137,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIR_YEAR_EST",
-                    "text": "1832"
-                  }
-                ]
-              }
-            ],
             "original": "1832"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "PR_BIR_PLACE_ORIG",
-                    "text": "PRUSSIA"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIR_PLACE",
-                    "text": "Germany"
-                  }
-                ]
-              }
-            ],
             "original": "Germany"
           }
         },
@@ -2031,25 +1635,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "labelId": "PR_SEX_CODE_ORIG",
-                "text": "M",
-                "resource": "http://gedcomx.org/Unknown"
-              },
-              {
-                "type": "http://gedcomx.org/Interpreted",
-                "labelId": "PR_SEX_CODE",
-                "text": "Male",
-                "resource": "http://gedcomx.org/Male"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Male"
       },
       "names": [
@@ -2122,153 +1707,9 @@
         {
           "type": "http://gedcomx.org/Census",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "1880"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1880"
-                  }
-                ]
-              }
-            ],
             "original": "1880"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_PLACE_ORIG",
-                    "text": "Johnstown, Fulton, New York, United States"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Johnstown, Fulton, New York, United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/District",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_DISTRICT_ORIG",
-                    "text": "District 1"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DISTRICT",
-                    "text": "ED 5"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Township",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_TOWNSHIP",
-                    "text": "Johnstown"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/County",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_COUNTY_ORIG",
-                    "text": "Fulton"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_COUNTY",
-                    "text": "Fulton"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/County",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_3",
-                    "text": "Fulton"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_2",
-                    "text": "New York"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_STATE_ORIG",
-                    "text": "NY"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_STATE",
-                    "text": "New York"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_COUNTRY",
-                    "text": "United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_1",
-                    "text": "United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://familysearch.org/types/fields/TownshipOrOtherDivisionOfCounty",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_4",
-                    "text": "Johnstown"
-                  }
-                ]
-              }
-            ],
             "original": "Johnstown, Fulton, New York, United States"
           },
           "primary": true
@@ -2276,38 +1717,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIR_YEAR_EST",
-                    "text": "1875"
-                  }
-                ]
-              }
-            ],
             "original": "1875"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "PR_BIR_PLACE_ORIG",
-                    "text": "NY"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIR_PLACE",
-                    "text": "New York, United States"
-                  }
-                ]
-              }
-            ],
             "original": "New York, United States"
           }
         },
@@ -2787,25 +2199,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "labelId": "PR_SEX_CODE_ORIG",
-                "text": "F",
-                "resource": "http://gedcomx.org/Unknown"
-              },
-              {
-                "type": "http://gedcomx.org/Interpreted",
-                "labelId": "PR_SEX_CODE",
-                "text": "Female",
-                "resource": "http://gedcomx.org/Female"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Female"
       },
       "names": [
@@ -2878,153 +2271,9 @@
         {
           "type": "http://gedcomx.org/Census",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "1880"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1880"
-                  }
-                ]
-              }
-            ],
             "original": "1880"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_PLACE_ORIG",
-                    "text": "Johnstown, Fulton, New York, United States"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Johnstown, Fulton, New York, United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/District",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_DISTRICT_ORIG",
-                    "text": "District 1"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DISTRICT",
-                    "text": "ED 5"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Township",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_TOWNSHIP",
-                    "text": "Johnstown"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/County",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_COUNTY_ORIG",
-                    "text": "Fulton"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_COUNTY",
-                    "text": "Fulton"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/County",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_3",
-                    "text": "Fulton"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_2",
-                    "text": "New York"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_STATE_ORIG",
-                    "text": "NY"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_STATE",
-                    "text": "New York"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_COUNTRY",
-                    "text": "United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_1",
-                    "text": "United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://familysearch.org/types/fields/TownshipOrOtherDivisionOfCounty",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_4",
-                    "text": "Johnstown"
-                  }
-                ]
-              }
-            ],
             "original": "Johnstown, Fulton, New York, United States"
           },
           "primary": true
@@ -3032,38 +2281,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIR_YEAR_EST",
-                    "text": "1876"
-                  }
-                ]
-              }
-            ],
             "original": "1876"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "PR_BIR_PLACE_ORIG",
-                    "text": "NY"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIR_PLACE",
-                    "text": "New York, United States"
-                  }
-                ]
-              }
-            ],
             "original": "New York, United States"
           }
         },
@@ -3543,25 +2763,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "labelId": "PR_SEX_CODE_ORIG",
-                "text": "F",
-                "resource": "http://gedcomx.org/Unknown"
-              },
-              {
-                "type": "http://gedcomx.org/Interpreted",
-                "labelId": "PR_SEX_CODE",
-                "text": "Female",
-                "resource": "http://gedcomx.org/Female"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Female"
       },
       "names": [
@@ -3634,153 +2835,9 @@
         {
           "type": "http://gedcomx.org/Census",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "1880"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1880"
-                  }
-                ]
-              }
-            ],
             "original": "1880"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_PLACE_ORIG",
-                    "text": "Johnstown, Fulton, New York, United States"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Johnstown, Fulton, New York, United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/District",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_DISTRICT_ORIG",
-                    "text": "District 1"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DISTRICT",
-                    "text": "ED 5"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Township",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_TOWNSHIP",
-                    "text": "Johnstown"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/County",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_COUNTY_ORIG",
-                    "text": "Fulton"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_COUNTY",
-                    "text": "Fulton"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/County",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_3",
-                    "text": "Fulton"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_2",
-                    "text": "New York"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/State",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_STATE_ORIG",
-                    "text": "NY"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_STATE",
-                    "text": "New York"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_COUNTRY",
-                    "text": "United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Country",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_1",
-                    "text": "United States"
-                  }
-                ]
-              },
-              {
-                "type": "http://familysearch.org/types/fields/TownshipOrOtherDivisionOfCounty",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE_LEVEL_4",
-                    "text": "Johnstown"
-                  }
-                ]
-              }
-            ],
             "original": "Johnstown, Fulton, New York, United States"
           },
           "primary": true
@@ -3788,38 +2845,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIR_YEAR_EST",
-                    "text": "1877"
-                  }
-                ]
-              }
-            ],
             "original": "1877"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "PR_BIR_PLACE_ORIG",
-                    "text": "NY"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "PR_BIR_PLACE",
-                    "text": "New York, United States"
-                  }
-                ]
-              }
-            ],
             "original": "New York, United States"
           }
         },

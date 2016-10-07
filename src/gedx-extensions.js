@@ -14,6 +14,13 @@ var GedcomX = require('gedcomx-js'),
 // Enable the RS and Records extensions
 GedcomX.enableRsExtensions();
 GedcomX.enableRecordsExtensions();
+
+// Remove `fields` from serialized data. We only get it from FS records. It's
+// not of much use at the moment. We can let it through in the future if we need to.
+var fieldsIndex = GedcomX.ExtensibleData.jsonProps.indexOf('fields');
+if(fieldsIndex > -1){
+  GedcomX.ExtensibleData.jsonProps.splice(fieldsIndex, 1);
+}
     
 /**
  * Given a full name as a complete string, split the name into parts and add

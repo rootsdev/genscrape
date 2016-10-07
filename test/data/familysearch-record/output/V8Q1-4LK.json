@@ -11,78 +11,6 @@
       "href": "https://familysearch.org/ark:/61903/1:2:9MSR-WCT4?seek=prev"
     }
   },
-  "fields": [
-    {
-      "type": "http://familysearch.org/types/fields/UniqueIdentifier",
-      "values": [
-        {
-          "type": "http://gedcomx.org/Original",
-          "labelId": "UNIQUE_IDENTIFIER",
-          "text": "1000878807169"
-        }
-      ]
-    },
-    {
-      "type": "http://familysearch.org/types/fields/EventType",
-      "values": [
-        {
-          "type": "http://gedcomx.org/Original",
-          "labelId": "EVENT_TYPE",
-          "text": "Birth"
-        }
-      ]
-    },
-    {
-      "type": "http://familysearch.org/types/fields/CertificateNumber",
-      "values": [
-        {
-          "type": "http://gedcomx.org/Original",
-          "labelId": "CERTIFICATE_NUMBER",
-          "text": "48764"
-        }
-      ]
-    },
-    {
-      "type": "http://familysearch.org/types/fields/AncestryUniqueIdentifier",
-      "values": [
-        {
-          "type": "http://gedcomx.org/Original",
-          "labelId": "ANCESTRY_UNIQUE_IDENTIFIER",
-          "text": "231332"
-        }
-      ]
-    },
-    {
-      "type": "http://familysearch.org/types/fields/EventCounty",
-      "values": [
-        {
-          "type": "http://gedcomx.org/Original",
-          "labelId": "EVENT_COUNTY",
-          "text": "Erath"
-        }
-      ]
-    },
-    {
-      "type": "http://familysearch.org/types/fields/SortKey",
-      "values": [
-        {
-          "type": "http://gedcomx.org/Interpreted",
-          "labelId": "SORT_KEY",
-          "text": "1000878807169#12"
-        }
-      ]
-    },
-    {
-      "type": "http://familysearch.org/types/fields/SortValue",
-      "values": [
-        {
-          "type": "http://gedcomx.org/Original",
-          "labelId": "SORT_VALUE",
-          "text": "1000878807169#12"
-        }
-      ]
-    }
-  ],
   "description": "#sd_p_13393329949",
   "persons": [
     {
@@ -105,73 +33,9 @@
         {
           "type": "http://gedcomx.org/Birth",
           "date": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Date",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_DATE_ORIG",
-                    "text": "9 Jul 1904"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_DATE",
-                    "text": "09 Jul 1904"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Month",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_MONTH_ORIG",
-                    "text": "Jul"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Day",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_DAY_ORIG",
-                    "text": "9"
-                  }
-                ]
-              },
-              {
-                "type": "http://gedcomx.org/Year",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Original",
-                    "labelId": "EVENT_YEAR_ORIG",
-                    "text": "1904"
-                  },
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_YEAR",
-                    "text": "1904"
-                  }
-                ]
-              }
-            ],
             "original": "09 Jul 1904"
           },
           "place": {
-            "fields": [
-              {
-                "type": "http://gedcomx.org/Place",
-                "values": [
-                  {
-                    "type": "http://gedcomx.org/Interpreted",
-                    "labelId": "EVENT_PLACE",
-                    "text": "Erath, Texas"
-                  }
-                ]
-              }
-            ],
             "original": "Erath, Texas"
           },
           "primary": true
@@ -201,18 +65,6 @@
         ]
       },
       "gender": {
-        "fields": [
-          {
-            "type": "http://gedcomx.org/Gender",
-            "values": [
-              {
-                "type": "http://gedcomx.org/Original",
-                "text": "Female",
-                "resource": "http://gedcomx.org/Female"
-              }
-            ]
-          }
-        ],
         "type": "http://gedcomx.org/Female"
       },
       "names": [
