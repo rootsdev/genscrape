@@ -90,7 +90,9 @@ function run(emitter){
   debug('run');
   
   var gedx = GedcomX(),
-      primaryPerson = GedcomX.Person();
+      primaryPerson = GedcomX.Person({
+        principal: true
+      });
       
   gedx.addPerson(primaryPerson);
   
