@@ -12,7 +12,7 @@ var setupTest = require('../../testHelpers').createTestRunnerWithNock({
   }
 });
 
-describe.only('familysearch record', function(){
+describe('familysearch record', function(){
   
   it('process record data', setupPal('MZ87-RG9'));
   

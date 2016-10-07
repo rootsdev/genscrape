@@ -600,8 +600,7 @@
           "type": "http://gedcomx.org/Occupation",
           "value": "Labourer"
         }
-      ],
-      "principal": true
+      ]
     },
     {
       "id": "p_252068160",
@@ -1180,8 +1179,7 @@
           "type": "http://gedcomx.org/Occupation",
           "value": "Keeping House"
         }
-      ],
-      "principal": true
+      ]
     },
     {
       "id": "p_252068161",
@@ -2308,8 +2306,7 @@
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Single"
         }
-      ],
-      "principal": true
+      ]
     },
     {
       "id": "p_252068163",
@@ -2872,8 +2869,7 @@
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Single"
         }
-      ],
-      "principal": true
+      ]
     }
   ],
   "relationships": [
