@@ -54,6 +54,7 @@ function processUrl(emitter) {
           
           // For some reason the persons are not linked to the high-level source
           // description that links to Family Tree so here we setup that link.
+          // We also mark the principal person.
           
           var gedx = GedcomX(json),
               descriptionRef = gedx.getDescription();
@@ -64,6 +65,7 @@ function processUrl(emitter) {
                 person.addSource({
                   description: descriptionRef
                 });
+                person.setPrincipal(true);
               }
             });
           }

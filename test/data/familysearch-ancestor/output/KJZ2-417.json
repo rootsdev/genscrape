@@ -305,6 +305,7 @@
         "ascendancyNumber": "1",
         "descendancyNumber": "1"
       },
+      "principal": true,
       "sources": [
         {
           "description": "#SD-KJZ2-417"
