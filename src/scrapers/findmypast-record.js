@@ -42,7 +42,9 @@ function run(emitter) {
   }
   
   var gedx = GedcomX(),
-      primaryPerson = GedcomX.Person(),
+      primaryPerson = GedcomX.Person({
+        principal: true
+      }),
       dataFields = new HorizontalTable(transcriptionDisplayTable, {
         labelMapper: function(label){
           return label.toLowerCase();
