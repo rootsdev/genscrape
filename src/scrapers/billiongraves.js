@@ -27,7 +27,9 @@ function run(emitter){
   
   var record = json.record,
       gedx = new GedcomX(), 
-      primaryPerson = GedcomX.Person();
+      primaryPerson = GedcomX.Person({
+        principal: true
+      });
   
   gedx.addPerson(primaryPerson);
       
