@@ -40,7 +40,9 @@ function run(emitter){
       
       // Just process the first person
       default:
-        gedx.addPerson(queryPerson($schemaPersons[0]));
+        var primaryPerson = queryPerson($schemaPersons[0]);
+        primaryPerson.setPrincipal(true);
+        gedx.addPerson(primaryPerson);
         break;
     }
     
@@ -172,6 +174,7 @@ function processBaptism(gedx, $record, $schemaPersons){
   }
   child = queryPerson($schemaPersons.shift());
   
+  child.setPrincipal(true);
   gedx.addPerson(child);
   
   if(father){
