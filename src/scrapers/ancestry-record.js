@@ -99,7 +99,8 @@ function setup(emitter) {
   
   var gedx = new GedcomX(),
       primaryPerson = new GedcomX.Person({
-        id: gedx.generateId()
+        id: gedx.generateId(),
+        principal: true
       });
       
   gedx.addPerson(primaryPerson);
