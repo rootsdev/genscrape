@@ -42,6 +42,7 @@ function run(emitter) {
     var gedx = GedcomX(),
         primaryPerson = processPrimaryPerson($schemaPersons.shift());
         
+    primaryPerson.setPrincipal(true);
     gedx.addPerson(primaryPerson);
     
     $schemaPersons.forEach(function($relative){

@@ -33,6 +33,7 @@
           }
         }
       ],
+      "principal": true,
       "id": "1",
       "sources": [
         {
