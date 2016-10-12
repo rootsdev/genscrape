@@ -11,7 +11,7 @@ describe('fs ancestor', function(){
     nockSetup('K2HD-1TC');
     nockSetup('KJZ2-417');
       
-    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=K2HD-1TC', function(){
+    helpers.mockWindow('https://familysearch.org/tree/person/K2HD-1TC/details', function(){
       
       var dataEvents = 0,
           noDataEvents = 0;
@@ -21,8 +21,7 @@ describe('fs ancestor', function(){
         noDataEvents++;
         
         if(noDataEvents === 1){
-          window.location.hash = '#view=ancestor&person=KJZ2-417';
-          window.onhashchange();
+          window.history.pushState(null, '', '/tree/person/KJZ2-417/details');
         }
         
         else {
@@ -49,8 +48,7 @@ describe('fs ancestor', function(){
             marriageDate: '27 December 1862',
             marriagePlace: 'Salt Lake City, Salt Lake, Utah, United States'
           });
-          window.location.hash = '#view=pedigree';
-          window.onhashchange();
+          window.history.pushState(null, '', '/tree/pedigree/KJZ2-417/landscape');
         }
         
         else if(dataEvents === 2){
@@ -89,19 +87,10 @@ describe('fs ancestor', function(){
       })
       .get('/platform/tree/persons-with-relationships?persons&person=MMM')
       .reply(500);
-    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor&person=MMM', function(){
+    helpers.mockWindow('https://familysearch.org/tree/person/MMM/details', function(){
       genscrape()
       .on('error', function(e){
         expect(e).to.exist;
-        done();
-      });
-    });
-  });
-  
-  it('ancestor view with no data', function(done){
-    helpers.mockWindow('https://familysearch.org/tree/#view=ancestor', function(){
-      genscrape()
-      .on('noData', function(){
         done();
       });
     });

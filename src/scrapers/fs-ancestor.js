@@ -12,9 +12,21 @@ module.exports = function(register){
 
 function run(emitter){
   debug('run');
-  window.onhashchange = function(){
-    processHash(emitter);
-  };
+  
+  // The Family Tree uses the HTML5 History API. Sometimes popstate events are
+  // fired, sometimes their not. Therefore we must do polling of the URL to
+  // detect any changes.
+  var path = window.location.pathname;
+  
+  window.setInterval(function(){
+    debug('polling');
+    if(window.location.pathname !== path){
+      path = window.location.pathname;
+      debug('new path ' + path);
+      processHash(emitter);
+    }
+  }, 100);
+  
   processHash(emitter);
 }
 
@@ -27,11 +39,10 @@ function processHash(emitter) {
   
   debug('hashParts', hashParts);
   
-  if( hashParts['view'] == 'ancestor' ) {
+  // Try to get a personId
+  if(window.location.pathname.indexOf('/tree/person/') === 0){
     
-    // Get personId and spouseId
-    var personId = hashParts['person'];
-    var spouseId = hashParts['spouse'];
+    var personId = window.location.pathname.split('/')[3];
     
     // If we have a personId and we are in the ancestor view, build the urls
     if(personId) {
@@ -42,7 +53,7 @@ function processHash(emitter) {
       getPersonWithRelationships(personId)
       .done(function(data) {
         debug('response');
-        emitter.emit('data', normalizeData(data, personId, spouseId));
+        emitter.emit('data', normalizeData(data, personId));
       })
       .fail(function(error){
         debug('ajax error', error);
