@@ -28,14 +28,18 @@ function run(emitter){
     
     switch(recordType){
       
-      // Marriage
+      // Marriage (2 persons, possible both with parents)
       case 'BS Huwelijk':
-        processMarriage(gedx, $record, $schemaPersons);
+      case 'DTB Trouwen':
+        processCoupleEvent(gedx, $record, $schemaPersons);
         break;
       
-      // Baptism
+      // Baptism, Birth, Burial, Death (1 person, possible with parents)
       case 'DTB Dopen':
-        processBaptism(gedx, $record, $schemaPersons);
+      case 'BS Geboorte':
+      case 'DTB Begraven':
+      case 'BS Overlijden':
+		processPersonEvent(gedx, $record, $schemaPersons);
         break;
       
       // Just process the first person
@@ -76,7 +80,7 @@ function run(emitter){
  * @param {Element} $record The itemtype="http://historical-data.org/HistoricalRecord" element
  * @param {Element[]} $schemaPersona Array of itemtype="http://schema.org/Person"
  */
-function processMarriage(gedx, $record, $schemaPersons){
+function processCoupleEvent(gedx, $record, $schemaPersons){
   
   // Persons are listed in the DOM in order that the vars are declared below.
   // We account for the possibility that the parents of either the groom or
@@ -162,7 +166,7 @@ function processMarriage(gedx, $record, $schemaPersons){
  * @param {Element} $record The itemtype="http://historical-data.org/HistoricalRecord" element
  * @param {Element[]} $schemaPersona Array of itemtype="http://schema.org/Person"
  */
-function processBaptism(gedx, $record, $schemaPersons){
+function processPersonEvent(gedx, $record, $schemaPersons){
   
   var father, mother, child;
   
