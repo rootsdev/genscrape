@@ -4,7 +4,7 @@ var debug = require('debug')('genscrape:scrapers:openarch'),
     schema = require('../schema');
 
 var urls = [
-  utils.urlPatternToReagex("https://www.openarch.nl/show*")
+  utils.urlPatternToRegex("https://www.openarch.nl/show*")
 ];
 
 module.exports = function(register){
