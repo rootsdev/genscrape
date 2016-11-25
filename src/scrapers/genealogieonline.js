@@ -37,7 +37,9 @@ function run(emitter){
     });
     
     // TODO: ask Bob Coret about marriage info. It disappeared?
-    
+	// BC: the marriage Event is not yet a property of Person, only proposal via historical-data.org
+	//     adding the marriage would give a lot of warnings via schema checkers
+	
     schema.queryPropAll($schemaPerson, 'parent').map(queryPerson).forEach(function(parent){
       gedx.addPerson(parent);
       gedx.addRelationship({
@@ -57,7 +59,8 @@ function run(emitter){
     });
     
     // TODO: ask Bob why children don't have givenName and familyName
-    
+    // BC: was an ommision, properties now added to children on Genealogie Online
+	
     // SourceDescription
     gedx.addSourceDescriptionToAll({
       about: document.location.href,
