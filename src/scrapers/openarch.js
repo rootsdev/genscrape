@@ -4,7 +4,7 @@ var debug = require('debug')('genscrape:scrapers:openarch'),
     schema = require('../schema');
 
 var urls = [
-  utils.urlPatternToRegex("https://www.openarch.nl/show*")
+  utils.urlPatternToReagex("https://www.openarch.nl/show*")
 ];
 
 module.exports = function(register){
@@ -34,7 +34,7 @@ function run(emitter){
         processCoupleEvent(gedx, $record, $schemaPersons);
         break;
       
-      // Baptism, Birth, Burial, Death (1 person, possible with parents)
+		// Baptism, Birth, Burial, Death (1 person, possible with parents)
       case 'DTB Dopen':
       case 'BS Geboorte':
       case 'DTB Begraven':
