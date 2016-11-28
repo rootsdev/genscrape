@@ -36,8 +36,6 @@ function run(emitter){
       });
     });
     
-    // TODO: ask Bob Coret about marriage info. It disappeared?
-    
     schema.queryPropAll($schemaPerson, 'parent').map(queryPerson).forEach(function(parent){
       gedx.addPerson(parent);
       gedx.addRelationship({
@@ -55,8 +53,6 @@ function run(emitter){
         person2: child
       });
     });
-    
-    // TODO: ask Bob why children don't have givenName and familyName
     
     // SourceDescription
     gedx.addSourceDescriptionToAll({
