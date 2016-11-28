@@ -8,6 +8,18 @@ A JavaScript library that aids in scraping person data off of genealogy websites
 It is designed to be used in a browser extension. Data is output in
 [GEDCOM X](http://www.gedcomx.org/) format.
 
+## Install
+
+```
+npm install --save genscrape
+```
+
+Or use the CDN
+
+```html
+<script src="https://unpkg.com/genscrape@1.1.1/dist/genscrape.min.js"></script>
+```
+
 ## Usage
 
 Scraping is sometimes asynchronous so we chose to implement the [EventEmitter](https://nodejs.org/api/events.html)
