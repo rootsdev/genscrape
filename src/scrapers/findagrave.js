@@ -263,16 +263,20 @@ function getFamilyLinks(){
  * @returns {GedcomX.Person}
  */
 function processFamilyLink(linkText){
-  var matches = linkText.match(/^([\w\s]+)( \((\w{4}) - (\w{4})\))?$/),
-      data = {
-        name: matches[1],
-        birthYear: matches[3],
-        deathYear: matches[4]
-      };
-  return GedcomX.Person()
-    .addSimpleName(data.name)
-    .addFact(familyLinkFact('http://gedcomx.org/Birth', data.birthYear))
-    .addFact(familyLinkFact('http://gedcomx.org/Death', data.deathYear));
+  var matches = linkText.match(/^([\w\s\.]+)( \((\w{4}) - (\w{4})\))?$/);
+  if(matches){
+    var data = {
+      name: matches[1],
+      birthYear: matches[3],
+      deathYear: matches[4]
+    };
+    return GedcomX.Person()
+      .addSimpleName(data.name)
+      .addFact(familyLinkFact('http://gedcomx.org/Birth', data.birthYear))
+      .addFact(familyLinkFact('http://gedcomx.org/Death', data.deathYear));
+  } else {
+    console.error('Find A Grave: Unable to parse family link: ' + linkText);
+  }
 }
 
 /**

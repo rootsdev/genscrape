@@ -1,6 +1,6 @@
 var setupTest = require('../../testHelpers').createTestRunner('findagrave');
     
-describe('findagrave', function(){
+describe.only('findagrave', function(){
   
   it('Not famous; no family', setupTest(
     'raymond-zierak',
@@ -45,6 +45,11 @@ describe('findagrave', function(){
   it('Family links with no lifespan', setupTest(
     'robert-coe',
     'http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=37494703'
+  ));
+  
+  it('period in a family member\'s name', setupTest(
+    'alfred-zandell',
+    'http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=53317193'
   ));
   
 });
