@@ -4,7 +4,7 @@ var nock = require('nock'),
     helpers = require('../testHelpers'),
     genscrape = require(path.join(__dirname, '..', '..'));
 
-describe('ancestry person', function(){
+describe.only('ancestry person', function(){
 
   it('basic', function(done){
     nockSetup('70025770', '30206952907');

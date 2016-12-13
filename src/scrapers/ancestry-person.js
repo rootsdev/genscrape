@@ -131,7 +131,22 @@ function process(emitter, $dom){
  * Get the name parts from a relative's card
  */
 function getNameParts($card){
-  return utils.splitName($card.find('.userCardTitle').text().trim());
+  return utils.splitName(firstChildText($card.find('.userCardTitle')[0]).trim());
+}
+
+/**
+ * Return the first immediate child text node of an HTML element
+ * 
+ * @param {HTMLElement} $element
+ * @returns {String}
+ */
+function firstChildText($element){
+  for (var i = 0; i < $element.childNodes.length; i++) {
+    var curNode = $element.childNodes[i];
+    if (curNode.nodeName === "#text") {
+      return curNode.nodeValue.trim();
+    }
+  }
 }
 
 /**
