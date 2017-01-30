@@ -21,6 +21,12 @@ var fieldsIndex = GedcomX.ExtensibleData.jsonProps.indexOf('fields');
 if(fieldsIndex > -1){
   GedcomX.ExtensibleData.jsonProps.splice(fieldsIndex, 1);
 }
+
+// Remove `links` from extensible data. We only get it from FS tree persons.
+var linksIndex = GedcomX.ExtensibleData.jsonProps.indexOf('links');
+if(linksIndex > -1){
+  GedcomX.ExtensibleData.jsonProps.splice(linksIndex, 1);
+}
     
 /**
  * Given a full name as a complete string, split the name into parts and add

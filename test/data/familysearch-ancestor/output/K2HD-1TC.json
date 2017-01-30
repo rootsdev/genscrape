@@ -1,9 +1,4 @@
 {
-  "links": {
-    "collection": {
-      "href": "https://familysearch.org/platform/collections/tree"
-    }
-  },
   "description": "#SD-K2HD-1TC",
   "persons": [
     {
@@ -21,11 +16,6 @@
       },
       "gender": {
         "id": "V.777-777H",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/K2HD-1TC/conclusions/V.777-777H"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMFW-CHG",
@@ -435,11 +425,6 @@
       },
       "gender": {
         "id": "V.777-777H",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/LQ5V-T6K/conclusions/V.777-777H"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
@@ -613,11 +598,6 @@
       },
       "gender": {
         "id": "V.777-777P",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/K4RM-BG3/conclusions/V.777-777P"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
@@ -757,11 +737,6 @@
       },
       "gender": {
         "id": "V.777-777P",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/K482-X4F/conclusions/V.777-777P"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
@@ -901,11 +876,6 @@
       },
       "gender": {
         "id": "V.777-777N",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/KWC6-KWB/conclusions/V.777-777N"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMDF-YMM",
@@ -1109,11 +1079,6 @@
       },
       "gender": {
         "id": "V.777-777N",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/KT7K-PVW/conclusions/V.777-777N"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMW5-QQZ",
@@ -1287,11 +1252,6 @@
       },
       "gender": {
         "id": "V.777-777P",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/9M8T-FRT/conclusions/V.777-777P"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMW7-RFX",
@@ -1431,11 +1391,6 @@
       },
       "gender": {
         "id": "V.777-777N",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/LQ5V-GW1/conclusions/V.777-777N"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
@@ -1600,11 +1555,6 @@
       },
       "gender": {
         "id": "V.777-777H",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/KNYK-G9D/conclusions/V.777-777H"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
@@ -1773,11 +1723,6 @@
       },
       "gender": {
         "id": "V.777-777N",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/2TV6-Z4Z/conclusions/V.777-777N"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
@@ -1917,11 +1862,6 @@
       },
       "gender": {
         "id": "V.777-777H",
-        "links": {
-          "conclusion": {
-            "href": "https://familysearch.org/platform/tree/persons/LQ5K-FXD/conclusions/V.777-777H"
-          }
-        },
         "attribution": {
           "contributor": {
             "resource": "https://familysearch.org/platform/users/agents/MMWG-V3Y",
