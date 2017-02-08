@@ -362,23 +362,27 @@ GedcomX.Root.prototype.addSourceDescription = function(sourceDescription){
  * Add the source description to this document and add a source reference to all
  * persons and relationships currently in the document pointing to this source.
  * Any persons or relationships added later will not have a reference to this
- * SourceDescription.
+ * SourceDescription. Also update the description property of the Root to point
+ * to given SourceDescription.
  * 
  * @param {SourceDescription} sourceDescription
  * @returns {GedcomX}
  */
 GedcomX.Root.prototype.addSourceDescriptionToAll = function(sourceDescription){
   // Make sure it's an instance and not a JSON object
+  var descriptionUri;
   sourceDescription = GedcomX.SourceDescription(sourceDescription);
   this.addSourceDescription(sourceDescription);
+  descriptionUri = '#' + sourceDescription.getId();
+  this.setDescription(descriptionUri);
   this.getPersons().forEach(function(person){
     person.addSource(GedcomX.SourceReference({
-      description: '#' + sourceDescription.getId()
+      description: descriptionUri
     }));
   });
   this.getRelationships().forEach(function(relationship){
     relationship.addSource(GedcomX.SourceReference({
-      description: '#' + sourceDescription.getId()
+      description: descriptionUri
     }));
   });
   return this;
