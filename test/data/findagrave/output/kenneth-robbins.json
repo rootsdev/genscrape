@@ -298,7 +298,24 @@
         {
           "value": "Kenneth Seymour Robbins (1894 - 1972) - Find A Grave Memorial"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Find A Grave"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.findagrave.com"
+      }
     }
   ]
 }

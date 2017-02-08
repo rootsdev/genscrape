@@ -68,7 +68,24 @@
         {
           "value": "Raymond J. Zierak (1914 - 2006) - Find A Grave Memorial"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Find A Grave"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.findagrave.com"
+      }
     }
   ]
 }

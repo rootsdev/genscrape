@@ -157,9 +157,10 @@ function processData(personId, data){
   
   // Agent
   var agent = GedcomX.Agent()
-    .setId('findmypast')
+    .setId('agent')
     .addName({
-      value: 'findmypast',
+      lang: 'en',
+      value: 'findmypast'
     })
     .setHomepage({
       resource: 'http://www.findmypast' + getDomain()
@@ -178,7 +179,7 @@ function processData(personId, data){
         + ' : accessed ' + utils.getDateString() + '), profile for ' + fullNameText + '.'
     })
     .setRepository({
-      resource: '#findmypast'
+      resource: '#agent'
     });
   gedx.addSourceDescriptionToAll(sourceDescription);
   
