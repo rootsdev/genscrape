@@ -126,7 +126,24 @@
         {
           "value": "Baptism Johannes on May 29, 1707 in Leijderdorp (Netherlands)"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Open Archives"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.openarch.nl"
+      }
     }
   ]
 }

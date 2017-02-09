@@ -291,7 +291,24 @@
         {
           "value": "Marriage Pieter Abraham Kropff & Lisabeth Engelhard on March 14, 1822 in Leiden (Netherlands)"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Open Archives"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.openarch.nl"
+      }
     }
   ]
 }

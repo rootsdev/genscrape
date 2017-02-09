@@ -50,6 +50,17 @@ function run(emitter){
         break;
     }
     
+    // Agent
+    gedx.addAgent(GedcomX.Agent()
+      .setId('agent')
+      .addName({
+        lang: 'en',
+        value: 'Open Archives'
+      })
+      .setHomepage({
+        resource: 'https://www.openarch.nl'
+      }));
+    
     // SourceDescription
     var title = schema.queryPropContent($record, 'name');
     gedx.addSourceDescriptionToAll({
@@ -64,7 +75,10 @@ function run(emitter){
           value: title + ' (' + window.document.location.href 
             + ' : accessed ' + utils.getDateString() + ')'
         }
-      ]
+      ],
+      repository: {
+        resource: '#agent'
+      }
     });
   
     emitter.emit('data', gedx);
