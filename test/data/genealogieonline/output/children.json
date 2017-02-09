@@ -391,7 +391,24 @@
         {
           "value": "Johannes Lambertus Henricus Josephus Westenberg (1837-????) » Voorouders Monique en Jan Vis » Genealogie Online"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Genealogie Online"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.genealogieonline.nl"
+      }
     }
   ]
 }
