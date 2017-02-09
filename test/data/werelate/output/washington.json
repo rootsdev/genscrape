@@ -676,7 +676,24 @@
         {
           "value": "Person:George Washington (6) - Genealogy"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "WeRelate"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.werelate.org"
+      }
     }
   ]
 }

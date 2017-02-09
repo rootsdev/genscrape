@@ -321,6 +321,17 @@ function run(emitter){
   
   // TODO: gather sources listed in the profile
   
+  // Agent
+  gedx.addAgent(GedcomX.Agent()
+    .setId('agent')
+    .addName({
+      lang: 'en',
+      value: 'WeRelate'
+    })
+    .setHomepage({
+      resource: 'http://www.werelate.org'
+    }));
+  
   // SourceDescription
   gedx.addSourceDescriptionToAll({
     about: document.location.href,
@@ -334,7 +345,10 @@ function run(emitter){
         value: document.title + ', WeRelate.org (' + window.document.location.href 
           + ' : accessed ' + utils.getDateString() + ')'
       }
-    ]
+    ],
+    repository: {
+      resource: '#agent'
+    }
   });
   
   emitter.emit('data', gedx);
