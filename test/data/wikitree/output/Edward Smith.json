@@ -295,7 +295,24 @@
         {
           "value": "Edward  Smith | Family Tree Unknown"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "WikiTree"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.wikitree.com"
+      }
     }
   ]
 }

@@ -79,6 +79,17 @@ function run(emitter) {
       }
     });
     
+    // Agent
+    gedx.addAgent(GedcomX.Agent()
+      .setId('agent')
+      .addName({
+        lang: 'en',
+        value: 'WikiTree'
+      })
+      .setHomepage({
+        resource: 'https://www.wikitree.com'
+      }));
+    
     // SourceDescription
     gedx.addSourceDescriptionToAll({
       about: document.location.href,
@@ -92,7 +103,10 @@ function run(emitter) {
           value: document.title + ' (' + window.document.location.href 
             + ' : accessed ' + utils.getDateString() + ')'
         }
-      ]
+      ],
+      repository: {
+        resource: '#agent'
+      }
     });
     
     emitter.emit('data', gedx);
