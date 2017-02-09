@@ -249,6 +249,15 @@ function api(treeId, url, callback){
 }
 
 /**
+ * Calculate the proper domain ending: .co.uk, .com, .ie, .com.au
+ * 
+ * @return {String}
+ */
+function getDomain(){
+  return '.' + document.location.host.split('.').slice(2).join('.');
+}
+
+/**
  * Convert a findmypast date integer of form 19260504
  * into a date string of form 1926-05-04.
  * 

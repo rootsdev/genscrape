@@ -6,7 +6,7 @@ var nock = require('nock'),
     pagesDir = __dirname + '/../../data/findmypast-tree/pages',
     outputDir = __dirname + '/../../data/findmypast-tree/output';
 
-describe('findmypast tree', function(){
+describe.only('findmypast tree', function(){
   
   it('process data', function(done){
     
