@@ -2964,7 +2964,24 @@
           "https://familysearch.org/ark:/61903/4:1:KJZ2-417"
         ]
       },
-      "modified": 1425700568000
+      "modified": 1425700568000,
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "FamilySearch Family Tree"
+        }
+      ],
+      "homepage": {
+        "resource": "https://familysearch.org/tree"
+      }
     }
   ],
   "places": [
