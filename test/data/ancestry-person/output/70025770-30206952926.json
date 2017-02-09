@@ -861,7 +861,24 @@
           "value": "\"Public Member Trees\", database, Ancestry.com (http://person.ancestry.com/tree/70025770/person/30206952926 : accessed 17 April 2013), profile for Catharina Czosnikoska."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "15"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }
