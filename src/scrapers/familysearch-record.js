@@ -38,6 +38,17 @@ function run(emitter){
         url = url.replace('/pal:/MM9.1.1/', '/ark:/61903/1:1:');
       }
       
+      // Agent
+      gedx.addAgent(GedcomX.Agent()
+        .setId('agent')
+        .addName({
+          lang: 'en',
+          value: 'FamilySearch'
+        })
+        .setHomepage({
+          resource: 'http://familysearch.org'
+        }));
+      
       // For some reason the persons are not linked to their source descriptions
       // so here we also setup the links.
       gedx.getPersons().forEach(function(person){
@@ -53,12 +64,15 @@ function run(emitter){
             person.setPrincipal();
           }
           
-          // Fix sources
+          // Fix sources; connect to agent
           if(ark){
             gedx.getSourceDescriptions().forEach(function(sourceDescription){
               if(sourceDescription.getAbout() === ark){
                 person.addSource({
                   description: '#' + sourceDescription.getId()
+                });
+                sourceDescription.setRepository({
+                  resource: '#agent'
                 });
               }
             });
