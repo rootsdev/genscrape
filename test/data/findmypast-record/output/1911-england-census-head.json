@@ -213,7 +213,24 @@
           "value": "1911 Census for England & Wales, database, findmypast (http://search.findmypast.com/record?id=gbc%2f1911%2frg14%2f24584%2f0135%2f1 : accessed 17 April 2013), entry for Abraham Turner."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "5"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }

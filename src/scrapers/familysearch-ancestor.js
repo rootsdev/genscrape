@@ -70,6 +70,27 @@ function processUrl(emitter) {
             });
           }
           
+          // Add the agent and connect to the root source description
+          var agent = GedcomX.Agent({
+            id: 'agent',
+            names: [{
+              lang: 'en',
+              value: 'FamilySearch Family Tree'
+            }],
+            homepage: {
+              resource: 'https://familysearch.org/tree'
+            }
+          });
+          gedx.addAgent(agent);
+          var description = gedx.getSourceDescriptions().filter(function(d){
+            return d.getId() === descriptionRef.substring(1);
+          })[0];
+          if(description){
+            description.setRepository({
+              resource: '#agent'
+            });
+          }
+          
           emitter.emit('data', gedx);
         }
       });

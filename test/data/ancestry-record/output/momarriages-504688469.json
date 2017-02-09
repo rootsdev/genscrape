@@ -146,7 +146,24 @@
           "value": "Ancestry.com. Missouri, Marriage Records, 1805-2002 [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2007.                                                                                                                Original data:                                                  Missouri Marriage Records. Jefferson City, MO, USA: Missouri State Archives. Microfilm."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "4"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

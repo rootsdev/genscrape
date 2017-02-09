@@ -269,7 +269,24 @@
         {
           "value": "Marriage Albertus Henderikus Kleinenberg & Janna Moes on May 22, 1931 in Lonneker (Netherlands)"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Open Archives"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.openarch.nl"
+      }
     }
   ]
 }

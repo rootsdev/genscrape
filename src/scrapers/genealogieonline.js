@@ -54,6 +54,17 @@ function run(emitter){
       });
     });
     
+    // Agent
+    gedx.addAgent(GedcomX.Agent()
+      .setId('agent')
+      .addName({
+        lang: 'en',
+        value: 'Genealogie Online'
+      })
+      .setHomepage({
+        resource: 'https://www.genealogieonline.nl'
+      }));
+    
     // SourceDescription
     gedx.addSourceDescriptionToAll({
       about: document.location.href,
@@ -67,7 +78,10 @@ function run(emitter){
           value: document.title + ' (' + window.document.location.href 
             + ' : accessed ' + utils.getDateString() + ')'
         }
-      ]
+      ],
+      repository: {
+        resource: '#agent'
+      }
     });
    
     emitter.emit('data', gedx);

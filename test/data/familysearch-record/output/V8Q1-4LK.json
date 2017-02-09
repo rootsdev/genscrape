@@ -232,6 +232,9 @@
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:V8Q1-4LK"
         ]
+      },
+      "repository": {
+        "resource": "#agent"
       }
     },
     {
@@ -256,6 +259,23 @@
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:V8Q1-4LV"
         ]
+      },
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "FamilySearch"
+        }
+      ],
+      "homepage": {
+        "resource": "http://familysearch.org"
       }
     }
   ],

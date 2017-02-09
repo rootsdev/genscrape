@@ -73,7 +73,24 @@
           "value": "Year: 1874; Arrival: New York, New York; Microfilm Serial: M237, 1820-1897; Microfilm Roll: Roll 389; Line: 45; List Number: 498"
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "2"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

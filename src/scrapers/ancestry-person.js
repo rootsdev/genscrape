@@ -228,6 +228,18 @@ function process(emitter, $dom){
     });
   });
   
+  // Agent
+  var agent = GedcomX.Agent()
+    .setId('agent')
+    .addName({
+      lang: 'en',
+      value: 'Ancestry'
+    })
+    .setHomepage({
+      resource: 'http://www.ancestry.com'
+    });
+  gedx.addAgent(agent);
+  
   // Sources
   // Recommended format by EE:
   // https://www.evidenceexplained.com/comment/1002#comment-1002
@@ -241,6 +253,9 @@ function process(emitter, $dom){
     .addCitation({
       value: '"Public Member Trees", database, Ancestry.com (' + window.document.location.href
         + ' : accessed ' + utils.getDateString() + '), profile for ' + fullNameText + '.'
+    })
+    .setRepository({
+      resource: '#agent'
     });
   gedx.addSourceDescriptionToAll(sourceDescription);
   

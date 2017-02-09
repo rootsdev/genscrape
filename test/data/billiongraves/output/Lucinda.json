@@ -93,7 +93,24 @@
         {
           "value": "Grave Site of Lucinda Clark (-1900) | BillionGraves"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "BillionGraves"
+        }
+      ],
+      "homepage": {
+        "resource": "https://billiongraves.com"
+      }
     }
   ]
 }

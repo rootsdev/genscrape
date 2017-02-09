@@ -2546,6 +2546,9 @@
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:MNCT-SDC"
         ]
+      },
+      "repository": {
+        "resource": "#agent"
       }
     },
     {
@@ -2570,6 +2573,9 @@
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:MNCT-SDZ"
         ]
+      },
+      "repository": {
+        "resource": "#agent"
       }
     },
     {
@@ -2594,6 +2600,9 @@
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:MNCT-SD8"
         ]
+      },
+      "repository": {
+        "resource": "#agent"
       }
     },
     {
@@ -2618,6 +2627,9 @@
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:MNCT-SDD"
         ]
+      },
+      "repository": {
+        "resource": "#agent"
       }
     },
     {
@@ -2642,6 +2654,9 @@
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:MNCT-SD6"
         ]
+      },
+      "repository": {
+        "resource": "#agent"
       }
     },
     {
@@ -2666,6 +2681,18 @@
         "http://gedcomx.org/Persistent": [
           "das.familysearch.org"
         ]
+      }
+    },
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "FamilySearch"
+        }
+      ],
+      "homepage": {
+        "resource": "http://familysearch.org"
       }
     }
   ],

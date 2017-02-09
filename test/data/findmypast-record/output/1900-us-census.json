@@ -258,7 +258,24 @@
           "value": "US Census 1900, database, findmypast (http://search.findmypast.com/record?id=usc%2f1900%2f004114960%2f00265%2f084 : accessed 17 April 2013), entry for Wadiswat York."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "6"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }

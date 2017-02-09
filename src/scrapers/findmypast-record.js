@@ -240,6 +240,18 @@ function run(emitter) {
   
   }
   
+  // Agent
+  var agent = GedcomX.Agent()
+    .setId('agent')
+    .addName({
+      lang: 'en',
+      value: 'findmypast'
+    })
+    .setHomepage({
+      resource: 'http://www.findmypast' + utils.getDomain()
+    });
+  gedx.addAgent(agent);
+  
   // SourceDescription
   var fullNameText = primaryPerson.getNames()[0].getNameForms()[0].getFullText(),
       collectionTitle = dataFields.getText('record set');
@@ -251,6 +263,9 @@ function run(emitter) {
     .addCitation({
       value: collectionTitle + ', database, findmypast (' + window.document.location.href
         + ' : accessed ' + utils.getDateString() + '), entry for ' + fullNameText + '.'
+    })
+    .setRepository({
+      resource: '#agent'
     });
   gedx.addSourceDescriptionToAll(sourceDescription);
 

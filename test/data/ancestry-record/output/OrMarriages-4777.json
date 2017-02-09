@@ -103,7 +103,24 @@
           "value": "Ancestry.com. Marion County, Oregon, Marriage Records, 1849-1900 [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2012.                                                                                                                Original data:                                                  Custer, Jeanne, and Daraleen Wade, compilers. The Marriage Records of Marion County, Oregon, Volume 1, 1849–1871. Salem, Oregon: Willamette Valley Genealogical Society, 1979.Custer, Jeanne, and Daraleen Wade, compilers. The Marriage Records of Marion County, Oregon, Volume 2, 1871–1874. Salem, Oregon: Willamette Valley Genealogical Society, 1979.Custer, Jeanne, and Daraleen Wade, compilers. The Marriage Records of Marion County, Oregon, Volume 3 1874–1879. Salem, Oregon: Willamette Valley Genealogical Society, 1980.Custer, Jeanne, and Daraleen Wade, compilers. The Marriage Records of Marion County, Oregon, Volume 4, 1879–1884. Salem, Oregon: Willamette Valley Genealogical Society, 1981.Lowther, Vergene, and Jeanne Custer, compilers.  The Marriage Records of Marion County, Oregon, Volume 5, 1884–1888. Salem, Oregon: Willamette Valley Genealogical Society, 1983.Custer, Jean, and Ann Hochspeier, compilers. The Marriage Records of Marion County, Oregon, Volume 6, 1888–1891. Salem, Oregon: Willamette Valley Genealogical Society, 1990.Hochspeier, Ann, and Jean Custer, compilers. The Marriage Records of Marion County, Oregon, Volume 7, 1891–1894. Salem, Oregon: Willamette Valley Genealogical Society, 1991.Hochspeier, Ann, and Jean Custer, compilers. The Marriage Records of Marion County, Oregon, Volume 8, 1894–1897. Salem, Oregon: Willamette Valley Genealogical Society, 1991."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "3"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

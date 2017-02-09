@@ -155,6 +155,18 @@ function processData(personId, data){
     });
   });
   
+  // Agent
+  var agent = GedcomX.Agent()
+    .setId('agent')
+    .addName({
+      lang: 'en',
+      value: 'findmypast'
+    })
+    .setHomepage({
+      resource: 'http://www.findmypast' + utils.getDomain()
+    });
+  gedx.addAgent(agent);
+  
   // Source Description
   var fullNameText = primaryPerson.getNames()[0].getNameForms()[0].getFullText();
   var sourceDescription = GedcomX.SourceDescription()
@@ -165,6 +177,9 @@ function processData(personId, data){
     .addCitation({
       value: '"' + data.Title + ' - findmypast Family Tree" (' + window.document.location.href
         + ' : accessed ' + utils.getDateString() + '), profile for ' + fullNameText + '.'
+    })
+    .setRepository({
+      resource: '#agent'
     });
   gedx.addSourceDescriptionToAll(sourceDescription);
   
@@ -231,6 +246,15 @@ function api(treeId, url, callback){
   utils.getJSON('/api/proxy/get?url=' + encodeURIComponent(url), {
     'Family-Tree-Ref': treeId
   }, callback);
+}
+
+/**
+ * Calculate the proper domain ending: .co.uk, .com, .ie, .com.au
+ * 
+ * @return {String}
+ */
+function getDomain(){
+  return '.' + document.location.host.split('.').slice(2).join('.');
 }
 
 /**

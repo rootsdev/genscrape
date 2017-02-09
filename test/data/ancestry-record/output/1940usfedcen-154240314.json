@@ -239,7 +239,24 @@
           "value": "Year: 1940; Census Place: Highland Park, Dallas, Texas; Roll: T627_4015; Page: 3A; Enumeration District: 57-1C"
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "6"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

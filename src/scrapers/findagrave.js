@@ -93,6 +93,19 @@ function run(emitter){
     gedx.addPerson(sibling);
   });
   
+  // Agent
+  var agent = GedcomX.Agent({
+    id: 'agent',
+    names: [{
+      lang: 'en',
+      value: 'Find A Grave'
+    }],
+    homepage: {
+      resource: 'https://www.findagrave.com'
+    }
+  });
+  gedx.addAgent(agent);
+  
   // SourceDescription
   gedx.addSourceDescriptionToAll({
     about: document.location.href,
@@ -106,7 +119,10 @@ function run(emitter){
         value: 'Find A Grave, database and images (http://findagrave.com : accessed ' + utils.getDateString() + ')'
           + ', memorial page for ' + document.title + '.'
       }
-    ]
+    ],
+    repository: {
+      resource: '#agent'
+    }
   });
   
   debug('data');

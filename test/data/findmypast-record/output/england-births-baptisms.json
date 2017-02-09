@@ -94,7 +94,24 @@
           "value": "England Births & Baptisms 1538-1975, database, findmypast (http://search.findmypast.com/record?id=r_931803621 : accessed 17 April 2013), entry for Turner."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "3"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }

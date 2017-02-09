@@ -189,7 +189,24 @@
           "value": "Ancestry.com. Vermont, Vital Records, 1720-1908 [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2013.                                                                                                                Original data:                                                  State of Vermont. Vermont Vital Records through 1870. New England Historic Genealogical Society, Boston, Massachusetts.State of Vermont. Vermont Vital Records, 1871–1908. New England Historic Genealogical Society, Boston, Massachusetts."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "5"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

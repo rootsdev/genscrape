@@ -657,7 +657,24 @@
         {
           "value": "Theodore  Roosevelt Jr. | WikiTree: The FREE Family Tree"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "WikiTree"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.wikitree.com"
+      }
     }
   ]
 }

@@ -515,7 +515,24 @@
         {
           "value": "Thomas Jefferson York, I (1771 - 1846) - Find A Grave Memorial"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Find A Grave"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.findagrave.com"
+      }
     }
   ]
 }

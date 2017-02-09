@@ -228,7 +228,24 @@
         {
           "value": "Grave Site of Joseph Clark (1798-1866) | BillionGraves"
         }
-      ]
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "BillionGraves"
+        }
+      ],
+      "homepage": {
+        "resource": "https://billiongraves.com"
+      }
     }
   ]
 }

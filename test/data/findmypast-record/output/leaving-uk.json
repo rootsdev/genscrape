@@ -94,7 +94,24 @@
           "value": "Passenger Lists leaving UK 1890-1960, database, findmypast (http://search.findmypast.com/record?id=tna%2fbt27%2f0980000042%2f00187 : accessed 17 April 2013), entry for Anastazja Jurkiewicz."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "3"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }

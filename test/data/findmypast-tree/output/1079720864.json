@@ -1152,7 +1152,24 @@
           "value": "\"yorks-march-2015 - findmypast Family Tree\" (http://tree.findmypast.co.uk/#/trees/863a418d-78de-43e6-9af6-c9ce320a86ef/1079720864/media : accessed 17 April 2013), profile for Helen Gertrude Zierak."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "16"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.co.uk"
+      }
     }
   ]
 }

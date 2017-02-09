@@ -101,6 +101,16 @@ utils.find = function(list, matcher){
 };
 
 /**
+ * Calculate the proper domain ending: .co.uk, .com, .ie, .com.au
+ * Useful for sites like findmypast and Ancestry that have multiple domains
+ * 
+ * @return {String}
+ */
+utils.getDomain = function(){
+  return '.' + document.location.host.split('.').slice(2).join('.');
+};
+
+/**
  * Simple JSON AJAX without jQuery
  * http://youmightnotneedjquery.com/#json
  * 

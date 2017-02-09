@@ -230,7 +230,24 @@
           "value": "1841 England, Wales & Scotland Census, database, findmypast (http://search.findmypast.com/record?id=gbc%2f1841%2f0005244738 : accessed 17 April 2013), entry for Abraham Smith."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "8"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }

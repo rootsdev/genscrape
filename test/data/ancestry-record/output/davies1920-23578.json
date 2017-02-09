@@ -55,7 +55,24 @@
           "value": "Stanley, Mary, ed.. Daviess County, Kentucky Census, 1920 [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 1999."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "2"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

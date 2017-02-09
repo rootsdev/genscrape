@@ -507,7 +507,24 @@
           "value": "\"Public Member Trees\", database, Ancestry.com (http://person.ancestry.com/tree/70025770/person/30206952907 : accessed 17 April 2013), profile for Theodore Yurkiewicz."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "7"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

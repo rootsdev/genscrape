@@ -175,7 +175,24 @@
           "value": "Denbigh Marriages, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fm%2f880081323%2f1 : accessed 17 April 2013), entry for Bernard Debelton Turner."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "5"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }
