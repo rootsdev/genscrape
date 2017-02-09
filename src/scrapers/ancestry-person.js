@@ -539,11 +539,12 @@ function FactsList($dom){
 /**
  * Given the URL of a person, return an ID of the format ${treeId}-${personId}.
  * 
+ * Example URL: http://person.ancestry.com/tree/70025770/person/30322313653
+ * 
  * @param {String} url
  * @return {String}
  */
 function getPersonIdFromUrl(url) {
   var parts = url.split('/');
-  // http://person.ancestry.com/tree/70025770/person/30322313653
-  return parts[4] + '-' + parts[6];
+  return parts[4] + ':' + parts[6];
 }

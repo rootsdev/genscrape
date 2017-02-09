@@ -1,8 +1,13 @@
 {
-  "description": "#2",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "nypl:14261124",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=nypl&h=14261124"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -55,7 +60,7 @@
       ],
       "sources": [
         {
-          "description": "#2"
+          "description": "#1"
         }
       ]
     }
@@ -76,7 +81,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "2"
+      "id": "1"
     }
   ],
   "agents": [

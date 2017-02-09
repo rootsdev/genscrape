@@ -1,8 +1,13 @@
 {
-  "description": "#6",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "1940usfedcen:154240314",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.ancestry.com/cgi-bin/sse.dll?db=1940usfedcen&indiv=try&h=154240314"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -77,12 +82,17 @@
       ],
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
-      "id": "2",
+      "id": "1940usfedcen:154240312",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.ancestry.com/cgi-bin/sse.dll?db=1940usfedcen&indiv=try&h=154240312"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -113,12 +123,17 @@
       ],
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
-      "id": "3",
+      "id": "1940usfedcen:154240317",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.ancestry.com/cgi-bin/sse.dll?db=1940usfedcen&indiv=try&h=154240317"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -149,12 +164,17 @@
       ],
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
-      "id": "4",
+      "id": "1940usfedcen:154240321",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.ancestry.com/cgi-bin/sse.dll?db=1940usfedcen&indiv=try&h=154240321"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -185,12 +205,17 @@
       ],
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
-      "id": "5",
+      "id": "1940usfedcen:154240324",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.ancestry.com/cgi-bin/sse.dll?db=1940usfedcen&indiv=try&h=154240324"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -221,7 +246,7 @@
       ],
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     }
@@ -242,7 +267,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "6"
+      "id": "1"
     }
   ],
   "agents": [

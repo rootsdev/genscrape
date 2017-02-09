@@ -2,7 +2,7 @@
   "description": "#1",
   "persons": [
     {
-      "id": "70025770-30206952959",
+      "id": "70025770:30206952959",
       "identifiers": {
         "http://gedcomx.org/Primary": [
           "http://person.ancestry.com/tree/70025770/person/30206952959"
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "70025770-30206952960",
+      "id": "70025770:30206952960",
       "identifiers": {
         "http://gedcomx.org/Primary": [
           "http://person.ancestry.com/tree/70025770/person/30206952960"
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "id": "70025770-30206952925",
+      "id": "70025770:30206952925",
       "identifiers": {
         "http://gedcomx.org/Primary": [
           "http://person.ancestry.com/tree/70025770/person/30206952925"
@@ -107,10 +107,10 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#70025770-30206952959"
+        "resource": "#70025770:30206952959"
       },
       "person2": {
-        "resource": "#70025770-30206952960"
+        "resource": "#70025770:30206952960"
       },
       "sources": [
         {
@@ -121,10 +121,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#70025770-30206952959"
+        "resource": "#70025770:30206952959"
       },
       "person2": {
-        "resource": "#70025770-30206952925"
+        "resource": "#70025770:30206952925"
       },
       "sources": [
         {
@@ -135,10 +135,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#70025770-30206952960"
+        "resource": "#70025770:30206952960"
       },
       "person2": {
-        "resource": "#70025770-30206952925"
+        "resource": "#70025770:30206952925"
       },
       "sources": [
         {

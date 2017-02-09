@@ -1,8 +1,13 @@
 {
-  "description": "#5",
+  "description": "#4",
   "persons": [
     {
-      "id": "1",
+      "id": "VTVitalRecs:1344848",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.ancestry.com/cgi-bin/sse.dll?db=VTVitalRecs&h=1344848&indiv=try"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -39,12 +44,12 @@
       ],
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     },
     {
-      "id": "2",
+      "id": "1",
       "names": [
         {
           "nameForms": [
@@ -66,12 +71,12 @@
       ],
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     },
     {
-      "id": "3",
+      "id": "2",
       "names": [
         {
           "nameForms": [
@@ -89,12 +94,12 @@
       ],
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     },
     {
-      "id": "4",
+      "id": "3",
       "names": [
         {
           "nameForms": [
@@ -116,7 +121,7 @@
       ],
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     }
@@ -125,38 +130,38 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#1"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#VTVitalRecs:1344848"
       },
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#3"
+        "resource": "#2"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#VTVitalRecs:1344848"
       },
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#VTVitalRecs:1344848"
       },
       "person2": {
-        "resource": "#4"
+        "resource": "#3"
       },
       "facts": [
         {
@@ -171,7 +176,7 @@
       ],
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     }
@@ -192,7 +197,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "5"
+      "id": "4"
     }
   ],
   "agents": [

@@ -1,8 +1,13 @@
 {
-  "description": "#3",
+  "description": "#2",
   "persons": [
     {
-      "id": "1",
+      "id": "OrMarriages:4777",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.ancestry.com/cgi-bin/sse.dll?h=4777&db=OrMarriages&indiv=1"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -28,12 +33,12 @@
       },
       "sources": [
         {
-          "description": "#3"
+          "description": "#2"
         }
       ]
     },
     {
-      "id": "2",
+      "id": "1",
       "names": [
         {
           "nameForms": [
@@ -58,7 +63,7 @@
       },
       "sources": [
         {
-          "description": "#3"
+          "description": "#2"
         }
       ]
     }
@@ -67,10 +72,10 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#OrMarriages:4777"
       },
       "person2": {
-        "resource": "#2"
+        "resource": "#1"
       },
       "facts": [
         {
@@ -85,7 +90,7 @@
       ],
       "sources": [
         {
-          "description": "#3"
+          "description": "#2"
         }
       ]
     }
@@ -106,7 +111,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "3"
+      "id": "2"
     }
   ],
   "agents": [

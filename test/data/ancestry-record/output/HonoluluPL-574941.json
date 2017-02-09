@@ -1,8 +1,13 @@
 {
-  "description": "#2",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "HonoluluPL:574941",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.ancestry.com/cgi-bin/sse.dll?h=574941&db=HonoluluPL&indiv=1"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -54,7 +59,7 @@
       ],
       "sources": [
         {
-          "description": "#2"
+          "description": "#1"
         }
       ]
     }
@@ -75,7 +80,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "2"
+      "id": "1"
     }
   ],
   "agents": [

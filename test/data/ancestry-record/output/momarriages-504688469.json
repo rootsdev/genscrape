@@ -1,8 +1,13 @@
 {
-  "description": "#4",
+  "description": "#3",
   "persons": [
     {
-      "id": "1",
+      "id": "momarriages:504688469",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=momarriages&h=504688469"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -33,12 +38,12 @@
       ],
       "sources": [
         {
-          "description": "#4"
+          "description": "#3"
         }
       ]
     },
     {
-      "id": "2",
+      "id": "1",
       "names": [
         {
           "nameForms": [
@@ -60,12 +65,12 @@
       ],
       "sources": [
         {
-          "description": "#4"
+          "description": "#3"
         }
       ]
     },
     {
-      "id": "3",
+      "id": "2",
       "names": [
         {
           "nameForms": [
@@ -87,7 +92,7 @@
       ],
       "sources": [
         {
-          "description": "#4"
+          "description": "#3"
         }
       ]
     }
@@ -96,24 +101,24 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#1"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#momarriages:504688469"
       },
       "sources": [
         {
-          "description": "#4"
+          "description": "#3"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#momarriages:504688469"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#2"
       },
       "facts": [
         {
@@ -128,7 +133,7 @@
       ],
       "sources": [
         {
-          "description": "#4"
+          "description": "#3"
         }
       ]
     }
@@ -149,7 +154,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "4"
+      "id": "3"
     }
   ],
   "agents": [

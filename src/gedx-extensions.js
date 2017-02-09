@@ -404,3 +404,31 @@ GedcomX.Root.prototype.addPerson = function(person){
   }
   originalAddPerson.call(this, person);
 };
+
+/**
+ * Update a person's ID and any references to the person.
+ * 
+ * @param {String} oldId
+ * @param {String} newId
+ */
+GedcomX.Root.prototype.updatePersonsID = function(oldId, newId) {
+  if(!oldId || oldId === newId){
+    return;
+  }
+  var person = this.getPersons().filter(function(p){ return p.getId() === oldId; })[0];
+  if(person){
+    person.setId(newId);
+    this.getRelationships().forEach(function(rel){
+      if(rel.getPerson1().matches(oldId)){
+        rel.setPerson1({
+          resource: '#' + newId
+        });
+      }
+      if(rel.getPerson2().matches(oldId)){
+        rel.setPerson2({
+          resource: '#' + newId
+        });
+      }
+    });
+  }
+};
