@@ -1,6 +1,6 @@
 var setupTest = require('../../testHelpers').createTestRunner('billiongraves');
     
-describe('billiongraves', function(){
+describe.only('billiongraves', function(){
   
   it('name and death', setupTest(
     'Lucinda',

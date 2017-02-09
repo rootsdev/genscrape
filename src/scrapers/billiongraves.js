@@ -115,6 +115,18 @@ function run(emitter){
     gedx.addPerson(person);
   });
   
+  // Agent
+  var agent = GedcomX.Agent()
+    .setId('agent')
+    .addName({
+      lang: 'en',
+      value: 'BillionGraves'
+    })
+    .setHomepage({
+      resource: 'https://billiongraves.com'
+    });
+  gedx.addAgent(agent);
+  
   // SourceDescription
   gedx.addSourceDescriptionToAll({
     about: document.location.href,
@@ -128,7 +140,10 @@ function run(emitter){
         value: document.title + ' (' + window.document.location.href 
           + ' : accessed ' + utils.getDateString() + ')'
       }
-    ]
+    ],
+    repository: {
+      resource: '#agent'
+    }
   });
   
   debug('data', gedx);
