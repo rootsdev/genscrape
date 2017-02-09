@@ -257,7 +257,24 @@
           "value": "Year: 1880; Census Place: Johnstown, Fulton, New York; Roll: 834; Family History Film: 1254834; Page: 74A; Enumeration District: 005; Image: 0560"
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "6"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

@@ -51,7 +51,24 @@
           "value": "Ancestry.com. U.S., Find A Grave Index, 1600s-Current [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2012.                                                                                                                Original data:                                                  Find A Grave. Find A Grave. http://www.findagrave.com/cgi-bin/fg.cgi."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "2"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

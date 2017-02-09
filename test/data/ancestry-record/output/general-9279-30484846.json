@@ -114,7 +114,24 @@
           "value": "Ancestry.com. Virginia, Marriage Records, 1936-2014 [database on-line]. Provo, UT, USA: Ancestry.com Operations, Inc., 2015.                                                                                                                Original data:                                                  Virginia, Marriages, 1936-2014. Virginia Department of Health, Richmond, Virginia."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "3"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

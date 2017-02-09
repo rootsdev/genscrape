@@ -437,7 +437,24 @@
           "value": "Year: 1900; Census Place: Armour, Limestone, Texas; Roll: 1655; Page: 33B; Enumeration District: 0063; FHL microfilm: 1241655"
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "11"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

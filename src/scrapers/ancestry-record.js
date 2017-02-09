@@ -363,9 +363,25 @@ function setup(emitter) {
     }
   }
   
+  // Agent
+  var agent = GedcomX.Agent()
+    .setId('agent')
+    .addName({
+      lang: 'en',
+      value: 'Ancestry'
+    })
+    .setHomepage({
+      resource: 'http://www.ancestry.com'
+    });
+  gedx.addAgent(agent);
+  
   // Calculate source citation and description. Add source reference to all
   // persons in the GedcomX document.
-  gedx.addSourceDescriptionToAll(getSourceDescription());
+  var source = getSourceDescription();
+  source.setRepository({
+    resource: '#agent'
+  });
+  gedx.addSourceDescriptionToAll(source);
   
   debug('data');
   emitter.emit('data', gedx);

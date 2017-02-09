@@ -72,7 +72,24 @@
           "value": "National Archives and Records Administration (NARA); Washington, D.C.; Passenger Lists of Vessels Arriving at Honolulu, Hawaii, compiled 02/13/1900 - 12/30/1953; National Archives Microfilm Publication: A3422; Roll: 154; Record Group Title: Records of the Immigration and Naturalization Service, 1787 - 2004; Record Group Number: RG 85"
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "2"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }

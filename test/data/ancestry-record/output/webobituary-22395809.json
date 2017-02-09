@@ -270,7 +270,24 @@
           "value": "Publication Date: 03/ 10/ 2010; Web edition: http://www.legacy.com/obituaries/newszapde/obituary.aspx?n=joyce-ann-mears&pid=140535508"
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "7"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Ancestry"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.ancestry.com"
+      }
     }
   ]
 }
