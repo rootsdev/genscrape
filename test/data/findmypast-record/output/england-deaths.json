@@ -59,7 +59,24 @@
           "value": "England & Wales deaths 1837-2007, database, findmypast (http://search.findmypast.com/record?id=bmd%2fd%2f1896%2f4%2faz%2f000376%2f022 : accessed 17 April 2013), entry for Marion M D Turner-turner."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "2"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }

@@ -136,7 +136,24 @@
           "value": "Denbigh Baptisms, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fb%2f879273212%2f1 : accessed 17 April 2013), entry for Catherine Walter Turner."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "4"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }

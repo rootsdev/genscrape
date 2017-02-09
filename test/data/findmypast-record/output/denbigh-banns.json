@@ -95,7 +95,24 @@
           "value": "Denbigh Banns, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fm%2f881019255%2f1 : accessed 17 April 2013), entry for David Charles Turner."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "3"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }

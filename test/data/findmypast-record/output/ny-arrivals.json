@@ -76,7 +76,24 @@
           "value": "New York Passenger Lists & Arrivals, database, findmypast (http://search.findmypast.com/record?id=us%2fpass%2fny%2fei%2f16551289 : accessed 17 April 2013), entry for Adam Jurkiewicz."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "2"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }

@@ -163,7 +163,7 @@ function processData(personId, data){
       value: 'findmypast'
     })
     .setHomepage({
-      resource: 'http://www.findmypast' + getDomain()
+      resource: 'http://www.findmypast' + utils.getDomain()
     });
   gedx.addAgent(agent);
   
@@ -246,15 +246,6 @@ function api(treeId, url, callback){
   utils.getJSON('/api/proxy/get?url=' + encodeURIComponent(url), {
     'Family-Tree-Ref': treeId
   }, callback);
-}
-
-/**
- * Calculate the proper domain ending: .co.uk, .com, .ie, .com.au
- * 
- * @return {String}
- */
-function getDomain(){
-  return '.' + document.location.host.split('.').slice(2).join('.');
 }
 
 /**

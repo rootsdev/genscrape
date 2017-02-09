@@ -53,7 +53,24 @@
           "value": "England & Wales marriages 1837-2008, database, findmypast (http://search.findmypast.com/record?id=bmd%2fm%2f1878%2f4%2faz%2f000312%2f104 : accessed 17 April 2013), entry for Gwendoline E F Turner-turner."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "2"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }

@@ -65,7 +65,24 @@
           "value": "Denbigh Burials, database, findmypast (http://search.findmypast.com/record?id=gbprs%2fd%2f878322398%2f1 : accessed 17 April 2013), entry for Maria Turner."
         }
       ],
+      "repository": {
+        "resource": "#agent"
+      },
       "id": "2"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "findmypast"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.findmypast.com"
+      }
     }
   ]
 }
