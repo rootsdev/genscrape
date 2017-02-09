@@ -94,8 +94,11 @@ function process(emitter, $dom){
   
   var gedx = new GedcomX(),
       primaryPerson = new GedcomX.Person({
-        id: gedx.generateId(),
-        principal: true
+        id: getPersonIdFromUrl(window.location.href),
+        principal: true,
+        identifiers: {
+          'http://gedcomx.org/Primary': window.location.href
+        }
       }),
       facts = FactsList($dom);
   
@@ -286,7 +289,10 @@ function parseHTML(html){
  */
 function getPersonFromCard(gedx, $card){
   var person = GedcomX.Person({
-    id: gedx.generateId()
+    id: getPersonIdFromUrl($card.href),
+    identifiers: {
+      'http://gedcomx.org/Primary': $card.href
+    }
   }).addSimpleName(getPersonName($card));
   var $lifespan = $card.querySelector('.userCardSubTitle');
   if($lifespan){
@@ -528,4 +534,16 @@ function FactsList($dom){
     
   };
   
+}
+
+/**
+ * Given the URL of a person, return an ID of the format ${treeId}-${personId}.
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getPersonIdFromUrl(url) {
+  var parts = url.split('/');
+  // http://person.ancestry.com/tree/70025770/person/30322313653
+  return parts[4] + '-' + parts[6];
 }

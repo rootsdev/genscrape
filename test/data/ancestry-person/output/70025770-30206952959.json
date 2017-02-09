@@ -1,8 +1,13 @@
 {
-  "description": "#4",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "70025770-30206952959",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://person.ancestry.com/tree/70025770/person/30206952959"
+        ]
+      },
       "principal": true,
       "gender": {
         "type": "http://gedcomx.org/Male"
@@ -33,12 +38,17 @@
       ],
       "sources": [
         {
-          "description": "#4"
+          "description": "#1"
         }
       ]
     },
     {
-      "id": "2",
+      "id": "70025770-30206952960",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://person.ancestry.com/tree/70025770/person/30206952960"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -56,12 +66,17 @@
       ],
       "sources": [
         {
-          "description": "#4"
+          "description": "#1"
         }
       ]
     },
     {
-      "id": "3",
+      "id": "70025770-30206952925",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://person.ancestry.com/tree/70025770/person/30206952925"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -83,7 +98,7 @@
       ],
       "sources": [
         {
-          "description": "#4"
+          "description": "#1"
         }
       ]
     }
@@ -92,42 +107,42 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#70025770-30206952959"
       },
       "person2": {
-        "resource": "#2"
+        "resource": "#70025770-30206952960"
       },
       "sources": [
         {
-          "description": "#4"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#70025770-30206952959"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#70025770-30206952925"
       },
       "sources": [
         {
-          "description": "#4"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#70025770-30206952960"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#70025770-30206952925"
       },
       "sources": [
         {
-          "description": "#4"
+          "description": "#1"
         }
       ]
     }
@@ -148,7 +163,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "4"
+      "id": "1"
     }
   ],
   "agents": [
