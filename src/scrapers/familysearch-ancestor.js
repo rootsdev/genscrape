@@ -70,6 +70,12 @@ function processUrl(emitter) {
             });
           }
           
+          // Set primary identifiers for all persons
+          gedx.getPersons().forEach(function(person){
+            var identifiers = person.getIdentifiers();
+            identifiers.setValues(identifiers.getValues('http://gedcomx.org/Persistent'), 'http://gedcomx.org/Primary');
+          });
+          
           // Add the agent and connect to the root source description
           var agent = GedcomX.Agent({
             id: 'agent',

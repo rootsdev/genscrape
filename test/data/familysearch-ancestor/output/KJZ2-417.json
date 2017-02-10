@@ -12,6 +12,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KJZ2-417"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/4:1:KJZ2-417"
         ]
       },
       "gender": {
@@ -313,6 +316,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KJZ2-HMR"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/4:1:KJZ2-HMR"
         ]
       },
       "gender": {
@@ -460,6 +466,9 @@
       "sortKey": "0002371670",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/4:1:27YD-KTH"
+        ],
+        "http://gedcomx.org/Primary": [
           "https://familysearch.org/ark:/61903/4:1:27YD-KTH"
         ]
       },
@@ -657,6 +666,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KGCZ-CSX"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/4:1:KGCZ-CSX"
         ]
       },
       "gender": {
@@ -785,6 +797,9 @@
       "sortKey": "0002394771",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/4:1:MGJV-G5Z"
+        ],
+        "http://gedcomx.org/Primary": [
           "https://familysearch.org/ark:/61903/4:1:MGJV-G5Z"
         ]
       },
@@ -919,6 +934,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KV1S-YZL"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/4:1:KV1S-YZL"
         ]
       },
       "gender": {
@@ -1047,6 +1065,9 @@
       "sortKey": "0002387993",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/4:1:KL1M-9YX"
+        ],
+        "http://gedcomx.org/Primary": [
           "https://familysearch.org/ark:/61903/4:1:KL1M-9YX"
         ]
       },
@@ -1212,6 +1233,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:MC3H-Q24"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/4:1:MC3H-Q24"
         ]
       },
       "gender": {
@@ -1330,6 +1354,9 @@
       "sortKey": "0002393472",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/4:1:KJZ2-Q4C"
+        ],
+        "http://gedcomx.org/Primary": [
           "https://familysearch.org/ark:/61903/4:1:KJZ2-Q4C"
         ]
       },
@@ -1509,6 +1536,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:LHWD-YJP"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/4:1:LHWD-YJP"
         ]
       },
       "gender": {
@@ -1663,6 +1693,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KV19-B84"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/4:1:KV19-B84"
         ]
       },
       "gender": {
@@ -1785,6 +1818,9 @@
       "sortKey": "0002386532",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/4:1:KL1M-92V"
+        ],
+        "http://gedcomx.org/Primary": [
           "https://familysearch.org/ark:/61903/4:1:KL1M-92V"
         ]
       },
@@ -1914,6 +1950,9 @@
       "sortKey": "0002391832",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/4:1:KLZR-Y5Z"
+        ],
+        "http://gedcomx.org/Primary": [
           "https://familysearch.org/ark:/61903/4:1:KLZR-Y5Z"
         ]
       },
@@ -2079,6 +2118,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:9X95-KQ5"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/4:1:9X95-KQ5"
         ]
       },
       "gender": {
@@ -2203,6 +2245,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/4:1:KV19-26V"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/4:1:KV19-26V"
         ]
       },
       "gender": {
@@ -2321,6 +2366,9 @@
       "sortKey": "0002390915",
       "identifiers": {
         "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/4:1:27SH-9J6"
+        ],
+        "http://gedcomx.org/Primary": [
           "https://familysearch.org/ark:/61903/4:1:27SH-9J6"
         ]
       },
