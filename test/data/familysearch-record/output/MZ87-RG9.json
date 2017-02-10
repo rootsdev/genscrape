@@ -461,6 +461,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:MZ87-RL1"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RL1"
         ]
       },
       "gender": {
@@ -1039,6 +1042,9 @@
       "extracted": true,
       "identifiers": {
         "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RGM"
+        ],
+        "http://gedcomx.org/Primary": [
           "https://familysearch.org/ark:/61903/1:1:MZ87-RGM"
         ]
       },
@@ -1619,6 +1625,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:MZ87-RG9"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RG9"
         ]
       },
       "gender": {
@@ -2183,6 +2192,9 @@
       "identifiers": {
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:MZ87-RGS"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RGS"
         ]
       },
       "gender": {
@@ -2745,6 +2757,9 @@
       "extracted": true,
       "identifiers": {
         "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MZ87-RG3"
+        ],
+        "http://gedcomx.org/Primary": [
           "https://familysearch.org/ark:/61903/1:1:MZ87-RG3"
         ]
       },

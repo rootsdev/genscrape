@@ -38,6 +38,12 @@ function run(emitter){
         url = url.replace('/pal:/MM9.1.1/', '/ark:/61903/1:1:');
       }
       
+      // Set primary identifiers for all persons
+      gedx.getPersons().forEach(function(person){
+        var identifiers = person.getIdentifiers();
+        identifiers.setValues(identifiers.getValues('http://gedcomx.org/Persistent'), 'http://gedcomx.org/Primary');
+      });
+      
       // Agent
       gedx.addAgent(GedcomX.Agent()
         .setId('agent')

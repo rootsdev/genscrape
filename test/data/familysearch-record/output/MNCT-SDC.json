@@ -394,6 +394,9 @@
         ],
         "$": [
           "https://familysearch.org/platform/externalId/easy/638829553"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SDC"
         ]
       },
       "gender": {
@@ -885,6 +888,9 @@
         ],
         "$": [
           "https://familysearch.org/platform/externalId/easy/638829554"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SDZ"
         ]
       },
       "gender": {
@@ -1375,6 +1381,9 @@
         ],
         "$": [
           "https://familysearch.org/platform/externalId/easy/638829555"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SD8"
         ]
       },
       "gender": {
@@ -1865,6 +1874,9 @@
         ],
         "$": [
           "https://familysearch.org/platform/externalId/easy/638829556"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SDD"
         ]
       },
       "gender": {
@@ -2355,6 +2367,9 @@
         ],
         "$": [
           "https://familysearch.org/platform/externalId/easy/638829557"
+        ],
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/ark:/61903/1:1:MNCT-SD6"
         ]
       },
       "gender": {
