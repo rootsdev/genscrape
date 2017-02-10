@@ -28,7 +28,11 @@ function run(emitter){
   var record = json.record,
       gedx = new GedcomX(), 
       primaryPerson = GedcomX.Person({
-        principal: true
+        principal: true,
+        id: record.record_id,
+        identifiers: {
+          'http://gedcomx.org/Primary': graveUrl(record.record_id, record.urlname)
+        }
       });
   
   gedx.addPerson(primaryPerson);
@@ -94,7 +98,12 @@ function run(emitter){
   // Relationships
   // We don't actually know how they're related, we just have names and dates
   record.relationships.forEach(function(relation){
-    var person = GedcomX.Person();
+    var person = GedcomX.Person({
+      id: relation.record_id,
+      identifiers: {
+        'http://gedcomx.org/Primary': graveUrl(relation.record_id, relation.urlname)
+      }
+    });
     person.addSimpleName(relation.fullname);
     if(dateAvailable(relation.birth_date)){
       person.addFact({
@@ -158,4 +167,14 @@ function run(emitter){
  */
 function dateAvailable(date){
   return date !== 'Not Available';
+}
+
+/**
+ * Generate a URL for the grave
+ * 
+ * @param {String} recordId
+ * @param {String} urlName
+ */
+function graveUrl(recordId, urlName){
+  return 'https://billiongraves.com/grave/' + urlName + '/' + recordId;
 }
