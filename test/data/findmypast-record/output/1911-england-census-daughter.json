@@ -1,8 +1,13 @@
 {
-  "description": "#5",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "gbc:1911:rg14:24584:0135:3",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/gbc:1911:rg14:24584:0135:3"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -42,11 +47,17 @@
       ],
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "gbc:1911:rg14:24584:0135:1",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/gbc:1911:rg14:24584:0135:1"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -78,14 +89,19 @@
           "value": "Married"
         }
       ],
-      "id": "2",
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "gbc:1911:rg14:24584:0135:2",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/gbc:1911:rg14:24584:0135:2"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -113,14 +129,19 @@
           "value": "Married"
         }
       ],
-      "id": "3",
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "gbc:1911:rg14:24584:0135:4",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/gbc:1911:rg14:24584:0135:4"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -148,10 +169,9 @@
           "value": "Single"
         }
       ],
-      "id": "4",
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     }
@@ -160,42 +180,42 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#gbc:1911:rg14:24584:0135:1"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#gbc:1911:rg14:24584:0135:3"
       },
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#gbc:1911:rg14:24584:0135:1"
       },
       "person2": {
-        "resource": "#4"
+        "resource": "#gbc:1911:rg14:24584:0135:4"
       },
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#2"
+        "resource": "#gbc:1911:rg14:24584:0135:1"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#gbc:1911:rg14:24584:0135:2"
       },
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     }
@@ -216,7 +236,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "5"
+      "id": "1"
     }
   ],
   "agents": [

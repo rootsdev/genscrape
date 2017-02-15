@@ -1,8 +1,13 @@
 {
-  "description": "#6",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "usc:1900:004114960:00265:084",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/usc:1900:004114960:00265:084"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -42,11 +47,17 @@
       ],
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "usc:1900:004114960:00265:081",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/usc:1900:004114960:00265:081"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -74,14 +85,19 @@
           "value": "Married"
         }
       ],
-      "id": "2",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "usc:1900:004114960:00265:082",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/usc:1900:004114960:00265:082"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -109,14 +125,19 @@
           "value": "Married"
         }
       ],
-      "id": "3",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "usc:1900:004114960:00265:083",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/usc:1900:004114960:00265:083"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -144,14 +165,19 @@
           "value": "Single"
         }
       ],
-      "id": "4",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "usc:1900:004114960:00265:085",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/usc:1900:004114960:00265:085"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -179,10 +205,9 @@
           "value": "Single"
         }
       ],
-      "id": "5",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     }
@@ -191,56 +216,56 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#usc:1900:004114960:00265:081"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#usc:1900:004114960:00265:084"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#usc:1900:004114960:00265:081"
       },
       "person2": {
-        "resource": "#4"
+        "resource": "#usc:1900:004114960:00265:083"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#usc:1900:004114960:00265:081"
       },
       "person2": {
-        "resource": "#5"
+        "resource": "#usc:1900:004114960:00265:085"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#2"
+        "resource": "#usc:1900:004114960:00265:081"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#usc:1900:004114960:00265:082"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     }
@@ -261,7 +286,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "6"
+      "id": "1"
     }
   ],
   "agents": [

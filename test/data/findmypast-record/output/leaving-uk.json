@@ -1,8 +1,13 @@
 {
-  "description": "#3",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "tna:bt27:0980000042:00187",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/tna:bt27:0980000042:00187"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -50,11 +55,17 @@
       ],
       "sources": [
         {
-          "description": "#3"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "tna:bt27:0980:00:0042:p:0005f",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://search.findmypast.co.uk/record/tna:bt27:0980:00:0042:p:0005f"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -73,10 +84,9 @@
           ]
         }
       ],
-      "id": "2",
       "sources": [
         {
-          "description": "#3"
+          "description": "#1"
         }
       ]
     }
@@ -97,7 +107,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "3"
+      "id": "1"
     }
   ],
   "agents": [
