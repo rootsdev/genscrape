@@ -101,10 +101,10 @@ function setup(emitter) {
   
   var gedx = new GedcomX(),
       primaryPerson = new GedcomX.Person({
-        id: getRecordIdFromUrl(document.location.href),
+        id: getRecordId(document.location.href),
         principal: true,
         identifiers: {
-          'http://gedcomx.org/Primary': document.location.href
+          'http://gedcomx.org/Primary': getRecordIdentifier(document.location.href)
         }
       });
       
@@ -309,9 +309,9 @@ function setup(emitter) {
         // explicitly listed in the data table which we process above.
         var name = GedcomX.Name.createFromString(rowData.name.text),
             existingPerson = gedx.findPersonByName(name),
-            personId = getRecordIdFromUrl(rowData.name.href),
+            personId = getRecordId(rowData.name.href),
             identifiers = {
-              'http://gedcomx.org/Primary': rowData.name.href
+              'http://gedcomx.org/Primary': getRecordIdentifier(rowData.name.href)
             };
         
         // Update an existing person's IDs
@@ -491,7 +491,17 @@ function eventType(type){
  * @param {String} url
  * @return {String}
  */
-function getRecordIdFromUrl(url) {
+function getRecordId(url) {
   var params = utils.getQueryParams(url);
   return (params.dbid || params.db) + ':' + params.h;
+}
+
+/**
+ * Generate an Identifier for the record
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordIdentifier(url) {
+  return 'http://search.ancestry.com/record/' + getRecordId(url);
 }

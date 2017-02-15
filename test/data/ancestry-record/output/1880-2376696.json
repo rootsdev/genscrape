@@ -5,7 +5,7 @@
       "id": "1880usfedcen:2376696",
       "identifiers": {
         "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&indiv=try&h=2376696"
+          "http://search.ancestry.com/record/1880usfedcen:2376696"
         ]
       },
       "principal": true,
@@ -100,7 +100,7 @@
       ],
       "identifiers": {
         "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&indiv=try&h=2376661"
+          "http://search.ancestry.com/record/1880usfedcen:2376661"
         ]
       },
       "sources": [
@@ -147,7 +147,7 @@
       ],
       "identifiers": {
         "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&indiv=try&h=1794739"
+          "http://search.ancestry.com/record/1880usfedcen:1794739"
         ]
       },
       "sources": [
@@ -160,7 +160,7 @@
       "id": "1880usfedcen:1794557",
       "identifiers": {
         "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&indiv=try&h=1794557"
+          "http://search.ancestry.com/record/1880usfedcen:1794557"
         ]
       },
       "names": [
@@ -201,7 +201,7 @@
       "id": "1880usfedcen:2376270",
       "identifiers": {
         "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/cgi-bin/sse.dll?db=1880usfedcen&indiv=try&h=2376270"
+          "http://search.ancestry.com/record/1880usfedcen:2376270"
         ]
       },
       "names": [

@@ -5,7 +5,7 @@
       "id": "OrMarriages:4777",
       "identifiers": {
         "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/cgi-bin/sse.dll?h=4777&db=OrMarriages&indiv=1"
+          "http://search.ancestry.com/record/OrMarriages:4777"
         ]
       },
       "principal": true,

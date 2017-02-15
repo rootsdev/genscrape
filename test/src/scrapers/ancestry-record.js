@@ -2,7 +2,7 @@ var helpers = require('../../testHelpers'),
     genscrape = require('../../../'),
     setupTest = helpers.createTestRunner('ancestry-record');
     
-describe('ancestry-record', function(){
+describe.only('ancestry-record', function(){
 
   it('1880 census; parents names', setupTest(
     '1880-2376696',

@@ -5,7 +5,7 @@
       "id": "ssdi:64142243",
       "identifiers": {
         "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&db=ssdi&h=64142243"
+          "http://search.ancestry.com/record/ssdi:64142243"
         ]
       },
       "principal": true,
