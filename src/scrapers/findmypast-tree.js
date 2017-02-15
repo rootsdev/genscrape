@@ -38,7 +38,7 @@ function processHash(emitter){
       }
       else if(data && data.Object){
         debug('relations data');
-        emitter.emit('data', processData(personId, data.Object));
+        emitter.emit('data', processData(treeId, personId, data.Object));
       } 
       else {
         emitter.emit('noData');
@@ -57,16 +57,17 @@ function processHash(emitter){
 /**
  * Convert the API data into GedcomX data.
  * 
+ * @param {String} treeId - ID of the tree 
  * @param {String} personId - ID if the primary person
- * @data {Object} data - The "Object" portion of the API response
+ * @param {Object} data - The "Object" portion of the API response
  * @returns {GedcomX}
  */
-function processData(personId, data){
-  var relations = new Relations(data),
+function processData(treeId, personId, data){
+  var relations = new Relations(data, treeId),
       gedx = new GedcomX(),
       primaryPerson = relations.getGedxPerson(personId);
   
-  primaryPerson.setPrincipal(true);    
+  primaryPerson.setPrincipal(true); 
   gedx.addPerson(primaryPerson);
   
   // Spouses
@@ -190,10 +191,15 @@ function processData(personId, data){
  * Convert a findmypast person to a GedcomX person
  * 
  * @param {Object} person
+ * @param {string} treeId
  * @returns {GedcomX.Person}
  */
-function processPerson(person){
+function processPerson(person, treeId){
   var gedxPerson = GedcomX.Person()
+    .setId(person.Id + '')
+    .setIdentifiers({
+      'http://gedcomx.org/Primary': 'http://tree.findmypast.co.uk/' + treeId + '/' + person.Id
+    })
     .setGender({
       type: person.Gender === 1 ? 'http://gedcomx.org/Male' : 'http://gedcomx.org/Female'
     })
@@ -298,8 +304,9 @@ function gedxDate(dateInt){
 /**
  * Object that simplifies access of ProfileRelations API response data
  */
-var Relations = function(data){
+var Relations = function(data, treeId){
   this.data = data;
+  this.treeId = treeId;
   this.gedxPersons = {};
 };
 
@@ -312,7 +319,7 @@ Relations.prototype.getPerson = function(personId){
 Relations.prototype.getGedxPerson = function(personId){
   if(!this.gedxPersons[personId]){
     var personData = this.getPerson(personId),
-        person = processPerson(personData);
+        person = processPerson(personData, this.treeId);
     this.gedxPersons[personId] = person;
   }
   return this.gedxPersons[personId];
