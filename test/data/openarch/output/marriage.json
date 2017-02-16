@@ -2,6 +2,12 @@
   "description": "#7",
   "persons": [
     {
+      "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:3",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:3"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -23,7 +29,6 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "1",
       "sources": [
         {
           "description": "#7"
@@ -31,6 +36,12 @@
       ]
     },
     {
+      "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:1",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:1"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -52,7 +63,6 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "2",
       "sources": [
         {
           "description": "#7"
@@ -60,6 +70,12 @@
       ]
     },
     {
+      "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:2",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:2"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -81,7 +97,6 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "3",
       "sources": [
         {
           "description": "#7"
@@ -89,6 +104,12 @@
       ]
     },
     {
+      "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:4",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:4"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -110,7 +131,6 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "4",
       "sources": [
         {
           "description": "#7"
@@ -118,6 +138,12 @@
       ]
     },
     {
+      "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:5",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:5"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -139,7 +165,6 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "5",
       "sources": [
         {
           "description": "#7"
@@ -147,6 +172,12 @@
       ]
     },
     {
+      "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:6",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:6"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -168,7 +199,6 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "6",
       "sources": [
         {
           "description": "#7"
@@ -180,10 +210,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:1"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:3"
       },
       "sources": [
         {
@@ -194,10 +224,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#3"
+        "resource": "#ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:2"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:3"
       },
       "sources": [
         {
@@ -208,10 +238,10 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:3"
       },
       "person2": {
-        "resource": "#4"
+        "resource": "#ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:4"
       },
       "facts": [
         {
@@ -230,10 +260,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#5"
+        "resource": "#ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:5"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:3"
       },
       "sources": [
         {
@@ -244,10 +274,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#6"
+        "resource": "#ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:6"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:3"
       },
       "sources": [
         {

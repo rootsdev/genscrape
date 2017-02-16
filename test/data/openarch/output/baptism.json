@@ -2,6 +2,13 @@
   "description": "#4",
   "persons": [
     {
+      "id": "elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:3",
+      "principal": true,
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.openarch.nl/elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:3"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -16,8 +23,6 @@
           ]
         }
       ],
-      "principal": true,
-      "id": "1",
       "sources": [
         {
           "description": "#4"
@@ -25,6 +30,12 @@
       ]
     },
     {
+      "id": "elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:1",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.openarch.nl/elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:1"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -46,7 +57,6 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "2",
       "sources": [
         {
           "description": "#4"
@@ -54,6 +64,12 @@
       ]
     },
     {
+      "id": "elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:2",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.openarch.nl/elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:2"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -75,7 +91,6 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "3",
       "sources": [
         {
           "description": "#4"
@@ -87,10 +102,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:1"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:3"
       },
       "sources": [
         {
@@ -101,10 +116,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#3"
+        "resource": "#elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:2"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:3"
       },
       "sources": [
         {
