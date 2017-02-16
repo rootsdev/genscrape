@@ -1,7 +1,14 @@
 {
-  "description": "#5",
+  "description": "#1",
   "persons": [
     {
+      "id": "I39388",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I39388"
+        ]
+      },
+      "principal": true,
       "names": [
         {
           "nameForms": [
@@ -40,15 +47,19 @@
           }
         }
       ],
-      "principal": true,
-      "id": "1",
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I39389",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I39389"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -75,14 +86,19 @@
           }
         }
       ],
-      "id": "2",
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I39363",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I39363"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -118,14 +134,19 @@
           }
         }
       ],
-      "id": "3",
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I39364",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I39364"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -161,10 +182,9 @@
           }
         }
       ],
-      "id": "4",
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     }
@@ -173,49 +193,49 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#I39388"
       },
       "person2": {
-        "resource": "#2"
+        "resource": "#I39389"
       },
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#3"
+        "resource": "#I39363"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#I39388"
       },
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#4"
+        "resource": "#I39364"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#I39388"
       },
       "sources": [
         {
-          "description": "#5"
+          "description": "#1"
         }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "5",
+      "id": "1",
       "citations": [
         {
           "value": "Johannes Lambertus Hendricus Josephus Westenberg (1904-) » Voorouders Monique en Jan Vis » Genealogie Online (https://www.genealogieonline.nl/en/voorouders-monique-en-jan-vis/I39388.php : accessed 17 April 2013)"

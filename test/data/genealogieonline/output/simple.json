@@ -1,7 +1,14 @@
 {
-  "description": "#6",
+  "description": "#1",
   "persons": [
     {
+      "id": "I15210",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I15210"
+        ]
+      },
+      "principal": true,
       "names": [
         {
           "nameForms": [
@@ -43,15 +50,19 @@
           }
         }
       ],
-      "principal": true,
-      "id": "1",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I15209",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I15209"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -84,14 +95,19 @@
           }
         }
       ],
-      "id": "2",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I18285",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I18285"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -110,14 +126,19 @@
           ]
         }
       ],
-      "id": "3",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I15212",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I15212"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -139,14 +160,19 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "4",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I15213",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I15213"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -168,10 +194,9 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "5",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     }
@@ -180,63 +205,63 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#I15210"
       },
       "person2": {
-        "resource": "#2"
+        "resource": "#I15209"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#I15210"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#I18285"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#4"
+        "resource": "#I15212"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#I15210"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#5"
+        "resource": "#I15213"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#I15210"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "6",
+      "id": "1",
       "citations": [
         {
           "value": "Pieter den Herder (1844-1924) » Voorouders Monique en Jan Vis » Genealogie Online (https://www.genealogieonline.nl/en/voorouders-monique-en-jan-vis/I15210.php : accessed 17 April 2013)"

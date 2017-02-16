@@ -25,6 +25,10 @@ function run(emitter){
         primaryPerson = queryPerson($schemaPerson);
         
     primaryPerson.setPrincipal(true);
+    primaryPerson.setId(getRecordId(document.location.href));
+    primaryPerson.setIdentifiers({
+      'http://gedcomx.org/Primary': getRecordIdentifier(document.location.href)
+    });
     gedx.addPerson(primaryPerson);
     
     schema.queryPropAll($schemaPerson, 'spouse').map(queryPerson).forEach(function(spouse){
@@ -100,10 +104,15 @@ function run(emitter){
  */
 function queryPerson($element){
   
-  var person = GedcomX.Person();
-  
-  var givenName = schema.queryPropContent($element, 'givenName'),
-      familyName = schema.queryPropContent($element, 'familyName');
+  var url = schema.queryPropContent($element, 'url'),
+      givenName = schema.queryPropContent($element, 'givenName'),
+      familyName = schema.queryPropContent($element, 'familyName'),
+      person = GedcomX.Person({
+        id: getRecordId(url),
+        identifiers: {
+          'http://gedcomx.org/Primary': getRecordIdentifier(url)
+        }
+      });
   
   if(givenName || familyName){
     person.addNameFromParts({
@@ -164,4 +173,24 @@ function queryEvent($element, event, type){
     
     return birth;
   }
+}
+
+/**
+ * Get the record ID
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordId(url) {
+  return url.split('/').pop().split('.')[0];
+}
+
+/**
+ * Get an identifier for the record
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordIdentifier(url) {
+  return 'https://www.genealogieonline.nl/' + getRecordId(url);
 }

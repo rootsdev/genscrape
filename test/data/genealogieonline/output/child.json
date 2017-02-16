@@ -1,7 +1,14 @@
 {
-  "description": "#6",
+  "description": "#1",
   "persons": [
     {
+      "id": "I39364",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I39364"
+        ]
+      },
+      "principal": true,
       "names": [
         {
           "nameForms": [
@@ -43,15 +50,19 @@
           }
         }
       ],
-      "principal": true,
-      "id": "1",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I39363",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I39363"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -84,14 +95,19 @@
           }
         }
       ],
-      "id": "2",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I39365",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I39365"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -113,14 +129,19 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "3",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I39366",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I39366"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -142,14 +163,19 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "4",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "I39388",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://www.genealogieonline.nl/I39388"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -177,10 +203,9 @@
           }
         }
       ],
-      "id": "5",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     }
@@ -189,63 +214,63 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#I39364"
       },
       "person2": {
-        "resource": "#2"
+        "resource": "#I39363"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#3"
+        "resource": "#I39365"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#I39364"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#4"
+        "resource": "#I39366"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#I39364"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#I39364"
       },
       "person2": {
-        "resource": "#5"
+        "resource": "#I39388"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "6",
+      "id": "1",
       "citations": [
         {
           "value": "Alida Petronella Jansen (1871-1958) » Voorouders Monique en Jan Vis » Genealogie Online (https://www.genealogieonline.nl/en/voorouders-monique-en-jan-vis/I39364.php : accessed 17 April 2013)"
