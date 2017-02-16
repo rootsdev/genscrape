@@ -1,8 +1,13 @@
 {
-  "description": "#11",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "Mary_Ball_(5)",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.werelate.org/wiki/Person:Mary_Ball_%285%29"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -50,11 +55,17 @@
       ],
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Joseph_Ball_(3)",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.werelate.org/wiki/Person:Joseph_Ball_%283%29"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -91,14 +102,19 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "2",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Mary_Unknown_(5029)",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.werelate.org/wiki/Person:Mary_Unknown_%285029%29"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -135,14 +151,19 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "3",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Augustine_Washington_(1)",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.werelate.org/wiki/Person:Augustine_Washington_%281%29"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -179,14 +200,19 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "4",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "George_Washington_(6)",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.werelate.org/wiki/Person:George_Washington_%286%29"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -220,14 +246,19 @@
           }
         }
       ],
-      "id": "5",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Betty_Washington_(2)",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.werelate.org/wiki/Person:Betty_Washington_%282%29"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -261,14 +292,19 @@
           }
         }
       ],
-      "id": "6",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Samuel_Washington_(6)",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.werelate.org/wiki/Person:Samuel_Washington_%286%29"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -302,14 +338,19 @@
           }
         }
       ],
-      "id": "7",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "John_Washington_(26)",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.werelate.org/wiki/Person:John_Washington_%2826%29"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -343,14 +384,19 @@
           }
         }
       ],
-      "id": "8",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Charles_Washington_(5)",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.werelate.org/wiki/Person:Charles_Washington_%285%29"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -384,14 +430,19 @@
           }
         }
       ],
-      "id": "9",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Mildred_Washington_(7)",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.werelate.org/wiki/Person:Mildred_Washington_%287%29"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -425,10 +476,9 @@
           }
         }
       ],
-      "id": "10",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     }
@@ -437,38 +487,38 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#Joseph_Ball_(3)"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#Mary_Ball_(5)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#3"
+        "resource": "#Mary_Unknown_(5029)"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#Mary_Ball_(5)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#2"
+        "resource": "#Joseph_Ball_(3)"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#Mary_Unknown_(5029)"
       },
       "facts": [
         {
@@ -480,17 +530,17 @@
       ],
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#Mary_Ball_(5)"
       },
       "person2": {
-        "resource": "#4"
+        "resource": "#Augustine_Washington_(1)"
       },
       "facts": [
         {
@@ -502,182 +552,182 @@
       ],
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Mary_Ball_(5)"
       },
       "person2": {
-        "resource": "#5"
+        "resource": "#George_Washington_(6)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#4"
+        "resource": "#Augustine_Washington_(1)"
       },
       "person2": {
-        "resource": "#5"
+        "resource": "#George_Washington_(6)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Mary_Ball_(5)"
       },
       "person2": {
-        "resource": "#6"
+        "resource": "#Betty_Washington_(2)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#4"
+        "resource": "#Augustine_Washington_(1)"
       },
       "person2": {
-        "resource": "#6"
+        "resource": "#Betty_Washington_(2)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Mary_Ball_(5)"
       },
       "person2": {
-        "resource": "#7"
+        "resource": "#Samuel_Washington_(6)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#4"
+        "resource": "#Augustine_Washington_(1)"
       },
       "person2": {
-        "resource": "#7"
+        "resource": "#Samuel_Washington_(6)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Mary_Ball_(5)"
       },
       "person2": {
-        "resource": "#8"
+        "resource": "#John_Washington_(26)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#4"
+        "resource": "#Augustine_Washington_(1)"
       },
       "person2": {
-        "resource": "#8"
+        "resource": "#John_Washington_(26)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Mary_Ball_(5)"
       },
       "person2": {
-        "resource": "#9"
+        "resource": "#Charles_Washington_(5)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#4"
+        "resource": "#Augustine_Washington_(1)"
       },
       "person2": {
-        "resource": "#9"
+        "resource": "#Charles_Washington_(5)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Mary_Ball_(5)"
       },
       "person2": {
-        "resource": "#10"
+        "resource": "#Mildred_Washington_(7)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#4"
+        "resource": "#Augustine_Washington_(1)"
       },
       "person2": {
-        "resource": "#10"
+        "resource": "#Mildred_Washington_(7)"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "11",
+      "id": "1",
       "citations": [
         {
           "value": "Person:Mary Ball (5) - Genealogy, WeRelate.org (http://www.werelate.org/wiki/Person:Mary_Ball_%285%29 : accessed 17 April 2013)"
