@@ -32,15 +32,14 @@ genscrape().on('data', function(data){
 ```
 
 That's it. Genscrape automatically detects what page you're on, looks up the
-correct scraper, and does its magic.
+correct scraper, then does its magic.
 
 ### Events
 
 #### data
 
 The `data` event is fired when genscrape successfully scrapes data from the page.
-The returned data object will be in the 
-[GEDCOM X JSON](https://github.com/FamilySearch/gedcomx/blob/master/specifications/json-format-specification.md) format.
+Read more about the data model below.
 
 #### noMatch
 
@@ -62,6 +61,58 @@ the tree.
 The `error` event is fired when something unexpected occurs while a scraper is
 processing, such as a failed AJAX call. There is no standardized format for the
 errors yet.
+
+## Data Model
+
+Data is returned in the [GEDCOM X JSON](https://github.com/FamilySearch/gedcomx/blob/master/specifications/json-format-specification.md) 
+format.
+
+When possible, we mark one person as `principal`. This isn't possible when
+viewing marriage records on sites that don't make a distinction between persons
+in a record. The only currently supported site where this occurs is Open Archives.
+
+We populate person's IDs with IDs from the source repository.
+
+Person IDs aren't unique between websites. Thus we add `http://gedcomx.org/Primary`
+[Identifiers](https://github.com/FamilySearch/gedcomx/blob/master/specifications/conceptual-model-specification.md#identifier-type)
+which allow us to better compare two arbitrary records to determine if they come
+from the same record on the same website. These identifiers are in the format of
+URIs but we don't guarantee that they're valid URLs.
+
+```json
+{
+  "id": "65630115",
+  "identifiers": {
+    "http://gedcomx.org/Primary": [
+      "https://www.findagrave.com/memorial/65630115"
+    ]
+  }
+}
+```
+
+Every GEDCOM X document has a [SourceDescription](https://github.com/FamilySearch/gedcomx/blob/master/specifications/conceptual-model-specification.md#source-description),
+pointed to by the `about` property of the document, that provides a citation for
+all data in the document. That SourceDescription points to an [Agent](https://github.com/FamilySearch/gedcomx/blob/master/specifications/conceptual-model-specification.md#agent),
+via the `repository` property, which describes the website the data came from. 
+
+```json
+{
+  "id": "agent",
+  "names": [
+    {
+      "lang": "en",
+      "value": "Find A Grave"
+    }
+  ],
+  "homepage": {
+    "resource": "https://www.findagrave.com"
+  }
+}
+```
+
+### Identifier Formats
+
+TODO
 
 ## Supported Sites
 
