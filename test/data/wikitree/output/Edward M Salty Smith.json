@@ -1,5 +1,5 @@
 {
-  "description": "#8",
+  "description": "#1",
   "persons": [
     {
       "names": [
@@ -35,14 +35,25 @@
         }
       ],
       "principal": true,
-      "id": "1",
+      "id": "Smith-9130",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Smith-9130"
+        ]
+      },
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Rivers-268",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Rivers-268"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -61,14 +72,19 @@
           ]
         }
       ],
-      "id": "2",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Smith-19128",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Smith-19128"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -87,14 +103,19 @@
           ]
         }
       ],
-      "id": "3",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Smith-19127",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Smith-19127"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -113,14 +134,19 @@
           ]
         }
       ],
-      "id": "4",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Smith-19126",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Smith-19126"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -139,14 +165,19 @@
           ]
         }
       ],
-      "id": "5",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Smith-19117",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Smith-19117"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -165,14 +196,19 @@
           ]
         }
       ],
-      "id": "6",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Smith-19110",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Smith-19110"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -191,10 +227,9 @@
           ]
         }
       ],
-      "id": "7",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     }
@@ -203,91 +238,91 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#Smith-9130"
       },
       "person2": {
-        "resource": "#2"
+        "resource": "#Rivers-268"
       },
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Smith-9130"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#Smith-19128"
       },
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Smith-9130"
       },
       "person2": {
-        "resource": "#4"
+        "resource": "#Smith-19127"
       },
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Smith-9130"
       },
       "person2": {
-        "resource": "#5"
+        "resource": "#Smith-19126"
       },
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Smith-9130"
       },
       "person2": {
-        "resource": "#6"
+        "resource": "#Smith-19117"
       },
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Smith-9130"
       },
       "person2": {
-        "resource": "#7"
+        "resource": "#Smith-19110"
       },
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "8",
+      "id": "1",
       "citations": [
         {
           "value": "Edward  Smith | Family Tree Unknown (http://www.wikitree.com/wiki/Smith-9130 : accessed 17 April 2013)"

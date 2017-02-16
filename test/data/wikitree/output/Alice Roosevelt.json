@@ -1,5 +1,5 @@
 {
-  "description": "#11",
+  "description": "#1",
   "persons": [
     {
       "names": [
@@ -44,14 +44,25 @@
         }
       ],
       "principal": true,
-      "id": "1",
+      "id": "Lee-16",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Lee-16"
+        ]
+      },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Lee-17",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Lee-17"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -70,14 +81,19 @@
           ]
         }
       ],
-      "id": "2",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Haskell-1",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Haskell-1"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -112,14 +128,19 @@
           ]
         }
       ],
-      "id": "3",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Lee-4420",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Lee-4420"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -154,14 +175,19 @@
           ]
         }
       ],
-      "id": "4",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Lee-4421",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Lee-4421"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -196,14 +222,19 @@
           ]
         }
       ],
-      "id": "5",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Lee-4422",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Lee-4422"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -238,14 +269,19 @@
           ]
         }
       ],
-      "id": "6",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Lee-4423",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Lee-4423"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -280,14 +316,19 @@
           ]
         }
       ],
-      "id": "7",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Lee-4425",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Lee-4425"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -306,14 +347,19 @@
           ]
         }
       ],
-      "id": "8",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Roosevelt-18",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Roosevelt-18"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -336,14 +382,19 @@
           ]
         }
       ],
-      "id": "9",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "Roosevelt-17",
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "http://www.wikitree.com/wiki/Roosevelt-17"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -378,10 +429,9 @@
           ]
         }
       ],
-      "id": "10",
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     }
@@ -390,63 +440,63 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#Lee-17"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#Lee-16"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#3"
+        "resource": "#Haskell-1"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#Lee-16"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#Lee-16"
       },
       "person2": {
-        "resource": "#9"
+        "resource": "#Roosevelt-18"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#Lee-16"
       },
       "person2": {
-        "resource": "#10"
+        "resource": "#Roosevelt-17"
       },
       "sources": [
         {
-          "description": "#11"
+          "description": "#1"
         }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "11",
+      "id": "1",
       "citations": [
         {
           "value": "Alice Hathaway (Lee) Roosevelt | WikiTree: The FREE Family Tree (http://www.wikitree.com/wiki/Lee-16 : accessed 17 April 2013)"
