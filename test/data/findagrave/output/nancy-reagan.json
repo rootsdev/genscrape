@@ -5,7 +5,7 @@
       "id": "7657594",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/7657594"
+          "genscrape://findagrave/memorial:7657594"
         ]
       },
       "principal": true,
@@ -82,7 +82,7 @@
       "id": "153242774",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/153242774"
+          "genscrape://findagrave/memorial:153242774"
         ]
       },
       "facts": [
@@ -130,7 +130,7 @@
       "id": "11296627",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/11296627"
+          "genscrape://findagrave/memorial:11296627"
         ]
       },
       "facts": [
@@ -178,7 +178,7 @@
       "id": "4244",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/4244"
+          "genscrape://findagrave/memorial:4244"
         ]
       },
       "facts": [

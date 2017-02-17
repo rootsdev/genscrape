@@ -359,5 +359,5 @@ function getMemorialId(url){
  * @returns {String}
  */
 function getMemorialIdentifier(url){
-  return 'genscrape://findagrave/' + getMemorialId(url);
+  return 'genscrape://findagrave/memorial:' + getMemorialId(url);
 }

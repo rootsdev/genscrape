@@ -5,7 +5,7 @@
       "id": "37494703",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/37494703"
+          "genscrape://findagrave/memorial:37494703"
         ]
       },
       "principal": true,
@@ -76,7 +76,7 @@
       "id": "37494759",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/37494759"
+          "genscrape://findagrave/memorial:37494759"
         ]
       },
       "facts": [
@@ -117,7 +117,7 @@
       "id": "37494783",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/37494783"
+          "genscrape://findagrave/memorial:37494783"
         ]
       },
       "sources": [
@@ -149,7 +149,7 @@
       "id": "37495022",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/37495022"
+          "genscrape://findagrave/memorial:37495022"
         ]
       },
       "sources": [
@@ -181,7 +181,7 @@
       "id": "37824825",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/37824825"
+          "genscrape://findagrave/memorial:37824825"
         ]
       },
       "facts": [
@@ -229,7 +229,7 @@
       "id": "37822895",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/37822895"
+          "genscrape://findagrave/memorial:37822895"
         ]
       },
       "facts": [
@@ -277,7 +277,7 @@
       "id": "37849388",
       "identifiers": {
         "genscrape": [
-          "genscrape://findagrave/37849388"
+          "genscrape://findagrave/memorial:37849388"
         ]
       },
       "facts": [
