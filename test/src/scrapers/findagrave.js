@@ -2,9 +2,9 @@ var setupTest = require('../../testHelpers').createTestRunner('findagrave');
     
 describe('findagrave', function(){
   
-  it('Not famous; no family', setupTest(
+  it('Not famous; no family; no www', setupTest(
     'raymond-zierak',
-    'https://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=65630115'
+    'https://findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=65630115'
   ));
   
   it('Famous; no family', setupTest(

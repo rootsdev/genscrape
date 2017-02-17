@@ -3,7 +3,8 @@ var debug = require('debug')('genscrape:scrapers:findagrave'),
     GedcomX = require('gedcomx-js');
 
 var urls = [
-  utils.urlPatternToRegex("https://www.findagrave.com/cgi-bin/fg.cgi*")
+  utils.urlPatternToRegex("https://www.findagrave.com/cgi-bin/fg.cgi*"),
+  utils.urlPatternToRegex("https://findagrave.com/cgi-bin/fg.cgi*")
 ];
 
 module.exports = function(register){
