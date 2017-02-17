@@ -1,8 +1,13 @@
 {
-  "description": "#3",
+  "description": "#2",
   "persons": [
     {
-      "id": "1",
+      "id": "r_931803621",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/r_931803621"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -34,7 +39,7 @@
       ],
       "sources": [
         {
-          "description": "#3"
+          "description": "#2"
         }
       ]
     },
@@ -57,10 +62,10 @@
           ]
         }
       ],
-      "id": "2",
+      "id": "1",
       "sources": [
         {
-          "description": "#3"
+          "description": "#2"
         }
       ]
     }
@@ -69,14 +74,14 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#1"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#r_931803621"
       },
       "sources": [
         {
-          "description": "#3"
+          "description": "#2"
         }
       ]
     }
@@ -97,7 +102,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "3"
+      "id": "2"
     }
   ],
   "agents": [

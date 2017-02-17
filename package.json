@@ -31,7 +31,7 @@
   "dependencies": {
     "debug": "2.2.0",
     "eventemitter2": "1.0.3",
-    "gedcomx-js": "2.1.0"
+    "gedcomx-js": "2.7.0"
   },
   "devDependencies": {
     "bannerjs": "^1.0.5",

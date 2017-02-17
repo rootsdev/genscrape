@@ -1,8 +1,13 @@
 {
-  "description": "#5",
+  "description": "#4",
   "persons": [
     {
-      "id": "1",
+      "id": "gbprs:m:880081323:1",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/gbprs:m:880081323:1"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -24,7 +29,7 @@
       ],
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     },
@@ -47,10 +52,10 @@
           ]
         }
       ],
-      "id": "2",
+      "id": "1",
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     },
@@ -73,10 +78,10 @@
           ]
         }
       ],
-      "id": "3",
+      "id": "2",
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     },
@@ -99,10 +104,10 @@
           ]
         }
       ],
-      "id": "4",
+      "id": "3",
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     }
@@ -111,24 +116,24 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#1"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#gbprs:m:880081323:1"
       },
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#gbprs:m:880081323:1"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#2"
       },
       "facts": [
         {
@@ -143,21 +148,21 @@
       ],
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#4"
+        "resource": "#3"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#2"
       },
       "sources": [
         {
-          "description": "#5"
+          "description": "#4"
         }
       ]
     }
@@ -178,7 +183,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "5"
+      "id": "4"
     }
   ],
   "agents": [

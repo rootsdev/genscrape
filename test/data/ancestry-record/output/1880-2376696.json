@@ -1,8 +1,13 @@
 {
-  "description": "#6",
+  "description": "#3",
   "persons": [
     {
-      "id": "1",
+      "id": "1880usfedcen:2376696",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:record/1880usfedcen:2376696"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -53,12 +58,12 @@
       ],
       "sources": [
         {
-          "description": "#6"
+          "description": "#3"
         }
       ]
     },
     {
-      "id": "2",
+      "id": "1880usfedcen:2376661",
       "names": [
         {
           "nameForms": [
@@ -93,14 +98,19 @@
           }
         }
       ],
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:record/1880usfedcen:2376661"
+        ]
+      },
       "sources": [
         {
-          "description": "#6"
+          "description": "#3"
         }
       ]
     },
     {
-      "id": "3",
+      "id": "1880usfedcen:1794739",
       "names": [
         {
           "nameForms": [
@@ -135,14 +145,24 @@
           }
         }
       ],
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:record/1880usfedcen:1794739"
+        ]
+      },
       "sources": [
         {
-          "description": "#6"
+          "description": "#3"
         }
       ]
     },
     {
-      "id": "4",
+      "id": "1880usfedcen:1794557",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:record/1880usfedcen:1794557"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -173,12 +193,17 @@
       ],
       "sources": [
         {
-          "description": "#6"
+          "description": "#3"
         }
       ]
     },
     {
-      "id": "5",
+      "id": "1880usfedcen:2376270",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:record/1880usfedcen:2376270"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -209,7 +234,7 @@
       ],
       "sources": [
         {
-          "description": "#6"
+          "description": "#3"
         }
       ]
     }
@@ -218,28 +243,28 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#1880usfedcen:2376661"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#1880usfedcen:2376696"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#3"
         }
       ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#3"
+        "resource": "#1880usfedcen:1794739"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#1880usfedcen:2376696"
       },
       "sources": [
         {
-          "description": "#6"
+          "description": "#3"
         }
       ]
     }
@@ -260,7 +285,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "6"
+      "id": "3"
     }
   ],
   "agents": [

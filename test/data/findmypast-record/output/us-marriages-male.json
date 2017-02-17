@@ -1,8 +1,13 @@
 {
-  "description": "#3",
+  "description": "#2",
   "persons": [
     {
-      "id": "1",
+      "id": "us:fs:m:001084854:1",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/us:fs:m:001084854:1"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -27,7 +32,7 @@
       },
       "sources": [
         {
-          "description": "#3"
+          "description": "#2"
         }
       ]
     },
@@ -53,10 +58,10 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "2",
+      "id": "1",
       "sources": [
         {
-          "description": "#3"
+          "description": "#2"
         }
       ]
     }
@@ -65,10 +70,10 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#1"
+        "resource": "#us:fs:m:001084854:1"
       },
       "person2": {
-        "resource": "#2"
+        "resource": "#1"
       },
       "facts": [
         {
@@ -80,7 +85,7 @@
       ],
       "sources": [
         {
-          "description": "#3"
+          "description": "#2"
         }
       ]
     }
@@ -101,7 +106,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "3"
+      "id": "2"
     }
   ],
   "agents": [

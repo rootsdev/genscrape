@@ -1,8 +1,13 @@
 {
-  "description": "#6",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "245670",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://billiongraves/245670"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -46,11 +51,17 @@
       ],
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "242144",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://billiongraves/242144"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -84,14 +95,19 @@
           }
         }
       ],
-      "id": "2",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "244773",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://billiongraves/244773"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -125,14 +141,19 @@
           }
         }
       ],
-      "id": "3",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "244774",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://billiongraves/244774"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -166,14 +187,19 @@
           }
         }
       ],
-      "id": "4",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "245552",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://billiongraves/245552"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -207,17 +233,16 @@
           }
         }
       ],
-      "id": "5",
       "sources": [
         {
-          "description": "#6"
+          "description": "#1"
         }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "6",
+      "id": "1",
       "citations": [
         {
           "value": "Grave Site of Joseph Clark (1798-1866) | BillionGraves (https://billiongraves.com/grave/JOSEPH-CLARK/245670 : accessed 17 April 2013)"

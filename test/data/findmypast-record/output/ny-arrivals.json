@@ -1,8 +1,13 @@
 {
-  "description": "#2",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "us:pass:ny:ei:16551289",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/us:pass:ny:ei:16551289"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -58,7 +63,7 @@
       ],
       "sources": [
         {
-          "description": "#2"
+          "description": "#1"
         }
       ]
     }
@@ -79,7 +84,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "2"
+      "id": "1"
     }
   ],
   "agents": [

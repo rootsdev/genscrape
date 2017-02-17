@@ -91,7 +91,11 @@ function run(emitter){
   
   var gedx = GedcomX(),
       primaryPerson = GedcomX.Person({
-        principal: true
+        principal: true,
+        id: getRecordId(document.location.href),
+        identifiers: {
+          'genscrape': getRecordIdentifier(document.location.href)
+        }
       });
       
   gedx.addPerson(primaryPerson);
@@ -376,7 +380,14 @@ function parentLabel(parent){
  */
 function processPerson(element, gender){
   if(element){
-    var person = GedcomX.Person().addSimpleName(element.querySelector('.wr-infobox-fullname a').textContent),
+    var a = element.querySelector('a'),
+        href = a ? a.href : '',
+        person = GedcomX.Person({
+          id: getRecordId(href),
+          identifiers: {
+            'genscrape': getRecordIdentifier(href)
+          }
+        }).addSimpleName(element.querySelector('.wr-infobox-fullname a').textContent),
         yearRange = utils.maybe(element.querySelector('.wr-infobox-yearrange')).textContent || ' - ',
         yearRangeParts = yearRange.split(' - ');
     if(yearRangeParts[0]){
@@ -402,4 +413,24 @@ function processPerson(element, gender){
     }
     return person;
   }
+}
+
+/**
+ * Get the record ID
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordId(url) {
+  return decodeURIComponent(url.split('/').pop().split(':')[1]).replace(/\(|\)/g,'');
+}
+
+/**
+ * Get a record's identifier
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordIdentifier(url) {
+  return 'genscrape://werelate/person:' + (url.split('/').pop().split(':')[1]);
 }

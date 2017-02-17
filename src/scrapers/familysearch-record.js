@@ -38,6 +38,12 @@ function run(emitter){
         url = url.replace('/pal:/MM9.1.1/', '/ark:/61903/1:1:');
       }
       
+      // Set primary identifiers for all persons
+      gedx.getPersons().forEach(function(person){
+        var identifiers = person.getIdentifiers();
+        identifiers.addValue('genscrape://familysearch:record/' + person.getId(), 'genscrape');
+      });
+      
       // Agent
       gedx.addAgent(GedcomX.Agent()
         .setId('agent')

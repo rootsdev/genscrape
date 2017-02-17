@@ -22,7 +22,11 @@ function run(emitter){
   
   var gedx = GedcomX(),
       primaryPerson = GedcomX.Person({
-        principal: true
+        principal: true,
+        id: getMemorialId(document.location.href),
+        identifiers: {
+          'genscrape': getMemorialIdentifier(document.location.href)
+        }
       });
   
   gedx.addPerson(primaryPerson);
@@ -259,7 +263,7 @@ function getFamilyLinks(){
       // At this point, any <a> or <font> tags should be people
       currentNodeName = currentNode.nodeName;
       if(currentNodeName === 'A' || currentNodeName === 'FONT'){
-        family[relType].push(processFamilyLink(currentText));
+        family[relType].push(processFamilyLink(currentText, currentNode.href));
       }
       
     }
@@ -276,9 +280,10 @@ function getFamilyLinks(){
  * Extract the name, birth year, and death year of a family link.
  * 
  * @param {String} linkText
+ * @param {String} url
  * @returns {GedcomX.Person}
  */
-function processFamilyLink(linkText){
+function processFamilyLink(linkText, url){
   var matches = linkText.match(/^([\w\s\.]+)( \((\w{4}) - (\w{4})\))?$/);
   if(matches){
     var data = {
@@ -288,6 +293,10 @@ function processFamilyLink(linkText){
     };
     return GedcomX.Person()
       .addSimpleName(data.name)
+      .setId(getMemorialId(url))
+      .setIdentifiers({
+        'genscrape': getMemorialIdentifier(url)
+      })
       .addFact(familyLinkFact('http://gedcomx.org/Birth', data.birthYear))
       .addFact(familyLinkFact('http://gedcomx.org/Death', data.deathYear));
   } else {
@@ -328,4 +337,27 @@ function xpath(row, cell){
   var result1 = document.evaluate('/html/body/table/tbody/tr/td[3]/table/tbody/tr[3]/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[' + row + ']/td[' + cell + ']', document, null, window.XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
   var result2 = document.evaluate('/html/body/table/tbody/tr/td[3]/table/tbody/tr[4]/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[' + row + ']/td[' + cell + ']', document, null, window.XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
   return result1.snapshotLength ? result1.snapshotItem(0) : result2.snapshotItem(0);
+}
+
+/**
+ * Get the ID of a memorial based on the URL
+ * 
+ * @param {String} url
+ * @returns {String}
+ */
+function getMemorialId(url){
+  return utils.getQueryParams(url).GRid;
+}
+
+/**
+ * Get an Identifier for the memorial based on the URL.
+ * 
+ * This is not a real URL. It's just a way for us to denote and compare
+ * Find A Grave memorials.
+ * 
+ * @param {String} url
+ * @returns {String}
+ */
+function getMemorialIdentifier(url){
+  return 'genscrape://findagrave/memorial:' + getMemorialId(url);
 }

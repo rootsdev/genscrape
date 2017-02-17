@@ -28,7 +28,11 @@ function run(emitter){
   var record = json.record,
       gedx = new GedcomX(), 
       primaryPerson = GedcomX.Person({
-        principal: true
+        principal: true,
+        id: record.record_id,
+        identifiers: {
+          'genscrape': getRecordIdentifier(record.record_id)
+        }
       });
   
   gedx.addPerson(primaryPerson);
@@ -94,7 +98,12 @@ function run(emitter){
   // Relationships
   // We don't actually know how they're related, we just have names and dates
   record.relationships.forEach(function(relation){
-    var person = GedcomX.Person();
+    var person = GedcomX.Person({
+      id: relation.record_id,
+      identifiers: {
+        'genscrape': getRecordIdentifier(relation.record_id)
+      }
+    });
     person.addSimpleName(relation.fullname);
     if(dateAvailable(relation.birth_date)){
       person.addFact({
@@ -158,4 +167,14 @@ function run(emitter){
  */
 function dateAvailable(date){
   return date !== 'Not Available';
+}
+
+/**
+ * Generate an identifier for the record
+ * 
+ * @param {String} recordId
+ * @return {String}
+ */
+function getRecordIdentifier(recordId){
+  return 'genscrape://billiongraves/' + recordId;
 }

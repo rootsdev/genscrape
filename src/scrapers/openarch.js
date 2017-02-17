@@ -34,17 +34,17 @@ function run(emitter){
         processCoupleEvent(gedx, $record, $schemaPersons);
         break;
       
-		// Baptism, Birth, Burial, Death (1 person, possible with parents)
+      // Baptism, Birth, Burial, Death (1 person, possible with parents)
       case 'DTB Dopen':
       case 'BS Geboorte':
       case 'DTB Begraven':
       case 'BS Overlijden':
-		processPersonEvent(gedx, $record, $schemaPersons);
+      processPersonEvent(gedx, $record, $schemaPersons);
         break;
       
       // Just process the first person
       default:
-        var primaryPerson = queryPerson($schemaPersons[0]);
+        var primaryPerson = queryPerson(gedx, $schemaPersons[0]);
         primaryPerson.setPrincipal(true);
         gedx.addPerson(primaryPerson);
         break;
@@ -103,18 +103,18 @@ function processCoupleEvent(gedx, $record, $schemaPersons){
   var groomsFather, groomsMother, groom, bride, bridesFather, bridesMother;
   
   if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
-    groomsFather = queryPerson($schemaPersons.shift());
+    groomsFather = queryPerson(gedx, $schemaPersons.shift());
   }
   if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
-    groomsMother = queryPerson($schemaPersons.shift());
+    groomsMother = queryPerson(gedx, $schemaPersons.shift());
   }
-  groom = queryPerson($schemaPersons.shift());
-  bride = queryPerson($schemaPersons.shift());
+  groom = queryPerson(gedx, $schemaPersons.shift());
+  bride = queryPerson(gedx, $schemaPersons.shift());
   if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
-    bridesFather = queryPerson($schemaPersons.shift());
+    bridesFather = queryPerson(gedx, $schemaPersons.shift());
   }
   if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
-    bridesMother = queryPerson($schemaPersons.shift());
+    bridesMother = queryPerson(gedx, $schemaPersons.shift());
   }
   
   gedx.addPerson(groom);
@@ -185,12 +185,12 @@ function processPersonEvent(gedx, $record, $schemaPersons){
   var father, mother, child;
   
   if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
-    father = queryPerson($schemaPersons.shift());
+    father = queryPerson(gedx, $schemaPersons.shift());
   }
   if($schemaPersons[0].getAttribute('itemprop') === 'parent'){
-    mother = queryPerson($schemaPersons.shift());
+    mother = queryPerson(gedx, $schemaPersons.shift());
   }
-  child = queryPerson($schemaPersons.shift());
+  child = queryPerson(gedx, $schemaPersons.shift());
   
   child.setPrincipal(true);
   gedx.addPerson(child);
@@ -218,12 +218,18 @@ function processPersonEvent(gedx, $record, $schemaPersons){
 /**
  * Get the GedcomX.Person data for schema.org Person
  * 
+ * @param {GedcomX} gedx
  * @param {Element} $element DOM Element representing a schema.org Person
  * @return {GedcomX.Person}
  */
-function queryPerson($element){
+function queryPerson(gedx, $element){
   
-  var person = GedcomX.Person();
+  var person = GedcomX.Person({
+    id: getRecordId(gedx, document.location.href)
+  });
+  person.setIdentifiers({
+    'genscrape': getRecordIdentifier(person.getId())
+  });
   
   var givenName = schema.queryPropContent($element, 'givenName'),
       familyName = schema.queryPropContent($element, 'familyName');
@@ -287,4 +293,30 @@ function queryEvent($element, event, type){
     
     return birth;
   }
+}
+
+/**
+ * Get the record ID. On the site, records have IDs but persons don't so we
+ * have to generate person specific IDs. We've chosen to do it incrementally
+ * and if the code doesn't change too much then it will be deterministic.
+ * 
+ * This should only be called once per person.
+ * 
+ * @param {GedcomX} gedx
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordId(gedx, url) {
+  var params = utils.getQueryParams(url);
+  return params.archive + ':' + params.identifier + ':' + gedx.generateId();
+}
+
+/**
+ * Get an identifier for the record.
+ * 
+ * @param {String} id
+ * @return {String}
+ */
+function getRecordIdentifier(id) {
+  return 'genscrape://openarch/' + id;
 }

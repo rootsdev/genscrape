@@ -1,8 +1,13 @@
 {
-  "description": "#2",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "gbprs:d:878322398:1",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/gbprs:d:878322398:1"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -47,7 +52,7 @@
       ],
       "sources": [
         {
-          "description": "#2"
+          "description": "#1"
         }
       ]
     }
@@ -68,7 +73,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "2"
+      "id": "1"
     }
   ],
   "agents": [

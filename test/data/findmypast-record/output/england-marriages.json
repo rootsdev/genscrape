@@ -1,8 +1,13 @@
 {
-  "description": "#2",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "bmd:m:1878:4:az:000312:104",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/bmd:m:1878:4:az:000312:104"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -35,7 +40,7 @@
       ],
       "sources": [
         {
-          "description": "#2"
+          "description": "#1"
         }
       ]
     }
@@ -56,7 +61,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "2"
+      "id": "1"
     }
   ],
   "agents": [

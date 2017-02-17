@@ -1,8 +1,13 @@
 {
-  "description": "#8",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "gbc:1841:0005244738",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244738"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -38,11 +43,17 @@
       ],
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "gbc:1841:0005244732",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244732"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -64,14 +75,19 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "2",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "gbc:1841:0005244733",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244733"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -93,14 +109,19 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "3",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "gbc:1841:0005244734",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244734"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -122,14 +143,19 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "4",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "gbc:1841:0005244735",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244735"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -151,14 +177,19 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
-      "id": "5",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "gbc:1841:0005244736",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244736"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -180,14 +211,19 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "6",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     },
     {
+      "id": "gbc:1841:0005244737",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244737"
+        ]
+      },
       "names": [
         {
           "nameForms": [
@@ -209,10 +245,9 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
-      "id": "7",
       "sources": [
         {
-          "description": "#8"
+          "description": "#1"
         }
       ]
     }
@@ -233,7 +268,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "8"
+      "id": "1"
     }
   ],
   "agents": [

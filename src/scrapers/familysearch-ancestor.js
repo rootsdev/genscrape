@@ -70,6 +70,12 @@ function processUrl(emitter) {
             });
           }
           
+          // Set primary identifiers for all persons
+          gedx.getPersons().forEach(function(person){
+            var identifiers = person.getIdentifiers();
+            identifiers.addValue('genscrape://familysearch:tree/person:' + person.getId(), 'genscrape');
+          });
+          
           // Add the agent and connect to the root source description
           var agent = GedcomX.Agent({
             id: 'agent',

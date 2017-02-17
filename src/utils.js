@@ -59,8 +59,9 @@ utils.getHashParts = function() {
 /**
  * Return query params as a map
  */
-utils.getQueryParams = function(){
-  var paramArray = window.location.search.substr(1).split("&");
+utils.getQueryParams = function(url){
+  var query = url ? url.split('?')[1] : window.location.search.substr(1);
+  var paramArray = query.split("&");
   var params = {};
 
   for ( var i = 0; i < paramArray.length; i++) {

@@ -56,8 +56,6 @@ module.exports = function(register){
   register(urls, setup);
 };
 
-// var alternateNamesRegex = /\[[^\[\]]*\]/g;
-
 function setup(emitter) {
   debug('run');
   
@@ -85,7 +83,11 @@ function setup(emitter) {
         return label.toLowerCase();
       },
       valueMapper: function(cell){
-        return cell.textContent.trim();
+        var a = cell.querySelector('a');
+        return {
+          text: cell.textContent.trim(),
+          href: a ? a.href : ''
+        };
       }
     });
   }
@@ -99,8 +101,11 @@ function setup(emitter) {
   
   var gedx = new GedcomX(),
       primaryPerson = new GedcomX.Person({
-        id: gedx.generateId(),
-        principal: true
+        id: getRecordId(document.location.href),
+        principal: true,
+        identifiers: {
+          'genscrape': getRecordIdentifier(document.location.href)
+        }
       });
       
   gedx.addPerson(primaryPerson);
@@ -302,14 +307,26 @@ function setup(emitter) {
         
         // Check to see if we've already added this person. Parents are often
         // explicitly listed in the data table which we process above.
-        var name = GedcomX.Name.createFromString(rowData.name),
-            existingPerson = gedx.findPersonByName(name);
+        var name = GedcomX.Name.createFromString(rowData.name.text),
+            existingPerson = gedx.findPersonByName(name),
+            personId = getRecordId(rowData.name.href),
+            identifiers = {
+              'genscrape': getRecordIdentifier(rowData.name.href)
+            };
         
-        if(!existingPerson) {
+        // Update an existing person's IDs
+        if(existingPerson) {
+          gedx.updatePersonsID(existingPerson.id, personId);
+          existingPerson.setIdentifiers(identifiers);
+        } 
+        
+        // Create a new person
+        else {
           householdPerson = GedcomX.Person({
-            id: gedx.generateId()
+            id: personId,
+            identifiers: identifiers
           });
-          householdPerson.addSimpleName(rowData.name);
+          householdPerson.addSimpleName(rowData.name.text);
           gedx.addPerson(householdPerson);
           existingPerson = householdPerson;
         }
@@ -319,7 +336,7 @@ function setup(emitter) {
         // a birth fact; right now we're just assuming since Ancestry
         // usually calculates an estimated age for us
         if(existingPerson !== primaryPerson){
-          var age = parseInt(rowData.age, 10);
+          var age = parseInt(rowData.age.text, 10);
           if(!isNaN(age) && recordYear){
             var estimatedBirthYear = recordYear - age;
             existingPerson.addFact({
@@ -464,4 +481,27 @@ function eventType(type){
       return 'http://gedcomx.org/Marriage';
   }
   console.log('ancestry-record: unknown event type: ' + type);
+}
+
+/**
+ * Given the URL of a record, return an ID of the format ${dbID}-${recordID}.
+ * 
+ * Example URL: http://search.ancestry.com/cgi-bin/sse.dll?indiv=1&dbid=7602&h=73219065
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordId(url) {
+  var params = utils.getQueryParams(url);
+  return (params.dbid || params.db) + ':' + params.h;
+}
+
+/**
+ * Generate an Identifier for the record
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordIdentifier(url) {
+  return 'genscrape://ancestry:record/' + getRecordId(url);
 }

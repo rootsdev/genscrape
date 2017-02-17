@@ -43,7 +43,11 @@ function run(emitter) {
   
   var gedx = GedcomX(),
       primaryPerson = GedcomX.Person({
-        principal: true
+        principal: true,
+        id: getRecordId(document.location.href),
+        identifiers: {
+          'genscrape': getRecordIdentifier(document.location.href)
+        }
       }),
       dataFields = new HorizontalTable(transcriptionDisplayTable, {
         labelMapper: function(label){
@@ -94,11 +98,24 @@ function run(emitter) {
     householdData = new VerticalTable(individualsTable, {
       rowSelector: 'tr:not(.highlight-individual)', // Skip primary person
       labelMapper: function(label){
-        return label.toLowerCase();
+        return label.toLowerCase().trim();
       },
       valueMapper: function(cell){
+        
+        // We want to get the href of the Transcription buttons without huge
+        // modifications to anything else so we're goign to a bit of a hack.
+        // We're going to return the href when we detect an <a> in the cell.
+        // Otherwise we'll return the text.
+        // This is fragile in that we're assuming the button column remains
+        // the only column with no label. If that ever changes (there are multiple
+        // columns with no label) then one of them will overwrite the other.
+        var link = cell.querySelector('a');
         var text = cell.textContent;
-        return text && text !== '-' ? text : undefined;
+        if(link){
+          return link.href;
+        } else {
+          return text && text !== '-' ? text : undefined;
+        }
       }
     });
     householdData.getRows().forEach(function(row){
@@ -498,7 +515,12 @@ function getGender(genderText){
 }
 
 function getHouseholdPerson(data){
-  var person = GedcomX.Person();
+  var person = GedcomX.Person({
+    id: getRecordId(data['']),
+    identifiers: {
+      'genscrape': getRecordIdentifier(data[''])
+    }
+  });
   person.addNameFromParts({
     'http://gedcomx.org/Given': data['first name(s)'],
     'http://gedcomx.org/Surname': data['last name']
@@ -589,4 +611,24 @@ function processName(name){
   } else {
     return utils.toTitleCase(name);
   }
+}
+
+/**
+ * Get a records ID
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordId(url){
+  return decodeURIComponent(utils.getQueryParams(url).id).replace(/\//g, ':');
+}
+
+/**
+ * Get a record's primary identifier
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordIdentifier(url){
+  return 'genscrape://findmypast:record/' + getRecordId(url);
 }

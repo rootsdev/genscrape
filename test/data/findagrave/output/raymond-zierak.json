@@ -1,8 +1,13 @@
 {
-  "description": "#2",
+  "description": "#1",
   "persons": [
     {
-      "id": "1",
+      "id": "65630115",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:65630115"
+        ]
+      },
       "principal": true,
       "names": [
         {
@@ -50,14 +55,14 @@
       ],
       "sources": [
         {
-          "description": "#2"
+          "description": "#1"
         }
       ]
     }
   ],
   "sourceDescriptions": [
     {
-      "id": "2",
+      "id": "1",
       "citations": [
         {
           "value": "Find A Grave, database and images (http://findagrave.com : accessed 17 April 2013), memorial page for Raymond J. Zierak (1914 - 2006) - Find A Grave Memorial."
