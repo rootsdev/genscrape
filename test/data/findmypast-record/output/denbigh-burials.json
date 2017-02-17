@@ -4,8 +4,8 @@
     {
       "id": "gbprs:d:878322398:1",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbprs:d:878322398:1"
+        "genscrape": [
+          "genscrape://findmypast:record/gbprs:d:878322398:1"
         ]
       },
       "principal": true,

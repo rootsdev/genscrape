@@ -4,8 +4,8 @@
     {
       "id": "davies1920:23578",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/davies1920:23578"
+        "genscrape": [
+          "genscrape://ancestry:record/davies1920:23578"
         ]
       },
       "principal": true,

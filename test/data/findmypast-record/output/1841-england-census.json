@@ -4,8 +4,8 @@
     {
       "id": "gbc:1841:0005244738",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1841:0005244738"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244738"
         ]
       },
       "principal": true,
@@ -50,8 +50,8 @@
     {
       "id": "gbc:1841:0005244732",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1841:0005244732"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244732"
         ]
       },
       "names": [
@@ -84,8 +84,8 @@
     {
       "id": "gbc:1841:0005244733",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1841:0005244733"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244733"
         ]
       },
       "names": [
@@ -118,8 +118,8 @@
     {
       "id": "gbc:1841:0005244734",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1841:0005244734"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244734"
         ]
       },
       "names": [
@@ -152,8 +152,8 @@
     {
       "id": "gbc:1841:0005244735",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1841:0005244735"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244735"
         ]
       },
       "names": [
@@ -186,8 +186,8 @@
     {
       "id": "gbc:1841:0005244736",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1841:0005244736"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244736"
         ]
       },
       "names": [
@@ -220,8 +220,8 @@
     {
       "id": "gbc:1841:0005244737",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1841:0005244737"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1841:0005244737"
         ]
       },
       "names": [

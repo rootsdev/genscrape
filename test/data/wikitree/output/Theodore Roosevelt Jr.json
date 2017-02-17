@@ -54,8 +54,8 @@
       "principal": true,
       "id": "Roosevelt-18",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-18"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-18"
         ]
       },
       "sources": [
@@ -67,8 +67,8 @@
     {
       "id": "Roosevelt-26",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-26"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-26"
         ]
       },
       "names": [
@@ -102,8 +102,8 @@
     {
       "id": "Bulloch-1",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Bulloch-1"
+        "genscrape": [
+          "genscrape://wikitree/person:Bulloch-1"
         ]
       },
       "names": [
@@ -149,8 +149,8 @@
     {
       "id": "Roosevelt-20",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-20"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-20"
         ]
       },
       "names": [
@@ -196,8 +196,8 @@
     {
       "id": "Roosevelt-21",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-21"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-21"
         ]
       },
       "names": [
@@ -227,8 +227,8 @@
     {
       "id": "Roosevelt-22",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-22"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-22"
         ]
       },
       "names": [
@@ -258,8 +258,8 @@
     {
       "id": "Lee-16",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Lee-16"
+        "genscrape": [
+          "genscrape://wikitree/person:Lee-16"
         ]
       },
       "names": [
@@ -305,8 +305,8 @@
     {
       "id": "Carow-1",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Carow-1"
+        "genscrape": [
+          "genscrape://wikitree/person:Carow-1"
         ]
       },
       "names": [
@@ -352,8 +352,8 @@
     {
       "id": "Roosevelt-17",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-17"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-17"
         ]
       },
       "names": [
@@ -399,8 +399,8 @@
     {
       "id": "Roosevelt-41",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-41"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-41"
         ]
       },
       "names": [
@@ -434,8 +434,8 @@
     {
       "id": "Roosevelt-46",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-46"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-46"
         ]
       },
       "names": [
@@ -465,8 +465,8 @@
     {
       "id": "Roosevelt-42",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-42"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-42"
         ]
       },
       "names": [
@@ -512,8 +512,8 @@
     {
       "id": "Roosevelt-43",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-43"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-43"
         ]
       },
       "names": [
@@ -543,8 +543,8 @@
     {
       "id": "Roosevelt-44",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-44"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-44"
         ]
       },
       "names": [

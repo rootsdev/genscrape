@@ -4,8 +4,8 @@
     {
       "id": "us:fs:m:010363877:2",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/us:fs:m:010363877:2"
+        "genscrape": [
+          "genscrape://findmypast:record/us:fs:m:010363877:2"
         ]
       },
       "principal": true,

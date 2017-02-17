@@ -228,7 +228,7 @@ function queryPerson(gedx, $element){
     id: getRecordId(gedx, document.location.href)
   });
   person.setIdentifiers({
-    'http://gedcomx.org/Primary': getRecordIdentifier(person.getId())
+    'genscrape': getRecordIdentifier(person.getId())
   });
   
   var givenName = schema.queryPropContent($element, 'givenName'),
@@ -318,5 +318,5 @@ function getRecordId(gedx, url) {
  * @return {String}
  */
 function getRecordIdentifier(id) {
-  return 'https://www.openarch.nl/' + id;
+  return 'genscrape://openarch/' + id;
 }

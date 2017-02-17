@@ -27,7 +27,7 @@ function run(emitter){
     primaryPerson.setPrincipal(true);
     primaryPerson.setId(getRecordId(document.location.href));
     primaryPerson.setIdentifiers({
-      'http://gedcomx.org/Primary': getRecordIdentifier(document.location.href)
+      'genscrape': getRecordIdentifier(document.location.href)
     });
     gedx.addPerson(primaryPerson);
     
@@ -110,7 +110,7 @@ function queryPerson($element){
       person = GedcomX.Person({
         id: getRecordId(url),
         identifiers: {
-          'http://gedcomx.org/Primary': getRecordIdentifier(url)
+          'genscrape': getRecordIdentifier(url)
         }
       });
   
@@ -192,5 +192,5 @@ function getRecordId(url) {
  * @return {String}
  */
 function getRecordIdentifier(url) {
-  return 'https://www.genealogieonline.nl/' + getRecordId(url);
+  return 'genscrape://genealogieonline/' + getRecordId(url);
 }

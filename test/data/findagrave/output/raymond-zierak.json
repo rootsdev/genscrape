@@ -4,8 +4,8 @@
     {
       "id": "65630115",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.findagrave.com/memorial/65630115"
+        "genscrape": [
+          "genscrape://findagrave/65630115"
         ]
       },
       "principal": true,

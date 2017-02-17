@@ -4,8 +4,8 @@
     {
       "id": "I15210",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.genealogieonline.nl/I15210"
+        "genscrape": [
+          "genscrape://genealogieonline/I15210"
         ]
       },
       "principal": true,
@@ -59,8 +59,8 @@
     {
       "id": "I15209",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.genealogieonline.nl/I15209"
+        "genscrape": [
+          "genscrape://genealogieonline/I15209"
         ]
       },
       "names": [
@@ -104,8 +104,8 @@
     {
       "id": "I18285",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.genealogieonline.nl/I18285"
+        "genscrape": [
+          "genscrape://genealogieonline/I18285"
         ]
       },
       "names": [
@@ -135,8 +135,8 @@
     {
       "id": "I15212",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.genealogieonline.nl/I15212"
+        "genscrape": [
+          "genscrape://genealogieonline/I15212"
         ]
       },
       "names": [
@@ -169,8 +169,8 @@
     {
       "id": "I15213",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.genealogieonline.nl/I15213"
+        "genscrape": [
+          "genscrape://genealogieonline/I15213"
         ]
       },
       "names": [

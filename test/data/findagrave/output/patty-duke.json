@@ -4,8 +4,8 @@
     {
       "id": "160192994",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.findagrave.com/memorial/160192994"
+        "genscrape": [
+          "genscrape://findagrave/160192994"
         ]
       },
       "principal": true,
@@ -81,8 +81,8 @@
       ],
       "id": "74078004",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.findagrave.com/memorial/74078004"
+        "genscrape": [
+          "genscrape://findagrave/74078004"
         ]
       },
       "facts": [
@@ -129,8 +129,8 @@
       ],
       "id": "74886514",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.findagrave.com/memorial/74886514"
+        "genscrape": [
+          "genscrape://findagrave/74886514"
         ]
       },
       "facts": [
@@ -177,8 +177,8 @@
       ],
       "id": "163924394",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.findagrave.com/memorial/163924394"
+        "genscrape": [
+          "genscrape://findagrave/163924394"
         ]
       },
       "facts": [
@@ -225,8 +225,8 @@
       ],
       "id": "110191665",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.findagrave.com/memorial/110191665"
+        "genscrape": [
+          "genscrape://findagrave/110191665"
         ]
       },
       "facts": [
@@ -273,8 +273,8 @@
       ],
       "id": "160192994",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.findagrave.com/memorial/160192994"
+        "genscrape": [
+          "genscrape://findagrave/160192994"
         ]
       },
       "facts": [

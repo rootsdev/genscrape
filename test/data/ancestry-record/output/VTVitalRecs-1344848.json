@@ -4,8 +4,8 @@
     {
       "id": "VTVitalRecs:1344848",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/VTVitalRecs:1344848"
+        "genscrape": [
+          "genscrape://ancestry:record/VTVitalRecs:1344848"
         ]
       },
       "principal": true,

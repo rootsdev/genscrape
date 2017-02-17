@@ -73,7 +73,7 @@ function processUrl(emitter) {
           // Set primary identifiers for all persons
           gedx.getPersons().forEach(function(person){
             var identifiers = person.getIdentifiers();
-            identifiers.setValues(identifiers.getValues('http://gedcomx.org/Persistent'), 'http://gedcomx.org/Primary');
+            identifiers.addValue('genscrape://familysearch:tree/person:' + person.getId(), 'genscrape');
           });
           
           // Add the agent and connect to the root source description

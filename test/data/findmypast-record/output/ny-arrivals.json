@@ -4,8 +4,8 @@
     {
       "id": "us:pass:ny:ei:16551289",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/us:pass:ny:ei:16551289"
+        "genscrape": [
+          "genscrape://findmypast:record/us:pass:ny:ei:16551289"
         ]
       },
       "principal": true,

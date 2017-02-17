@@ -17,8 +17,8 @@
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:V8Q1-4LK"
         ],
-        "http://gedcomx.org/Primary": [
-          "https://familysearch.org/ark:/61903/1:1:V8Q1-4LK"
+        "genscrape": [
+          "genscrape://familysearch:record/p_13393329949"
         ]
       },
       "facts": [
@@ -55,8 +55,8 @@
         "http://gedcomx.org/Persistent": [
           "https://familysearch.org/ark:/61903/1:1:V8Q1-4LV"
         ],
-        "http://gedcomx.org/Primary": [
-          "https://familysearch.org/ark:/61903/1:1:V8Q1-4LV"
+        "genscrape": [
+          "genscrape://familysearch:record/p_13393329948"
         ]
       },
       "gender": {

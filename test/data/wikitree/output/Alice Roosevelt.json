@@ -46,8 +46,8 @@
       "principal": true,
       "id": "Lee-16",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Lee-16"
+        "genscrape": [
+          "genscrape://wikitree/person:Lee-16"
         ]
       },
       "sources": [
@@ -59,8 +59,8 @@
     {
       "id": "Lee-17",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Lee-17"
+        "genscrape": [
+          "genscrape://wikitree/person:Lee-17"
         ]
       },
       "names": [
@@ -90,8 +90,8 @@
     {
       "id": "Haskell-1",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Haskell-1"
+        "genscrape": [
+          "genscrape://wikitree/person:Haskell-1"
         ]
       },
       "names": [
@@ -137,8 +137,8 @@
     {
       "id": "Lee-4420",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Lee-4420"
+        "genscrape": [
+          "genscrape://wikitree/person:Lee-4420"
         ]
       },
       "names": [
@@ -184,8 +184,8 @@
     {
       "id": "Lee-4421",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Lee-4421"
+        "genscrape": [
+          "genscrape://wikitree/person:Lee-4421"
         ]
       },
       "names": [
@@ -231,8 +231,8 @@
     {
       "id": "Lee-4422",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Lee-4422"
+        "genscrape": [
+          "genscrape://wikitree/person:Lee-4422"
         ]
       },
       "names": [
@@ -278,8 +278,8 @@
     {
       "id": "Lee-4423",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Lee-4423"
+        "genscrape": [
+          "genscrape://wikitree/person:Lee-4423"
         ]
       },
       "names": [
@@ -325,8 +325,8 @@
     {
       "id": "Lee-4425",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Lee-4425"
+        "genscrape": [
+          "genscrape://wikitree/person:Lee-4425"
         ]
       },
       "names": [
@@ -356,8 +356,8 @@
     {
       "id": "Roosevelt-18",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-18"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-18"
         ]
       },
       "names": [
@@ -391,8 +391,8 @@
     {
       "id": "Roosevelt-17",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Roosevelt-17"
+        "genscrape": [
+          "genscrape://wikitree/person:Roosevelt-17"
         ]
       },
       "names": [

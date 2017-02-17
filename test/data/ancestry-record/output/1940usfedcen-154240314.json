@@ -4,8 +4,8 @@
     {
       "id": "1940usfedcen:154240314",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/1940usfedcen:154240314"
+        "genscrape": [
+          "genscrape://ancestry:record/1940usfedcen:154240314"
         ]
       },
       "principal": true,
@@ -89,8 +89,8 @@
     {
       "id": "1940usfedcen:154240312",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/1940usfedcen:154240312"
+        "genscrape": [
+          "genscrape://ancestry:record/1940usfedcen:154240312"
         ]
       },
       "names": [
@@ -130,8 +130,8 @@
     {
       "id": "1940usfedcen:154240317",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/1940usfedcen:154240317"
+        "genscrape": [
+          "genscrape://ancestry:record/1940usfedcen:154240317"
         ]
       },
       "names": [
@@ -171,8 +171,8 @@
     {
       "id": "1940usfedcen:154240321",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/1940usfedcen:154240321"
+        "genscrape": [
+          "genscrape://ancestry:record/1940usfedcen:154240321"
         ]
       },
       "names": [
@@ -212,8 +212,8 @@
     {
       "id": "1940usfedcen:154240324",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/1940usfedcen:154240324"
+        "genscrape": [
+          "genscrape://ancestry:record/1940usfedcen:154240324"
         ]
       },
       "names": [

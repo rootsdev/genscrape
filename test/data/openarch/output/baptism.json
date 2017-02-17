@@ -5,8 +5,8 @@
       "id": "elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:3",
       "principal": true,
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:3"
+        "genscrape": [
+          "genscrape://openarch/elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:3"
         ]
       },
       "names": [
@@ -32,8 +32,8 @@
     {
       "id": "elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:1",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:1"
+        "genscrape": [
+          "genscrape://openarch/elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:1"
         ]
       },
       "names": [
@@ -66,8 +66,8 @@
     {
       "id": "elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:2",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:2"
+        "genscrape": [
+          "genscrape://openarch/elo:f0b964b5-2d86-b61e-66b1-fcbd25b9c47c:2"
         ]
       },
       "names": [

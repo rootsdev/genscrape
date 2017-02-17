@@ -45,7 +45,7 @@ function run(emitter) {
     primaryPerson.setPrincipal(true);
     primaryPerson.setId(getRecordId(document.location.href));
     primaryPerson.setIdentifiers({
-      'http://gedcomx.org/Primary': document.location.href
+      'genscrape': getRecordIdentifier(document.location.href)
     });
     gedx.addPerson(primaryPerson);
     
@@ -170,7 +170,7 @@ function processPerson($person){
     var person = GedcomX.Person({
       id: getRecordId(url),
       identifiers: {
-        'http://gedcomx.org/Primary': url
+        'genscrape': getRecordIdentifier(url)
       }
     });
     processName(person, name);
@@ -309,4 +309,14 @@ function processName(person, name){
  */
 function getRecordId(url) {
   return url.split('/').pop();
+}
+
+/**
+ * Get a record's identifier
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordIdentifier(url) {
+  return 'genscrape://wikitree/person:' + getRecordId(url);
 }

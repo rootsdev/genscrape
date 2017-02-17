@@ -4,8 +4,8 @@
     {
       "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:3",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:3"
+        "genscrape": [
+          "genscrape://openarch/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:3"
         ]
       },
       "names": [
@@ -38,8 +38,8 @@
     {
       "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:1",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:1"
+        "genscrape": [
+          "genscrape://openarch/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:1"
         ]
       },
       "names": [
@@ -72,8 +72,8 @@
     {
       "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:2",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:2"
+        "genscrape": [
+          "genscrape://openarch/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:2"
         ]
       },
       "names": [
@@ -106,8 +106,8 @@
     {
       "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:4",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:4"
+        "genscrape": [
+          "genscrape://openarch/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:4"
         ]
       },
       "names": [
@@ -140,8 +140,8 @@
     {
       "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:5",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:5"
+        "genscrape": [
+          "genscrape://openarch/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:5"
         ]
       },
       "names": [
@@ -174,8 +174,8 @@
     {
       "id": "ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:6",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:6"
+        "genscrape": [
+          "genscrape://openarch/ens:4319e58e-3894-3f18-7a44-dacc65dcf90a:6"
         ]
       },
       "names": [

@@ -4,8 +4,8 @@
     {
       "id": "findagraveus:8824956",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/findagraveus:8824956"
+        "genscrape": [
+          "genscrape://ancestry:record/findagraveus:8824956"
         ]
       },
       "principal": true,

@@ -104,7 +104,7 @@ function setup(emitter) {
         id: getRecordId(document.location.href),
         principal: true,
         identifiers: {
-          'http://gedcomx.org/Primary': getRecordIdentifier(document.location.href)
+          'genscrape': getRecordIdentifier(document.location.href)
         }
       });
       
@@ -311,7 +311,7 @@ function setup(emitter) {
             existingPerson = gedx.findPersonByName(name),
             personId = getRecordId(rowData.name.href),
             identifiers = {
-              'http://gedcomx.org/Primary': getRecordIdentifier(rowData.name.href)
+              'genscrape': getRecordIdentifier(rowData.name.href)
             };
         
         // Update an existing person's IDs
@@ -503,5 +503,5 @@ function getRecordId(url) {
  * @return {String}
  */
 function getRecordIdentifier(url) {
-  return 'http://search.ancestry.com/record/' + getRecordId(url);
+  return 'genscrape://ancestry:record/' + getRecordId(url);
 }

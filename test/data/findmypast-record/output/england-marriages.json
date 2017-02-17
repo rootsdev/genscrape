@@ -4,8 +4,8 @@
     {
       "id": "bmd:m:1878:4:az:000312:104",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/bmd:m:1878:4:az:000312:104"
+        "genscrape": [
+          "genscrape://findmypast:record/bmd:m:1878:4:az:000312:104"
         ]
       },
       "principal": true,

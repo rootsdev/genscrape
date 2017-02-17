@@ -25,7 +25,7 @@ function run(emitter){
         principal: true,
         id: getMemorialId(document.location.href),
         identifiers: {
-          'http://gedcomx.org/Primary': getMemorialIdentifier(document.location.href)
+          'genscrape': getMemorialIdentifier(document.location.href)
         }
       });
   
@@ -295,7 +295,7 @@ function processFamilyLink(linkText, url){
       .addSimpleName(data.name)
       .setId(getMemorialId(url))
       .setIdentifiers({
-        'http://gedcomx.org/Primary': getMemorialIdentifier(url)
+        'genscrape': getMemorialIdentifier(url)
       })
       .addFact(familyLinkFact('http://gedcomx.org/Birth', data.birthYear))
       .addFact(familyLinkFact('http://gedcomx.org/Death', data.deathYear));
@@ -359,5 +359,5 @@ function getMemorialId(url){
  * @returns {String}
  */
 function getMemorialIdentifier(url){
-  return 'https://www.findagrave.com/memorial/' + getMemorialId(url);
+  return 'genscrape://findagrave/' + getMemorialId(url);
 }

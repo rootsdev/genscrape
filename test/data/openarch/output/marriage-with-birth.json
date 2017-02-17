@@ -4,8 +4,8 @@
     {
       "id": "rzh:7a9488e8-91bf-4961-b328-bb30915b9069:3",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:3"
+        "genscrape": [
+          "genscrape://openarch/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:3"
         ]
       },
       "names": [
@@ -49,8 +49,8 @@
     {
       "id": "rzh:7a9488e8-91bf-4961-b328-bb30915b9069:1",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:1"
+        "genscrape": [
+          "genscrape://openarch/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:1"
         ]
       },
       "names": [
@@ -83,8 +83,8 @@
     {
       "id": "rzh:7a9488e8-91bf-4961-b328-bb30915b9069:2",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:2"
+        "genscrape": [
+          "genscrape://openarch/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:2"
         ]
       },
       "names": [
@@ -117,8 +117,8 @@
     {
       "id": "rzh:7a9488e8-91bf-4961-b328-bb30915b9069:4",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:4"
+        "genscrape": [
+          "genscrape://openarch/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:4"
         ]
       },
       "names": [
@@ -162,8 +162,8 @@
     {
       "id": "rzh:7a9488e8-91bf-4961-b328-bb30915b9069:5",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:5"
+        "genscrape": [
+          "genscrape://openarch/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:5"
         ]
       },
       "names": [
@@ -196,8 +196,8 @@
     {
       "id": "rzh:7a9488e8-91bf-4961-b328-bb30915b9069:6",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://www.openarch.nl/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:6"
+        "genscrape": [
+          "genscrape://openarch/rzh:7a9488e8-91bf-4961-b328-bb30915b9069:6"
         ]
       },
       "names": [

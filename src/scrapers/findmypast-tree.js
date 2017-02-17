@@ -198,7 +198,7 @@ function processPerson(person, treeId){
   var gedxPerson = GedcomX.Person()
     .setId(person.Id + '')
     .setIdentifiers({
-      'http://gedcomx.org/Primary': 'http://tree.findmypast.co.uk/' + treeId + '/' + person.Id
+      'genscrape': 'genscrape://findmypast:tree/' + treeId + ':person:' + person.Id
     })
     .setGender({
       type: person.Gender === 1 ? 'http://gedcomx.org/Male' : 'http://gedcomx.org/Female'

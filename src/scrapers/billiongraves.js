@@ -31,7 +31,7 @@ function run(emitter){
         principal: true,
         id: record.record_id,
         identifiers: {
-          'http://gedcomx.org/Primary': graveUrl(record.record_id, record.urlname)
+          'genscrape': getRecordIdentifier(record.record_id)
         }
       });
   
@@ -101,7 +101,7 @@ function run(emitter){
     var person = GedcomX.Person({
       id: relation.record_id,
       identifiers: {
-        'http://gedcomx.org/Primary': graveUrl(relation.record_id, relation.urlname)
+        'genscrape': getRecordIdentifier(relation.record_id)
       }
     });
     person.addSimpleName(relation.fullname);
@@ -170,11 +170,11 @@ function dateAvailable(date){
 }
 
 /**
- * Generate a URL for the grave
+ * Generate an identifier for the record
  * 
  * @param {String} recordId
- * @param {String} urlName
+ * @return {String}
  */
-function graveUrl(recordId, urlName){
-  return 'https://billiongraves.com/grave/' + urlName + '/' + recordId;
+function getRecordIdentifier(recordId){
+  return 'genscrape://billiongraves/' + recordId;
 }

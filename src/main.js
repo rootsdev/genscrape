@@ -3,10 +3,11 @@ var debug = require('debug')('genscrape:main'),
 
 /**
  * Main genscrape function.
- * Compare current location to the list of urls
- * registered by the scrapers to find a scraper
- * that can handle this page.
- * Return an EventEmitter object.
+ * 
+ * Compares the current url to the list of regexes registered by the scrapers to 
+ * find a scraper that can handle this page.
+ * 
+ * Returns an EventEmitter object.
  */
 var genscrape = function(){
   var emitter = new EventEmitter2();
@@ -45,13 +46,16 @@ var genscrape = function(){
   return emitter;
 };
 
+// TODO: remove `genscrape._scrapers`. It's not being used. Perhaps it could
+// be useful for debugging but we've never actually used it.
 var scrapers = genscrape._scrapers = [];
 
 /**
  * Register a scraper.
- * Give an array of regex for matching urls
- * and a function to call which begins the process
- * of scraping and returns an EventEmitter object.
+ * 
+ * @param {Object} config
+ * @param {Regex[]} config.urls Regex for matching URLs
+ * @param {Function} config.scraper Initiates scraper and returns and EventEmitter object
  */
 var register = genscrape.register = function(urls, scraper){
   // TODO: prevent duplicate registration

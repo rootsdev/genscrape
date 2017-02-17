@@ -4,8 +4,8 @@
     {
       "id": "web-obituary:22395809",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/web-obituary:22395809"
+        "genscrape": [
+          "genscrape://ancestry:record/web-obituary:22395809"
         ]
       },
       "principal": true,

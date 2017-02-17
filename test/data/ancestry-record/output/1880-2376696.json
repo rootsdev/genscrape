@@ -4,8 +4,8 @@
     {
       "id": "1880usfedcen:2376696",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/1880usfedcen:2376696"
+        "genscrape": [
+          "genscrape://ancestry:record/1880usfedcen:2376696"
         ]
       },
       "principal": true,
@@ -99,8 +99,8 @@
         }
       ],
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/1880usfedcen:2376661"
+        "genscrape": [
+          "genscrape://ancestry:record/1880usfedcen:2376661"
         ]
       },
       "sources": [
@@ -146,8 +146,8 @@
         }
       ],
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/1880usfedcen:1794739"
+        "genscrape": [
+          "genscrape://ancestry:record/1880usfedcen:1794739"
         ]
       },
       "sources": [
@@ -159,8 +159,8 @@
     {
       "id": "1880usfedcen:1794557",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/1880usfedcen:1794557"
+        "genscrape": [
+          "genscrape://ancestry:record/1880usfedcen:1794557"
         ]
       },
       "names": [
@@ -200,8 +200,8 @@
     {
       "id": "1880usfedcen:2376270",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/1880usfedcen:2376270"
+        "genscrape": [
+          "genscrape://ancestry:record/1880usfedcen:2376270"
         ]
       },
       "names": [

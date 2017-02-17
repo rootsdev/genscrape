@@ -4,8 +4,8 @@
     {
       "id": "general-9279:30484846",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/general-9279:30484846"
+        "genscrape": [
+          "genscrape://ancestry:record/general-9279:30484846"
         ]
       },
       "principal": true,

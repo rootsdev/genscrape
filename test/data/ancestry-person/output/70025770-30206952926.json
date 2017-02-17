@@ -4,8 +4,8 @@
     {
       "id": "70025770:30206952926",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952926"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952926"
         ]
       },
       "principal": true,
@@ -40,8 +40,8 @@
     {
       "id": "70025770:30206952948",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952948"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952948"
         ]
       },
       "names": [
@@ -72,8 +72,8 @@
     {
       "id": "70025770:30206952949",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952949"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952949"
         ]
       },
       "names": [
@@ -100,8 +100,8 @@
     {
       "id": "70025770:30206952925",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952925"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952925"
         ]
       },
       "names": [
@@ -132,8 +132,8 @@
     {
       "id": "70025770:30206952950",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952950"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952950"
         ]
       },
       "names": [
@@ -173,8 +173,8 @@
     {
       "id": "70025770:30206952951",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952951"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952951"
         ]
       },
       "names": [
@@ -221,8 +221,8 @@
     {
       "id": "70025770:30206952954",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952954"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952954"
         ]
       },
       "names": [
@@ -269,8 +269,8 @@
     {
       "id": "70025770:30206952952",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952952"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952952"
         ]
       },
       "names": [
@@ -317,8 +317,8 @@
     {
       "id": "70025770:30206952953",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952953"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952953"
         ]
       },
       "names": [
@@ -365,8 +365,8 @@
     {
       "id": "70025770:30206952912",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952912"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952912"
         ]
       },
       "names": [
@@ -413,8 +413,8 @@
     {
       "id": "70025770:30206952958",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952958"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952958"
         ]
       },
       "names": [
@@ -461,8 +461,8 @@
     {
       "id": "70025770:30206952955",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952955"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952955"
         ]
       },
       "names": [
@@ -509,8 +509,8 @@
     {
       "id": "70025770:30206952956",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952956"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952956"
         ]
       },
       "names": [
@@ -550,8 +550,8 @@
     {
       "id": "70025770:30206952957",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://person.ancestry.com/tree/70025770/person/30206952957"
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:30206952957"
         ]
       },
       "names": [

@@ -4,8 +4,8 @@
     {
       "id": "HonoluluPL:574941",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/HonoluluPL:574941"
+        "genscrape": [
+          "genscrape://ancestry:record/HonoluluPL:574941"
         ]
       },
       "principal": true,

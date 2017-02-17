@@ -4,8 +4,8 @@
     {
       "id": "nypl:14261124",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/nypl:14261124"
+        "genscrape": [
+          "genscrape://ancestry:record/nypl:14261124"
         ]
       },
       "principal": true,

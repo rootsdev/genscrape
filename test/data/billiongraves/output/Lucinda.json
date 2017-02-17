@@ -4,8 +4,8 @@
     {
       "id": "216756",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://billiongraves.com/grave/LUCINDA-CLARK/216756"
+        "genscrape": [
+          "genscrape://billiongraves/216756"
         ]
       },
       "principal": true,
@@ -52,8 +52,8 @@
     {
       "id": "216755",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://billiongraves.com/grave/MJ-CLARK/216755"
+        "genscrape": [
+          "genscrape://billiongraves/216755"
         ]
       },
       "names": [

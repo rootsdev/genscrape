@@ -37,8 +37,8 @@
       "principal": true,
       "id": "Smith-9130",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Smith-9130"
+        "genscrape": [
+          "genscrape://wikitree/person:Smith-9130"
         ]
       },
       "sources": [
@@ -50,8 +50,8 @@
     {
       "id": "Rivers-268",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Rivers-268"
+        "genscrape": [
+          "genscrape://wikitree/person:Rivers-268"
         ]
       },
       "names": [
@@ -81,8 +81,8 @@
     {
       "id": "Smith-19128",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Smith-19128"
+        "genscrape": [
+          "genscrape://wikitree/person:Smith-19128"
         ]
       },
       "names": [
@@ -112,8 +112,8 @@
     {
       "id": "Smith-19127",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Smith-19127"
+        "genscrape": [
+          "genscrape://wikitree/person:Smith-19127"
         ]
       },
       "names": [
@@ -143,8 +143,8 @@
     {
       "id": "Smith-19126",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Smith-19126"
+        "genscrape": [
+          "genscrape://wikitree/person:Smith-19126"
         ]
       },
       "names": [
@@ -174,8 +174,8 @@
     {
       "id": "Smith-19117",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Smith-19117"
+        "genscrape": [
+          "genscrape://wikitree/person:Smith-19117"
         ]
       },
       "names": [
@@ -205,8 +205,8 @@
     {
       "id": "Smith-19110",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.wikitree.com/wiki/Smith-19110"
+        "genscrape": [
+          "genscrape://wikitree/person:Smith-19110"
         ]
       },
       "names": [

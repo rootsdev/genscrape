@@ -2,10 +2,10 @@
   "description": "#1",
   "persons": [
     {
-      "id": "George_Washington_(6)",
+      "id": "George_Washington_6",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.werelate.org/wiki/Person:George_Washington_%286%29"
+        "genscrape": [
+          "genscrape://werelate/person:George_Washington_%286%29"
         ]
       },
       "principal": true,
@@ -117,10 +117,10 @@
       ]
     },
     {
-      "id": "Augustine_Washington_(1)",
+      "id": "Augustine_Washington_1",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.werelate.org/wiki/Person:Augustine_Washington_%281%29"
+        "genscrape": [
+          "genscrape://werelate/person:Augustine_Washington_%281%29"
         ]
       },
       "names": [
@@ -166,10 +166,10 @@
       ]
     },
     {
-      "id": "Mary_Ball_(5)",
+      "id": "Mary_Ball_5",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.werelate.org/wiki/Person:Mary_Ball_%285%29"
+        "genscrape": [
+          "genscrape://werelate/person:Mary_Ball_%285%29"
         ]
       },
       "names": [
@@ -215,10 +215,10 @@
       ]
     },
     {
-      "id": "Betty_Washington_(2)",
+      "id": "Betty_Washington_2",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.werelate.org/wiki/Person:Betty_Washington_%282%29"
+        "genscrape": [
+          "genscrape://werelate/person:Betty_Washington_%282%29"
         ]
       },
       "names": [
@@ -261,10 +261,10 @@
       ]
     },
     {
-      "id": "Samuel_Washington_(6)",
+      "id": "Samuel_Washington_6",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.werelate.org/wiki/Person:Samuel_Washington_%286%29"
+        "genscrape": [
+          "genscrape://werelate/person:Samuel_Washington_%286%29"
         ]
       },
       "names": [
@@ -307,10 +307,10 @@
       ]
     },
     {
-      "id": "John_Washington_(26)",
+      "id": "John_Washington_26",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.werelate.org/wiki/Person:John_Washington_%2826%29"
+        "genscrape": [
+          "genscrape://werelate/person:John_Washington_%2826%29"
         ]
       },
       "names": [
@@ -353,10 +353,10 @@
       ]
     },
     {
-      "id": "Charles_Washington_(5)",
+      "id": "Charles_Washington_5",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.werelate.org/wiki/Person:Charles_Washington_%285%29"
+        "genscrape": [
+          "genscrape://werelate/person:Charles_Washington_%285%29"
         ]
       },
       "names": [
@@ -399,10 +399,10 @@
       ]
     },
     {
-      "id": "Mildred_Washington_(7)",
+      "id": "Mildred_Washington_7",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.werelate.org/wiki/Person:Mildred_Washington_%287%29"
+        "genscrape": [
+          "genscrape://werelate/person:Mildred_Washington_%287%29"
         ]
       },
       "names": [
@@ -445,10 +445,10 @@
       ]
     },
     {
-      "id": "Martha_Dandridge_(2)",
+      "id": "Martha_Dandridge_2",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://www.werelate.org/wiki/Person:Martha_Dandridge_%282%29"
+        "genscrape": [
+          "genscrape://werelate/person:Martha_Dandridge_%282%29"
         ]
       },
       "names": [
@@ -498,10 +498,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Augustine_Washington_(1)"
+        "resource": "#Augustine_Washington_1"
       },
       "person2": {
-        "resource": "#George_Washington_(6)"
+        "resource": "#George_Washington_6"
       },
       "sources": [
         {
@@ -512,10 +512,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Mary_Ball_(5)"
+        "resource": "#Mary_Ball_5"
       },
       "person2": {
-        "resource": "#George_Washington_(6)"
+        "resource": "#George_Washington_6"
       },
       "sources": [
         {
@@ -526,10 +526,10 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#Augustine_Washington_(1)"
+        "resource": "#Augustine_Washington_1"
       },
       "person2": {
-        "resource": "#Mary_Ball_(5)"
+        "resource": "#Mary_Ball_5"
       },
       "facts": [
         {
@@ -548,10 +548,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Augustine_Washington_(1)"
+        "resource": "#Augustine_Washington_1"
       },
       "person2": {
-        "resource": "#Betty_Washington_(2)"
+        "resource": "#Betty_Washington_2"
       },
       "sources": [
         {
@@ -562,10 +562,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Mary_Ball_(5)"
+        "resource": "#Mary_Ball_5"
       },
       "person2": {
-        "resource": "#Betty_Washington_(2)"
+        "resource": "#Betty_Washington_2"
       },
       "sources": [
         {
@@ -576,10 +576,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Augustine_Washington_(1)"
+        "resource": "#Augustine_Washington_1"
       },
       "person2": {
-        "resource": "#Samuel_Washington_(6)"
+        "resource": "#Samuel_Washington_6"
       },
       "sources": [
         {
@@ -590,10 +590,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Mary_Ball_(5)"
+        "resource": "#Mary_Ball_5"
       },
       "person2": {
-        "resource": "#Samuel_Washington_(6)"
+        "resource": "#Samuel_Washington_6"
       },
       "sources": [
         {
@@ -604,10 +604,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Augustine_Washington_(1)"
+        "resource": "#Augustine_Washington_1"
       },
       "person2": {
-        "resource": "#John_Washington_(26)"
+        "resource": "#John_Washington_26"
       },
       "sources": [
         {
@@ -618,10 +618,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Mary_Ball_(5)"
+        "resource": "#Mary_Ball_5"
       },
       "person2": {
-        "resource": "#John_Washington_(26)"
+        "resource": "#John_Washington_26"
       },
       "sources": [
         {
@@ -632,10 +632,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Augustine_Washington_(1)"
+        "resource": "#Augustine_Washington_1"
       },
       "person2": {
-        "resource": "#Charles_Washington_(5)"
+        "resource": "#Charles_Washington_5"
       },
       "sources": [
         {
@@ -646,10 +646,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Mary_Ball_(5)"
+        "resource": "#Mary_Ball_5"
       },
       "person2": {
-        "resource": "#Charles_Washington_(5)"
+        "resource": "#Charles_Washington_5"
       },
       "sources": [
         {
@@ -660,10 +660,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Augustine_Washington_(1)"
+        "resource": "#Augustine_Washington_1"
       },
       "person2": {
-        "resource": "#Mildred_Washington_(7)"
+        "resource": "#Mildred_Washington_7"
       },
       "sources": [
         {
@@ -674,10 +674,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#Mary_Ball_(5)"
+        "resource": "#Mary_Ball_5"
       },
       "person2": {
-        "resource": "#Mildred_Washington_(7)"
+        "resource": "#Mildred_Washington_7"
       },
       "sources": [
         {
@@ -688,10 +688,10 @@
     {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#George_Washington_(6)"
+        "resource": "#George_Washington_6"
       },
       "person2": {
-        "resource": "#Martha_Dandridge_(2)"
+        "resource": "#Martha_Dandridge_2"
       },
       "facts": [
         {

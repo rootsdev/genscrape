@@ -4,8 +4,8 @@
     {
       "id": "usc:1900:004114960:00265:084",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/usc:1900:004114960:00265:084"
+        "genscrape": [
+          "genscrape://findmypast:record/usc:1900:004114960:00265:084"
         ]
       },
       "principal": true,
@@ -54,8 +54,8 @@
     {
       "id": "usc:1900:004114960:00265:081",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/usc:1900:004114960:00265:081"
+        "genscrape": [
+          "genscrape://findmypast:record/usc:1900:004114960:00265:081"
         ]
       },
       "names": [
@@ -94,8 +94,8 @@
     {
       "id": "usc:1900:004114960:00265:082",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/usc:1900:004114960:00265:082"
+        "genscrape": [
+          "genscrape://findmypast:record/usc:1900:004114960:00265:082"
         ]
       },
       "names": [
@@ -134,8 +134,8 @@
     {
       "id": "usc:1900:004114960:00265:083",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/usc:1900:004114960:00265:083"
+        "genscrape": [
+          "genscrape://findmypast:record/usc:1900:004114960:00265:083"
         ]
       },
       "names": [
@@ -174,8 +174,8 @@
     {
       "id": "usc:1900:004114960:00265:085",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/usc:1900:004114960:00265:085"
+        "genscrape": [
+          "genscrape://findmypast:record/usc:1900:004114960:00265:085"
         ]
       },
       "names": [

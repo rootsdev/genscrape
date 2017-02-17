@@ -4,8 +4,8 @@
     {
       "id": "r_931803621",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/r_931803621"
+        "genscrape": [
+          "genscrape://findmypast:record/r_931803621"
         ]
       },
       "principal": true,

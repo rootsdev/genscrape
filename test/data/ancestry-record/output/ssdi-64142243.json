@@ -4,8 +4,8 @@
     {
       "id": "ssdi:64142243",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/ssdi:64142243"
+        "genscrape": [
+          "genscrape://ancestry:record/ssdi:64142243"
         ]
       },
       "principal": true,

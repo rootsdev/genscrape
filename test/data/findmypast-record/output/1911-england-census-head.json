@@ -4,8 +4,8 @@
     {
       "id": "gbc:1911:rg14:24584:0135:1",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1911:rg14:24584:0135:1"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1911:rg14:24584:0135:1"
         ]
       },
       "principal": true,
@@ -58,8 +58,8 @@
     {
       "id": "gbc:1911:rg14:24584:0135:2",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1911:rg14:24584:0135:2"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1911:rg14:24584:0135:2"
         ]
       },
       "names": [
@@ -98,8 +98,8 @@
     {
       "id": "gbc:1911:rg14:24584:0135:3",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1911:rg14:24584:0135:3"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1911:rg14:24584:0135:3"
         ]
       },
       "names": [
@@ -138,8 +138,8 @@
     {
       "id": "gbc:1911:rg14:24584:0135:4",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.findmypast.co.uk/record/gbc:1911:rg14:24584:0135:4"
+        "genscrape": [
+          "genscrape://findmypast:record/gbc:1911:rg14:24584:0135:4"
         ]
       },
       "names": [

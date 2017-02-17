@@ -46,7 +46,7 @@ function run(emitter) {
         principal: true,
         id: getRecordId(document.location.href),
         identifiers: {
-          'http://gedcomx.org/Primary': getRecordIdentifier(document.location.href)
+          'genscrape': getRecordIdentifier(document.location.href)
         }
       }),
       dataFields = new HorizontalTable(transcriptionDisplayTable, {
@@ -518,7 +518,7 @@ function getHouseholdPerson(data){
   var person = GedcomX.Person({
     id: getRecordId(data['']),
     identifiers: {
-      'http://gedcomx.org/Primary': getRecordIdentifier(data[''])
+      'genscrape': getRecordIdentifier(data[''])
     }
   });
   person.addNameFromParts({
@@ -630,5 +630,5 @@ function getRecordId(url){
  * @return {String}
  */
 function getRecordIdentifier(url){
-  return 'http://search.findmypast.co.uk/record/' + getRecordId(url);
+  return 'genscrape://findmypast:record/' + getRecordId(url);
 }

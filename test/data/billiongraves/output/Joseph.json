@@ -4,8 +4,8 @@
     {
       "id": "245670",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://billiongraves.com/grave/JOSEPH-CLARK/245670"
+        "genscrape": [
+          "genscrape://billiongraves/245670"
         ]
       },
       "principal": true,
@@ -58,8 +58,8 @@
     {
       "id": "242144",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://billiongraves.com/grave/Phylinda-Clark/242144"
+        "genscrape": [
+          "genscrape://billiongraves/242144"
         ]
       },
       "names": [
@@ -104,8 +104,8 @@
     {
       "id": "244773",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://billiongraves.com/grave/Mary-M-Walker/244773"
+        "genscrape": [
+          "genscrape://billiongraves/244773"
         ]
       },
       "names": [
@@ -150,8 +150,8 @@
     {
       "id": "244774",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://billiongraves.com/grave/Susan-M-Walker/244774"
+        "genscrape": [
+          "genscrape://billiongraves/244774"
         ]
       },
       "names": [
@@ -196,8 +196,8 @@
     {
       "id": "245552",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "https://billiongraves.com/grave/Sophronia-Walker/245552"
+        "genscrape": [
+          "genscrape://billiongraves/245552"
         ]
       },
       "names": [

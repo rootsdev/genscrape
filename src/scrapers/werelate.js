@@ -94,7 +94,7 @@ function run(emitter){
         principal: true,
         id: getRecordId(document.location.href),
         identifiers: {
-          'http://gedcomx.org/Primary': document.location.href
+          'genscrape': getRecordIdentifier(document.location.href)
         }
       });
       
@@ -385,7 +385,7 @@ function processPerson(element, gender){
         person = GedcomX.Person({
           id: getRecordId(href),
           identifiers: {
-            'http://gedcomx.org/Primary': href
+            'genscrape': getRecordIdentifier(href)
           }
         }).addSimpleName(element.querySelector('.wr-infobox-fullname a').textContent),
         yearRange = utils.maybe(element.querySelector('.wr-infobox-yearrange')).textContent || ' - ',
@@ -422,5 +422,15 @@ function processPerson(element, gender){
  * @return {String}
  */
 function getRecordId(url) {
-  return decodeURIComponent(url.split('/').pop().split(':')[1]);
+  return decodeURIComponent(url.split('/').pop().split(':')[1]).replace(/\(|\)/g,'');
+}
+
+/**
+ * Get a record's identifier
+ * 
+ * @param {String} url
+ * @return {String}
+ */
+function getRecordIdentifier(url) {
+  return 'genscrape://werelate/person:' + (url.split('/').pop().split(':')[1]);
 }

@@ -4,8 +4,8 @@
     {
       "id": "OrMarriages:4777",
       "identifiers": {
-        "http://gedcomx.org/Primary": [
-          "http://search.ancestry.com/record/OrMarriages:4777"
+        "genscrape": [
+          "genscrape://ancestry:record/OrMarriages:4777"
         ]
       },
       "principal": true,

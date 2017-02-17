@@ -94,10 +94,10 @@ function process(emitter, $dom){
   
   var gedx = new GedcomX(),
       primaryPerson = new GedcomX.Person({
-        id: getPersonIdFromUrl(window.location.href),
+        id: getRecordId(window.location.href),
         principal: true,
         identifiers: {
-          'http://gedcomx.org/Primary': window.location.href
+          'genscrape': getRecordIdentifier(window.location.href)
         }
       }),
       facts = FactsList($dom);
@@ -289,9 +289,9 @@ function parseHTML(html){
  */
 function getPersonFromCard(gedx, $card){
   var person = GedcomX.Person({
-    id: getPersonIdFromUrl($card.href),
+    id: getRecordId($card.href),
     identifiers: {
-      'http://gedcomx.org/Primary': $card.href
+      'genscrape': getRecordIdentifier($card.href)
     }
   }).addSimpleName(getPersonName($card));
   var $lifespan = $card.querySelector('.userCardSubTitle');
@@ -544,7 +544,11 @@ function FactsList($dom){
  * @param {String} url
  * @return {String}
  */
-function getPersonIdFromUrl(url) {
+function getRecordId(url) {
   var parts = url.split('/');
   return parts[4] + ':' + parts[6];
+}
+
+function getRecordIdentifier(url) {
+  return 'genscrape://ancestry:tree/person:' + getRecordId(url);
 }
