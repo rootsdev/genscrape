@@ -121,7 +121,7 @@ function run(emitter){
     citations: [
       {
         value: 'Find A Grave, database and images (http://findagrave.com : accessed ' + utils.getDateString() + ')'
-          + ', memorial page for ' + document.title + '.'
+          + ', memorial #' + getMemorialId(document.location.href) + ' for ' + document.title + '.'
       }
     ],
     repository: {
