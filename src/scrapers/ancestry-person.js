@@ -3,8 +3,8 @@ var debug = require('debug')('genscrape:scrapers:ancestry-person'),
     GedcomX = require('gedcomx-js');
 
 var urls = [
-  utils.urlPatternToRegex('http://person.ancestry.com/tree/*/person/*'),
-  utils.urlPatternToRegex('http://person.ancestryinstitution.com/tree/*/person/*')
+  utils.urlPatternToRegex('https://www.ancestry.com/family-tree/person/tree/*/person/*'),
+  utils.urlPatternToRegex('https://www.ancestryinstitution.com/family-tree/person/tree/*/person/*')
 ];
 
 var eventConfig = [
@@ -49,9 +49,9 @@ function run(emitter) {
   
   debug('run');
   
-  // We start on a url such as http://person.ancestry.com/tree/70025770/person/30322313653/facts.
+  // We start on a url such as https://www.ancestry.com/family-tree/person/tree/109528628/person/180077026601/facts.
   // We want to strip anything after the second number and replace it with /content/factsbody
-  var factsUrl = window.location.pathname.split('/').slice(0,5).join('/') + '/content/factsbody';
+  var factsUrl = window.location.pathname.split('/').slice(0,7).join('/') + '/content/factsbody';
   
   debug('url: ' + factsUrl);
   
@@ -537,16 +537,16 @@ function FactsList($dom){
 }
 
 /**
- * Given the URL of a person, return an ID of the format ${treeId}-${personId}.
+ * Given the URL of a person, return an ID of the format ${treeId}:${personId}.
  * 
- * Example URL: http://person.ancestry.com/tree/70025770/person/30322313653
+ * Example URL: https://www.ancestry.com/family-tree/person/tree/109528628/person/180077026601/facts
  * 
  * @param {String} url
  * @return {String}
  */
 function getRecordId(url) {
   var parts = url.split('/');
-  return parts[4] + ':' + parts[6];
+  return parts[6] + ':' + parts[8];
 }
 
 function getRecordIdentifier(url) {
