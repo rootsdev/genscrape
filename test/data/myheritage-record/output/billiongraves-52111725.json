@@ -1,0 +1,147 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "10147:52111725",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10147:52111725"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Janet K Smith",
+              "parts": [
+                {
+                  "value": "Janet K",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Nov 30 1948"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Highland Memorial Gardens, Thornton, Colorado, United States"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "10147:4349005",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10147:4349005"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Robert J Smith",
+              "parts": [
+                {
+                  "value": "Robert J",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Smith",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1941"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2011"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#10147:52111725"
+      },
+      "person2": {
+        "resource": "#10147:4349005"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-10147-52111725/janet-k-smith-in-billiongraves",
+      "titles": [
+        {
+          "value": "In BillionGraves"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #10147:52111725 for Janet K Smith - BillionGraves - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "1"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "10002:10248383",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10002:10248383"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Stephen A Zierak",
+              "parts": [
+                {
+                  "value": "Stephen A",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Mar 22 1894"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Apr 7 1961"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-10002-10248383/stephen-a-zierak-in-us-social-security-death-index-ssdi",
+      "titles": [
+        {
+          "value": "In U.S. Social Security Death Index (SSDI)"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #10002:10248383 for Stephen A Zierak - U.S. Social Security Death Index (SSDI) - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "1"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

@@ -3,27 +3,27 @@ var debug = require('debug')('genscrape:main'),
 
 /**
  * Main genscrape function.
- * 
- * Compares the current url to the list of regexes registered by the scrapers to 
+ *
+ * Compares the current url to the list of regexes registered by the scrapers to
  * find a scraper that can handle this page.
- * 
+ *
  * Returns an EventEmitter object.
  */
 var genscrape = function(){
   var emitter = new EventEmitter2();
   var thisUrl = window.location.href;
   debug('url', thisUrl);
-  
+
   // Loop through all registered scrapers
   var i, j, scraper, regex, match = false;
   for(i = 0; i < scrapers.length && !match; i++){
     scraper = scrapers[i];
-    
+
     // Loop through all url regex matchers for this scraper
     for(j = 0; j < scraper.urls.length && !match; j++){
       regex = scraper.urls[j];
       debug(regex);
-      
+
       // We have a match
       if(regex.test(thisUrl)){
         debug('match');
@@ -34,7 +34,7 @@ var genscrape = function(){
       }
     }
   }
-  
+
   // Nothing matched. Send a 'noMatch' event.
   if(!match){
     debug('no match');
@@ -42,7 +42,7 @@ var genscrape = function(){
       emitter.emit('noMatch');
     });
   }
-  
+
   return emitter;
 };
 
@@ -52,7 +52,7 @@ var scrapers = genscrape._scrapers = [];
 
 /**
  * Register a scraper.
- * 
+ *
  * @param {Object} config
  * @param {Regex[]} config.urls Regex for matching URLs
  * @param {Function} config.scraper Initiates scraper and returns and EventEmitter object
@@ -87,3 +87,4 @@ require('./scrapers/genealogieonline')(register);
 require('./scrapers/openarch')(register);
 require('./scrapers/werelate')(register);
 require('./scrapers/wikitree')(register);
+require('./scrapers/myheritage-record')(register);
