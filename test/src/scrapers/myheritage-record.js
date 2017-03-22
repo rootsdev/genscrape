@@ -19,8 +19,12 @@ describe('myheritage-record', function() {
     'billiongraves-52111725',
     'https://www.myheritage.com/research/record-10147-52111725/janet-k-smith-in-billiongraves'
   ));
-  it.only('familysearch-family-tree', setupTest(
+  it('familysearch-family-tree', setupTest(
     'familysearch-family-tree-171359631',
     'https://www.myheritage.com/research/record-40001-171359631/katherine-zierak-in-familysearch-family-tree'
+  ));
+  it.only('united-states-federal-census-tree', setupTest(
+    'united-states-federal-census-90714854',
+    'https://www.myheritage.com/research/record-10053-90714854/helen-g-yurkiewicz-in-1940-united-states-federal-census'
   ));
 });

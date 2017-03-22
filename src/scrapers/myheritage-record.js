@@ -39,6 +39,17 @@ var events = [
   }
 ];
 
+var facts = [
+  {
+    regex: /^race$/,
+    type: 'http://gedcomx.org/Race'
+  },
+  {
+    regex: /^marital status$/,
+    type: 'http://gedcomx.org/MaritalStatus'
+  },
+];
+
 module.exports = function(register){
   register(urls, setup);
 };
@@ -123,10 +134,38 @@ function setup(emitter) {
     }
   });
 
+  // Facts
+  facts.forEach(function(fact) {
+    if(table.hasMatch(fact.regex)) {
+      var value = table.getMatchText(fact.regex).trim();
+      primaryPerson.addFact(GedcomX.Fact({
+        type: fact.type,
+        value: value
+      }));
+    }
+  });
+
   // Mother/Father
-  if(table.hasMatch(/(father|mother)/)){
-    var name = table.getMatchText(/(father|mother)/);
+  if(table.hasMatch(/^(father|mother)$/)){
+    var name = table.getMatchText(/^(father|mother)$/);
     gedx.addRelativeFromName(primaryPerson, name, 'Parent');
+  }
+  // Husband/Wife
+  if(table.hasMatch(/^(husband|wife)$/)){
+    var name = table.getMatchText(/^(husband|wife)$/);
+    gedx.addRelativeFromName(primaryPerson, name, 'Couple');
+  }
+  // Children
+  if(table.hasMatch(/^children$/)){
+    var rawNames = table.getMatch(/^children$/).innerHTML;
+    var names = rawNames.split(/<br ?\/?>/);
+    for (var str of names) {
+      var el = document.createElement('div');
+      el.innerHTML = str;
+      var name = el.textContent;
+      gedx.addRelativeFromName(primaryPerson, name, 'Child');
+    }
+    // TODO create relationship to father/mother if they are also set
   }
 
   // Additional Tables
@@ -195,7 +234,7 @@ function setup(emitter) {
         // If there is no relation, return
         if (!row.relation.text) return;
 
-        // Add relationship
+        // Add relationships
         if(/^(husband|wife)/.test(row.relation.text.toLowerCase())) {
           gedx.addRelationship({
             type: 'http://gedcomx.org/Couple',
@@ -218,6 +257,74 @@ function setup(emitter) {
           });
         }
       });
+    }
+
+    // Census/household table
+    if (title && title.textContent.toLowerCase() == 'household') {
+      var householdMembers = new VerticalTable(additionalTable.querySelector('table'), {
+        labelMapper: function(label){
+          return label.toLowerCase().trim();
+        },
+        valueMapper: function(cell){
+          var a = cell.querySelector('a');
+          return {
+            text: cell.textContent.trim(),
+            href: a ? a.href : ''
+          };
+        }
+      });
+
+      householdMembers.getRows().forEach(function(row) {
+        var name = GedcomX.Name.createFromString(row.name.text);
+        var person = gedx.findPersonByName(name);
+        var personId = getRecordId(row.name.href);
+        var identifiers = {
+          'genscrape': getRecordIdentifier(row.name.href)
+        };
+
+        if (person) {
+          // Update their IDs
+          gedx.updatePersonsID(person.id, personId);
+          person.setIdentifiers(identifiers);
+        } else {
+          // Add person
+          person = new GedcomX.Person({
+            id: getRecordId(row.name.href),
+            identifiers: identifiers
+          });
+          person.addSimpleName(row.name.text);
+          gedx.addPerson(person);
+        }
+
+        // Update their birth date based on their age (if not set)
+        // TODO
+
+        // If there is no relation, return
+        if (!row.relation.text) return;
+
+        // Add relationships
+        // if(/^(husband|wife)/.test(row.relation.text.toLowerCase())) {
+        //   gedx.addRelationship({
+        //     type: 'http://gedcomx.org/Couple',
+        //     person1: primaryPerson,
+        //     person2: person
+        //   });
+        // }
+        // if(/^(son|daughter)/.test(row.relation.text.toLowerCase())) {
+        //   gedx.addRelationship({
+        //     type: 'http://gedcomx.org/ParentChild',
+        //     person1: primaryPerson,
+        //     person2: person
+        //   });
+        // }
+        // if(/^(mother|father)/.test(row.relation.text.toLowerCase())) {
+        //   gedx.addRelationship({
+        //     type: 'http://gedcomx.org/ParentChild',
+        //     person1: person,
+        //     person2: primaryPerson
+        //   });
+        // }
+
     }
   }
 

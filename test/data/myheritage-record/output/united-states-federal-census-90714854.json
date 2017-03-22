@@ -1,0 +1,227 @@
+{
+  "description": "#4",
+  "persons": [
+    {
+      "id": "10053:90714854",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10053:90714854"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Helen G Yurkiewicz",
+              "parts": [
+                {
+                  "value": "Helen G",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Yurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Circa 1897"
+          },
+          "place": {
+            "original": "New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1940"
+          },
+          "place": {
+            "original": "210e Structure on Post Identified by Quarters No, Hempstead Township, Nassau, New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Race",
+          "value": "White"
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Theodore Yurkiewicz",
+              "parts": [
+                {
+                  "value": "Theodore",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Yurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Margaret E Yurkiewicz",
+              "parts": [
+                {
+                  "value": "Margaret E",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Yurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Theodore Jr Yurkiewicz",
+              "parts": [
+                {
+                  "value": "Theodore Jr",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Yurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#10053:90714854"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10053:90714854"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10053:90714854"
+      },
+      "person2": {
+        "resource": "#3"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-10053-90714854/helen-g-yurkiewicz-in-1940-united-states-federal-census",
+      "titles": [
+        {
+          "value": "In 1940 United States Federal Census"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #10053:90714854 for Helen G Yurkiewicz - 1940 United States Federal Census - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "4"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}
