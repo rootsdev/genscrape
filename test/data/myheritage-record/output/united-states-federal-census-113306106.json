@@ -1,0 +1,222 @@
+{
+  "description": "#3",
+  "persons": [
+    {
+      "id": "10133:113306106",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10133:113306106"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Grace T Kiefer",
+              "parts": [
+                {
+                  "value": "Grace T",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kiefer",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Circa 1894"
+          },
+          "place": {
+            "original": "Idaho, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1920"
+          },
+          "place": {
+            "original": "Bingham, Idaho, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        },
+        {
+          "type": "http://gedcomx.org/Race",
+          "value": "White"
+        },
+        {
+          "type": "http://gedcomx.org/Ethnicity",
+          "value": "American"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "id": "10133:113306105",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Charles H Kiefer",
+              "parts": [
+                {
+                  "value": "Charles H",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kiefer",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10133:113306105"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About 1890"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "id": "10133:113306107",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "James Kiefer",
+              "parts": [
+                {
+                  "value": "James",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kiefer",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10133:113306107"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About 1916"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#10133:113306106"
+      },
+      "person2": {
+        "resource": "#10133:113306105"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10133:113306106"
+      },
+      "person2": {
+        "resource": "#10133:113306107"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-10133-113306106/grace-t-kiefer-in-1920-united-states-federal-census",
+      "titles": [
+        {
+          "value": "In 1920 United States Federal Census"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #10133:113306106 for Grace T Kiefer - 1920 United States Federal Census - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "3"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

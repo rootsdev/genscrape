@@ -1,0 +1,144 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "40001:171359631",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/40001:171359631"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Katherine Zierak",
+              "parts": [
+                {
+                  "value": "Katherine",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "fullText": "Katarzyna Zierak",
+              "parts": [
+                {
+                  "value": "Katarzyna",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Mar 24 1822"
+          },
+          "place": {
+            "original": "Lipinki, Gorlice, Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1846"
+          },
+          "place": {
+            "original": "Lipinki, Gorlice, Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Immigration",
+          "date": {
+            "original": "1907"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1910"
+          },
+          "place": {
+            "original": "Amsterdam Ward 7, Montgomery, New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Apr 23 1911"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery, New York, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "date": {
+            "original": "Apr 23 1911"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery, New York, United States"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-40001-171359631/katherine-zierak-in-familysearch-family-tree",
+      "titles": [
+        {
+          "value": "In FamilySearch Family Tree"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #40001:171359631 for Katherine Zierak - FamilySearch Family Tree - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "1"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

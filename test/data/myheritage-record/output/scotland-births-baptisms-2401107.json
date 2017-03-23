@@ -1,0 +1,136 @@
+{
+  "description": "#2",
+  "persons": [
+    {
+      "id": "30226:2401107-F",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/30226:2401107-F"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Issabel Cameron",
+              "parts": [
+                {
+                  "value": "Issabel",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Cameron",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Christening",
+          "date": {
+            "original": "Jan 4 1801"
+          },
+          "place": {
+            "original": "Kildalton, Argyll, Scotland"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ]
+    },
+    {
+      "id": "30226:2401107-F:1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Allen Cameron",
+              "parts": [
+                {
+                  "value": "Allen",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Cameron",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/30226:2401107-F:1"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#30226:2401107-F:1"
+      },
+      "person2": {
+        "resource": "#30226:2401107-F"
+      },
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-30226-2401107-F/issabel-cameron-in-scotland-births-baptisms",
+      "titles": [
+        {
+          "value": "In Scotland, Births and Baptisms, 1564-1950"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #30226:2401107-F for Issabel Cameron - Scotland, Births and Baptisms, 1564-1950 - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "2"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

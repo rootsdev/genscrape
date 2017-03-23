@@ -1,0 +1,447 @@
+{
+  "description": "#7",
+  "persons": [
+    {
+      "id": "10181:2434583",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10181:2434583"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Terry Andersen",
+              "parts": [
+                {
+                  "value": "Terry",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Andersen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Mar 16 1909"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "Nov 5 1930"
+          },
+          "place": {
+            "original": "SÃ¸nderholm Frejlev, SÃ¸nderholm-Frejlev, Denmark"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Single"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10181:2434581",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Peter Chr Andersen",
+              "parts": [
+                {
+                  "value": "Peter Chr",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Andersen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10181:2434581"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10181:2434582",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Henritte Andersen",
+              "parts": [
+                {
+                  "value": "Henritte",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Andersen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10181:2434582"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10181:2434584",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10181:2434584"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Harry Andersen",
+              "parts": [
+                {
+                  "value": "Harry",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Andersen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10181:2434585",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10181:2434585"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Dora Andersen",
+              "parts": [
+                {
+                  "value": "Dora",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Andersen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10181:2434586",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10181:2434586"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Edit Andersen",
+              "parts": [
+                {
+                  "value": "Edit",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Andersen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10181:2434587",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10181:2434587"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Hartman Andersen",
+              "parts": [
+                {
+                  "value": "Hartman",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Andersen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10181:2434581"
+      },
+      "person2": {
+        "resource": "#10181:2434583"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10181:2434582"
+      },
+      "person2": {
+        "resource": "#10181:2434583"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10181:2434581"
+      },
+      "person2": {
+        "resource": "#10181:2434584"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10181:2434582"
+      },
+      "person2": {
+        "resource": "#10181:2434584"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10181:2434581"
+      },
+      "person2": {
+        "resource": "#10181:2434585"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10181:2434582"
+      },
+      "person2": {
+        "resource": "#10181:2434585"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10181:2434581"
+      },
+      "person2": {
+        "resource": "#10181:2434586"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10181:2434582"
+      },
+      "person2": {
+        "resource": "#10181:2434586"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10181:2434581"
+      },
+      "person2": {
+        "resource": "#10181:2434587"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10181:2434582"
+      },
+      "person2": {
+        "resource": "#10181:2434587"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-10181-2434583/terry-andersen-in-1930-denmark-census",
+      "titles": [
+        {
+          "value": "In 1930 Denmark Census"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #10181:2434583 for Terry Andersen - 1930 Denmark Census - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "7"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}
