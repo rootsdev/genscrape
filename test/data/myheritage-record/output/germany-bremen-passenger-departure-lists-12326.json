@@ -1,0 +1,103 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "30240:12326",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/30240:12326"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mopsche Turner",
+              "parts": [
+                {
+                  "value": "Mopsche",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Turner",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Circa 1893"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "Dec 11 1913"
+          },
+          "place": {
+            "original": "Sosnowitz, Petrikow, RuÃŸland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Malergehilfe"
+        },
+        {
+          "type": "http://gedcomx.org/Immigration",
+          "value": "Galveston, Tx, U S A"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-30240-12326/mopsche-turner-in-germany-bremen-passenger-departure-lists",
+      "titles": [
+        {
+          "value": "In Germany, Bremen Passenger Departure Lists, 1904-1914"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #30240:12326 for Mopsche Turner - Germany, Bremen Passenger Departure Lists, 1904-1914 - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "1"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

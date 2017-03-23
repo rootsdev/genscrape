@@ -1,0 +1,181 @@
+{
+  "description": "#3",
+  "persons": [
+    {
+      "id": "30039:1799709-F",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/30039:1799709-F"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "J. Ysac Gonzalez",
+              "parts": [
+                {
+                  "value": "J. Ysac",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Gonzalez",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Christening",
+          "date": {
+            "original": "June 10 1877"
+          },
+          "place": {
+            "original": "HuejÃºcar, Jalisco, Mexico"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "HuejÃºcar, Jalisco, Mexico"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Sacramento Aleman",
+              "parts": [
+                {
+                  "value": "Sacramento",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Aleman",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Regino Gonzalez",
+              "parts": [
+                {
+                  "value": "Regino",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Gonzalez",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#30039:1799709-F"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#30039:1799709-F"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-30039-1799709-F/j-ysac-gonzalez-in-mexico-baptisms",
+      "titles": [
+        {
+          "value": "In Mexico, Baptisms, 1560-1950"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #30039:1799709-F for J. Ysac Gonzalez - Mexico, Baptisms, 1560-1950 - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "3"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

@@ -35,4 +35,8 @@ describe('myheritage-record', function() {
     'germany-bremen-passenger-departure-lists-12326',
     'https://www.myheritage.com/research/record-30240-12326/mopsche-turner-in-germany-bremen-passenger-departure-lists'
   ));
+  it.only('mexico-baptisms', setupTest(
+    'mexico-baptisms-1799709',
+    'https://www.myheritage.com/research/record-30039-1799709-F/j-ysac-gonzalez-in-mexico-baptisms'
+  ));
 });
