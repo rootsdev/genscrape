@@ -512,7 +512,7 @@ function setup(emitter) {
   var idIncrementer = 1;
   for (var person of gedx.getPersons()) {
     if (!person.getIdentifiers()) {
-      var newId = getRecordIdentifier(document.location.href) + ':' + idIncrementer++;
+      var newId = getRecordId(document.location.href) + ':' + idIncrementer++;
       gedx.updatePersonsID(person.id, newId);
       person.setIdentifiers({
         'genscrape': 'genscrape://myheritage:record/' + newId

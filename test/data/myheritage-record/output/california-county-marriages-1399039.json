@@ -55,7 +55,7 @@
       ]
     },
     {
-      "id": "genscrape://myheritage:record/30244:1399039:1",
+      "id": "30244:1399039:1",
       "names": [
         {
           "nameForms": [
@@ -88,7 +88,7 @@
       ],
       "identifiers": {
         "genscrape": [
-          "genscrape://myheritage:record/genscrape://myheritage:record/30244:1399039:1"
+          "genscrape://myheritage:record/30244:1399039:1"
         ]
       },
       "sources": [
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "id": "genscrape://myheritage:record/30244:1399039:2",
+      "id": "30244:1399039:2",
       "names": [
         {
           "nameForms": [
@@ -123,7 +123,7 @@
       },
       "identifiers": {
         "genscrape": [
-          "genscrape://myheritage:record/genscrape://myheritage:record/30244:1399039:2"
+          "genscrape://myheritage:record/30244:1399039:2"
         ]
       },
       "sources": [
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "id": "genscrape://myheritage:record/30244:1399039:3",
+      "id": "30244:1399039:3",
       "names": [
         {
           "nameForms": [
@@ -158,7 +158,7 @@
       },
       "identifiers": {
         "genscrape": [
-          "genscrape://myheritage:record/genscrape://myheritage:record/30244:1399039:3"
+          "genscrape://myheritage:record/30244:1399039:3"
         ]
       },
       "sources": [
@@ -168,7 +168,7 @@
       ]
     },
     {
-      "id": "genscrape://myheritage:record/30244:1399039:4",
+      "id": "30244:1399039:4",
       "names": [
         {
           "nameForms": [
@@ -193,7 +193,7 @@
       },
       "identifiers": {
         "genscrape": [
-          "genscrape://myheritage:record/genscrape://myheritage:record/30244:1399039:4"
+          "genscrape://myheritage:record/30244:1399039:4"
         ]
       },
       "sources": [
@@ -203,7 +203,7 @@
       ]
     },
     {
-      "id": "genscrape://myheritage:record/30244:1399039:5",
+      "id": "30244:1399039:5",
       "names": [
         {
           "nameForms": [
@@ -228,7 +228,7 @@
       },
       "identifiers": {
         "genscrape": [
-          "genscrape://myheritage:record/genscrape://myheritage:record/30244:1399039:5"
+          "genscrape://myheritage:record/30244:1399039:5"
         ]
       },
       "sources": [
@@ -242,7 +242,7 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#genscrape://myheritage:record/30244:1399039:2"
+        "resource": "#30244:1399039:2"
       },
       "person2": {
         "resource": "#30244:1399039"
@@ -256,7 +256,7 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#genscrape://myheritage:record/30244:1399039:3"
+        "resource": "#30244:1399039:3"
       },
       "person2": {
         "resource": "#30244:1399039"
@@ -273,7 +273,7 @@
         "resource": "#30244:1399039"
       },
       "person2": {
-        "resource": "#genscrape://myheritage:record/30244:1399039:1"
+        "resource": "#30244:1399039:1"
       },
       "sources": [
         {
@@ -284,10 +284,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#genscrape://myheritage:record/30244:1399039:4"
+        "resource": "#30244:1399039:4"
       },
       "person2": {
-        "resource": "#genscrape://myheritage:record/30244:1399039:1"
+        "resource": "#30244:1399039:1"
       },
       "sources": [
         {
@@ -298,10 +298,10 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#genscrape://myheritage:record/30244:1399039:5"
+        "resource": "#30244:1399039:5"
       },
       "person2": {
-        "resource": "#genscrape://myheritage:record/30244:1399039:1"
+        "resource": "#30244:1399039:1"
       },
       "sources": [
         {
