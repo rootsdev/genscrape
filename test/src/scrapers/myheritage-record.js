@@ -2,7 +2,7 @@ var helpers = require('../../testHelpers'),
     genscrape = require('../../../'),
     setupTest = helpers.createTestRunner('myheritage-record');
 
-describe.only('myheritage-record', function() {
+describe('myheritage-record', function() {
   it('ssdi', setupTest(
     'ssdi-10248383',
     'https://www.myheritage.com/research/record-10002-10248383/stephen-a-zierak-in-us-social-security-death-index-ssdi'

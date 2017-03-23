@@ -55,12 +55,7 @@
       ]
     },
     {
-      "id": "1",
-      "identifiers": {
-        "genscrape": [
-          "genscrape://myheritage:record/30033:1113561"
-        ]
-      },
+      "id": "genscrape://myheritage:record/30033:1113561:1",
       "names": [
         {
           "nameForms": [
@@ -94,6 +89,11 @@
           }
         }
       ],
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/genscrape://myheritage:record/30033:1113561:1"
+        ]
+      },
       "sources": [
         {
           "description": "#6"
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "id": "genscrape://myheritage:record/30033:1113561:1",
+      "id": "genscrape://myheritage:record/30033:1113561:2",
       "names": [
         {
           "nameForms": [
@@ -126,7 +126,7 @@
       },
       "identifiers": {
         "genscrape": [
-          "genscrape://myheritage:record/genscrape://myheritage:record/30033:1113561:1"
+          "genscrape://myheritage:record/genscrape://myheritage:record/30033:1113561:2"
         ]
       },
       "sources": [
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "id": "genscrape://myheritage:record/30033:1113561:2",
+      "id": "genscrape://myheritage:record/30033:1113561:3",
       "names": [
         {
           "nameForms": [
@@ -161,7 +161,7 @@
       },
       "identifiers": {
         "genscrape": [
-          "genscrape://myheritage:record/genscrape://myheritage:record/30033:1113561:2"
+          "genscrape://myheritage:record/genscrape://myheritage:record/30033:1113561:3"
         ]
       },
       "sources": [
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "id": "genscrape://myheritage:record/30033:1113561:3",
+      "id": "genscrape://myheritage:record/30033:1113561:4",
       "names": [
         {
           "nameForms": [
@@ -196,7 +196,7 @@
       },
       "identifiers": {
         "genscrape": [
-          "genscrape://myheritage:record/genscrape://myheritage:record/30033:1113561:3"
+          "genscrape://myheritage:record/genscrape://myheritage:record/30033:1113561:4"
         ]
       },
       "sources": [
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "id": "genscrape://myheritage:record/30033:1113561:4",
+      "id": "genscrape://myheritage:record/30033:1113561:5",
       "names": [
         {
           "nameForms": [
@@ -231,7 +231,7 @@
       },
       "identifiers": {
         "genscrape": [
-          "genscrape://myheritage:record/genscrape://myheritage:record/30033:1113561:4"
+          "genscrape://myheritage:record/genscrape://myheritage:record/30033:1113561:5"
         ]
       },
       "sources": [
@@ -245,7 +245,7 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#genscrape://myheritage:record/30033:1113561:1"
+        "resource": "#genscrape://myheritage:record/30033:1113561:2"
       },
       "person2": {
         "resource": "#30033:1113561"
@@ -259,7 +259,7 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#genscrape://myheritage:record/30033:1113561:2"
+        "resource": "#genscrape://myheritage:record/30033:1113561:3"
       },
       "person2": {
         "resource": "#30033:1113561"
@@ -276,21 +276,7 @@
         "resource": "#30033:1113561"
       },
       "person2": {
-        "resource": "#1"
-      },
-      "sources": [
-        {
-          "description": "#6"
-        }
-      ]
-    },
-    {
-      "type": "http://gedcomx.org/ParentChild",
-      "person1": {
-        "resource": "#genscrape://myheritage:record/30033:1113561:3"
-      },
-      "person2": {
-        "resource": "#1"
+        "resource": "#genscrape://myheritage:record/30033:1113561:1"
       },
       "sources": [
         {
@@ -304,7 +290,21 @@
         "resource": "#genscrape://myheritage:record/30033:1113561:4"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#genscrape://myheritage:record/30033:1113561:1"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#genscrape://myheritage:record/30033:1113561:5"
+      },
+      "person2": {
+        "resource": "#genscrape://myheritage:record/30033:1113561:1"
       },
       "sources": [
         {

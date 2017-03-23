@@ -93,11 +93,7 @@ function setup(emitter) {
     if (i == 0) {
       primaryPerson.addSimpleName(names[i].trim());
     } else {
-      var person = new GedcomX.Person({
-        identifiers: {
-          'genscrape': getRecordIdentifier(document.location.href)
-        }
-      });
+      var person = new GedcomX.Person({});
       person.addSimpleName(names[i].trim());
       gedx.addPerson(person);
     }
