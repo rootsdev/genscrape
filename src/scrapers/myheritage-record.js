@@ -218,6 +218,13 @@ function setup(emitter) {
       // Could be a marriage, so see if this person exists
       if (isMarriage) {
         person = gedx.findPersonByName(GedcomX.Name.createFromString(name));
+        if (person && person.id != primaryPerson.id) {
+          gedx.addRelationship({
+            type: 'http://gedcomx.org/Couple',
+            person1: primaryPerson,
+            person2: person
+          });
+        }
       }
       if (!person) {
         person = gedx.addRelativeFromName(inScopePerson, name, 'Couple');
@@ -237,6 +244,13 @@ function setup(emitter) {
       // Could be a marriage, so see if this person exists
       if (isMarriage) {
         person = gedx.findPersonByName(GedcomX.Name.createFromString(name));
+        if (person && person.id != primaryPerson.id) {
+          gedx.addRelationship({
+            type: 'http://gedcomx.org/Couple',
+            person1: primaryPerson,
+            person2: person
+          });
+        }
       }
       if (!person) {
         person = gedx.addRelativeFromName(inScopePerson, name, 'Couple');

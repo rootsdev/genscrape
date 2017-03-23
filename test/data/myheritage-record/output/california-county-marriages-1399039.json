@@ -248,6 +248,20 @@
       ]
     },
     {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#30244:1399039"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
         "resource": "#4"
