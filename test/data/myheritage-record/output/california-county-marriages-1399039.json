@@ -1,5 +1,5 @@
 {
-  "description": "#7",
+  "description": "#6",
   "persons": [
     {
       "id": "30244:1399039",
@@ -13,14 +13,14 @@
         {
           "nameForms": [
             {
-              "fullText": "Charles E York & Frances M Osborn",
+              "fullText": "Charles E York",
               "parts": [
                 {
-                  "value": "Charles E York & Frances M",
+                  "value": "Charles E",
                   "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "value": "Osborn",
+                  "value": "York",
                   "type": "http://gedcomx.org/Surname"
                 }
               ]
@@ -43,37 +43,36 @@
           "date": {
             "original": "Circa 1898"
           }
-        },
-        {
-          "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "Circa 1902"
-          }
         }
       ],
       "gender": {
-        "type": "http://gedcomx.org/Female"
+        "type": "http://gedcomx.org/Male"
       },
       "sources": [
         {
-          "description": "#7"
+          "description": "#6"
         }
       ]
     },
     {
       "id": "1",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/30244:1399039"
+        ]
+      },
       "names": [
         {
           "nameForms": [
             {
-              "fullText": "Charles E York",
+              "fullText": "Frances M Osborn",
               "parts": [
                 {
-                  "value": "Charles E",
+                  "value": "Frances M",
                   "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "value": "York",
+                  "value": "Osborn",
                   "type": "http://gedcomx.org/Surname"
                 }
               ]
@@ -82,11 +81,19 @@
         }
       ],
       "gender": {
-        "type": "http://gedcomx.org/Male"
+        "type": "http://gedcomx.org/Female"
       },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Circa 1902"
+          }
+        }
+      ],
       "sources": [
         {
-          "description": "#7"
+          "description": "#6"
         }
       ]
     },
@@ -116,7 +123,7 @@
       },
       "sources": [
         {
-          "description": "#7"
+          "description": "#6"
         }
       ]
     },
@@ -146,42 +153,12 @@
       },
       "sources": [
         {
-          "description": "#7"
+          "description": "#6"
         }
       ]
     },
     {
       "id": "4",
-      "names": [
-        {
-          "nameForms": [
-            {
-              "fullText": "Frances M Osborn",
-              "parts": [
-                {
-                  "value": "Frances M",
-                  "type": "http://gedcomx.org/Given"
-                },
-                {
-                  "value": "Osborn",
-                  "type": "http://gedcomx.org/Surname"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ]
-    },
-    {
-      "id": "5",
       "names": [
         {
           "nameForms": [
@@ -206,12 +183,12 @@
       },
       "sources": [
         {
-          "description": "#7"
+          "description": "#6"
         }
       ]
     },
     {
-      "id": "6",
+      "id": "5",
       "names": [
         {
           "nameForms": [
@@ -236,26 +213,12 @@
       },
       "sources": [
         {
-          "description": "#7"
+          "description": "#6"
         }
       ]
     }
   ],
   "relationships": [
-    {
-      "type": "http://gedcomx.org/Couple",
-      "person1": {
-        "resource": "#30244:1399039"
-      },
-      "person2": {
-        "resource": "#1"
-      },
-      "sources": [
-        {
-          "description": "#7"
-        }
-      ]
-    },
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
@@ -266,7 +229,7 @@
       },
       "sources": [
         {
-          "description": "#7"
+          "description": "#6"
         }
       ]
     },
@@ -280,21 +243,21 @@
       },
       "sources": [
         {
-          "description": "#7"
+          "description": "#6"
         }
       ]
     },
     {
-      "type": "http://gedcomx.org/Couple",
+      "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#30244:1399039"
+        "resource": "#4"
       },
       "person2": {
-        "resource": "#4"
+        "resource": "#1"
       },
       "sources": [
         {
-          "description": "#7"
+          "description": "#6"
         }
       ]
     },
@@ -304,25 +267,11 @@
         "resource": "#5"
       },
       "person2": {
-        "resource": "#30244:1399039"
+        "resource": "#1"
       },
       "sources": [
         {
-          "description": "#7"
-        }
-      ]
-    },
-    {
-      "type": "http://gedcomx.org/ParentChild",
-      "person1": {
-        "resource": "#6"
-      },
-      "person2": {
-        "resource": "#30244:1399039"
-      },
-      "sources": [
-        {
-          "description": "#7"
+          "description": "#6"
         }
       ]
     }
@@ -343,7 +292,7 @@
       "repository": {
         "resource": "#agent"
       },
-      "id": "7"
+      "id": "6"
     }
   ],
   "agents": [
