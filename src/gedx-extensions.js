@@ -1,16 +1,16 @@
 /**
  * This file contains extensions to the gedcomx-js module.
- * 
+ *
  * Any helper methods that could be useful in other contexts will periodically
- * be submitted to gedcomx-js as pull requests. 
- * 
+ * be submitted to gedcomx-js as pull requests.
+ *
  * Any extensions to the actual data model would be very specific to our usecase
  * and thus it's very unlikely that we'd submit them as PRs to the GEDCOM X spec.
  */
 
 var GedcomX = require('gedcomx-js'),
     utils = require('./utils');
-    
+
 // Enable the RS and Records extensions
 GedcomX.enableRsExtensions();
 GedcomX.enableRecordsExtensions();
@@ -27,11 +27,11 @@ var linksIndex = GedcomX.ExtensibleData.jsonProps.indexOf('links');
 if(linksIndex > -1){
   GedcomX.ExtensibleData.jsonProps.splice(linksIndex, 1);
 }
-    
+
 /**
  * Given a full name as a complete string, split the name into parts and add
  * the name to the person.
- * 
+ *
  * @param {String} name
  * @returns {Person}
  */
@@ -44,7 +44,7 @@ GedcomX.Person.prototype.addSimpleName = function(name){
 
 /**
  * Create a name by specifying the parts.
- * 
+ *
  * @param {Object} nameParts
  * @returns {Person}
  */
@@ -64,7 +64,7 @@ GedcomX.Person.prototype.addNameFromParts = function(nameParts){
 
 /**
  * Create a Name from a single string.
- * 
+ *
  * @param {String} nameString
  * @returns {Name}
  */
@@ -72,30 +72,30 @@ GedcomX.Name.createFromString = function(name){
   if(name){
     var parts = utils.splitName(name),
         nameForm = GedcomX.NameForm();
-    
+
     nameForm.setFullText(name);
-    
+
     // Because we checked for a truthy value above, we know there is at least
     // one character in the given string and thus there is at least a given name.
     nameForm.addPart(GedcomX.NamePart({
         type: 'http://gedcomx.org/Given',
         value: parts[0]
       }));
-    
+
     if(parts[1]){
       nameForm.addPart(GedcomX.NamePart({
         type: 'http://gedcomx.org/Surname',
         value: parts[1]
       }));
     }
-    
+
     return GedcomX.Name().addNameForm(nameForm);
   }
 };
 
 /**
  * Find the first person in the document that matches by the specified name
- * 
+ *
  * @param {Name} name
  * @returns {Person}
  */
@@ -109,7 +109,7 @@ GedcomX.Root.prototype.findPersonByName = function(name){
 
 /**
  * Check whether this person has this name
- * 
+ *
  * @param {Name} name
  * @returns {Boolean}
  */
@@ -125,7 +125,7 @@ GedcomX.Person.prototype.hasName = function(name){
 /**
  * Check whether this name matches the given name. Names match if they have
  * at least one matching NameForm.
- * 
+ *
  * @param {Name} name
  * @returns {Boolean}
  */
@@ -140,7 +140,7 @@ GedcomX.Name.prototype.matches = function(name){
 
 /**
  * Check whether this name has a NameForm that matches the given NameForm.
- * 
+ *
  * @param {NameForm} nameForm
  * @returns {Boolean}
  */
@@ -155,7 +155,7 @@ GedcomX.Name.prototype.hasNameForm = function(nameForm){
 
 /**
  * Check whether this NameForm equals the given NameForm.
- * 
+ *
  * @param {NameForm} nameForm
  * @returns {Boolean}
  */
@@ -179,7 +179,7 @@ GedcomX.NameForm.prototype.equals = function(nameForm){
 
 /**
  * Check whether this NameForm has a matching NamePart
- * 
+ *
  * @param {NamePart}
  * @returns {Boolean}
  */
@@ -194,7 +194,7 @@ GedcomX.NameForm.prototype.hasNamePart = function(namePart){
 
 /**
  * Check whether this NamePart equals another NamePart
- * 
+ *
  * @param {NamePart}
  * @returns {Boolean}
  */
@@ -213,7 +213,7 @@ GedcomX.NamePart.prototype.equals = function(namePart){
 
 /**
  * Extend NameForm.getFullText() to calculate the full text if it's not set.
- * 
+ *
  * @returns {String}
  */
 GedcomX.NameForm.prototype.getFullText = function(){
@@ -233,7 +233,7 @@ GedcomX.NameForm.prototype.getFullText = function(){
 
 /**
  * Get the NamePart that matches a specific type.
- * 
+ *
  * @param {String} type
  * @returns {NamePart}
  */
@@ -249,7 +249,7 @@ GedcomX.NameForm.prototype.getPart = function(type){
  * Add an ID generator to each GedcomX document. Allows you to easily generate
  * IDs that are unique within one document. Currently it's just a counter
  * that starts at 1 and increases each time it's called.
- * 
+ *
  * @returns {String}
  */
 GedcomX.Root.prototype.generateId = function(){
@@ -286,12 +286,12 @@ GedcomX.Relationship.prototype.setPerson2 = function(reference){
 /**
  * Add a relative of a specific person. This creates the new person, adds them
  * to the GedcomX document, creates a relationship, and adds the new relationship.
- * 
+ *
  * When creating parent-child relationships, the order of persons matters.
  * `person1` is the parent; `person2` is the child. We allow you to specify
  * `Child` as the relationship type, even though it doesn't exist in GedcomX,
  * so that we can easily calculate which position the person should be in.
- * 
+ *
  * @param {Person} person - An existing person that the new person is related to.
  * @param {String} name - Name of the new person
  * @param {String} relationshipType - Valid values are `Couple`,`Parent`,`Child`.
@@ -299,14 +299,14 @@ GedcomX.Relationship.prototype.setPerson2 = function(reference){
  * @returns {Person} Returns the new Person object representing the relative.
  */
 GedcomX.Root.prototype.addRelativeFromName = function(person, name, relationshipType){
-  
+
   // Create and add relative
   var relative = GedcomX.Person({
     id: this.generateId()
   }).addSimpleName(name);
   this.addPerson(relative);
-  
-  
+
+
   // Calculate relationship data
   var relData;
   switch(relationshipType){
@@ -334,16 +334,16 @@ GedcomX.Root.prototype.addRelativeFromName = function(person, name, relationship
     default:
       throw new Error('Invalid relationship type: ' + relationshipType);
   }
-  
+
   this.addRelationship(relData);
-  
+
   return relative;
 };
 
 /**
  * Extend GedcomX.addSourceDescription so that the ID is set when added instead
  * of having to set the manually each time we create one.
- * 
+ *
  * @param {SourceDescription} sourceDescription
  * @returns {GedcomX}
  */
@@ -364,7 +364,7 @@ GedcomX.Root.prototype.addSourceDescription = function(sourceDescription){
  * Any persons or relationships added later will not have a reference to this
  * SourceDescription. Also update the description property of the Root to point
  * to given SourceDescription.
- * 
+ *
  * @param {SourceDescription} sourceDescription
  * @returns {GedcomX}
  */
@@ -389,9 +389,9 @@ GedcomX.Root.prototype.addSourceDescriptionToAll = function(sourceDescription){
 };
 
 /**
- * Extend GedcomX.addPerson() to generate a person ID if the person 
+ * Extend GedcomX.addPerson() to generate a person ID if the person
  * doesn't already have one.
- * 
+ *
  * @param {Person}
  * @returns {GedcomX}
  */
@@ -407,7 +407,7 @@ GedcomX.Root.prototype.addPerson = function(person){
 
 /**
  * Update a person's ID and any references to the person.
- * 
+ *
  * @param {String} oldId
  * @param {String} newId
  */

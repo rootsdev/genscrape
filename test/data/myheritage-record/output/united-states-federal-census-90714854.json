@@ -66,7 +66,7 @@
       ]
     },
     {
-      "id": "1",
+      "id": "10053:90714853",
       "names": [
         {
           "nameForms": [
@@ -86,6 +86,22 @@
           ]
         }
       ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10053:90714853"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About 1894"
+          }
+        }
+      ],
       "sources": [
         {
           "description": "#4"
@@ -93,7 +109,7 @@
       ]
     },
     {
-      "id": "2",
+      "id": "10053:90714855",
       "names": [
         {
           "nameForms": [
@@ -113,6 +129,22 @@
           ]
         }
       ],
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10053:90714855"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About 1922"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
       "sources": [
         {
           "description": "#4"
@@ -120,7 +152,7 @@
       ]
     },
     {
-      "id": "3",
+      "id": "10053:90714856",
       "names": [
         {
           "nameForms": [
@@ -140,6 +172,22 @@
           ]
         }
       ],
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10053:90714856"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About 1927"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
       "sources": [
         {
           "description": "#4"
@@ -154,7 +202,7 @@
         "resource": "#10053:90714854"
       },
       "person2": {
-        "resource": "#1"
+        "resource": "#10053:90714853"
       },
       "sources": [
         {
@@ -168,7 +216,7 @@
         "resource": "#10053:90714854"
       },
       "person2": {
-        "resource": "#2"
+        "resource": "#10053:90714855"
       },
       "sources": [
         {
@@ -182,7 +230,7 @@
         "resource": "#10053:90714854"
       },
       "person2": {
-        "resource": "#3"
+        "resource": "#10053:90714856"
       },
       "sources": [
         {

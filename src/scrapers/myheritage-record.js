@@ -50,6 +50,8 @@ var facts = [
   },
 ];
 
+var censusDate = null;
+
 module.exports = function(register){
   register(urls, setup);
 };
@@ -145,15 +147,37 @@ function setup(emitter) {
     }
   });
 
-  // Mother/Father
-  if(table.hasMatch(/^(father|mother)$/)){
-    var name = table.getMatchText(/^(father|mother)$/);
-    gedx.addRelativeFromName(primaryPerson, name, 'Parent');
+  // Mother
+  if(table.hasMatch(/^mother/)){
+    var name = table.getMatchText(/^mother/);
+    var person = gedx.addRelativeFromName(primaryPerson, name, 'Parent');
+    person.setGender({
+      type: 'http://gedcomx.org/Female'
+    });
   }
-  // Husband/Wife
-  if(table.hasMatch(/^(husband|wife)$/)){
-    var name = table.getMatchText(/^(husband|wife)$/);
-    gedx.addRelativeFromName(primaryPerson, name, 'Couple');
+  // Father
+  if(table.hasMatch(/^father/)){
+    var name = table.getMatchText(/^father/);
+    var person = gedx.addRelativeFromName(primaryPerson, name, 'Parent');
+    person.setGender({
+      type: 'http://gedcomx.org/Male'
+    });
+  }
+  // Husband
+  if(table.hasMatch(/^husband/)){
+    var name = table.getMatchText(/^husband/);
+    var person = gedx.addRelativeFromName(primaryPerson, name, 'Couple');
+    person.setGender({
+      type: 'http://gedcomx.org/Male'
+    });
+  }
+  // Wife
+  if(table.hasMatch(/^wife/)){
+    var name = table.getMatchText(/^wife/);
+    var person = gedx.addRelativeFromName(primaryPerson, name, 'Couple');
+    person.setGender({
+      type: 'http://gedcomx.org/Female'
+    });
   }
   // Children
   if(table.hasMatch(/^children$/)){
@@ -259,73 +283,98 @@ function setup(emitter) {
       });
     }
 
-    // Census/household table
-    if (title && title.textContent.toLowerCase() == 'household') {
-      var householdMembers = new VerticalTable(additionalTable.querySelector('table'), {
-        labelMapper: function(label){
-          return label.toLowerCase().trim();
-        },
-        valueMapper: function(cell){
-          var a = cell.querySelector('a');
-          return {
-            text: cell.textContent.trim(),
-            href: a ? a.href : ''
-          };
+    // Census table
+    if (title && title.textContent.toLowerCase() == 'census') {
+      var census = new HorizontalTable(additionalTable.querySelector('table'), {
+        // rowSelector: 'tbody > tr',
+        labelMapper: function(label) {
+          return label.toLowerCase().replace(/:$/,'');
         }
       });
-
-      householdMembers.getRows().forEach(function(row) {
-        var name = GedcomX.Name.createFromString(row.name.text);
-        var person = gedx.findPersonByName(name);
-        var personId = getRecordId(row.name.href);
-        var identifiers = {
-          'genscrape': getRecordIdentifier(row.name.href)
-        };
-
-        if (person) {
-          // Update their IDs
-          gedx.updatePersonsID(person.id, personId);
-          person.setIdentifiers(identifiers);
-        } else {
-          // Add person
-          person = new GedcomX.Person({
-            id: getRecordId(row.name.href),
-            identifiers: identifiers
-          });
-          person.addSimpleName(row.name.text);
-          gedx.addPerson(person);
-        }
-
-        // Update their birth date based on their age (if not set)
-        // TODO
-
-        // If there is no relation, return
-        if (!row.relation.text) return;
-
-        // Add relationships
-        // if(/^(husband|wife)/.test(row.relation.text.toLowerCase())) {
-        //   gedx.addRelationship({
-        //     type: 'http://gedcomx.org/Couple',
-        //     person1: primaryPerson,
-        //     person2: person
-        //   });
-        // }
-        // if(/^(son|daughter)/.test(row.relation.text.toLowerCase())) {
-        //   gedx.addRelationship({
-        //     type: 'http://gedcomx.org/ParentChild',
-        //     person1: primaryPerson,
-        //     person2: person
-        //   });
-        // }
-        // if(/^(mother|father)/.test(row.relation.text.toLowerCase())) {
-        //   gedx.addRelationship({
-        //     type: 'http://gedcomx.org/ParentChild',
-        //     person1: person,
-        //     person2: primaryPerson
-        //   });
-        // }
-
+      if (census.hasMatch(/date/)) {
+        censusDate = census.getMatchText(/date/).trim();
+      }
     }
+  }
+
+  // Household table
+  var household = document.querySelector('.recordSection .groupTable');
+  if (household !== null) {
+    var householdMembers = new VerticalTable(household, {
+      labelMapper: function(label){
+        return label.toLowerCase().trim();
+      },
+      valueMapper: function(cell){
+        var a = cell.querySelector('a');
+        return {
+          text: cell.textContent.trim(),
+          href: a ? a.href : ''
+        };
+      }
+    });
+
+
+    householdMembers.getRows().forEach(function(row) {
+      var personId = getRecordId(row.name.href);
+      var name = GedcomX.Name.createFromString(row.name.text);
+      // Try finding by id first
+      var person = gedx.getPersonById(personId);
+      if (person === undefined) {
+        person = gedx.findPersonByName(name);
+      }
+      var identifiers = {
+        'genscrape': getRecordIdentifier(row.name.href)
+      };
+
+      if (person) {
+        // Update their IDs
+        gedx.updatePersonsID(person.id, personId);
+        person.setIdentifiers(identifiers);
+      } else {
+        // Add person
+        person = new GedcomX.Person({
+          id: getRecordId(row.name.href),
+          identifiers: identifiers
+        });
+        person.addSimpleName(row.name.text);
+        gedx.addPerson(person);
+      }
+
+      // Update their birth date based on their age (if not set)
+      if (censusDate) {
+        // Only set if we don't have a birth event
+        if (person.getFactsByType('http://gedcomx.org/Birth').length === 0) {
+          var rawAge = row.age.text.trim();
+          var year = rawAge.split(/ +/)[0];
+          var age = censusDate - year;
+          person.addFact(GedcomX.Fact({
+            type: 'http://gedcomx.org/Birth',
+            date: {
+              original: 'About ' + age
+            }
+          }));
+        }
+      }
+
+      // If we are looking at the primary person, we're done
+      if (person.id == primaryPerson.id) return;
+
+      // Update the gender
+      var relation = row['relation to head'].text.toLowerCase();
+
+      if (/^(wife|daughter|mother|aunt)/.test(relation)) {
+        person.setGender({
+          type: 'http://gedcomx.org/Female'
+        });
+      }
+      if (/^(husband|son|father|uncle)/.test(relation)) {
+        person.setGender({
+          type: 'http://gedcomx.org/Male'
+        });
+      }
+
+      // Note: We have all of the relations from the main table above
+    });
   }
 
 
