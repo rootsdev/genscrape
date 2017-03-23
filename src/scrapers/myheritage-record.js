@@ -87,137 +87,159 @@ function setup(emitter) {
   var name = document.querySelector('.recordTitle').textContent
   primaryPerson.addSimpleName(name);
 
-  var table = new HorizontalTable(document.querySelector('.recordFieldsTable'), {
-    rowSelector: 'tbody > tr',
-    labelMapper: function(label) {
-      return label.toLowerCase().replace(/:$/,'');
-    }
-  });
+  // Loop through primary table
+  // We do this because marriages have "sub-facts" about the person in the row(s) above
+  var rows = document.querySelectorAll('.recordFieldsTable > tbody > tr');
 
-  // Gender
-  if(table.hasMatch(/gender/)) {
-    var genderType = getGender(table.getMatchText(/gender/));
-    if(genderType){
-      primaryPerson.setGender({
-        type: genderType
-      });
-    }
-  }
-
-  // Other Names
-  if(table.hasMatch(/birth names/)) {
-    var rawNames = table.getMatch(/birth names/).innerHTML;
-    var names = rawNames.split(/<br ?\/?>/);
-
-    for (var str of names) {
-      var name = GedcomX.Name.createFromString(str);
-      if (!primaryPerson.hasName(name)) {
-        primaryPerson.addName(name);
-      }
-    }
-  }
+  var inScopePerson = primaryPerson; // The current person "in scope" as we loop through
+  for (var i = 0; i < rows.length; i++) {
+    var row = rows[i];
+    var tds = row.querySelectorAll('td');
+    var label = tds[0].textContent.toLowerCase().replace(/:$/,'');
+    var value = tds[1];
 
 
-  // Events
-  events.forEach(function(event) {
-    if(table.hasMatch(event.regex)) {
-      var cell = table.getMatch(event.regex);
-      // Linked places have extra stuff we need to ignore
-      var place = cell.querySelector('.event_place .map_callout_link');
-      // If it's not a linked place, just get the content
-      if (!place) {
-        place = cell.querySelector('.event_place');
-      }
-      var date = cell.querySelector('.event_date');
-      if (place || date) {
-        var fact = GedcomX.Fact({
-          type: event.type
+    // If we have no indent, set in scope person back to primary person
+    // TODO if
+    inScopePerson = primaryPerson;
+
+    // Gender
+    if(/gender/.test(label)) {
+      var genderType = getGender(value.textContent);
+      if(genderType){
+        inScopePerson.setGender({
+          type: genderType
         });
-        if (date) {
-          fact.setDate({
-            original: date.textContent.trim()
-          });
-        }
-        if (place) {
-          fact.setPlace({
-            original: place.textContent.trim()
-          });
-        }
-        primaryPerson.addFact(fact);
       }
     }
-  });
 
-  // Facts
-  facts.forEach(function(fact) {
-    if(table.hasMatch(fact.regex)) {
-      var value = table.getMatchText(fact.regex).trim();
-      primaryPerson.addFact(GedcomX.Fact({
-        type: fact.type,
-        value: value
-      }));
-    }
-  });
+    // Other Names
+    if(/birth names/.test(label)) {
+      var rawNames = value.innerHTML;
+      var names = rawNames.split(/<br ?\/?>/);
 
-  // Mother
-  if(table.hasMatch(/^(mother|mother \(implied\))$/)){
-    var name = table.getMatchText(/^(mother|mother \(implied\))$/);
-    var person = gedx.addRelativeFromName(primaryPerson, name, 'Parent');
-    person.setGender({
-      type: 'http://gedcomx.org/Female'
-    });
-  }
-  // Father
-  if(table.hasMatch(/^(father|father \(implied\))$/)){
-    var name = table.getMatchText(/^(father|father \(implied\))$/);
-    var person = gedx.addRelativeFromName(primaryPerson, name, 'Parent');
-    person.setGender({
-      type: 'http://gedcomx.org/Male'
-    });
-  }
-  // Husband
-  if(table.hasMatch(/^(husband|husband \(implied\))$/)){
-    var name = table.getMatchText(/^(husband|husband \(implied\))$/);
-    var person = gedx.addRelativeFromName(primaryPerson, name, 'Couple');
-    person.setGender({
-      type: 'http://gedcomx.org/Male'
-    });
-  }
-  // Wife
-  if(table.hasMatch(/^(wife|wife \(implied\))$/)){
-    var name = table.getMatchText(/^(wife|wife \(implied\))$/);
-    var person = gedx.addRelativeFromName(primaryPerson, name, 'Couple');
-    person.setGender({
-      type: 'http://gedcomx.org/Female'
-    });
-  }
-  // Daughter
-  if(table.hasMatch(/^(daughter|daughter \(implied\))$/)){
-    var name = table.getMatchText(/^(daughter|daughter \(implied\))$/);
-    var person = gedx.addRelativeFromName(primaryPerson, name, 'Child');
-    person.setGender({
-      type: 'http://gedcomx.org/Female'
-    });
-  }
-  // Son
-  if(table.hasMatch(/^(son|son \(implied\))$/)){
-    var name = table.getMatchText(/^(son|son \(implied\))$/);
-    var person = gedx.addRelativeFromName(primaryPerson, name, 'Child');
-    person.setGender({
-      type: 'http://gedcomx.org/Male'
-    });
-  }
-  // Children
-  if(table.hasMatch(/^children$/)){
-    var rawNames = table.getMatch(/^children$/).innerHTML;
-    var names = rawNames.split(/<br ?\/?>/);
-    for (var str of names) {
-      var el = document.createElement('div');
-      el.innerHTML = str;
-      var name = el.textContent;
-      gedx.addRelativeFromName(primaryPerson, name, 'Child');
+      for (var str of names) {
+        var name = GedcomX.Name.createFromString(str);
+        if (!inScopePerson.hasName(name)) {
+          inScopePerson.addName(name);
+        }
+      }
     }
-    // TODO create relationship to father/mother if they are also set
+
+    // Events
+    events.forEach(function(event) {
+      if(event.regex.test(label)) {
+        var cell = value;
+        // Linked places have extra stuff we need to ignore
+        var place = cell.querySelector('.event_place .map_callout_link');
+        // If it's not a linked place, just get the content
+        if (!place) {
+          place = cell.querySelector('.event_place');
+        }
+        var date = cell.querySelector('.event_date');
+        if (place || date) {
+          var fact = GedcomX.Fact({
+            type: event.type
+          });
+          if (date) {
+            fact.setDate({
+              original: date.textContent.trim()
+            });
+          }
+          if (place) {
+            fact.setPlace({
+              original: place.textContent.trim()
+            });
+          }
+          inScopePerson.addFact(fact);
+        }
+      }
+    });
+
+    // Facts
+    facts.forEach(function(fact) {
+      if(fact.regex.test(label)) {
+        inScopePerson.addFact(GedcomX.Fact({
+          type: fact.type,
+          value: value.textContent.trim()
+        }));
+      }
+    });
+
+    // If we see another person, set them as the in scope person
+
+    // Mother
+    if(/^(mother|mother \(implied\))$/.test(label)) {
+      var name = value.textContent.trim();
+      var person = gedx.addRelativeFromName(primaryPerson, name, 'Parent');
+      person.setGender({
+        type: 'http://gedcomx.org/Female'
+      });
+      inScopePerson = person;
+    }
+
+    // Father
+    if(/^(father|father \(implied\))$/.test(label)) {
+      var name = value.textContent.trim();
+      var person = gedx.addRelativeFromName(primaryPerson, name, 'Parent');
+      person.setGender({
+        type: 'http://gedcomx.org/Male'
+      });
+      inScopePerson = person;
+    }
+
+    // Husband
+    if(/^(husband|husband \(implied\))$/.test(label)){
+      var name = value.textContent.trim();
+      var person = gedx.addRelativeFromName(primaryPerson, name, 'Couple');
+      person.setGender({
+        type: 'http://gedcomx.org/Male'
+      });
+      inScopePerson = person;
+    }
+
+    // Wife
+    if(/^(wife|wife \(implied\))$/.test(label)) {
+      var name = value.textContent.trim();
+      var person = gedx.addRelativeFromName(primaryPerson, name, 'Couple');
+      person.setGender({
+        type: 'http://gedcomx.org/Female'
+      });
+      inScopePerson = person;
+    }
+
+    // Daughter
+    if(/^(daughter|daughter \(implied\))$/.test(label)) {
+      var name = value.textContent.trim();
+      var person = gedx.addRelativeFromName(primaryPerson, name, 'Child');
+      person.setGender({
+        type: 'http://gedcomx.org/Female'
+      });
+      inScopePerson = person;
+    }
+
+    // Son
+    if(/^(son|son \(implied\))$/.test(label)) {
+      var name = value.textContent.trim();
+      var person = gedx.addRelativeFromName(primaryPerson, name, 'Child');
+      person.setGender({
+        type: 'http://gedcomx.org/Male'
+      });
+      inScopePerson = person;
+    }
+
+    // Children
+    if(/^children$/.test(label)) {
+      var rawNames = value.innerHTML;
+      var names = rawNames.split(/<br ?\/?>/);
+      for (var str of names) {
+        var el = document.createElement('div');
+        el.innerHTML = str;
+        var name = el.textContent;
+        gedx.addRelativeFromName(primaryPerson, name, 'Child');
+      }
+      // TODO create relationship to father/mother if they are also set
+    }
   }
 
   // Additional Tables

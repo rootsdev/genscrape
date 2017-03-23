@@ -51,12 +51,12 @@
           }
         },
         {
-          "type": "http://gedcomx.org/Race",
-          "value": "White"
-        },
-        {
           "type": "http://gedcomx.org/MaritalStatus",
           "value": "Married"
+        },
+        {
+          "type": "http://gedcomx.org/Race",
+          "value": "White"
         },
         {
           "type": "http://gedcomx.org/Ethnicity",

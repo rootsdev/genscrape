@@ -39,6 +39,10 @@
           }
         },
         {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        },
+        {
           "type": "http://gedcomx.org/Residence",
           "date": {
             "original": "Dec 11 1913"
@@ -46,10 +50,6 @@
           "place": {
             "original": "Sosnowitz, Petrikow, RuÃŸland"
           }
-        },
-        {
-          "type": "http://gedcomx.org/MaritalStatus",
-          "value": "Married"
         },
         {
           "type": "http://gedcomx.org/Occupation",

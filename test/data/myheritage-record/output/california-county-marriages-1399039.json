@@ -1,0 +1,363 @@
+{
+  "description": "#7",
+  "persons": [
+    {
+      "id": "30244:1399039",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/30244:1399039"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Charles E York & Frances M Osborn",
+              "parts": [
+                {
+                  "value": "Charles E York & Frances M",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Osborn",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "July 25 1927"
+          },
+          "place": {
+            "original": "Los Angeles, California, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Circa 1898"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Circa 1902"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Charles E York",
+              "parts": [
+                {
+                  "value": "Charles E",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Fred C York",
+              "parts": [
+                {
+                  "value": "Fred C",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "York",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary Hiatt",
+              "parts": [
+                {
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hiatt",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Frances M Osborn",
+              "parts": [
+                {
+                  "value": "Frances M",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Osborn",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Richard Osborn",
+              "parts": [
+                {
+                  "value": "Richard",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Osborn",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Isabell Roach",
+              "parts": [
+                {
+                  "value": "Isabell",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Roach",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#30244:1399039"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#30244:1399039"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#30244:1399039"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#30244:1399039"
+      },
+      "person2": {
+        "resource": "#4"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#5"
+      },
+      "person2": {
+        "resource": "#30244:1399039"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6"
+      },
+      "person2": {
+        "resource": "#30244:1399039"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-30244-1399039/charles-e-york-and-frances-m-osborn-in-california-county-marriages",
+      "titles": [
+        {
+          "value": "In California, County Marriages, 1850-1952"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #30244:1399039 for Charles E York & Frances M Osborn - California, County Marriages, 1850-1952 - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "7"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

@@ -60,36 +60,6 @@
         {
           "nameForms": [
             {
-              "fullText": "Sacramento Aleman",
-              "parts": [
-                {
-                  "value": "Sacramento",
-                  "type": "http://gedcomx.org/Given"
-                },
-                {
-                  "value": "Aleman",
-                  "type": "http://gedcomx.org/Surname"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "gender": {
-        "type": "http://gedcomx.org/Female"
-      },
-      "sources": [
-        {
-          "description": "#3"
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "names": [
-        {
-          "nameForms": [
-            {
               "fullText": "Regino Gonzalez",
               "parts": [
                 {
@@ -107,6 +77,36 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Sacramento Aleman",
+              "parts": [
+                {
+                  "value": "Sacramento",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Aleman",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
       },
       "sources": [
         {
