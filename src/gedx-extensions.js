@@ -163,7 +163,7 @@ GedcomX.NameForm.prototype.equals = function(nameForm){
   if(this.getLang() !== nameForm.getLang()){
     return false;
   }
-  if(this.getFullText() !== nameForm.getFullText()){
+  if(this.getFullText().toLowerCase() !== nameForm.getFullText().toLowerCase()){
     return false;
   }
   if(this.getParts().length !== nameForm.getParts().length){
@@ -205,7 +205,7 @@ GedcomX.NamePart.prototype.equals = function(namePart){
   if(this.getType() !== namePart.getType()){
     return false;
   }
-  if(this.getValue() !== namePart.getValue()){
+  if(this.getValue().toLowerCase() !== namePart.getValue().toLowerCase()){
     return false;
   }
   return true;

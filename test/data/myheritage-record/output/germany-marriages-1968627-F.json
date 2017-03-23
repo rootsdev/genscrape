@@ -1,0 +1,232 @@
+{
+  "description": "#4",
+  "persons": [
+    {
+      "id": "30038:1968627-F",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/30038:1968627-F"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Jacobine Friederike Van Der Horst",
+              "parts": [
+                {
+                  "value": "Jacobine Friederike Van Der",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Horst",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "Oct 14 1852"
+          },
+          "place": {
+            "original": "Evangelisch, Uedem, Rheinland, Prussia"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/30038:1968627-F"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Heinrich Kuckes",
+              "parts": [
+                {
+                  "value": "Heinrich",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kuckes",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1812"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Friederick van Der Horst",
+              "parts": [
+                {
+                  "value": "Friederick van Der",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Horst",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Sibilla Curlis",
+              "parts": [
+                {
+                  "value": "Sibilla",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Curlis",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#30038:1968627-F"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#30038:1968627-F"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#30038:1968627-F"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-30038-1968627-F/jacobine-friederike-van-der-horst-and-heinrich-kuckes-in-germany-marriages",
+      "titles": [
+        {
+          "value": "In Germany, Marriages, 1558-1929"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #30038:1968627-F for Jacobine Friederike Van Der Horst & Heinrich Kuckes - Germany, Marriages, 1558-1929 - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "4"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

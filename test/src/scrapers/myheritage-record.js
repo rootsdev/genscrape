@@ -39,8 +39,12 @@ describe('myheritage-record', function() {
     'mexico-baptisms-1799709',
     'https://www.myheritage.com/research/record-30039-1799709-F/j-ysac-gonzalez-in-mexico-baptisms'
   ));
-  it.only('california-county-marriages', setupTest(
+  it('california-county-marriages', setupTest(
     'california-county-marriages-1399039',
     'https://www.myheritage.com/research/record-30244-1399039/charles-e-york-and-frances-m-osborn-in-california-county-marriages'
+  ));
+  it('germany-marriages', setupTest(
+    'germany-marriages-1968627-F',
+    'https://www.myheritage.com/research/record-30038-1968627-F/jacobine-friederike-van-der-horst-and-heinrich-kuckes-in-germany-marriages'
   ));
 });
