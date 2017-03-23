@@ -23,8 +23,16 @@ describe('myheritage-record', function() {
     'familysearch-family-tree-171359631',
     'https://www.myheritage.com/research/record-40001-171359631/katherine-zierak-in-familysearch-family-tree'
   ));
-  it.only('united-states-federal-census-tree', setupTest(
+  it('united-states-federal-census-tree', setupTest(
     'united-states-federal-census-90714854',
     'https://www.myheritage.com/research/record-10053-90714854/helen-g-yurkiewicz-in-1940-united-states-federal-census'
+  ));
+  it('united-states-federal-census-tree', setupTest(
+    'united-states-federal-census-113306106',
+    'https://www.myheritage.com/research/record-10133-113306106/grace-t-kiefer-in-1920-united-states-federal-census'
+  ));
+  it('germany-bremen-passenger-departure-lists', setupTest(
+    'germany-bremen-passenger-departure-lists-12326',
+    'https://www.myheritage.com/research/record-30240-12326/mopsche-turner-in-germany-bremen-passenger-departure-lists'
   ));
 });

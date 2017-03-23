@@ -48,6 +48,18 @@ var facts = [
     regex: /^marital status$/,
     type: 'http://gedcomx.org/MaritalStatus'
   },
+  {
+    regex: /^ethnicity$/,
+    type: 'http://gedcomx.org/Ethnicity'
+  },
+  {
+    regex: /^occupation$/,
+    type: 'http://gedcomx.org/Occupation'
+  },
+  {
+    regex: /^arrival place$/,
+    type: 'http://gedcomx.org/Immigration'
+  }
 ];
 
 var censusDate = null;
@@ -148,35 +160,51 @@ function setup(emitter) {
   });
 
   // Mother
-  if(table.hasMatch(/^mother/)){
-    var name = table.getMatchText(/^mother/);
+  if(table.hasMatch(/^(mother|mother \(implied\))$/)){
+    var name = table.getMatchText(/^(mother|mother \(implied\))$/);
     var person = gedx.addRelativeFromName(primaryPerson, name, 'Parent');
     person.setGender({
       type: 'http://gedcomx.org/Female'
     });
   }
   // Father
-  if(table.hasMatch(/^father/)){
-    var name = table.getMatchText(/^father/);
+  if(table.hasMatch(/^(father|father \(implied\))$/)){
+    var name = table.getMatchText(/^(father|father \(implied\))$/);
     var person = gedx.addRelativeFromName(primaryPerson, name, 'Parent');
     person.setGender({
       type: 'http://gedcomx.org/Male'
     });
   }
   // Husband
-  if(table.hasMatch(/^husband/)){
-    var name = table.getMatchText(/^husband/);
+  if(table.hasMatch(/^(husband|husband \(implied\))$/)){
+    var name = table.getMatchText(/^(husband|husband \(implied\))$/);
     var person = gedx.addRelativeFromName(primaryPerson, name, 'Couple');
     person.setGender({
       type: 'http://gedcomx.org/Male'
     });
   }
   // Wife
-  if(table.hasMatch(/^wife/)){
-    var name = table.getMatchText(/^wife/);
+  if(table.hasMatch(/^(wife|wife \(implied\))$/)){
+    var name = table.getMatchText(/^(wife|wife \(implied\))$/);
     var person = gedx.addRelativeFromName(primaryPerson, name, 'Couple');
     person.setGender({
       type: 'http://gedcomx.org/Female'
+    });
+  }
+  // Daughter
+  if(table.hasMatch(/^(daughter|daughter \(implied\))$/)){
+    var name = table.getMatchText(/^(daughter|daughter \(implied\))$/);
+    var person = gedx.addRelativeFromName(primaryPerson, name, 'Child');
+    person.setGender({
+      type: 'http://gedcomx.org/Female'
+    });
+  }
+  // Son
+  if(table.hasMatch(/^(son|son \(implied\))$/)){
+    var name = table.getMatchText(/^(son|son \(implied\))$/);
+    var person = gedx.addRelativeFromName(primaryPerson, name, 'Child');
+    person.setGender({
+      type: 'http://gedcomx.org/Male'
     });
   }
   // Children
@@ -216,6 +244,9 @@ function setup(emitter) {
       });
 
       relatives.getRows().forEach(function(row) {
+        // If there is no relation, return
+        if (!row.relation.text.trim()) return;
+
         var name = GedcomX.Name.createFromString(row.name.text);
         var person = gedx.findPersonByName(name);
         var personId = getRecordId(row.name.href);
@@ -254,9 +285,6 @@ function setup(emitter) {
             }
           }));
         }
-
-        // If there is no relation, return
-        if (!row.relation.text) return;
 
         // Add relationships
         if(/^(husband|wife)/.test(row.relation.text.toLowerCase())) {
