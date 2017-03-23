@@ -49,7 +49,7 @@
       ]
     },
     {
-      "id": "1",
+      "id": "genscrape://myheritage:record/30226:2401107-F:1",
       "names": [
         {
           "nameForms": [
@@ -72,6 +72,11 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/genscrape://myheritage:record/30226:2401107-F:1"
+        ]
+      },
       "sources": [
         {
           "description": "#2"
@@ -83,7 +88,7 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#1"
+        "resource": "#genscrape://myheritage:record/30226:2401107-F:1"
       },
       "person2": {
         "resource": "#30226:2401107-F"

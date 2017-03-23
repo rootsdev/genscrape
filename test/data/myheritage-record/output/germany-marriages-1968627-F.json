@@ -92,7 +92,7 @@
       ]
     },
     {
-      "id": "2",
+      "id": "genscrape://myheritage:record/30038:1968627-F:1",
       "names": [
         {
           "nameForms": [
@@ -115,6 +115,11 @@
       "gender": {
         "type": "http://gedcomx.org/Male"
       },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/genscrape://myheritage:record/30038:1968627-F:1"
+        ]
+      },
       "sources": [
         {
           "description": "#4"
@@ -122,7 +127,7 @@
       ]
     },
     {
-      "id": "3",
+      "id": "genscrape://myheritage:record/30038:1968627-F:2",
       "names": [
         {
           "nameForms": [
@@ -145,6 +150,11 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/genscrape://myheritage:record/30038:1968627-F:2"
+        ]
+      },
       "sources": [
         {
           "description": "#4"
@@ -156,7 +166,7 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#2"
+        "resource": "#genscrape://myheritage:record/30038:1968627-F:1"
       },
       "person2": {
         "resource": "#30038:1968627-F"
@@ -170,7 +180,7 @@
     {
       "type": "http://gedcomx.org/ParentChild",
       "person1": {
-        "resource": "#3"
+        "resource": "#genscrape://myheritage:record/30038:1968627-F:2"
       },
       "person2": {
         "resource": "#30038:1968627-F"
