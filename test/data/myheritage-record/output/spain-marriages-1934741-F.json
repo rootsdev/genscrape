@@ -1,0 +1,332 @@
+{
+  "description": "#6",
+  "persons": [
+    {
+      "id": "30057:1934741-F",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/30057:1934741-F"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Cecilia Alabori Pujeu",
+              "parts": [
+                {
+                  "value": "Cecilia Alabori",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Pujeu",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "Apr 20 1919"
+          },
+          "place": {
+            "original": "San Salvador, Castellfullit De La Roca, Gerona, Spain"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1895"
+          },
+          "place": {
+            "original": "Oix"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/30057:1934741-F"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Juan Clota Y Clota",
+              "parts": [
+                {
+                  "value": "Juan Clota Y",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Clota",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1891"
+          },
+          "place": {
+            "original": "Juanetas"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Jorge Alabori Pujol",
+              "parts": [
+                {
+                  "value": "Jorge Alabori",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Pujol",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Magdalena Pujeu Y Noguer",
+              "parts": [
+                {
+                  "value": "Magdalena Pujeu Y",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Noguer",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Pedro Clota Y Mitjavila",
+              "parts": [
+                {
+                  "value": "Pedro Clota Y",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Mitjavila",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Maria Clota Y Gurt",
+              "parts": [
+                {
+                  "value": "Maria Clota Y",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Gurt",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#30057:1934741-F"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#30057:1934741-F"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#30057:1934741-F"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#4"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#5"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-30057-1934741-F/cecilia-alabori-pujeu-and-juan-clota-y-clota-in-spain-marriages",
+      "titles": [
+        {
+          "value": "In Spain, Marriages, 1565-1950"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #30057:1934741-F for Cecilia Alabori Pujeu & Juan Clota Y Clota - Spain, Marriages, 1565-1950 - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "6"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

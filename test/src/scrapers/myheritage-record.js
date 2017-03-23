@@ -47,4 +47,12 @@ describe('myheritage-record', function() {
     'germany-marriages-1968627-F',
     'https://www.myheritage.com/research/record-30038-1968627-F/jacobine-friederike-van-der-horst-and-heinrich-kuckes-in-germany-marriages'
   ));
+  it('spain-marriages', setupTest(
+    'spain-marriages-1934741-F',
+    'https://www.myheritage.com/research/record-30057-1934741-F/cecilia-alabori-pujeu-and-juan-clota-y-clota-in-spain-marriages'
+  ));
+  it('massachusetts-marriages', setupTest(
+    'massachusetts-marriages-1113561',
+    'https://www.myheritage.com/research/record-30033-1113561/henry-leroy-york-and-elevia-belle-harriman-in-massachusetts-marriages'
+  ));
 });
