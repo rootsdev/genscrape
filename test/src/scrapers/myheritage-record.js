@@ -55,4 +55,20 @@ describe('myheritage-record', function() {
     'massachusetts-marriages-1113561',
     'https://www.myheritage.com/research/record-30033-1113561/henry-leroy-york-and-elevia-belle-harriman-in-massachusetts-marriages'
   ));
+  it('denmark-census', setupTest(
+    'denmark-census-2434583',
+    'https://www.myheritage.com/research/record-10181-2434583/terry-andersen-in-1930-denmark-census'
+  ));
+  it('england-wales-census', setupTest(
+    'england-wales-census-101511824',
+    'https://www.myheritage.com/research/record-10156-101511824/samuel-jeremy-in-1901-england-wales-census'
+  ));
+  it('united-states-federal-census', setupTest(
+    'united-states-federal-census-41588411',
+    'https://www.myheritage.com/research/record-10128-41588411/martha-snark-in-1870-united-states-federal-census'
+  ));
+  it('united-states-federal-census', setupTest(
+    'united-states-federal-census-53702700',
+    'https://www.myheritage.com/research/record-10132-53702700/john-s-townsend-in-1910-united-states-federal-census'
+  ));
 });

@@ -288,16 +288,42 @@ function setup(emitter) {
     }
 
     // Children
-    if(/^children$/.test(label)) {
+    if(/^(children|children \(implied\))$/.test(label)) {
       var rawNames = value.innerHTML;
       var names = rawNames.split(/<br ?\/?>/);
       for (var str of names) {
         var el = document.createElement('div');
         el.innerHTML = str;
-        var name = el.textContent;
+        var name = el.textContent.trim();
         gedx.addRelativeFromName(inScopePerson, name, 'Child');
       }
       // TODO create relationship to father/mother if they are also set
+    }
+
+    // Siblings
+    if(/^(siblings|siblings \(implied\))$/.test(label)) {
+      var parents = gedx.getPersonsParents(inScopePerson);
+      var rawNames = value.innerHTML;
+      var names = rawNames.split(/<br ?\/?>/);
+      for (var str of names) {
+        var el = document.createElement('div');
+        el.innerHTML = str;
+        var name = el.textContent.trim();
+        var person = new GedcomX.Person({
+          identifiers: {
+            'genscrape': getRecordIdentifier(document.location.href)
+          }
+        });
+        person.addSimpleName(name.trim());
+        gedx.addPerson(person);
+        for (var parent of parents) {
+          gedx.addRelationship({
+            type: 'http://gedcomx.org/ParentChild',
+            person1: parent,
+            person2: person
+          });
+        }
+      }
     }
   }
 
@@ -450,7 +476,7 @@ function setup(emitter) {
       }
 
       // Update their birth date based on their age (if not set)
-      if (censusDate) {
+      if (censusDate && row.age) {
         // Only set if we don't have a birth event
         if (person.getFactsByType('http://gedcomx.org/Birth').length === 0) {
           var rawAge = row.age.text.trim();

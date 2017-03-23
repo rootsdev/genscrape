@@ -1,0 +1,483 @@
+{
+  "description": "#7",
+  "persons": [
+    {
+      "id": "10128:41588411",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10128:41588411"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Martha Snark",
+              "parts": [
+                {
+                  "value": "Martha",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Snark",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Circa 1869"
+          },
+          "place": {
+            "original": "Illinois, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "June 1 1870"
+          },
+          "place": {
+            "original": "Illinois, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Race",
+          "value": "White"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10128:43991772",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "William Snark",
+              "parts": [
+                {
+                  "value": "William",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Snark",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10128:43991772"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About NaN"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10128:44769634",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Amanda Snark",
+              "parts": [
+                {
+                  "value": "Amanda",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Snark",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10128:44769634"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About NaN"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10128:41588409",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10128:41588409"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Addie Snark",
+              "parts": [
+                {
+                  "value": "Addie",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Snark",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About NaN"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10128:41588410",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10128:41588410"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Snark",
+              "parts": [
+                {
+                  "value": "Snark",
+                  "type": "http://gedcomx.org/Given"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About NaN"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10128:41588411"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "William Snark",
+              "parts": [
+                {
+                  "value": "William",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Snark",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "id": "10128:44102983",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10128:44102983"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Chester Snark",
+              "parts": [
+                {
+                  "value": "Chester",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Snark",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About NaN"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10128:43991772"
+      },
+      "person2": {
+        "resource": "#10128:41588411"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10128:44769634"
+      },
+      "person2": {
+        "resource": "#10128:41588411"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10128:43991772"
+      },
+      "person2": {
+        "resource": "#10128:41588409"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10128:44769634"
+      },
+      "person2": {
+        "resource": "#10128:41588409"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10128:43991772"
+      },
+      "person2": {
+        "resource": "#10128:41588410"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10128:44769634"
+      },
+      "person2": {
+        "resource": "#10128:41588410"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10128:43991772"
+      },
+      "person2": {
+        "resource": "#5"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10128:44769634"
+      },
+      "person2": {
+        "resource": "#5"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10128:43991772"
+      },
+      "person2": {
+        "resource": "#10128:44102983"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10128:44769634"
+      },
+      "person2": {
+        "resource": "#10128:44102983"
+      },
+      "sources": [
+        {
+          "description": "#7"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-10128-41588411/martha-snark-in-1870-united-states-federal-census",
+      "titles": [
+        {
+          "value": "In 1870 United States Federal Census"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #10128:41588411 for Martha Snark - 1870 United States Federal Census - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "7"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}

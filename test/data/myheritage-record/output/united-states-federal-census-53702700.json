@@ -1,0 +1,336 @@
+{
+  "description": "#5",
+  "persons": [
+    {
+      "id": "10132:53702700",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10132:53702700"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John S Townsend",
+              "parts": [
+                {
+                  "value": "John S",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Townsend",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Circa 1871"
+          },
+          "place": {
+            "original": "Mississippi, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1910"
+          },
+          "place": {
+            "original": "Roswell Ward 5, Chaves, New Mexico, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "Married"
+        },
+        {
+          "type": "http://gedcomx.org/Race",
+          "value": "White"
+        },
+        {
+          "type": "http://gedcomx.org/Ethnicity",
+          "value": "American"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "id": "10132:53702701",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Dovey T Townsend",
+              "parts": [
+                {
+                  "value": "Dovey T",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Townsend",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10132:53702701"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About 1884"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "id": "10132:53702702",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Hiniard R Townsend",
+              "parts": [
+                {
+                  "value": "Hiniard R",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Townsend",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10132:53702702"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About 1906"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "id": "10132:53702703",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John S Townsend, Jr",
+              "parts": [
+                {
+                  "value": "John S Townsend,",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jr",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10132:53702703"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About 1908"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "id": "10132:53702704",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ester T Townsend",
+              "parts": [
+                {
+                  "value": "Ester T",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Townsend",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:record/10132:53702704"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "About 1904"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#10132:53702700"
+      },
+      "person2": {
+        "resource": "#10132:53702701"
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10132:53702700"
+      },
+      "person2": {
+        "resource": "#10132:53702702"
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10132:53702700"
+      },
+      "person2": {
+        "resource": "#10132:53702703"
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#10132:53702700"
+      },
+      "person2": {
+        "resource": "#10132:53702704"
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/research/record-10132-53702700/john-s-townsend-in-1910-united-states-federal-census",
+      "titles": [
+        {
+          "value": "In 1910 United States Federal Census"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Record #10132:53702700 for John S Townsend - 1910 United States Federal Census - MyHeritage."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "5"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}
