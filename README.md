@@ -4,7 +4,7 @@
 genscrape
 ==========
 
-A JavaScript library that aids in scraping person data off of genealogy websites. 
+A JavaScript library that aids in scraping person data off of genealogy websites.
 It is designed to be used in a browser extension. Data is output in
 [GEDCOM X](http://www.gedcomx.org/) format.
 
@@ -64,7 +64,7 @@ errors yet.
 
 ## Data Model
 
-Data is returned in the [GEDCOM X JSON](https://github.com/FamilySearch/gedcomx/blob/master/specifications/json-format-specification.md) 
+Data is returned in the [GEDCOM X JSON](https://github.com/FamilySearch/gedcomx/blob/master/specifications/json-format-specification.md)
 format.
 
 When possible, we mark one person as `principal`. This isn't possible when
@@ -74,7 +74,7 @@ in a record. The only currently supported site where this occurs is Open Archive
 Every GEDCOM X document has a [SourceDescription](https://github.com/FamilySearch/gedcomx/blob/master/specifications/conceptual-model-specification.md#source-description),
 pointed to by the `about` property of the document, that provides a citation for
 all data in the document. That SourceDescription points to an [Agent](https://github.com/FamilySearch/gedcomx/blob/master/specifications/conceptual-model-specification.md#agent),
-via the `repository` property, which describes the website the data came from. 
+via the `repository` property, which describes the website the data came from.
 
 ```json
 {
@@ -117,6 +117,7 @@ from the same record on the same website.
 * [findmypast.com](http://www.findmypast.com), [findmypast.co.uk](http://www.findmypast.co.uk), [findmypast.com.au](http://www.findmypast.com.au), [findmypast.ie](http://www.findmypast.ie), both historical records and tree profiles.
 * [FamilySearch.org](https://familysearch.org), both historical records and tree profiles.
 * [Genealogie Online](https://www.genealogieonline.nl)
+* [MyHeritage](https://www.myheritage.com) historical records
 * [Open Archives](https://www.openarch.nl)
 * [WeRelate](http://www.werelate.org/)
 * [WikiTree](http://www.wikitree.com/) person profiles
