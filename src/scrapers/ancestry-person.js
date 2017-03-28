@@ -207,7 +207,7 @@ function process(emitter, $dom){
       var spouseName = spouse.getNames()[0].getNameForms()[0].getFullText();
       facts.getCards('marriage').forEach(function($marriage){
         var $spouseName = $marriage.querySelector('.userPerson');
-        if($spouseName.textContent === spouseName){
+        if($spouseName && $spouseName.textContent === spouseName){
           relationship.addFact(cardToFact($marriage, 'http://gedcomx.org/Marriage'));
         }
       });

@@ -22,8 +22,8 @@ describe('ancestry person', function(){
   
   it('missing parents', setupTest('70025770', '30206952959'));
   
-  it('multiple spouses');
+  it('child of unknown spouse; marriage event not associated with a spouse', setupTest('75549', '110053435746'));
   
-  it('child of unknown spouse');
+  it('multiple spouses');
   
 });
