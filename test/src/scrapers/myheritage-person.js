@@ -37,4 +37,7 @@ describe('myheritage person', function(){
 
   it('basic site', setupTest('209005991', '2000081', 'page'));
 
+  it('immediate family person', setupTest('209005991', '2000004', 'person'));
+
+  it('immediate family site', setupTest('209005991', '2000004', 'page'));
 });

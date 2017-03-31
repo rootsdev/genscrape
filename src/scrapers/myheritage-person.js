@@ -155,7 +155,6 @@ function process(emitter, treeId, personId, $page, $event) {
     // Handle Marriage
     if (type.textContent.toLowerCase().match(/^marriage to/)) {
       var aTag = type.querySelector('a');
-      console.log(getRecordId(aTag.href))
       var person = new GedcomX.Person({
         id: getRecordId(aTag.href),
         identifiers: {
@@ -166,6 +165,48 @@ function process(emitter, treeId, personId, $page, $event) {
       gedx.addPerson(person);
       gedx.addRelationship({
         type: 'http://gedcomx.org/Couple',
+        person1: primaryPerson,
+        person2: person
+      });
+    }
+
+    // Handle Daughter
+    if (type.textContent.toLowerCase().match(/^birth of daughter/)) {
+      var aTag = type.querySelector('a');
+      var person = new GedcomX.Person({
+        id: getRecordId(aTag.href),
+        identifiers: {
+          'genscrape': getRecordIdentifier(aTag.href)
+        }
+      });
+      person.addSimpleName(aTag.textContent.trim());
+      person.setGender({
+        type: 'http://gedcomx.org/Female'
+      });
+      gedx.addPerson(person);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: primaryPerson,
+        person2: person
+      });
+    }
+
+    // Handle Son
+    if (type.textContent.toLowerCase().match(/^birth of son/)) {
+      var aTag = type.querySelector('a');
+      var person = new GedcomX.Person({
+        id: getRecordId(aTag.href),
+        identifiers: {
+          'genscrape': getRecordIdentifier(aTag.href)
+        }
+      });
+      person.addSimpleName(aTag.textContent.trim());
+      person.setGender({
+        type: 'http://gedcomx.org/Male'
+      });
+      gedx.addPerson(person);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
         person1: primaryPerson,
         person2: person
       });
