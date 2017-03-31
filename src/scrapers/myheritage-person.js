@@ -2,10 +2,6 @@ var debug = require('debug')('genscrape:scrapers:ancestry-person'),
     utils = require('../utils'),
     GedcomX = require('gedcomx-js');
 
-var urls = [
-  utils.urlPatternToRegex('https://www.myheritage.com/person-*')
-];
-
 var eventMappings = [
   {
     regex: /^birth$/,

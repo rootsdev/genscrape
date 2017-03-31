@@ -12,7 +12,7 @@
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
     "build": "mkdir -p dist && npm run build:dev && npm run build:min",
     "build:dev": "webpack",
-    "build:min": "webpack --min",
+    "build:min": "webpack --env.production",
     "prepublish": "npm test && npm run build"
   },
   "repository": {
@@ -34,15 +34,17 @@
     "gedcomx-js": "2.7.0"
   },
   "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
     "bannerjs": "^1.0.5",
     "chai": "3.5.0",
     "coveralls": "2.11.9",
     "istanbul": "0.4.3",
     "jsdom": "9.5.0",
-    "minimist": "^1.2.0",
     "mocha": "3.1.0",
     "nock": "8.0.0",
-    "webpack": "^1.13.1"
+    "webpack": "2.3.2"
   },
   "files": [
     "src",

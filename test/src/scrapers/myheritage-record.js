@@ -1,5 +1,4 @@
 var helpers = require('../../testHelpers'),
-    genscrape = require('../../../'),
     setupTest = helpers.createTestRunner('myheritage-record');
 
 describe('myheritage-record', function() {
