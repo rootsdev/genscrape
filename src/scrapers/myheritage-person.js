@@ -296,7 +296,7 @@ function process(emitter, treeId, personId, $page, $event) {
       value: name + ' - MyHeritage Tree'
     })
     .addCitation({
-      value: 'MyHeritage, database and images (https://www.myheritage.com : accessed ' + utils.getDateString() + ')'
+      value: 'MyHeritage Family Trees (https://www.myheritage.com : accessed ' + utils.getDateString() + ')'
         + ', Person #' + treeId + ':' + personId + ' for ' + name + '.'
     })
     .setRepository({resource: '#agent'});
