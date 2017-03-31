@@ -60,6 +60,12 @@ function runSite(emitter) {
   var treeId = treeMatches[1];
   var personMatches = window.location.hash.match(/profile-([0-9]+)-info/);
   var personId = personMatches[1];
+
+  window.addEventListener("hashchange", function() {
+    var matches = window.location.hash.match(/profile-([0-9]+)-info/);
+    run(emitter, treeId, matches[1]);
+  });
+
   run(emitter, treeId, personId);
 }
 
