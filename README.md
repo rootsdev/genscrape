@@ -1,3 +1,4 @@
+[![npm](https://img.shields.io/npm/v/genscrape.svg?maxAge=2592000)](https://www.npmjs.com/package/genscrape)
 [![Build Status](https://travis-ci.org/rootsdev/genscrape.svg)](https://travis-ci.org/rootsdev/genscrape)
 [![Coverage Status](https://coveralls.io/repos/rootsdev/genscrape/badge.svg)](https://coveralls.io/r/rootsdev/genscrape)
 
@@ -14,11 +15,13 @@ It is designed to be used in a browser extension. Data is output in
 npm install --save genscrape
 ```
 
-Or use the CDN
+Or use the [CDN](https://unpkg.com/#/)
 
 ```html
-<script src="https://unpkg.com/genscrape@1.1.1/dist/genscrape.min.js"></script>
+<script src="https://unpkg.com/genscrape@latest/dist/genscrape.min.js"></script>
 ```
+
+We recommend pinning CDN links to a specific version.
 
 ## Usage
 
