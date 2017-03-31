@@ -365,6 +365,66 @@
       "gender": {
         "type": "http://gedcomx.org/Female"
       }
+    },
+    {
+      "id": "209005991:2000007",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:tree/person:209005991:2000007"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Joannes Jurkiewicz",
+              "parts": [
+                {
+                  "value": "Joannes",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jurkiewicz",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      }
+    },
+    {
+      "id": "209005991:2000008",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:tree/person:209005991:2000008"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Catharina Jurkiewicz (born Czosnikoska)",
+              "parts": [
+                {
+                  "value": "Catharina Jurkiewicz (born",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Czosnikoska)",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      }
     }
   ],
   "relationships": [
@@ -456,6 +516,24 @@
       },
       "person2": {
         "resource": "#209005991:2000014"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#209005991:2000007"
+      },
+      "person2": {
+        "resource": "#209005991:2000004"
+      }
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#209005991:2000008"
+      },
+      "person2": {
+        "resource": "#209005991:2000004"
       }
     }
   ]

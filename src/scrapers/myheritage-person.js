@@ -214,6 +214,64 @@ function process(emitter, treeId, personId, $page, $event) {
 
   }
 
+  // Get immediate family section
+  // There is no identifiers for this table, so get the first table under the h2
+  var h2s = $page.querySelectorAll('h2');
+  for (var i = 0; i < h2s.length; i++) {
+    if (h2s[i].textContent.toLowerCase().trim() === 'immediate family') {
+      var table = h2s[i].nextSibling;
+      var tds = table.querySelectorAll('td');
+      for (var j = 0; j < tds.length; j++) {
+        var td = tds[j];
+        // Skip empty tds
+        if (td.textContent.trim() === '') continue;
+        var aTag = td.querySelector('a');
+        var rel = td.querySelector('span').textContent.trim();
+
+        // Mother
+        if (rel.toLowerCase() == 'his mother') {
+          var person = new GedcomX.Person({
+            id: getRecordId(aTag.href),
+            identifiers: {
+              'genscrape': getRecordIdentifier(aTag.href)
+            }
+          });
+          person.addSimpleName(aTag.textContent.trim());
+          person.setGender({
+            type: 'http://gedcomx.org/Female'
+          });
+          gedx.addPerson(person);
+          gedx.addRelationship({
+            type: 'http://gedcomx.org/ParentChild',
+            person1: person,
+            person2: primaryPerson
+          });
+        }
+
+        // Father
+        if (rel.toLowerCase() == 'his father') {
+          var person = new GedcomX.Person({
+            id: getRecordId(aTag.href),
+            identifiers: {
+              'genscrape': getRecordIdentifier(aTag.href)
+            }
+          });
+          person.addSimpleName(aTag.textContent.trim());
+          person.setGender({
+            type: 'http://gedcomx.org/Male'
+          });
+          gedx.addPerson(person);
+          gedx.addRelationship({
+            type: 'http://gedcomx.org/ParentChild',
+            person1: person,
+            person2: primaryPerson
+          });
+        }
+      }
+    }
+  }
+
+
   emitter.emit('data', gedx);
 }
 
