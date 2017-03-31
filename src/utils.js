@@ -8,7 +8,7 @@ var utils = {};
 
 /**
  * Get a human readable format of the current date
- * 
+ *
  * @returns {String}
  */
 utils.getDateString = function(){
@@ -17,12 +17,12 @@ utils.getDateString = function(){
 };
 
 /**
- * Returns an array of strings with [0] being the given names and 
- * [1] being the family name. This function assumes that there is 
+ * Returns an array of strings with [0] being the given names and
+ * [1] being the family name. This function assumes that there is
  * only one family name.
  */
 utils.splitName = function(name) {
-  if(typeof name === 'string' && name) {    
+  if(typeof name === 'string' && name) {
     return name.split(/\s+(?=\S*$)/);
   } else {
     return ['',''];
@@ -70,7 +70,7 @@ utils.getQueryParams = function(url){
       params[tempArray[0]] = tempArray[1];
     }
   }
-  
+
   return params;
 };
 
@@ -104,7 +104,7 @@ utils.find = function(list, matcher){
 /**
  * Calculate the proper domain ending: .co.uk, .com, .ie, .com.au
  * Useful for sites like findmypast and Ancestry that have multiple domains
- * 
+ *
  * @return {String}
  */
 utils.getDomain = function(){
@@ -114,61 +114,123 @@ utils.getDomain = function(){
 /**
  * Simple JSON AJAX without jQuery
  * http://youmightnotneedjquery.com/#json
- * 
+ *
  * @param {String} url
  * @param {Object=} headers - optional map of headers
  * @param {Function} callback - function(error, data)
  */
 utils.getJSON = function(url, headers, callback){
-  
+
   if(typeof headers === 'function' && typeof callback === 'undefined'){
     callback = headers;
     headers = [];
   }
-  
+
   // Create the request
   debug('getJSON: ' + url);
   var request = new window.XMLHttpRequest();
   request.open('GET', url);
-  
+
   // Process headers
   for(var header in headers){
     request.setRequestHeader(header, headers[header]);
   }
-  
+
   // Set Accept header to application/json if it wasn't already set
   if(headers['Accept'] === undefined){
     request.setRequestHeader('Accept', 'application/json');
   }
-  
+
   // Finished handler
   request.onload = function() {
     debug('getJSON:onload');
-    
+
     // Good HTTP response
     if (request.status >= 200 && request.status < 400) {
       debug('getJSON:success');
-      
+
       try {
         callback(undefined, JSON.parse(request.responseText));
       } catch (e) {
         callback(e);
       }
-    } 
-    
+    }
+
     // HTTP error
     else {
       debug('getJSON:http error');
       callback(new Error(request.statusText));
     }
   };
-  
+
   // Error handler
   request.onerror = function(e) {
     debug('getJSON:onerror');
     callback(new Error('Network error'));
   };
-  
+
+  // We can send it now that we've attached the event handlers
+  request.send();
+};
+
+/**
+ * Simple HTML AJAX without jQuery
+ * http://youmightnotneedjquery.com/#json
+ *
+ * @param {String} url
+ * @param {Object=} headers - optional map of headers
+ * @param {Function} callback - function(error, data)
+ */
+utils.getHTML = function(url, headers, callback){
+
+  if(typeof headers === 'function' && typeof callback === 'undefined'){
+    callback = headers;
+    headers = [];
+  }
+
+  // Create the request
+  debug('getHTML: ' + url);
+  var request = new window.XMLHttpRequest();
+  request.open('GET', url);
+
+  // Process headers
+  for(var header in headers){
+    request.setRequestHeader(header, headers[header]);
+  }
+
+  // Set Accept header to text/html if it wasn't already set
+  if(headers['Accept'] === undefined){
+    request.setRequestHeader('Accept', 'text/html');
+  }
+
+  // Finished handler
+  request.onload = function() {
+    debug('getHTML:onload');
+
+    // Good HTTP response
+    if (request.status >= 200 && request.status < 400) {
+      debug('getHTML:success');
+
+      try {
+        callback(undefined, request.responseText);
+      } catch (e) {
+        callback(e);
+      }
+    }
+
+    // HTTP error
+    else {
+      debug('getHTML:http error');
+      callback(new Error(request.statusText));
+    }
+  };
+
+  // Error handler
+  request.onerror = function(e) {
+    debug('getHTML:onerror');
+    callback(new Error('Network error'));
+  };
+
   // We can send it now that we've attached the event handlers
   request.send();
 };
