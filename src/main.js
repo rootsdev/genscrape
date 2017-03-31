@@ -88,3 +88,4 @@ require('./scrapers/openarch')(register);
 require('./scrapers/werelate')(register);
 require('./scrapers/wikitree')(register);
 require('./scrapers/myheritage-record')(register);
+require('./scrapers/myheritage-person')(register);

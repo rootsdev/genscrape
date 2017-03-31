@@ -1,0 +1,145 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "209005991:2000081",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:tree/person:209005991:2000081"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Michael B. Barszcz",
+              "parts": [
+                {
+                  "value": "Michael B.",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Barszcz",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Aug 9 1868"
+          },
+          "place": {
+            "original": "Gorlice, Rzeszów, Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "place": {
+            "original": "Poland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Jan 1 1918"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery, New York, United States"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "209005991:2000064",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://myheritage:tree/person:209005991:2000064"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Victoria Barszcz (born Zierak)",
+              "parts": [
+                {
+                  "value": "Victoria Barszcz (born",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zierak)",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#209005991:2000081"
+      },
+      "person2": {
+        "resource": "#209005991:2000064"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/person-2000081_209005991_209005991/the-persons-name",
+      "titles": [
+        {
+          "value": "Michael B. Barszcz - MyHeritage Tree"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage Family Trees (https://www.myheritage.com : accessed 17 April 2013), Person #209005991:2000081 for Michael B. Barszcz."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "1"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
+      }
+    }
+  ]
+}
