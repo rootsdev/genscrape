@@ -1,4 +1,5 @@
 {
+  "description": "#1",
   "persons": [
     {
       "id": "209005991:2000081",
@@ -52,6 +53,11 @@
             "original": "Amsterdam, Montgomery, New York, United States"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
       ]
     },
     {
@@ -79,6 +85,11 @@
             }
           ]
         }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
       ]
     }
   ],
@@ -90,6 +101,44 @@
       },
       "person2": {
         "resource": "#209005991:2000064"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/site-family-tree-209005991/york-web-site-rootstech#!profile-2000081-info",
+      "titles": [
+        {
+          "value": "Michael B. Barszcz - MyHeritage Tree"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Person #209005991:2000081 for Michael B. Barszcz."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "1"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
       }
     }
   ]

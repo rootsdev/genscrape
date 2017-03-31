@@ -1,4 +1,5 @@
 {
+  "description": "#1",
   "persons": [
     {
       "id": "209005991:2000004",
@@ -64,6 +65,11 @@
             "original": "St Nicholas Cemetery, Amsterdam, Montgomery, New York, United States"
           }
         }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
       ]
     },
     {
@@ -94,7 +100,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000013",
@@ -124,7 +135,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000011",
@@ -154,7 +170,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000016",
@@ -184,7 +205,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000010",
@@ -214,7 +240,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000012",
@@ -244,7 +275,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000003",
@@ -274,7 +310,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000015",
@@ -304,7 +345,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000009",
@@ -334,7 +380,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000014",
@@ -364,7 +415,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000007",
@@ -394,7 +450,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Male"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "id": "209005991:2000008",
@@ -424,7 +485,12 @@
       ],
       "gender": {
         "type": "http://gedcomx.org/Female"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     }
   ],
   "relationships": [
@@ -435,7 +501,12 @@
       },
       "person2": {
         "resource": "#209005991:2000017"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -444,7 +515,12 @@
       },
       "person2": {
         "resource": "#209005991:2000013"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -453,7 +529,12 @@
       },
       "person2": {
         "resource": "#209005991:2000011"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -462,7 +543,12 @@
       },
       "person2": {
         "resource": "#209005991:2000016"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -471,7 +557,12 @@
       },
       "person2": {
         "resource": "#209005991:2000010"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -480,7 +571,12 @@
       },
       "person2": {
         "resource": "#209005991:2000012"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -489,7 +585,12 @@
       },
       "person2": {
         "resource": "#209005991:2000003"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -498,7 +599,12 @@
       },
       "person2": {
         "resource": "#209005991:2000015"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -507,7 +613,12 @@
       },
       "person2": {
         "resource": "#209005991:2000009"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -516,7 +627,12 @@
       },
       "person2": {
         "resource": "#209005991:2000014"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -525,7 +641,12 @@
       },
       "person2": {
         "resource": "#209005991:2000004"
-      }
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     },
     {
       "type": "http://gedcomx.org/ParentChild",
@@ -534,6 +655,44 @@
       },
       "person2": {
         "resource": "#209005991:2000004"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "about": "https://www.myheritage.com/person-2000004_209005991_209005991/the-persons-name",
+      "titles": [
+        {
+          "value": "Elias Yurkiewicz - MyHeritage Tree"
+        }
+      ],
+      "citations": [
+        {
+          "value": "MyHeritage, database and images (https://www.myheritage.com : accessed 17 April 2013), Person #209005991:2000004 for Elias Yurkiewicz."
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      },
+      "id": "1"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "MyHeritage"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.myheritage.com"
       }
     }
   ]

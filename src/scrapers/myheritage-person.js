@@ -277,6 +277,30 @@ function process(emitter, treeId, personId, $page, $event) {
     }
   }
 
+  // Agent
+  var agent = GedcomX.Agent()
+      .setId('agent')
+      .addName({
+        lang: 'en',
+        value: 'MyHeritage'
+      })
+      .setHomepage({
+        resource: 'https://www.myheritage.com'
+      });
+  gedx.addAgent(agent);
+
+  // Source Citation/Description
+  var source = GedcomX.SourceDescription()
+    .setAbout(document.location.href)
+    .addTitle({
+      value: name + ' - MyHeritage Tree'
+    })
+    .addCitation({
+      value: 'MyHeritage, database and images (https://www.myheritage.com : accessed ' + utils.getDateString() + ')'
+        + ', Person #' + treeId + ':' + personId + ' for ' + name + '.'
+    })
+    .setRepository({resource: '#agent'});
+  gedx.addSourceDescriptionToAll(source);
 
   emitter.emit('data', gedx);
 }
