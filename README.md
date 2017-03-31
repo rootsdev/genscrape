@@ -117,7 +117,7 @@ from the same record on the same website.
 * [findmypast.com](http://www.findmypast.com), [findmypast.co.uk](http://www.findmypast.co.uk), [findmypast.com.au](http://www.findmypast.com.au), [findmypast.ie](http://www.findmypast.ie), both historical records and tree profiles.
 * [FamilySearch.org](https://familysearch.org), both historical records and tree profiles.
 * [Genealogie Online](https://www.genealogieonline.nl)
-* [MyHeritage](https://www.myheritage.com) historical records
+* [MyHeritage](https://www.myheritage.com) historical records and tree profiles
 * [Open Archives](https://www.openarch.nl)
 * [WeRelate](http://www.werelate.org/)
 * [WikiTree](http://www.wikitree.com/) person profiles
