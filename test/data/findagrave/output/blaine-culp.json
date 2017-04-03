@@ -1,0 +1,966 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "40352788",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:40352788"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Blaine Merle",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Culp",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Dec. 27,  1884"
+          },
+          "place": {
+            "original": "Richmond, Jefferson County, Ohio, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Mar. 24,  1967"
+          },
+          "place": {
+            "original": "Canton, Stark County, Ohio, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "North Lawn Cemetery, Canton, Stark County, Ohio, USA"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Alonzo M Culp",
+              "parts": [
+                {
+                  "value": "Alonzo M",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Culp",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "38266005",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:38266005"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1849",
+            "formal": "+1849"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1901",
+            "formal": "+1901"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Loretta Catherine Wycoff Culp",
+              "parts": [
+                {
+                  "value": "Loretta Catherine Wycoff",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Culp",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "38266060",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:38266060"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1854",
+            "formal": "+1854"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1905",
+            "formal": "+1905"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Elizabeth Leota Wallace Culp",
+              "parts": [
+                {
+                  "value": "Elizabeth Leota Wallace",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Culp",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "137719959",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:137719959"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1886",
+            "formal": "+1886"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1912",
+            "formal": "+1912"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Hazel Evangeline Nelson Culp",
+              "parts": [
+                {
+                  "value": "Hazel Evangeline Nelson",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Culp",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "40352891",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:40352891"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1897",
+            "formal": "+1897"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1948",
+            "formal": "+1948"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Kathleen Gloria Culp Plasky",
+              "parts": [
+                {
+                  "value": "Kathleen Gloria Culp",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Plasky",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "37254917",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:37254917"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1919",
+            "formal": "+1919"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2006",
+            "formal": "+2006"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Nelson Lee Culp",
+              "parts": [
+                {
+                  "value": "Nelson Lee",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Culp",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "543069",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:543069"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1921",
+            "formal": "+1921"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1972",
+            "formal": "+1972"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary Lois Culp Wilson",
+              "parts": [
+                {
+                  "value": "Mary Lois Culp",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Wilson",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "9921792",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:9921792"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1925",
+            "formal": "+1925"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1998",
+            "formal": "+1998"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Martha Louise Culp Stills",
+              "parts": [
+                {
+                  "value": "Martha Louise Culp",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Stills",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "177182924",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:177182924"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1933",
+            "formal": "+1933"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2017",
+            "formal": "+2017"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Florence Jane Culp Hunter",
+              "parts": [
+                {
+                  "value": "Florence Jane Culp",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hunter",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "98046644",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:98046644"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1875",
+            "formal": "+1875"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1957",
+            "formal": "+1957"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ethel Zanthus Culp Newton",
+              "parts": [
+                {
+                  "value": "Ethel Zanthus Culp",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Newton",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "51843904",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:51843904"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1878",
+            "formal": "+1878"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1960",
+            "formal": "+1960"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Wycoff   Culp",
+              "parts": [
+                {
+                  "value": "John Wycoff",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Culp",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "543052",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:543052"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1883",
+            "formal": "+1883"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1962",
+            "formal": "+1962"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Blaine Merle Culp",
+              "parts": [
+                {
+                  "value": "Blaine Merle",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Culp",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "40352788",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:40352788"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1884",
+            "formal": "+1884"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1967",
+            "formal": "+1967"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Frederick Fyre Culp",
+              "parts": [
+                {
+                  "value": "Frederick Fyre",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Culp",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "75775599",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:75775599"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1889",
+            "formal": "+1889"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1966",
+            "formal": "+1966"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Isaac Newton Culp",
+              "parts": [
+                {
+                  "value": "Isaac Newton",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Culp",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "63147063",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:63147063"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1891",
+            "formal": "+1891"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1970",
+            "formal": "+1970"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#38266005"
+      },
+      "person2": {
+        "resource": "#40352788"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#38266060"
+      },
+      "person2": {
+        "resource": "#40352788"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#137719959"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#40352891"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#37254917"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#543069"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#9921792"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#177182924"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#98046644"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#51843904"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#543052"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#40352788"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#75775599"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#40352788"
+      },
+      "person2": {
+        "resource": "#63147063"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Find A Grave, database and images (http://findagrave.com : accessed 17 April 2013), memorial #40352788 for Blaine Merle Culp (1884 - 1967) - Find A Grave Memorial."
+        }
+      ],
+      "about": "https://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=40352788",
+      "titles": [
+        {
+          "value": "Blaine Merle Culp (1884 - 1967) - Find A Grave Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Find A Grave"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.findagrave.com"
+      }
+    }
+  ]
+}

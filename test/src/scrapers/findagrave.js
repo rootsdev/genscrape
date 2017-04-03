@@ -1,6 +1,6 @@
 var setupTest = require('../../testHelpers').createTestRunner('findagrave');
     
-describe('findagrave', function(){
+describe.only('findagrave', function(){
   
   it('Not famous; no family; no www', setupTest(
     'raymond-zierak',
@@ -50,6 +50,11 @@ describe('findagrave', function(){
   it('period in a family member\'s name', setupTest(
     'alfred-zandell',
     'https://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=53317193'
+  ));
+  
+  it('grave manager', setupTest(
+    'blaine-culp',
+    'https://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=40352788'
   ));
   
 });

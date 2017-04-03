@@ -36,26 +36,7 @@ function run(emitter){
   
   primaryPerson.addFact(getFact('http://gedcomx.org/Birth', 1, 2));
   primaryPerson.addFact(getFact('http://gedcomx.org/Death', 2, 2));
-  
-  // Burial is ugly. We just want some text nodes: the third, which is the cemetary
-  // name, and evens after the 4th except for the plot line
-  var burialCell = xpath(5, 1),
-      burialParts = [];
-  Array.from(burialCell.childNodes).forEach(function(node, i){
-    if(i === 3 || (i > 4 && i % 2 == 0)){
-      if(node.textContent.indexOf('Plot:') === -1){
-        burialParts.push(node.textContent);
-      }
-    }
-  });
-  if(burialParts.length){
-    primaryPerson.addFact({
-      type: 'http://gedcomx.org/Burial',
-      place: {
-        original: burialParts.join(', ')
-      }
-    });
-  }
+  primaryPerson.addFact(burialFact());
   
   var family = getFamilyLinks();
   
@@ -181,7 +162,7 @@ function getFact(type, row, cell){
   var $cell = xpath(row, cell),
       parts, date, place, fact;
   if($cell){
-    parts = $cell.innerHTML.split('<br>');
+    parts = $cell.innerHTML.replace(/<a.+<\/a>/,'').trim().split('<br>');
     
     if(parts.length === 1){
       if(/\d{4}/.test(parts[0])){
@@ -227,7 +208,7 @@ function getFamilyLinks(){
       bioCell = xpath(3, 1),
       familyLinks = false,
       relType, currentNode, currentText, currentNodeName;
-  
+      
   for(var i = 0; i < bioCell.childNodes.length; i++){
     currentNode = bioCell.childNodes[i];
     currentText = currentNode.textContent.trim();
@@ -239,7 +220,10 @@ function getFamilyLinks(){
     
     if(familyLinks){
       
-      if(currentText === 'Parents:'){
+      if(currentText === '[Edit]'){
+        continue;
+      } 
+      else if(currentText === 'Parents:'){
         relType = 'parents';
         continue;
       }
@@ -321,6 +305,38 @@ function familyLinkFact(type, date){
         formal: '+' + date
       }
     };
+  }
+}
+
+/**
+ * Get the burial fact.
+ * 
+ * @returns {GedcomX.Fact}
+ */
+function burialFact(){
+  // Burial is ugly. We just want some text nodes: the third, which is the cemetery
+  // name, and evens after the 4th except for the plot line.
+  // And that's all shifted one when you're the manager of the grave.
+  var manager = document.querySelector('.editButton') ? true : false,
+      burialCell = xpath(5, 1),
+      burialParts = [],
+      cemeteryLine = manager ? 4 : 3,
+      modStartLine = manager ? 5 : 4,
+      otherLinesMod = manager ? 1 : 0;
+  Array.from(burialCell.childNodes).forEach(function(node, i){
+    if(i === cemeteryLine || (i > modStartLine && i % 2 === otherLinesMod)){
+      if(node.textContent.indexOf('Plot:') === -1){
+        burialParts.push(node.textContent);
+      }
+    }
+  });
+  if(burialParts.length){
+    return new GedcomX.Fact({
+      type: 'http://gedcomx.org/Burial',
+      place: {
+        original: burialParts.join(', ').trim()
+      }
+    });
   }
 }
 
