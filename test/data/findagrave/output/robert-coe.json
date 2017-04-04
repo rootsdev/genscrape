@@ -45,6 +45,12 @@
           "place": {
             "original": "Hempstead, Nassau County, New York, USA"
           }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Non-Cemetery Burial"
+          }
         }
       ],
       "sources": [

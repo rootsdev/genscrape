@@ -52,9 +52,14 @@ describe.only('findagrave', function(){
     'https://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=53317193'
   ));
   
-  it('grave manager', setupTest(
+  it('grave manager - blaine', setupTest(
     'blaine-culp',
     'https://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=40352788'
+  ));
+  
+  it('grave manager - alonzo', setupTest(
+    'alonzo-culp',
+    'https://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=38266005'
   ));
   
 });

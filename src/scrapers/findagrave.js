@@ -32,8 +32,7 @@ function run(emitter){
   
   gedx.addPerson(primaryPerson);
   
-  primaryPerson.addName(getName(document.querySelector('.plus2').textContent));
-  
+  primaryPerson.addName(getName());
   primaryPerson.addFact(getFact('http://gedcomx.org/Birth', 1, 2));
   primaryPerson.addFact(getFact('http://gedcomx.org/Death', 2, 2));
   primaryPerson.addFact(burialFact());
@@ -119,47 +118,53 @@ function run(emitter){
 /**
  * Create GedcomX.Name from the name string.
  * 
- * @param {String} nameText
  * @returns {GedcomX.Name}
  */
-function getName(nameText){
-  var suffix, parts = nameText.split(',');
-  if(parts.length > 1){
-    suffix = parts[1];
-    nameText = parts[0];
+function getName(){
+  var result = xpath([
+    '/html/body/table/tbody/tr/td[3]/table/tbody/tr[1]/td/font',
+    '/html/body/table/tbody/tr/td[2]/table/tbody/tr[1]/td/font'
+  ]);
+  if(result){
+    var nameText =  result.textContent.replace('[Edit]');
+    var suffix, parts = nameText.split(',');
+    if(parts.length > 1){
+      suffix = parts[1];
+      nameText = parts[0];
+    }
+    parts = utils.splitName(nameText);
+    var nameForm = {
+      parts: [
+        {
+          type: 'http://gedcomx.org/Given',
+          value: parts[0]
+        },
+        {
+          type: 'http://gedcomx.org/Surname',
+          value: parts[1]
+        }
+      ]
+    };
+    if(suffix){
+      nameForm.parts.push({
+        type: 'http://gedcomx.org/Suffix',
+        value: suffix
+      });
+    }
+    return GedcomX.Name().addNameForm(nameForm);
   }
-  parts = utils.splitName(nameText);
-  var nameForm = {
-    parts: [
-      {
-        type: 'http://gedcomx.org/Given',
-        value: parts[0]
-      },
-      {
-        type: 'http://gedcomx.org/Surname',
-        value: parts[1]
-      }
-    ]
-  };
-  if(suffix){
-    nameForm.parts.push({
-      type: 'http://gedcomx.org/Suffix',
-      value: suffix
-    });
-  }
-  return GedcomX.Name().addNameForm(nameForm);
 }
 
 /**
  * Get a birth or death fact
  * 
  * @param {String} type - The GedcomX type
- * @param {Integer} row - param for xpath()
- * @param {Integer} cell - param for xpath()
+ * @param {Integer} row - param for bodyXpath()
+ * @param {Integer} cell - param for bodyXpath()
  * @returns {GedcomX.Fact}
  */
 function getFact(type, row, cell){
-  var $cell = xpath(row, cell),
+  var $cell = bodyXpath(row, cell),
       parts, date, place, fact;
   if($cell){
     parts = $cell.innerHTML.replace(/<a.+<\/a>/,'').trim().split('<br>');
@@ -205,7 +210,7 @@ function getFamilyLinks(){
         siblings: [],
         children: []
       }, 
-      bioCell = xpath(3, 1),
+      bioCell = bodyXpath(3, 1),
       familyLinks = false,
       relType, currentNode, currentText, currentNodeName;
       
@@ -314,22 +319,33 @@ function familyLinkFact(type, date){
  * @returns {GedcomX.Fact}
  */
 function burialFact(){
-  // Burial is ugly. We just want some text nodes: the third, which is the cemetery
-  // name, and evens after the 4th except for the plot line.
-  // And that's all shifted one when you're the manager of the grave.
-  var manager = document.querySelector('.editButton') ? true : false,
-      burialCell = xpath(5, 1),
+  var burialCell = bodyXpath(5, 1),
       burialParts = [],
-      cemeteryLine = manager ? 4 : 3,
-      modStartLine = manager ? 5 : 4,
-      otherLinesMod = manager ? 1 : 0;
-  Array.from(burialCell.childNodes).forEach(function(node, i){
-    if(i === cemeteryLine || (i > modStartLine && i % 2 === otherLinesMod)){
-      if(node.textContent.indexOf('Plot:') === -1){
-        burialParts.push(node.textContent);
+      text;
+      
+  // Loop through all nodes in the burial cell: ignore whitespace and special
+  // strings we don't want; gather everything else for the place string
+  if(burialCell){
+    Array.from(burialCell.childNodes).forEach(function(node, i){
+      text = node.textContent.trim();
+      if(text.indexOf('Plot:') !== -1){
+        return;
       }
-    }
-  });
+      if(text){
+        switch(text){
+          case 'Burial:':
+          case '[Edit]':
+          case '[Add Plot]':
+          case '[Edit Plot]':
+            break;
+          default:
+            burialParts.push(text);
+        }
+      }
+    });
+  }
+  
+  // Return a fact if we have any place data
   if(burialParts.length){
     return new GedcomX.Fact({
       type: 'http://gedcomx.org/Burial',
@@ -341,19 +357,37 @@ function burialFact(){
 }
 
 /**
- * Execute an XPath query. Account for different possible locations. Return
- * the value we find first.
- * 
- * Only XPath can wrangle the hideous Find A Grave DOM.
+ * Execute an xpath query against the main body table to get vitals.
  * 
  * @param {Integer} row
  * @param {Integer} cell
  * @returns {HTMLElement}
  */
-function xpath(row, cell){
-  var result1 = document.evaluate('/html/body/table/tbody/tr/td[3]/table/tbody/tr[3]/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[' + row + ']/td[' + cell + ']', document, null, window.XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-  var result2 = document.evaluate('/html/body/table/tbody/tr/td[3]/table/tbody/tr[4]/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[' + row + ']/td[' + cell + ']', document, null, window.XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-  return result1.snapshotLength ? result1.snapshotItem(0) : result2.snapshotItem(0);
+function bodyXpath(row, cell){
+  return xpath([
+    '/html/body/table/tbody/tr/td[3]/table/tbody/tr[3]/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[' + row + ']/td[' + cell + ']',
+    '/html/body/table/tbody/tr/td[3]/table/tbody/tr[4]/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[' + row + ']/td[' + cell + ']',
+    '/html/body/table/tbody/tr/td[3]/table/tbody/tr[5]/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[' + row + ']/td[' + cell + ']'
+  ]);
+}
+
+/**
+ * Execute an XPath query. Account for different possible locations. Return
+ * the value we find first.
+ * 
+ * Only XPath can wrangle the hideous Find A Grave DOM.
+ * 
+ * @param {String[]} paths List of possbile xpath locations
+ * @returns {HTMLElement}
+ */
+function xpath(paths){
+  var result;
+  for(var i = 0; i < paths.length; i++){
+    result = document.evaluate(paths[i], document, null, window.XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+    if(result.snapshotLength){
+      return result.snapshotItem(0);
+    }
+  }
 }
 
 /**
