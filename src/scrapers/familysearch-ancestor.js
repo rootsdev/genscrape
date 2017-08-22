@@ -3,7 +3,7 @@ var debug = require('debug')('genscrape:scrapers:familysearch-ancestor'),
     GedcomX = require('gedcomx-js');
 
 var urls = [
-  utils.urlPatternToRegex("https://familysearch.org/tree/*")
+  utils.urlPatternToRegex("https://www.familysearch.org/tree/*")
 ];
 
 module.exports = function(register){
@@ -119,7 +119,7 @@ function processUrl(emitter) {
  */
 function getPersonAndRelationships(personId, callback){
   debug('getPersonAndRelationships: ' + personId);
-  utils.getJSON('https://familysearch.org/platform/tree/persons/' + personId + '?relatives', {
+  utils.getJSON('https://www.familysearch.org/platform/tree/persons/' + personId + '?relatives', {
     'X-FS-Feature-Tag': 'consolidate-redundant-resources'
   }, callback);
 }

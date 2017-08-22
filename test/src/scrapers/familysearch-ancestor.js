@@ -18,7 +18,7 @@ describe('familysearch ancestor', function(){
     nockSetup('K2HD-1TC');
     nockSetup('KJZ2-417');
       
-    helpers.mockWindow('https://familysearch.org/tree/person/K2HD-1TC/details', function(){
+    helpers.mockWindow('https://www.familysearch.org/tree/person/K2HD-1TC/details', function(){
       
       var dataEvents = 0,
           noDataEvents = 0,
@@ -64,13 +64,13 @@ describe('familysearch ancestor', function(){
   });
   
   it('bad http response', function(done){
-    nock('https://familysearch.org')
+    nock('https://api.familysearch.org')
       .defaultReplyHeaders({
         'content-type': 'application/json'
       })
       .get('/platform/tree/persons-with-relationships?persons&person=MMM')
       .reply(500);
-    helpers.mockWindow('https://familysearch.org/tree/person/MMM/details', function(){
+    helpers.mockWindow('https://www.familysearch.org/tree/person/MMM/details', function(){
       genscrape()
       .on('error', function(e){
         expect(e).to.exist;
@@ -87,7 +87,7 @@ describe('familysearch ancestor', function(){
  */
 function nockSetup(personId){
   debug('nock setup: ' + personId);
-  nock('https://familysearch.org')
+  nock('https://www.familysearch.org')
     .defaultReplyHeaders({
       'content-type': 'application/json'
     })

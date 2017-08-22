@@ -3,8 +3,8 @@ var debug = require('debug')('genscrape:scrapers:familysearch-record'),
     GedcomX = require('gedcomx-js');
 
 var urls = [
-  utils.urlPatternToRegex("https://familysearch.org/pal:/MM9.1.1/*"),
-  utils.urlPatternToRegex("https://familysearch.org/ark:/61903/1:1:*")
+  utils.urlPatternToRegex("https://www.familysearch.org/pal:/MM9.1.1/*"),
+  utils.urlPatternToRegex("https://www.familysearch.org/ark:/61903/1:1:*")
 ];
 
 module.exports = function(register){
@@ -64,7 +64,7 @@ function run(emitter){
           ark = identifiers.getValues('http://gedcomx.org/Persistent')[0];
           
           // Fix principal flag
-          if(ark && ark === url){
+          if(ark && ark === url.replace('www.','')){
             person.setPrincipal(true);
           } else {
             person.setPrincipal();

@@ -1,6 +1,6 @@
 var setupTest = require('../../testHelpers').createTestRunnerWithNock({
   scraperName: 'familysearch-record',
-  domain: 'https://familysearch.org', 
+  domain: 'https://www.familysearch.org', 
   testName: function(path, recordId){
     return recordId;
   },
