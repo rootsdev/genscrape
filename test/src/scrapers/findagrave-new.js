@@ -1,6 +1,6 @@
-var setupTest = require('../../testHelpers').createTestRunner('findagrave');
+var setupTest = require('../../testHelpers').createTestRunner('findagrave-new');
     
-describe('findagrave', function(){
+describe('findagrave - new', function(){
   
   it('Not famous; no family; no www', setupTest(
     'raymond-zierak',
@@ -17,7 +17,7 @@ describe('findagrave', function(){
     'https://new.findagrave.com/memorial/7657594'
   ));
   
-  it('Multiple spouses', setupTest(
+  it.only('Multiple spouses', setupTest(
     'ronald-reagan',
     'https://new.findagrave.com/memorial/4244'
   ));

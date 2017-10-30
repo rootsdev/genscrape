@@ -81,6 +81,7 @@ require('./scrapers/billiongraves')(register);
 require('./scrapers/familysearch-record')(register);
 require('./scrapers/familysearch-ancestor')(register);
 require('./scrapers/findagrave')(register);
+require('./scrapers/findagrave-new')(register);
 require('./scrapers/findmypast-record')(register);
 require('./scrapers/findmypast-tree')(register);
 require('./scrapers/genealogieonline')(register);

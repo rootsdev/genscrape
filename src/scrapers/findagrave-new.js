@@ -28,6 +28,7 @@ function run(emitter){
   gedx.addPerson(primaryPerson);
   
   primaryPerson.addName(getName());
+  /*
   primaryPerson.addFact(getFact('http://gedcomx.org/Birth', 1, 2));
   primaryPerson.addFact(getFact('http://gedcomx.org/Death', 2, 2));
   primaryPerson.addFact(burialFact());
@@ -72,6 +73,7 @@ function run(emitter){
   family.siblings.forEach(function(sibling){
     gedx.addPerson(sibling);
   });
+  */
   
   // Agent
   var agent = GedcomX.Agent({
@@ -81,7 +83,7 @@ function run(emitter){
       value: 'Find A Grave'
     }],
     homepage: {
-      resource: 'https://www.findagrave.com'
+      resource: 'https://new.findagrave.com'
     }
   });
   gedx.addAgent(agent);
@@ -96,8 +98,7 @@ function run(emitter){
     ],
     citations: [
       {
-        value: 'Find A Grave, database and images (http://findagrave.com : accessed ' + utils.getDateString() + ')'
-          + ', memorial #' + getMemorialId(document.location.href) + ' for ' + document.title + '.'
+        value: document.getElementById('citationInfo').textContent.trim().replace(/\s\s+/g, ' ')
       }
     ],
     repository: {
@@ -116,12 +117,9 @@ function run(emitter){
  * @returns {GedcomX.Name}
  */
 function getName(){
-  var result = xpath([
-    '/html/body/table/tbody/tr/td[3]/table/tbody/tr[1]/td/font',
-    '/html/body/table/tbody/tr/td[2]/table/tbody/tr[1]/td/font'
-  ]);
-  if(result){
-    var nameText =  result.textContent.replace('[Edit]');
+  var h1 = document.getElementById('bio-name');
+  if(h1){
+    var nameText =  h1.textContent.trim();
     var suffix, parts = nameText.split(',');
     if(parts.length > 1){
       suffix = parts[1];
@@ -392,7 +390,13 @@ function xpath(paths){
  * @returns {String}
  */
 function getMemorialId(url){
-  return utils.getQueryParams(url).GRid;
+  /**
+   * URLs may be in different forms, such as https://new.findagrave.com/memorial/1234
+   * or https://new.findagrave.com/cemetery/online/1234. The memorial IDs are in
+   * different positions. The best assumption we can make is that the memorial
+   * ID will be the first number in the URL starting from the left.
+   */
+  return url.match(/\d+/)[0];
 }
 
 /**
