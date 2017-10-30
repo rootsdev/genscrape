@@ -2,7 +2,7 @@ var setupTest = require('../../testHelpers').createTestRunner('findagrave-new');
     
 describe('findagrave - new', function(){
   
-  it('Not famous; no family; no www', setupTest(
+  it('Not famous; no family', setupTest(
     'raymond-zierak',
     'https://new.findagrave.com/memorial/65630115'
   ));

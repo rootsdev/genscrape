@@ -28,11 +28,11 @@ function run(emitter){
   gedx.addPerson(primaryPerson);
   
   primaryPerson.addName(getName());
-  /*
-  primaryPerson.addFact(getFact('http://gedcomx.org/Birth', 1, 2));
-  primaryPerson.addFact(getFact('http://gedcomx.org/Death', 2, 2));
-  primaryPerson.addFact(burialFact());
+  primaryPerson.addFact(getBirthFact());
+  primaryPerson.addFact(getDeathFact());
+  primaryPerson.addFact(getBurialFact());
   
+  /*
   var family = getFamilyLinks();
   
   // When processing the family we can't make any assumptions about relationship
@@ -98,7 +98,7 @@ function run(emitter){
     ],
     citations: [
       {
-        value: document.getElementById('citationInfo').textContent.trim().replace(/\s\s+/g, ' ')
+        value: collapseWhitespace(document.getElementById('citationInfo').textContent)
       }
     ],
     repository: {
@@ -149,45 +149,83 @@ function getName(){
 }
 
 /**
- * Get a birth or death fact
+ * Get the birth fact
  * 
- * @param {String} type - The GedcomX type
- * @param {Integer} row - param for bodyXpath()
- * @param {Integer} cell - param for bodyXpath()
+ * @return {GedcomX.Fact}
+ */
+function getBirthFact() {
+  var date = document.getElementById('birthDateLabel'),
+      place = document.getElementById('birthLocationLabel');
+  if(date || place & date.textContent !== 'unknown') {
+    var birth = {
+      type: 'http://gedcomx.org/Birth'
+    };
+    if(date) {
+      birth.date = {
+        original: date.textContent.trim()
+      };
+    }
+    if(place) {
+      birth.place = {
+        original: place.textContent.trim()
+      };
+    }
+    return birth;
+  }
+}
+
+/**
+ * Get the death fact
+ * 
+ * @return {GedcomX.Fact}
+ */
+ function getDeathFact() {
+  var date = document.getElementById('deathDateLabel'),
+      place = document.getElementById('deathLocationLabel');
+  if(date || place & date.textContent !== 'unknown') {
+    var death = {
+      type: 'http://gedcomx.org/Death'
+    };
+    if(date) {
+      death.date = {
+        original: date.textContent.trim()
+      };
+    }
+    if(place) {
+      death.place = {
+        original: place.textContent.trim()
+      };
+    }
+    return death;
+  }
+}
+
+/**
+ * Get the burial fact
+ * 
  * @returns {GedcomX.Fact}
  */
-function getFact(type, row, cell){
-  var $cell = bodyXpath(row, cell),
-      parts, date, place, fact;
-  if($cell){
-    parts = $cell.innerHTML.replace(/<a.+<\/a>/,'').trim().split('<br>');
+function getBurialFact(){
+  var burialRow = document.querySelector('[itemtype="https://schema.org/Cemetery"]'),
+      cemeteryName = burialRow.querySelector('.info'),
+      placeName = burialRow.querySelector('.place');
+  
+  // Return a fact if we have any place data
+  if(placeName || cemeteryName){
+    var burialParts = [];
+    if(cemeteryName) {
+      burialParts.push(cemeteryName.textContent);
+    }
+    if(placeName) {
+      burialParts.push(placeName.textContent);
+    }
     
-    if(parts.length === 1){
-      if(/\d{4}/.test(parts[0])){
-        date = parts[0];
+    return new GedcomX.Fact({
+      type: 'http://gedcomx.org/Burial',
+      place: {
+        original: collapseWhitespace(burialParts.join(', '))
       }
-    }
-    else if(parts.length >= 2){
-      date = parts.shift();
-      place = parts.join(', ');
-    }
-    
-    if(date || place){
-      fact = {
-        type: type
-      };
-      if(date){
-        fact.date = {
-          original: date
-        };
-      }
-      if(place){
-        fact.place = {
-          original: place
-        };
-      }
-      return GedcomX.Fact(fact);
-    }
+    });
   }
 }
 
@@ -307,49 +345,6 @@ function familyLinkFact(type, date){
 }
 
 /**
- * Get the burial fact.
- * 
- * @returns {GedcomX.Fact}
- */
-function burialFact(){
-  var burialCell = bodyXpath(5, 1),
-      burialParts = [],
-      text;
-      
-  // Loop through all nodes in the burial cell: ignore whitespace and special
-  // strings we don't want; gather everything else for the place string
-  if(burialCell){
-    Array.from(burialCell.childNodes).forEach(function(node, i){
-      text = node.textContent.trim();
-      if(text.indexOf('Plot:') !== -1){
-        return;
-      }
-      if(text){
-        switch(text){
-          case 'Burial:':
-          case '[Edit]':
-          case '[Add Plot]':
-          case '[Edit Plot]':
-            break;
-          default:
-            burialParts.push(text);
-        }
-      }
-    });
-  }
-  
-  // Return a fact if we have any place data
-  if(burialParts.length){
-    return new GedcomX.Fact({
-      type: 'http://gedcomx.org/Burial',
-      place: {
-        original: burialParts.join(', ').trim()
-      }
-    });
-  }
-}
-
-/**
  * Execute an xpath query against the main body table to get vitals.
  * 
  * @param {Integer} row
@@ -410,4 +405,17 @@ function getMemorialId(url){
  */
 function getMemorialIdentifier(url){
   return 'genscrape://findagrave/memorial:' + getMemorialId(url);
+}
+
+/**
+ * Collapse all white space by replacing multiple whitespace characters with a
+ * single space. Also trim whitespace from the ends.
+ * 
+ * @param {String} text
+ * @return {String}
+ */
+function collapseWhitespace(text) {
+  if(text) {
+    return text.trim().replace(/\s\s+/g, ' ');
+  }
 }
