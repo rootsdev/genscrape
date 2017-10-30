@@ -1,0 +1,96 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "65630115",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:65630115"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Raymond J.",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zierak",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "9 Mar 1914"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery County, New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "3 Apr 2006"
+          },
+          "place": {
+            "original": "Amsterdam, Montgomery County, New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Saint Stanislaus Cemetery, Amsterdam, Montgomery County, New York, USA"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Find A Grave, database and images (https://new.findagrave.com : accessed ), memorial page for Raymond J. Zierak (9 Mar 1914–3 Apr 2006), Find A Grave Memorial no. 65630115, citing Saint Stanislaus Cemetery, Amsterdam, Montgomery County, New York, USA ; Maintained by BJPC (contributor 46854426) ."
+        }
+      ],
+      "about": "https://new.findagrave.com/memorial/65630115",
+      "titles": [
+        {
+          "value": " Raymond J. Zierak (1914-2006) - Find A Grave Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Find A Grave"
+        }
+      ],
+      "homepage": {
+        "resource": "https://new.findagrave.com"
+      }
+    }
+  ]
+}

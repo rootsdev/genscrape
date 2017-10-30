@@ -17,7 +17,7 @@ describe('findagrave - new', function(){
     'https://new.findagrave.com/memorial/7657594'
   ));
   
-  it.only('Multiple spouses', setupTest(
+  it('Multiple spouses', setupTest(
     'ronald-reagan',
     'https://new.findagrave.com/memorial/4244'
   ));

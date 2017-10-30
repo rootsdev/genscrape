@@ -1,0 +1,586 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "53317193",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:53317193"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Alfred C.",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zandell",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1876"
+          },
+          "place": {
+            "original": "Washington, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "28 Jul 1939"
+          },
+          "place": {
+            "original": "Walla Walla, Walla Walla County, Washington, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Mountain View Cemetery, Walla Walla, Walla Walla County, Washington, USA"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John August Zandell",
+              "parts": [
+                {
+                  "value": "John August",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zandell",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "52826798",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:52826798"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1838",
+            "formal": "+1838"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1898",
+            "formal": "+1898"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Elizabeth Metcalf Zandell",
+              "parts": [
+                {
+                  "value": "Elizabeth Metcalf",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zandell",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "39074266",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:39074266"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1844",
+            "formal": "+1844"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1925",
+            "formal": "+1925"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ella Theresa Draper Zandell",
+              "parts": [
+                {
+                  "value": "Ella Theresa Draper",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zandell",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "53317332",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:53317332"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1885",
+            "formal": "+1885"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1943",
+            "formal": "+1943"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary Zandell",
+              "parts": [
+                {
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zandell",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "53317507",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:53317507"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1919",
+            "formal": "+1919"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1997",
+            "formal": "+1997"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Anna E. Zandell Gallagher",
+              "parts": [
+                {
+                  "value": "Anna E. Zandell",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Gallagher",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "39073509",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:39073509"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1873",
+            "formal": "+1873"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1961",
+            "formal": "+1961"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Emil Zandell",
+              "parts": [
+                {
+                  "value": "John Emil",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zandell",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "39074294",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:39074294"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1880",
+            "formal": "+1880"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1919",
+            "formal": "+1919"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Oscar C Zandell",
+              "parts": [
+                {
+                  "value": "Oscar C",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zandell",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "38783549",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:38783549"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1882",
+            "formal": "+1882"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1956",
+            "formal": "+1956"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Olivia Josephine Zandell Moore",
+              "parts": [
+                {
+                  "value": "Olivia Josephine Zandell",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Moore",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "39074639",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:39074639"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1884",
+            "formal": "+1884"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1957",
+            "formal": "+1957"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Alexis E Zandell",
+              "parts": [
+                {
+                  "value": "Alexis E",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Zandell",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "133494443",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:133494443"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1886",
+            "formal": "+1886"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1946",
+            "formal": "+1946"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#52826798"
+      },
+      "person2": {
+        "resource": "#53317193"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#39074266"
+      },
+      "person2": {
+        "resource": "#53317193"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#53317193"
+      },
+      "person2": {
+        "resource": "#53317332"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#53317193"
+      },
+      "person2": {
+        "resource": "#53317507"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Find A Grave, database and images (https://new.findagrave.com : accessed ), memorial page for Alfred C. Zandell (1876–28 Jul 1939), Find A Grave Memorial no. 53317193, citing Mountain View Cemetery, Walla Walla, Walla Walla County, Washington, USA ; Maintained by Elaine and Bill Schrock (contributor 46915548) ."
+        }
+      ],
+      "about": "https://new.findagrave.com/memorial/53317193",
+      "titles": [
+        {
+          "value": " Alfred C. Zandell (1876-1939) - Find A Grave Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Find A Grave"
+        }
+      ],
+      "homepage": {
+        "resource": "https://new.findagrave.com"
+      }
+    }
+  ]
+}

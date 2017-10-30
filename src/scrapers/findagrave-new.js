@@ -32,10 +32,9 @@ function run(emitter){
   primaryPerson.addFact(getDeathFact());
   primaryPerson.addFact(getBurialFact());
   
-  /*
-  var family = getFamilyLinks();
+  var family = getRelativeGroups();
   
-  // When processing the family we can't make any assumptions about relationship
+  // When processing the family we can't make any assumptions about relationships
   // between the family members. I.e. we don't know whether the parents should
   // have a couple relationship, whether siblings should have a parent-child
   // relationship with the parents, and whether children should have a
@@ -43,37 +42,59 @@ function run(emitter){
   // won't be referenced by any relationship but will be included as persons
   // in the document.
   
-  family.parents.forEach(function(parent){
-    gedx.addPerson(parent);
-    gedx.addRelationship({
-      type: 'http://gedcomx.org/ParentChild',
-      person1: parent,
-      person2: primaryPerson
+  if(family.parents) {
+    family.parents.forEach(function(parent){
+      gedx.addPerson(parent);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: parent,
+        person2: primaryPerson
+      });
     });
-  });
+  }
   
-  family.spouses.forEach(function(spouse){
-    gedx.addPerson(spouse);
-    gedx.addRelationship({
-      type: 'http://gedcomx.org/Couple',
-      person1: primaryPerson,
-      person2: spouse
+  if(family.spouse) {
+    family.spouse.forEach(function(spouse){
+      gedx.addPerson(spouse);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/Couple',
+        person1: primaryPerson,
+        person2: spouse
+      });
     });
-  });
-  
-  family.children.forEach(function(child){
-    gedx.addPerson(child);
-    gedx.addRelationship({
-      type: 'http://gedcomx.org/ParentChild',
-      person1: primaryPerson,
-      person2: child
+  }
+  if(family.spouses) {
+    family.spouses.forEach(function(spouse){
+      gedx.addPerson(spouse);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/Couple',
+        person1: primaryPerson,
+        person2: spouse
+      });
     });
-  });
+  }
   
-  family.siblings.forEach(function(sibling){
-    gedx.addPerson(sibling);
-  });
-  */
+  if(family.children) {
+    family.children.forEach(function(child){
+      gedx.addPerson(child);
+      gedx.addRelationship({
+        type: 'http://gedcomx.org/ParentChild',
+        person1: primaryPerson,
+        person2: child
+      });
+    });
+  }
+  
+  if(family.siblings) {
+    family.siblings.forEach(function(sibling){
+      gedx.addPerson(sibling);
+    });
+  }
+  if(family['half siblings']){
+    family['half siblings'].forEach(function(sibling){
+      gedx.addPerson(sibling);
+    });
+  }
   
   // Agent
   var agent = GedcomX.Agent({
@@ -230,99 +251,42 @@ function getBurialFact(){
 }
 
 /**
- * Get the family links. The relationship type arrays are filled with GedcomX.Person objects
+ * Get relatives grouped by relationship type
  * 
- * @returns {Object} Format { parents: [], spouses: [], siblings: [], children: [] }
+ * @return {Object} [key=relationship] => Array of persons
  */
-function getFamilyLinks(){
-  var family = {
-        parents: [],
-        spouses: [],
-        siblings: [],
-        children: []
-      }, 
-      bioCell = bodyXpath(3, 1),
-      familyLinks = false,
-      relType, currentNode, currentText, currentNodeName;
-      
-  for(var i = 0; i < bioCell.childNodes.length; i++){
-    currentNode = bioCell.childNodes[i];
-    currentText = currentNode.textContent.trim();
-    
-    // Skip empty nodes
-    if(!currentText){
-      continue;
-    }
-    
-    if(familyLinks){
-      
-      if(currentText === '[Edit]'){
-        continue;
-      } 
-      else if(currentText === 'Parents:'){
-        relType = 'parents';
-        continue;
+function getRelativeGroups() {
+  return Array.from(document.querySelectorAll('.data-family .data-filled-user.row .col-sm-6')).reduce(function(groups, column){
+    Array.from(column.querySelectorAll('b.label-relation')).forEach(function(label){
+      var labelText = label.textContent;
+      var list = label.nextElementSibling;
+      if(list) {
+        groups[labelText.toLowerCase()] = Array.from(list.querySelectorAll('li')).map(processRelative);
       }
-      else if(currentText === 'Spouse:' || currentText === 'Spouses:'){
-        relType = 'spouses';
-        continue;
-      }
-      else if(currentText === 'Children:'){
-        relType = 'children';
-        continue;
-      }
-      else if(currentText === 'Sibling:'){
-        relType = 'siblings';
-        continue;
-      }
-      
-      // Skip this fake link
-      if(currentText === '*Calculated relationship'){
-        break;
-      }
-      
-      // At this point, any <a> or <font> tags should be people
-      currentNodeName = currentNode.nodeName;
-      if(currentNodeName === 'A' || currentNodeName === 'FONT'){
-        family[relType].push(processFamilyLink(currentText, currentNode.href));
-      }
-      
-    }
-    
-    else if(currentText.indexOf('Family links:') === 0){
-      familyLinks = true;
-    }
-  }
-  
-  return family;
+    });
+    return groups;
+  }, {});
 }
 
 /**
  * Extract the name, birth year, and death year of a family link.
  * 
- * @param {String} linkText
- * @param {String} url
+ * @param {Element} item 
  * @returns {GedcomX.Person}
  */
-function processFamilyLink(linkText, url){
-  var matches = linkText.match(/^([\w\s\.]+)( \((\w{4}) - (\w{4})\))?$/);
-  if(matches){
-    var data = {
-      name: matches[1],
-      birthYear: matches[3],
-      deathYear: matches[4]
-    };
-    return GedcomX.Person()
-      .addSimpleName(data.name)
-      .setId(getMemorialId(url))
-      .setIdentifiers({
-        'genscrape': getMemorialIdentifier(url)
-      })
-      .addFact(familyLinkFact('http://gedcomx.org/Birth', data.birthYear))
-      .addFact(familyLinkFact('http://gedcomx.org/Death', data.deathYear));
-  } else {
-    console.error('Find A Grave: Unable to parse family link: ' + linkText);
-  }
+function processRelative(item){
+  var name = item.querySelector('#familyNameLabel').textContent.replace('*','').trim();
+  var url = item.querySelector('a').href;
+  var birthLabel = item.querySelector('#familyBirthLabel');
+  var deathLabel = item.querySelector('#familyDeathLabel');
+  return GedcomX.Person()
+    .addSimpleName(name)
+    .setId(getMemorialId(url))
+    .setIdentifiers({
+      'genscrape': getMemorialIdentifier(url)
+    })
+    .addFact(relativeFact('http://gedcomx.org/Birth', birthLabel ? birthLabel.textContent : null))
+    .addFact(relativeFact('http://gedcomx.org/Death', deathLabel ? deathLabel.textContent : null));
 }
 
 /**
@@ -332,7 +296,7 @@ function processFamilyLink(linkText, url){
  * @param {String} date
  * @returns {GedcomX.Fact}
  */
-function familyLinkFact(type, date){
+function relativeFact(type, date){
   if(parseInt(date, 10)){
     return {
       type: type,
@@ -341,40 +305,6 @@ function familyLinkFact(type, date){
         formal: '+' + date
       }
     };
-  }
-}
-
-/**
- * Execute an xpath query against the main body table to get vitals.
- * 
- * @param {Integer} row
- * @param {Integer} cell
- * @returns {HTMLElement}
- */
-function bodyXpath(row, cell){
-  return xpath([
-    '/html/body/table/tbody/tr/td[3]/table/tbody/tr[3]/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[' + row + ']/td[' + cell + ']',
-    '/html/body/table/tbody/tr/td[3]/table/tbody/tr[4]/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[' + row + ']/td[' + cell + ']',
-    '/html/body/table/tbody/tr/td[3]/table/tbody/tr[5]/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[' + row + ']/td[' + cell + ']'
-  ]);
-}
-
-/**
- * Execute an XPath query. Account for different possible locations. Return
- * the value we find first.
- * 
- * Only XPath can wrangle the hideous Find A Grave DOM.
- * 
- * @param {String[]} paths List of possbile xpath locations
- * @returns {HTMLElement}
- */
-function xpath(paths){
-  var result;
-  for(var i = 0; i < paths.length; i++){
-    result = document.evaluate(paths[i], document, null, window.XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-    if(result.snapshotLength){
-      return result.snapshotItem(0);
-    }
   }
 }
 

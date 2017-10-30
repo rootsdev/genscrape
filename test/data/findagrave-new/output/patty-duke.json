@@ -1,0 +1,332 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "160192994",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:160192994"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Patty",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Duke",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "14 Dec 1946"
+          },
+          "place": {
+            "original": "Elmhurst, Queens County, New York, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "29 Mar 2016"
+          },
+          "place": {
+            "original": "Coeur d'Alene, Kootenai County, Idaho, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Forest Cemetery, Coeur d'Alene, Kootenai County, Idaho, USA"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Patrick Duke",
+              "parts": [
+                {
+                  "value": "John Patrick",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Duke",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "184119864",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:184119864"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1913",
+            "formal": "+1913"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1964",
+            "formal": "+1964"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Frances Margaret McMahon Duke",
+              "parts": [
+                {
+                  "value": "Frances Margaret McMahon",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Duke",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "74886514",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:74886514"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1913",
+            "formal": "+1913"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1993",
+            "formal": "+1993"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Harry Falk",
+              "parts": [
+                {
+                  "value": "Harry",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Falk",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "163924394",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:163924394"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1933",
+            "formal": "+1933"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2016",
+            "formal": "+2016"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Carol Ann Duke Kennedy",
+              "parts": [
+                {
+                  "value": "Carol Ann Duke",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kennedy",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "110191665",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:110191665"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1938",
+            "formal": "+1938"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2013",
+            "formal": "+2013"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#184119864"
+      },
+      "person2": {
+        "resource": "#160192994"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#74886514"
+      },
+      "person2": {
+        "resource": "#160192994"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#160192994"
+      },
+      "person2": {
+        "resource": "#163924394"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Find A Grave, database and images (https://new.findagrave.com : accessed ), memorial page for Patty Duke (14 Dec 1946–29 Mar 2016), Find A Grave Memorial no. 160192994, citing Forest Cemetery, Coeur d'Alene, Kootenai County, Idaho, USA ; Maintained by Find A Grave ."
+        }
+      ],
+      "about": "https://new.findagrave.com/memorial/160192994",
+      "titles": [
+        {
+          "value": " Patty Duke (1946-2016) - Find A Grave Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Find A Grave"
+        }
+      ],
+      "homepage": {
+        "resource": "https://new.findagrave.com"
+      }
+    }
+  ]
+}

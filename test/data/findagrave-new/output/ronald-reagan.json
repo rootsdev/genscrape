@@ -1,0 +1,518 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "4244",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:4244"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Ronald Wilson",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "6 Feb 1911"
+          },
+          "place": {
+            "original": "Tampico, Whiteside County, Illinois, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "5 Jun 2004"
+          },
+          "place": {
+            "original": "Bel Air, Los Angeles County, California, USA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Ronald W Reagan Presidential Library, Simi Valley, Ventura County, California, USA"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Edward Reagan",
+              "parts": [
+                {
+                  "value": "John Edward",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "9000",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:9000"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1883",
+            "formal": "+1883"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1941",
+            "formal": "+1941"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Nelle Clyde Wilson Reagan",
+              "parts": [
+                {
+                  "value": "Nelle Clyde Wilson",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "9001",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:9001"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1883",
+            "formal": "+1883"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1962",
+            "formal": "+1962"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Nancy Reagan",
+              "parts": [
+                {
+                  "value": "Nancy",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "7657594",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:7657594"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1921",
+            "formal": "+1921"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2016",
+            "formal": "+2016"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Jane Wyman",
+              "parts": [
+                {
+                  "value": "Jane",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Wyman",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "21472958",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:21472958"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1917",
+            "formal": "+1917"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2007",
+            "formal": "+2007"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Maureen Elizabeth Reagan",
+              "parts": [
+                {
+                  "value": "Maureen Elizabeth",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "5860532",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:5860532"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1941",
+            "formal": "+1941"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2001",
+            "formal": "+2001"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Christine Reagan",
+              "parts": [
+                {
+                  "value": "Christine",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "66823998",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:66823998"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1947",
+            "formal": "+1947"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1947",
+            "formal": "+1947"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Neil Reagan",
+              "parts": [
+                {
+                  "value": "John Neil",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Reagan",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "8893588",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://findagrave/memorial:8893588"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1908",
+            "formal": "+1908"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1996",
+            "formal": "+1996"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#9000"
+      },
+      "person2": {
+        "resource": "#4244"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#9001"
+      },
+      "person2": {
+        "resource": "#4244"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#4244"
+      },
+      "person2": {
+        "resource": "#7657594"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#4244"
+      },
+      "person2": {
+        "resource": "#21472958"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#4244"
+      },
+      "person2": {
+        "resource": "#5860532"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#4244"
+      },
+      "person2": {
+        "resource": "#66823998"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Find A Grave, database and images (https://new.findagrave.com : accessed ), memorial page for Ronald Wilson Reagan (6 Feb 1911–5 Jun 2004), Find A Grave Memorial no. 4244, citing Ronald W Reagan Presidential Library, Simi Valley, Ventura County, California, USA ; Maintained by Find A Grave ."
+        }
+      ],
+      "about": "https://new.findagrave.com/memorial/4244",
+      "titles": [
+        {
+          "value": " Ronald Wilson Reagan (1911-2004) - Find A Grave Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Find A Grave"
+        }
+      ],
+      "homepage": {
+        "resource": "https://new.findagrave.com"
+      }
+    }
+  ]
+}
