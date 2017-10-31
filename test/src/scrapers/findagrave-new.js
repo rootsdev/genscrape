@@ -1,6 +1,6 @@
 var setupTest = require('../../testHelpers').createTestRunner('findagrave-new');
     
-describe('findagrave - new', function(){
+describe.only('findagrave - new', function(){
   
   it('Not famous; no family', setupTest(
     'raymond-zierak',
@@ -47,9 +47,9 @@ describe('findagrave - new', function(){
     'https://new.findagrave.com/memorial/37494703'
   ));
   
-  it('period in a family member\'s name', setupTest(
+  it('period in a family member\'s name; test www', setupTest(
     'alfred-zandell',
-    'https://new.findagrave.com/memorial/53317193'
+    'https://www.findagrave.com/memorial/53317193'
   ));
   
 });

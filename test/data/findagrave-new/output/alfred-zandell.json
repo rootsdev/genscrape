@@ -558,7 +558,7 @@
           "value": "Find A Grave, database and images (https://new.findagrave.com : accessed ), memorial page for Alfred C. Zandell (1876–28 Jul 1939), Find A Grave Memorial no. 53317193, citing Mountain View Cemetery, Walla Walla, Walla Walla County, Washington, USA ; Maintained by Elaine and Bill Schrock (contributor 46915548) ."
         }
       ],
-      "about": "https://new.findagrave.com/memorial/53317193",
+      "about": "https://www.findagrave.com/memorial/53317193",
       "titles": [
         {
           "value": " Alfred C. Zandell (1876-1939) - Find A Grave Memorial"
@@ -579,7 +579,7 @@
         }
       ],
       "homepage": {
-        "resource": "https://new.findagrave.com"
+        "resource": "https://www.findagrave.com"
       }
     }
   ]

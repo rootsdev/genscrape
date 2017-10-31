@@ -4,7 +4,13 @@ var debug = require('debug')('genscrape:scrapers:findagrave-new'),
 
 var urls = [
   utils.urlPatternToRegex("https://new.findagrave.com/memorial/*"),
-  utils.urlPatternToRegex("https://new.findagrave.com/cemetery/online/*")
+  utils.urlPatternToRegex("https://new.findagrave.com/cemetery/online/*"),
+  // The new site isn't live yet. We're just assuming this will be the URL
+  // when it goes live. Trying to be proactive so that we don't have to rollout
+  // a quick fix when the new site does finally go live. The two new.findagrave
+  // URLs above can be removed after the new site is live. - 31 Oct 2017
+  utils.urlPatternToRegex("https://www.findagrave.com/memorial/*"),
+  utils.urlPatternToRegex("https://www.findagrave.com/cemetery/online/*")
 ];
 
 module.exports = function(register){
@@ -104,7 +110,7 @@ function run(emitter){
       value: 'Find A Grave'
     }],
     homepage: {
-      resource: 'https://new.findagrave.com'
+      resource: 'https://www.findagrave.com'
     }
   });
   gedx.addAgent(agent);
@@ -316,8 +322,8 @@ function relativeFact(type, date){
  */
 function getMemorialId(url){
   /**
-   * URLs may be in different forms, such as https://new.findagrave.com/memorial/1234
-   * or https://new.findagrave.com/cemetery/online/1234. The memorial IDs are in
+   * URLs may be in different forms, such as https://www.findagrave.com/memorial/1234
+   * or https://www.findagrave.com/cemetery/online/1234. The memorial IDs are in
    * different positions. The best assumption we can make is that the memorial
    * ID will be the first number in the URL starting from the left.
    */
