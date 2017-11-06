@@ -1,6 +1,6 @@
 {
   "name": "genscrape",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "genscrape",
   "main": "src/main.js",
   "scripts": {
