@@ -5,8 +5,8 @@ var debug = require('debug')('genscrape:scrapers:ancestry-record'),
     VerticalTable = require('../VerticalTable');
 
 var urls = [
-  utils.urlPatternToRegex('http://search.ancestry.com/cgi-bin/sse.dll*'),
-  utils.urlPatternToRegex('http://search.ancestryinstitution.com/cgi-bin/sse.dll*')
+  utils.urlPatternToRegex('https://search.ancestry.com/cgi-bin/sse.dll*'),
+  utils.urlPatternToRegex('https://search.ancestryinstitution.com/cgi-bin/sse.dll*')
 ];
 
 var eventsConfig = [

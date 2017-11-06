@@ -1,6 +1,6 @@
 var setupTest = require('../../testHelpers').createTestRunner('findagrave-new');
     
-describe.only('findagrave - new', function(){
+describe('findagrave - new', function(){
   
   it('Not famous; no family', setupTest(
     'raymond-zierak',
