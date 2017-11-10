@@ -18,7 +18,7 @@ describe('familysearch ancestor', function(){
     nockSetup('K2HD-1TC');
     nockSetup('KJZ2-417');
       
-    helpers.mockWindow('https://www.familysearch.org/tree/person/K2HD-1TC/details', function(){
+    helpers.mockWindow('https://www.familysearch.org/tree/person/details/K2HD-1TC', function(){
       
       var dataEvents = 0,
           noDataEvents = 0,
@@ -30,7 +30,7 @@ describe('familysearch ancestor', function(){
           noDataEvents++;
           
           if(noDataEvents === 1){
-            window.history.pushState(null, '', '/tree/person/KJZ2-417/details');
+            window.history.pushState(null, '', '/tree/person/details/KJZ2-417');
             debug(window.location.pathname);
           }
           
@@ -70,7 +70,7 @@ describe('familysearch ancestor', function(){
       })
       .get('/platform/tree/persons-with-relationships?persons&person=MMM')
       .reply(500);
-    helpers.mockWindow('https://www.familysearch.org/tree/person/MMM/details', function(){
+    helpers.mockWindow('https://www.familysearch.org/tree/person/details/MMM', function(){
       genscrape()
       .on('error', function(e){
         expect(e).to.exist;

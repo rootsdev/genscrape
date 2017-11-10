@@ -37,7 +37,7 @@ function processUrl(emitter) {
   // Try to get a personId
   if(window.location.pathname.indexOf('/tree/person/') === 0){
     
-    var personId = window.location.pathname.split('/')[3];
+    var personId = window.location.pathname.split('/')[4];
     
     // If we have a personId and we are in the ancestor view then fetch the data
     if(personId) {
