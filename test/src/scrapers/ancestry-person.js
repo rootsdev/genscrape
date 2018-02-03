@@ -16,7 +16,7 @@ describe('ancestry person', function(){
 
   it('basic', setupTest('70025770', '30206952907'));
   
-  it('no facts', setupTest('70025770', '30206952926'));
+  it('no facts', setupTest('70025770', '30206952948'));
 
   it('missing spouse', setupTest('70025770', '30206952953'));
   

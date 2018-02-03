@@ -453,7 +453,7 @@ function FactsList($dom){
     // The event name is a plain text node where as the other data is
     // wrapped in another element. So we traverse the childNodes and look for
     // the first regular text node.
-    var name = firstChildText(card.querySelector('.cardSubtitle')).trim().toLowerCase();
+    var name = firstChildText(card.querySelector('.userCardTitle')).trim().toLowerCase();
     if(typeof facts[name] === 'undefined'){
       facts[name] = [];
     }

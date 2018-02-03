@@ -55,7 +55,7 @@
             "original": "23 Jun 1892"
           },
           "place": {
-            "original": "Bialykamien, Galizien, Austria"
+            "original": "Bialy Kamien, L'vivs'ka, Ukraine"
           }
         },
         {
@@ -64,7 +64,7 @@
             "original": "26 Jun 1892"
           },
           "place": {
-            "original": "Bialykamien, Galizien, Austria"
+            "original": "Bialy Kamien, L'vivs'ka, Ukraine"
           }
         },
         {
@@ -95,6 +95,15 @@
           "type": "http://gedcomx.org/Emigration",
           "place": {
             "original": "Bremen"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1905"
+          },
+          "place": {
+            "original": "Amsterdam Ward 07, Montgomery, New York, USA"
           }
         },
         {

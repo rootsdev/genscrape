@@ -2,10 +2,10 @@
   "description": "#1",
   "persons": [
     {
-      "id": "70025770:30206952953",
+      "id": "70025770:30206952948",
       "identifiers": {
         "genscrape": [
-          "genscrape://ancestry:tree/person:70025770:30206952953"
+          "genscrape://ancestry:tree/person:70025770:30206952948"
         ]
       },
       "principal": true,
@@ -16,14 +16,14 @@
         {
           "nameForms": [
             {
-              "fullText": "Cirillus Jurkiewicz",
+              "fullText": "Joannes Czosnikoska",
               "parts": [
                 {
-                  "value": "Cirillus",
+                  "value": "Joannes",
                   "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "value": "Jurkiewicz",
+                  "value": "Czosnikoska",
                   "type": "http://gedcomx.org/Surname"
                 }
               ]
@@ -33,22 +33,7 @@
       ],
       "facts": [
         {
-          "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "24 Feb 1848"
-          },
-          "place": {
-            "original": "Bialy Kamien, L'vivs'ka, Ukraine"
-          }
-        },
-        {
-          "type": "http://gedcomx.org/Death",
-          "date": {
-            "original": "23 Aug 1848"
-          },
-          "place": {
-            "original": "Bialy Kamien, L'vivs'ka, Ukraine"
-          }
+          "type": "http://gedcomx.org/Death"
         }
       ],
       "sources": [
@@ -58,45 +43,25 @@
       ]
     },
     {
-      "id": "70025770:30206952925",
+      "id": "70025770:30206952949",
       "identifiers": {
         "genscrape": [
-          "genscrape://ancestry:tree/person:70025770:30206952925"
+          "genscrape://ancestry:tree/person:70025770:30206952949"
         ]
       },
       "names": [
         {
           "nameForms": [
             {
-              "fullText": "Joannes Jurkiewicz",
+              "fullText": "Xenia",
               "parts": [
                 {
-                  "value": "Joannes",
+                  "value": "Xenia",
                   "type": "http://gedcomx.org/Given"
-                },
-                {
-                  "value": "Jurkiewicz",
-                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org/Birth",
-          "date": {
-            "original": "1798",
-            "formal": "+1798"
-          }
-        },
-        {
-          "type": "http://gedcomx.org/Death",
-          "date": {
-            "original": "1859",
-            "formal": "+1859"
-          }
         }
       ],
       "sources": [
@@ -149,37 +114,37 @@
   ],
   "relationships": [
     {
-      "type": "http://gedcomx.org/ParentChild",
-      "person1": {
-        "resource": "#70025770:30206952925"
-      },
-      "person2": {
-        "resource": "#70025770:30206952953"
-      },
-      "sources": [
-        {
-          "description": "#1"
-        }
-      ]
-    },
-    {
-      "type": "http://gedcomx.org/ParentChild",
-      "person1": {
-        "resource": "#70025770:30206952926"
-      },
-      "person2": {
-        "resource": "#70025770:30206952953"
-      },
-      "sources": [
-        {
-          "description": "#1"
-        }
-      ]
-    },
-    {
       "type": "http://gedcomx.org/Couple",
       "person1": {
-        "resource": "#70025770:30206952925"
+        "resource": "#70025770:30206952948"
+      },
+      "person2": {
+        "resource": "#70025770:30206952949"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952948"
+      },
+      "person2": {
+        "resource": "#70025770:30206952926"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952949"
       },
       "person2": {
         "resource": "#70025770:30206952926"
@@ -193,15 +158,15 @@
   ],
   "sourceDescriptions": [
     {
-      "about": "https://www.ancestry.com/family-tree/person/tree/70025770/person/30206952953",
+      "about": "https://www.ancestry.com/family-tree/person/tree/70025770/person/30206952948",
       "titles": [
         {
-          "value": "Cirillus Jurkiewicz - Ancestry Public Member Trees"
+          "value": "Joannes Czosnikoska - Ancestry Public Member Trees"
         }
       ],
       "citations": [
         {
-          "value": "\"Public Member Trees\", database, Ancestry.com (https://www.ancestry.com/family-tree/person/tree/70025770/person/30206952953 : accessed 17 April 2013), profile for Cirillus Jurkiewicz."
+          "value": "\"Public Member Trees\", database, Ancestry.com (https://www.ancestry.com/family-tree/person/tree/70025770/person/30206952948 : accessed 17 April 2013), profile for Joannes Czosnikoska."
         }
       ],
       "repository": {

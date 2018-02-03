@@ -16,24 +16,19 @@
         {
           "nameForms": [
             {
-              "fullText": "Elia Jurkiewicz",
+              "fullText": "Elias Jurkuw",
               "parts": [
                 {
-                  "value": "Elia",
+                  "value": "Elias",
                   "type": "http://gedcomx.org/Given"
                 },
                 {
-                  "value": "Jurkiewicz",
+                  "value": "Jurkuw",
                   "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org/Death"
         }
       ],
       "sources": [
@@ -53,15 +48,224 @@
         {
           "nameForms": [
             {
-              "fullText": "Maria",
+              "fullText": "Maria Cymbałowych",
               "parts": [
                 {
                   "value": "Maria",
                   "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Cymbałowych",
+                  "type": "http://gedcomx.org/Surname"
                 }
               ]
             }
           ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "70025770:260101871878",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:260101871878"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Basilius Jurkuw",
+              "parts": [
+                {
+                  "value": "Basilius",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jurkuw",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1788",
+            "formal": "+1788"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "70025770:260101871885",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:260101871885"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Joanes Jurkuw",
+              "parts": [
+                {
+                  "value": "Joanes",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jurkuw",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1791",
+            "formal": "+1791"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "70025770:260101871891",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:260101871891"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Gregorius Jurkuw",
+              "parts": [
+                {
+                  "value": "Gregorius",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jurkuw",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1794",
+            "formal": "+1794"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "70025770:260101871888",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:260101871888"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Anastasia Jurkuw",
+              "parts": [
+                {
+                  "value": "Anastasia",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jurkuw",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1794",
+            "formal": "+1794"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "70025770:260101871895",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:260101871895"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Maria Jurkuw",
+              "parts": [
+                {
+                  "value": "Maria",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jurkuw",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1796",
+            "formal": "+1796"
+          }
         }
       ],
       "sources": [
@@ -96,6 +300,186 @@
           ]
         }
       ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1798",
+            "formal": "+1798"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1859",
+            "formal": "+1859"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "70025770:260101871900",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:260101871900"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Maria Jurkuw",
+              "parts": [
+                {
+                  "value": "Maria",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jurkuw",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1801",
+            "formal": "+1801"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "70025770:260101871912",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:260101871912"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Gregorius Jurkuw",
+              "parts": [
+                {
+                  "value": "Gregorius",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jurkuw",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1803",
+            "formal": "+1803"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "70025770:260101871918",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:260101871918"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Onufrig Jurkuw",
+              "parts": [
+                {
+                  "value": "Onufrig",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jurkuw",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1805",
+            "formal": "+1805"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "70025770:260101871921",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://ancestry:tree/person:70025770:260101871921"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Alexius Jurkuw",
+              "parts": [
+                {
+                  "value": "Alexius",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jurkuw",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1809",
+            "formal": "+1809"
+          }
+        }
+      ],
       "sources": [
         {
           "description": "#1"
@@ -124,6 +508,146 @@
         "resource": "#70025770:30206952959"
       },
       "person2": {
+        "resource": "#70025770:260101871878"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952960"
+      },
+      "person2": {
+        "resource": "#70025770:260101871878"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952959"
+      },
+      "person2": {
+        "resource": "#70025770:260101871885"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952960"
+      },
+      "person2": {
+        "resource": "#70025770:260101871885"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952959"
+      },
+      "person2": {
+        "resource": "#70025770:260101871891"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952960"
+      },
+      "person2": {
+        "resource": "#70025770:260101871891"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952959"
+      },
+      "person2": {
+        "resource": "#70025770:260101871888"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952960"
+      },
+      "person2": {
+        "resource": "#70025770:260101871888"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952959"
+      },
+      "person2": {
+        "resource": "#70025770:260101871895"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952960"
+      },
+      "person2": {
+        "resource": "#70025770:260101871895"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952959"
+      },
+      "person2": {
         "resource": "#70025770:30206952925"
       },
       "sources": [
@@ -145,6 +669,118 @@
           "description": "#1"
         }
       ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952959"
+      },
+      "person2": {
+        "resource": "#70025770:260101871900"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952960"
+      },
+      "person2": {
+        "resource": "#70025770:260101871900"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952959"
+      },
+      "person2": {
+        "resource": "#70025770:260101871912"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952960"
+      },
+      "person2": {
+        "resource": "#70025770:260101871912"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952959"
+      },
+      "person2": {
+        "resource": "#70025770:260101871918"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952960"
+      },
+      "person2": {
+        "resource": "#70025770:260101871918"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952959"
+      },
+      "person2": {
+        "resource": "#70025770:260101871921"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#70025770:30206952960"
+      },
+      "person2": {
+        "resource": "#70025770:260101871921"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
     }
   ],
   "sourceDescriptions": [
@@ -152,12 +788,12 @@
       "about": "https://www.ancestry.com/family-tree/person/tree/70025770/person/30206952959",
       "titles": [
         {
-          "value": "Elia Jurkiewicz - Ancestry Public Member Trees"
+          "value": "Elias Jurkuw - Ancestry Public Member Trees"
         }
       ],
       "citations": [
         {
-          "value": "\"Public Member Trees\", database, Ancestry.com (https://www.ancestry.com/family-tree/person/tree/70025770/person/30206952959 : accessed 17 April 2013), profile for Elia Jurkiewicz."
+          "value": "\"Public Member Trees\", database, Ancestry.com (https://www.ancestry.com/family-tree/person/tree/70025770/person/30206952959 : accessed 17 April 2013), profile for Elias Jurkuw."
         }
       ],
       "repository": {
