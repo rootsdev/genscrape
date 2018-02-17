@@ -31,11 +31,6 @@
           ]
         }
       ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org/Death"
-        }
-      ],
       "sources": [
         {
           "description": "#1"

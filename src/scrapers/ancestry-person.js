@@ -480,7 +480,7 @@ function FactsList($dom){
      */
     getCardTitles: function(factType){
       return this.getCards(factType).map(function(card){
-        return card.querySelector('.cardTitle').textContent.trim();
+        return card.querySelector('h4.textWrap').textContent.trim();
       });
     },
     
@@ -493,7 +493,7 @@ function FactsList($dom){
     getFirstText: function(factType){
       var card = this.getFirstCard(factType);
       if(card){
-        return card.querySelector('.cardTitle').textContent.trim();
+        return card.querySelector('h4.textWrap').textContent.trim();
       }
     },
     
