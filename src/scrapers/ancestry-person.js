@@ -3,7 +3,7 @@ var debug = require('debug')('genscrape:scrapers:ancestry-person'),
     GedcomX = require('gedcomx-js');
 
 var urls = [
-  utils.urlPatternToRegex('https://www.ancestry.com/family-tree/person/tree/*/person/*'),
+  utils.urlPatternToRegex('https://www\.ancestry\.(ca|co\.uk|com|com\.au)/family-tree/person/tree/*/person/*'),
   utils.urlPatternToRegex('https://www.ancestryinstitution.com/family-tree/person/tree/*/person/*')
 ];
 
@@ -239,7 +239,7 @@ function process(emitter, $dom){
       value: 'Ancestry'
     })
     .setHomepage({
-      resource: 'http://www.ancestry.com'
+      resource: 'http://www.ancestry' + utils.getDomain()
     });
   gedx.addAgent(agent);
   
