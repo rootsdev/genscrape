@@ -114,7 +114,7 @@ from the same record on the same website.
 
 ## Supported Sites
 
-* [Ancestry.com](http://ancestry.com), both historical records and tree profiles.
+* [Ancestry.com](http://ancestry.com), [Ancestry.ca](http://ancestry.ca), [Ancestry.co.uk](http://ancestry.co.uk), [Ancestry.com.au](http://ancestry.com.au), both historical records and tree profiles.
 * [BillionGraves](http://billiongraves.com/)
 * [Find A Grave](http://www.findagrave.com/)
 * [findmypast.com](http://www.findmypast.com), [findmypast.co.uk](http://www.findmypast.co.uk), [findmypast.com.au](http://www.findmypast.com.au), [findmypast.ie](http://www.findmypast.ie), both historical records and tree profiles.
