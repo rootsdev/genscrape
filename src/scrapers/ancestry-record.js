@@ -5,8 +5,8 @@ var debug = require('debug')('genscrape:scrapers:ancestry-record'),
     VerticalTable = require('../VerticalTable');
 
 var urls = [
-  utils.urlPatternToRegex('https://search.ancestry.com/cgi-bin/sse.dll*'),
-  utils.urlPatternToRegex('https://search.ancestryinstitution.com/cgi-bin/sse.dll*')
+  utils.urlPatternToRegex('https://search.ancestry.(ca|co.uk|com|com.au)/cgi-bin/sse.dll*'),
+  utils.urlPatternToRegex('https://search.ancestryinstitution.(ca|co.uk|com|com.au)/cgi-bin/sse.dll*')
 ];
 
 var eventsConfig = [
@@ -388,7 +388,7 @@ function setup(emitter) {
       value: 'Ancestry'
     })
     .setHomepage({
-      resource: 'http://www.ancestry.com'
+      resource: 'http://www.ancestry' + utils.getDomain()
     });
   gedx.addAgent(agent);
   

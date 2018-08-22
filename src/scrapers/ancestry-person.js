@@ -3,8 +3,8 @@ var debug = require('debug')('genscrape:scrapers:ancestry-person'),
     GedcomX = require('gedcomx-js');
 
 var urls = [
-  utils.urlPatternToRegex('https://www\.ancestry\.(ca|co\.uk|com|com\.au)/family-tree/person/tree/*/person/*'),
-  utils.urlPatternToRegex('https://www.ancestryinstitution.com/family-tree/person/tree/*/person/*')
+  utils.urlPatternToRegex('https://www.ancestry.(ca|co.uk|com|com.au)/family-tree/person/tree/*/person/*'),
+  utils.urlPatternToRegex('https://www.ancestryinstitution.(ca|co.uk|com|com.au)/family-tree/person/tree/*/person/*')
 ];
 
 var eventConfig = [
