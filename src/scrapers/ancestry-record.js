@@ -495,7 +495,7 @@ function eventType(type){
  */
 function getRecordId(url) {
   if (url.indexOf('discoveryui-content') !== -1) {
-    url.split('/').pop().split(':')[0];
+    return url.split('/').pop().split(':')[0];
   } else {
     var params = utils.getQueryParams(url);
     return (params.dbid || params.db) + ':' + params.h;
