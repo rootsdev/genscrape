@@ -36,7 +36,7 @@ HorizontalTable.prototype.processTable = function(table, options){
       
   for(var i = 0; i < $trs.length; i++){
     row = $trs[i];
-    label = row.children[0].textContent;
+    label = row.children[0].textContent.trim();
     value = row.children[1];
     
     if(options.labelMapper){
@@ -78,7 +78,7 @@ HorizontalTable.prototype.getValue = function(label){
  */
 HorizontalTable.prototype.getText = function(label){
   var value = this.getValue(label);
-  return value ? value.textContent : '';
+  return value ? value.textContent.trim() : '';
 };
 
 /**
@@ -159,7 +159,7 @@ HorizontalTable.prototype.getMatch = function(pattern){
  */
 HorizontalTable.prototype.getMatchText = function(pattern){
   var match = this.getMatch(pattern);
-  return match ? match.textContent : '';
+  return match ? match.textContent.trim() : '';
 };
 
 /**

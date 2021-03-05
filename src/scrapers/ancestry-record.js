@@ -449,7 +449,7 @@ function getRecordYear(){
  * @returns {String}
  */
 function getTitle(){
-  return document.querySelector('h1').textContent.replace(/\s/g,' ').trim();
+  return document.querySelector('h1').textContent.replace(/\s/g,' ').trim() || document.title.trim();
 }
 
 /**
@@ -494,8 +494,12 @@ function eventType(type){
  * @return {String}
  */
 function getRecordId(url) {
-  var params = utils.getQueryParams(url);
-  return (params.dbid || params.db) + ':' + params.h;
+  if (url.indexOf('discoveryui-content') !== -1) {
+    url.split('/').pop().split(':')[0];
+  } else {
+    var params = utils.getQueryParams(url);
+    return (params.dbid || params.db) + ':' + params.h;
+  }
 }
 
 /**
