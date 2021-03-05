@@ -4,7 +4,8 @@ var debug = require('debug')('genscrape:scrapers:ancestry-person'),
 
 var urls = [
   utils.urlPatternToRegex('https://www.ancestry.(ca|co.uk|com|com.au)/family-tree/person/tree/*/person/*'),
-  utils.urlPatternToRegex('https://www.ancestryinstitution.(ca|co.uk|com|com.au)/family-tree/person/tree/*/person/*')
+  utils.urlPatternToRegex('https://www.ancestryinstitution.(ca|co.uk|com|com.au)/family-tree/person/tree/*/person/*'),
+  utils.urlPatternToRegex('https://www.ancestrylibrary.(ca|com|com.au)/family-tree/person/tree/*/person/*')
 ];
 
 var eventConfig = [
