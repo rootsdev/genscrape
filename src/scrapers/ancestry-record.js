@@ -7,7 +7,8 @@ var debug = require('debug')('genscrape:scrapers:ancestry-record'),
 var urls = [
   utils.urlPatternToRegex('https://search.ancestry.(ca|co.uk|com|com.au)/cgi-bin/sse.dll*'),
   utils.urlPatternToRegex('https://search.ancestryinstitution.(ca|co.uk|com|com.au)/cgi-bin/sse.dll*'),
-  utils.urlPatternToRegex('https://search.ancestrylibrary.(ca|com|com.au)/cgi-bin/sse.dll*')
+  utils.urlPatternToRegex('https://search.ancestrylibrary.(ca|com|com.au)/cgi-bin/sse.dll*'),
+  utils.urlPatternToRegex('https://www.ancestry.com/discoveryui-content/view/*')
 ];
 
 var eventsConfig = [
