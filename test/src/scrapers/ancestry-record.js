@@ -31,7 +31,7 @@ describe('ancestry-record', function(){
   
   it('1940 US Census', setupTest(
     '1940usfedcen-154240314',
-    'https://search.ancestry.com/cgi-bin/sse.dll?db=1940usfedcen&indiv=try&h=154240314'
+    'https://www.ancestry.com/discoveryui-content/view/154240314:2442'
   ));
   
   it('1900 US Census', setupTest(
