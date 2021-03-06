@@ -114,7 +114,7 @@ function setup(emitter) {
   
   // Name
   dataTable.getText('name').trim().split(/\[|\]/g).forEach(function(name){
-    primaryPerson.addSimpleName(name);
+    primaryPerson.addSimpleName(name.trim());
   });
   
   // Split names
@@ -125,13 +125,13 @@ function setup(emitter) {
     if(givenName){
       nameForm.addPart({
         type: 'http://gedcomx.org/Given',
-        value: givenName
+        value: givenName.trim()
       });
     }
     if(surname){
       nameForm.addPart({
         type: 'http://gedcomx.org/Surname',
-        value: surname
+        value: surname.trim()
       });
     }
     primaryPerson.addName(GedcomX.Name().addNameForm(nameForm));
