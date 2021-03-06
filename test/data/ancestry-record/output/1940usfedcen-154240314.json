@@ -2,10 +2,10 @@
   "description": "#1",
   "persons": [
     {
-      "id": "1940usfedcen:154240314",
+      "id": "154240314",
       "identifiers": {
         "genscrape": [
-          "genscrape://ancestry:record/1940usfedcen:154240314"
+          "genscrape://ancestry:record/154240314"
         ]
       },
       "principal": true,
@@ -85,183 +85,19 @@
           "description": "#1"
         }
       ]
-    },
-    {
-      "id": "1940usfedcen:154240312",
-      "identifiers": {
-        "genscrape": [
-          "genscrape://ancestry:record/1940usfedcen:154240312"
-        ]
-      },
-      "names": [
-        {
-          "nameForms": [
-            {
-              "fullText": "John W Coast",
-              "parts": [
-                {
-                  "value": "John W",
-                  "type": "http://gedcomx.org/Given"
-                },
-                {
-                  "value": "Coast",
-                  "type": "http://gedcomx.org/Surname"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org",
-          "date": {
-            "original": "about 1888",
-            "formal": "A+1888"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "description": "#1"
-        }
-      ]
-    },
-    {
-      "id": "1940usfedcen:154240317",
-      "identifiers": {
-        "genscrape": [
-          "genscrape://ancestry:record/1940usfedcen:154240317"
-        ]
-      },
-      "names": [
-        {
-          "nameForms": [
-            {
-              "fullText": "Billie Bond",
-              "parts": [
-                {
-                  "value": "Billie",
-                  "type": "http://gedcomx.org/Given"
-                },
-                {
-                  "value": "Bond",
-                  "type": "http://gedcomx.org/Surname"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org",
-          "date": {
-            "original": "about 1925",
-            "formal": "A+1925"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "description": "#1"
-        }
-      ]
-    },
-    {
-      "id": "1940usfedcen:154240321",
-      "identifiers": {
-        "genscrape": [
-          "genscrape://ancestry:record/1940usfedcen:154240321"
-        ]
-      },
-      "names": [
-        {
-          "nameForms": [
-            {
-              "fullText": "Wm Thurman",
-              "parts": [
-                {
-                  "value": "Wm",
-                  "type": "http://gedcomx.org/Given"
-                },
-                {
-                  "value": "Thurman",
-                  "type": "http://gedcomx.org/Surname"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org",
-          "date": {
-            "original": "about 1920",
-            "formal": "A+1920"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "description": "#1"
-        }
-      ]
-    },
-    {
-      "id": "1940usfedcen:154240324",
-      "identifiers": {
-        "genscrape": [
-          "genscrape://ancestry:record/1940usfedcen:154240324"
-        ]
-      },
-      "names": [
-        {
-          "nameForms": [
-            {
-              "fullText": "Chauncey McFarland",
-              "parts": [
-                {
-                  "value": "Chauncey",
-                  "type": "http://gedcomx.org/Given"
-                },
-                {
-                  "value": "McFarland",
-                  "type": "http://gedcomx.org/Surname"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "type": "http://gedcomx.org",
-          "date": {
-            "original": "about 1914",
-            "formal": "A+1914"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "description": "#1"
-        }
-      ]
     }
   ],
   "sourceDescriptions": [
     {
-      "about": "https://search.ancestry.com/cgi-bin/sse.dll?db=1940usfedcen&indiv=try&h=154240314",
+      "about": "https://www.ancestry.com/discoveryui-content/view/154240314:2442",
       "titles": [
         {
-          "value": "Katie B Coast in the 1940 United States Federal Census"
+          "value": "1940 United States Federal Census - Ancestry.com"
         }
       ],
       "citations": [
         {
-          "value": "Year: 1940; Census Place: Highland Park, Dallas, Texas; Roll: T627_4015; Page: 3A; Enumeration District: 57-1C"
+          "value": "Year: 1940; Census Place: Highland Park, Dallas, Texas; Roll: m-t0627-04015; Page: 3A; Enumeration District: 57-1C"
         }
       ],
       "repository": {

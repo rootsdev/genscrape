@@ -7,7 +7,8 @@ var debug = require('debug')('genscrape:scrapers:ancestry-record'),
 var urls = [
   utils.urlPatternToRegex('https://search.ancestry.(ca|co.uk|com|com.au)/cgi-bin/sse.dll*'),
   utils.urlPatternToRegex('https://search.ancestryinstitution.(ca|co.uk|com|com.au)/cgi-bin/sse.dll*'),
-  utils.urlPatternToRegex('https://search.ancestrylibrary.(ca|com|com.au)/cgi-bin/sse.dll*')
+  utils.urlPatternToRegex('https://search.ancestrylibrary.(ca|com|com.au)/cgi-bin/sse.dll*'),
+  utils.urlPatternToRegex('https://www.ancestry.com/discoveryui-content/view/*')
 ];
 
 var eventsConfig = [
@@ -113,7 +114,7 @@ function setup(emitter) {
   
   // Name
   dataTable.getText('name').trim().split(/\[|\]/g).forEach(function(name){
-    primaryPerson.addSimpleName(name);
+    primaryPerson.addSimpleName(name.trim());
   });
   
   // Split names
@@ -124,13 +125,13 @@ function setup(emitter) {
     if(givenName){
       nameForm.addPart({
         type: 'http://gedcomx.org/Given',
-        value: givenName
+        value: givenName.trim()
       });
     }
     if(surname){
       nameForm.addPart({
         type: 'http://gedcomx.org/Surname',
-        value: surname
+        value: surname.trim()
       });
     }
     primaryPerson.addName(GedcomX.Name().addNameForm(nameForm));
@@ -448,7 +449,7 @@ function getRecordYear(){
  * @returns {String}
  */
 function getTitle(){
-  return document.querySelector('h1').textContent.replace(/\s/g,' ').trim();
+  return document.querySelector('h1').textContent.replace(/\s/g,' ').trim() || document.title.trim();
 }
 
 /**
@@ -493,8 +494,12 @@ function eventType(type){
  * @return {String}
  */
 function getRecordId(url) {
-  var params = utils.getQueryParams(url);
-  return (params.dbid || params.db) + ':' + params.h;
+  if (url.indexOf('discoveryui-content') !== -1) {
+    return url.split('/').pop().split(':')[0];
+  } else {
+    var params = utils.getQueryParams(url);
+    return (params.dbid || params.db) + ':' + params.h;
+  }
 }
 
 /**
