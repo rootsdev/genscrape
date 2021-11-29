@@ -325,10 +325,10 @@
       "id": "1",
       "citations": [
         {
-          "value": "Edward  Smith | Family Tree Unknown (http://www.wikitree.com/wiki/Smith-9130 : accessed 17 April 2013)"
+          "value": "Edward  Smith | Family Tree Unknown (https://www.wikitree.com/wiki/Smith-9130 : accessed 17 April 2013)"
         }
       ],
-      "about": "http://www.wikitree.com/wiki/Smith-9130",
+      "about": "https://www.wikitree.com/wiki/Smith-9130",
       "titles": [
         {
           "value": "Edward  Smith | Family Tree Unknown"
