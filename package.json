@@ -39,7 +39,7 @@
     "babel-preset-es2015": "^6.24.0",
     "bannerjs": "^1.0.5",
     "chai": "3.5.0",
-    "coveralls": "2.11.9",
+    "coveralls": "2.13.3",
     "istanbul": "0.4.3",
     "jsdom": "9.5.0",
     "mocha": "3.1.0",
