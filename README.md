@@ -123,4 +123,4 @@ from the same record on the same website.
 * [MyHeritage](https://www.myheritage.com) historical records and tree profiles
 * [Open Archives](https://www.openarch.nl)
 * [WeRelate](http://www.werelate.org/)
-* [WikiTree](http://www.wikitree.com/) person profiles
+* [WikiTree](https://www.wikitree.com/) person profiles
