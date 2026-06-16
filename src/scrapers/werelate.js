@@ -3,7 +3,7 @@ var debug = require('debug')('genscrape:scrapers:werela'),
     GedcomX = require('gedcomx-js');
 
 var urls = [
-  utils.urlPatternToRegex("http://www.werelate.org/wiki/Person:*")
+  utils.urlPatternToRegex("https://www.werelate.org/wiki/Person:*")
 ];
 
 module.exports = function(register){
@@ -86,9 +86,9 @@ var factTypes = {
 };
 
 function run(emitter){
-  
+
   debug('run');
-  
+
   var gedx = GedcomX(),
       primaryPerson = GedcomX.Person({
         principal: true,
@@ -97,13 +97,13 @@ function run(emitter){
           'genscrape': getRecordIdentifier(document.location.href)
         }
       });
-      
+
   gedx.addPerson(primaryPerson);
-  
+
   //
   // Facts
   //
-  
+
   // Gather the fact data
   var facts = [];
   Array.from(document.querySelectorAll('.wr-infotable-factsevents tr')).forEach(function(row){
@@ -115,21 +115,21 @@ function run(emitter){
       });
     }
   });
-  
+
   // Process the fact data
   facts.forEach(function(factInfo){
-    
+
     var row = factInfo.row,
         label = factInfo.label,
         dateCell = row.children[1],
         placeCell = row.children[2];
-    
+
     switch(label){
-      
+
       case 'Name':
         primaryPerson.addSimpleName(dateCell.textContent.trim());
         break;
-        
+
       case 'Gender':
         switch(dateCell.textContent.trim()){
           case 'Male':
@@ -144,7 +144,7 @@ function run(emitter){
             break;
         }
         break;
-      
+
       // Most facts will have a date and a place
       default:
         if(row.children.length === 3){
@@ -173,22 +173,22 @@ function run(emitter){
           }
         }
     }
-    
+
   });
-  
+
   //
   // Relationships
   //
-  
+
   // Parents and siblings
   Array.from(document.querySelectorAll('.wr-infobox-parentssiblings')).forEach(function(family){
-    
+
     var parents = family.querySelector('ul'),
         children = family.querySelector('ol'),
         marriage = family.querySelector('.wr-infobox-event'),
         parent1Label = parentLabel(parents.children[0]),
         mother, father;
-    
+
     if(parent1Label === 'F'){
       father = processPerson(parents.children[0], 'http://gedcomx.org/Male');
       mother = processPerson(parents.children[1], 'http://gedcomx.org/Female');
@@ -196,7 +196,7 @@ function run(emitter){
       father = processPerson(parents.children[1], 'http://gedcomx.org/Male');
       mother = processPerson(parents.children[0], 'http://gedcomx.org/Female');
     }
-    
+
     if(father){
       gedx.addPerson(father);
       gedx.addRelationship({
@@ -205,7 +205,7 @@ function run(emitter){
         person2: primaryPerson
       });
     }
-    
+
     if(mother){
       gedx.addPerson(mother);
       gedx.addRelationship({
@@ -214,7 +214,7 @@ function run(emitter){
         person2: primaryPerson
       });
     }
-    
+
     if(father && mother){
       var couple = GedcomX.Relationship({
         type: 'http://gedcomx.org/Couple',
@@ -231,17 +231,17 @@ function run(emitter){
       }
       gedx.addRelationship(couple);
     }
-    
+
     Array.from(children.children).forEach(function(child){
-      
+
       // Skip the entry for the primary person
       if(child.querySelector('.selflink')){
         return;
       }
-      
+
       child = processPerson(child);
       gedx.addPerson(child);
-      
+
       if(father){
         gedx.addRelationship({
           type: 'http://gedcomx.org/ParentChild',
@@ -249,7 +249,7 @@ function run(emitter){
           person2: child
         });
       }
-      
+
       if(mother){
         gedx.addRelationship({
           type: 'http://gedcomx.org/ParentChild',
@@ -259,17 +259,17 @@ function run(emitter){
       }
     });
   });
-  
+
   // Spouses and children
   Array.from(document.querySelectorAll('.wr-infobox-spousechildren')).forEach(function(family){
-    
+
     var parents = family.querySelector('ul'),
         children = family.querySelector('ol'),
         marriage = family.querySelector('.wr-infobox-event'),
         parent1Label = parentLabel(parents.children[0]),
         parent2Label = parentLabel(parents.children[1]),
         spouse, spouseLabel, couple;
-    
+
     // Determine whether the primary person is the husband or the wife
     if(parents.children[0].querySelector('.selflink')){
       spouse = processPerson(parents.children[1]);
@@ -278,19 +278,19 @@ function run(emitter){
       spouse = processPerson(parents.children[0]);
       spouseLabel = parent1Label;
     }
-    
+
     spouse.setGender({
       type: spouseLabel === 'H' ? 'http://gedcomx.org/Male' : 'http://gedcomx.org/Female'
     });
-    
+
     gedx.addPerson(spouse);
-    
+
     couple = GedcomX.Relationship({
       type: 'http://gedcomx.org/Couple',
       person1: primaryPerson,
       person2: spouse
     });
-    
+
     if(marriage){
       couple.addFact({
         type: 'http://gedcomx.org/Marriage',
@@ -299,21 +299,21 @@ function run(emitter){
         }
       });
     }
-    
+
     gedx.addRelationship(couple);
-    
+
     if(children){
       Array.from(children.children).forEach(function(child){
-        
+
         child = processPerson(child);
         gedx.addPerson(child);
-        
+
         gedx.addRelationship({
           type: 'http://gedcomx.org/ParentChild',
           person1: primaryPerson,
           person2: child
         });
-        
+
         gedx.addRelationship({
           type: 'http://gedcomx.org/ParentChild',
           person1: spouse,
@@ -322,9 +322,9 @@ function run(emitter){
       });
     }
   });
-  
+
   // TODO: gather sources listed in the profile
-  
+
   // Agent
   gedx.addAgent(GedcomX.Agent()
     .setId('agent')
@@ -333,9 +333,9 @@ function run(emitter){
       value: 'WeRelate'
     })
     .setHomepage({
-      resource: 'http://www.werelate.org'
+      resource: 'https://www.werelate.org'
     }));
-  
+
   // SourceDescription
   gedx.addSourceDescriptionToAll({
     about: document.location.href,
@@ -346,7 +346,7 @@ function run(emitter){
     ],
     citations: [
       {
-        value: document.title + ', WeRelate.org (' + window.document.location.href 
+        value: document.title + ', WeRelate.org (' + window.document.location.href
           + ' : accessed ' + utils.getDateString() + ')'
       }
     ],
@@ -354,14 +354,14 @@ function run(emitter){
       resource: '#agent'
     }
   });
-  
+
   emitter.emit('data', gedx);
 }
 
 /**
  * Get the label for a parent in a family box. For parents it is F (Father) or
  * M (Mother). For spouses it's H (Husband) or W (Wife).
- * 
+ *
  * @param {Element} parent Parent's li element
  * @return {String} label
  */
@@ -373,7 +373,7 @@ function parentLabel(parent){
 
 /**
  * Create a GedcomX.Person from a person entry in a family box
- * 
+ *
  * @param {Element} element Person's li DOM element
  * @param {String} gender
  * @return {GedcomX.Person}
@@ -417,7 +417,7 @@ function processPerson(element, gender){
 
 /**
  * Get the record ID
- * 
+ *
  * @param {String} url
  * @return {String}
  */
@@ -427,7 +427,7 @@ function getRecordId(url) {
 
 /**
  * Get a record's identifier
- * 
+ *
  * @param {String} url
  * @return {String}
  */

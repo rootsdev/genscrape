@@ -713,10 +713,10 @@
       "id": "1",
       "citations": [
         {
-          "value": "Person:George Washington (6) - Genealogy, WeRelate.org (http://www.werelate.org/wiki/Person:George_Washington_%286%29 : accessed 17 April 2013)"
+          "value": "Person:George Washington (6) - Genealogy, WeRelate.org (https://www.werelate.org/wiki/Person:George_Washington_%286%29 : accessed 17 April 2013)"
         }
       ],
-      "about": "http://www.werelate.org/wiki/Person:George_Washington_%286%29",
+      "about": "https://www.werelate.org/wiki/Person:George_Washington_%286%29",
       "titles": [
         {
           "value": "Person:George Washington (6) - Genealogy"
@@ -737,7 +737,7 @@
         }
       ],
       "homepage": {
-        "resource": "http://www.werelate.org"
+        "resource": "https://www.werelate.org"
       }
     }
   ]
