@@ -122,5 +122,5 @@ from the same record on the same website.
 * [Genealogie Online](https://www.genealogieonline.nl)
 * [MyHeritage](https://www.myheritage.com) historical records and tree profiles
 * [Open Archives](https://www.openarch.nl)
-* [WeRelate](https://www.werelate.org/)
-* [WikiTree](http://www.wikitree.com/) person profiles
+* [WeRelate](http://www.werelate.org/)
+* [WikiTree](https://www.wikitree.com/) person profiles

@@ -4,7 +4,7 @@ var debug = require('debug')('genscrape:scrapers:wikitree'),
     schema = require('../schema');
 
 var urls = [
-  utils.urlPatternToRegex('http://www.wikitree.com/wiki/*-*')
+  utils.urlPatternToRegex('https://www.wikitree.com/wiki/*-*')
 ];
 
 module.exports = function(register){
