@@ -40,7 +40,7 @@
     "bannerjs": "^1.0.5",
     "chai": "3.5.0",
     "coveralls": "2.11.9",
-    "istanbul": "0.4.3",
+    "istanbul": "0.4.5",
     "jsdom": "9.5.0",
     "mocha": "3.1.0",
     "nock": "8.0.0",
