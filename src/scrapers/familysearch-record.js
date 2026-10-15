@@ -64,7 +64,7 @@ function run(emitter){
           ark = identifiers.getValues('http://gedcomx.org/Persistent')[0];
           
           // Fix principal flag
-          if(ark && ark === url.replace('www.','')){
+          if(ark && normalizeArk(ark) === normalizeArk(url)){
             person.setPrincipal(true);
           } else {
             person.setPrincipal();
@@ -89,4 +89,15 @@ function run(emitter){
       emitter.emit('data', gedx);
     }
   });
+}
+
+/**
+ * Compare arks regardless of protocol and www. FamilySearch has served
+ * persistent identifiers both with and without www.
+ *
+ * @param {String} url
+ * @returns {String}
+ */
+function normalizeArk(url){
+  return url.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/[?#].*$/, '');
 }

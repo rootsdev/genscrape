@@ -22,6 +22,9 @@ describe('familysearch record', function(){
   
   it('ark', setupArk('MNCT-SDC'));
   
+  // FamilySearch now returns persistent identifiers with www.
+  it('ark with www identifiers', setupArk('MNCT-SDW'));
+  
 });
 
 /**
