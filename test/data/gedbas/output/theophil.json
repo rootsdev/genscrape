@@ -1,0 +1,391 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "1331881706",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881706"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Theophil Johannes SCHLARB",
+              "parts": [
+                {
+                  "value": "Theophil Johannes",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SCHLARB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Professor Mathematik",
+          "place": {
+            "original": "St. Petersburg, Russland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Baptism",
+          "place": {
+            "original": "Tarutino"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Emigration",
+          "date": {
+            "original": "19 January 1919"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "20 July 1884"
+          },
+          "place": {
+            "original": "Tarutino"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "1331881715",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881715"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Friedrich SCHLARB",
+              "parts": [
+                {
+                  "value": "Friedrich",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SCHLARB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "1331881716",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881716"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Sophia Louisa HEPP",
+              "parts": [
+                {
+                  "value": "Sophia Louisa",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "HEPP",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "1331881707",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881707"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Berta Caroline BRÉCHET",
+              "parts": [
+                {
+                  "value": "Berta Caroline",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "BRÉCHET",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "1331881956",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881956"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Edith Gertraut SCHLARB",
+              "parts": [
+                {
+                  "value": "Edith Gertraut",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SCHLARB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "3 January 1910"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "1331881704",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881704"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Friedrich Leonhard SCHLARB",
+              "parts": [
+                {
+                  "value": "Friedrich Leonhard",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SCHLARB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "10 August 1911"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881715"
+      },
+      "person2": {
+        "resource": "#1331881706"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881716"
+      },
+      "person2": {
+        "resource": "#1331881706"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1331881715"
+      },
+      "person2": {
+        "resource": "#1331881716"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1331881706"
+      },
+      "person2": {
+        "resource": "#1331881707"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881706"
+      },
+      "person2": {
+        "resource": "#1331881956"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881707"
+      },
+      "person2": {
+        "resource": "#1331881956"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881706"
+      },
+      "person2": {
+        "resource": "#1331881704"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881707"
+      },
+      "person2": {
+        "resource": "#1331881704"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"GEDBAS - Theophil Johannes SCHLARB,\" GEDBAS (https://gedbas.genealogy.net/person/show/1331881706 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://gedbas.genealogy.net/person/show/1331881706",
+      "titles": [
+        {
+          "value": "GEDBAS - Theophil Johannes SCHLARB"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "de",
+          "value": "GEDBAS"
+        }
+      ],
+      "homepage": {
+        "resource": "https://gedbas.genealogy.net"
+      }
+    }
+  ]
+}

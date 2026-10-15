@@ -1,0 +1,221 @@
+{
+  "description": "#4",
+  "persons": [
+    {
+      "id": "316485",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://cvwm/316485"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Arthur Edward Warman",
+              "parts": [
+                {
+                  "value": "Arthur Edward",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Warman",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "September 2, 1918"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Dominion Cemetery"
+          },
+          "value": "I. B. 11"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "Private; Army; Canadian Infantry (Manitoba Regiment); 16th Bn.; Service number 722244"
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Warman",
+              "parts": [
+                {
+                  "value": "John",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Warman",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary Warman",
+              "parts": [
+                {
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Warman",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Flora Warman",
+              "parts": [
+                {
+                  "value": "Flora",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Warman",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#316485"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#316485"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#316485"
+      },
+      "person2": {
+        "resource": "#3"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "Veterans Affairs Canada, \"The Canadian Virtual War Memorial: Private Arthur Edward Warman\" (https://veterans.gc.ca/en/remembrance/memorials/canadian-virtual-war-memorial/detail/316485 : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://veterans.gc.ca/en/remembrance/memorials/canadian-virtual-war-memorial/detail/316485",
+      "titles": [
+        {
+          "value": "Private Arthur Edward Warman - The Canadian Virtual War Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Veterans Affairs Canada"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.veterans.gc.ca"
+      }
+    }
+  ]
+}

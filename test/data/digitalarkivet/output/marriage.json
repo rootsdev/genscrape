@@ -1,0 +1,152 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "pv00000000838891",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pv00000000838891"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Tomas",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hansen Hansen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Tomas Hansen Hansen"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "Landero"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Christi Nilsdtr.",
+              "parts": [
+                {
+                  "value": "Christi",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Nilsdtr.",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "pv00000000838892",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pv00000000838892"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "Landero"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#pv00000000838891"
+      },
+      "person2": {
+        "resource": "#pv00000000838892"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1789-07-02"
+          },
+          "place": {
+            "original": "Sund, Hordaland, Norway"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"Parish register (official) for Sund parish 1788-1815,\" database, Digitalarkivet, The National Archives of Norway (https://www.digitalarkivet.no/en/view/327/pv00000000838891 : accessed 17 April 2013), entry for Tomas Hansen Hansen."
+        }
+      ],
+      "about": "https://www.digitalarkivet.no/en/view/327/pv00000000838891",
+      "titles": [
+        {
+          "value": "Tomas Hansen Hansen - Parish register (official) for Sund parish 1788-1815"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Digitalarkivet (The Digital Archive)"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.digitalarkivet.no"
+      }
+    }
+  ]
+}

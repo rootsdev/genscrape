@@ -1,0 +1,620 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "50000",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/50000"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ernest William Frederick von Hohenlohe-Langburg",
+              "parts": [
+                {
+                  "value": "Ernest William Frederick von",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hohenlohe-Langburg",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "13 September 1863"
+          },
+          "place": {
+            "original": "Langenburg, Germany"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "20 April 1896"
+          },
+          "place": {
+            "original": "Coburg, Bavaria, Germany"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "11 December 1950"
+          },
+          "place": {
+            "original": "Langenburg, Germany"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "487368",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/487368"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Hermann Ernst Franz Bernhard von Hohenlohe-Langenburg",
+              "parts": [
+                {
+                  "value": "Hermann Ernst Franz Bernhard von",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hohenlohe-Langenburg",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "31 August 1832"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "9 March 1913"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "487377",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/487377"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Leopoldine Wilhelmine Pauline Amalie Maximiliane von Baden-Durlach",
+              "parts": [
+                {
+                  "value": "Leopoldine Wilhelmine Pauline Amalie Maximiliane von",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Baden-Durlach",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "22 February 1837"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "23 December 1903"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "49703",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/49703"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Alexandra Louise Olga Victoria Saxe-Coburg",
+              "parts": [
+                {
+                  "value": "Alexandra Louise Olga Victoria",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Saxe-Coburg",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1 September 1878"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "16 April 1942"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "347087",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/347087"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Godfrey Hermann Alfred von Hohenlohe-Langenburg",
+              "parts": [
+                {
+                  "value": "Godfrey Hermann Alfred von",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hohenlohe-Langenburg",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "24 March 1897"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "11 May 1960"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "50004",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/50004"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Marie Melita Leopoldine Viktoria Feodora Alexandra Sophie",
+              "parts": [
+                {
+                  "value": "Marie Melita Leopoldine Viktoria Feodora Alexandra",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Sophie",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "18 January 1899"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "8 November 1967"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "50002",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/50002"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Alexandra Beatrice von Hohenlohe-Langenburg (Hohenlohe-Langenburg)",
+              "parts": [
+                {
+                  "value": "Alexandra Beatrice von Hohenlohe-Langenburg",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "(Hohenlohe-Langenburg)",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "2 April 1901"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "26 October 1963"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "50003",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/50003"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Irma Helen von Hohenlohe-Langenburg (Hohenlohe-Langenburg)",
+              "parts": [
+                {
+                  "value": "Irma Helen von Hohenlohe-Langenburg",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "(Hohenlohe-Langenburg)",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "4 July 1902"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "8 March 1986"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "653445",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/653445"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Alfred de Hohenlohe-Langenbourg",
+              "parts": [
+                {
+                  "value": "Alfred de",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hohenlohe-Langenbourg",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "16 April 1911"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "18 April 1911"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#487368"
+      },
+      "person2": {
+        "resource": "#50000"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#487377"
+      },
+      "person2": {
+        "resource": "#50000"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#50000"
+      },
+      "person2": {
+        "resource": "#49703"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "20 April 1896"
+          },
+          "place": {
+            "original": "Coburg, Bavaria, Germany"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#50000"
+      },
+      "person2": {
+        "resource": "#347087"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#50000"
+      },
+      "person2": {
+        "resource": "#50004"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#50000"
+      },
+      "person2": {
+        "resource": "#50002"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#50000"
+      },
+      "person2": {
+        "resource": "#50003"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#50000"
+      },
+      "person2": {
+        "resource": "#653445"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Ernest William Frederick von Hohenlohe-Langburg b. 13 September 1863 d. 11 December 1950 - Rodovid EN (https://en.rodovid.org/wk/Person:50000 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://en.rodovid.org/wk/Person:50000",
+      "titles": [
+        {
+          "value": "Ernest William Frederick von Hohenlohe-Langburg b. 13 September 1863 d. 11 December 1950 - Rodovid EN"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Rodovid"
+        }
+      ],
+      "homepage": {
+        "resource": "https://rodovid.org"
+      }
+    }
+  ]
+}

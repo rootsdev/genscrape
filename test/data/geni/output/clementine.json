@@ -1,0 +1,522 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "6000000003583684153",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000003583684153"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Clementine Churchill",
+              "parts": [
+                {
+                  "value": "Clementine",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "April 01, 1885"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "December 12, 1977"
+          },
+          "place": {
+            "original": "Princes Gate, Knightsbridge, London, England"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000010459190627",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000010459190627"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Algernon Freeman-Mitford",
+              "parts": [
+                {
+                  "value": "Algernon",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Freeman-Mitford",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "5516970743950060929",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/5516970743950060929"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Lady Blanche Ogilvy",
+              "parts": [
+                {
+                  "value": "Lady Blanche",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ogilvy",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000013539132509",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000013539132509"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Col. Sir Henry Montague Hozier",
+              "parts": [
+                {
+                  "value": "Col. Sir Henry Montague",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hozier",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000003222187286",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000003222187286"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Winston Churchill",
+              "parts": [
+                {
+                  "value": "Winston",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000003681351803",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000003681351803"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Diana Churchill",
+              "parts": [
+                {
+                  "value": "Diana",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000003583622692",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000003583622692"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Randolph Churchill",
+              "parts": [
+                {
+                  "value": "Randolph",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000006971990615",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000006971990615"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Sarah Millicent Hermione Spencer Churchill",
+              "parts": [
+                {
+                  "value": "Sarah Millicent Hermione Spencer",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000004137666041",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000004137666041"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Marigold Frances Spencer-Churchill",
+              "parts": [
+                {
+                  "value": "Marigold Frances",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Spencer-Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000006972162289",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000006972162289"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary Soames",
+              "parts": [
+                {
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Soames",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000010459190627"
+      },
+      "person2": {
+        "resource": "#6000000003583684153"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/BiologicalParent"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#5516970743950060929"
+      },
+      "person2": {
+        "resource": "#6000000003583684153"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/BiologicalParent"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000013539132509"
+      },
+      "person2": {
+        "resource": "#6000000003583684153"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/AdoptiveParent"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#6000000003583684153"
+      },
+      "person2": {
+        "resource": "#6000000003222187286"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000003583684153"
+      },
+      "person2": {
+        "resource": "#6000000003681351803"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000003583684153"
+      },
+      "person2": {
+        "resource": "#6000000003583622692"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000003583684153"
+      },
+      "person2": {
+        "resource": "#6000000006971990615"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000003583684153"
+      },
+      "person2": {
+        "resource": "#6000000004137666041"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000003583684153"
+      },
+      "person2": {
+        "resource": "#6000000006972162289"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Clementine Ogilvy Spencer-Churchill (Hozier), Baroness Spencer-Churchill (1885 - 1977) - Genealogy (https://www.geni.com/people/Clementine-Churchill-Baroness-Spencer-Churchill/6000000003583684153 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.geni.com/people/Clementine-Churchill-Baroness-Spencer-Churchill/6000000003583684153",
+      "titles": [
+        {
+          "value": "Clementine Ogilvy Spencer-Churchill (Hozier), Baroness Spencer-Churchill (1885 - 1977) - Genealogy"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Geni"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.geni.com"
+      }
+    }
+  ]
+}

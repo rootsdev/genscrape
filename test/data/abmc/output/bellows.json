@@ -1,0 +1,104 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "private-first-class-william-h-bellows",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://abmc/private-first-class-william-h-bellows"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "William H. Bellows",
+              "parts": [
+                {
+                  "value": "William H.",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Bellows",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "November 18, 1889"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "July 20, 1918"
+          },
+          "place": {
+            "original": "Soissons, France"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Aisne-Marne American Cemetery"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "Woodland, California"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "Private First Class; Machine Gun Company, 23rd Infantry, 2nd Division; U.S. Army; World War I"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "American Battle Monuments Commission, \"Private First Class William H. Bellows\" (https://www.abmc.gov/profile/private-first-class-william-h-bellows/ : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.abmc.gov/profile/private-first-class-william-h-bellows/",
+      "titles": [
+        {
+          "value": "Private First Class William H. Bellows - American Battle Monuments Commission"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "American Battle Monuments Commission"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.abmc.gov"
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "pd00000002336109",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pd00000002336109"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Ole",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hanssen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Ole Hanssen"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1880-11-29"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Baptism",
+          "date": {
+            "original": "1880-12-25"
+          },
+          "place": {
+            "original": "Orkdal, Sør-Trøndelag, Norway"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Hans Poulsen",
+              "parts": [
+                {
+                  "value": "Hans",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Poulsen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "pd00000002336110",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pd00000002336110"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "Metliaas"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Maren Olsdtr",
+              "parts": [
+                {
+                  "value": "Maren",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Olsdtr",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "pd00000002336111",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pd00000002336111"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "Metliaas"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pd00000002336110"
+      },
+      "person2": {
+        "resource": "#pd00000002336109"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pd00000002336111"
+      },
+      "person2": {
+        "resource": "#pd00000002336109"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#pd00000002336110"
+      },
+      "person2": {
+        "resource": "#pd00000002336111"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"Church book from Orkdal parish 1870-1880 (1638P),\" database, Digitalarkivet, The National Archives of Norway (https://www.digitalarkivet.no/en/view/255/pd00000002336109 : accessed 17 April 2013), entry for Ole Hanssen."
+        }
+      ],
+      "about": "https://www.digitalarkivet.no/en/view/255/pd00000002336109",
+      "titles": [
+        {
+          "value": "Ole Hanssen - Church book from Orkdal parish 1870-1880 (1638P)"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Digitalarkivet (The Digital Archive)"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.digitalarkivet.no"
+      }
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "pf01036392011143",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pf01036392011143"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Oddbjørg Stenberg",
+              "parts": [
+                {
+                  "value": "Oddbjørg",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Stenberg",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1904-10-08"
+          },
+          "place": {
+            "original": "Kristiania"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1910"
+          },
+          "place": {
+            "original": "Toldbodgate 24, Kristiania, Norway"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1910"
+          },
+          "place": {
+            "original": "Toldbodgate 24, Kristiania, Norway"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "barn"
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "ug"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"1910 census for Kristiania,\" database, Digitalarkivet, The National Archives of Norway (https://www.digitalarkivet.no/en/census/person/pf01036392011143 : accessed 17 April 2013), entry for Oddbjørg Stenberg."
+        }
+      ],
+      "about": "https://www.digitalarkivet.no/en/census/person/pf01036392011143",
+      "titles": [
+        {
+          "value": "Oddbjørg Stenberg - 1910 census for Kristiania"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Digitalarkivet (The Digital Archive)"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.digitalarkivet.no"
+      }
+    }
+  ]
+}

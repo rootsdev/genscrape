@@ -1,0 +1,88 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "62316159",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://legacy/62316159"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Anne Scott Teague",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Morris",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Anne Scott Teague Morris"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "2 May 1942"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "27 August 2026"
+          },
+          "place": {
+            "original": "Mount Pleasant, SC, United States"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"Anne Morris Obituary (1942 - 2026) - Mount Pleasant, SC - The State,\" obituary published 31 August 2026, Legacy.com (https://www.legacy.com/us/obituaries/thestate/name/anne-morris-obituary?id=62316159 : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.legacy.com/us/obituaries/thestate/name/anne-morris-obituary?id=62316159",
+      "titles": [
+        {
+          "value": "Anne Morris Obituary (1942 - 2026) - Mount Pleasant, SC - The State"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Legacy.com"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.legacy.com"
+      }
+    }
+  ]
+}

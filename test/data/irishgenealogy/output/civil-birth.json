@@ -1,0 +1,82 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Murphy",
+              "parts": [
+                {
+                  "value": "John",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Murphy",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1872"
+          },
+          "place": {
+            "original": "New Ross"
+          }
+        }
+      ],
+      "principal": true,
+      "id": "cibi-10100047",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://irishgenealogy/cibi-10100047"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "IrishGenealogy.ie, \"Birth record for John Murphy\" (https://www.irishgenealogy.ie/view/?record_id=cibi-10100047 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.irishgenealogy.ie/view/?record_id=cibi-10100047",
+      "titles": [
+        {
+          "value": "Birth record for John Murphy"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "IrishGenealogy.ie"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.irishgenealogy.ie"
+      }
+    }
+  ]
+}

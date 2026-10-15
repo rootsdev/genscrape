@@ -1,0 +1,185 @@
+{
+  "description": "#3",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Elizabeth Brappel",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "GUNN",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Elizabeth Brappel GUNN"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Baptism",
+          "date": {
+            "original": "07 Apr 1774"
+          },
+          "place": {
+            "original": "St Nicholas of Myra, Brighton, Sussex"
+          }
+        }
+      ],
+      "principal": true,
+      "id": "5e29f296f493fd5a052f7a98",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://freereg/5e29f296f493fd5a052f7a98"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Stephen",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "GUNN",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Stephen GUNN"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "id": "1",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Martha",
+                  "type": "http://gedcomx.org/Given"
+                }
+              ],
+              "fullText": "Martha"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "id": "2",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#5e29f296f493fd5a052f7a98"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#5e29f296f493fd5a052f7a98"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "3",
+      "citations": [
+        {
+          "value": "FreeREG, \"Baptism of Elizabeth Brappel GUNN, Brighton, Sussex\" (https://www.freereg.org.uk/search_records/5e29f296f493fd5a052f7a98 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.freereg.org.uk/search_records/5e29f296f493fd5a052f7a98",
+      "titles": [
+        {
+          "value": "Baptism of Elizabeth Brappel GUNN, Brighton, Sussex"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "FreeREG"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.freereg.org.uk"
+      }
+    }
+  ]
+}

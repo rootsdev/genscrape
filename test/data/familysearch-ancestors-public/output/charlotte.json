@@ -1,0 +1,222 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "LHLL-QFD",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://familysearch-ancestors-public/LHLL-QFD"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Charlotte Burnett",
+              "parts": [
+                {
+                  "value": "Charlotte",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Burnett",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "June 1850"
+          },
+          "place": {
+            "original": "Spartanburg, South Carolina, United States"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1910"
+          },
+          "place": {
+            "original": "Cherokee Springs, Spartanburg, South Carolina, United States"
+          }
+        }
+      ],
+      "principal": true,
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "2ZS9-LPM",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://familysearch-ancestors-public/2ZS9-LPM"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Elias Charles Burnett",
+              "parts": [
+                {
+                  "value": "Elias Charles",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Burnett",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "28 December 1822"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "8 March 1920"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "MBMV-9CF",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://familysearch-ancestors-public/MBMV-9CF"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Malissa F Gilbert",
+              "parts": [
+                {
+                  "value": "Malissa F",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Gilbert",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1823"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "18 July 1888"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2ZS9-LPM"
+      },
+      "person2": {
+        "resource": "#LHLL-QFD"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#MBMV-9CF"
+      },
+      "person2": {
+        "resource": "#LHLL-QFD"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"Charlotte Burnett - FamilySearch Ancestors,\" FamilySearch Ancestors (https://ancestors.familysearch.org/en/LHLL-QFD/charlotte-burnett-1850-1910 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://ancestors.familysearch.org/en/LHLL-QFD/charlotte-burnett-1850-1910",
+      "titles": [
+        {
+          "value": "Charlotte Burnett - FamilySearch Ancestors"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "FamilySearch Ancestors"
+        }
+      ],
+      "homepage": {
+        "resource": "https://ancestors.familysearch.org"
+      }
+    }
+  ]
+}

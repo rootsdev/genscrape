@@ -1,0 +1,564 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "9991",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/9991"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Lady",
+                  "type": "http://gedcomx.org/Prefix"
+                },
+                {
+                  "value": "Susanna",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Stewart",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Lady Susanna Stewart"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "23 May 1768"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "15 August 1805"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "108518",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/108518"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Alexander",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Stewart",
+                  "type": "http://gedcomx.org/Surname"
+                },
+                {
+                  "value": "6th Earl of Galloway",
+                  "type": "http://gedcomx.org/Suffix"
+                }
+              ],
+              "fullText": "Alexander Stewart, 6th Earl of Galloway"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "109461",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/109461"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Lady",
+                  "type": "http://gedcomx.org/Prefix"
+                },
+                {
+                  "value": "Catherine",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Cochrane",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Lady Catherine Cochrane"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "9984",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/9984"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Granville",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Leveson-Gower",
+                  "type": "http://gedcomx.org/Surname"
+                },
+                {
+                  "value": "1st Marquess of Stafford",
+                  "type": "http://gedcomx.org/Suffix"
+                }
+              ],
+              "fullText": "Granville Leveson-Gower, 1st Marquess of Stafford"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "8517",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/8517"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Lady",
+                  "type": "http://gedcomx.org/Prefix"
+                },
+                {
+                  "value": "Georgiana Augusta",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Leveson-Gower",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Lady Georgiana Augusta Leveson-Gower"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "24 Mar 1806"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "9997",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/9997"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Lady",
+                  "type": "http://gedcomx.org/Prefix"
+                },
+                {
+                  "value": "Susan",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Leveson-Gower",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Lady Susan Leveson-Gower"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "c 1771"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "26 May 1838"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "9993",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/9993"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Lady",
+                  "type": "http://gedcomx.org/Prefix"
+                },
+                {
+                  "value": "Charlotte Sophia",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Leveson-Gower",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Lady Charlotte Sophia Leveson-Gower"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "11 Jan 1771"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "12 Aug 1854"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "9992",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/9992"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Granville",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Leveson-Gower",
+                  "type": "http://gedcomx.org/Surname"
+                },
+                {
+                  "value": "1st Earl Granville",
+                  "type": "http://gedcomx.org/Suffix"
+                }
+              ],
+              "fullText": "Granville Leveson-Gower, 1st Earl Granville"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "12 Oct 1773"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "8 Jan 1846"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#108518"
+      },
+      "person2": {
+        "resource": "#9991"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#109461"
+      },
+      "person2": {
+        "resource": "#9991"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#108518"
+      },
+      "person2": {
+        "resource": "#109461"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#9991"
+      },
+      "person2": {
+        "resource": "#9984"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#9991"
+      },
+      "person2": {
+        "resource": "#8517"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#9984"
+      },
+      "person2": {
+        "resource": "#8517"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#9991"
+      },
+      "person2": {
+        "resource": "#9997"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#9984"
+      },
+      "person2": {
+        "resource": "#9997"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#9991"
+      },
+      "person2": {
+        "resource": "#9993"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#9984"
+      },
+      "person2": {
+        "resource": "#9993"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#9991"
+      },
+      "person2": {
+        "resource": "#9992"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#9984"
+      },
+      "person2": {
+        "resource": "#9992"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"Lady Susanna Stewart - thePeerage.com,\" thePeerage.com (https://www.thepeerage.com/p1000.htm : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.thepeerage.com/p1000.htm",
+      "titles": [
+        {
+          "value": "Lady Susanna Stewart - thePeerage.com"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "thePeerage.com"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.thepeerage.com"
+      }
+    }
+  ]
+}

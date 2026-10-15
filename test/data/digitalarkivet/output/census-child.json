@@ -1,0 +1,247 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "pf01036395003804",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pf01036395003804"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Even Ausdal",
+              "parts": [
+                {
+                  "value": "Even",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ausdal",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1900-01-13"
+          },
+          "place": {
+            "original": "Ringsaker"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1910"
+          },
+          "place": {
+            "original": "Kampetin, Nes, Norway"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "1910"
+          },
+          "place": {
+            "original": "Kampetin, Nes, Norway"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Søn"
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "ug"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pf01036395003799",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pf01036395003799"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Emil Ausdal",
+              "parts": [
+                {
+                  "value": "Emil",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ausdal",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1874-07-26"
+          },
+          "place": {
+            "original": "Biri"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pf01036395003800",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pf01036395003800"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ingeborg Evensdatter",
+              "parts": [
+                {
+                  "value": "Ingeborg",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Evensdatter",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1861-10-29"
+          },
+          "place": {
+            "original": "Biri"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pf01036395003799"
+      },
+      "person2": {
+        "resource": "#pf01036395003804"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pf01036395003800"
+      },
+      "person2": {
+        "resource": "#pf01036395003804"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#pf01036395003799"
+      },
+      "person2": {
+        "resource": "#pf01036395003800"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"1910 census for Nes,\" database, Digitalarkivet, The National Archives of Norway (https://www.digitalarkivet.no/en/census/person/pf01036395003804 : accessed 17 April 2013), entry for Even Ausdal."
+        }
+      ],
+      "about": "https://www.digitalarkivet.no/en/census/person/pf01036395003804",
+      "titles": [
+        {
+          "value": "Even Ausdal - 1910 census for Nes"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Digitalarkivet (The Digital Archive)"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.digitalarkivet.no"
+      }
+    }
+  ]
+}

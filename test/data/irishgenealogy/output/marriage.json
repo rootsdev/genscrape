@@ -1,0 +1,289 @@
+{
+  "description": "#6",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "JOHN BYRNE",
+              "parts": [
+                {
+                  "value": "JOHN",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "BYRNE",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "principal": true,
+      "id": "1dd9f6479b-40055",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://irishgenealogy/1dd9f6479b-40055"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "PEMBROOK COURT"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "WILLIAM BYRNE",
+              "parts": [
+                {
+                  "value": "WILLIAM",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "BYRNE",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "id": "1",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "ESTHER BYRNE",
+              "parts": [
+                {
+                  "value": "ESTHER",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "BYRNE",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "PEMBROOK CT"
+          }
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "JAMES BYRNE",
+              "parts": [
+                {
+                  "value": "JAMES",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "BYRNE",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "id": "3",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "WILLIAM BEHAN",
+              "parts": [
+                {
+                  "value": "WILLIAM",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "BEHAN",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "4",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "MARY BENNIT",
+              "parts": [
+                {
+                  "value": "MARY",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "BENNIT",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "5",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#1dd9f6479b-40055"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1dd9f6479b-40055"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "22 January 1860"
+          },
+          "place": {
+            "original": "ST. ANDREW, DUBLIN (RC)"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "6",
+      "citations": [
+        {
+          "value": "IrishGenealogy.ie, \"Marriage record for JOHN BYRNE of PEMBROOK COURT and ESTHER BYRNE of PEMBROOK CT on 22 January 1860\" (https://www.irishgenealogy.ie/view/?record_id=1dd9f6479b-40055 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.irishgenealogy.ie/view/?record_id=1dd9f6479b-40055",
+      "titles": [
+        {
+          "value": "Marriage record for JOHN BYRNE of PEMBROOK COURT and ESTHER BYRNE of PEMBROOK CT on 22 January 1860"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "IrishGenealogy.ie"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.irishgenealogy.ie"
+      }
+    }
+  ]
+}

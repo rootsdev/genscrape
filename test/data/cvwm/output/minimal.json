@@ -1,0 +1,95 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "1577024",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://cvwm/1577024"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "James Ward",
+              "parts": [
+                {
+                  "value": "James",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ward",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "October 6, 1880"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "August 25, 1917"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Vimy Memorial"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "Private; Army; Canadian Infantry (Alberta Regiment); 50th Bn.; Service number 696874"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Veterans Affairs Canada, \"The Canadian Virtual War Memorial: Private James Ward\" (https://www.veterans.gc.ca/eng/remembrance/memorials/canadian-virtual-war-memorial/detail/1577024 : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.veterans.gc.ca/eng/remembrance/memorials/canadian-virtual-war-memorial/detail/1577024",
+      "titles": [
+        {
+          "value": "Private James Ward - The Canadian Virtual War Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Veterans Affairs Canada"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.veterans.gc.ca"
+      }
+    }
+  ]
+}

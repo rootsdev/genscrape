@@ -44,11 +44,32 @@ correct scraper, then does its magic.
 The `data` event is fired when genscrape successfully scrapes data from the page.
 Read more about the data model below.
 
+When the data came from the generic extractor (see below), a second argument
+`{generic: true, strategy: '...'}` is passed to the handler.
+
 #### noMatch
 
 The `noMatch` event is fired when genscrape is called on a page with a URL that
-it does not recognize. In other words, it does not have a parser registered for
-the URL.
+it does not recognize and the generic extractor could not find a person on it.
+In other words, it does not have a parser registered for the URL.
+
+### Generic extractor
+
+When no scraper is registered for a URL, genscrape reads the page with a
+site-agnostic extractor instead (`src/generic/`). It tries, in order:
+schema.org JSON-LD and microdata, JSON page state embedded in scripts,
+label/value pairs (tables, definition lists, "Label: value" lines; labels in
+English, French, German, Dutch, Norwegian, Danish, Swedish and Spanish), and
+biographical prose ("son of A and B"). It emits `data` only if it finds a name
+plus at least one dated event or relative; otherwise `noMatch`.
+
+Generic results are less complete than a dedicated scraper. On the test pages of
+the existing scrapers it reproduces about 74% of their fields
+(`npm run benchmark:generic`). To turn it off:
+
+```js
+genscrape({ generic: false }).on('noMatch', function(){ /* ... */ });
+```
 
 #### noData
 
@@ -124,3 +145,21 @@ from the same record on the same website.
 * [Open Archives](https://www.openarch.nl)
 * [WeRelate](http://www.werelate.org/)
 * [WikiTree](https://www.wikitree.com/) person profiles
+* [ABMC](https://www.abmc.gov) (American Battle Monuments Commission) profile pages
+* [Archieven.nl](https://www.archieven.nl) civil registration record details (birth, marriage, death)
+* [Australian War Memorial](https://www.awm.gov.au) Roll of Honour records
+* [Canadian Virtual War Memorial](https://www.veterans.gc.ca/eng/remembrance/memorials/canadian-virtual-war-memorial)
+* [Digitalarkivet](https://www.digitalarkivet.no) (Norwegian National Archives) census and church book person records
+* [FamilySearch Ancestors](https://ancestors.familysearch.org) public person pages
+* [Fold3](https://www.fold3.com) memorial pages
+* [FreeCEN](https://www.freecen.org.uk) census record details
+* [FreeREG](https://www.freereg.org.uk) baptism, marriage and burial record details
+* [GEDBAS](https://gedbas.genealogy.net) person pages
+* [Geneanet](https://gw.geneanet.org) family tree person pages
+* [Geni](https://www.geni.com) person profiles
+* [IrishGenealogy.ie](https://www.irishgenealogy.ie) civil (birth, marriage, death) and church (baptism, marriage, burial) record views
+* [Legacy.com](https://www.legacy.com) obituaries
+* [Rodovid](https://rodovid.org) person pages
+* [thePeerage.com](https://www.thepeerage.com) person entries
+
+Other sites are handled by the generic extractor described above.

@@ -1,0 +1,289 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "pierfit.washington.george",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.washington.george"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "George",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "WASHINGTON",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "February 22, 1732"
+          },
+          "place": {
+            "original": "Pope'Creek, Westmoreland Co, Virginie (USA)"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "December 14, 1799"
+          },
+          "place": {
+            "original": "Domaine de Mont-Vernon, Fairfax, Virginie (USA)"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1759"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.washington.augustine",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.washington.augustine"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Augustine WASHINGTON",
+              "parts": [
+                {
+                  "value": "Augustine",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "WASHINGTON",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "ca 1694"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1743"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.ball.mary",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.ball.mary"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary BALL",
+              "parts": [
+                {
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "BALL",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1708"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1789"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.dandridge.martha",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.dandridge.martha"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Martha DANDRIDGE",
+              "parts": [
+                {
+                  "value": "Martha",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "DANDRIDGE",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1731"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1802"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.washington.augustine"
+      },
+      "person2": {
+        "resource": "#pierfit.washington.george"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.ball.mary"
+      },
+      "person2": {
+        "resource": "#pierfit.washington.george"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#pierfit.washington.george"
+      },
+      "person2": {
+        "resource": "#pierfit.dandridge.martha"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1759"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "George WASHINGTON : Family tree by Base collaborative Pierfit (pierfit) - Geneanet (https://gw.geneanet.org/pierfit?lang=en&n=washington&p=george : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://gw.geneanet.org/pierfit?lang=en&n=washington&p=george",
+      "titles": [
+        {
+          "value": "George WASHINGTON : Family tree by Base collaborative Pierfit (pierfit) - Geneanet"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Geneanet"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.geneanet.org"
+      }
+    }
+  ]
+}

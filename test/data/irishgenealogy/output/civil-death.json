@@ -1,0 +1,88 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Murphy",
+              "parts": [
+                {
+                  "value": "John",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Murphy",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "about 1841"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1881"
+          },
+          "place": {
+            "original": "Dingle"
+          }
+        }
+      ],
+      "principal": true,
+      "id": "cide-5863758",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://irishgenealogy/cide-5863758"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "IrishGenealogy.ie, \"Death record for John Murphy\" (https://www.irishgenealogy.ie/view/?record_id=cide-5863758 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.irishgenealogy.ie/view/?record_id=cide-5863758",
+      "titles": [
+        {
+          "value": "Death record for John Murphy"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "IrishGenealogy.ie"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.irishgenealogy.ie"
+      }
+    }
+  ]
+}

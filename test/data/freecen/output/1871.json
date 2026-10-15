@@ -1,0 +1,276 @@
+{
+  "description": "#4",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Elizabeth",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "EDWARDS",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Elizabeth EDWARDS"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1871"
+          },
+          "place": {
+            "original": "19 Powis Road, Brighton, Sussex"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Lambeth, Surrey"
+          },
+          "date": {
+            "original": "about 1813"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Boarding Housekeeper"
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "U"
+        }
+      ],
+      "principal": true,
+      "id": "590507f9e9379091b11264db",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://freecen/590507f9e9379091b11264db"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Henry S",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "HANSOM",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Henry S HANSOM"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1871"
+          },
+          "place": {
+            "original": "19 Powis Road, Brighton, Sussex"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Bristol, Somerset"
+          },
+          "date": {
+            "original": "about 1849"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Allowance From Parents"
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "U"
+        }
+      ],
+      "id": "1",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "HUDSON",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Mary HUDSON"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1871"
+          },
+          "place": {
+            "original": "19 Powis Road, Brighton, Sussex"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "London, Middlesex"
+          },
+          "date": {
+            "original": "about 1815"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Cook Domestic Serv"
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "W"
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Rosa",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "PORTER",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Rosa PORTER"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1871"
+          },
+          "place": {
+            "original": "19 Powis Road, Brighton, Sussex"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "London, Middlesex"
+          },
+          "date": {
+            "original": "about 1855"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Housemaid Domestic Serv"
+        },
+        {
+          "type": "http://gedcomx.org/MaritalStatus",
+          "value": "U"
+        }
+      ],
+      "id": "3",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "FreeCEN, \"1871 census, Elizabeth EDWARDS, 19 Powis Road, Brighton, Sussex\" (https://www.freecen.org.uk/search_records/590507f9e9379091b11264db/elizabeth-edwards-1871-sussex-brighton-1813-?locale=en : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.freecen.org.uk/search_records/590507f9e9379091b11264db/elizabeth-edwards-1871-sussex-brighton-1813-?locale=en",
+      "titles": [
+        {
+          "value": "1871 census, Elizabeth EDWARDS, 19 Powis Road, Brighton, Sussex"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "FreeCEN"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.freecen.org.uk"
+      }
+    }
+  ]
+}

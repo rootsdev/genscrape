@@ -1,0 +1,185 @@
+{
+  "description": "#4",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "William",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "FOWLER",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "William FOWLER"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "principal": true,
+      "id": "60521934f493fdd7899f1ac3",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://freereg/60521934f493fdd7899f1ac3"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Elizabeth",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SELMAN",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Elizabeth SELMAN"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "id": "1",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Solomon SELMAN",
+              "parts": [
+                {
+                  "value": "Solomon",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SELMAN",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Arthur CROOME",
+              "parts": [
+                {
+                  "value": "Arthur",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "CROOME",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "3",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#60521934f493fdd7899f1ac3"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "10 May 1779"
+          },
+          "place": {
+            "original": "St John the Evangelist, Charfield, Gloucestershire"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "FreeREG, \"Marriage of William FOWLER, Charfield, Gloucestershire\" (https://www.freereg.org.uk/search_records/60521934f493fdd7899f1ac3 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.freereg.org.uk/search_records/60521934f493fdd7899f1ac3",
+      "titles": [
+        {
+          "value": "Marriage of William FOWLER, Charfield, Gloucestershire"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "FreeREG"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.freereg.org.uk"
+      }
+    }
+  ]
+}

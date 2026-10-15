@@ -1,0 +1,104 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Murphy",
+              "parts": [
+                {
+                  "value": "John",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Murphy",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "about 1821"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "12 May 1852"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "date": {
+            "original": "13 May 1852"
+          },
+          "place": {
+            "original": "ARBOUR HILL BARRACKS, DUBLIN (COI)"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "14 Regt"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Private"
+        }
+      ],
+      "principal": true,
+      "id": "894b618d15-1105",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://irishgenealogy/894b618d15-1105"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "IrishGenealogy.ie, \"Burial record for JOHN MURPHY of 14 REGT on 13 May 1852\" (https://www.irishgenealogy.ie/view/?record_id=894b618d15-1105 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.irishgenealogy.ie/view/?record_id=894b618d15-1105",
+      "titles": [
+        {
+          "value": "Burial record for JOHN MURPHY of 14 REGT on 13 May 1852"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "IrishGenealogy.ie"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.irishgenealogy.ie"
+      }
+    }
+  ]
+}

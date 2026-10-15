@@ -1,0 +1,659 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "pierfit.dandridge.martha",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.dandridge.martha"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Martha",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "DANDRIDGE",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "June 21, 1731"
+          },
+          "place": {
+            "original": "Virginia (USA)"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "May 22, 1802"
+          },
+          "place": {
+            "original": "Domaine de Mont-Vernon, Fairfax, Virginia (USA)"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1750"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1759"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.dandridge.john",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.dandridge.john"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John DANDRIDGE",
+              "parts": [
+                {
+                  "value": "John",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "DANDRIDGE",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1701"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1756"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.jones.frances_orlando",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.jones.frances_orlando"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Frances Orlando JONES",
+              "parts": [
+                {
+                  "value": "Frances Orlando",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "JONES",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1710"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1785"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.custis.daniel_parke",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.custis.daniel_parke"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Daniel Parke CUSTIS",
+              "parts": [
+                {
+                  "value": "Daniel Parke",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "CUSTIS",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1711"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1757"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.custis.daniel_parke.1",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.custis.daniel_parke.1"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Daniel Parke CUSTIS",
+              "parts": [
+                {
+                  "value": "Daniel Parke",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "CUSTIS",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1751"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1754"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.custis.frances_parke",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.custis.frances_parke"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Frances Parke CUSTIS",
+              "parts": [
+                {
+                  "value": "Frances Parke",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "CUSTIS",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1753"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1757"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.custis.john_parke",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.custis.john_parke"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Parke CUSTIS",
+              "parts": [
+                {
+                  "value": "John Parke",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "CUSTIS",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1754"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1781"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.custis.martha_parke",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.custis.martha_parke"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Martha Parke CUSTIS",
+              "parts": [
+                {
+                  "value": "Martha Parke",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "CUSTIS",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1756"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1773"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "pierfit.washington.george",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geneanet/pierfit.washington.george"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "George WASHINGTON",
+              "parts": [
+                {
+                  "value": "George",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "WASHINGTON",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1732"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1799"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.dandridge.john"
+      },
+      "person2": {
+        "resource": "#pierfit.dandridge.martha"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.jones.frances_orlando"
+      },
+      "person2": {
+        "resource": "#pierfit.dandridge.martha"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#pierfit.dandridge.martha"
+      },
+      "person2": {
+        "resource": "#pierfit.custis.daniel_parke"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1750"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.dandridge.martha"
+      },
+      "person2": {
+        "resource": "#pierfit.custis.daniel_parke.1"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.custis.daniel_parke"
+      },
+      "person2": {
+        "resource": "#pierfit.custis.daniel_parke.1"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.dandridge.martha"
+      },
+      "person2": {
+        "resource": "#pierfit.custis.frances_parke"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.custis.daniel_parke"
+      },
+      "person2": {
+        "resource": "#pierfit.custis.frances_parke"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.dandridge.martha"
+      },
+      "person2": {
+        "resource": "#pierfit.custis.john_parke"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.custis.daniel_parke"
+      },
+      "person2": {
+        "resource": "#pierfit.custis.john_parke"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.dandridge.martha"
+      },
+      "person2": {
+        "resource": "#pierfit.custis.martha_parke"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#pierfit.custis.daniel_parke"
+      },
+      "person2": {
+        "resource": "#pierfit.custis.martha_parke"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#pierfit.dandridge.martha"
+      },
+      "person2": {
+        "resource": "#pierfit.washington.george"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "1759"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Martha DANDRIDGE : Family tree by Base collaborative Pierfit (pierfit) - Geneanet (https://gw.geneanet.org/pierfit?lang=en&n=dandridge&p=martha : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://gw.geneanet.org/pierfit?lang=en&n=dandridge&p=martha",
+      "titles": [
+        {
+          "value": "Martha DANDRIDGE : Family tree by Base collaborative Pierfit (pierfit) - Geneanet"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Geneanet"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.geneanet.org"
+      }
+    }
+  ]
+}

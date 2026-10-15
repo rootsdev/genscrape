@@ -1,0 +1,295 @@
+{
+  "description": "#4",
+  "persons": [
+    {
+      "id": "630019169",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://fold3-memorial/630019169"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Sammy Davis, Jr.",
+              "parts": [
+                {
+                  "value": "Sammy Davis,",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jr.",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "fullText": "Samuel George Davis, Jr",
+              "parts": [
+                {
+                  "value": "Samuel George Davis,",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jr",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "fullText": "Sammy Davis Jr",
+              "parts": [
+                {
+                  "value": "Sammy Davis",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jr",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "fullText": "Samuel George Davis Jr",
+              "parts": [
+                {
+                  "value": "Samuel George Davis",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jr",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Dec 8, 1925"
+          },
+          "place": {
+            "original": "Harlem, New York City NY"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "May 16, 1990"
+          },
+          "place": {
+            "original": "Los Angeles California"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Forest Lawn Memorial Park in Glendale, CA"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Ethnicity",
+          "value": "African-American"
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "African-American entertainer"
+        },
+        {
+          "type": "http://gedcomx.org/Religion",
+          "value": "Judaism"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "World War II; Army",
+          "date": {
+            "original": "1939 - 1945"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Elvera Sanchez",
+              "parts": [
+                {
+                  "value": "Elvera",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Sanchez",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Sammy Davis",
+              "parts": [
+                {
+                  "value": "Sammy",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Davis",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Samuel George Davis Sr",
+              "parts": [
+                {
+                  "value": "Samuel George Davis",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Sr",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#630019169"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#630019169"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#630019169"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "Fold3, \"Sammy Davis, Jr.\" (https://www.fold3.com/memorial/630019169/sammy-davis-jr : accessed 17 April 2013), memorial page."
+        }
+      ],
+      "about": "https://www.fold3.com/memorial/630019169/sammy-davis-jr",
+      "titles": [
+        {
+          "value": "Sammy Davis, Jr. - Fold3 Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Fold3"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.fold3.com"
+      }
+    }
+  ]
+}

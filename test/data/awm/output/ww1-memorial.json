@@ -1,0 +1,98 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "R1661477",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://awm/R1661477"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Robert Slessar",
+              "parts": [
+                {
+                  "value": "Robert",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Slessar",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "27 August 1916"
+          },
+          "place": {
+            "original": "France"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Villers-Bretonneux Memorial, Villers-Bretonneux, Picardie, France"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "Pakenham East, Victoria, Australia"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "First World War, 1914-1918; Lance Corporal; 6th Field Company, Australian Engineers; Australian Imperial Force; Service number 3821; Age at death 30"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Australian War Memorial, \"Roll of Honour: Robert Slessar\" (https://www.awm.gov.au/collection/R1661477 : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.awm.gov.au/collection/R1661477",
+      "titles": [
+        {
+          "value": "Roll of Honour: Robert Slessar - Australian War Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Australian War Memorial"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.awm.gov.au"
+      }
+    }
+  ]
+}
