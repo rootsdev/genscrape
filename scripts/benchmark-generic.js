@@ -196,12 +196,12 @@ function compare(before, after){
 
 function loadPage(c){
   return new Promise(function(resolve){
-    jsdom.env({
-      file: c.page,
-      url: c.url,
-      features: { FetchExternalResources: false, ProcessExternalResources: false },
-      done: function(err, window){ resolve({ err: err, window: window }); }
-    });
+    try {
+      var dom = new jsdom.JSDOM(fs.readFileSync(c.page, 'utf8'), { url: c.url });
+      resolve({ err: null, window: dom.window });
+    } catch(e) {
+      resolve({ err: e, window: null });
+    }
   });
 }
 

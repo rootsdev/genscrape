@@ -2141,7 +2141,7 @@ Verdict: **generic** ≥ 90% recall, **config** 60–89%, **custom** < 60%.
 | fact MaritalStatus | MaritalStatus |  | ✗ |
 | fact Residence | Residence | Residence | ✓ |
 |   date | Dec 11 1913 |  | ✗ |
-|   place | Sosnowitz, Petrikow, RuÃŸland | Dec 11 1913 Sosnowitz, Petrikow, RuÃŸland | ✓ |
+|   place | Sosnowitz, Petrikow, Rußland | Dec 11 1913 Sosnowitz, Petrikow, Rußland | ✓ |
 | fact Occupation | Occupation | Occupation | ✓ |
 | fact Immigration | Immigration |  | ✗ |
 
@@ -2155,9 +2155,9 @@ Verdict: **generic** ≥ 90% recall, **config** 60–89%, **custom** < 60%.
 | gender | Male | Male | ✓ |
 | fact Baptism | Baptism | Baptism | ✓ |
 |   date | June 10 1877 | June 10 1877 | ✓ |
-|   place | HuejÃºcar, Jalisco, Mexico | HuejÃºcar, Jalisco, Mexico | ✓ |
+|   place | Huejúcar, Jalisco, Mexico | Huejúcar, Jalisco, Mexico | ✓ |
 | fact Residence | Residence | Residence | ✓ |
-|   place | HuejÃºcar, Jalisco, Mexico | HuejÃºcar, Jalisco, Mexico | ✓ |
+|   place | Huejúcar, Jalisco, Mexico | Huejúcar, Jalisco, Mexico | ✓ |
 | parent | Regino Gonzalez | Regino Gonzalez | ✓ |
 | parent | Sacramento Aleman | Sacramento Aleman | ✓ |
 
@@ -2245,7 +2245,7 @@ Verdict: **generic** ≥ 90% recall, **config** 60–89%, **custom** < 60%.
 |   date | Mar 16 1909 | June 3 1887 | ✗ |
 | fact Residence | Residence | Residence | ✓ |
 |   date | Nov 5 1930 |  | ✗ |
-|   place | SÃ¸nderholm Frejlev, SÃ¸nderholm-Frejlev, Denmark | Nov 5 1930 SÃ¸nderholm Frejlev, SÃ¸nderholm-Frejlev, Denmark | ✓ |
+|   place | Sønderholm Frejlev, Sønderholm-Frejlev, Denmark | Nov 5 1930 Sønderholm Frejlev, Sønderholm-Frejlev, Denmark | ✓ |
 | fact MaritalStatus | MaritalStatus | MaritalStatus | ✓ |
 | parent | Peter Chr Andersen | Peter Chr Andersen | ✓ |
 | parent | Henritte Andersen | Henritte Andersen | ✓ |

@@ -1,5 +1,5 @@
 var debug = require('debug')('genscrape:tests:testHelpers'),
-    env = require('jsdom').env,
+    JSDOM = require('jsdom').JSDOM,
     fs = require('fs'),
     genscrape = require('../'),
     nock = require('nock'),
@@ -182,6 +182,21 @@ var helpers = module.exports = {
  * @param {Function} callback
  * @returns {Function} The function that will be registered as the done handler.
  */
+/**
+ * Minimal stand-in for jsdom 9's removed `jsdom.env`: builds a window from
+ * `html` or `file` at `url` without running page scripts, then calls `done`.
+ */
+function env(config){
+  var dom;
+  try {
+    var html = config.file ? fs.readFileSync(config.file, 'utf8') : config.html;
+    dom = new JSDOM(html, { url: config.url, pretendToBeVisual: true });
+  } catch(e) {
+    return setImmediate(function(){ config.done([e]); });
+  }
+  setImmediate(function(){ config.done(null, dom.window); });
+}
+
 function doneHandler(callback){
   return function(errors, window){
     if(errors){
