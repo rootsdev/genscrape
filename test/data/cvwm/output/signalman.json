@@ -1,0 +1,192 @@
+{
+  "description": "#3",
+  "persons": [
+    {
+      "id": "2659509",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://cvwm/2659509"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "George Rodrigues",
+              "parts": [
+                {
+                  "value": "George",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Rodrigues",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "November 25, 1918"
+          },
+          "place": {
+            "original": "Montreal, Québec"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "May 26, 1945"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Groesbeek Memorial"
+          },
+          "value": "Panel 10"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "Signalman; Army; The Royal Canadian Corps of Signals; Service number D/116199",
+          "date": {
+            "original": "May 28, 1941"
+          },
+          "place": {
+            "original": "Montreal South, Québec"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Joseph Rodrigues",
+              "parts": [
+                {
+                  "value": "Joseph",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Rodrigues",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ada Rodrigues",
+              "parts": [
+                {
+                  "value": "Ada",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Rodrigues",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2659509"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#2659509"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "3",
+      "citations": [
+        {
+          "value": "Veterans Affairs Canada, \"The Canadian Virtual War Memorial: Signalman George Rodrigues\" (https://www.veterans.gc.ca/eng/remembrance/memorials/canadian-virtual-war-memorial/detail/2659509 : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.veterans.gc.ca/eng/remembrance/memorials/canadian-virtual-war-memorial/detail/2659509",
+      "titles": [
+        {
+          "value": "Signalman George Rodrigues - The Canadian Virtual War Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Veterans Affairs Canada"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.veterans.gc.ca"
+      }
+    }
+  ]
+}

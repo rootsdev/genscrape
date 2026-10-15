@@ -1,0 +1,192 @@
+{
+  "description": "#3",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Anna",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kruijd",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Anna Kruijd"
+            }
+          ]
+        }
+      ],
+      "principal": true,
+      "id": "35717082",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://archieven/236/35717082"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Haarlem"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "25 January 1886"
+          },
+          "place": {
+            "original": "Haarlem"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Dirk",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kruijd",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Dirk Kruijd"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "id": "1",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Geertruida",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ophof",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Geertruida Ophof"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "id": "2",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#35717082"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#35717082"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "3",
+      "citations": [
+        {
+          "value": "60 Overlijdensakte Anna Kruijd, 25-01-1886, 358.46-31886 Overlijdensakten van de gemeente Haarlem, 1886, Noord-Hollands Archief, Archieven.nl (https://www.archieven.nl/nl/zoeken?mivast=0&mizig=310&miadt=236&miaet=54&micode=358.46-31886&minr=35717082&miview=ldt : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.archieven.nl/nl/zoeken?mivast=0&mizig=310&miadt=236&miaet=54&micode=358.46-31886&minr=35717082&miview=ldt",
+      "titles": [
+        {
+          "value": "60 Overlijdensakte Anna Kruijd, 25-01-1886"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "nl",
+          "value": "Archieven.nl"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.archieven.nl"
+      }
+    }
+  ]
+}

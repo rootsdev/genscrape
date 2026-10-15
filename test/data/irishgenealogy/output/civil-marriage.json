@@ -1,0 +1,125 @@
+{
+  "description": "#2",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "John Murphy",
+              "parts": [
+                {
+                  "value": "John",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Murphy",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "principal": true,
+      "id": "cima-2201021",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://irishgenealogy/cima-2201021"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary Murphy",
+              "parts": [
+                {
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Murphy",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "1",
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#cima-2201021"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "2 April 1882"
+          },
+          "place": {
+            "original": "Macroom"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#2"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "2",
+      "citations": [
+        {
+          "value": "IrishGenealogy.ie, \"Marriage record for John Murphy and Mary Murphy\" (https://www.irishgenealogy.ie/view/?record_id=cima-2201021 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.irishgenealogy.ie/view/?record_id=cima-2201021",
+      "titles": [
+        {
+          "value": "Marriage record for John Murphy and Mary Murphy"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "IrishGenealogy.ie"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.irishgenealogy.ie"
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "529923576",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://fold3-memorial/529923576"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Ernest R Ackerman",
+              "parts": [
+                {
+                  "value": "Ernest R",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ackerman",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "fullText": "Ernest Robinson Ackerman, Jr",
+              "parts": [
+                {
+                  "value": "Ernest Robinson Ackerman,",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Jr",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "Dec 26, 1919"
+          },
+          "place": {
+            "original": "Plainfield, NJ"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "Apr 3, 1944"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Sicily-Rome American Cemetery, Nettuno, Italy"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "World War II; Second Lieutenant, U.S. Army Air Forces; 741st Bomber Squadron, 455th Bomber Group, Heavy; Service number O-735152",
+          "date": {
+            "original": "1939 - 1945"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "Purple Heart"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "Air Medal"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "Gold Star"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Fold3, \"Ernest R Ackerman\" (https://www.fold3.com/memorial/529923576/ernest-r-ackerman : accessed 17 April 2013), memorial page."
+        }
+      ],
+      "about": "https://www.fold3.com/memorial/529923576/ernest-r-ackerman",
+      "titles": [
+        {
+          "value": "Ernest R Ackerman - Fold3 Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Fold3"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.fold3.com"
+      }
+    }
+  ]
+}

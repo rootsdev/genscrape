@@ -1,0 +1,84 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "pg00000003109668",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pg00000003109668"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Hansen Hansen",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Hansen Hansen"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "1859-01-26"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "date": {
+            "original": "1859-02-07"
+          },
+          "place": {
+            "original": "Romedal, Hedmark, Norway"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"Church book from Romedal parish 1846-1866 (0416P),\" database, Digitalarkivet, The National Archives of Norway (https://www.digitalarkivet.no/en/view/267/pg00000003109668 : accessed 17 April 2013), entry for Hansen Hansen."
+        }
+      ],
+      "about": "https://www.digitalarkivet.no/en/view/267/pg00000003109668",
+      "titles": [
+        {
+          "value": "Hansen Hansen - Church book from Romedal parish 1846-1866 (0416P)"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Digitalarkivet (The Digital Archive)"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.digitalarkivet.no"
+      }
+    }
+  ]
+}

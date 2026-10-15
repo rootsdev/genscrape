@@ -1,0 +1,88 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Brooke William Robert",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "BOOTHBY",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Brooke William Robert BOOTHBY"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Burial",
+          "date": {
+            "original": "29 Sep 1865"
+          },
+          "place": {
+            "original": "St Mary the Virgin, Welwyn, Hertfordshire"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "Welwyn"
+          }
+        }
+      ],
+      "principal": true,
+      "id": "6838192286557439c2378a35",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://freereg/6838192286557439c2378a35"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "FreeREG, \"Burial of Brooke William Robert BOOTHBY, Welwyn, Hertfordshire\" (https://www.freereg.org.uk/search_records/6838192286557439c2378a35 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.freereg.org.uk/search_records/6838192286557439c2378a35",
+      "titles": [
+        {
+          "value": "Burial of Brooke William Robert BOOTHBY, Welwyn, Hertfordshire"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "FreeREG"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.freereg.org.uk"
+      }
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "description": "#4",
+  "persons": [
+    {
+      "id": "529885239",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://fold3-memorial/529885239"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Alfred R Ellis",
+              "parts": [
+                {
+                  "value": "Alfred R",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ellis",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nameForms": [
+            {
+              "fullText": "Alfred Reece Ellis",
+              "parts": [
+                {
+                  "value": "Alfred Reece",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ellis",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "May 21, 1907"
+          },
+          "place": {
+            "original": "Iowa City, Iowa"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "Sep 27, 1930"
+          },
+          "place": {
+            "original": "Mechanicsville, Iowa"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "May 30, 1945"
+          },
+          "place": {
+            "original": "Off the Coast of Ghana, Africa"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Tablets of the Missing at North Africa American Cemetery, Carthage, Tunisia"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "Iowa City, Iowa"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Ethnicity",
+          "value": "Caucasian"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "World War II; First Lieutenant, U.S. Army Air Forces; 1202nd Army Air Force Base Unit; Service number O-499564",
+          "date": {
+            "original": "1939 - 1945"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "European African Middle Eastern Campaign Medal"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "American Campaign Medal"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "World War II Victory Medal"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "Purple Heart"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "Army Presidential Unit Citation"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "Army Good Conduct Medal"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "Gold Star"
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Dorritt Sue Ellis",
+              "parts": [
+                {
+                  "value": "Dorritt Sue",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ellis",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "George Ellis",
+              "parts": [
+                {
+                  "value": "George",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ellis",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Kate Orum Ellis",
+              "parts": [
+                {
+                  "value": "Kate Orum",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ellis",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#529885239"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#529885239"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#3"
+      },
+      "person2": {
+        "resource": "#529885239"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "Fold3, \"Alfred R Ellis\" (https://www.fold3.com/memorial/529885239/alfred-r-ellis : accessed 17 April 2013), memorial page."
+        }
+      ],
+      "about": "https://www.fold3.com/memorial/529885239/alfred-r-ellis",
+      "titles": [
+        {
+          "value": "Alfred R Ellis - Fold3 Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Fold3"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.fold3.com"
+      }
+    }
+  ]
+}

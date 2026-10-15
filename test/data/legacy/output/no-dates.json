@@ -1,0 +1,88 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "62476359",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://legacy/62476359"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Baylus",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Love",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Baylus Love"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1947"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2026"
+          },
+          "place": {
+            "original": "Atlanta, GA, United States"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"Baylus Love Obituary (1947 - 2026) - Atlanta, GA - The State,\" obituary published 19 September 2026, Legacy.com (https://www.legacy.com/us/obituaries/thestate/name/baylus-love-obituary?id=62476359 : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.legacy.com/us/obituaries/thestate/name/baylus-love-obituary?id=62476359",
+      "titles": [
+        {
+          "value": "Baylus Love Obituary (1947 - 2026) - Atlanta, GA - The State"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Legacy.com"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.legacy.com"
+      }
+    }
+  ]
+}

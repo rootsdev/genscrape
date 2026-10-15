@@ -1,0 +1,186 @@
+{
+  "description": "#3",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Dirk",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kruijd",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Dirk Kruijd"
+            }
+          ]
+        }
+      ],
+      "principal": true,
+      "id": "9459325",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://archieven/236/9459325"
+        ]
+      },
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "26 January 1882"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Dirk",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kruijd",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Dirk Kruijd"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "id": "1",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Geertruida",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Ophof",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Geertruida Ophof"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "id": "2",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#9459325"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#9459325"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "3",
+      "citations": [
+        {
+          "value": "124 Geboorteakte Dirk Kruijd, 26-01-1882, 358.46-11882 Geboorteakten van de gemeente Haarlem, 1882, Noord-Hollands Archief, Archieven.nl (https://www.archieven.nl/nl/zoeken?mivast=0&mizig=310&miadt=236&miaet=54&micode=358.46-11882&minr=9459325&miview=ldt : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.archieven.nl/nl/zoeken?mivast=0&mizig=310&miadt=236&miaet=54&micode=358.46-11882&minr=9459325&miview=ldt",
+      "titles": [
+        {
+          "value": "124 Geboorteakte Dirk Kruijd, 26-01-1882"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "nl",
+          "value": "Archieven.nl"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.archieven.nl"
+      }
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "1331881715",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881715"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Friedrich SCHLARB",
+              "parts": [
+                {
+                  "value": "Friedrich",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SCHLARB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Education",
+          "value": "Studium Theologie",
+          "date": {
+            "original": "from 1857 to 1859"
+          },
+          "place": {
+            "original": "Erlangen, Bayern, Deutschland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Education",
+          "value": "Studium Theologie",
+          "date": {
+            "original": "from 30 September 1859 to 1861"
+          },
+          "place": {
+            "original": "Utrecht, Niederlande"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Pfarrer in Gerolsheim",
+          "date": {
+            "original": "from 7 February 1877 to 1 November 1880"
+          },
+          "place": {
+            "original": "Gerolsheim"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Verweser",
+          "date": {
+            "original": "until 20 April 1866"
+          },
+          "place": {
+            "original": "Kleinfischlingen, Edenkoben, Südliche Weinstrasse, Rheinland-Pfalz, Deutschland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Baptism",
+          "date": {
+            "original": "16 August 1837"
+          },
+          "place": {
+            "original": "Kusel, Kusel-Altenglan, Kusel, Rheinland-Pfalz, Deutschland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Emigration",
+          "date": {
+            "original": "1880"
+          },
+          "place": {
+            "original": "Bessarabien, Russland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "date": {
+            "original": "from 1908 to 1909"
+          },
+          "place": {
+            "original": "Bendery, Bessarabien, Russland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "25 July 1837"
+          },
+          "place": {
+            "original": "Kusel, Kusel-Altenglan, Kusel, Rheinland-Pfalz, Deutschland"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "11 February 1869"
+          },
+          "place": {
+            "original": "Altdorf, Edenkoben, Südliche Weinstrasse, Rheinland-Pfalz, Deutschland"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "1331881719",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881719"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Johann Carl SCHLARB",
+              "parts": [
+                {
+                  "value": "Johann Carl",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SCHLARB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "1331881720",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881720"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Caroline Charlotte SCHWINN",
+              "parts": [
+                {
+                  "value": "Caroline Charlotte",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SCHWINN",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "1331881716",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881716"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Sophia Louisa HEPP",
+              "parts": [
+                {
+                  "value": "Sophia Louisa",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "HEPP",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "1331880569",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331880569"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Samuel Friedrich SCHLARB",
+              "parts": [
+                {
+                  "value": "Samuel Friedrich",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SCHLARB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "15 March 1875"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "1331881706",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://gedbas/1331881706"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Theophil Johannes SCHLARB",
+              "parts": [
+                {
+                  "value": "Theophil Johannes",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "SCHLARB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "20 July 1884"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881719"
+      },
+      "person2": {
+        "resource": "#1331881715"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881720"
+      },
+      "person2": {
+        "resource": "#1331881715"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1331881719"
+      },
+      "person2": {
+        "resource": "#1331881720"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1331881715"
+      },
+      "person2": {
+        "resource": "#1331881716"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "11 February 1869"
+          },
+          "place": {
+            "original": "Altdorf, Edenkoben, Südliche Weinstrasse, Rheinland-Pfalz, Deutschland"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881715"
+      },
+      "person2": {
+        "resource": "#1331880569"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881716"
+      },
+      "person2": {
+        "resource": "#1331880569"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881715"
+      },
+      "person2": {
+        "resource": "#1331881706"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1331881716"
+      },
+      "person2": {
+        "resource": "#1331881706"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"GEDBAS - Friedrich SCHLARB,\" GEDBAS (https://gedbas.genealogy.net/person/show/1331881715 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://gedbas.genealogy.net/person/show/1331881715",
+      "titles": [
+        {
+          "value": "GEDBAS - Friedrich SCHLARB"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "de",
+          "value": "GEDBAS"
+        }
+      ],
+      "homepage": {
+        "resource": "https://gedbas.genealogy.net"
+      }
+    }
+  ]
+}

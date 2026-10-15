@@ -1,6 +1,6 @@
 {
   "name": "genscrape",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "description": "genscrape",
   "main": "src/main.js",
   "scripts": {
@@ -13,7 +13,8 @@
     "build": "mkdir -p dist && npm run build:dev && npm run build:min",
     "build:dev": "webpack",
     "build:min": "webpack --env.production",
-    "prepublish": "npm test && npm run build"
+    "prepublish": "npm test && npm run build",
+    "benchmark:generic": "node scripts/benchmark-generic.js"
   },
   "repository": {
     "type": "git",

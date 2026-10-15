@@ -1,0 +1,70 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "pd00000001628035",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://digitalarkivet/pd00000001628035"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Karen Kirstine",
+                  "type": "http://gedcomx.org/Given"
+                }
+              ],
+              "fullText": "Karen Kirstine"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"Church book from Flakstad parish 1792-1819 (1859P),\" database, Digitalarkivet, The National Archives of Norway (https://www.digitalarkivet.no/en/view/255/pd00000001628035 : accessed 17 April 2013), entry for Karen Kirstine."
+        }
+      ],
+      "about": "https://www.digitalarkivet.no/en/view/255/pd00000001628035",
+      "titles": [
+        {
+          "value": "Karen Kirstine - Church book from Flakstad parish 1792-1819 (1859P)"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Digitalarkivet (The Digital Archive)"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.digitalarkivet.no"
+      }
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "description": "#5",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "David",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "COMB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "David COMB"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1841"
+          },
+          "place": {
+            "original": "1 Sir Michael St, Greenock, Renfrewshire"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Out of County"
+          },
+          "date": {
+            "original": "about 1771"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Carpenter Jrnymn"
+        }
+      ],
+      "principal": true,
+      "id": "5a154a3df4040b9d6e5c3b09",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://freecen/5a154a3df4040b9d6e5c3b09"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Clemie",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "COMB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Clemie COMB"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1841"
+          },
+          "place": {
+            "original": "1 Sir Michael St, Greenock, Renfrewshire"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Out of County"
+          },
+          "date": {
+            "original": "about 1791"
+          }
+        }
+      ],
+      "id": "1",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "John",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "COMB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "John COMB"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1841"
+          },
+          "place": {
+            "original": "1 Sir Michael St, Greenock, Renfrewshire"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Out of County"
+          },
+          "date": {
+            "original": "about 1821"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Carpenter Jrnymn"
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "David",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "COMB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "David COMB"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1841"
+          },
+          "place": {
+            "original": "1 Sir Michael St, Greenock, Renfrewshire"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Out of County"
+          },
+          "date": {
+            "original": "about 1825"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Smith"
+        }
+      ],
+      "id": "3",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Barbra",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "COMB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Barbra COMB"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Census",
+          "date": {
+            "original": "1841"
+          },
+          "place": {
+            "original": "1 Sir Michael St, Greenock, Renfrewshire"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Out of County"
+          },
+          "date": {
+            "original": "about 1823"
+          }
+        }
+      ],
+      "id": "4",
+      "sources": [
+        {
+          "description": "#5"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "5",
+      "citations": [
+        {
+          "value": "FreeCEN, \"1841 census, David COMB, 1 Sir Michael St, Greenock, Renfrewshire\" (https://www.freecen.org.uk/search_records/5a154a3df4040b9d6e5c3b09 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.freecen.org.uk/search_records/5a154a3df4040b9d6e5c3b09",
+      "titles": [
+        {
+          "value": "1841 census, David COMB, 1 Sir Michael St, Greenock, Renfrewshire"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "FreeCEN"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.freecen.org.uk"
+      }
+    }
+  ]
+}

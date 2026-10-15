@@ -1,0 +1,474 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "6000000003222187286",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000003222187286"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Winston Churchill",
+              "parts": [
+                {
+                  "value": "Winston",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "November 30, 1874"
+          },
+          "place": {
+            "original": "England"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "January 24, 1965"
+          },
+          "place": {
+            "original": "28 Hyde Park Gate, Hyde Park, London, England"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "St. Martins Church, Bladon, Oxfordshire, England"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "Prime Minister"
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000001413233105",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000001413233105"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Lord Randolph Henry Spencer-Churchill",
+              "parts": [
+                {
+                  "value": "Lord Randolph Henry",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Spencer-Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000000658642510",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000000658642510"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Jeanette Porch",
+              "parts": [
+                {
+                  "value": "Jeanette",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Porch",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000003583684153",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000003583684153"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Clementine Churchill",
+              "parts": [
+                {
+                  "value": "Clementine",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000003681351803",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000003681351803"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Diana Churchill",
+              "parts": [
+                {
+                  "value": "Diana",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000003583622692",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000003583622692"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Randolph Churchill",
+              "parts": [
+                {
+                  "value": "Randolph",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000006971990615",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000006971990615"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Sarah Millicent Hermione Spencer Churchill",
+              "parts": [
+                {
+                  "value": "Sarah Millicent Hermione Spencer",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000004137666041",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000004137666041"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Marigold Frances Spencer-Churchill",
+              "parts": [
+                {
+                  "value": "Marigold Frances",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Spencer-Churchill",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "6000000006972162289",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://geni/6000000006972162289"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary Soames",
+              "parts": [
+                {
+                  "value": "Mary",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Soames",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000001413233105"
+      },
+      "person2": {
+        "resource": "#6000000003222187286"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000000658642510"
+      },
+      "person2": {
+        "resource": "#6000000003222187286"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#6000000003222187286"
+      },
+      "person2": {
+        "resource": "#6000000003583684153"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000003222187286"
+      },
+      "person2": {
+        "resource": "#6000000003681351803"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000003222187286"
+      },
+      "person2": {
+        "resource": "#6000000003583622692"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000003222187286"
+      },
+      "person2": {
+        "resource": "#6000000006971990615"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000003222187286"
+      },
+      "person2": {
+        "resource": "#6000000004137666041"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#6000000003222187286"
+      },
+      "person2": {
+        "resource": "#6000000006972162289"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Sir Winston Leonard Spencer-Churchill, Prime Minister of the United Kingdom (1874 - 1965) - Genealogy (https://www.geni.com/people/Winston-Churchill/6000000003222187286 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.geni.com/people/Winston-Churchill/6000000003222187286",
+      "titles": [
+        {
+          "value": "Sir Winston Leonard Spencer-Churchill, Prime Minister of the United Kingdom (1874 - 1965) - Genealogy"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Geni"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.geni.com"
+      }
+    }
+  ]
+}

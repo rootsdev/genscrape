@@ -1,0 +1,158 @@
+{
+  "description": "#3",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "THOMAS JONES",
+              "parts": [
+                {
+                  "value": "THOMAS",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "JONES",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "principal": true,
+      "id": "68f3c8a8f2-45824",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://irishgenealogy/68f3c8a8f2-45824"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "JOANNE MURPHY",
+              "parts": [
+                {
+                  "value": "JOANNE",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "MURPHY",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "id": "1",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "DANIEL MURPHY",
+              "parts": [
+                {
+                  "value": "DANIEL",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "MURPHY",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#68f3c8a8f2-45824"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "7 January 1855"
+          },
+          "place": {
+            "original": "GLENBEIGH/GLENCAR, KERRY (RC)"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#3"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "3",
+      "citations": [
+        {
+          "value": "IrishGenealogy.ie, \"Marriage record for THOMAS JONES of NR and JOANNE MURPHY of NR on 7 January 1855\" (https://www.irishgenealogy.ie/view/?record_id=68f3c8a8f2-45824 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.irishgenealogy.ie/view/?record_id=68f3c8a8f2-45824",
+      "titles": [
+        {
+          "value": "Marriage record for THOMAS JONES of NR and JOANNE MURPHY of NR on 7 January 1855"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "IrishGenealogy.ie"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.irishgenealogy.ie"
+      }
+    }
+  ]
+}

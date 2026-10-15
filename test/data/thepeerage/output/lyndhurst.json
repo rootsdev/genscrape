@@ -1,0 +1,523 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "91",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/91"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "John Singleton",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Copley",
+                  "type": "http://gedcomx.org/Surname"
+                },
+                {
+                  "value": "1st Baron Lyndhurst",
+                  "type": "http://gedcomx.org/Suffix"
+                }
+              ],
+              "fullText": "John Singleton Copley, 1st Baron Lyndhurst"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "21 May 1772"
+          },
+          "place": {
+            "original": "Boston, Massachusetts, U.S.A."
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "March 1819"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "August 1837"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "12 October 1863"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "683065",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/683065"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "John Singleton",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Copley",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "John Singleton Copley"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "683066",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/683066"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Susannah Farnum",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Clarke",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Susannah Farnum Clarke"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "683067",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/683067"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Sarah Garay",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Brunsden",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Sarah Garay Brunsden"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "683070",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/683070"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Georgiana",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Goldsmith",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Georgiana Goldsmith"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "30438",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/30438"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Hon.",
+                  "type": "http://gedcomx.org/Prefix"
+                },
+                {
+                  "value": "Sophia Clarence",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Copley",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Hon. Sophia Clarence Copley"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "25 Dec 1911"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "241721",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/241721"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Hon.",
+                  "type": "http://gedcomx.org/Prefix"
+                },
+                {
+                  "value": "Sarah Elizabeth",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Copley",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Hon. Sarah Elizabeth Copley"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "25 Jun 1865"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "709720",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://thepeerage/709720"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Hon.",
+                  "type": "http://gedcomx.org/Prefix"
+                },
+                {
+                  "value": "Georgiana Susan",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Copley",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Hon. Georgiana Susan Copley"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "May 1838"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#683065"
+      },
+      "person2": {
+        "resource": "#91"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#683066"
+      },
+      "person2": {
+        "resource": "#91"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#683065"
+      },
+      "person2": {
+        "resource": "#683066"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#91"
+      },
+      "person2": {
+        "resource": "#683067"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#91"
+      },
+      "person2": {
+        "resource": "#683070"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#91"
+      },
+      "person2": {
+        "resource": "#30438"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#683067"
+      },
+      "person2": {
+        "resource": "#30438"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#91"
+      },
+      "person2": {
+        "resource": "#241721"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#683067"
+      },
+      "person2": {
+        "resource": "#241721"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#91"
+      },
+      "person2": {
+        "resource": "#709720"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#683070"
+      },
+      "person2": {
+        "resource": "#709720"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"John Singleton Copley, 1st Baron Lyndhurst - thePeerage.com,\" thePeerage.com (https://www.thepeerage.com/p10.htm#i91 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.thepeerage.com/p10.htm#i91",
+      "titles": [
+        {
+          "value": "John Singleton Copley, 1st Baron Lyndhurst - thePeerage.com"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "thePeerage.com"
+        }
+      ],
+      "homepage": {
+        "resource": "http://www.thepeerage.com"
+      }
+    }
+  ]
+}

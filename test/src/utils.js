@@ -28,7 +28,7 @@ describe('utils', function(){
   });
   
   it('getHashParts', function(){
-    GLOBAL.window = {
+    global.window = {
       location: {
         hash: '#foo=bar&top=done'
       }
@@ -42,7 +42,7 @@ describe('utils', function(){
   describe('getQueryParams', function(){
     
     it('no query string', function(){
-      GLOBAL.window = {
+      global.window = {
         location: {
           search: ''
         }
@@ -51,7 +51,7 @@ describe('utils', function(){
     });
     
     it('params', function(){
-      GLOBAL.window = {
+      global.window = {
         location: {
           search: '?foo=bar&fizz=buzz'
         }
@@ -63,7 +63,7 @@ describe('utils', function(){
     });
     
     it('duplicate params', function(){
-      GLOBAL.window = {
+      global.window = {
         location: {
           search: '?foo=bar&foo=buzz'
         }

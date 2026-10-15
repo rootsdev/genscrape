@@ -1,0 +1,235 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "30000",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/30000"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Elizabeth",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Bates",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "12 April 1846"
+          },
+          "place": {
+            "original": "Kentucky, United States of America"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "about 1870"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "13 September 1940"
+          },
+          "place": {
+            "original": "Kentucky, United States of America"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "29999",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/29999"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Harrison Hall",
+              "parts": [
+                {
+                  "value": "Harrison",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hall",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "20 January 1845"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "17 November 1931"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "id": "29986",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://rodovid/29986"
+        ]
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Harrison B. Hall",
+              "parts": [
+                {
+                  "value": "Harrison B.",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Hall",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "11 August 1891"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "20 May 1938"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#30000"
+      },
+      "person2": {
+        "resource": "#29999"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "about 1870"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#30000"
+      },
+      "person2": {
+        "resource": "#29986"
+      },
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Elizabeth Bates b. 12 April 1846 d. 13 September 1940 - Rodovid EN (https://ru.rodovid.org/wk/Person:30000 : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://ru.rodovid.org/wk/Person:30000",
+      "titles": [
+        {
+          "value": "Elizabeth Bates b. 12 April 1846 d. 13 September 1940 - Rodovid EN"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Rodovid"
+        }
+      ],
+      "homepage": {
+        "resource": "https://rodovid.org"
+      }
+    }
+  ]
+}

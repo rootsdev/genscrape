@@ -1,5 +1,6 @@
 var debug = require('debug')('genscrape:main'),
-    EventEmitter2 = require('eventemitter2').EventEmitter2;
+    EventEmitter2 = require('eventemitter2').EventEmitter2,
+    generic = require('./generic');
 
 /**
  * Main genscrape function.
@@ -7,9 +8,15 @@ var debug = require('debug')('genscrape:main'),
  * Compares the current url to the list of regexes registered by the scrapers to
  * find a scraper that can handle this page.
  *
+ * When no scraper matches, the generic extractor reads the page instead. It
+ * emits 'data' (with a second argument of {generic: true, strategy}) if it
+ * finds a person with at least one event or relative; otherwise 'noMatch'.
+ * Pass {generic: false} to always emit 'noMatch' for unsupported sites.
+ *
  * Returns an EventEmitter object.
  */
-var genscrape = function(){
+var genscrape = function(options){
+  options = options || {};
   var emitter = new EventEmitter2();
   var thisUrl = window.location.href;
   debug('url', thisUrl);
@@ -35,11 +42,24 @@ var genscrape = function(){
     }
   }
 
-  // Nothing matched. Send a 'noMatch' event.
+  // Nothing matched. Try the generic extractor, then send a 'noMatch' event.
   if(!match){
     debug('no match');
     setTimeout(function(){
-      emitter.emit('noMatch');
+      var result = null;
+      if(options.generic !== false){
+        try {
+          result = generic.extract(window.document, thisUrl);
+        } catch(e) {
+          debug('generic failed', e);
+        }
+      }
+      if(result && generic.isUsable(result.record)){
+        debug('generic', result.strategy);
+        emitter.emit('data', result.gedx, { generic: true, strategy: result.strategy });
+      } else {
+        emitter.emit('noMatch');
+      }
     });
   }
 
@@ -90,3 +110,19 @@ require('./scrapers/werelate')(register);
 require('./scrapers/wikitree')(register);
 require('./scrapers/myheritage-record')(register);
 require('./scrapers/myheritage-person')(register);
+require('./scrapers/fold3-memorial')(register);
+require('./scrapers/abmc')(register);
+require('./scrapers/cvwm')(register);
+require('./scrapers/awm')(register);
+require('./scrapers/familysearch-ancestors-public')(register);
+require('./scrapers/thepeerage')(register);
+require('./scrapers/gedbas')(register);
+require('./scrapers/rodovid')(register);
+require('./scrapers/geneanet')(register);
+require('./scrapers/geni')(register);
+require('./scrapers/digitalarkivet')(register);
+require('./scrapers/legacy')(register);
+require('./scrapers/archieven')(register);
+require('./scrapers/freereg')(register);
+require('./scrapers/freecen')(register);
+require('./scrapers/irishgenealogy')(register);

@@ -187,8 +187,8 @@ function doneHandler(callback){
     if(errors){
       debug(errors);
     }
-    GLOBAL.window = window;
-    GLOBAL.document = window.document;
+    global.window = window;
+    global.document = window.document;
     callback(errors, window);
   };
 }
@@ -204,17 +204,17 @@ function mockDate(time){
 }
 
 beforeEach(function(){
-  GLOBAL.Date = mockDate;
-  GLOBAL.Date.now = originalDate.now;
+  global.Date = mockDate;
+  global.Date.now = originalDate.now;
 });
 
 afterEach(function(){
 
-  if(GLOBAL.window && GLOBAL.window.close){
+  if(global.window && global.window.close){
     debug('closing window');
-    GLOBAL.window.close();
-    delete GLOBAL.window;
+    global.window.close();
+    delete global.window;
   }
 
-  GLOBAL.Date = originalDate;
+  global.Date = originalDate;
 });

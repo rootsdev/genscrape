@@ -1,0 +1,88 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "62395602",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://legacy/62395602"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Barney Levy",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Williams",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Dr. Barney Levy Williams Jr."
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "1936"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "2026"
+          },
+          "place": {
+            "original": "Sumter, SC, United States"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "\"Barney Williams Obituary (1936 - 2026) - Sumter, SC - The State,\" obituary published 10 September 2026, Legacy.com (https://www.legacy.com/us/obituaries/thestate/name/barney-williams-obituary?id=62395602 : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.legacy.com/us/obituaries/thestate/name/barney-williams-obituary?id=62395602",
+      "titles": [
+        {
+          "value": "Barney Williams Obituary (1936 - 2026) - Sumter, SC - The State"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Legacy.com"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.legacy.com"
+      }
+    }
+  ]
+}

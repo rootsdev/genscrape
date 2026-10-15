@@ -1,0 +1,236 @@
+{
+  "description": "#4",
+  "persons": [
+    {
+      "id": "2967727",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://cvwm/2967727"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Gerald Waldo Gates",
+              "parts": [
+                {
+                  "value": "Gerald Waldo",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Gates",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "September 19, 1916"
+          },
+          "place": {
+            "original": "Port Williams, Nova Scotia"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "September 12, 1941"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Rosskeen Parish Chyd Extns (Or Burial Grd)"
+          },
+          "value": "Sec. C. Grave 40"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "Sergeant; Air Force; Royal Canadian Air Force; Service number R/65223",
+          "date": {
+            "original": "July 17, 1940"
+          },
+          "place": {
+            "original": "Halifax, Nova Scotia"
+          }
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Justin E. Gates",
+              "parts": [
+                {
+                  "value": "Justin E.",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Gates",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Viola Gates",
+              "parts": [
+                {
+                  "value": "Viola",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Gates",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Mary Winnifred Gates",
+              "parts": [
+                {
+                  "value": "Mary Winnifred",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Gates",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2967727"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#2967727"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#2967727"
+      },
+      "person2": {
+        "resource": "#3"
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "Veterans Affairs Canada, \"The Canadian Virtual War Memorial: Sergeant Gerald Waldo Gates\" (https://www.veterans.gc.ca/eng/remembrance/memorials/canadian-virtual-war-memorial/detail/2967727 : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.veterans.gc.ca/eng/remembrance/memorials/canadian-virtual-war-memorial/detail/2967727",
+      "titles": [
+        {
+          "value": "Sergeant Gerald Waldo Gates - The Canadian Virtual War Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Veterans Affairs Canada"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.veterans.gc.ca"
+      }
+    }
+  ]
+}

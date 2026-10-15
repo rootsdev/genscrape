@@ -1,0 +1,185 @@
+{
+  "description": "#4",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "William",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "BIRKETT",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "William BIRKETT"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "principal": true,
+      "id": "5efcaab2f493fd0e2cab038a",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://freereg/5efcaab2f493fd0e2cab038a"
+        ]
+      },
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Sarah",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "LAMB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Sarah LAMB"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "id": "1",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Hariot LAMB",
+              "parts": [
+                {
+                  "value": "Hariot",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "LAMB",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "2",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Wm DIXON",
+              "parts": [
+                {
+                  "value": "Wm",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "DIXON",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "3",
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#5efcaab2f493fd0e2cab038a"
+      },
+      "person2": {
+        "resource": "#1"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "20 May 1823"
+          },
+          "place": {
+            "original": "All Saints, Wragby, Lincolnshire"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#4"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "4",
+      "citations": [
+        {
+          "value": "FreeREG, \"Marriage of William BIRKETT, Wragby, Lincolnshire\" (https://www.freereg.org.uk/search_records/5efcaab2f493fd0e2cab038a : accessed 17 April 2013)"
+        }
+      ],
+      "about": "https://www.freereg.org.uk/search_records/5efcaab2f493fd0e2cab038a",
+      "titles": [
+        {
+          "value": "Marriage of William BIRKETT, Wragby, Lincolnshire"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "FreeREG"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.freereg.org.uk"
+      }
+    }
+  ]
+}

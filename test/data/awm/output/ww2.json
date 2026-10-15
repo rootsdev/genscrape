@@ -1,0 +1,93 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "R1694649",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://awm/R1694649"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Douglas Whyte",
+              "parts": [
+                {
+                  "value": "Douglas",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Whyte",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "31 October 1942"
+          },
+          "value": "Killed in action",
+          "place": {
+            "original": "Egypt"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "El Alamein War Cemetery, El Alamein, Marsa Matruh, Egypt"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "Second World War, 1939-1945; Private; 2/48th Australian Infantry Battalion; Australian Army; Service number SX7987"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "Australian War Memorial, \"Roll of Honour: Douglas Whyte\" (https://www.awm.gov.au/collection/R1694649 : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.awm.gov.au/collection/R1694649",
+      "titles": [
+        {
+          "value": "Roll of Honour: Douglas Whyte - Australian War Memorial"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "Australian War Memorial"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.awm.gov.au"
+      }
+    }
+  ]
+}

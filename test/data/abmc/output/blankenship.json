@@ -1,0 +1,112 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "sergeant-harry-blankenship",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://abmc/sergeant-harry-blankenship"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Harry Blankenship",
+              "parts": [
+                {
+                  "value": "Harry",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Blankenship",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "June 17, 1909"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "June 26, 1944"
+          },
+          "place": {
+            "original": "France"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Normandy American Cemetery"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "Limestone, Tennessee"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "Sergeant; 4th Infantry Division, 12th Infantry Regiment, 3rd Battalion, Company I; U.S. Army; World War II"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "Purple Heart"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "Silver Star"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "American Battle Monuments Commission, \"Sergeant Harry Blankenship\" (https://www.abmc.gov/profile/sergeant-harry-blankenship/ : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.abmc.gov/profile/sergeant-harry-blankenship/",
+      "titles": [
+        {
+          "value": "Sergeant Harry Blankenship - American Battle Monuments Commission"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "American Battle Monuments Commission"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.abmc.gov"
+      }
+    }
+  ]
+}

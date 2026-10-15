@@ -1,0 +1,108 @@
+{
+  "description": "#1",
+  "persons": [
+    {
+      "id": "sergeant-teofilo-yldefonzo",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://abmc/sergeant-teofilo-yldefonzo"
+        ]
+      },
+      "principal": true,
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fullText": "Teofilo Yldefonzo",
+              "parts": [
+                {
+                  "value": "Teofilo",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Yldefonzo",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "date": {
+            "original": "November 11, 1902"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Death",
+          "date": {
+            "original": "June 19, 1942"
+          },
+          "place": {
+            "original": "Camp O’Donnell, Capas, Tarlac, Philippines"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Burial",
+          "place": {
+            "original": "Manila American Cemetery"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Residence",
+          "place": {
+            "original": "Piddig, Ilocos Norte"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryService",
+          "value": "Sergeant; 57th Infantry Regiment (Philippine Scouts); U.S. Army; World War II"
+        },
+        {
+          "type": "http://gedcomx.org/MilitaryAward",
+          "value": "Bronze Star"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#1"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "1",
+      "citations": [
+        {
+          "value": "American Battle Monuments Commission, \"Sergeant Teofilo Yldefonzo\" (https://www.abmc.gov/profile/sergeant-teofilo-yldefonzo/ : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.abmc.gov/profile/sergeant-teofilo-yldefonzo/",
+      "titles": [
+        {
+          "value": "Sergeant Teofilo Yldefonzo - American Battle Monuments Commission"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "en",
+          "value": "American Battle Monuments Commission"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.abmc.gov"
+      }
+    }
+  ]
+}

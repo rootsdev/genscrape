@@ -1,0 +1,361 @@
+{
+  "description": "#6",
+  "persons": [
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Dirk",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kruijd",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Dirk Kruijd"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "principal": true,
+      "id": "44521711",
+      "identifiers": {
+        "genscrape": [
+          "genscrape://archieven/236/44521711"
+        ]
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Haarlem"
+          }
+        },
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "betonwerker"
+        }
+      ],
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Willem",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Kruijd",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Willem Kruijd"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "id": "1",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Hendrika Maria",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Remer",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Hendrika Maria Remer"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "id": "2",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Angeneta",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "de Graaf",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Angeneta de Graaf"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Birth",
+          "place": {
+            "original": "Amsterdam"
+          }
+        }
+      ],
+      "id": "3",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Dirk",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "de Graaf",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Dirk de Graaf"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Male"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Occupation",
+          "value": "bootwerker"
+        }
+      ],
+      "id": "4",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "names": [
+        {
+          "nameForms": [
+            {
+              "parts": [
+                {
+                  "value": "Angeneta",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "value": "Nieuwenhuijs",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Angeneta Nieuwenhuijs"
+            }
+          ]
+        }
+      ],
+      "gender": {
+        "type": "http://gedcomx.org/Female"
+      },
+      "id": "5",
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#44521711"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#2"
+      },
+      "person2": {
+        "resource": "#44521711"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#1"
+      },
+      "person2": {
+        "resource": "#2"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#4"
+      },
+      "person2": {
+        "resource": "#3"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/ParentChild",
+      "person1": {
+        "resource": "#5"
+      },
+      "person2": {
+        "resource": "#3"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#4"
+      },
+      "person2": {
+        "resource": "#5"
+      },
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    },
+    {
+      "type": "http://gedcomx.org/Couple",
+      "person1": {
+        "resource": "#44521711"
+      },
+      "person2": {
+        "resource": "#3"
+      },
+      "facts": [
+        {
+          "type": "http://gedcomx.org/Marriage",
+          "date": {
+            "original": "17 January 1940"
+          },
+          "place": {
+            "original": "Amsterdam"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "description": "#6"
+        }
+      ]
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "id": "6",
+      "citations": [
+        {
+          "value": "Reg. 7 fol. 15 Huwelijksakte Dirk Kruijd en Angeneta de Graaf, 17-01-1940, 358.6-3731 Huwelijksakten van de gemeente Amsterdam, 1940, Noord-Hollands Archief, Archieven.nl (https://www.archieven.nl/nl/zoeken?mivast=0&mizig=310&miadt=236&miaet=54&micode=358.6-3731&minr=44521711&miview=ldt : accessed 17 April 2013)."
+        }
+      ],
+      "about": "https://www.archieven.nl/nl/zoeken?mivast=0&mizig=310&miadt=236&miaet=54&micode=358.6-3731&minr=44521711&miview=ldt",
+      "titles": [
+        {
+          "value": "Reg. 7 fol. 15 Huwelijksakte Dirk Kruijd en Angeneta de Graaf, 17-01-1940"
+        }
+      ],
+      "repository": {
+        "resource": "#agent"
+      }
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent",
+      "names": [
+        {
+          "lang": "nl",
+          "value": "Archieven.nl"
+        }
+      ],
+      "homepage": {
+        "resource": "https://www.archieven.nl"
+      }
+    }
+  ]
+}
