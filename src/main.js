@@ -35,7 +35,14 @@ var genscrape = function(options){
       if(regex.test(thisUrl)){
         debug('match');
         setTimeout(function(){
-          scraper.scraper(emitter);
+          // A scraper that throws (usually a changed page layout) would
+          // otherwise leave the caller waiting for an event forever.
+          try {
+            scraper.scraper(emitter);
+          } catch(e) {
+            debug('scraper failed', e);
+            emitter.emit('error', e);
+          }
         });
         match = true; // For short-circuiting the match loops
       }

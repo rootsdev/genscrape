@@ -146,7 +146,13 @@ function run(emitter){
 function getName(){
   var h1 = document.getElementById('bio-name');
   if(h1){
-    var nameText =  h1.textContent.trim();
+    // Current pages append badges (Veteran, Famous memorial) as child
+    // elements, so read only the heading's own text.
+    var nameText = Array.from(h1.childNodes).filter(function(node){
+      return node.nodeType === 3;
+    }).map(function(node){
+      return node.textContent;
+    }).join(' ').replace(/\s+/g, ' ').trim() || h1.textContent.trim();
     var suffix, parts = nameText.split(',');
     if(parts.length > 1){
       suffix = parts[1];
@@ -267,7 +273,7 @@ function getRelativeGroups() {
       var labelText = label.textContent;
       var list = label.nextElementSibling;
       if(list) {
-        groups[labelText.toLowerCase()] = Array.from(list.querySelectorAll('li')).map(processRelative);
+        groups[labelText.toLowerCase()] = Array.from(list.querySelectorAll('li')).map(processRelative).filter(Boolean);
       }
     });
     return groups;
@@ -281,8 +287,14 @@ function getRelativeGroups() {
  * @returns {GedcomX.Person}
  */
 function processRelative(item){
-  var name = item.querySelector('#familyNameLabel').textContent.replace('*','').trim();
-  var url = item.querySelector('a').href;
+  // Older pages use #familyNameLabel, current ones an itemprop="name" heading.
+  var $name = item.querySelector('#familyNameLabel') || item.querySelector('[itemprop="name"]'),
+      $link = item.querySelector('a');
+  if(!$name || !$link){
+    return null;
+  }
+  var name = $name.textContent.replace('*','').trim();
+  var url = $link.href;
   var birthLabel = item.querySelector('#familyBirthLabel');
   var deathLabel = item.querySelector('#familyDeathLabel');
   return GedcomX.Person()
