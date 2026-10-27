@@ -189,7 +189,7 @@ function getName(){
 function getBirthFact() {
   var date = document.getElementById('birthDateLabel'),
       place = document.getElementById('birthLocationLabel');
-  if(date || place & date.textContent !== 'unknown') {
+  if(date || place) {
     var birth = {
       type: 'http://gedcomx.org/Birth'
     };
@@ -215,7 +215,7 @@ function getBirthFact() {
  function getDeathFact() {
   var date = document.getElementById('deathDateLabel'),
       place = document.getElementById('deathLocationLabel');
-  if(date || place & date.textContent !== 'unknown') {
+  if(date || place) {
     var death = {
       type: 'http://gedcomx.org/Death'
     };
@@ -239,10 +239,16 @@ function getBirthFact() {
  * @returns {GedcomX.Fact}
  */
 function getBurialFact(){
-  var burialRow = document.querySelector('[itemtype="https://schema.org/Cemetery"]'),
-      cemeteryName = burialRow.querySelector('.info'),
+  var burialRow = document.querySelector('[itemtype="https://schema.org/Cemetery"]');
+
+  // No cemetery block on the memorial (e.g. burial unknown); nothing to parse.
+  if(!burialRow){
+    return;
+  }
+
+  var cemeteryName = burialRow.querySelector('.info'),
       placeName = burialRow.querySelector('.place');
-  
+
   // Return a fact if we have any place data
   if(placeName || cemeteryName){
     var burialParts = [];
