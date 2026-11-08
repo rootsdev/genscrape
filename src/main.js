@@ -117,6 +117,7 @@ require('./scrapers/werelate')(register);
 require('./scrapers/wikitree')(register);
 require('./scrapers/myheritage-record')(register);
 require('./scrapers/myheritage-person')(register);
+require('./scrapers/myheritage-tree')(register);
 require('./scrapers/fold3-memorial')(register);
 require('./scrapers/abmc')(register);
 require('./scrapers/cvwm')(register);
