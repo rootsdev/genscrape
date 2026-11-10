@@ -36,40 +36,59 @@ function run(emitter) {
     return;
   }
 
-  // The URL's rootIndividualID identifies the initially requested profile.
-  // Subsequent selections are detected from the profile requests made by the page.
-  getProfile(treeToken, personId, emitter, function() {
-    observeProfileRequests(treeToken, emitter);
-  });
+  // Observe profile requests before requesting the initial profile.
+  // This also catches successful requests made by the page when our own
+  // initial request fails.
+  observeProfileRequests(treeToken, emitter);
+  getProfile(treeToken, personId, emitter);
 }
 
-function getProfile(treeToken, personId, emitter, callback) {
+
+
+function getProfile(treeToken, personId, emitter) {
   var today = new Date(),
-      clientDate = today.getFullYear() + '-' + pad(today.getMonth() + 1) + '-' + pad(today.getDate()),
-      url = endpoint + '?allEventsForIndividual=1'
+      clientDate = today.getFullYear() + '-' + pad(today.getMonth() + 1) + '-' + pad(today.getDate());
+
+  function requestProfile(dataLang) {
+    var url = endpoint + '?allEventsForIndividual=1'
         + '&clientDate=' + clientDate
-        + '&dataLang=EN&discoveries=1&dna=1&facts=1'
+        + '&dataLang=' + dataLang + '&discoveries=1&dna=1&facts=1'
         + '&individualID=' + encodeURIComponent(personId)
         + '&lang=EN&matches=0&path=&photos=1&relatives=1'
         + '&s=' + encodeURIComponent(treeToken) + '&sites=0';
 
-  debug('request profile', personId);
-  utils.getJSON(url, function(error, data) {
-    if (error) {
-      emitter.emit('error', error);
-      return;
-    }
-    if (!data || data.success !== true) {
-      emitter.emit('noData');
-      return;
-    }
-    try {
-      emitter.emit('data', processData(treeToken, personId, data));
-      if (callback) callback();
-    } catch (e) {
-      emitter.emit('error', e);
-    }
-  });
+    debug('request profile', personId, 'dataLang', dataLang);
+
+    utils.getJSON(url, function(error, data) {
+      if (error) {
+        if (dataLang === 'EN') {
+          debug('English profile request failed; trying DF', personId);
+          requestProfile('DF');
+        } else {
+          emitter.emit('error', error);
+        }
+        return;
+      }
+
+      if (!data || data.success !== true) {
+        if (dataLang === 'EN') {
+          debug('English profile response unusable; trying DF', personId);
+          requestProfile('DF');
+        } else {
+          emitter.emit('noData');
+        }
+        return;
+      }
+
+      try {
+        emitter.emit('data', processData(treeToken, personId, data));
+      } catch (e) {
+        emitter.emit('error', e);
+      }
+    });
+  }
+
+  requestProfile('EN');
 }
 
 // Observe later profile-card requests. The modern tree keeps the page URL
