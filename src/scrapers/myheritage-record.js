@@ -18,7 +18,7 @@ var events = [
     type: 'http://gedcomx.org/Christening'
   },
   {
-    regex: /^marriage$/,
+    regex: /^marriage(?: date| place)?$/,
     type: 'http://gedcomx.org/Marriage'
   },
   {
@@ -85,7 +85,9 @@ function setup(emitter) {
   gedx.addPerson(primaryPerson);
 
   // Name(s)
-  var names = document.querySelector('.recordTitle').textContent.split('&');
+  var nameElement = document.querySelector('.record_title') ||
+                    document.querySelector('.recordTitle');
+  var names = nameElement.textContent.split('&');
   if (names.length > 1) {
     isMarriage = true;
   }
@@ -99,6 +101,9 @@ function setup(emitter) {
     }
   }
 
+  var recordVolume = '';
+  var recordPage = '';
+
   // Loop through primary table
   // We do this because marriages have "sub-facts" about the person in the row(s) above
   var rows = document.querySelectorAll('.recordFieldsTable > tbody > tr');
@@ -110,6 +115,21 @@ function setup(emitter) {
     var tds = row.querySelectorAll('td');
     var label = tds[0].textContent.toLowerCase().replace(/:$/,'');
     var value = tds[1];
+    if (label === 'volume') {
+      recordVolume = value.textContent.trim();
+    }
+
+    if (label === 'page') {
+      recordPage = value.textContent.trim();
+    }
+
+    if (label === 'possible spouses (implied)') {
+      var spouseNames = Array.from(value.querySelectorAll('a'))
+        .map(function(link) {
+          return link.textContent.trim();
+        })
+        .filter(Boolean);
+    }
 
     indented = tds[0].querySelector('div') !== null
 
@@ -143,30 +163,53 @@ function setup(emitter) {
 
     // Events
     events.forEach(function(event) {
-      if(event.regex.test(label)) {
+      if (event.regex.test(label)) {
         var cell = value;
+
         // Linked places have extra stuff we need to ignore
         var place = cell.querySelector('.event_place .map_callout_link');
+
         // If it's not a linked place, just get the content
         if (!place) {
           place = cell.querySelector('.event_place');
         }
+
         var date = cell.querySelector('.event_date');
-        if (place || date) {
-          var fact = GedcomX.Fact({
-            type: event.type
+
+        // Current MyHeritage marriage dates are plain text
+        if (!date && /^marriage date$/.test(label)) {
+          date = {
+            textContent: cell.textContent.trim()
+          };
+        }
+
+        // Reuse an existing marriage fact when processing the second row
+        var fact;
+        if (event.type === 'http://gedcomx.org/Marriage') {
+          fact = inScopePerson.getFacts().find(function(existingFact) {
+            return existingFact.type === event.type;
           });
+        }
+
+        if (place || date) {
+          if (!fact) {
+            fact = GedcomX.Fact({
+              type: event.type
+            });
+            inScopePerson.addFact(fact);
+          }
+
           if (date) {
             fact.setDate({
               original: date.textContent.trim()
             });
           }
+
           if (place) {
             fact.setPlace({
               original: place.textContent.trim()
             });
           }
-          inScopePerson.addFact(fact);
         }
       }
     });
@@ -532,15 +575,28 @@ function setup(emitter) {
       });
   gedx.addAgent(agent);
 
+  if (spouseNames && spouseNames.length) {
+    primaryPerson.addNote(
+      GedcomX.Note({
+        subject: 'Possible spouses (implied)',
+        text: spouseNames.join('; ')
+      })
+    );
+  }
+
   // Source Citation/Description
   var source = GedcomX.SourceDescription()
     .setAbout(document.location.href)
     .addTitle({
-      value: document.querySelector('.collection_title').textContent.trim()
+      value: (document.querySelector('.collection_info_box_title') ||
+        document.querySelector('.collection_title')).textContent.trim()
     })
     .addCitation({
       value: 'MyHeritage, database and images (https://www.myheritage.com : accessed ' + utils.getDateString() + ')'
-        + ', Record #' + getRecordId(document.location.href) + ' for ' + document.title + '.'
+        + ', Record #' + getRecordId(document.location.href)
+        + (recordVolume ? ', Volume ' + recordVolume : '')
+        + (recordPage ? ', Page ' + recordPage : '')
+        + ' for ' + document.title + '.'
     })
     .setRepository({resource: '#agent'});
   gedx.addSourceDescriptionToAll(source);
